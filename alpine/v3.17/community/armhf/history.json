@@ -29469,7 +29469,8 @@
     "patchwork-uwsgi-nginx": {
       "origin": "patchwork",
       "versions": {
-        "3.0.0-r0": 1617746107
+        "3.0.0-r0": 1617746107,
+        "3.1.1-r0": 1668897549
       },
       "dependencies": [
         "nginx",
@@ -34655,7 +34656,8 @@
     "patchwork": {
       "origin": "patchwork",
       "versions": {
-        "3.0.0-r0": 1617746107
+        "3.0.0-r0": 1617746107,
+        "3.1.1-r0": 1668897549
       },
       "dependencies": [
         "py3-django",
@@ -55212,7 +55214,8 @@
     "patchwork-uwsgi-apache2": {
       "origin": "patchwork",
       "versions": {
-        "3.0.0-r0": 1617746107
+        "3.0.0-r0": 1617746107,
+        "3.1.1-r0": 1668897549
       },
       "dependencies": [
         "apache2",
@@ -99623,7 +99626,8 @@
       "origin": "py3-pytest-asyncio",
       "versions": {
         "0.19.0-r0": 1663885800,
-        "0.20.1-r0": 1667988929
+        "0.20.1-r0": 1667988929,
+        "0.20.2-r0": 1668897525
       },
       "dependencies": [
         "python3",
@@ -99632,7 +99636,7 @@
         "py3-pytest-trio"
       ],
       "provides": [
-        "py3.10:pytest_asyncio=0.20.1-r0"
+        "py3.10:pytest_asyncio=0.20.2-r0"
       ]
     },
     "sane-backend-umax": {
@@ -108038,7 +108042,8 @@
     "py3-cheroot": {
       "origin": "py3-cheroot",
       "versions": {
-        "8.6.0-r0": 1666886958
+        "8.6.0-r0": 1666886958,
+        "9.0.0-r0": 1668895395
       },
       "dependencies": [
         "python3",
@@ -108047,8 +108052,8 @@
         "py3-jaraco.functools"
       ],
       "provides": [
-        "cmd:cheroot=8.6.0-r0",
-        "py3.10:cheroot=8.6.0-r0"
+        "cmd:cheroot=9.0.0-r0",
+        "py3.10:cheroot=9.0.0-r0"
       ]
     },
     "libjxl-doc": {
@@ -113248,7 +113253,8 @@
     "patchwork-doc": {
       "origin": "patchwork",
       "versions": {
-        "3.0.0-r0": 1617746107
+        "3.0.0-r0": 1617746107,
+        "3.1.1-r0": 1668897549
       }
     },
     "py3-flake8": {
@@ -136137,7 +136143,8 @@
     "py3-cheroot-tests": {
       "origin": "py3-cheroot",
       "versions": {
-        "8.6.0-r0": 1666886958
+        "8.6.0-r0": 1666886958,
+        "9.0.0-r0": 1668895395
       },
       "dependencies": [
         "py3-cheroot"
@@ -143548,6 +143555,87 @@
       ],
       "provides": [
         "py3.10:pytest_tornasync=0.5.0_git20220715-r0"
+      ]
+    },
+    "kooha": {
+      "origin": "kooha",
+      "versions": {
+        "2.2.2-r0": 1668896615
+      },
+      "dependencies": [
+        "gst-plugin-pipewire",
+        "gst-plugins-good",
+        "pipewire",
+        "xdg-desktop-portal",
+        "/bin/sh",
+        "so:libadwaita-1.so.0",
+        "so:libc.musl-armhf.so.1",
+        "so:libgcc_s.so.1",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libgraphene-1.0.so.0",
+        "so:libgstpbutils-1.0.so.0",
+        "so:libgstreamer-1.0.so.0",
+        "so:libgstvideo-1.0.so.0",
+        "so:libgtk-4.so.1",
+        "so:libintl.so.8",
+        "so:libpango-1.0.so.0",
+        "so:libpulse-mainloop-glib.so.0",
+        "so:libpulse.so.0"
+      ],
+      "provides": [
+        "cmd:kooha=2.2.2-r0"
+      ]
+    },
+    "gstreamer-vaapi": {
+      "origin": "gstreamer-vaapi",
+      "versions": {
+        "1.20.4-r0": 1668895709
+      },
+      "dependencies": [
+        "so:libEGL.so.1",
+        "so:libGL.so.1",
+        "so:libGLESv2.so.2",
+        "so:libX11.so.6",
+        "so:libXrandr.so.2",
+        "so:libc.musl-armhf.so.1",
+        "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libgstallocators-1.0.so.0",
+        "so:libgstbase-1.0.so.0",
+        "so:libgstcodecparsers-1.0.so.0",
+        "so:libgstgl-1.0.so.0",
+        "so:libgstpbutils-1.0.so.0",
+        "so:libgstreamer-1.0.so.0",
+        "so:libgstvideo-1.0.so.0",
+        "so:libudev.so.1",
+        "so:libva-drm.so.2",
+        "so:libva-x11.so.2",
+        "so:libva.so.2"
+      ]
+    },
+    "kooha-mp4": {
+      "origin": "kooha",
+      "versions": {
+        "2.2.2-r0": 1668896615
+      },
+      "dependencies": [
+        "kooha=2.2.2-r0",
+        "gst-plugins-ugly"
+      ]
+    },
+    "kooha-lang": {
+      "origin": "kooha",
+      "versions": {
+        "2.2.2-r0": 1668896615
+      },
+      "dependencies": [
+        "gst-plugin-pipewire",
+        "gst-plugins-good",
+        "pipewire",
+        "xdg-desktop-portal"
       ]
     }
   },
