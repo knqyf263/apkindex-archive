@@ -19452,7 +19452,8 @@
     "ntpsec-doc": {
       "origin": "ntpsec",
       "versions": {
-        "1.2.1-r4": 1659429324
+        "1.2.1-r4": 1659429324,
+        "1.2.1-r5": 1669068382
       }
     },
     "gtk-layer-shell": {
@@ -59335,28 +59336,30 @@
     "libraw-tools": {
       "origin": "libraw",
       "versions": {
-        "0.20.2-r1": 1666619692
+        "0.20.2-r1": 1666619692,
+        "0.20.2-r2": 1669068340
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1",
         "so:libgcc_s.so.1",
         "so:libgomp.so.1",
+        "so:libjpeg.so.8",
         "so:libraw.so.20",
         "so:libraw_r.so.20",
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:4channels=0.20.2-r1",
-        "cmd:dcraw_emu=0.20.2-r1",
-        "cmd:dcraw_half=0.20.2-r1",
-        "cmd:half_mt=0.20.2-r1",
-        "cmd:mem_image=0.20.2-r1",
-        "cmd:multirender_test=0.20.2-r1",
-        "cmd:postprocessing_benchmark=0.20.2-r1",
-        "cmd:raw-identify=0.20.2-r1",
-        "cmd:rawtextdump=0.20.2-r1",
-        "cmd:simple_dcraw=0.20.2-r1",
-        "cmd:unprocessed_raw=0.20.2-r1"
+        "cmd:4channels=0.20.2-r2",
+        "cmd:dcraw_emu=0.20.2-r2",
+        "cmd:dcraw_half=0.20.2-r2",
+        "cmd:half_mt=0.20.2-r2",
+        "cmd:mem_image=0.20.2-r2",
+        "cmd:multirender_test=0.20.2-r2",
+        "cmd:postprocessing_benchmark=0.20.2-r2",
+        "cmd:raw-identify=0.20.2-r2",
+        "cmd:rawtextdump=0.20.2-r2",
+        "cmd:simple_dcraw=0.20.2-r2",
+        "cmd:unprocessed_raw=0.20.2-r2"
       ]
     },
     "lsscsi-doc": {
@@ -59368,13 +59371,17 @@
     "libraw": {
       "origin": "libraw",
       "versions": {
-        "0.20.2-r1": 1666619692
+        "0.20.2-r1": 1666619692,
+        "0.20.2-r2": 1669068340
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1",
         "so:libgcc_s.so.1",
         "so:libgomp.so.1",
-        "so:libstdc++.so.6"
+        "so:libjpeg.so.8",
+        "so:liblcms2.so.2",
+        "so:libstdc++.so.6",
+        "so:libz.so.1"
       ],
       "provides": [
         "so:libraw.so.20=20.0.0",
@@ -63065,7 +63072,8 @@
     "elixir-doc": {
       "origin": "elixir",
       "versions": {
-        "1.14.1-r0": 1665589734
+        "1.14.1-r0": 1665589734,
+        "1.14.2-r0": 1669068508
       }
     },
     "opentracker6": {
@@ -111063,11 +111071,11 @@
     "ntpsec": {
       "origin": "ntpsec",
       "versions": {
-        "1.2.1-r4": 1659429324
+        "1.2.1-r4": 1659429324,
+        "1.2.1-r5": 1669068382
       },
       "dependencies": [
         "bash",
-        "busybox",
         "python3",
         "py3-gpsd",
         "so:libc.musl-s390x.so.1",
@@ -111077,22 +111085,22 @@
       ],
       "provides": [
         "so:libntpc.so.1=1.1.0",
-        "cmd:ntpd=1.2.1-r4",
-        "cmd:ntpdig=1.2.1-r4",
-        "cmd:ntpfrob=1.2.1-r4",
-        "cmd:ntpkeygen=1.2.1-r4",
-        "cmd:ntpleapfetch=1.2.1-r4",
-        "cmd:ntploggps=1.2.1-r4",
-        "cmd:ntplogtemp=1.2.1-r4",
-        "cmd:ntpmon=1.2.1-r4",
-        "cmd:ntpq=1.2.1-r4",
-        "cmd:ntpsnmpd=1.2.1-r4",
-        "cmd:ntpsweep=1.2.1-r4",
-        "cmd:ntptime=1.2.1-r4",
-        "cmd:ntptrace=1.2.1-r4",
-        "cmd:ntpviz=1.2.1-r4",
-        "cmd:ntpwait=1.2.1-r4",
-        "py3.10:ntp=1.2.1-r4"
+        "cmd:ntpd=1.2.1-r5",
+        "cmd:ntpdig=1.2.1-r5",
+        "cmd:ntpfrob=1.2.1-r5",
+        "cmd:ntpkeygen=1.2.1-r5",
+        "cmd:ntpleapfetch=1.2.1-r5",
+        "cmd:ntploggps=1.2.1-r5",
+        "cmd:ntplogtemp=1.2.1-r5",
+        "cmd:ntpmon=1.2.1-r5",
+        "cmd:ntpq=1.2.1-r5",
+        "cmd:ntpsnmpd=1.2.1-r5",
+        "cmd:ntpsweep=1.2.1-r5",
+        "cmd:ntptime=1.2.1-r5",
+        "cmd:ntptrace=1.2.1-r5",
+        "cmd:ntpviz=1.2.1-r5",
+        "cmd:ntpwait=1.2.1-r5",
+        "py3.10:ntp=1.2.1-r5"
       ]
     },
     "jgmenu-xfce4": {
@@ -123553,10 +123561,12 @@
     "libraw-dev": {
       "origin": "libraw",
       "versions": {
-        "0.20.2-r1": 1666619692
+        "0.20.2-r1": 1666619692,
+        "0.20.2-r2": 1669068340
       },
       "dependencies": [
-        "libraw=0.20.2-r1",
+        "libraw=0.20.2-r2",
+        "pc:lcms2",
         "pkgconfig"
       ],
       "provides": [
@@ -124975,10 +124985,11 @@
     "ntpsec-dev": {
       "origin": "ntpsec",
       "versions": {
-        "1.2.1-r4": 1659429324
+        "1.2.1-r4": 1659429324,
+        "1.2.1-r5": 1669068382
       },
       "dependencies": [
-        "ntpsec=1.2.1-r4"
+        "ntpsec=1.2.1-r5"
       ]
     },
     "iptraf-ng": {
@@ -131299,17 +131310,18 @@
     "elixir": {
       "origin": "elixir",
       "versions": {
-        "1.14.1-r0": 1665589734
+        "1.14.1-r0": 1665589734,
+        "1.14.2-r0": 1669068508
       },
       "dependencies": [
         "erlang-dev>=23.0",
         "erlang-dialyzer"
       ],
       "provides": [
-        "cmd:elixir=1.14.1-r0",
-        "cmd:elixirc=1.14.1-r0",
-        "cmd:iex=1.14.1-r0",
-        "cmd:mix=1.14.1-r0"
+        "cmd:elixir=1.14.2-r0",
+        "cmd:elixirc=1.14.2-r0",
+        "cmd:iex=1.14.2-r0",
+        "cmd:mix=1.14.2-r0"
       ]
     },
     "vigra": {
@@ -145522,6 +145534,57 @@
       "dependencies": [
         "adwaita-icon-theme"
       ]
+    },
+    "py3-watchfiles": {
+      "origin": "py3-watchfiles",
+      "versions": {
+        "0.18.1-r0": 1669068257
+      },
+      "dependencies": [
+        "python3",
+        "py3-anyio",
+        "so:libc.musl-s390x.so.1",
+        "so:libgcc_s.so.1"
+      ],
+      "provides": [
+        "so:lib_rust_notify.so=0",
+        "cmd:watchfiles=0.18.1-r0",
+        "py3.10:watchfiles=0.18.1-r0"
+      ]
+    },
+    "py3-dirty-equals": {
+      "origin": "py3-dirty-equals",
+      "versions": {
+        "0.5.0-r0": 1669068257
+      },
+      "dependencies": [
+        "python3",
+        "py3-tz",
+        "py3-typing-extensions"
+      ],
+      "provides": [
+        "py3.10:dirty_equals=0.5.0-r0"
+      ]
+    },
+    "ntpsec-openrc": {
+      "origin": "ntpsec",
+      "versions": {
+        "1.2.1-r5": 1669068382
+      }
+    },
+    "py3-watchgod": {
+      "origin": "py3-watchgod",
+      "versions": {
+        "0.8.2-r0": 1669068257
+      },
+      "dependencies": [
+        "python3",
+        "py3-anyio"
+      ],
+      "provides": [
+        "cmd:watchgod=0.8.2-r0",
+        "py3.10:watchgod=0.8.2-r0"
+      ]
     }
   },
   "provide": {
@@ -157720,6 +157783,10 @@
       },
       "libracket3m-8.7.so": {
         "package": "racket",
+        "version": "0"
+      },
+      "lib_rust_notify.so": {
+        "package": "py3-watchfiles",
         "version": "0"
       }
     },

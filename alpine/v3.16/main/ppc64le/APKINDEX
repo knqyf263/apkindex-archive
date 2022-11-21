@@ -706,21 +706,6 @@ t:1647977252
 c:0c813d4276d2e36ead29ca22b6c01045d86db58b
 D:zsh=5.8.1-r4
 
-C:Q1oe9v1qVedcik6tCBI+x8DKPFVhQ=
-P:krb5-doc
-V:1.19.3-r0
-A:ppc64le
-S:87219
-I:233472
-T:The Kerberos network authentication system (documentation)
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1648054462
-c:6df46069ef5dcfaa7e00492bc163b57514c131a2
-i:docs krb5=1.19.3-r0
-
 C:Q1JP8voLI7KQshiRfRuW2Os/ttSoI=
 P:bluez-openrc
 V:5.65-r0
@@ -10989,6 +10974,21 @@ t:1649930498
 c:be358bfcd3620eb1ac061c4c13e258d61d515e67
 i:docs heimdal=7.7.0-r7
 
+C:Q1Aq4TUpMaiIWkumzxMiHe3TJzoc0=
+P:krb5-pkinit
+V:1.19.4-r0
+A:ppc64le
+S:49343
+I:159744
+T:The PKINIT module for Kerberos 5
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1669067724
+c:4d933a1fa3d87c37caffc6dcef37f52ba7183488
+D:krb5-conf so:libc.musl-ppc64le.so.1 so:libcom_err.so.2 so:libcrypto.so.1.1 so:libk5crypto.so.3 so:libkrb5.so.3 so:libkrb5support.so.0
+
 C:Q1tjkjnZGoEnM/rZ/F0Cnuq4MTCm8=
 P:audit-static
 V:3.0.7-r0
@@ -12842,6 +12842,22 @@ t:1566543796
 c:21ae48c52dfa6db9fdb9da4cd8d2439fedecd244
 D:so:libc.musl-ppc64le.so.1 so:libcmph.so.0
 p:cmd:cmph=2.0.2-r0
+
+C:Q1/EOPcioVGNOH86AF5LCdhHqWx/4=
+P:krb5-dev
+V:1.19.4-r0
+A:ppc64le
+S:151422
+I:888832
+T:The Kerberos network authentication system (development files)
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1669067724
+c:4d933a1fa3d87c37caffc6dcef37f52ba7183488
+D:e2fsprogs-dev krb5-libs=1.19.4-r0 krb5-server-ldap=1.19.4-r0 pkgconfig
+p:pc:gssrpc=1.19.4 pc:kadm-client=1.19.4 pc:kadm-server=1.19.4 pc:kdb=1.19.4 pc:krb5-gssapi=1.19.4 pc:krb5=1.19.4 pc:mit-krb5-gssapi=1.19.4 pc:mit-krb5=1.19.4 cmd:krb5-config=1.19.4-r0
 
 C:Q1LbfZQyVbmdLSueu69w2l2rB3Zss=
 P:libportaudiocxx
@@ -15816,22 +15832,6 @@ m:Michael Mason <ms13sp@gmail.com>
 t:1627487160
 c:9e86ed9648a00e399e8eec7242b8da4b5c01d9d2
 i:docs swish-e=2.4.7-r12
-
-C:Q18wn5XVsQVYMkipZtAQHACRvj+to=
-P:krb5-server
-V:1.19.3-r0
-A:ppc64le
-S:242902
-I:1269760
-T:The KDC and related programs for Kerberos 5
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1648054462
-c:6df46069ef5dcfaa7e00492bc163b57514c131a2
-D:libverto-libev so:libc.musl-ppc64le.so.1 so:libcom_err.so.2 so:libgssapi_krb5.so.2 so:libgssrpc.so.4 so:libk5crypto.so.3 so:libkadm5clnt_mit.so.12 so:libkadm5srv_mit.so.12 so:libkdb5.so.10 so:libkdb_ldap.so.1 so:libkrb5.so.3 so:libkrb5support.so.0 so:libss.so.2 so:libverto.so.1
-p:cmd:gss-server=1.19.3-r0 cmd:kadmin.local=1.19.3-r0 cmd:kadmind=1.19.3-r0 cmd:kdb5_ldap_util=1.19.3-r0 cmd:kdb5_util=1.19.3-r0 cmd:kprop=1.19.3-r0 cmd:kpropd=1.19.3-r0 cmd:kproplog=1.19.3-r0 cmd:krb5-send-pr=1.19.3-r0 cmd:krb5kdc=1.19.3-r0 cmd:sclient=1.19.3-r0 cmd:sim_server=1.19.3-r0 cmd:sserver=1.19.3-r0 cmd:uuserver=1.19.3-r0
 
 C:Q19LsL2pPUrnVhY1IuUVQiEXS0Fxo=
 P:libdaemon
@@ -27886,6 +27886,22 @@ c:3625d3eabe185b3b847d4ac1ac1c1c4f63a627ee
 D:py3-cparser so:libc.musl-ppc64le.so.1 so:libffi.so.8
 p:py-cffi=1.15.0-r0 py3.10:cffi=1.15.0-r0
 
+C:Q15LPLDV60EoUntnV6+vIZPRfXbI4=
+P:krb5-server-openrc
+V:1.19.4-r0
+A:ppc64le
+S:1848
+I:24576
+T:The KDC and related programs for Kerberos 5 (OpenRC init scripts)
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1669067724
+c:4d933a1fa3d87c37caffc6dcef37f52ba7183488
+D:krb5-conf
+i:krb5-server=1.19.4-r0 openrc
+
 C:Q1dy00hxuEV/L2YrRYdNRBFKKlpWo=
 P:one-context
 V:0.5.5-r0
@@ -29221,21 +29237,6 @@ t:1629690762
 c:bca9f0df87512bf1044afe0e35ae45a5e05032b6
 D:lmdb=0.9.29-r1 pkgconfig
 p:pc:lmdb=0.9.29
-
-C:Q1gbjXMDqSJy//W+NnEQo5teVFbjc=
-P:krb5-pkinit
-V:1.19.3-r0
-A:ppc64le
-S:49602
-I:159744
-T:The PKINIT module for Kerberos 5
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1648054462
-c:6df46069ef5dcfaa7e00492bc163b57514c131a2
-D:krb5-conf so:libc.musl-ppc64le.so.1 so:libcom_err.so.2 so:libcrypto.so.1.1 so:libk5crypto.so.3 so:libkrb5.so.3 so:libkrb5support.so.0
 
 C:Q1YsZeEUW77lP9QdY4SJ7ma8iQ5CU=
 P:uwsgi-ping
@@ -32286,22 +32287,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1650054943
 c:3f28965a3ed74837435bd0d488463d10afe72f3f
 i:docs util-linux=2.38-r1
-
-C:Q13zX/ZbxaQNergwJKKjMKsDB3kxY=
-P:krb5-libs
-V:1.19.3-r0
-A:ppc64le
-S:860851
-I:2662400
-T:The shared libraries used by Kerberos 5
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1648054462
-c:6df46069ef5dcfaa7e00492bc163b57514c131a2
-D:krb5-conf so:libc.musl-ppc64le.so.1 so:libcom_err.so.2 so:libcrypto.so.1.1 so:libkeyutils.so.1 so:libssl.so.1.1 so:libverto.so.1
-p:so:libgssapi_krb5.so.2=2.2 so:libgssrpc.so.4=4.2 so:libk5crypto.so.3=3.1 so:libkadm5clnt_mit.so.12=12.0 so:libkadm5srv_mit.so.12=12.0 so:libkdb5.so.10=10.0 so:libkrad.so.0=0.0 so:libkrb5.so.3=3.3 so:libkrb5support.so.0=0.1
 
 C:Q1/z4fbSaycu+UM1ZOPJYYJEBvB8Q=
 P:haserl-lua5.4
@@ -43569,22 +43554,6 @@ k:900
 D:iproute2-minimal
 i:ifupdown-ng iproute2-minimal
 
-C:Q177rPHFJIMrWlQ7UIYLLkCpAaIjk=
-P:krb5-dev
-V:1.19.3-r0
-A:ppc64le
-S:151684
-I:888832
-T:The Kerberos network authentication system (development files)
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1648054462
-c:6df46069ef5dcfaa7e00492bc163b57514c131a2
-D:e2fsprogs-dev krb5-libs=1.19.3-r0 krb5-server-ldap=1.19.3-r0 pkgconfig
-p:pc:gssrpc=1.19.3 pc:kadm-client=1.19.3 pc:kadm-server=1.19.3 pc:kdb=1.19.3 pc:krb5-gssapi=1.19.3 pc:krb5=1.19.3 pc:mit-krb5-gssapi=1.19.3 pc:mit-krb5=1.19.3 cmd:krb5-config=1.19.3-r0
-
 C:Q1wlsIghsdbXmPCDZmwcCHCqaNbsQ=
 P:opennhrp-doc
 V:0.14.1-r7
@@ -43999,6 +43968,21 @@ t:1606187649
 c:274e5993efabfbd2cec9af737760ccbcaf8633c1
 D:so:libc.musl-ppc64le.so.1
 p:cmd:mt=1.4-r0 cmd:stinit=1.4-r0
+
+C:Q1S1SQYma1jNP9YpQMVHhro84J604=
+P:krb5-doc
+V:1.19.4-r0
+A:ppc64le
+S:86950
+I:233472
+T:The Kerberos network authentication system (documentation)
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1669067724
+c:4d933a1fa3d87c37caffc6dcef37f52ba7183488
+i:docs krb5=1.19.4-r0
 
 C:Q1ApeWNwDxBBN6Eui728Tmiiq2Rsk=
 P:spice-protocol
@@ -47648,6 +47632,22 @@ t:1586114186
 c:596cd15e692776222d49da2700c6041b39ffbea9
 D:libbz2=1.0.8-r1
 
+C:Q11c2eov3U44uDWNyxCSr9RdTvlJw=
+P:krb5-libs
+V:1.19.4-r0
+A:ppc64le
+S:861723
+I:2662400
+T:The shared libraries used by Kerberos 5
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1669067724
+c:4d933a1fa3d87c37caffc6dcef37f52ba7183488
+D:krb5-conf so:libc.musl-ppc64le.so.1 so:libcom_err.so.2 so:libcrypto.so.1.1 so:libkeyutils.so.1 so:libssl.so.1.1 so:libverto.so.1
+p:so:libgssapi_krb5.so.2=2.2 so:libgssrpc.so.4=4.2 so:libk5crypto.so.3=3.1 so:libkadm5clnt_mit.so.12=12.0 so:libkadm5srv_mit.so.12=12.0 so:libkdb5.so.10=10.0 so:libkrad.so.0=0.0 so:libkrb5.so.3=3.3 so:libkrb5support.so.0=0.1
+
 C:Q11xLb31w+Awv3ZjLLqLecIbC1R8E=
 P:popt-dev
 V:1.18-r0
@@ -49675,22 +49675,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1649689448
 c:4536f8a2b4b4b8bb1a3e5a82d429c385e0e1ea05
 i:docs libshout=2.4.6-r0
-
-C:Q1GYOwFs33A1Q/eGOMMpZ6yw508N8=
-P:krb5
-V:1.19.3-r0
-A:ppc64le
-S:112330
-I:937984
-T:The Kerberos network authentication system
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1648054462
-c:6df46069ef5dcfaa7e00492bc163b57514c131a2
-D:krb5-conf so:libc.musl-ppc64le.so.1 so:libcom_err.so.2 so:libgssapi_krb5.so.2 so:libk5crypto.so.3 so:libkadm5clnt_mit.so.12 so:libkadm5srv_mit.so.12 so:libkdb5.so.10 so:libkrb5.so.3 so:libkrb5support.so.0 so:libss.so.2
-p:cmd:gss-client=1.19.3-r0 cmd:k5srvutil=1.19.3-r0 cmd:kadmin=1.19.3-r0 cmd:kdestroy=1.19.3-r0 cmd:kinit=1.19.3-r0 cmd:klist=1.19.3-r0 cmd:kpasswd=1.19.3-r0 cmd:ksu=1.19.3-r0 cmd:kswitch=1.19.3-r0 cmd:ktutil=1.19.3-r0 cmd:kvno=1.19.3-r0 cmd:sim_client=1.19.3-r0 cmd:uuclient=1.19.3-r0
 
 C:Q1DBVvSftaFYBo9Pz8VLIOecBnl/M=
 P:spandsp
@@ -53632,6 +53616,22 @@ t:1627487158
 c:82cd57e9e6eca0b0bcf8673a3e25d528f1681575
 i:docs perl-device-serialport=1.04-r15
 
+C:Q149On/KQDRDLGAeOK85gm0uqUEX4=
+P:krb5
+V:1.19.4-r0
+A:ppc64le
+S:112053
+I:937984
+T:The Kerberos network authentication system
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1669067724
+c:4d933a1fa3d87c37caffc6dcef37f52ba7183488
+D:krb5-conf so:libc.musl-ppc64le.so.1 so:libcom_err.so.2 so:libgssapi_krb5.so.2 so:libk5crypto.so.3 so:libkadm5clnt_mit.so.12 so:libkadm5srv_mit.so.12 so:libkdb5.so.10 so:libkrb5.so.3 so:libkrb5support.so.0 so:libss.so.2
+p:cmd:gss-client=1.19.4-r0 cmd:k5srvutil=1.19.4-r0 cmd:kadmin=1.19.4-r0 cmd:kdestroy=1.19.4-r0 cmd:kinit=1.19.4-r0 cmd:klist=1.19.4-r0 cmd:kpasswd=1.19.4-r0 cmd:ksu=1.19.4-r0 cmd:kswitch=1.19.4-r0 cmd:ktutil=1.19.4-r0 cmd:kvno=1.19.4-r0 cmd:sim_client=1.19.4-r0 cmd:uuclient=1.19.4-r0
+
 C:Q1xJmJu59wkJ51XCUXg4MMoY2sFn0=
 P:perl-devel-checklib-doc
 V:1.16-r0
@@ -54449,22 +54449,6 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.3 so:libc.musl-ppc64le.so.1
 i:lua-cjson=2.1.0-r10 lua5.3
 
-C:Q1tYuMHjuGN6nlz1ZcJfMLYbqeVDM=
-P:krb5-server-openrc
-V:1.19.3-r0
-A:ppc64le
-S:2116
-I:24576
-T:The KDC and related programs for Kerberos 5 (OpenRC init scripts)
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1648054462
-c:6df46069ef5dcfaa7e00492bc163b57514c131a2
-D:krb5-conf
-i:krb5-server=1.19.3-r0 openrc
-
 C:Q1tniNis+KP8rIj2uUsS5MbeRCamw=
 P:uwsgi-router_radius
 V:2.0.20-r0
@@ -54745,6 +54729,22 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl perl-cache-cache perl-log-any perl-html-parser perl-class-container perl-params-validate perl-exception-class perl-cgi
 p:cmd:convert0.6.README=1.59-r1 cmd:convert0.6.pl=1.59-r1 cmd:convert0.8.README=1.59-r1 cmd:convert0.8.pl=1.59-r1 cmd:mason.pl=1.59-r1
+
+C:Q1BZesHvS6jPGD4wv5iKugvc5pQOo=
+P:krb5-server
+V:1.19.4-r0
+A:ppc64le
+S:242602
+I:1269760
+T:The KDC and related programs for Kerberos 5
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1669067724
+c:4d933a1fa3d87c37caffc6dcef37f52ba7183488
+D:libverto-libev so:libc.musl-ppc64le.so.1 so:libcom_err.so.2 so:libgssapi_krb5.so.2 so:libgssrpc.so.4 so:libk5crypto.so.3 so:libkadm5clnt_mit.so.12 so:libkadm5srv_mit.so.12 so:libkdb5.so.10 so:libkdb_ldap.so.1 so:libkrb5.so.3 so:libkrb5support.so.0 so:libss.so.2 so:libverto.so.1
+p:cmd:gss-server=1.19.4-r0 cmd:kadmin.local=1.19.4-r0 cmd:kadmind=1.19.4-r0 cmd:kdb5_ldap_util=1.19.4-r0 cmd:kdb5_util=1.19.4-r0 cmd:kprop=1.19.4-r0 cmd:kpropd=1.19.4-r0 cmd:kproplog=1.19.4-r0 cmd:krb5-send-pr=1.19.4-r0 cmd:krb5kdc=1.19.4-r0 cmd:sclient=1.19.4-r0 cmd:sim_server=1.19.4-r0 cmd:sserver=1.19.4-r0 cmd:uuserver=1.19.4-r0
 
 C:Q1JubUfA3thSv1R80EL6FWjtwlvuQ=
 P:apkbuild-cpan
@@ -63460,22 +63460,6 @@ t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.4 so:libc.musl-ppc64le.so.1
 i:lua-stringy=0.5.1-r2 lua5.4
-
-C:Q1Z5yXNRjl0DcCy4XHgW6M7NdgBT0=
-P:krb5-server-ldap
-V:1.19.3-r0
-A:ppc64le
-S:51043
-I:278528
-T:The LDAP storage plugin for the Kerberos 5 KDC
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1648054462
-c:6df46069ef5dcfaa7e00492bc163b57514c131a2
-D:krb5-conf so:libc.musl-ppc64le.so.1 so:libcom_err.so.2 so:libgssrpc.so.4 so:libkadm5srv_mit.so.12 so:libkdb5.so.10 so:libkrb5.so.3 so:libkrb5support.so.0 so:libldap.so.2
-p:so:libkdb_ldap.so.1=1.0
 
 C:Q1vDINQ0bFWsJeH6V3AR2OPMH5CKY=
 P:mysql-bench
@@ -73444,6 +73428,22 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
+
+C:Q1bQgM+wIjokLDzEnseTIAnMQPXsk=
+P:krb5-server-ldap
+V:1.19.4-r0
+A:ppc64le
+S:50869
+I:278528
+T:The LDAP storage plugin for the Kerberos 5 KDC
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1669067724
+c:4d933a1fa3d87c37caffc6dcef37f52ba7183488
+D:krb5-conf so:libc.musl-ppc64le.so.1 so:libcom_err.so.2 so:libgssrpc.so.4 so:libkadm5srv_mit.so.12 so:libkdb5.so.10 so:libkrb5.so.3 so:libkrb5support.so.0 so:libldap.so.2
+p:so:libkdb_ldap.so.1=1.0
 
 C:Q1L8G0XBG62S90qlpCZI9xE0LlGj4=
 P:git-p4
