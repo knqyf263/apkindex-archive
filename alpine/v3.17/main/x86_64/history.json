@@ -60762,7 +60762,8 @@
     "yash-doc": {
       "origin": "yash",
       "versions": {
-        "2.53-r1": 1667235976
+        "2.53-r1": 1667235976,
+        "2.53-r2": 1669034544
       }
     },
     "brotli-static": {
@@ -60774,7 +60775,8 @@
     "git-yash-completion": {
       "origin": "yash",
       "versions": {
-        "2.53-r1": 1667235976
+        "2.53-r1": 1667235976,
+        "2.53-r2": 1669034544
       },
       "dependencies": [
         "yash-completion"
@@ -60783,13 +60785,15 @@
     "yash-completion": {
       "origin": "yash",
       "versions": {
-        "2.53-r1": 1667235976
+        "2.53-r1": 1667235976,
+        "2.53-r2": 1669034544
       }
     },
     "valgrind-yash-completion": {
       "origin": "yash",
       "versions": {
-        "2.53-r1": 1667235976
+        "2.53-r1": 1667235976,
+        "2.53-r2": 1669034544
       },
       "dependencies": [
         "yash-completion"
@@ -60798,7 +60802,8 @@
     "yash": {
       "origin": "yash",
       "versions": {
-        "2.53-r1": 1667235976
+        "2.53-r1": 1667235976,
+        "2.53-r2": 1669034544
       },
       "dependencies": [
         "/bin/sh",
@@ -60806,13 +60811,14 @@
         "so:libncursesw.so.6"
       ],
       "provides": [
-        "cmd:yash=2.53-r1"
+        "cmd:yash=2.53-r2"
       ]
     },
     "subversion-yash-completion": {
       "origin": "yash",
       "versions": {
-        "2.53-r1": 1667235976
+        "2.53-r1": 1667235976,
+        "2.53-r2": 1669034544
       },
       "dependencies": [
         "yash-completion"
@@ -60821,7 +60827,8 @@
     "openssh-client-yash-completion": {
       "origin": "yash",
       "versions": {
-        "2.53-r1": 1667235976
+        "2.53-r1": 1667235976,
+        "2.53-r2": 1669034544
       },
       "dependencies": [
         "yash-completion"
@@ -61305,6 +61312,18 @@
         "cmd:msgmerge=0.3.2-r3",
         "cmd:xgettext=0.3.2-r3"
       ]
+    },
+    "yash-binsh": {
+      "origin": "yash",
+      "versions": {
+        "2.53-r2": 1669034544
+      },
+      "dependencies": [
+        "yash=2.53-r2"
+      ],
+      "provides": [
+        "/bin/sh"
+      ]
     }
   },
   "provide": {
@@ -61754,7 +61773,7 @@
         "version": "3.4-r2"
       },
       "/bin/sh": {
-        "package": "busybox-binsh",
+        "package": "yash-binsh",
         "version": 0
       },
       "rsyslog-omlibdbi": {
