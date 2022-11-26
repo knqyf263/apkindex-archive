@@ -144330,6 +144330,73 @@
       "provides": [
         "postgresql-pltcl"
       ]
+    },
+    "opensmtpd-openrc": {
+      "origin": "opensmtpd",
+      "versions": {
+        "6.8.0p2-r6": 1669426610
+      }
+    },
+    "opensmtpd": {
+      "origin": "opensmtpd",
+      "versions": {
+        "6.8.0p2-r6": 1669426610
+      },
+      "dependencies": [
+        "!postfix",
+        "ca-certificates",
+        "/bin/sh",
+        "libressl3.6-libcrypto",
+        "libressl3.6-libssl",
+        "so:libasr.so.0",
+        "so:libc.musl-armhf.so.1",
+        "so:libdb-5.3.so",
+        "so:libevent-2.1.so.7",
+        "so:libfts.so.0",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:smtp=6.8.0p2-r6",
+        "cmd:smtpctl=6.8.0p2-r6",
+        "cmd:smtpd=6.8.0p2-r6"
+      ]
+    },
+    "opensmtpd-pam": {
+      "origin": "opensmtpd",
+      "versions": {
+        "6.8.0p2-r6": 1669426610
+      },
+      "dependencies": [
+        "opensmtpd=6.8.0p2-r6",
+        "libressl3.6-libcrypto",
+        "libressl3.6-libssl",
+        "so:libasr.so.0",
+        "so:libc.musl-armhf.so.1",
+        "so:libdb-5.3.so",
+        "so:libevent-2.1.so.7",
+        "so:libfts.so.0",
+        "so:libpam.so.0",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:smtpd-pam=6.8.0p2-r6"
+      ]
+    },
+    "opensmtpd-doc": {
+      "origin": "opensmtpd",
+      "versions": {
+        "6.8.0p2-r6": 1669426610
+      }
+    },
+    "opensmtpd-dbg": {
+      "origin": "opensmtpd",
+      "versions": {
+        "6.8.0p2-r6": 1669426610
+      },
+      "dependencies": [
+        "!postfix",
+        "ca-certificates"
+      ]
     }
   },
   "provide": {
