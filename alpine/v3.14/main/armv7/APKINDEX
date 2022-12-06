@@ -171,6 +171,22 @@ c:436e7c57225c2fc147d8915bd2cd3ff373488a33
 D:s6-ipcserver /bin/sh so:libc.musl-armv7.so.1 so:libexecline.so.2.8 so:libskarnet.so.2.10
 p:so:libs6.so.2.10=2.10.0.3 cmd:s6-accessrules-cdb-from-fs cmd:s6-accessrules-fs-from-cdb cmd:s6-cleanfifodir cmd:s6-connlimit cmd:s6-envdir cmd:s6-envuidgid cmd:s6-fdholder-daemon cmd:s6-fdholder-delete cmd:s6-fdholder-getdump cmd:s6-fdholder-list cmd:s6-fdholder-retrieve cmd:s6-fdholder-setdump cmd:s6-fdholder-store cmd:s6-fdholder-transferdump cmd:s6-fdholderd cmd:s6-fghack cmd:s6-ftrig-listen cmd:s6-ftrig-listen1 cmd:s6-ftrig-notify cmd:s6-ftrig-wait cmd:s6-ftrigrd cmd:s6-ioconnect cmd:s6-ipcclient cmd:s6-ipcserver-access cmd:s6-log cmd:s6-mkfifodir cmd:s6-notifyoncheck cmd:s6-permafailon cmd:s6-setlock cmd:s6-setsid cmd:s6-setuidgid cmd:s6-softlimit cmd:s6-sudo cmd:s6-sudoc cmd:s6-sudod cmd:s6-supervise cmd:s6-svc cmd:s6-svdt cmd:s6-svdt-clear cmd:s6-svlisten cmd:s6-svlisten1 cmd:s6-svok cmd:s6-svperms cmd:s6-svscan cmd:s6-svscanctl cmd:s6-svstat cmd:s6-svwait cmd:s6-tai64n cmd:s6-tai64nlocal cmd:s6-usertree-maker cmd:s6lockd cmd:ucspilogd
 
+C:Q17ZiywEdV0pPMnmzsE56+BHOckgI=
+P:libarchive
+V:3.5.3-r1
+A:armv7
+S:276547
+I:475136
+T:library that can create and read several streaming archive formats
+U:https://libarchive.org/
+L:BSD-2-Clause AND BSD-3-Clause AND Public-Domain
+o:libarchive
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1670314973
+c:c6fbf939165d090d4036ec448a3f73d907f6ed4d
+D:so:libacl.so.1 so:libbz2.so.1 so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libexpat.so.1 so:liblz4.so.1 so:liblzma.so.5 so:libz.so.1 so:libzstd.so.1
+p:so:libarchive.so.13=13.5.3
+
 C:Q1Lvf9VJ247PgqCedPrkbft20TsbE=
 P:libnfsidmap
 V:2.5.3-r0
@@ -30064,21 +30080,6 @@ t:1665054037
 c:25f58325e2f7f9e6195e2052de9f494bdffe21a5
 i:openrc strongswan=5.9.1-r3
 
-C:Q1XLUbv+DleTbEHDXHiEByTfkX4Vw=
-P:libarchive-doc
-V:3.5.3-r0
-A:armv7
-S:138191
-I:253952
-T:library that can create and read several streaming archive formats (documentation)
-U:https://libarchive.org/
-L:BSD-2-Clause AND BSD-3-Clause AND Public-Domain
-o:libarchive
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649482039
-c:8c16eb361479deb1ab34766e3470e5915a1d9f90
-i:docs libarchive=3.5.3-r0
-
 C:Q1jx+2OkDnMCE8ax4yCaRglHLq+UQ=
 P:perl-www-robotrules-doc
 V:6.02-r3
@@ -36103,20 +36104,6 @@ t:1599883343
 c:af42beac9d1297ab94458920a41c7a9c190eb97d
 D:so:libc.musl-armv7.so.1 so:liborc-0.4.so.0
 p:cmd:orcc
-
-C:Q1Qc72ejpoxi+48OoauqquzCITw3s=
-P:libarchive-static
-V:3.5.3-r0
-A:armv7
-S:373223
-I:897024
-T:library that can create and read several streaming archive formats (static library)
-U:https://libarchive.org/
-L:BSD-2-Clause AND BSD-3-Clause AND Public-Domain
-o:libarchive
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649482039
-c:8c16eb361479deb1ab34766e3470e5915a1d9f90
 
 C:Q10kjf8ArBfoIfaCgw7bfm/zIMnB0=
 P:musl-nscd-doc
@@ -44897,6 +44884,22 @@ t:1624344029
 c:babf657f3b1af2b2bc8c17e392d250759cc8b2c9
 i:docs rssh=2.3.4-r2
 
+C:Q11XvKQsot13k5oJoiEIJB3u2ZEsg=
+P:libarchive-dev
+V:3.5.3-r1
+A:armv7
+S:23445
+I:118784
+T:library that can create and read several streaming archive formats (development files)
+U:https://libarchive.org/
+L:BSD-2-Clause AND BSD-3-Clause AND Public-Domain
+o:libarchive
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1670314973
+c:c6fbf939165d090d4036ec448a3f73d907f6ed4d
+D:libarchive=3.5.3-r1 pkgconfig
+p:pc:libarchive=3.5.3
+
 C:Q1qDJh8izTY8+uiuBk1lZqbq3qhW8=
 P:swig-doc
 V:4.0.2-r2
@@ -51586,22 +51589,6 @@ t:1601795434
 c:6d2848b0016d85f69ae0ec8efac22736dd28e6e8
 i:docs lua5.3=5.3.6-r0
 
-C:Q11CoHPkFdR8yHUE9go5fTM8zexpQ=
-P:libarchive-dev
-V:3.5.3-r0
-A:armv7
-S:23439
-I:118784
-T:library that can create and read several streaming archive formats (development files)
-U:https://libarchive.org/
-L:BSD-2-Clause AND BSD-3-Clause AND Public-Domain
-o:libarchive
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649482039
-c:8c16eb361479deb1ab34766e3470e5915a1d9f90
-D:libarchive=3.5.3-r0 pkgconfig
-p:pc:libarchive=3.5.3
-
 C:Q1qDnXa2n0qL3jQetB+qnOIcFGCbI=
 P:espeak-dev
 V:1.48.04-r2
@@ -53122,6 +53109,21 @@ t:1610928542
 c:211932f6e55643cd5b8be06197876727615eea78
 D:lua5.4 lua5.4-lub so:libc.musl-armv7.so.1
 i:lua-yaml=1.1.2-r3 lua5.4
+
+C:Q1LOVnTHbVTeXuRJmHpxk+TvsStbU=
+P:libarchive-doc
+V:3.5.3-r1
+A:armv7
+S:138186
+I:253952
+T:library that can create and read several streaming archive formats (documentation)
+U:https://libarchive.org/
+L:BSD-2-Clause AND BSD-3-Clause AND Public-Domain
+o:libarchive
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1670314973
+c:c6fbf939165d090d4036ec448a3f73d907f6ed4d
+i:docs libarchive=3.5.3-r1
 
 C:Q1NKu2eIIw01mmho71h7GHzHb+LHk=
 P:ifupdown-ng-ppp
@@ -54876,6 +54878,20 @@ t:1557246460
 c:f2a9dde5c47ddda67fa90a802dcd7c33b0d2ac65
 D:libxkbfile=1.1.0-r0 pc:kbproto pc:x11 pkgconfig
 p:pc:xkbfile=1.1.0
+
+C:Q1WCkbjTzJp3vM6yvYfZ5USsQx+JE=
+P:libarchive-static
+V:3.5.3-r1
+A:armv7
+S:373234
+I:897024
+T:library that can create and read several streaming archive formats (static library)
+U:https://libarchive.org/
+L:BSD-2-Clause AND BSD-3-Clause AND Public-Domain
+o:libarchive
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1670314973
+c:c6fbf939165d090d4036ec448a3f73d907f6ed4d
 
 C:Q1WhFFXT8Lz39Tc7MgXwfWnrensJI=
 P:cryptsetup-doc
@@ -58300,6 +58316,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1667243010
 c:662168955b4912d8a40a162ded8a001250e95d37
 D:so:libc.musl-armv7.so.1 so:libpam.so.0 so:libreplace-samba4.so so:libtalloc.so.2 so:libwbclient.so.0
+
+C:Q1iJHjmZI9s1KPkHURgCgwfsyvdvI=
+P:libarchive-tools
+V:3.5.3-r1
+A:armv7
+S:595912
+I:987136
+T:libarchive tools bsdtar and bsdcpio
+U:https://libarchive.org/
+L:BSD-2-Clause AND BSD-3-Clause AND Public-Domain
+o:libarchive
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1670314973
+c:c6fbf939165d090d4036ec448a3f73d907f6ed4d
+D:so:libacl.so.1 so:libbz2.so.1 so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libexpat.so.1 so:liblz4.so.1 so:liblzma.so.5 so:libz.so.1 so:libzstd.so.1
+p:cmd:bsdcat cmd:bsdcpio cmd:bsdtar
 
 C:Q1GseWvO7ykqKzzADgSnu67zRVEVU=
 P:cryptsetup-dev
@@ -68548,22 +68580,6 @@ c:48c4d91b5aecafc8ccc3fff3bf1c3fb49d33c153
 D:so:libc.musl-armv7.so.1
 p:cmd:find cmd:xargs
 
-C:Q1qhvU2PKrm82RAhYcNw0jKQNHMxA=
-P:libarchive-tools
-V:3.5.3-r0
-A:armv7
-S:595961
-I:987136
-T:libarchive tools bsdtar and bsdcpio
-U:https://libarchive.org/
-L:BSD-2-Clause AND BSD-3-Clause AND Public-Domain
-o:libarchive
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649482039
-c:8c16eb361479deb1ab34766e3470e5915a1d9f90
-D:so:libacl.so.1 so:libbz2.so.1 so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libexpat.so.1 so:liblz4.so.1 so:liblzma.so.5 so:libz.so.1 so:libzstd.so.1
-p:cmd:bsdcat cmd:bsdcpio cmd:bsdtar
-
 C:Q1/JQyAhAVMUWLwtqAju24LGh0GZQ=
 P:netcf-libs
 V:0.2.8-r6
@@ -69622,22 +69638,6 @@ t:1552821576
 c:b68a86cbe4e58b0c5094e244bb1d4ee7dbebc635
 D:so:libc.musl-armv7.so.1
 p:so:libproxychains4.so=0 cmd:proxychains cmd:proxychains4
-
-C:Q1Derqh6wLMSGMVuHqlNL9NaGRS+s=
-P:libarchive
-V:3.5.3-r0
-A:armv7
-S:276522
-I:475136
-T:library that can create and read several streaming archive formats
-U:https://libarchive.org/
-L:BSD-2-Clause AND BSD-3-Clause AND Public-Domain
-o:libarchive
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649482039
-c:8c16eb361479deb1ab34766e3470e5915a1d9f90
-D:so:libacl.so.1 so:libbz2.so.1 so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libexpat.so.1 so:liblz4.so.1 so:liblzma.so.5 so:libz.so.1 so:libzstd.so.1
-p:so:libarchive.so.13=13.5.3
 
 C:Q17sV0W+hMViTZI+zyd0/92c+ztNE=
 P:perl-html-parser-doc
