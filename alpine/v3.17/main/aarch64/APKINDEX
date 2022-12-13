@@ -9079,6 +9079,21 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl perl-datetime perl-params-validate
 
+C:Q1fartX9cNw7d/47tPaKGE1S8CUo8=
+P:knot-mod-geoip
+V:3.2.4-r0
+A:aarch64
+S:40852
+I:155648
+T:geoip module for Knot DNS
+U:https://www.knot-dns.cz/
+L:GPL-3.0-or-later
+o:knot
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1670942927
+c:ac25ec36eafde0f761ef821946aecf1c266f3843
+D:knot=3.2.4-r0 so:libc.musl-aarch64.so.1 so:libmaxminddb.so.0
+
 C:Q1LwuFHPx9pzX7kZmfX0gc4BTu3nY=
 P:mesa
 V:22.2.5-r0
@@ -9447,21 +9462,6 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1666178347
 c:604540b0ca3a316b18f770d172112112de65082a
 D:so:libbcm_host.so so:libc.musl-aarch64.so.1 so:libdtovl.so so:libvchiq_arm.so so:libvcos.so
-
-C:Q1NdkcpexIEXFHlbARf+OLUdTADiM=
-P:knot-openrc
-V:3.2.3-r0
-A:aarch64
-S:2284
-I:24576
-T:An high-performance authoritative-only DNS server (OpenRC init scripts)
-U:https://www.knot-dns.cz/
-L:GPL-3.0-or-later
-o:knot
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1670809053
-c:b60cc15be368261565cdf7f830a6fcd4cbfe3bfe
-i:openrc knot=3.2.3-r0
 
 C:Q1RWMIxXQzHAXGisQTgkY5Gy2iP4U=
 P:libunwind-dbg
@@ -12077,6 +12077,22 @@ t:1659429320
 c:39cde24fb54a667a6730bdaec3233184227131f6
 i:openrc mini_httpd=1.30-r4
 
+C:Q1exDklWhHEWQUdZESmJXil3OT+Vk=
+P:knot-dev
+V:3.2.4-r0
+A:aarch64
+S:64668
+I:512000
+T:An high-performance authoritative-only DNS server (development files)
+U:https://www.knot-dns.cz/
+L:GPL-3.0-or-later
+o:knot
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1670942927
+c:ac25ec36eafde0f761ef821946aecf1c266f3843
+D:knot=3.2.4-r0 knot-libs-static=3.2.4-r0 knot-utils=3.2.4-r0 knot-libs=3.2.4-r0 pc:gnutls>=3.3 pkgconfig
+p:pc:knotd=3.2.4 pc:libdnssec=3.2.4 pc:libknot=3.2.4 pc:libzscanner=3.2.4
+
 C:Q1fMJA3Glf8DibC3nMRIHKwf9xGrY=
 P:perl-test-mockobject-doc
 V:1.20200122-r1
@@ -12320,21 +12336,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1627487152
 c:ca0c7a580609de6e9273d08815cd144c014a152c
 D:perl
-
-C:Q1zOHaJRfUbAg3ECkmAhWjHUcq/8U=
-P:knot-mod-geoip
-V:3.2.3-r0
-A:aarch64
-S:40858
-I:155648
-T:geoip module for Knot DNS
-U:https://www.knot-dns.cz/
-L:GPL-3.0-or-later
-o:knot
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1670809053
-c:b60cc15be368261565cdf7f830a6fcd4cbfe3bfe
-D:knot=3.2.3-r0 so:libc.musl-aarch64.so.1 so:libmaxminddb.so.0
 
 C:Q1PhetlDPKrUz0+bdh0pne5eRThCw=
 P:lua-posixtz
@@ -13605,6 +13606,22 @@ m:ScrumpyJack <scrumpyjack@st.ilet.to>
 t:1665753996
 c:84d02e8c3abb163d4ca89e62e831c4116b9ea195
 i:docs ciwiki=2.0.8-r1
+
+C:Q19X7RqMNshJQhEH6IxtOqlQa8H4o=
+P:knot-libs
+V:3.2.4-r0
+A:aarch64
+S:265045
+I:811008
+T:Libraries used by the Knot DNS server and client applications
+U:https://www.knot-dns.cz/
+L:GPL-3.0-or-later
+o:knot
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1670942927
+c:ac25ec36eafde0f761ef821946aecf1c266f3843
+D:so:libc.musl-aarch64.so.1 so:libgnutls.so.30 so:liblmdb.so.0
+p:so:libdnssec.so.9=9.0.0 so:libknot.so.13=13.0.0 so:libzscanner.so.4=4.0.0
 
 C:Q1xxl+acY1Xy1ApaD01jN5gO4RFME=
 P:lmdb-dev
@@ -16175,21 +16192,6 @@ c:52077bc1719040e17b2589c3bd39316625c53100
 D:ghostscript bash tiff-tools
 i:hylafax=6.0.7-r4 lang
 
-C:Q1B8yFgE2l0nwcWBSJhu6h6j/qXI4=
-P:knot-mod-dnstap
-V:3.2.3-r0
-A:aarch64
-S:9744
-I:90112
-T:dnstap module for Knot DNS
-U:https://www.knot-dns.cz/
-L:GPL-3.0-or-later
-o:knot
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1670809053
-c:b60cc15be368261565cdf7f830a6fcd4cbfe3bfe
-D:knot=3.2.3-r0 so:libc.musl-aarch64.so.1 so:libfstrm.so.0 so:libprotobuf-c.so.1
-
 C:Q112kqI3xLz/NoDRVzWtPX6WbPhlc=
 P:uwsgi-router_basicauth
 V:2.0.21-r0
@@ -17790,6 +17792,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1630251065
 c:ca69744d716fb4fc75f2442df6e3e9c972d85cf2
 D:perl
+
+C:Q1m9Un8OxIyUC57F+05WrHwpBNLKs=
+P:knot
+V:3.2.4-r0
+A:aarch64
+S:594840
+I:1503232
+T:An high-performance authoritative-only DNS server
+U:https://www.knot-dns.cz/
+L:GPL-3.0-or-later
+o:knot
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1670942927
+c:ac25ec36eafde0f761ef821946aecf1c266f3843
+D:/bin/sh so:libc.musl-aarch64.so.1 so:libcap-ng.so.0 so:libdnssec.so.9 so:libedit.so.0 so:libknot.so.13 so:liblmdb.so.0 so:liburcu.so.8 so:libzscanner.so.4
+p:cmd:knotc=3.2.4-r0 cmd:knotd=3.2.4-r0
 
 C:Q17OOqPJyZ9UxTYVT657hjT0vBZK4=
 P:fish-lang
@@ -29488,6 +29506,21 @@ k:14
 D:postgresql14-client postgresql-common tzdata /bin/sh so:libc.musl-aarch64.so.1 so:libcrypto.so.3 so:libicui18n.so.72 so:libicuuc.so.72 so:libldap.so.2 so:libpq.so.5 so:libssl.so.3 so:libxml2.so.2
 p:postgresql cmd:pg_archivecleanup cmd:pg_waldump cmd:pg_rewind cmd:pg_checksums cmd:postgres cmd:pg_resetwal cmd:pg_upgrade cmd:initdb cmd:postmaster cmd:pg_controldata cmd:pg_test_fsync cmd:pg_ctl cmd:pg_test_timing
 
+C:Q1GOSynv7Bz2IQ/Ub96hBqRJQTQDk=
+P:knot-mod-dnstap
+V:3.2.4-r0
+A:aarch64
+S:9742
+I:90112
+T:dnstap module for Knot DNS
+U:https://www.knot-dns.cz/
+L:GPL-3.0-or-later
+o:knot
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1670942927
+c:ac25ec36eafde0f761ef821946aecf1c266f3843
+D:knot=3.2.4-r0 so:libc.musl-aarch64.so.1 so:libfstrm.so.0 so:libprotobuf-c.so.1
+
 C:Q1b9tEOT1XjiUui9rTrbHDXgrFCzo=
 P:cairo
 V:1.17.6-r3
@@ -32855,22 +32888,6 @@ c:c5a56d9a0db850192573dc042cb7524167d79fd1
 D:python3 py3-ptyprocess
 p:py-pexpect=4.8.0-r3 py3.10:pexpect=4.8.0-r3
 
-C:Q1020PyKz+TTwRx18GmPTHqCIFWFY=
-P:knot-libs
-V:3.2.3-r0
-A:aarch64
-S:265039
-I:811008
-T:Libraries used by the Knot DNS server and client applications
-U:https://www.knot-dns.cz/
-L:GPL-3.0-or-later
-o:knot
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1670809053
-c:b60cc15be368261565cdf7f830a6fcd4cbfe3bfe
-D:so:libc.musl-aarch64.so.1 so:libgnutls.so.30 so:liblmdb.so.0
-p:so:libdnssec.so.9=9.0.0 so:libknot.so.13=13.0.0 so:libzscanner.so.4=4.0.0
-
 C:Q1gwxtCEaBTiD+3cdm1iwRQxH4A1k=
 P:kamailio-ims
 V:5.6.2-r1
@@ -33287,6 +33304,21 @@ t:1668604382
 c:3f16cadf8bde7421c572ddfac43d80ffbb16d5cd
 D:samba-common=4.16.7-r0 samba-server=4.16.7-r0 samba-winbind=4.16.7-r0 py3-samba=4.16.7-r0 py3-dnspython py3-markdown tdb so:libMESSAGING-SEND-samba4.so so:libMESSAGING-samba4.so so:libasn1util-samba4.so so:libauth-samba4.so so:libauth4-samba4.so so:libauthkrb5-samba4.so so:libc.musl-aarch64.so.1 so:libcli-cldap-samba4.so so:libcli-ldap-common-samba4.so so:libcli-ldap-samba4.so so:libcliauth-samba4.so so:libcluster-samba4.so so:libcmdline-samba4.so so:libcom-err-samba4.so so:libcommon-auth-samba4.so so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdsdb-module-samba4.so so:libevents-samba4.so so:libflag-mapping-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgnutls.so.30 so:libkrb5-samba4.so so:libkrb5samba-samba4.so so:libldb.so.2 so:libldbsamba-samba4.so so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr.so.2 so:libnetif-samba4.so so:libpopt.so.0 so:libposix-eadb-samba4.so so:libprocess-model-samba4.so so:libreplace-samba4.so so:libsamba-credentials.so.1 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamdb-common-samba4.so so:libsamdb.so.0 so:libsecrets3-samba4.so so:libservice-samba4.so so:libsmbconf.so.0 so:libsmbd-base-samba4.so so:libsmbd-shim-samba4.so so:libsocket-blocking-samba4.so so:libtalloc.so.2 so:libtdb-wrap-samba4.so so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:libtime-basic-samba4.so
 p:so:libsmbpasswdparser-samba4.so=0 cmd:samba-gpupdate=4.16.7-r0 cmd:samba-tool=4.16.7-r0 cmd:samba=4.16.7-r0 cmd:samba_dnsupdate=4.16.7-r0 cmd:samba_downgrade_db=4.16.7-r0 cmd:samba_kcc=4.16.7-r0 cmd:samba_spnupdate=4.16.7-r0 cmd:samba_upgradedns=4.16.7-r0
+
+C:Q1SszYkeDC4Ewz1lR//BREQiBd7lo=
+P:knot-openrc
+V:3.2.4-r0
+A:aarch64
+S:2291
+I:24576
+T:An high-performance authoritative-only DNS server (OpenRC init scripts)
+U:https://www.knot-dns.cz/
+L:GPL-3.0-or-later
+o:knot
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1670942927
+c:ac25ec36eafde0f761ef821946aecf1c266f3843
+i:openrc knot=3.2.4-r0
 
 C:Q1fJfYczAPRVW2qXeR4cCZrG1htqI=
 P:cyrus-sasl-crammd5
@@ -39728,6 +39760,20 @@ t:1649878552
 c:b9e3c35e9fe2b964bcc5e147ab9e11b2dd1886d6
 D:so:libc.musl-aarch64.so.1 so:libe2p.so.2 so:libglib-2.0.so.0 so:libgpm.so.2 so:libintl.so.8 so:libslang.so.2 so:libssh2.so.1
 p:cmd:mc=4.8.28-r0 cmd:mcdiff=4.8.28-r0 cmd:mcedit=4.8.28-r0 cmd:mcview=4.8.28-r0
+
+C:Q1GRJuA1YPHb+bw3Wo+82GjCALoJ8=
+P:knot-libs-static
+V:3.2.4-r0
+A:aarch64
+S:327972
+I:1187840
+T:An high-performance authoritative-only DNS server (static library)
+U:https://www.knot-dns.cz/
+L:GPL-3.0-or-later
+o:knot
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1670942927
+c:ac25ec36eafde0f761ef821946aecf1c266f3843
 
 C:Q1etY5fBhNfCpRNYKIxk2iKFw6/v4=
 P:xl2tpd-openrc
@@ -47297,22 +47343,6 @@ t:1665443208
 c:84b14a42cb42f0b09d1df8d5fec2555f2bd6c76d
 i:docs perl-convert-uulib=1.8-r0
 
-C:Q1CbXQrdtxJDNf1p49fUQjmoO/R8E=
-P:knot
-V:3.2.3-r0
-A:aarch64
-S:594314
-I:1503232
-T:An high-performance authoritative-only DNS server
-U:https://www.knot-dns.cz/
-L:GPL-3.0-or-later
-o:knot
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1670809053
-c:b60cc15be368261565cdf7f830a6fcd4cbfe3bfe
-D:/bin/sh so:libc.musl-aarch64.so.1 so:libcap-ng.so.0 so:libdnssec.so.9 so:libedit.so.0 so:libknot.so.13 so:liblmdb.so.0 so:liburcu.so.8 so:libzscanner.so.4
-p:cmd:knotc=3.2.3-r0 cmd:knotd=3.2.3-r0
-
 C:Q1uw10B++lgdBBwUIe6cn3vgusr3A=
 P:linux-firmware-ti
 V:20221109-r0
@@ -48184,6 +48214,21 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1649606273
 c:4bcaab026c64dee52b0053c51db5e794f86051c9
 i:openrc haveged=1.9.18-r0
+
+C:Q1zFPotw8JaJoVKQTjXVKwhnPTYHY=
+P:knot-doc
+V:3.2.4-r0
+A:aarch64
+S:45723
+I:102400
+T:An high-performance authoritative-only DNS server (documentation)
+U:https://www.knot-dns.cz/
+L:GPL-3.0-or-later
+o:knot
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1670942927
+c:ac25ec36eafde0f761ef821946aecf1c266f3843
+i:docs knot=3.2.4-r0
 
 C:Q1/aktH2Q1kowW4FuBwT1IcCCETac=
 P:perl-class-tiny
@@ -53986,21 +54031,6 @@ t:1659792088
 c:0714a84b7f79009ae8b96aef50216ed72f54b885
 D:so:libc.musl-aarch64.so.1 so:libfontenc.so.1 so:libfreetype.so.6 so:libz.so.1
 p:so:libXfont.so.1=1.4.1
-
-C:Q11CECn8U/dHnIiC6H4jHTycA7Vy8=
-P:knot-doc
-V:3.2.3-r0
-A:aarch64
-S:45755
-I:102400
-T:An high-performance authoritative-only DNS server (documentation)
-U:https://www.knot-dns.cz/
-L:GPL-3.0-or-later
-o:knot
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1670809053
-c:b60cc15be368261565cdf7f830a6fcd4cbfe3bfe
-i:docs knot=3.2.3-r0
 
 C:Q1pI40wU4pKjNXQ9Lmhmof9l7mnjw=
 P:perl-mailtools-doc
@@ -64696,20 +64726,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-test-tcp=2.22-r1
 
-C:Q1VHplMyEQEPDuWyOOUMqlQqjXqiY=
-P:knot-libs-static
-V:3.2.3-r0
-A:aarch64
-S:327972
-I:1187840
-T:An high-performance authoritative-only DNS server (static library)
-U:https://www.knot-dns.cz/
-L:GPL-3.0-or-later
-o:knot
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1670809053
-c:b60cc15be368261565cdf7f830a6fcd4cbfe3bfe
-
 C:Q19LCAoI845lVCU6sylc+ulWWoacM=
 P:nginx-mod-http-upload
 V:1.22.1-r0
@@ -67935,22 +67951,6 @@ t:1667998048
 c:0184fab176769150408a920c29f8dfe4f22bf483
 D:uwsgi uwsgi-corerouter so:libc.musl-aarch64.so.1
 
-C:Q1qMDjnaBnKWf0XLtsy1TbwlDPELE=
-P:knot-utils
-V:3.2.3-r0
-A:aarch64
-S:1456405
-I:3657728
-T:Knot and DNS client utilities shipped with the Knot DNS server
-U:https://www.knot-dns.cz/
-L:GPL-3.0-or-later
-o:knot
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1670809053
-c:b60cc15be368261565cdf7f830a6fcd4cbfe3bfe
-D:so:libc.musl-aarch64.so.1 so:libdnssec.so.9 so:libedit.so.0 so:libgnutls.so.30 so:libidn.so.12 so:libknot.so.13 so:liblmdb.so.0 so:libnghttp2.so.14 so:liburcu.so.8 so:libzscanner.so.4
-p:cmd:kcatalogprint=3.2.3-r0 cmd:kdig=3.2.3-r0 cmd:keymgr=3.2.3-r0 cmd:khost=3.2.3-r0 cmd:kjournalprint=3.2.3-r0 cmd:knsec3hash=3.2.3-r0 cmd:knsupdate=3.2.3-r0 cmd:kzonecheck=3.2.3-r0 cmd:kzonesign=3.2.3-r0
-
 C:Q1XDCA9VHU88aw6qKaoyxp5vLe0sQ=
 P:vanessa_adt
 V:0.0.9-r1
@@ -68105,6 +68105,22 @@ c:20e6b236f4cf9160786b25063929006d064a1c4f
 D:kea-common=2.2.0-r2 so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libkea-asiolink.so.40 so:libkea-cc.so.39 so:libkea-cfgclient.so.36 so:libkea-exceptions.so.13 so:libkea-hooks.so.57 so:libkea-http.so.42 so:libkea-log.so.35 so:libkea-process.so.40 so:libstdc++.so.6
 p:cmd:kea-ctrl-agent=2.2.0-r2
 
+C:Q1cH60/7cR3E+tndp/m4c6pqlYwJQ=
+P:knot-utils
+V:3.2.4-r0
+A:aarch64
+S:1457567
+I:3657728
+T:Knot and DNS client utilities shipped with the Knot DNS server
+U:https://www.knot-dns.cz/
+L:GPL-3.0-or-later
+o:knot
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1670942927
+c:ac25ec36eafde0f761ef821946aecf1c266f3843
+D:so:libc.musl-aarch64.so.1 so:libdnssec.so.9 so:libedit.so.0 so:libgnutls.so.30 so:libidn.so.12 so:libknot.so.13 so:liblmdb.so.0 so:libnghttp2.so.14 so:liburcu.so.8 so:libzscanner.so.4
+p:cmd:kcatalogprint=3.2.4-r0 cmd:kdig=3.2.4-r0 cmd:keymgr=3.2.4-r0 cmd:khost=3.2.4-r0 cmd:kjournalprint=3.2.4-r0 cmd:knsec3hash=3.2.4-r0 cmd:knsupdate=3.2.4-r0 cmd:kzonecheck=3.2.4-r0 cmd:kzonesign=3.2.4-r0
+
 C:Q1s9dWGsdE8OAzxoNmFhSqe8d/K4Q=
 P:libmaxminddb-static
 V:1.7.1-r0
@@ -68208,22 +68224,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1668248901
 c:d2156fc658762bab14b23937242fe5c5ae7fa3e8
 p:linux-firmware-any
-
-C:Q16uum+MFkubcHN6uVaAw0AOzfJEs=
-P:knot-dev
-V:3.2.3-r0
-A:aarch64
-S:64659
-I:512000
-T:An high-performance authoritative-only DNS server (development files)
-U:https://www.knot-dns.cz/
-L:GPL-3.0-or-later
-o:knot
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1670809053
-c:b60cc15be368261565cdf7f830a6fcd4cbfe3bfe
-D:knot=3.2.3-r0 knot-libs-static=3.2.3-r0 knot-utils=3.2.3-r0 knot-libs=3.2.3-r0 pc:gnutls>=3.3 pkgconfig
-p:pc:knotd=3.2.3 pc:libdnssec=3.2.3 pc:libknot=3.2.3 pc:libzscanner=3.2.3
 
 C:Q1G7BHMrMtMqNn8xOWEsyrwnX2nCE=
 P:pam-pgsql-doc
