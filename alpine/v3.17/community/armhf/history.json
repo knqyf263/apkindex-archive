@@ -145325,6 +145325,53 @@
         "cmd:plasma_store=10.0.1-r2",
         "py3.10:pyarrow=10.0.1-r2"
       ]
+    },
+    "libgdiplus-dev": {
+      "origin": "libgdiplus",
+      "versions": {
+        "6.1-r1": 1671219924
+      },
+      "dependencies": [
+        "tiff-dev",
+        "cairo-dev",
+        "libexif-dev",
+        "giflib-dev",
+        "glib-dev",
+        "pango-dev",
+        "libgdiplus=6.1-r1",
+        "pc:glib-2.0",
+        "pc:gmodule-2.0",
+        "pc:gthread-2.0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libgdiplus=6.1"
+      ]
+    },
+    "libgdiplus": {
+      "origin": "libgdiplus",
+      "versions": {
+        "6.1-r1": 1671219924
+      },
+      "dependencies": [
+        "so:libX11.so.6",
+        "so:libc.musl-armhf.so.1",
+        "so:libcairo.so.2",
+        "so:libexif.so.12",
+        "so:libfontconfig.so.1",
+        "so:libgif.so.7",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libharfbuzz.so.0",
+        "so:libjpeg.so.8",
+        "so:libpango-1.0.so.0",
+        "so:libpangocairo-1.0.so.0",
+        "so:libpng16.so.16",
+        "so:libtiff.so.5"
+      ],
+      "provides": [
+        "so:libgdiplus.so.0=0.0.0"
+      ]
     }
   },
   "provide": {
@@ -158946,6 +158993,10 @@
       "libgedit-43.so": {
         "package": "gedit",
         "version": "0"
+      },
+      "libgdiplus.so.0": {
+        "package": "libgdiplus",
+        "version": "0.0.0"
       }
     }
   }
