@@ -704,21 +704,6 @@ c:5f006bcb6276c6e1619e10459b7588f378916123
 D:linux-headers libdrm=2.4.114-r0 pkgconfig
 p:pc:libdrm=2.4.114 pc:libdrm_amdgpu=2.4.114 pc:libdrm_etnaviv=2.4.114 pc:libdrm_exynos=0.7 pc:libdrm_freedreno=2.4.114 pc:libdrm_nouveau=2.4.114 pc:libdrm_omap=0.6 pc:libdrm_radeon=2.4.114 pc:libdrm_tegra=2.4.114 pc:libdrm_vc4=2.4.114
 
-C:Q1H9hoQdL5RkqvjEcM0XBWFMOWalM=
-P:zfs-lts-dev
-V:5.15.82-r1
-A:s390x
-S:468720
-I:3702784
-T:ZFS Linux kernel modules (development files)
-U:https://openzfs.org
-L:CDDL-1.0
-o:zfs-lts
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1670838069
-c:240c12b7b519395ed5a22402ab201c23bcaa982f
-D:glib-dev e2fsprogs-dev util-linux-dev libtirpc-dev linux-lts-dev=5.15.82-r0
-
 C:Q1dpcPXhATloIvqfLIYGtHrtg9Htc=
 P:powertop
 V:2.15-r0
@@ -5704,6 +5689,21 @@ c:13c7f6500189062c3e0b56487b19df2a7fd4812d
 D:so:libc.musl-s390x.so.1 so:libharfbuzz.so.0 so:libicuuc.so.72
 p:so:libharfbuzz-icu.so.0=0.50301.0
 
+C:Q15ldE8OLW3Tbab5L7aDe8+Olnpi0=
+P:linux-lts-dev
+V:5.15.83-r0
+A:s390x
+S:18615736
+I:125927424
+T:Headers and script for third party modules for lts kernel
+U:https://www.kernel.org
+L:GPL-2.0
+o:linux-lts
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1671182490
+c:2ba1e751153bc1dea846ab9f183c3a142e0bc131
+D:perl gmp-dev mpc1-dev mpfr-dev elfutils-dev bash flex bison zstd so:libc.musl-s390x.so.1 so:libcrypto.so.3 so:libstdc++.so.6
+
 C:Q1p8dPR0PJMXA6BMYQujKMLK7lYEA=
 P:ruby-rss-doc
 V:0.2.9-r1
@@ -10404,21 +10404,6 @@ t:1667712428
 c:7d2a169277bf37c9cf7a387d3d9516dac85afa89
 D:so:libc.musl-s390x.so.1 so:libgssapi.so.3
 
-C:Q1FGC6wzEHN+8B2Ugm/7Syl2QPICY=
-P:linux-lts-doc
-V:5.15.82-r0
-A:s390x
-S:11133746
-I:59650048
-T:Linux lts kernel (documentation)
-U:https://www.kernel.org
-L:GPL-2.0
-o:linux-lts
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1670838069
-c:138cc8ebec97e788de98295ac3ac6b7a8f7a1d0e
-i:docs linux-lts=5.15.82-r0
-
 C:Q1FZBruq+niPtfUIMD+zDr3qOgM7w=
 P:docbook2x
 V:0.8.8-r8
@@ -13201,6 +13186,23 @@ m:Nathan Angelacos <nangel@alpinelinux.org>
 t:1666013143
 c:23b488ca25c36fd8b1cfebe80c0ffdb4b14942ef
 D:kamailio so:libc.musl-s390x.so.1 so:libcurl.so.4 so:libsrdb1.so.1 so:libxml2.so.2
+
+C:Q1cowxoCWlUfAE3eb695KKf7figHk=
+P:zfs-lts
+V:5.15.83-r1
+A:s390x
+S:1708520
+I:1806336
+T:ZFS Linux kernel modules
+U:https://openzfs.org
+L:CDDL-1.0
+o:zfs-lts
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1671182490
+c:25d3765409f90a294ef44f73f8c87d00f659a691
+D:linux-lts=5.15.83-r0
+p:spl-vanilla=5.15.83-r1
+i:zfs linux-lts=5.15.83-r0
 
 C:Q1xc0cOK4L1BceY3oZs4Ug0dSwhw0=
 P:samba-test
@@ -33141,6 +33143,22 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.4 so:libc.musl-s390x.so.1
 i:lua-stringy=0.5.1-r2 lua5.4
 
+C:Q1xU02X2CBiNf3BMWG1GkwNP5VsWI=
+P:xtables-addons-lts
+V:5.15.83-r1
+A:s390x
+S:94760
+I:163840
+T:Iptables extensions kernel modules
+U:https://inai.de/projects/xtables-addons/
+L:GPL-2.0
+o:xtables-addons-lts
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1671182490
+c:6ebf7d0dc0f7dd063e5e05fb7430aee8fdb73ff4
+D:linux-lts=5.15.83-r0
+i:linux-lts=5.15.83-r0 xtables-addons
+
 C:Q1VjB2Ft+ZFxzoNi0JUcTeya2SIwk=
 P:nload-doc
 V:0.7.4-r4
@@ -50450,21 +50468,6 @@ t:1654671546
 c:aeaca9e2f8033c2cd692381ad9cad1ba6787a305
 i:docs perl-want=0.29-r7
 
-C:Q1kylojFj3bMUf1JDCucbLtUgVYLM=
-P:linux-lts-dev
-V:5.15.82-r0
-A:s390x
-S:18615066
-I:125915136
-T:Headers and script for third party modules for lts kernel
-U:https://www.kernel.org
-L:GPL-2.0
-o:linux-lts
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1670838069
-c:138cc8ebec97e788de98295ac3ac6b7a8f7a1d0e
-D:perl gmp-dev mpc1-dev mpfr-dev elfutils-dev bash flex bison zstd so:libc.musl-s390x.so.1 so:libcrypto.so.3 so:libstdc++.so.6
-
 C:Q1lHtsEzY3LDID7Pg9IXRQxaZavBo=
 P:freetdm-dev
 V:0_git20210830-r1
@@ -52510,6 +52513,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-scope-guard=0.21-r2
+
+C:Q1Rgs9kfwcIV/Tl3j+pS2ISSNnG2Y=
+P:zfs-lts-dev
+V:5.15.83-r1
+A:s390x
+S:468708
+I:3702784
+T:ZFS Linux kernel modules (development files)
+U:https://openzfs.org
+L:CDDL-1.0
+o:zfs-lts
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1671182490
+c:25d3765409f90a294ef44f73f8c87d00f659a691
+D:glib-dev e2fsprogs-dev util-linux-dev libtirpc-dev linux-lts-dev=5.15.83-r0
 
 C:Q12F8YqfV3xgvEXuMrZuYdW1JaGKw=
 P:py3-dbus
@@ -60247,22 +60265,6 @@ c:72f38ece22272cb7bb278329c1ff67125cbefc77
 D:so:libc.musl-s390x.so.1 so:libcrypto.so.3
 p:so:libsrtp2.so.1=1
 
-C:Q18BO5d1z2w3B1VZfVrA+JbYWcV3Q=
-P:xtables-addons-lts
-V:5.15.82-r1
-A:s390x
-S:94783
-I:163840
-T:Iptables extensions kernel modules
-U:https://inai.de/projects/xtables-addons/
-L:GPL-2.0
-o:xtables-addons-lts
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1670838069
-c:a7b359f23db25dee55368d4fbb14dad99353e5e2
-D:linux-lts=5.15.82-r0
-i:linux-lts=5.15.82-r0 xtables-addons
-
 C:Q1MsiLAfEQ5igQq4xG3epFTMyZDSY=
 P:apparmor-utils-lang
 V:3.1.2-r0
@@ -61218,6 +61220,21 @@ t:1635117238
 c:2cf3fe063b1b9e308372af7e2c2348e9e494a135
 D:lua5.4 so:libc.musl-s390x.so.1 so:libsqlite3.so.0
 i:lua-dbi=0.7.2-r1 lua5.4
+
+C:Q1Xb15JAHuQlLhKT+mM2+r2PR/Rpc=
+P:linux-lts-doc
+V:5.15.83-r0
+A:s390x
+S:11133463
+I:59650048
+T:Linux lts kernel (documentation)
+U:https://www.kernel.org
+L:GPL-2.0
+o:linux-lts
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1671182490
+c:2ba1e751153bc1dea846ab9f183c3a142e0bc131
+i:docs linux-lts=5.15.83-r0
 
 C:Q1cToRQVqe6A5dkzua+kjDW2HLOtA=
 P:perl-file-slurp
@@ -63359,6 +63376,21 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1647330067
 c:b68c70762a9597cb57643faddf19924aec175fde
 i:openrc amavis=2.12.2-r1
+
+C:Q1ukqI4HTcS7QTKXA/5svVsh3QgWI=
+P:linux-lts
+V:5.15.83-r0
+A:s390x
+S:24409025
+I:30810112
+T:Linux lts kernel
+U:https://www.kernel.org
+L:GPL-2.0
+o:linux-lts
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1671182490
+c:2ba1e751153bc1dea846ab9f183c3a142e0bc131
+D:initramfs-generator linux-firmware-any
 
 C:Q1e2JPKWF2vlGg96zHmX3dNM2Heek=
 P:apr-util
@@ -65783,21 +65815,6 @@ t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:so:libc.musl-s390x.so.1
 p:cmd:crconf=0_pre2-r2
-
-C:Q1OKC0msTJRxZMWy4+vSoW2qPl2sY=
-P:linux-lts
-V:5.15.82-r0
-A:s390x
-S:24408956
-I:30806016
-T:Linux lts kernel
-U:https://www.kernel.org
-L:GPL-2.0
-o:linux-lts
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1670838069
-c:138cc8ebec97e788de98295ac3ac6b7a8f7a1d0e
-D:initramfs-generator linux-firmware-any
 
 C:Q1CJ6GHgn+6uAJxxAzNdhx7KHFNew=
 P:bluez-doc
@@ -71828,23 +71845,6 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1670871532
 c:121f092ec02a1a64c65c83c7c3c07ef56f202dba
 i:docs pcre2=10.42-r0
-
-C:Q1zsprgyXIR25eFCW7CZoFwZ0g1OI=
-P:zfs-lts
-V:5.15.82-r1
-A:s390x
-S:1708543
-I:1806336
-T:ZFS Linux kernel modules
-U:https://openzfs.org
-L:CDDL-1.0
-o:zfs-lts
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1670838069
-c:240c12b7b519395ed5a22402ab201c23bcaa982f
-D:linux-lts=5.15.82-r0
-p:spl-vanilla=5.15.82-r1
-i:zfs linux-lts=5.15.82-r0
 
 C:Q1gT9YVD4cJon/fsScxkqqpmApmbk=
 P:uwsgi-cheaper_backlog2
