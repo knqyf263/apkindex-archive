@@ -123751,6 +123751,53 @@
         "py3-dateutil",
         "py3-tzdata"
       ]
+    },
+    "libgdiplus": {
+      "origin": "libgdiplus",
+      "versions": {
+        "6.1-r0": 1671455557
+      },
+      "dependencies": [
+        "so:libX11.so.6",
+        "so:libc.musl-s390x.so.1",
+        "so:libcairo.so.2",
+        "so:libexif.so.12",
+        "so:libfontconfig.so.1",
+        "so:libgif.so.7",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libharfbuzz.so.0",
+        "so:libjpeg.so.8",
+        "so:libpango-1.0.so.0",
+        "so:libpangocairo-1.0.so.0",
+        "so:libpng16.so.16",
+        "so:libtiff.so.5"
+      ],
+      "provides": [
+        "so:libgdiplus.so.0=0.0.0"
+      ]
+    },
+    "libgdiplus-dev": {
+      "origin": "libgdiplus",
+      "versions": {
+        "6.1-r0": 1671455557
+      },
+      "dependencies": [
+        "tiff-dev",
+        "cairo-dev",
+        "libexif-dev",
+        "giflib-dev",
+        "glib-dev",
+        "pango-dev",
+        "libgdiplus=6.1-r0",
+        "pc:glib-2.0",
+        "pc:gmodule-2.0",
+        "pc:gthread-2.0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libgdiplus=6.1"
+      ]
     }
   },
   "provide": {
@@ -134094,6 +134141,10 @@
       "libgeos.so.3.10.3": {
         "package": "geos",
         "version": "3.10.3"
+      },
+      "libgdiplus.so.0": {
+        "package": "libgdiplus",
+        "version": "0.0.0"
       }
     },
     "package": {
