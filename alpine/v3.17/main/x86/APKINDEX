@@ -2228,6 +2228,20 @@ c:c0f79bf648ec02d65b4757b6a8866fe15fced18e
 D:libxml2-dev gstreamer=1.20.5-r0 pc:gio-2.0 pc:gio-unix-2.0 pc:glib-2.0>=2.56.0 pc:gmodule-2.0 pc:gobject-2.0 pkgconfig so:libc.musl-x86.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgstreamer-1.0.so.0
 p:so:libgstcheck-1.0.so.0=0.2005.0 pc:gstreamer-1.0=1.20.5 pc:gstreamer-base-1.0=1.20.5 pc:gstreamer-check-1.0=1.20.5 pc:gstreamer-controller-1.0=1.20.5 pc:gstreamer-net-1.0=1.20.5 cmd:gst-tester-1.0=1.20.5-r0
 
+C:Q1q52+giNlxIJb8wGyMPhBmaF2v08=
+P:util-linux
+V:2.38.1-r1
+A:x86
+S:1544
+I:16384
+T:Random collection of Linux utilities
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND LGPL-1.0-only AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+
 C:Q1He6RvB3pQUoEaxOs7/WVJmdxKUw=
 P:bc-doc
 V:1.07.1-r2
@@ -4826,6 +4840,22 @@ t:1656500755
 c:e8816b749876d85f0c030c84c34ea95d16ec1d7c
 i:docs execline=2.9.0.1-r0
 
+C:Q1hWuRGav5o+uXOKBscV2hvRmtYNw=
+P:libfdisk
+V:2.38.1-r1
+A:x86
+S:198177
+I:471040
+T:Partitioning library for fdisk-like programs
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:LGPL-2.1-or-later
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:so:libblkid.so.1 so:libc.musl-x86.so.1 so:libuuid.so.1
+p:so:libfdisk.so.1=1.1.0
+
 C:Q1VxpuCUfyjjf2C4hLLZ0tvwfXi9o=
 P:pcmciautils-doc
 V:018-r2
@@ -5168,22 +5198,6 @@ c:1afa9a16cde3779b49aa14611fac1e60d9c2b56c
 D:iproute2-minimal iproute2-tc iproute2-ss /bin/sh so:libc.musl-x86.so.1 so:libcap.so.2 so:libmnl.so.0
 p:cmd:bridge=6.0.0-r1 cmd:ctstat=6.0.0-r1 cmd:genl=6.0.0-r1 cmd:ifstat=6.0.0-r1 cmd:lnstat=6.0.0-r1 cmd:nstat=6.0.0-r1 cmd:routel=6.0.0-r1 cmd:rtacct=6.0.0-r1 cmd:rtmon=6.0.0-r1 cmd:rtstat=6.0.0-r1
 
-C:Q1i2CyVk5YkOenQ1flKBlkjb0t5JU=
-P:libfdisk
-V:2.38.1-r0
-A:x86
-S:197973
-I:471040
-T:Partitioning library for fdisk-like programs
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:LGPL-2.1-or-later
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:so:libblkid.so.1 so:libc.musl-x86.so.1 so:libuuid.so.1
-p:so:libfdisk.so.1=1.1.0
-
 C:Q1S3pj6WwiNA3tNK9x7/wg9SeiuIY=
 P:gc
 V:8.2.2-r0
@@ -5442,22 +5456,6 @@ t:1666724044
 c:4d7fe273b2aae2729e55ca7f69a26adecc555ce0
 D:so:libc.musl-x86.so.1 so:libexpat.so.1
 p:cmd:xmlwf=2.5.0-r0
-
-C:Q1aibambLi7PkqJfv7psIzyYA9YW8=
-P:util-linux-login-doc
-V:2.38.1-r0
-A:x86
-S:18826
-I:57344
-T:Login utils from util-linux package (documentation)
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND LGPL-1.0-only AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:!shadow-login-doc
-i:docs util-linux-login=2.38.1-r0
 
 C:Q1XSnMMiJcDrXqa2Q3MGWGnu1UUa0=
 P:udns
@@ -6042,23 +6040,6 @@ c:8a1ca897e2d054b0fcc236031eb0b52b3d721769
 D:so:libc.musl-x86.so.1 so:libncursesw.so.6 so:libutempter.so.0 so:libutmps.so.0.1
 p:cmd:screen-4.9.0=4.9.0-r0 cmd:screen=4.9.0-r0
 
-C:Q1/Utbe5ikM7hXUu6q/Vn1dwwSl6I=
-P:util-linux-login
-V:2.38.1-r0
-A:x86
-S:144702
-I:385024
-T:Login utils from util-linux package: newgrp, last, lastb, login, lslogins, nologin, su, sulogin
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:GPL-2.0-or-later AND BSD-1-Clause
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-k:100
-D:runuser=2.38.1-r0 so:libc.musl-x86.so.1 so:libeconf.so.0 so:libpam.so.0 so:libpam_misc.so.0 so:libsmartcols.so.1
-p:login-utils cmd:last=2.38.1-r0 cmd:lastb=2.38.1-r0 cmd:login=2.38.1-r0 cmd:lslogins=2.38.1-r0 cmd:newgrp=2.38.1-r0 cmd:nologin=2.38.1-r0 cmd:su=2.38.1-r0 cmd:sulogin=2.38.1-r0
-
 C:Q1fkXUCzngnJLZ+pnPv99j1wf+oDQ=
 P:composer-zsh-completion
 V:5.9-r0
@@ -6211,23 +6192,6 @@ c:cf002e6229c4d233f33fa15541a9ea38b932f06b
 D:sysfsutils
 i:lm-sensors-sensord=3.6.0-r4 openrc
 
-C:Q19wg+g3eUWzGJOi9CZ8xs7LYNhcc=
-P:setpriv
-V:2.38.1-r0
-A:x86
-S:31957
-I:86016
-T:Run a program with different Linux privilege settings
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:GPL-2.0-or-later
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:so:libc.musl-x86.so.1 so:libcap-ng.so.0
-p:cmd:setpriv=2.38.1-r0
-i:util-linux=2.38.1-r0
-
 C:Q1GuY27JET4EaPWM8UsUH/F/NHjmM=
 P:kamailio-geoip2
 V:5.6.2-r1
@@ -6335,23 +6299,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1601650369
 c:0df5c8fe8f050f53c7f145505955b45be2e0f10c
 i:docs shorewall6=5.2.8-r0
-
-C:Q1VIvD/fKlBHtwiLYwl6bY/RITeZk=
-P:findmnt
-V:2.38.1-r0
-A:x86
-S:32686
-I:77824
-T:Find mount from util-linux
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:GPL-2.0-or-later
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:so:libblkid.so.1 so:libc.musl-x86.so.1 so:libmount.so.1 so:libsmartcols.so.1
-p:cmd:findmnt=2.38.1-r0
-i:util-linux=2.38.1-r0
 
 C:Q1hUJseDml1ekMeGie/3wX539TkvM=
 P:bearssl-dev
@@ -8116,6 +8063,23 @@ c:3d0ad12f54c08b6216bc402d7a64f1ce5b73d73c
 D:so:libc.musl-x86.so.1 so:libogg.so.0 so:libspeex.so.1 so:libspeexdsp.so.1
 p:cmd:speexdec=1.2.1-r0 cmd:speexenc=1.2.1-r0
 
+C:Q1LYU515GvygKpIQ85FPk/qm4RGU8=
+P:setpriv
+V:2.38.1-r1
+A:x86
+S:31954
+I:86016
+T:Run a program with different Linux privilege settings
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:GPL-2.0-or-later
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:so:libc.musl-x86.so.1 so:libcap-ng.so.0
+p:cmd:setpriv=2.38.1-r1
+i:util-linux=2.38.1-r1
+
 C:Q10g1gtW3q4I1JupSF3qzcY366trM=
 P:kamailio-cpl
 V:5.6.2-r1
@@ -8975,6 +8939,23 @@ c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:daq=2.0.7-r1
 p:cmd:daq-modules-config=2.0.7-r1
 
+C:Q1k8eO+moOEDfqOvJnJ+co4Bta3sM=
+P:blkid
+V:2.38.1-r1
+A:x86
+S:53306
+I:131072
+T:Block device identification tool from util-linux
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:LGPL-1.0-only
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:so:libblkid.so.1 so:libc.musl-x86.so.1
+p:cmd:blkid=2.38.1-r1
+i:util-linux=2.38.1-r1
+
 C:Q1ZA6pLmiEyNF+Fqff4Jsv0m0Qtds=
 P:libidn2-dev
 V:2.3.4-r0
@@ -9489,23 +9470,6 @@ t:1653908067
 c:6cb1cea145714394a2ea7e30c4e60885c5f70dc8
 D:m4 so:libc.musl-x86.so.1
 p:cmd:flex++=2.6.4-r3 cmd:flex=2.6.4-r3 cmd:lex=2.6.4-r3
-
-C:Q1lPg6bYuWcazjFeqDvtT+ZfL6cNo=
-P:sfdisk
-V:2.38.1-r0
-A:x86
-S:61367
-I:151552
-T:Partition table manipulator from util-linux
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:GPL-1.0-or-later
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:so:libc.musl-x86.so.1 so:libfdisk.so.1 so:libncursesw.so.6 so:libsmartcols.so.1
-p:cmd:sfdisk=2.38.1-r0
-i:util-linux=2.38.1-r0
 
 C:Q1hEpdn9GUoiFLVV2lvyYrTw4hIIs=
 P:apcupsd-openrc
@@ -10088,23 +10052,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1659429320
 c:39cde24fb54a667a6730bdaec3233184227131f6
 i:docs perl-crypt-openssl-rsa=0.33-r1
-
-C:Q18ztZth1TgG0L4ulz9I/Hd4+UlL4=
-P:runuser
-V:2.38.1-r0
-A:x86
-S:32592
-I:86016
-T:Run a program with substitute user and group ID
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:GPL-2.0-or-later
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:so:libc.musl-x86.so.1 so:libeconf.so.0 so:libpam.so.0 so:libpam_misc.so.0
-p:cmd:runuser=2.38.1-r0
-i:util-linux=2.38.1-r0
 
 C:Q180wjRSU1r/e7dBtyJenRgDW/Rms=
 P:cramfs
@@ -13929,23 +13876,6 @@ c:1daee00317a10316c3ab678755f0bbd676165b9c
 D:so:libc.musl-x86.so.1 so:libcrypto.so.3 so:libgcc_s.so.1 so:libpcap.so.1 so:libstdc++.so.6 so:libz.so.1
 p:cmd:tcpflow=1.6.1-r8
 
-C:Q1bLP36mg5D8F7X5n7qjnY1H9Hejg=
-P:logger
-V:2.38.1-r0
-A:x86
-S:22069
-I:65536
-T:Logger from util-linux
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:BSD-4-Clause-UC
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:so:libc.musl-x86.so.1
-p:cmd:logger=2.38.1-r0
-i:util-linux=2.38.1-r0
-
 C:Q1HElR3cTkrquu8xuHz25NLNUfo/Q=
 P:uwsgi-dumbloop
 V:2.0.21-r0
@@ -17211,23 +17141,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-time-parsedate=2015.103-r4
 
-C:Q1ZN8/MHaUgUFuMF7ra11C4+nPfr4=
-P:partx
-V:2.38.1-r0
-A:x86
-S:50598
-I:131072
-T:Tell the kernel about disk partition changes from util-linux
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:GPL-2.0-or-later
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:so:libblkid.so.1 so:libc.musl-x86.so.1 so:libsmartcols.so.1
-p:cmd:partx=2.38.1-r0
-i:util-linux=2.38.1-r0
-
 C:Q1Fl4Ln3zLR+u7mEfMz/gbm3VUCuA=
 P:tiny-cloud-oci
 V:2.1.2-r0
@@ -17659,6 +17572,23 @@ t:1667147299
 c:9cefabb07894855a826d8f37988b2762caebd74b
 D:so:libc.musl-x86.so.1
 p:so:libasound.so.2=2.0.0 so:libatopology.so.2=2.0.0 cmd:aserver=1.2.8-r0
+
+C:Q1IXIByqfvgptWi+bbHxFnXO8JA4k=
+P:util-linux-login
+V:2.38.1-r1
+A:x86
+S:144743
+I:385024
+T:Login utils from util-linux package: newgrp, last, lastb, login, lslogins, nologin, su, sulogin
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:GPL-2.0-or-later AND BSD-1-Clause
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+k:100
+D:runuser=2.38.1-r1 so:libc.musl-x86.so.1 so:libeconf.so.0 so:libpam.so.0 so:libpam_misc.so.0 so:libsmartcols.so.1
+p:login-utils cmd:last=2.38.1-r1 cmd:lastb=2.38.1-r1 cmd:login=2.38.1-r1 cmd:lslogins=2.38.1-r1 cmd:newgrp=2.38.1-r1 cmd:nologin=2.38.1-r1 cmd:su=2.38.1-r1 cmd:sulogin=2.38.1-r1
 
 C:Q1whyJDAKscvd4ZEXPDPmXGHX0DE8=
 P:guile-libs
@@ -18675,22 +18605,6 @@ t:1665753996
 c:84d02e8c3abb163d4ca89e62e831c4116b9ea195
 D:perl perl-uri
 p:cmd:awstats_buildstaticpages.pl=7.8-r2 cmd:awstats_configure.pl=7.8-r2 cmd:awstats_exportlib.pl=7.8-r2 cmd:awstats_updateall.pl=7.8-r2 cmd:geoip_generator.pl=7.8-r2 cmd:logresolvemerge.pl=7.8-r2 cmd:maillogconvert.pl=7.8-r2 cmd:urlaliasbuilder.pl=7.8-r2
-
-C:Q14rXlcLOWXoPp54IvsWETWHLAXYQ=
-P:libmount
-V:2.38.1-r0
-A:x86
-S:167819
-I:401408
-T:Block device identification library from util-linux
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:LGPL-2.1-or-later
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:so:libblkid.so.1 so:libc.musl-x86.so.1
-p:so:libmount.so.1=1.1.0
 
 C:Q1CRDBYXy38e6OER57xxZ8OHQTkGI=
 P:fribidi
@@ -21589,23 +21503,6 @@ t:1665007715
 c:567f7cb9e8e82fb0644ca102e6c6e3c7d9488b96
 i:docs unifont=15.0.01-r0
 
-C:Q1FQ4Y4Fybfa4BoagLQ4tosB98y1k=
-P:fstrim
-V:2.38.1-r0
-A:x86
-S:32457
-I:81920
-T:File system trim from util-linux
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:GPL-2.0-or-later
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:so:libc.musl-x86.so.1 so:libmount.so.1
-p:cmd:fstrim=2.38.1-r0
-i:util-linux=2.38.1-r0
-
 C:Q1mVs9UnzeBcFfrXr4KKnWIEdVPUI=
 P:guile-readline
 V:3.0.8-r3
@@ -22562,6 +22459,23 @@ t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:so:libc.musl-x86.so.1 so:libz.so.1
 i:lua5.1 lua-lzlib=0.4.3-r1
+
+C:Q11JF/cpmVRq4Lvew6Y3Enf0OV2n0=
+P:mount
+V:2.38.1-r1
+A:x86
+S:22643
+I:61440
+T:mount tool from util-linux
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND LGPL-1.0-only AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:so:libc.musl-x86.so.1 so:libmount.so.1
+p:cmd:mount=2.38.1-r1
+i:util-linux=2.38.1-r1
 
 C:Q1+Ep7nUodUKqxGHZscyNvwZ0C2W8=
 P:atf-doc
@@ -24402,23 +24316,6 @@ m:Ariadne Conill <ariadne@dereferenced.org>
 t:1672809877
 c:2bd80c4a148ceea58da585e0f7bb4d60bfdb062b
 
-C:Q13nXl0i9IDR1yU1qZ9b0Lkt7xka4=
-P:wipefs
-V:2.38.1-r0
-A:x86
-S:20155
-I:53248
-T:Utility to wipe filesystems from device from util-linux
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:GPL-2.0-or-later
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:so:libblkid.so.1 so:libc.musl-x86.so.1 so:libsmartcols.so.1
-p:cmd:wipefs=2.38.1-r0
-i:util-linux=2.38.1-r0
-
 C:Q1gV+5jrEX1ylYy2O87DsON2fNC7I=
 P:libxinerama-dev
 V:1.1.5-r0
@@ -24911,22 +24808,6 @@ t:1668841845
 c:36410bfe7255d4a60eb47af48257f8c030e49c38
 D:so:libc.musl-x86.so.1 so:libcrypto.so.3 so:libsrtp2.so.1
 
-C:Q1OIgD8LPFp4yxcT4eCMRNmJQKpd0=
-P:libuuid
-V:2.38.1-r0
-A:x86
-S:15054
-I:40960
-T:DCE compatible Universally Unique Identifier library
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:BSD-3-Clause
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:so:libc.musl-x86.so.1
-p:so:libuuid.so.1=1.3.0
-
 C:Q1mzDlebC2ElNCx9IwH77N166jpAA=
 P:b43-fwcutter-doc
 V:019-r2
@@ -25141,6 +25022,22 @@ m:Ted Trask <ttrask01@yahoo.com>
 t:1621087673
 c:ec4e35bcdcf38829d2a36ff4d7cd4351ebb67d1c
 D:acf-core dovecot
+
+C:Q1xKgTuUO37u+hoeXESIPy5swoRuk=
+P:libuuid
+V:2.38.1-r1
+A:x86
+S:15082
+I:40960
+T:DCE compatible Universally Unique Identifier library
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:BSD-3-Clause
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:so:libc.musl-x86.so.1
+p:so:libuuid.so.1=1.3.0
 
 C:Q1Vv77dzli73XRcMGX7knMAkJiLDA=
 P:gnokii-libs
@@ -26248,21 +26145,6 @@ c:f71267930a9d6b88eda37c178a68d34ac6450098
 D:freeradius=3.0.26-r0 so:libc.musl-x86.so.1
 p:so:libfreeradius-dhcp.so=0 so:proto_dhcp.so=0 so:rlm_dhcp.so=0
 
-C:Q1PB9Oz3/HglZQIAPYRpv7IEaGN/Q=
-P:util-linux-doc
-V:2.38.1-r0
-A:x86
-S:315359
-I:634880
-T:Random collection of Linux utilities (documentation)
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND LGPL-1.0-only AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-i:docs util-linux=2.38.1-r0
-
 C:Q1jAHKyxx4thUwGCT3IWb/cemoouE=
 P:syslog-ng-xml
 V:3.38.1-r0
@@ -26432,6 +26314,23 @@ m:Kaarle Ritvanen <kunkku@alpinelinux.org>
 t:1659429320
 c:39cde24fb54a667a6730bdaec3233184227131f6
 D:apache2 so:libc.musl-x86.so.1 so:libcrypto.so.3 so:libnghttp2.so.14
+
+C:Q1KVc/NUrYw82FQqJ1nvjkQDrO3Vk=
+P:losetup
+V:2.38.1-r1
+A:x86
+S:49669
+I:122880
+T:Loop disk setup from util-linux
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:GPL-2.0-or-later
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:so:libc.musl-x86.so.1 so:libsmartcols.so.1
+p:cmd:losetup=2.38.1-r1
+i:util-linux=2.38.1-r1
 
 C:Q1XLzVVEO1nKcduPpQpqd/l70F0a4=
 P:sfcapd
@@ -27293,6 +27192,23 @@ c:689a78e19df5e5088f0b0a47cd0b51c293bced11
 D:so:libc.musl-x86.so.1
 p:so:libmnl.so.0=0.2.0
 
+C:Q1CEuaj9XR2wslG+baj16pGVbOabw=
+P:runuser
+V:2.38.1-r1
+A:x86
+S:32580
+I:86016
+T:Run a program with substitute user and group ID
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:GPL-2.0-or-later
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:so:libc.musl-x86.so.1 so:libeconf.so.0 so:libpam.so.0 so:libpam_misc.so.0
+p:cmd:runuser=2.38.1-r1
+i:util-linux=2.38.1-r1
+
 C:Q1ajKhWp+rSwAZodeYAucLXCkkGRk=
 P:libvorbis-static
 V:1.3.7-r0
@@ -27306,23 +27222,6 @@ o:libvorbis
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1603204172
 c:573e07da91784d4d27c4bc8b9e9122495c7356d3
-
-C:Q1m1gCErA//QhN2qg74KYDDPZipTc=
-P:agetty
-V:2.38.1-r0
-A:x86
-S:30365
-I:69632
-T:agetty program from util-linux
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:Public-Domain
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:so:libc.musl-x86.so.1
-p:cmd:agetty=2.38.1-r0
-i:util-linux=2.38.1-r0
 
 C:Q1C4bkw/ewdPF6XTVCAqz6WSBEniU=
 P:squid-lang-sk
@@ -28725,6 +28624,23 @@ t:1666013143
 c:5edf4636936a40b15a9d6691b9fd24bad7a00e66
 i:docs gnutls=3.7.8-r2
 
+C:Q199RmPxMER5an4+BJKoj0wW4E4fM=
+P:cfdisk
+V:2.38.1-r1
+A:x86
+S:45003
+I:110592
+T:Curses based partition table manipulator from util-linux
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:GPL-2.0-or-later
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:so:libc.musl-x86.so.1 so:libfdisk.so.1 so:libmount.so.1 so:libncursesw.so.6 so:libsmartcols.so.1
+p:cmd:cfdisk=2.38.1-r1
+i:util-linux=2.38.1-r1
+
 C:Q1WgG6bvs6OkEulZV09FmF09wnRK0=
 P:libxinerama-doc
 V:1.1.5-r0
@@ -29475,23 +29391,6 @@ c:3350de555ecedc9801dee8b8c75760faa9263c27
 k:100
 D:lua5.1 lua5.1-libs=5.1.5-r11 pkgconfig
 p:lua-dev pc:lua5.1=5.1.5 pc:lua=5.1.5
-
-C:Q1OcAF1XX9CTHcnxpOYgXzXtI0fjs=
-P:losetup
-V:2.38.1-r0
-A:x86
-S:49667
-I:122880
-T:Loop disk setup from util-linux
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:GPL-2.0-or-later
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:so:libc.musl-x86.so.1 so:libsmartcols.so.1
-p:cmd:losetup=2.38.1-r0
-i:util-linux=2.38.1-r0
 
 C:Q1CRJT1FPRaBydqOrMr9BfwSF106k=
 P:nfprofile
@@ -30932,6 +30831,21 @@ c:75e42ce3cdd197eac241a9c100c0dc7f8b770fa1
 D:so:libc.musl-x86.so.1 so:libtls.so.7
 p:cmd:ntpctl=6.8_p1-r7 cmd:ntpd=6.8_p1-r7
 
+C:Q17YCe4INQxltL5YwP8IvilyjZcJc=
+P:util-linux-doc
+V:2.38.1-r1
+A:x86
+S:315349
+I:634880
+T:Random collection of Linux utilities (documentation)
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND LGPL-1.0-only AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+i:docs util-linux=2.38.1-r1
+
 C:Q1DkiDyQUWR/yHJ3K5wh09D/bD3i8=
 P:swish-e
 V:2.4.7-r13
@@ -31333,22 +31247,6 @@ m:Laurent Bercot <ska-devel@skarnet.org>
 t:1655409612
 c:1b6bc7ee3fc98dd1c05cf72ac39770c408aabeb4
 D:s6-dns=2.3.5.4-r0
-
-C:Q1M2BC6Ni6p4qbjMsN6yxXd0PjTWY=
-P:util-linux-dev
-V:2.38.1-r0
-A:x86
-S:898479
-I:2650112
-T:Random collection of Linux utilities (development files)
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND LGPL-1.0-only AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:libblkid=2.38.1-r0 libfdisk=2.38.1-r0 libmount=2.38.1-r0 libsmartcols=2.38.1-r0 libuuid=2.38.1-r0 pkgconfig
-p:pc:blkid=2.38.1 pc:fdisk=2.38.1 pc:mount=2.38.1 pc:smartcols=2.38.1 pc:uuid=2.38.1
 
 C:Q1lL4R++f5TpZJ/8ZlLtZZBHqZsIg=
 P:sipsak
@@ -32497,6 +32395,22 @@ t:1657184984
 c:a375ef4c2a2f219863c08cc86b8c484deea930e6
 D:so:libc.musl-x86.so.1 so:libgcc_s.so.1 so:libpopt.so.0 so:libstdc++.so.6 so:libuuid.so.1
 p:cmd:sgdisk=1.0.9-r2
+
+C:Q1PBCae8qpECAbCFWaOo5mwrluyeA=
+P:libblkid
+V:2.38.1-r1
+A:x86
+S:155088
+I:356352
+T:Block device identification library from util-linux
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:LGPL-2.1-or-later
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:so:libc.musl-x86.so.1
+p:so:libblkid.so.1=1.1.0
 
 C:Q1Dtaw9rmc9CIZedFqBtvCgx71pws=
 P:shorewall-core-doc
@@ -33834,6 +33748,23 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1672591081
 c:af42d45cd558323043f855dd09fc1c7381a17803
 p:linux-firmware-any
+
+C:Q1LJdZi8pqQ5b6L4ZRkv8PYhan/dM=
+P:lsblk
+V:2.38.1-r1
+A:x86
+S:81000
+I:196608
+T:Block device list tool from util-linux
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:GPL-2.0-or-later
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:so:libblkid.so.1 so:libc.musl-x86.so.1 so:libmount.so.1 so:libsmartcols.so.1
+p:cmd:lsblk=2.38.1-r1
+i:util-linux=2.38.1-r1
 
 C:Q1XeFbPBDBtYkiZ6uKI4Zmg6FpVf0=
 P:perl-mime-tools
@@ -36212,23 +36143,6 @@ t:1665481021
 c:da2ea9cb47b5e3e094ff5b11f89346f00b67d25e
 i:docs open-isns=0.102-r0
 
-C:Q1YamOgzdnHJFUeunPLTcwyTGB1YQ=
-P:cfdisk
-V:2.38.1-r0
-A:x86
-S:45008
-I:110592
-T:Curses based partition table manipulator from util-linux
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:GPL-2.0-or-later
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:so:libc.musl-x86.so.1 so:libfdisk.so.1 so:libmount.so.1 so:libncursesw.so.6 so:libsmartcols.so.1
-p:cmd:cfdisk=2.38.1-r0
-i:util-linux=2.38.1-r0
-
 C:Q1llOibWUop+JtTQ/29RqTLSqtMew=
 P:logcheck-doc
 V:1.3.24-r0
@@ -37151,21 +37065,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1645440847
 c:89d42fd1ba1c19bd30527f8fbb30e6f9536a1dba
 i:docs perl-package-stash=0.40-r0
-
-C:Q1HxYEE90FlgT+lyfu8V9MlAfpsXo=
-P:util-linux-openrc
-V:2.38.1-r0
-A:x86
-S:2330
-I:24576
-T:Random collection of Linux utilities (OpenRC init scripts)
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND LGPL-1.0-only AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-i:openrc util-linux=2.38.1-r0
 
 C:Q10Cllp5neEV4JhOTDfoUHwf2Ey2A=
 P:libzmq-static
@@ -38552,23 +38451,6 @@ t:1665881416
 c:b0fdd13450ba80b4f40ce37bdc2d4fcfdd3d37be
 i:docs dahdi-tools=3.2.0-r0
 
-C:Q1mbcPp5QJmJTOovB85oz7X5uYrOI=
-P:util-linux-misc
-V:2.38.1-r0
-A:x86
-S:1534295
-I:3989504
-T:Misc binaries for util-linux
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND LGPL-1.0-only AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:/bin/sh so:libblkid.so.1 so:libc.musl-x86.so.1 so:libfdisk.so.1 so:libmount.so.1 so:libncursesw.so.6 so:libsmartcols.so.1 so:libuuid.so.1 so:libz.so.1
-p:cmd:addpart=2.38.1-r0 cmd:blkdiscard=2.38.1-r0 cmd:blkzone=2.38.1-r0 cmd:blockdev=2.38.1-r0 cmd:cal=2.38.1-r0 cmd:chcpu=2.38.1-r0 cmd:chmem=2.38.1-r0 cmd:choom=2.38.1-r0 cmd:chrt=2.38.1-r0 cmd:col=2.38.1-r0 cmd:colcrt=2.38.1-r0 cmd:colrm=2.38.1-r0 cmd:column=2.38.1-r0 cmd:ctrlaltdel=2.38.1-r0 cmd:delpart=2.38.1-r0 cmd:dmesg=2.38.1-r0 cmd:eject=2.38.1-r0 cmd:fallocate=2.38.1-r0 cmd:fdisk=2.38.1-r0 cmd:fincore=2.38.1-r0 cmd:findfs=2.38.1-r0 cmd:fsck.cramfs=2.38.1-r0 cmd:fsck.minix=2.38.1-r0 cmd:fsck=2.38.1-r0 cmd:fsfreeze=2.38.1-r0 cmd:getopt=2.38.1-r0 cmd:hardlink=2.38.1-r0 cmd:hwclock=2.38.1-r0 cmd:i386=2.38.1-r0 cmd:ionice=2.38.1-r0 cmd:ipcmk=2.38.1-r0 cmd:ipcrm=2.38.1-r0 cmd:ipcs=2.38.1-r0 cmd:irqtop=2.38.1-r0 cmd:isosize=2.38.1-r0 cmd:ldattach=2.38.1-r0 cmd:linux32=2.38.1-r0 cmd:linux64=2.38.1-r0 cmd:look=2.38.1-r0 cmd:lscpu=2.38.1-r0 cmd:lsfd=2.38.1-r0 cmd:lsipc=2.38.1-r0 cmd:lsirq=2.38.1-r0 cmd:lslocks=2.38.1-r0 cmd:lsmem=2.38.1-r0 cmd:lsns=2.38.1-r0 cmd:mesg=2.38.1-r0 cmd:mkfs.bfs=2.38.1-r0 cmd:mkfs.cramfs=2.38.1-r0 cmd:mkfs.minix=2.38.1-r0 cmd:mkfs=2.38.1-r0 cmd:mkswap=2.38.1-r0 cmd:more=2.38.1-r0 cmd:mountpoint=2.38.1-r0 cmd:namei=2.38.1-r0 cmd:nsenter=2.38.1-r0 cmd:pivot_root=2.38.1-r0 cmd:prlimit=2.38.1-r0 cmd:readprofile=2.38.1-r0 cmd:rename=2.38.1-r0 cmd:renice=2.38.1-r0 cmd:resizepart=2.38.1-r0 cmd:rev=2.38.1-r0 cmd:rfkill=2.38.1-r0 cmd:rtcwake=2.38.1-r0 cmd:script=2.38.1-r0 cmd:scriptlive=2.38.1-r0 cmd:scriptreplay=2.38.1-r0 cmd:setarch=2.38.1-r0 cmd:setsid=2.38.1-r0 cmd:setterm=2.38.1-r0 cmd:swaplabel=2.38.1-r0 cmd:swapoff=2.38.1-r0 cmd:swapon=2.38.1-r0 cmd:switch_root=2.38.1-r0 cmd:taskset=2.38.1-r0 cmd:uclampset=2.38.1-r0 cmd:ul=2.38.1-r0 cmd:uname26=2.38.1-r0 cmd:unshare=2.38.1-r0 cmd:utmpdump=2.38.1-r0 cmd:uuidparse=2.38.1-r0 cmd:wall=2.38.1-r0 cmd:wdctl=2.38.1-r0 cmd:whereis=2.38.1-r0 cmd:zramctl=2.38.1-r0
-i:util-linux=2.38.1-r0
-
 C:Q1bMkMw4cQQLSn7I/wiPsRP63d07s=
 P:perl-font-afm
 V:1.20-r2
@@ -38781,6 +38663,23 @@ t:1659792088
 c:0714a84b7f79009ae8b96aef50216ed72f54b885
 D:so:libc.musl-x86.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:cmd:gengetopt=2.23-r1
+
+C:Q1oN7OCCIzgJ+U08mlnqmUzxbyXFc=
+P:fstrim
+V:2.38.1-r1
+A:x86
+S:32452
+I:81920
+T:File system trim from util-linux
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:GPL-2.0-or-later
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:so:libc.musl-x86.so.1 so:libmount.so.1
+p:cmd:fstrim=2.38.1-r1
+i:util-linux=2.38.1-r1
 
 C:Q1kpatBOwt099HuZhKoJ6BHNw1YCc=
 P:font-cursor-misc
@@ -39246,6 +39145,23 @@ k:20
 D:mdevd mdev-conf
 p:dev-openrc
 i:openrc mdevd=0.1.6.0-r1
+
+C:Q1uKRFDjbVMuEAX9scDFwcR5SW5tE=
+P:partx
+V:2.38.1-r1
+A:x86
+S:50592
+I:131072
+T:Tell the kernel about disk partition changes from util-linux
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:GPL-2.0-or-later
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:so:libblkid.so.1 so:libc.musl-x86.so.1 so:libsmartcols.so.1
+p:cmd:partx=2.38.1-r1
+i:util-linux=2.38.1-r1
 
 C:Q126cwHmlROew5OsFvkNbDqe32dCc=
 P:py3-sphinxcontrib-qthelp
@@ -39807,6 +39723,23 @@ c:79fd52e542111ab7a845cef14ac5a80a397249ad
 D:so:libc.musl-x86.so.1
 p:so:libtalloc.so.2=2.3.4
 
+C:Q1ZLt7MP+Vhy5RSooUL91T3DMVGrg=
+P:flock
+V:2.38.1-r1
+A:x86
+S:15566
+I:45056
+T:File locker from util-linux
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:MIT
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:so:libc.musl-x86.so.1
+p:cmd:flock=2.38.1-r1
+i:util-linux=2.38.1-r1
+
 C:Q1VRpe0bQw691lzUks/H8VHPc9XnE=
 P:bluez-dbg
 V:5.66-r1
@@ -40160,6 +40093,22 @@ m:Milan P. Stanić <mps@arvanta.net>
 t:1667513644
 c:63762e696e82268f6981807d032e2de9f7ad832a
 i:docs liburing=2.3-r0
+
+C:Q1ixj3Axy5uiESlYbYrbec8VirwKU=
+P:libsmartcols
+V:2.38.1-r1
+A:x86
+S:101939
+I:241664
+T:Formatting library for ls-like programs
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:LGPL-2.1-or-later
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:so:libc.musl-x86.so.1
+p:so:libsmartcols.so.1=1.1.0
 
 C:Q17KHUjCHJ4D+e+5OI/ElhFetPeW4=
 P:protobuf
@@ -40518,6 +40467,21 @@ t:1652519522
 c:cb83768bdc6ad6657a54aa75861242b43435544a
 D:parted=3.5-r0 pkgconfig
 p:pc:libparted-fs-resize=3.5 pc:libparted=3.5
+
+C:Q17o3M5swj6oNdewMNL2g49spccTc=
+P:util-linux-bash-completion
+V:2.38.1-r1
+A:x86
+S:29652
+I:430080
+T:Bash completions for util-linux
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND LGPL-1.0-only AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+i:util-linux=2.38.1-r1 bash-completion
 
 C:Q10Z1fQTMsH6drQXm5PFS0RWvNkGw=
 P:xmlto-doc
@@ -42867,6 +42831,23 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.1 so:libc.musl-x86.so.1
 i:lua-cjson=2.1.0-r10 lua5.1
 
+C:Q1OxYaZipadbP58AqbBUHkAHBB0LU=
+P:umount
+V:2.38.1-r1
+A:x86
+S:13428
+I:40960
+T:umount tool from util-linux
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND LGPL-1.0-only AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:so:libc.musl-x86.so.1 so:libmount.so.1
+p:cmd:umount=2.38.1-r1
+i:util-linux=2.38.1-r1
+
 C:Q1X4MbI9e1sjaz5I35aqZy+kd/wQ4=
 P:perl-test-requires
 V:0.11-r1
@@ -42881,22 +42862,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
-
-C:Q1bxnWsto0UMLEEBkurBLUBW8Iecw=
-P:libblkid
-V:2.38.1-r0
-A:x86
-S:155002
-I:356352
-T:Block device identification library from util-linux
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:LGPL-2.1-or-later
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:so:libc.musl-x86.so.1
-p:so:libblkid.so.1=1.1.0
 
 C:Q1VIsXEaFySUEZMUuhjqtQ9bQLGLU=
 P:rtapd
@@ -43446,23 +43411,6 @@ c:db0a02307ad768256dd97ce2a9ca71a9939e2eba
 D:so:libc.musl-x86.so.1
 p:cmd:hdparm=9.65-r0 cmd:idectl=9.65-r0 cmd:ultrabayd=9.65-r0
 
-C:Q19jLgcj6qQerscPAHnW6iieKW0yg=
-P:mount
-V:2.38.1-r0
-A:x86
-S:22657
-I:61440
-T:mount tool from util-linux
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND LGPL-1.0-only AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:so:libc.musl-x86.so.1 so:libmount.so.1
-p:cmd:mount=2.38.1-r0
-i:util-linux=2.38.1-r0
-
 C:Q1OD0ucZshWkOmi7hLVvBDYNr71P4=
 P:fstrm-utils
 V:0.6.1-r1
@@ -43600,23 +43548,6 @@ m:Cameron Banta <cbanta@gmail.com>
 t:1670415694
 c:cba4a112ee7ae57c3cded33e742f63930b546859
 D:rsyslog=8.2212.0-r0 so:libc.musl-x86.so.1 so:libmaxminddb.so.0
-
-C:Q11gWxYxzkvQLJSiRhvuw0nppnpls=
-P:blkid
-V:2.38.1-r0
-A:x86
-S:53295
-I:131072
-T:Block device identification tool from util-linux
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:LGPL-1.0-only
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:so:libblkid.so.1 so:libc.musl-x86.so.1
-p:cmd:blkid=2.38.1-r0
-i:util-linux=2.38.1-r0
 
 C:Q1thn+iz1Rt9Qw7bCh3YcaBfi5xfA=
 P:libconfig++
@@ -44144,6 +44075,21 @@ m:jv <jens@eisfair.org>
 t:1661893370
 c:e8e5d0b39d8b14d4030287504081be33b497f39a
 i:openrc syslog-ng=3.38.1-r0
+
+C:Q1nkeJ8TUDfsIes/m1Uo5vMC4XMsE=
+P:util-linux-openrc
+V:2.38.1-r1
+A:x86
+S:2345
+I:24576
+T:Random collection of Linux utilities (OpenRC init scripts)
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND LGPL-1.0-only AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+i:openrc util-linux=2.38.1-r1
 
 C:Q1fxjrifM8Im/hfGCzJkNr3Yr7c80=
 P:lua-posix
@@ -45964,6 +45910,23 @@ t:1643119322
 c:4a18a2ad49feff22d5207836372befb18fb85df8
 i:docs libdaemon=0.14-r3
 
+C:Q1iMQDLzHyNNdra4TR5Ds3dw+AQ4Q=
+P:sfdisk
+V:2.38.1-r1
+A:x86
+S:61362
+I:151552
+T:Partition table manipulator from util-linux
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:GPL-1.0-or-later
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:so:libc.musl-x86.so.1 so:libfdisk.so.1 so:libncursesw.so.6 so:libsmartcols.so.1
+p:cmd:sfdisk=2.38.1-r1
+i:util-linux=2.38.1-r1
+
 C:Q1SUjrvGKe8/r24FVaDRE40bV7/Sg=
 P:orc
 V:0.4.33-r0
@@ -47062,23 +47025,6 @@ c:1dbf7a793afae640ea643a055b6dd4f430ac116b
 D:so:libc.musl-x86.so.1
 p:cmd:busybox=1.35.0-r29
 
-C:Q1LjJ58+vV5aIQCjuP0hcBKlTGUsE=
-P:umount
-V:2.38.1-r0
-A:x86
-S:13440
-I:40960
-T:umount tool from util-linux
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND LGPL-1.0-only AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:so:libc.musl-x86.so.1 so:libmount.so.1
-p:cmd:umount=2.38.1-r0
-i:util-linux=2.38.1-r0
-
 C:Q15IdEuY+aUNdcV1/3aiyu7ya62HA=
 P:perl-convert-uulib-doc
 V:1.8-r0
@@ -47292,22 +47238,21 @@ c:cba4a112ee7ae57c3cded33e742f63930b546859
 D:/bin/sh so:libc.musl-x86.so.1 so:libestr.so.0 so:libfastjson.so.4 so:libuuid.so.1 so:libz.so.1
 p:cmd:rsyslogd=8.2212.0-r0
 
-C:Q1qicpkDOzKHrxs6RJwv74TGU+e74=
-P:mcookie
-V:2.38.1-r0
+C:Q1CZm9k8+y2TQZ6iBSkfiApdMk9xA=
+P:util-linux-dev
+V:2.38.1-r1
 A:x86
-S:15687
-I:45056
-T:Generate random numbers for xauth from util-linux
+S:898490
+I:2650112
+T:Random collection of Linux utilities (development files)
 U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:Public-Domain
+L:GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND LGPL-1.0-only AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain
 o:util-linux
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:so:libc.musl-x86.so.1
-p:cmd:mcookie=2.38.1-r0
-i:util-linux=2.38.1-r0
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:libblkid=2.38.1-r1 libfdisk=2.38.1-r1 libmount=2.38.1-r1 libsmartcols=2.38.1-r1 libuuid=2.38.1-r1 pkgconfig
+p:pc:blkid=2.38.1 pc:fdisk=2.38.1 pc:mount=2.38.1 pc:smartcols=2.38.1 pc:uuid=2.38.1
 
 C:Q1bdniWvpCpgaiBorG6eodjSN1oI0=
 P:lua5.4-augeas
@@ -48916,22 +48861,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl perl-http-message perl-http-date
 
-C:Q1bOQTr1BnP3Wz3DXFEZn5znfoyWw=
-P:libsmartcols
-V:2.38.1-r0
-A:x86
-S:101778
-I:241664
-T:Formatting library for ls-like programs
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:LGPL-2.1-or-later
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:so:libc.musl-x86.so.1
-p:so:libsmartcols.so.1=1.1.0
-
 C:Q1ANJP0k9VmTaDxoljnC/AL+O6ozU=
 P:gdk-pixbuf-doc
 V:2.42.10-r0
@@ -49666,23 +49595,6 @@ k:200
 D:lua5.2 lua5.2-libs=5.2.4-r10 pkgconfig
 p:pc:lua5.2=5.2.4
 
-C:Q1chVaTkxsaGOzobF+vwMMedDeRT4=
-P:hexdump
-V:2.38.1-r0
-A:x86
-S:25310
-I:65536
-T:Hexdump from util-linux
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:BSD-4-Clause-UC
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:so:libc.musl-x86.so.1 so:libncursesw.so.6
-p:cmd:hexdump=2.38.1-r0
-i:util-linux=2.38.1-r0
-
 C:Q1c6DGC2to/FNfKL5+FXw7GgdKTSs=
 P:lxc-pam
 V:5.0.1-r1
@@ -50074,6 +49986,22 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1666194150
 c:04c2ecb1b3013c4c0ada5c521ab041b235996f3f
 D:nginx so:libc.musl-x86.so.1
+
+C:Q1kYpxrqnBTxNDOmucd1hxRbtqP0s=
+P:util-linux-login-doc
+V:2.38.1-r1
+A:x86
+S:18821
+I:57344
+T:Login utils from util-linux package (documentation)
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND LGPL-1.0-only AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:!shadow-login-doc
+i:docs util-linux-login=2.38.1-r1
 
 C:Q1ohbhNII8UgtZxbYcwX7WhGO7mMc=
 P:mariadb-doc
@@ -52479,21 +52407,6 @@ t:1667743833
 c:76988828c18a4ab5d9aa4aee13a4fe7501a6efec
 D:so:libc.musl-x86.so.1 so:liblber.so.2 so:libldap.so.2
 
-C:Q1ah8q4KyWQFokAOc7YyRIaonuoEw=
-P:util-linux-bash-completion
-V:2.38.1-r0
-A:x86
-S:29657
-I:430080
-T:Bash completions for util-linux
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND LGPL-1.0-only AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-i:util-linux=2.38.1-r0 bash-completion
-
 C:Q1iuiLRVHfHOsIYNLuO+pYciZv6e4=
 P:perl-lwp-protocol-https
 V:6.10-r3
@@ -54692,23 +54605,6 @@ t:1621087673
 c:ec4e35bcdcf38829d2a36ff4d7cd4351ebb67d1c
 D:acf-core asterisk
 
-C:Q1bIuaonl0LZPqNUaxpKCFa06KyRk=
-P:uuidgen
-V:2.38.1-r0
-A:x86
-S:5788
-I:28672
-T:UUID generator from util-linux
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:GPL-1.0-only
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:so:libc.musl-x86.so.1 so:libuuid.so.1
-p:cmd:uuidgen=2.38.1-r0
-i:util-linux=2.38.1-r0
-
 C:Q1j6Ucc7GCB7+60HL5we3XAbsNXjs=
 P:perl-sub-uplevel
 V:0.2800-r2
@@ -55709,6 +55605,23 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1667998048
 c:0184fab176769150408a920c29f8dfe4f22bf483
 D:uwsgi so:libc.musl-x86.so.1
+
+C:Q1tq5R1m0kn+cJlP+Yp9+KzYzc0xw=
+P:hexdump
+V:2.38.1-r1
+A:x86
+S:25316
+I:65536
+T:Hexdump from util-linux
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:BSD-4-Clause-UC
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:so:libc.musl-x86.so.1 so:libncursesw.so.6
+p:cmd:hexdump=2.38.1-r1
+i:util-linux=2.38.1-r1
 
 C:Q1GezyAWBbhx/OpuvJIoUwTP6kPmY=
 P:lua-mqtt-publish
@@ -59382,6 +59295,23 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-test-requires=0.11-r1
 
+C:Q1CN/yDkvM0L04y/3QLvsMbanzhI8=
+P:mcookie
+V:2.38.1-r1
+A:x86
+S:15679
+I:45056
+T:Generate random numbers for xauth from util-linux
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:Public-Domain
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:so:libc.musl-x86.so.1
+p:cmd:mcookie=2.38.1-r1
+i:util-linux=2.38.1-r1
+
 C:Q12/+q++rGofiF2OqeOlJpHPOXo9w=
 P:kea-admin
 V:2.2.0-r2
@@ -60274,23 +60204,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1666201491
 c:fbc16300f821bf5a30fa1d50160ced1e795f4f2a
 i:docs imake=1.0.9-r0
-
-C:Q1jjcHCS+nq7qVcQAMPZ+qNe1sKsw=
-P:flock
-V:2.38.1-r0
-A:x86
-S:15564
-I:45056
-T:File locker from util-linux
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:MIT
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:so:libc.musl-x86.so.1
-p:cmd:flock=2.38.1-r0
-i:util-linux=2.38.1-r0
 
 C:Q1v3Sm8Vgu0USkHpwuEPhBgJ01zps=
 P:libevent-static
@@ -62758,6 +62671,23 @@ c:dcfdf68a4a90c5d1a4f7c9cc4f4cdc3a20de09b5
 D:so:libc.musl-x86.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libatf-c++.so.2=2.0.0 so:libatf-c.so.1=1.0.0 cmd:atf-sh=0.21-r4
 
+C:Q140djoQNqbhOISwkF1W4eCLQl1Sk=
+P:uuidgen
+V:2.38.1-r1
+A:x86
+S:5784
+I:28672
+T:UUID generator from util-linux
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:GPL-1.0-only
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:so:libc.musl-x86.so.1 so:libuuid.so.1
+p:cmd:uuidgen=2.38.1-r1
+i:util-linux=2.38.1-r1
+
 C:Q1dRHC1ISBQ5ecrzWq1wwHgN7CYuE=
 P:gpm-dev
 V:1.20.7-r2
@@ -63417,6 +63347,22 @@ t:1665698043
 c:bb37266b06a72d21d1fd850ef4b86665cf9ef70f
 D:so:libc.musl-x86.so.1
 p:so:libz.so.1=1.2.13
+
+C:Q12yOWFuVIcUFMS3+z0ZMMoztnaq4=
+P:py3-libmount
+V:2.38.1-r1
+A:x86
+S:30371
+I:139264
+T:python3 bindings to libmount
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:LGPL-2.1-or-later
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:so:libc.musl-x86.so.1 so:libmount.so.1
+p:py3.10:libmount=2.38.1-r1
 
 C:Q1jwPhQMgB+7ihFhLcg5rV1lcsuRs=
 P:dnssec-root
@@ -64582,6 +64528,23 @@ t:1661893370
 c:e8e5d0b39d8b14d4030287504081be33b497f39a
 D:so:libc.musl-x86.so.1 so:libhiredis.so.1.0.0 so:libsyslog-ng-3.38.so.0
 
+C:Q1MNgcIaFtF2Vl81tmOc4CMEl2gkU=
+P:logger
+V:2.38.1-r1
+A:x86
+S:22064
+I:65536
+T:Logger from util-linux
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:BSD-4-Clause-UC
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:so:libc.musl-x86.so.1
+p:cmd:logger=2.38.1-r1
+i:util-linux=2.38.1-r1
+
 C:Q10QhLDsWk8LJ3y+oRg3wG86D8iAI=
 P:font-tlwg
 V:0.7.3-r0
@@ -65027,6 +64990,23 @@ o:yajl
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1657108442
 c:1f53c5b1e69f153b07fcfcae01b144f533b3d74d
+
+C:Q1Y2QJi6b4NeGZ/1rjo+l4ias7PkU=
+P:wipefs
+V:2.38.1-r1
+A:x86
+S:20147
+I:53248
+T:Utility to wipe filesystems from device from util-linux
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:GPL-2.0-or-later
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:so:libblkid.so.1 so:libc.musl-x86.so.1 so:libsmartcols.so.1
+p:cmd:wipefs=2.38.1-r1
+i:util-linux=2.38.1-r1
 
 C:Q1ZVCUKD6Son2TCWv0wmjxlr5AmTc=
 P:liblogging-doc
@@ -65898,6 +65878,23 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 i:docs perl-convert-binhex=1.125-r4
+
+C:Q1GVPuc2xrQE2pWzgnQ1N6BK55BXs=
+P:findmnt
+V:2.38.1-r1
+A:x86
+S:32672
+I:77824
+T:Find mount from util-linux
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:GPL-2.0-or-later
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:so:libblkid.so.1 so:libc.musl-x86.so.1 so:libmount.so.1 so:libsmartcols.so.1
+p:cmd:findmnt=2.38.1-r1
+i:util-linux=2.38.1-r1
 
 C:Q1S5WNEhuI/DwimBuBiQ0P2u4xeq0=
 P:perl-html-tree-doc
@@ -70461,23 +70458,6 @@ t:1642139088
 c:26d81109be7269bd10e423ef2c117e2f16a4fc3a
 i:docs distcc=3.4-r2
 
-C:Q1LuvTb+lXJlTtZIwmeI0r+KktVi4=
-P:lsblk
-V:2.38.1-r0
-A:x86
-S:81014
-I:196608
-T:Block device list tool from util-linux
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:GPL-2.0-or-later
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:so:libblkid.so.1 so:libc.musl-x86.so.1 so:libmount.so.1 so:libsmartcols.so.1
-p:cmd:lsblk=2.38.1-r0
-i:util-linux=2.38.1-r0
-
 C:Q1YqClfBHveFEQStS8/fmGmwtw8mc=
 P:sysklogd-doc
 V:1.5.1-r3
@@ -71222,6 +71202,23 @@ m:Cameron Banta <cbanta@gmail.com>
 t:1665481147
 c:d35a913725d5f57abc7fb9868fdbc753e10e5af0
 
+C:Q1bTSjMUw5ZB+rRLUcyU400Jd/fVA=
+P:agetty
+V:2.38.1-r1
+A:x86
+S:30396
+I:69632
+T:agetty program from util-linux
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:Public-Domain
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:so:libc.musl-x86.so.1
+p:cmd:agetty=2.38.1-r1
+i:util-linux=2.38.1-r1
+
 C:Q1EtIxxIZv80EwXtDAHAmThG9yNzU=
 P:busybox-doc
 V:1.35.0-r29
@@ -71313,6 +71310,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 i:docs patch=2.7.6-r8
+
+C:Q14pHIyy+ZH5wmCNzL3RdCbdIR6sU=
+P:libmount
+V:2.38.1-r1
+A:x86
+S:167811
+I:405504
+T:Block device identification library from util-linux
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:LGPL-2.1-or-later
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:so:libblkid.so.1 so:libc.musl-x86.so.1
+p:so:libmount.so.1=1.1.0
 
 C:Q1hCoiK/QErxUAuKjOz3b7+iO/8GU=
 P:heimdal-su
@@ -72442,20 +72455,6 @@ t:1659792088
 c:0714a84b7f79009ae8b96aef50216ed72f54b885
 i:docs ipvsadm=1.31-r1
 
-C:Q1fYaqSr65frWF9gUtquOUg9mvVmU=
-P:util-linux
-V:2.38.1-r0
-A:x86
-S:1549
-I:16384
-T:Random collection of Linux utilities
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND LGPL-1.0-only AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-
 C:Q1oIAQ45XzYnjWolalwd9pVDee18s=
 P:cyrus-sasl
 V:2.1.28-r3
@@ -72733,22 +72732,6 @@ t:1665761441
 c:c8107e390eae0c264a95d1b39e938ab6ea3a9a42
 D:logrotate
 i:squid=5.7-r0 lang-ms
-
-C:Q1Cep51D7H6d3ZtLdf5BQZSd+dxJo=
-P:py3-libmount
-V:2.38.1-r0
-A:x86
-S:30350
-I:139264
-T:python3 bindings to libmount
-U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-L:LGPL-2.1-or-later
-o:util-linux
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1659840113
-c:e825c757e86839d244643e124d8417d8356b6c37
-D:so:libc.musl-x86.so.1 so:libmount.so.1
-p:py3.10:libmount=2.38.1-r0
 
 C:Q12Tl5avdzT+bjvTw7JdZdyM4EFtA=
 P:lua5.2-filesize
@@ -73908,6 +73891,23 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-yaml=1.30-r2
+
+C:Q1aD2KsGezibpaM98zgbWM+vftbaM=
+P:util-linux-misc
+V:2.38.1-r1
+A:x86
+S:1534861
+I:3993600
+T:Misc binaries for util-linux
+U:https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+L:GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND LGPL-1.0-only AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain
+o:util-linux
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1672882917
+c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
+D:/bin/sh so:libblkid.so.1 so:libc.musl-x86.so.1 so:libfdisk.so.1 so:libmount.so.1 so:libncursesw.so.6 so:libsmartcols.so.1 so:libuuid.so.1 so:libz.so.1
+p:cmd:addpart=2.38.1-r1 cmd:blkdiscard=2.38.1-r1 cmd:blkzone=2.38.1-r1 cmd:blockdev=2.38.1-r1 cmd:cal=2.38.1-r1 cmd:chcpu=2.38.1-r1 cmd:chmem=2.38.1-r1 cmd:choom=2.38.1-r1 cmd:chrt=2.38.1-r1 cmd:col=2.38.1-r1 cmd:colcrt=2.38.1-r1 cmd:colrm=2.38.1-r1 cmd:column=2.38.1-r1 cmd:ctrlaltdel=2.38.1-r1 cmd:delpart=2.38.1-r1 cmd:dmesg=2.38.1-r1 cmd:eject=2.38.1-r1 cmd:fallocate=2.38.1-r1 cmd:fdisk=2.38.1-r1 cmd:fincore=2.38.1-r1 cmd:findfs=2.38.1-r1 cmd:fsck.cramfs=2.38.1-r1 cmd:fsck.minix=2.38.1-r1 cmd:fsck=2.38.1-r1 cmd:fsfreeze=2.38.1-r1 cmd:getopt=2.38.1-r1 cmd:hardlink=2.38.1-r1 cmd:hwclock=2.38.1-r1 cmd:i386=2.38.1-r1 cmd:ionice=2.38.1-r1 cmd:ipcmk=2.38.1-r1 cmd:ipcrm=2.38.1-r1 cmd:ipcs=2.38.1-r1 cmd:irqtop=2.38.1-r1 cmd:isosize=2.38.1-r1 cmd:ldattach=2.38.1-r1 cmd:linux32=2.38.1-r1 cmd:linux64=2.38.1-r1 cmd:look=2.38.1-r1 cmd:lscpu=2.38.1-r1 cmd:lsfd=2.38.1-r1 cmd:lsipc=2.38.1-r1 cmd:lsirq=2.38.1-r1 cmd:lslocks=2.38.1-r1 cmd:lsmem=2.38.1-r1 cmd:lsns=2.38.1-r1 cmd:mesg=2.38.1-r1 cmd:mkfs.bfs=2.38.1-r1 cmd:mkfs.cramfs=2.38.1-r1 cmd:mkfs.minix=2.38.1-r1 cmd:mkfs=2.38.1-r1 cmd:mkswap=2.38.1-r1 cmd:more=2.38.1-r1 cmd:mountpoint=2.38.1-r1 cmd:namei=2.38.1-r1 cmd:nsenter=2.38.1-r1 cmd:pivot_root=2.38.1-r1 cmd:prlimit=2.38.1-r1 cmd:readprofile=2.38.1-r1 cmd:rename=2.38.1-r1 cmd:renice=2.38.1-r1 cmd:resizepart=2.38.1-r1 cmd:rev=2.38.1-r1 cmd:rfkill=2.38.1-r1 cmd:rtcwake=2.38.1-r1 cmd:script=2.38.1-r1 cmd:scriptlive=2.38.1-r1 cmd:scriptreplay=2.38.1-r1 cmd:setarch=2.38.1-r1 cmd:setsid=2.38.1-r1 cmd:setterm=2.38.1-r1 cmd:swaplabel=2.38.1-r1 cmd:swapoff=2.38.1-r1 cmd:swapon=2.38.1-r1 cmd:switch_root=2.38.1-r1 cmd:taskset=2.38.1-r1 cmd:uclampset=2.38.1-r1 cmd:ul=2.38.1-r1 cmd:uname26=2.38.1-r1 cmd:unshare=2.38.1-r1 cmd:utmpdump=2.38.1-r1 cmd:uuidparse=2.38.1-r1 cmd:wall=2.38.1-r1 cmd:wdctl=2.38.1-r1 cmd:whereis=2.38.1-r1 cmd:zramctl=2.38.1-r1
+i:util-linux=2.38.1-r1
 
 C:Q1GcbbvJX1GxksoTnQ2PnE4qYIKIM=
 P:tinydns
