@@ -608,6 +608,22 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.3 so:libc.musl-armv7.so.1
 i:lua-filesystem=1.8.0-r1 lua5.3
 
+C:Q1NA6EnKpKrEF3gnooLbzEGhPyacw=
+P:net-snmp-agent-libs
+V:5.9.3-r1
+A:armv7
+S:571334
+I:1236992
+T:The NET-SNMP runtime agent libraries
+U:http://www.net-snmp.org/
+L:Net-SNMP
+o:net-snmp
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1673786890
+c:6adf4b4a1555cb593976c1b2e001edaa51f2a6f9
+D:so:libc.musl-armv7.so.1 so:libnetsnmp.so.40
+p:so:libnetsnmpagent.so.40=40.2.0 so:libnetsnmphelpers.so.40=40.2.0 so:libnetsnmpmibs.so.40=40.2.0 so:libnetsnmptrapd.so.40=40.2.0
+
 C:Q1Nn3XV6SSq3V3+jKOMUn3wnHsNIQ=
 P:libxt-doc
 V:1.2.1-r0
@@ -3326,21 +3342,21 @@ c:567823dca7dc1f8ce919efbe99762d2d5c020124
 D:so:libc.musl-armv7.so.1 so:libuuid.so.1
 p:cmd:fsck.jfs cmd:jfs_debugfs cmd:jfs_fsck cmd:jfs_fscklog cmd:jfs_logdump cmd:jfs_mkfs cmd:jfs_tune cmd:mkfs.jfs
 
-C:Q1Z7V72muHUa35wMQini1Sh6+7NmI=
-P:net-snmp-perl
-V:5.9.3-r0
+C:Q14VHNP0dt4TTQEmBG7WrMTg6YpXA=
+P:net-snmp-libs
+V:5.9.3-r1
 A:armv7
-S:278013
-I:1449984
-T:The perl NET-SNMP module and the mib2c tool
+S:581141
+I:2371584
+T:The NET-SNMP runtime client libraries
 U:http://www.net-snmp.org/
 L:Net-SNMP
 o:net-snmp
 m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1658078939
-c:939ca7369f071ce58bd1413746a8c1c0e0ca1030
-D:so:libc.musl-armv7.so.1 so:libnetsnmp.so.40 so:libnetsnmpagent.so.40 so:libnetsnmptrapd.so.40
-p:cmd:mib2c cmd:mib2c-update cmd:net-snmp-cert cmd:snmp-bridge-mib cmd:traptoemail
+t:1673786890
+c:6adf4b4a1555cb593976c1b2e001edaa51f2a6f9
+D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1
+p:so:libnetsnmp.so.40=40.2.0
 
 C:Q1VxSLO9zNbPXs1lDBZbguQYlvkjA=
 P:kamailio-mysql
@@ -7862,6 +7878,21 @@ t:1584161742
 c:fe087d48122cfc78dd63956f2d89805b797ac408
 i:docs cgit=1.2.3-r0
 
+C:Q1ODYP6HQoOGGOD3roOrzySjzS7t4=
+P:ppp-winbind
+V:2.4.9-r1
+A:armv7
+S:6099
+I:32768
+T:WINBIND plugin for pppd
+U:https://ppp.samba.org/
+L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
+o:ppp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1673787354
+c:b3ee7103edbf69dcd80d13d1f04c714d8b3a3d45
+D:ppp-daemon so:libc.musl-armv7.so.1
+
 C:Q12kv8bQ1L59kayCMURXx/YN9EgTk=
 P:acf-lib-lua5.1
 V:0.11.0-r2
@@ -8568,22 +8599,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1628001887
 c:10998b5ca77ec8229976ed01346cfc819ddbbb99
 p:linux-firmware-any
-
-C:Q1VHkYsfN2Q2avLeoflDP5z/ZW8R8=
-P:net-snmp-tools
-V:5.9.3-r0
-A:armv7
-S:110831
-I:385024
-T:Network management utilities using SNMP
-U:http://www.net-snmp.org/
-L:Net-SNMP
-o:net-snmp
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1658078939
-c:939ca7369f071ce58bd1413746a8c1c0e0ca1030
-D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libnetsnmp.so.40 so:libnetsnmpagent.so.40
-p:cmd:agentxtrap cmd:checkbandwidth cmd:encode_keychange cmd:net-snmp-create-v3-user cmd:snmpbulkget cmd:snmpbulkwalk cmd:snmpconf cmd:snmpdelta cmd:snmpdf cmd:snmpget cmd:snmpgetnext cmd:snmpinform cmd:snmpnetstat cmd:snmpping cmd:snmpset cmd:snmpstatus cmd:snmptable cmd:snmptest cmd:snmptranslate cmd:snmptrap cmd:snmpusm cmd:snmpvacm cmd:snmpwalk
 
 C:Q1RR6c1JpRdVw7jfm3A0uipeI0tXo=
 P:py3-markdown
@@ -11008,21 +11023,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1610489771
 c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
 
-C:Q1rgDwYHzUzNQrtzWwcXBrXmd/asI=
-P:ppp-passwordfd
-V:2.4.9-r0
-A:armv7
-S:3156
-I:28672
-T:pppd plugin let's you pass the password via a file descriptor
-U:https://ppp.samba.org/
-L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
-o:ppp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1611214606
-c:1356b123da67b224162415628d04df58649460da
-D:ppp-daemon so:libc.musl-armv7.so.1
-
 C:Q1QDt2eeiwvMcZLqExw15PyLdyiAU=
 P:dhclient
 V:4.4.3_p1-r1
@@ -12838,6 +12838,21 @@ c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:so:libc.musl-armv7.so.1 so:libspf2.so.2
 p:cmd:policyd-spf-fs
 
+C:Q1Qqj0lH9FzwjqvVxgedA1Mwv8JqE=
+P:ppp
+V:2.4.9-r1
+A:armv7
+S:1318
+I:4096
+T:A daemon which implements the PPP protocol for dial-up networking
+U:https://ppp.samba.org/
+L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
+o:ppp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1673787354
+c:b3ee7103edbf69dcd80d13d1f04c714d8b3a3d45
+D:ppp-chat ppp-radius ppp-atm ppp-pppoe ppp-l2tp ppp-winbind ppp-passprompt ppp-passwordfd ppp-minconn ppp-daemon
+
 C:Q1g1adt3IExnLlWepZxz2yNEkZ668=
 P:libsrtp-dev
 V:2.3.0-r0
@@ -13869,6 +13884,21 @@ t:1620852262
 c:2d63700fe78744e22c497d2cf7f8610828f00544
 D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libreadline.so.8 so:libssl.so.1.1
 p:cmd:filan cmd:procan cmd:socat
+
+C:Q1J5V7Tj6sk4H2vTyYck/2TRpivvg=
+P:ppp-radius
+V:2.4.9-r1
+A:armv7
+S:34051
+I:143360
+T:RADIUS plugin for pppd
+U:https://ppp.samba.org/
+L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
+o:ppp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1673787354
+c:b3ee7103edbf69dcd80d13d1f04c714d8b3a3d45
+D:ppp-daemon so:libc.musl-armv7.so.1
 
 C:Q1tlUoiTd4Bmo5VyLorrNe+pJjiQs=
 P:uwsgi-logpipe
@@ -15782,6 +15812,22 @@ t:1596402449
 c:5dac24e56a3f7584ffd74998913d8f85b0f24a05
 i:docs mini_httpd=1.30-r1
 
+C:Q108z933rYz5RtCA9Q0OZunEz4ueA=
+P:net-snmp
+V:5.9.3-r1
+A:armv7
+S:29454
+I:196608
+T:Simple Network Management Protocol
+U:http://www.net-snmp.org/
+L:Net-SNMP
+o:net-snmp
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1673786890
+c:6adf4b4a1555cb593976c1b2e001edaa51f2a6f9
+D:so:libc.musl-armv7.so.1 so:libnetsnmp.so.40 so:libnetsnmpagent.so.40 so:libnetsnmpmibs.so.40 so:libnetsnmptrapd.so.40
+p:cmd:snmpd cmd:snmptrapd
+
 C:Q1JN+lA9/PDPCyullkDsTkOkipVxU=
 P:tree
 V:1.8.0-r0
@@ -16598,21 +16644,6 @@ t:1670084158
 c:42566efffa50e41aca641ff940091e3eb5963cb1
 D:/bin/sh so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:liblua-5.4.so.0 so:libpcre.so.1 so:libssl.so.1.1 so:libz.so.1
 p:cmd:haproxy
-
-C:Q1KYcYG8gTwuOBvOshmHYXf11JPL8=
-P:ppp-openrc
-V:2.4.9-r0
-A:armv7
-S:1547
-I:16384
-T:A daemon which implements the PPP protocol for dial-up networking (OpenRC init scripts)
-U:https://ppp.samba.org/
-L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
-o:ppp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1611214606
-c:1356b123da67b224162415628d04df58649460da
-i:openrc ppp=2.4.9-r0
 
 C:Q1KkOeyfYPY9bBXhpUiwGKRlPHhVM=
 P:lua5.4-cjson
@@ -18580,6 +18611,21 @@ t:1619607182
 c:7b7654693317aafe8ca734c7f591ef7efec7cf08
 i:docs gstreamer=1.18.4-r0
 
+C:Q1sj16iKyeNB0by+LbY3ABW2EfHqU=
+P:ppp-l2tp
+V:2.4.9-r1
+A:armv7
+S:8309
+I:40960
+T:pppd plugin to implement PPPoL2TP protocol
+U:https://ppp.samba.org/
+L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
+o:ppp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1673787354
+c:b3ee7103edbf69dcd80d13d1f04c714d8b3a3d45
+D:ppp-daemon so:libc.musl-armv7.so.1
+
 C:Q1U7rzl2L+i1k69U5RJmeU9CpgrVI=
 P:rsyslog
 V:8.2012.0-r3
@@ -19227,22 +19273,6 @@ t:1617646678
 c:599b0882009d2da7fd10dede2e6dea030dcd47c9
 D:python3
 p:py3.9:appdirs-1.4.4-py3.9.egg-info=1.4.4-r2 py3.9:appdirs=1.4.4-r2
-
-C:Q1eJ99c7Pa+d2r8S49ZbVFflWOIhA=
-P:ppp-chat
-V:2.4.9-r0
-A:armv7
-S:10653
-I:32768
-T:a program for automatic ppp session establishment
-U:https://ppp.samba.org/
-L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
-o:ppp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1611214606
-c:1356b123da67b224162415628d04df58649460da
-D:so:libc.musl-armv7.so.1
-p:cmd:chat
 
 C:Q1aZbuDCkcBLJlxO3bnciDMSnpbyQ=
 P:lua5.1-sircbot
@@ -20607,6 +20637,22 @@ t:1620131670
 c:c8c465f2b499377705d6a1e8c0ecac53cec04783
 D:harfbuzz-icu=2.8.1-r0 harfbuzz=2.8.1-r0 pc:freetype2 pc:glib-2.0 pc:gobject-2.0 pc:graphite2 pc:icu-uc pkgconfig
 p:pc:harfbuzz-gobject=2.8.1 pc:harfbuzz-icu=2.8.1 pc:harfbuzz-subset=2.8.1 pc:harfbuzz=2.8.1
+
+C:Q1Cpa7fssfaRhaDsFA2z1qHejSEz8=
+P:ppp-chat
+V:2.4.9-r1
+A:armv7
+S:10670
+I:32768
+T:a program for automatic ppp session establishment
+U:https://ppp.samba.org/
+L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
+o:ppp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1673787354
+c:b3ee7103edbf69dcd80d13d1f04c714d8b3a3d45
+D:so:libc.musl-armv7.so.1
+p:cmd:chat
 
 C:Q1HVc3BZKLV3vw5MqGjzpUXrqVrpY=
 P:dconf-dev
@@ -22750,6 +22796,22 @@ t:1566119528
 c:ad8a9329f93ebdff74253e18d488199c27d60c19
 D:so:libc.musl-armv7.so.1
 p:cmd:makedepend
+
+C:Q1P5scrf8TM9aCxgIULCxqF6Mn3I4=
+P:net-snmp-gui
+V:5.9.3-r1
+A:armv7
+S:9417
+I:45056
+T:An interactive graphical MIB browser for SNMP
+U:http://www.net-snmp.org/
+L:Net-SNMP
+o:net-snmp
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1673786890
+c:6adf4b4a1555cb593976c1b2e001edaa51f2a6f9
+D:net-snmp-perl perl-tk
+p:cmd:tkmib
 
 C:Q16PceMQOz88U6itjx2wtf2XVzuG4=
 P:linux-rpi4
@@ -27060,22 +27122,6 @@ t:1600638063
 c:9565f7995f06381bb0716a6d5d8cbe0705256438
 D:cracklib=2.9.7-r4
 
-C:Q14e6NLqdsk18xPG1nc3AvmdU5UiI=
-P:net-snmp
-V:5.9.3-r0
-A:armv7
-S:29447
-I:196608
-T:Simple Network Management Protocol
-U:http://www.net-snmp.org/
-L:Net-SNMP
-o:net-snmp
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1658078939
-c:939ca7369f071ce58bd1413746a8c1c0e0ca1030
-D:so:libc.musl-armv7.so.1 so:libnetsnmp.so.40 so:libnetsnmpagent.so.40 so:libnetsnmpmibs.so.40 so:libnetsnmptrapd.so.40
-p:cmd:snmpd cmd:snmptrapd
-
 C:Q1UYp6/nTJrQDMNgLXJHYW9kXuCdU=
 P:perl-carp
 V:1.50-r1
@@ -27943,22 +27989,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1617295088
 c:f148b0a67b012a2904948f34a84c012d94a581b7
 
-C:Q12mMdaSh9B/WLqem/eQtr0J68muM=
-P:ppp-pppoe
-V:2.4.9-r0
-A:armv7
-S:18305
-I:65536
-T:pppd plugin for kernel-mode PPPoE on Linux
-U:https://ppp.samba.org/
-L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
-o:ppp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1611214606
-c:1356b123da67b224162415628d04df58649460da
-D:ppp-daemon so:libc.musl-armv7.so.1
-p:cmd:pppoe-discovery
-
 C:Q16hDS59I0nnQQG/vg16jM/dl6zdU=
 P:bitlbee
 V:3.6-r2
@@ -28493,21 +28523,6 @@ t:1586114186
 c:596cd15e692776222d49da2700c6041b39ffbea9
 D:so:libc.musl-armv7.so.1
 p:cmd:bunzip2 cmd:bzcat cmd:bzcmp cmd:bzdiff cmd:bzegrep cmd:bzfgrep cmd:bzgrep cmd:bzip2 cmd:bzip2recover cmd:bzless cmd:bzmore
-
-C:Q1Nh4qgE/KXWvv3+cTVDXJo5FI8Fs=
-P:ppp
-V:2.4.9-r0
-A:armv7
-S:1311
-I:4096
-T:A daemon which implements the PPP protocol for dial-up networking
-U:https://ppp.samba.org/
-L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
-o:ppp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1611214606
-c:1356b123da67b224162415628d04df58649460da
-D:ppp-chat ppp-radius ppp-atm ppp-pppoe ppp-l2tp ppp-winbind ppp-passprompt ppp-passwordfd ppp-minconn ppp-daemon
 
 C:Q1xqSa36FK7soZ26sOLiK2yi1IgDU=
 P:zlib-static
@@ -32747,21 +32762,6 @@ c:b84e9277d1429e0a7235cf3195badbb1006a75aa
 D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1 so:libz.so.1
 p:so:libmariadb.so.3=3
 
-C:Q1B+Oueft2R44Vrfm4SYAh8nVv6zw=
-P:ppp-atm
-V:2.4.9-r0
-A:armv7
-S:7584
-I:36864
-T:pppd plugin to implement PPPoATM protocol
-U:https://ppp.samba.org/
-L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
-o:ppp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1611214606
-c:1356b123da67b224162415628d04df58649460da
-D:ppp-daemon so:libc.musl-armv7.so.1
-
 C:Q12JnzEujCivGMf8/zcDFkBFIjbpQ=
 P:encodings
 V:1.0.5-r0
@@ -33028,6 +33028,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1652315987
 c:427f304d7a7c32ae98dbc87f5d60d681f25beafb
 i:docs lua5.4=5.4.3-r1
+
+C:Q1mJ7VfG98ALWQ++XN8QJqthV1fR0=
+P:net-snmp-openrc
+V:5.9.3-r1
+A:armv7
+S:2308
+I:28672
+T:Simple Network Management Protocol (OpenRC init scripts)
+U:http://www.net-snmp.org/
+L:Net-SNMP
+o:net-snmp
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1673786890
+c:6adf4b4a1555cb593976c1b2e001edaa51f2a6f9
+i:openrc net-snmp=5.9.3-r1
 
 C:Q1ywhEKUGUssgiwDSyCEesxeEtvc8=
 P:lua5.1-lzlib
@@ -33475,6 +33490,21 @@ t:1623156598
 c:dc17465e5bf137b8a67bd361f76c53e39bf7f57c
 i:docs meson=0.58.1-r0
 
+C:Q18LgAUGvgE2BSNyuBngfe0qZ8uTw=
+P:ppp-passprompt
+V:2.4.9-r1
+A:armv7
+S:3738
+I:28672
+T:pppd plugin to invoke an external PAP password prompter
+U:https://ppp.samba.org/
+L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
+o:ppp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1673787354
+c:b3ee7103edbf69dcd80d13d1f04c714d8b3a3d45
+D:ppp-daemon so:libc.musl-armv7.so.1
+
 C:Q1cmaaKXE67wwhejVxSpz6xky0VrA=
 P:libgpg-error-doc
 V:1.42-r0
@@ -33768,6 +33798,22 @@ t:1612850522
 c:48a02a6a23cfc834fbd8a951821a0fab20a081aa
 D:so:libburn.so.4 so:libc.musl-armv7.so.1 so:libedit.so.0 so:libisofs.so.6
 p:so:libisoburn.so.1=1.111.0
+
+C:Q1NkxLYVb3AzynupvdziytcgP/S/c=
+P:net-snmp-perl
+V:5.9.3-r1
+A:armv7
+S:278028
+I:1449984
+T:The perl NET-SNMP module and the mib2c tool
+U:http://www.net-snmp.org/
+L:Net-SNMP
+o:net-snmp
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1673786890
+c:6adf4b4a1555cb593976c1b2e001edaa51f2a6f9
+D:so:libc.musl-armv7.so.1 so:libnetsnmp.so.40 so:libnetsnmpagent.so.40 so:libnetsnmptrapd.so.40
+p:cmd:mib2c cmd:mib2c-update cmd:net-snmp-cert cmd:snmp-bridge-mib cmd:traptoemail
 
 C:Q1jZuf71dTPAzaQI23RNPCxK0dTWs=
 P:brotli-dev
@@ -34640,6 +34686,21 @@ t:1610522533
 c:e9c69219db4d2e1dedce017e96bd8ad689536181
 i:docs perl-b-hooks-endofscope=0.24-r2
 
+C:Q11oDrgQlqjQd1a4ZTGlDFamivM6w=
+P:ppp-passwordfd
+V:2.4.9-r1
+A:armv7
+S:3162
+I:28672
+T:pppd plugin let's you pass the password via a file descriptor
+U:https://ppp.samba.org/
+L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
+o:ppp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1673787354
+c:b3ee7103edbf69dcd80d13d1f04c714d8b3a3d45
+D:ppp-daemon so:libc.musl-armv7.so.1
+
 C:Q1l51NcLmJcDqnhNnEKR4at2SU8Y0=
 P:jack-doc
 V:1.9.18-r0
@@ -34849,22 +34910,6 @@ m:Fabian Affolter <fabian@affolter-engineering.ch>
 t:1617646684
 c:8149799464c0888213291085b9724cc94dc08894
 i:docs ansible-base=2.10.5-r1
-
-C:Q1/RPvvKpkvpWj1ouFtP5DTYbgAlc=
-P:net-snmp-agent-libs
-V:5.9.3-r0
-A:armv7
-S:571233
-I:1236992
-T:The NET-SNMP runtime agent libraries
-U:http://www.net-snmp.org/
-L:Net-SNMP
-o:net-snmp
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1658078939
-c:939ca7369f071ce58bd1413746a8c1c0e0ca1030
-D:so:libc.musl-armv7.so.1 so:libnetsnmp.so.40
-p:so:libnetsnmpagent.so.40=40.2.0 so:libnetsnmphelpers.so.40=40.2.0 so:libnetsnmpmibs.so.40=40.2.0 so:libnetsnmptrapd.so.40=40.2.0
 
 C:Q13TkAsNHr/FQPS/y3oYahCaaFzYs=
 P:py3-mimeparse
@@ -36499,6 +36544,21 @@ o:apache2
 m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
 t:1655113379
 c:a9198e449dbf6778640c17cbb262b6de3b59a242
+
+C:Q1tYZqbrt4HxPc7F7Dnz78sUd8OV4=
+P:ppp-openrc
+V:2.4.9-r1
+A:armv7
+S:1554
+I:16384
+T:A daemon which implements the PPP protocol for dial-up networking (OpenRC init scripts)
+U:https://ppp.samba.org/
+L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
+o:ppp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1673787354
+c:b3ee7103edbf69dcd80d13d1f04c714d8b3a3d45
+i:openrc ppp=2.4.9-r1
 
 C:Q11uEKj+W3ir7uQHj36e0akurce/k=
 P:libsm-dev
@@ -38725,6 +38785,21 @@ t:1617646683
 c:084c454e8b909b443ba56e183c6037faebbaa72c
 D:uwsgi so:libc.musl-armv7.so.1
 
+C:Q1N9d+YCZtR1VN8qsPMZbfsC6Lr90=
+P:ppp-atm
+V:2.4.9-r1
+A:armv7
+S:7591
+I:36864
+T:pppd plugin to implement PPPoATM protocol
+U:https://ppp.samba.org/
+L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
+o:ppp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1673787354
+c:b3ee7103edbf69dcd80d13d1f04c714d8b3a3d45
+D:ppp-daemon so:libc.musl-armv7.so.1
+
 C:Q1WF13wVclOblb/yVvQMEJMlFeSYc=
 P:asterisk-sounds-en
 V:18.2.2-r2
@@ -40868,6 +40943,20 @@ t:1600709963
 c:d47ef535ffd30c3e3d4dc4d84df3d09e80b9c3a4
 i:docs perl-html-scrubber=0.19-r1
 
+C:Q1BW2F17NN+lxwckqUMhy/sI8PKP0=
+P:ppp-dev
+V:2.4.9-r1
+A:armv7
+S:37752
+I:196608
+T:A daemon which implements the PPP protocol for dial-up networking (development files)
+U:https://ppp.samba.org/
+L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
+o:ppp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1673787354
+c:b3ee7103edbf69dcd80d13d1f04c714d8b3a3d45
+
 C:Q1ymKYtO2CUzvw/roXBGvLUT9Ej9A=
 P:curl-dbg
 V:7.79.1-r4
@@ -41452,21 +41541,6 @@ c:070210381b45feb392587cab5e305feda32587dc
 D:pkgconfig spandsp=0.0.6-r1
 p:pc:spandsp=0.0.6
 
-C:Q1BLxJQzqD73KoEe58dlRFFNiyHt4=
-P:ppp-radius
-V:2.4.9-r0
-A:armv7
-S:34039
-I:143360
-T:RADIUS plugin for pppd
-U:https://ppp.samba.org/
-L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
-o:ppp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1611214606
-c:1356b123da67b224162415628d04df58649460da
-D:ppp-daemon so:libc.musl-armv7.so.1
-
 C:Q1VHRk981JpIbHwikFzFNmaSdIGcw=
 P:man-pages
 V:5.11-r0
@@ -41966,20 +42040,6 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1600709974
 c:266ef0a9a8a8354aff0d31533009b5e006c829d6
 p:cmd:start_server
-
-C:Q1Y7OuvN407/P/FSizocY8rcly504=
-P:net-snmp-dbg
-V:5.9.3-r0
-A:armv7
-S:2794825
-I:7663616
-T:Simple Network Management Protocol (debug symbols)
-U:http://www.net-snmp.org/
-L:Net-SNMP
-o:net-snmp
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1658078939
-c:939ca7369f071ce58bd1413746a8c1c0e0ca1030
 
 C:Q1A2jpzSL+QBJysLw0O1blFOMWKxU=
 P:acf-postgresql
@@ -43439,6 +43499,22 @@ c:57473125d3879a5b962886567f3c081907e15edc
 D:python3
 p:py-tappy=3.0-r3 cmd:tap cmd:tappy py3.9:tap=3.0-r3
 
+C:Q1ufp6fz//+NSk0MFakKaEkWgcNGM=
+P:ppp-pppoe
+V:2.4.9-r1
+A:armv7
+S:18312
+I:65536
+T:pppd plugin for kernel-mode PPPoE on Linux
+U:https://ppp.samba.org/
+L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
+o:ppp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1673787354
+c:b3ee7103edbf69dcd80d13d1f04c714d8b3a3d45
+D:ppp-daemon so:libc.musl-armv7.so.1
+p:cmd:pppoe-discovery
+
 C:Q1elXsyhfN6VtdDJVLYvfNjnIQ00Y=
 P:libffi
 V:3.3-r2
@@ -44732,6 +44808,21 @@ c:4f61aff08a3fab3bb7e59c2c453829a123db526f
 D:openjpeg=2.4.0-r1 pkgconfig
 p:pc:libopenjp2=2.4.0
 
+C:Q1iL+a71Me8hFV84PK+lt5KS+THcM=
+P:net-snmp-doc
+V:5.9.3-r1
+A:armv7
+S:195382
+I:684032
+T:Simple Network Management Protocol (documentation)
+U:http://www.net-snmp.org/
+L:Net-SNMP
+o:net-snmp
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1673786890
+c:6adf4b4a1555cb593976c1b2e001edaa51f2a6f9
+i:docs net-snmp=5.9.3-r1
+
 C:Q1yeO6cFAc+76b31EzhMTji3nYFZ0=
 P:dahdi-tools-doc
 V:3.1.0-r1
@@ -45094,22 +45185,6 @@ o:ttf-droid
 t:1610489771
 c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
 D:fontconfig
-
-C:Q1aFc3u54Nvyae/MV0o7N1LTXaYPQ=
-P:ppp-daemon
-V:2.4.9-r0
-A:armv7
-S:189198
-I:417792
-T:A daemon which implements the PPP protocol
-U:https://ppp.samba.org/
-L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
-o:ppp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1611214606
-c:1356b123da67b224162415628d04df58649460da
-D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libpcap.so.1 so:libssl.so.1.1
-p:cmd:poff cmd:pon cmd:pppd cmd:pppdump cmd:pppstats
 
 C:Q1u3Eq7x3GapPE+WF18iX90oJQV7I=
 P:lua5.3-file-magic
@@ -49186,21 +49261,6 @@ t:1600709958
 c:999037799af5ef83c12e47e2c8b01a18c4f7c5f9
 i:docs perl-devel-stacktrace-ashtml=0.15-r2
 
-C:Q1k7YRF0UGt5l6jtUdzYmIza79uUQ=
-P:ppp-passprompt
-V:2.4.9-r0
-A:armv7
-S:3732
-I:28672
-T:pppd plugin to invoke an external PAP password prompter
-U:https://ppp.samba.org/
-L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
-o:ppp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1611214606
-c:1356b123da67b224162415628d04df58649460da
-D:ppp-daemon so:libc.musl-armv7.so.1
-
 C:Q1wzU5LK+MaaaFKOmfbiH7z5dj2Rk=
 P:nftables-doc
 V:0.9.9-r0
@@ -49617,22 +49677,6 @@ t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.4 so:libc.musl-armv7.so.1 so:libpq.so.5
 i:lua-dbi=0.7.2-r1 lua5.4
-
-C:Q1w8mpNh1NntcxGmvPqADqLSBVhCM=
-P:net-snmp-dev
-V:5.9.3-r0
-A:armv7
-S:4697074
-I:13209600
-T:Simple Network Management Protocol (development files)
-U:http://www.net-snmp.org/
-L:Net-SNMP
-o:net-snmp
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1658078939
-c:939ca7369f071ce58bd1413746a8c1c0e0ca1030
-D:openssl-dev net-snmp-agent-libs=5.9.3-r0 net-snmp-libs=5.9.3-r0 pkgconfig
-p:pc:netsnmp-agent=5.9.3 pc:netsnmp=5.9.3 cmd:net-snmp-config
 
 C:Q1A6Ztb3ZAALc9Pqh7sH8gP3lu3Fg=
 P:varnish-dev
@@ -50932,22 +50976,6 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1600709973
 c:e0902ebfa661552ce3454afffd39dea82543d654
 i:docs perl-proc-wait3=0.05-r5
-
-C:Q1np8Ytr8jwCNEai36a5bXY/P685c=
-P:net-snmp-gui
-V:5.9.3-r0
-A:armv7
-S:9405
-I:45056
-T:An interactive graphical MIB browser for SNMP
-U:http://www.net-snmp.org/
-L:Net-SNMP
-o:net-snmp
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1658078939
-c:939ca7369f071ce58bd1413746a8c1c0e0ca1030
-D:net-snmp-perl perl-tk
-p:cmd:tkmib
 
 C:Q1zmorAy9Idui5E+1GPdEuIG/CB0o=
 P:perl-test-simple-doc
@@ -52293,21 +52321,6 @@ c:d38564f6fedaf021ca7cc3fdb3b0d3d959763ce7
 D:cairo-dev glib-dev pc:cairo>=1.10.0 pc:glib-2.0>=2.56 pc:gobject-2.0>=2.56 pkgconfig poppler-glib=21.06.1-r0 poppler=21.06.1-r0
 p:pc:poppler-cpp=21.06.1 pc:poppler-glib=21.06.1 pc:poppler=21.06.1
 
-C:Q1cWYP9eubeFrUafeIfJx6gBAfO50=
-P:ppp-minconn
-V:2.4.9-r0
-A:armv7
-S:2855
-I:28672
-T:pppd plugin to implement a 'minconnect' option
-U:https://ppp.samba.org/
-L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
-o:ppp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1611214606
-c:1356b123da67b224162415628d04df58649460da
-D:ppp-daemon
-
 C:Q1QRDSaDGRavpRnc4gJgHAz2JsUwo=
 P:lm-sensors-sensord-openrc
 V:3.6.0-r1
@@ -53374,6 +53387,22 @@ t:1628016016
 c:03c6b1b0ec20f417cee0f3c1d56795b27871b1c5
 D:musl>=1.2 so:libapk.so.3.12.0 so:libc.musl-armv7.so.1
 
+C:Q1Cg0Jh4E0Vf0iJeBvzqHzYC8dXX8=
+P:ppp-daemon
+V:2.4.9-r1
+A:armv7
+S:189263
+I:417792
+T:A daemon which implements the PPP protocol
+U:https://ppp.samba.org/
+L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
+o:ppp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1673787354
+c:b3ee7103edbf69dcd80d13d1f04c714d8b3a3d45
+D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libpcap.so.1 so:libssl.so.1.1
+p:cmd:poff cmd:pon cmd:pppd cmd:pppdump cmd:pppstats
+
 C:Q13LzmnKOq+V0x1C6u1UqQNHy9mW8=
 P:dbus-dev
 V:1.12.24-r0
@@ -54228,21 +54257,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1622616402
 c:12c9046eee3a0a35665dc4e280c1f5ae2af5845d
 i:docs bridge-utils=1.7.1-r0
-
-C:Q1QAn1Fq8gILMEcbMNJHvBVwMDOkk=
-P:ppp-winbind
-V:2.4.9-r0
-A:armv7
-S:6092
-I:32768
-T:WINBIND plugin for pppd
-U:https://ppp.samba.org/
-L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
-o:ppp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1611214606
-c:1356b123da67b224162415628d04df58649460da
-D:ppp-daemon so:libc.musl-armv7.so.1
 
 C:Q1cRzj8+pDRVod34Dd0Cy29bQEylM=
 P:gtk+-dev
@@ -56644,21 +56658,6 @@ t:1621485419
 c:1900db34ee50bab2ec08a92aacc6074a01ccd836
 D:so:libboost_filesystem.so.1.75.0 so:libboost_log.so.1.75.0 so:libboost_regex.so.1.75.0 so:libboost_thread.so.1.75.0 so:libc.musl-armv7.so.1 so:libgcc_s.so.1
 p:so:libboost_log_setup.so.1.75.0=1.75.0
-
-C:Q1K11k2/h/I61B7J2FKrNI+l1EGqI=
-P:ppp-l2tp
-V:2.4.9-r0
-A:armv7
-S:8302
-I:40960
-T:pppd plugin to implement PPPoL2TP protocol
-U:https://ppp.samba.org/
-L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
-o:ppp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1611214606
-c:1356b123da67b224162415628d04df58649460da
-D:ppp-daemon so:libc.musl-armv7.so.1
 
 C:Q1jTOyL2u17j/MP0kq7MACHSFduTY=
 P:boost1.76-container
@@ -61702,21 +61701,6 @@ c:6c972753a9bd28bc721faf6ab8665d32e45cb128
 D:ncurses-terminfo-base so:libc.musl-armv7.so.1 so:libevent_core-2.1.so.7 so:libncursesw.so.6
 p:cmd:tmux
 
-C:Q1zo3QpW6DaP8gdNfyyemT1aIESEk=
-P:net-snmp-doc
-V:5.9.3-r0
-A:armv7
-S:195382
-I:684032
-T:Simple Network Management Protocol (documentation)
-U:http://www.net-snmp.org/
-L:Net-SNMP
-o:net-snmp
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1658078939
-c:939ca7369f071ce58bd1413746a8c1c0e0ca1030
-i:docs net-snmp=5.9.3-r0
-
 C:Q1D96H1ueumtWvV0dTvbbuQif8pH0=
 P:lua-rex-posix
 V:2.9.1-r1
@@ -63084,6 +63068,22 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:so:libc.musl-armv7.so.1
 i:lua5.3 lua-struct=0.2-r3
 
+C:Q1xjqn8d5sSfiNT+s3qV8RgS39jgY=
+P:net-snmp-tools
+V:5.9.3-r1
+A:armv7
+S:110840
+I:385024
+T:Network management utilities using SNMP
+U:http://www.net-snmp.org/
+L:Net-SNMP
+o:net-snmp
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1673786890
+c:6adf4b4a1555cb593976c1b2e001edaa51f2a6f9
+D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libnetsnmp.so.40 so:libnetsnmpagent.so.40
+p:cmd:agentxtrap cmd:checkbandwidth cmd:encode_keychange cmd:net-snmp-create-v3-user cmd:snmpbulkget cmd:snmpbulkwalk cmd:snmpconf cmd:snmpdelta cmd:snmpdf cmd:snmpget cmd:snmpgetnext cmd:snmpinform cmd:snmpnetstat cmd:snmpping cmd:snmpset cmd:snmpstatus cmd:snmptable cmd:snmptest cmd:snmptranslate cmd:snmptrap cmd:snmpusm cmd:snmpvacm cmd:snmpwalk
+
 C:Q11yHP+os9EQJ3dnSqwbM82UGmQvw=
 P:grub-bash-completion
 V:2.06-r0
@@ -63591,6 +63591,21 @@ t:1661362311
 c:18ca7adeb13832ccac7de1283a07e90d5e02b38b
 D:mariadb-common /bin/sh so:libaio.so.1 so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libgcc_s.so.1 so:liblzma.so.5 so:libncursesw.so.6 so:libpam.so.0 so:libpcre2-8.so.0 so:libssl.so.1.1 so:libstdc++.so.6 so:libxml2.so.2 so:libz.so.1
 p:cmd:aria_chk cmd:aria_dump_log cmd:aria_ftdump cmd:aria_pack cmd:aria_read_log cmd:aria_s3_copy cmd:innochecksum cmd:mariadb-binlog cmd:mariadb-conv cmd:mariadb-embedded cmd:mariadb-install-db cmd:mariadb-ldb cmd:mariadb-plugin cmd:mariadb-secure-installation cmd:mariadb-slap cmd:mariadb-tzinfo-to-sql cmd:mariadbd cmd:mariadbd-safe cmd:msql2mysql cmd:my_print_defaults cmd:myisamchk cmd:myisamlog cmd:myisampack cmd:myrocks_hotbackup cmd:mysql_embedded cmd:mysql_install_db cmd:mysql_ldb cmd:mysql_plugin cmd:mysql_secure_installation cmd:mysql_tzinfo_to_sql cmd:mysqlbinlog cmd:mysqld cmd:mysqld_safe cmd:mysqlslap cmd:replace cmd:resolve_stack_dump cmd:resolveip cmd:sst_dump cmd:test-connect-t cmd:wsrep_sst_backup cmd:wsrep_sst_mariabackup cmd:wsrep_sst_mysqldump cmd:wsrep_sst_rsync cmd:wsrep_sst_rsync_wan
+
+C:Q18mEffSWCXI04lOr5KzQH2MF5ppo=
+P:ppp-doc
+V:2.4.9-r1
+A:armv7
+S:57084
+I:188416
+T:A daemon which implements the PPP protocol for dial-up networking (documentation)
+U:https://ppp.samba.org/
+L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
+o:ppp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1673787354
+c:b3ee7103edbf69dcd80d13d1f04c714d8b3a3d45
+i:docs ppp=2.4.9-r1
 
 C:Q15OAGRUUaxUcZYXB/7CHcmFYMKRU=
 P:lua-posixtz
@@ -66367,6 +66382,21 @@ t:1600709954
 c:e9210227014ba363607dc6c6d894c72bbf7b9ec4
 i:docs perl-class-method-modifiers=2.13-r2
 
+C:Q167tcA12La2zVI8KhPCVWbF239cU=
+P:ppp-minconn
+V:2.4.9-r1
+A:armv7
+S:2861
+I:28672
+T:pppd plugin to implement a 'minconnect' option
+U:https://ppp.samba.org/
+L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
+o:ppp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1673787354
+c:b3ee7103edbf69dcd80d13d1f04c714d8b3a3d45
+D:ppp-daemon
+
 C:Q1vPHCyP5MuNoJ3eLBDAUFOrMTsNo=
 P:nfdump-doc
 V:1.6.23-r0
@@ -66642,20 +66672,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1633456058
 c:d10d87c0d9c31c3fe062e31ae65e3c05a8b6a060
 D:openssh-client=8.6_p1-r3 so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libz.so.1
-
-C:Q1ijOKLt1mpJtHo1q/9aZV4Vy3IVc=
-P:ppp-dev
-V:2.4.9-r0
-A:armv7
-S:37754
-I:196608
-T:A daemon which implements the PPP protocol for dial-up networking (development files)
-U:https://ppp.samba.org/
-L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
-o:ppp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1611214606
-c:1356b123da67b224162415628d04df58649460da
 
 C:Q1a16MEszGhz2kT8OM9Ngcf/5+jjE=
 P:ruby-full
@@ -67316,21 +67332,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1623293560
 c:c8aabb59a37ac1fbf0ecd199c96f95d902e36226
 i:docs fuse3=3.10.4-r0
-
-C:Q1Aks9qKvXvKMvUmkoRbSuckCYJfM=
-P:net-snmp-openrc
-V:5.9.3-r0
-A:armv7
-S:2306
-I:28672
-T:Simple Network Management Protocol (OpenRC init scripts)
-U:http://www.net-snmp.org/
-L:Net-SNMP
-o:net-snmp
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1658078939
-c:939ca7369f071ce58bd1413746a8c1c0e0ca1030
-i:openrc net-snmp=5.9.3-r0
 
 C:Q1t/g3vuK/4Vj2YZ949LypDMUsD3E=
 P:linux-firmware-cis
@@ -68228,21 +68229,6 @@ t:1616849705
 c:75a4782528b5a62d46984a9401ab904f843cc898
 D:so:libc.musl-armv7.so.1 so:libcairo.so.2 so:libgck-1.so.0 so:libgcr-base-3.so.1 so:libgdk-3.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-3.so.0 so:libintl.so.8 so:libpango-1.0.so.0
 p:so:libgcr-ui-3.so.1=1.0.0 cmd:gcr-viewer
-
-C:Q1rpp9CETZUtaf934TJBeaTKSWg+4=
-P:ppp-doc
-V:2.4.9-r0
-A:armv7
-S:57079
-I:188416
-T:A daemon which implements the PPP protocol for dial-up networking (documentation)
-U:https://ppp.samba.org/
-L:BSD and LGPL-2.0-or-later and GPL-2.0-or-later and Public-Domain
-o:ppp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1611214606
-c:1356b123da67b224162415628d04df58649460da
-i:docs ppp=2.4.9-r0
 
 C:Q10CWeuexEkPiMAQXzhadaXJGUSuc=
 P:guile-dev
@@ -71215,6 +71201,20 @@ m:Tycho Andersen <tycho@docker.com>
 t:1617646684
 c:6f3f2768ed4beeff076c5f77d48a85aa313be606
 
+C:Q1es1QJkeXIVsEh1KpMlQuBwKUNtQ=
+P:net-snmp-dbg
+V:5.9.3-r1
+A:armv7
+S:2795329
+I:7667712
+T:Simple Network Management Protocol (debug symbols)
+U:http://www.net-snmp.org/
+L:Net-SNMP
+o:net-snmp
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1673786890
+c:6adf4b4a1555cb593976c1b2e001edaa51f2a6f9
+
 C:Q1rnI05e6juKJJTDRNkRj02TTIv7I=
 P:perl-mail-authenticationresults
 V:2.20210112-r0
@@ -72287,6 +72287,22 @@ c:6dac4c6b1c4477f019c9bb0572b583c76fae1c81
 D:tar xz so:libbz2.so.1 so:libc.musl-armv7.so.1 so:libz.so.1
 p:cmd:dpkg cmd:dpkg-buildflags cmd:dpkg-deb cmd:dpkg-divert cmd:dpkg-fsys-usrunmess cmd:dpkg-genbuildinfo cmd:dpkg-maintscript-helper cmd:dpkg-query cmd:dpkg-realpath cmd:dpkg-split cmd:dpkg-statoverride cmd:dpkg-trigger cmd:update-alternatives
 
+C:Q1I6QN2f/+bAuIEzxv0DJC3TRc64k=
+P:net-snmp-dev
+V:5.9.3-r1
+A:armv7
+S:4697335
+I:13209600
+T:Simple Network Management Protocol (development files)
+U:http://www.net-snmp.org/
+L:Net-SNMP
+o:net-snmp
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1673786890
+c:6adf4b4a1555cb593976c1b2e001edaa51f2a6f9
+D:openssl-dev net-snmp-agent-libs=5.9.3-r1 net-snmp-libs=5.9.3-r1 pkgconfig
+p:pc:netsnmp-agent=5.9.3 pc:netsnmp=5.9.3 cmd:net-snmp-config
+
 C:Q1ZsCQpPDcxRjNYe2Kw7L55OWrLBc=
 P:gtest
 V:1.11.0-r0
@@ -73106,22 +73122,6 @@ t:1588256979
 c:7f3241b6f57bb4a8de8ccc05f1b433e53d87e994
 D:pkgconfig slang=2.3.2-r0
 p:pc:slang=2.3.2
-
-C:Q1LDTq+xDEJ5fdTE3XDVP3lWvoqQk=
-P:net-snmp-libs
-V:5.9.3-r0
-A:armv7
-S:581115
-I:2371584
-T:The NET-SNMP runtime client libraries
-U:http://www.net-snmp.org/
-L:Net-SNMP
-o:net-snmp
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1658078939
-c:939ca7369f071ce58bd1413746a8c1c0e0ca1030
-D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1
-p:so:libnetsnmp.so.40=40.2.0
 
 C:Q1zPZFG+lu9vK7j+b7fN8T2vrGPqg=
 P:e2fsprogs-libs
