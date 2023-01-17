@@ -1336,21 +1336,6 @@ t:1640092805
 c:ed4e519e5c2e7e4b635534cc0e17e232a6815f2d
 D:uwsgi
 
-C:Q1vXq9NRwOtPKyHarFmZezAEip1tI=
-P:apache2-ssl
-V:2.4.54-r0
-A:aarch64
-S:92874
-I:274432
-T:SSL/TLS module for the Apache HTTP Server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kunkku@alpinelinux.org>
-t:1654816952
-c:977fbc4f17c543e89f75648c240586eb58d8da3e
-D:apache2 openssl /bin/sh so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
-
 C:Q1TorrDXn22Gqkjgl4XMxux0QPEiE=
 P:libpaper-dev
 V:1.1.28-r1
@@ -4790,6 +4775,21 @@ c:6b90bc37b72d42258e8b04589e7e800b38ec7929
 D:perl so:libc.musl-aarch64.so.1
 p:cmd:bdftruncate=1.3.2-r0 cmd:ucs2any=1.3.2-r0
 
+C:Q1MrHmLnbEb3Mo1REaAyVMhaN87Ns=
+P:apache2-http2
+V:2.4.55-r0
+A:aarch64
+S:89646
+I:253952
+T:HTTP/2 transport layer for the Apache HTTP Server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kunkku@alpinelinux.org>
+t:1673983353
+c:331f51a4bb41f80f31eda206588a8dfc0fd9bd6e
+D:apache2 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libnghttp2.so.14
+
 C:Q1FZtPku7URigHB14vQ8Ua3srlhDY=
 P:postgresql13
 V:13.8-r0
@@ -6885,6 +6885,22 @@ c:3a12c62d0a076c6e7a37577a715f857fa8023e0c
 D:lzo=2.10-r3 pkgconfig
 p:pc:lzo2=2.10
 
+C:Q121oBHF67Z86WvjpfRl0cHuBPWDI=
+P:apache2
+V:2.4.55-r0
+A:aarch64
+S:813439
+I:2777088
+T:A high performance Unix-based HTTP server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kunkku@alpinelinux.org>
+t:1673983353
+c:331f51a4bb41f80f31eda206588a8dfc0fd9bd6e
+D:/bin/sh so:libapr-1.so.0 so:libaprutil-1.so.0 so:libc.musl-aarch64.so.1 so:libpcre.so.1 so:libz.so.1
+p:cmd:fcgistarter=2.4.55-r0 cmd:httpd=2.4.55-r0 cmd:suexec=2.4.55-r0
+
 C:Q1fNFXrsV1gBz8pNxeCIaKDh5RJBc=
 P:librsync-dev
 V:2.3.2-r2
@@ -7593,22 +7609,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1665374395
 c:59bf173b777ec90191bcaf7e9d7b372c1437ffe8
 i:openrc postfix=3.7.3-r0
-
-C:Q1V23WD8dvcC95LSeOy+uNlYUYXdA=
-P:apache2
-V:2.4.54-r0
-A:aarch64
-S:812919
-I:2772992
-T:A high performance Unix-based HTTP server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kunkku@alpinelinux.org>
-t:1654816952
-c:977fbc4f17c543e89f75648c240586eb58d8da3e
-D:/bin/sh so:libapr-1.so.0 so:libaprutil-1.so.0 so:libc.musl-aarch64.so.1 so:libpcre.so.1 so:libz.so.1
-p:cmd:fcgistarter=2.4.54-r0 cmd:httpd=2.4.54-r0 cmd:suexec=2.4.54-r0
 
 C:Q1i/auoAChovCVineqOUep4iXX/Dw=
 P:perl-test-number-delta-doc
@@ -9405,21 +9405,6 @@ c:2095b0bc08aec9267b926cb509fd88123af208d2
 D:bacula so:libc.musl-aarch64.so.1 so:libmariadb.so.3
 p:so:libbaccats-mysql-11.0.6.so=0
 
-C:Q16O1xjn77eyAAJLxEqRRDourFMpM=
-P:apache2-brotli
-V:2.4.54-r0
-A:aarch64
-S:7278
-I:49152
-T:Brotli content compression for the Apache HTTP Server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kunkku@alpinelinux.org>
-t:1654816952
-c:977fbc4f17c543e89f75648c240586eb58d8da3e
-D:apache2 so:libbrotlienc.so.1 so:libc.musl-aarch64.so.1
-
 C:Q17K0x0oO7hnVxHDgQZjWHQ3shwrM=
 P:attr-dev
 V:2.5.1-r1
@@ -10061,20 +10046,6 @@ c:d76f9d8b357220d55f0ae93437e11fa4c5183c63
 D:python3 so:libc.musl-aarch64.so.1 so:libdrm.so.2 so:libgcc_s.so.1 so:libstdc++.so.6 so:libwayland-client.so.0 so:libxcb-dri3.so.0 so:libxcb.so.1
 p:mesa-vulkan-layer=21.3.8-r2 so:libVkLayer_MESA_device_select.so=0 so:libVkLayer_MESA_overlay.so=0 cmd:mesa-overlay-control.py=21.3.8-r2
 
-C:Q10IL5HZopWNvFCeZ5Q9vuCjY709U=
-P:apache2-error
-V:2.4.54-r0
-A:aarch64
-S:43744
-I:299008
-T:Apache Multi Language Custom Error Documents
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kunkku@alpinelinux.org>
-t:1654816952
-c:977fbc4f17c543e89f75648c240586eb58d8da3e
-
 C:Q1EZnTq7J98akx6x4qYz3bI8dYyqI=
 P:datefudge-doc
 V:1.24-r0
@@ -10209,6 +10180,20 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1651086758
 c:3a1a6c29fd6f7365aaaf0d6ac4c24129e464d51a
 i:docs btrfs-progs=5.17-r0
+
+C:Q1zsUMh9WplqPEtPKXUZvsH1GlumM=
+P:apache2-icons
+V:2.4.55-r0
+A:aarch64
+S:159299
+I:1368064
+T:Apache Public Domain Icons
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kunkku@alpinelinux.org>
+t:1673983353
+c:331f51a4bb41f80f31eda206588a8dfc0fd9bd6e
 
 C:Q13zKuCTjsqKNKnCc3TBCDFgMJP0E=
 P:highlight
@@ -11114,6 +11099,21 @@ o:samba
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1651003769
 c:ca4725f013066ab5bac4a4d08d682a9090032ff8
+
+C:Q1gJy/q9UZtjL5QJidLV4LIkjFAA0=
+P:apache2-webdav
+V:2.4.55-r0
+A:aarch64
+S:71202
+I:208896
+T:WebDAV support for the Apache HTTP Server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kunkku@alpinelinux.org>
+t:1673983353
+c:331f51a4bb41f80f31eda206588a8dfc0fd9bd6e
+D:apache2 so:libc.musl-aarch64.so.1
 
 C:Q1MdI+xD7ySOSlIjpmJ/jqvbCbiHs=
 P:ldapvi
@@ -12811,6 +12811,20 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1652178842
 c:4e7a73e02f55e0033e27a8500337b5cefa2efd81
 i:docs libxvmc=1.0.13-r0
+
+C:Q1wD5OH2H5hlGaNYoRvthspT+vjYE=
+P:apache2-error
+V:2.4.55-r0
+A:aarch64
+S:43734
+I:299008
+T:Apache Multi Language Custom Error Documents
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kunkku@alpinelinux.org>
+t:1673983353
+c:331f51a4bb41f80f31eda206588a8dfc0fd9bd6e
 
 C:Q1ZXgC5r+8W93liBBnnyj41jt/7hE=
 P:igmpproxy-doc
@@ -15415,21 +15429,6 @@ m:Carlo Landmeter <clandmeter@alpinelinux.org>
 t:1610489771
 c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
 i:docs zip=3.0-r9
-
-C:Q1AkoRBBvfsG2YiFeWtJeuRDPbqDk=
-P:apache2-ldap
-V:2.4.54-r0
-A:aarch64
-S:44357
-I:155648
-T:LDAP authentication/authorization module for the Apache HTTP Server
-U:https://httpd.apache.org/docs/2.4/mod/mod_authnz_ldap.html
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kunkku@alpinelinux.org>
-t:1654816952
-c:977fbc4f17c543e89f75648c240586eb58d8da3e
-D:apache2 apr-util-ldap so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
 
 C:Q1BM4IakJKpnFT9RUyqYYrk8PcyBM=
 P:smartmontools-doc
@@ -19724,6 +19723,21 @@ t:1612417724
 c:7a8da7a446805e393707f6f8dcdd14ef5b40d30b
 i:docs conntrack-tools=1.4.6-r1
 
+C:Q1AXjAtHmQKL6S2Ko8JZdMJXrhZY8=
+P:apache2-brotli
+V:2.4.55-r0
+A:aarch64
+S:7282
+I:49152
+T:Brotli content compression for the Apache HTTP Server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kunkku@alpinelinux.org>
+t:1673983353
+c:331f51a4bb41f80f31eda206588a8dfc0fd9bd6e
+D:apache2 so:libbrotlienc.so.1 so:libc.musl-aarch64.so.1
+
 C:Q1wh7oK5nqfNtqUA3yKmwDXeHHCD0=
 P:lua5.3-filesystem
 V:1.8.0-r1
@@ -23040,6 +23054,21 @@ t:1639283536
 c:3a5a93057abdaa929cdcc31bd1bdff84510b9194
 D:perl perl-socket6
 
+C:Q13L1gnRIQlPQXXnQbbd5cZKvF3mk=
+P:apache2-doc
+V:2.4.55-r0
+A:aarch64
+S:5752502
+I:25882624
+T:A high performance Unix-based HTTP server (documentation)
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kunkku@alpinelinux.org>
+t:1673983353
+c:331f51a4bb41f80f31eda206588a8dfc0fd9bd6e
+i:docs apache2=2.4.55-r0
+
 C:Q1kK+t28nxZEtK83SdsP095zUgkIQ=
 P:perl-sub-exporter-progressive
 V:0.001013-r2
@@ -24379,6 +24408,21 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1645686632
 c:490c3b2b0dcd4760d157521d99c2b45177f3e091
 i:docs nghttp2=1.47.0-r0
+
+C:Q1Pbfau7XFDdyewrEZgYCWXfq4Smg=
+P:apache2-ssl
+V:2.4.55-r0
+A:aarch64
+S:92908
+I:274432
+T:SSL/TLS module for the Apache HTTP Server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kunkku@alpinelinux.org>
+t:1673983353
+c:331f51a4bb41f80f31eda206588a8dfc0fd9bd6e
+D:apache2 openssl /bin/sh so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 
 C:Q1/moH1RGGD5SZQEbWxEHkEXahOQU=
 P:mosquitto-doc
@@ -28128,21 +28172,6 @@ c:3a1a6c29fd6f7365aaaf0d6ac4c24129e464d51a
 D:so:libblkid.so.1 so:libc.musl-aarch64.so.1 so:liblzo2.so.2 so:libudev.so.1 so:libuuid.so.1 so:libz.so.1 so:libzstd.so.1
 p:cmd:btrfs=5.17-r0 cmd:btrfsck=5.17-r0 cmd:fsck.btrfs=5.17-r0 cmd:mkfs.btrfs=5.17-r0
 
-C:Q1Xru2IZOuNS2XmfuFS+Q8edy4iIM=
-P:apache2-lua
-V:2.4.54-r0
-A:aarch64
-S:46013
-I:155648
-T:Lua support for the Apache HTTP server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kunkku@alpinelinux.org>
-t:1654816952
-c:977fbc4f17c543e89f75648c240586eb58d8da3e
-D:apache2 so:libc.musl-aarch64.so.1 so:liblua.so.5
-
 C:Q1T/8Ue74ZzH2GuSC44YKIzybgZL4=
 P:boost1.78-type_erasure
 V:1.78.0-r1
@@ -31479,6 +31508,21 @@ t:1657034753
 c:0d31ebce5d7211893f8b92bd72a4f9d01cbbcb99
 D:gpg-agent=2.2.35-r4 /bin/sh so:libassuan.so.0 so:libc.musl-aarch64.so.1 so:libgcrypt.so.20 so:libgpg-error.so.0 so:libksba.so.8 so:libnpth.so.0 so:libusb-1.0.so.0
 
+C:Q1ANcbl6tsBqQmPq+p1oZPBMhU7YA=
+P:apache2-lua
+V:2.4.55-r0
+A:aarch64
+S:46017
+I:155648
+T:Lua support for the Apache HTTP server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kunkku@alpinelinux.org>
+t:1673983353
+c:331f51a4bb41f80f31eda206588a8dfc0fd9bd6e
+D:apache2 so:libc.musl-aarch64.so.1 so:liblua.so.5
+
 C:Q1USj5Ihxb8uzDd3HpGlnNHnqtXeA=
 P:uwsgi-router_cache
 V:2.0.20-r0
@@ -33748,6 +33792,22 @@ t:1599639506
 c:24e960791e3e6c28efc0a4b7204e679a7d5e08a3
 D:so:libX11.so.6 so:libc.musl-aarch64.so.1
 p:so:libXdamage.so.1=1.1.0
+
+C:Q1DZgs3kzYsdFtd1ofrt8BikXsD5Y=
+P:apache2-ctl
+V:2.4.55-r0
+A:aarch64
+S:3120
+I:16384
+T:Apache control script
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kunkku@alpinelinux.org>
+t:1673983353
+c:331f51a4bb41f80f31eda206588a8dfc0fd9bd6e
+D:lynx
+p:cmd:apachectl=2.4.55-r0
 
 C:Q1gH8i4Yb+BF2lz7FLDBSlNlBYuiw=
 P:git-doc
@@ -36528,21 +36588,6 @@ t:1631403774
 c:d8a5ac7439a1911967a21a99c88b0e6552c6dc57
 D:ncurses-dev libedit=20210910.3.1-r0 pkgconfig
 p:pc:libedit=3.1
-
-C:Q1vUE92zvaLBgqsYk6D0CjoS1O+8E=
-P:apache2-http2
-V:2.4.54-r0
-A:aarch64
-S:92038
-I:258048
-T:HTTP/2 transport layer for the Apache HTTP Server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kunkku@alpinelinux.org>
-t:1654816952
-c:977fbc4f17c543e89f75648c240586eb58d8da3e
-D:apache2 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libnghttp2.so.14
 
 C:Q1rkfkdf5dmqWBXTeNqQjZD9SWsfk=
 P:perl-file-slurp-tiny-doc
@@ -39761,20 +39806,6 @@ c:b60d787f9447709996cffdb69bb3ac9178f8186f
 D:perl-test-harness perl
 p:cmd:prove=3.44-r0
 
-C:Q1js/DI6ZJAhXSIssT5KjskZBH/1U=
-P:apache2-icons
-V:2.4.54-r0
-A:aarch64
-S:159298
-I:1368064
-T:Apache Public Domain Icons
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kunkku@alpinelinux.org>
-t:1654816952
-c:977fbc4f17c543e89f75648c240586eb58d8da3e
-
 C:Q1UCEGQ6XsVLHSDMlT97bX+gY1nYc=
 P:libpng-static
 V:1.6.37-r1
@@ -40461,6 +40492,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1656413705
 c:8d70ffe27cba4936899345a22b379f810623c825
 p:linux-firmware-any
+
+C:Q1z0RfoeKUsryWNovc09GS1xbb+SE=
+P:apache2-proxy-html
+V:2.4.55-r0
+A:aarch64
+S:22651
+I:90112
+T:HTML and XML content filters for the Apache HTTP Server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kunkku@alpinelinux.org>
+t:1673983353
+c:331f51a4bb41f80f31eda206588a8dfc0fd9bd6e
+D:apache2 so:libc.musl-aarch64.so.1 so:libxml2.so.2
 
 C:Q1gOnORshOOZDlyMLF6GS3KpLPBtQ=
 P:libsm-doc
@@ -43136,6 +43182,21 @@ o:atf
 t:1622914361
 c:988c4057d60ade6a214b14741f3e0950b3105c3a
 
+C:Q1+91zujv9UD60pfnQH9kyHWbBZHg=
+P:apache2-proxy
+V:2.4.55-r0
+A:aarch64
+S:175820
+I:544768
+T:Proxy modules for the Apache HTTP Server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kunkku@alpinelinux.org>
+t:1673983353
+c:331f51a4bb41f80f31eda206588a8dfc0fd9bd6e
+D:apache2 so:libc.musl-aarch64.so.1
+
 C:Q1TE1AxU7wun8TsyVrUnmrtaQqOJ4=
 P:perl-test-mocktime-doc
 V:0.17-r2
@@ -45070,22 +45131,6 @@ t:1631548101
 c:fd79dc08fe3fb5f0c0a491bea711c1821980893d
 D:python3 libevent=2.1.12-r4 pkgconfig
 p:pc:libevent=2.1.12-r4 pc:libevent_core=2.1.12-r4 pc:libevent_extra=2.1.12-r4 pc:libevent_openssl=2.1.12-r4 pc:libevent_pthreads=2.1.12-r4 cmd:event_rpcgen.py=2.1.12-r4
-
-C:Q15zQ6mg6n1fSnRdhXde19lsDRK9U=
-P:apache2-dev
-V:2.4.54-r0
-A:aarch64
-S:217005
-I:1081344
-T:A high performance Unix-based HTTP server (development files)
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kunkku@alpinelinux.org>
-t:1654816952
-c:977fbc4f17c543e89f75648c240586eb58d8da3e
-D:perl apr-util-dev
-p:cmd:apxs=2.4.54-r0
 
 C:Q1iB/6vbsBpbn7YE28Y2CdBf2rQDk=
 P:lua5.3-stdlib
@@ -51038,22 +51083,6 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1668251993
 c:9bb1c89d8ef20e9a69fea9ac7035a01deb27d680
 
-C:Q11crfjMDCvWdfMVgTVHkpZiFw2vo=
-P:apache2-utils
-V:2.4.54-r0
-A:aarch64
-S:61547
-I:221184
-T:Apache utility programs for webservers
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kunkku@alpinelinux.org>
-t:1654816952
-c:977fbc4f17c543e89f75648c240586eb58d8da3e
-D:so:libapr-1.so.0 so:libaprutil-1.so.0 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
-p:cmd:ab=2.4.54-r0 cmd:checkgid=2.4.54-r0 cmd:dbmmanage=2.4.54-r0 cmd:htcacheclean=2.4.54-r0 cmd:htdbm=2.4.54-r0 cmd:htdigest=2.4.54-r0 cmd:htpasswd=2.4.54-r0 cmd:httxt2dbm=2.4.54-r0 cmd:logresolve=2.4.54-r0 cmd:rotatelogs=2.4.54-r0
-
 C:Q1useKZP878DbyCCimVnC0+bk0m6w=
 P:zsh-doc
 V:5.8.1-r4
@@ -52214,6 +52243,21 @@ t:1652401992
 c:a5ac88f5bb83f066498f5193e9b527b5c8c42f68
 D:so:libc.musl-aarch64.so.1
 p:so:libpcscspy.so.0=0.0.0
+
+C:Q1XwPsqep74bq3LcbcdTgbE9aMx5M=
+P:apache2-ldap
+V:2.4.55-r0
+A:aarch64
+S:44356
+I:155648
+T:LDAP authentication/authorization module for the Apache HTTP Server
+U:https://httpd.apache.org/docs/2.4/mod/mod_authnz_ldap.html
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kunkku@alpinelinux.org>
+t:1673983353
+c:331f51a4bb41f80f31eda206588a8dfc0fd9bd6e
+D:apache2 apr-util-ldap so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
 
 C:Q14DYTyknTJUFfvWsq07zhec+XyCo=
 P:boost1.78-libs
@@ -56073,21 +56117,6 @@ t:1651639605
 c:150f20497ecab94afd249f7a320c9ac251024bca
 i:docs avahi=0.8-r6
 
-C:Q1voH/hPr+ouwcgK5b2Q2ZUBij8I4=
-P:apache2-proxy
-V:2.4.54-r0
-A:aarch64
-S:175622
-I:544768
-T:Proxy modules for the Apache HTTP Server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kunkku@alpinelinux.org>
-t:1654816952
-c:977fbc4f17c543e89f75648c240586eb58d8da3e
-D:apache2 so:libc.musl-aarch64.so.1
-
 C:Q1P1KMOdGhNW/0XCjYErdBqeVemxo=
 P:perl-javascript-minifier-xs-doc
 V:0.15-r0
@@ -56270,6 +56299,22 @@ t:1645177072
 c:903b99f07fb3ff02cd49d3cb7db469cbc9a1e212
 D:perl perl-dbi so:libc.musl-aarch64.so.1 so:libpq.so.5
 
+C:Q1BSoH9U3mKiXw7/QgpDpMHljD8ac=
+P:apache2-utils
+V:2.4.55-r0
+A:aarch64
+S:61546
+I:221184
+T:Apache utility programs for webservers
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kunkku@alpinelinux.org>
+t:1673983353
+c:331f51a4bb41f80f31eda206588a8dfc0fd9bd6e
+D:so:libapr-1.so.0 so:libaprutil-1.so.0 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
+p:cmd:ab=2.4.55-r0 cmd:checkgid=2.4.55-r0 cmd:dbmmanage=2.4.55-r0 cmd:htcacheclean=2.4.55-r0 cmd:htdbm=2.4.55-r0 cmd:htdigest=2.4.55-r0 cmd:htpasswd=2.4.55-r0 cmd:httxt2dbm=2.4.55-r0 cmd:logresolve=2.4.55-r0 cmd:rotatelogs=2.4.55-r0
+
 C:Q1+2HL6ou7lipvYIpoizwedxXPhlE=
 P:perl-text-wrapper
 V:1.05-r3
@@ -56421,21 +56466,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl perl-capture-tiny perl-sub-exporter
-
-C:Q1ETp7s4wsx2oEH1TgEfRq4k2RMkg=
-P:apache2-doc
-V:2.4.54-r0
-A:aarch64
-S:5747685
-I:25858048
-T:A high performance Unix-based HTTP server (documentation)
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kunkku@alpinelinux.org>
-t:1654816952
-c:977fbc4f17c543e89f75648c240586eb58d8da3e
-i:docs apache2=2.4.54-r0
 
 C:Q19DbO7MOu+H0R5gE3WiQSPUAyyY0=
 P:py3-pytest-timeout
@@ -56648,21 +56678,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-regexp-ipv6=0.03-r2
-
-C:Q1Xf0FCQTM1Lpt2z1zaRdvcTVApKk=
-P:apache2-webdav
-V:2.4.54-r0
-A:aarch64
-S:71051
-I:208896
-T:WebDAV support for the Apache HTTP Server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kunkku@alpinelinux.org>
-t:1654816952
-c:977fbc4f17c543e89f75648c240586eb58d8da3e
-D:apache2 so:libc.musl-aarch64.so.1
 
 C:Q1wM1uKchs6u1HV231ceK+9wtxBic=
 P:gst-plugins-base-doc
@@ -60264,22 +60279,6 @@ o:libgcrypt
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1651089709
 c:3a39138643dd52ab45caa3428a4a615c7e379e11
-
-C:Q1q2b0gZOmBdxdyowhAdvchnO1Q4o=
-P:apache2-ctl
-V:2.4.54-r0
-A:aarch64
-S:3115
-I:16384
-T:Apache control script
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kunkku@alpinelinux.org>
-t:1654816952
-c:977fbc4f17c543e89f75648c240586eb58d8da3e
-D:lynx
-p:cmd:apachectl=2.4.54-r0
 
 C:Q1n0UwY6dGdv72m8a32Aws/9mH1n4=
 P:zfs-lts
@@ -66556,6 +66555,22 @@ t:1600716535
 c:cefc1c51cb05858db8570ece9b8d51a638f9a82a
 D:bash kbd so:libc.musl-aarch64.so.1
 p:cmd:on_ac_power=1.4.1-r3 cmd:pm-is-supported=1.4.1-r3 cmd:pm-powersave=1.4.1-r3
+
+C:Q1TylK6t3vyqB1W4duVI9n+aaIpEY=
+P:apache2-dev
+V:2.4.55-r0
+A:aarch64
+S:218481
+I:1085440
+T:A high performance Unix-based HTTP server (development files)
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kunkku@alpinelinux.org>
+t:1673983353
+c:331f51a4bb41f80f31eda206588a8dfc0fd9bd6e
+D:perl apr-util-dev
+p:cmd:apxs=2.4.55-r0
 
 C:Q15a/5gwBczYLZG3PdBqwKPI3ihOc=
 P:dbus
@@ -74287,21 +74302,6 @@ t:1651482419
 c:823b101d15beab5e49f51d88be187f7f376485b7
 D:openrc=0.44.10-r7 pkgconfig
 p:pc:einfo=0.44.10 pc:openrc=0.44.10
-
-C:Q1R2lCLLIqqk7QRVt3/l7wUv7luxw=
-P:apache2-proxy-html
-V:2.4.54-r0
-A:aarch64
-S:22649
-I:90112
-T:HTML and XML content filters for the Apache HTTP Server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kunkku@alpinelinux.org>
-t:1654816952
-c:977fbc4f17c543e89f75648c240586eb58d8da3e
-D:apache2 so:libc.musl-aarch64.so.1 so:libxml2.so.2
 
 C:Q1iSK5mAB5frm5X+En2tiud4FnNg8=
 P:arpon-doc
