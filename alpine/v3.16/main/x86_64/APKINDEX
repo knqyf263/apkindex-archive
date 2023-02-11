@@ -1388,22 +1388,6 @@ k:100
 D:/bin/sh
 p:icu-data=71.1-r2
 
-C:Q1CL88L4h1wZScJjq1vQYAOTiV3AQ=
-P:mesa-dev
-V:21.3.8-r2
-A:x86_64
-S:332563
-I:2367488
-T:Mesa DRI OpenGL library (development files)
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1660060925
-c:d76f9d8b357220d55f0ae93437e11fa4c5183c63
-D:libdrm-dev libxext-dev libxdamage-dev libxcb-dev libxshmfence-dev mesa-egl=21.3.8-r2 mesa-gbm=21.3.8-r2 mesa-gl=21.3.8-r2 mesa-glapi=21.3.8-r2 mesa-gles=21.3.8-r2 mesa-osmesa=21.3.8-r2 mesa-xatracker=21.3.8-r2 pc:libdrm>=2.4.107 pc:libdrm>=2.4.75 pc:x11 pc:x11-xcb pc:xcb pc:xcb-dri2>=1.8 pc:xcb-glx>=1.8.1 pc:xext pc:xfixes pc:xxf86vm pkgconfig
-p:pc:dri=21.3.8 pc:egl=21.3.8 pc:gbm=21.3.8 pc:gl=21.3.8 pc:glesv2=21.3.8 pc:osmesa=8.0.0 pc:xatracker=2.5.0
-
 C:Q1+1pHXFQ9R2RS/JXo+YO2Al/Mric=
 P:perl-dbd-pg-doc
 V:3.15.1-r0
@@ -5105,6 +5089,22 @@ t:1634364270
 c:670bf5a8cc5bc605eede8ca2fd55b50a5c9f8660
 i:docs cgit=1.2.3-r2
 
+C:Q1xIQMK4dLJozOpVnG7P5qpo7V8sc=
+P:mesa-gles
+V:21.3.9-r0
+A:x86_64
+S:20780
+I:86016
+T:Mesa libGLESv2 runtime libraries
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1676112652
+c:c2c0bdb96e59c9d348e049ca9218331d6f354023
+D:mesa=21.3.9-r0 so:libglapi.so.0
+p:so:libGLESv2.so.2=2.0.0
+
 C:Q1RvXZvAcgHjIXJUqxlQD2Kv6zIgs=
 P:bacula-doc
 V:11.0.6-r1
@@ -5916,21 +5916,6 @@ t:1650140213
 c:3fc101f63494d310ec0ee7af5cdc742ccb8c72d5
 D:logrotate
 i:squid=5.5-r0 lang-ca
-
-C:Q12bM6zzjsX8OQZB5039L+qQNmQq0=
-P:mesa-dri-ati
-V:21.3.8-r2
-A:x86_64
-S:1538
-I:4096
-T:Mesa DRI drivers for ati (DEPRECATED)
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1660060925
-c:d76f9d8b357220d55f0ae93437e11fa4c5183c63
-D:mesa-dri-classic=21.3.8-r2 mesa-dri-gallium=21.3.8-r2 mesa-va-gallium mesa-vdpau-gallium
 
 C:Q1eyTJxsjz61zUuPVsrkjNkyGYb8I=
 P:freeswitch-sounds-music-8000
@@ -9637,6 +9622,21 @@ t:1640092805
 c:ed4e519e5c2e7e4b635534cc0e17e232a6815f2d
 D:uwsgi so:libc.musl-x86_64.so.1
 
+C:Q1fU5sVUW03c7vQi9U6jGmVrVoAw4=
+P:mesa-vdpau-gallium
+V:21.3.9-r0
+A:x86_64
+S:4140226
+I:13209600
+T:Mesa gallium VDPAU drivers
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1676112652
+c:c2c0bdb96e59c9d348e049ca9218331d6f354023
+D:mesa=21.3.9-r0 libvdpau so:libLLVM-13.so so:libX11-xcb.so.1 so:libc.musl-x86_64.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libdrm_nouveau.so.2 so:libdrm_radeon.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libxcb-dri2.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1 so:libzstd.so.1
+
 C:Q1YMZXU/RLWhzBOcM5F29xDlfbJSY=
 P:sshguard-doc
 V:2.4.2-r0
@@ -10394,22 +10394,6 @@ c:988c4057d60ade6a214b14741f3e0950b3105c3a
 D:libxxf86vm=1.1.4-r2 pc:x11 pc:xext pc:xf86vidmodeproto pkgconfig
 p:pc:xxf86vm=1.1.4
 
-C:Q128U5NJ4nmmQ2ywczcn2DVKRzG2Y=
-P:mesa-glapi
-V:21.3.8-r2
-A:x86_64
-S:74959
-I:385024
-T:Mesa shared glapi
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1660060925
-c:d76f9d8b357220d55f0ae93437e11fa4c5183c63
-D:so:libc.musl-x86_64.so.1
-p:so:libglapi.so.0=0.0.0
-
 C:Q1bwOhHWmAS77dAF3eupMFQ+G5a6g=
 P:clucene-dev
 V:2.3.3.4-r13
@@ -10518,6 +10502,22 @@ t:1651333693
 c:df3866917dc979a89bea1234d9f8bca5c75a698d
 D:so:libc.musl-x86_64.so.1 so:libcap.so.2 so:libkeyutils.so.1 so:libkrb5.so.3 so:libtalloc.so.2 so:libwbclient.so.0
 p:cmd:cifs.idmap=6.15-r0 cmd:cifs.upcall=6.15-r0 cmd:mount.cifs=6.15-r0 cmd:mount.smb3=6.15-r0
+
+C:Q12fSPwytzx+71wZ/2dkXmc0UJk/A=
+P:mesa-dev
+V:21.3.9-r0
+A:x86_64
+S:332553
+I:2367488
+T:Mesa DRI OpenGL library (development files)
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1676112652
+c:c2c0bdb96e59c9d348e049ca9218331d6f354023
+D:libdrm-dev libxext-dev libxdamage-dev libxcb-dev libxshmfence-dev mesa-egl=21.3.9-r0 mesa-gbm=21.3.9-r0 mesa-gl=21.3.9-r0 mesa-glapi=21.3.9-r0 mesa-gles=21.3.9-r0 mesa-osmesa=21.3.9-r0 mesa-xatracker=21.3.9-r0 pc:libdrm>=2.4.107 pc:libdrm>=2.4.75 pc:x11 pc:x11-xcb pc:xcb pc:xcb-dri2>=1.8 pc:xcb-glx>=1.8.1 pc:xext pc:xfixes pc:xxf86vm pkgconfig
+p:pc:dri=21.3.9 pc:egl=21.3.9 pc:gbm=21.3.9 pc:gl=21.3.9 pc:glesv2=21.3.9 pc:osmesa=8.0.0 pc:xatracker=2.5.0
 
 C:Q1bISMhOhmZQCvhbrQdTV5T+VKkEU=
 P:mailcap-doc
@@ -11064,22 +11064,6 @@ c:4f2d8aa1decf666770878397568a7d284a2dda30
 D:pkgconfig yaml=0.2.5-r0
 p:pc:yaml-0.1=0.2.5
 
-C:Q1AkE01VZNqg9Rki3+O2veg+J9bZg=
-P:mesa-vulkan-intel
-V:21.3.8-r2
-A:x86_64
-S:2641448
-I:9428992
-T:Mesa Vulkan API driver for intel
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1660060925
-c:d76f9d8b357220d55f0ae93437e11fa4c5183c63
-D:mesa=21.3.8-r2 so:libX11-xcb.so.1 so:libc.musl-x86_64.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libwayland-client.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-randr.so.0 so:libxcb-shm.so.0 so:libxcb-sync.so.1 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1 so:libzstd.so.1
-p:so:libvulkan_intel.so=0
-
 C:Q1ZPx+C4wWWsz3xWsbY/prQ4ITjEs=
 P:nikto
 V:2.1.6-r2
@@ -11111,21 +11095,6 @@ t:1622763183
 c:32bcecfda5d163381b6ea403f232fa836f06f3bb
 D:netcf-libs=0.2.8-r6 pkgconfig
 p:pc:netcf=0.2.8
-
-C:Q1p+rRAsUC3Jkk03IZC7JOQg5cRto=
-P:mesa-dri-intel
-V:21.3.8-r2
-A:x86_64
-S:1529
-I:4096
-T:Mesa DRI drivers for intel (DEPRECATED)
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1660060925
-c:d76f9d8b357220d55f0ae93437e11fa4c5183c63
-D:mesa-dri-classic=21.3.8-r2 mesa-dri-gallium=21.3.8-r2
 
 C:Q1OdcsTvvaYN0eGcSC33X2A7baB/E=
 P:libc-dev
@@ -12015,22 +11984,6 @@ t:1631638546
 c:8fdf33d12c58ed9ac45db549d70b14fc3bdfad1b
 i:docs iaxmodem=1.3.2-r2
 
-C:Q1qTEm6mqT39qb66VR06tWDRZYL80=
-P:mesa-dri-gallium
-V:21.3.8-r2
-A:x86_64
-S:7233224
-I:20770816
-T:Mesa gallium DRI drivers
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1660060925
-c:d76f9d8b357220d55f0ae93437e11fa4c5183c63
-D:mesa=21.3.8-r2 so:libLLVM-13.so so:libc.musl-x86_64.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libdrm_nouveau.so.2 so:libdrm_radeon.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libglapi.so.0 so:libstdc++.so.6 so:libz.so.1 so:libzstd.so.1
-p:mesa-dri-swrast=21.3.8-r2 mesa-dri-virtio=21.3.8-r2 mesa-dri-vmwgfx=21.3.8-r2
-
 C:Q1OkTUt1bG8rFzCCfQkWeOv7EEYkw=
 P:dnsmasq-dnssec
 V:2.86-r3
@@ -12605,21 +12558,6 @@ t:1652523970
 c:d61bd809846cf0d5e3e1b90bea467fd863083484
 D:py3-libxml2 python3
 p:cmd:itstool=2.0.7-r1
-
-C:Q1hzqY5FxpxXrtsAyut8dgUUn2vDc=
-P:mesa-vdpau-gallium
-V:21.3.8-r2
-A:x86_64
-S:3196164
-I:10633216
-T:Mesa gallium VDPAU drivers
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1660060925
-c:d76f9d8b357220d55f0ae93437e11fa4c5183c63
-D:mesa=21.3.8-r2 libvdpau so:libLLVM-13.so so:libX11-xcb.so.1 so:libc.musl-x86_64.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libdrm_nouveau.so.2 so:libdrm_radeon.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libxcb-dri2.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1 so:libzstd.so.1
 
 C:Q1SMMQeUbR3cm/Kb2Apa/L+4SEuDM=
 P:gdbm-dev
@@ -13849,6 +13787,22 @@ c:9423c9ce1acd4a8f79aacbfbc10ae51d0445acd6
 D:lxc-libs=4.0.12-r2 pkgconfig
 p:pc:lxc=4.0.12
 
+C:Q11LFxMms1iHouH0UK6fM3S8L9NC0=
+P:mesa-gbm
+V:21.3.9-r0
+A:x86_64
+S:28138
+I:77824
+T:Mesa gbm library
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1676112652
+c:c2c0bdb96e59c9d348e049ca9218331d6f354023
+D:mesa=21.3.9-r0 so:libc.musl-x86_64.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libstdc++.so.6 so:libwayland-server.so.0
+p:so:libgbm.so.1=1.0.0
+
 C:Q1iBlKnJ3uByScXfTEtEXI83QTtWA=
 P:nginx-mod-http-upstream-fair
 V:1.22.1-r0
@@ -14878,21 +14832,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1634364270
 c:670bf5a8cc5bc605eede8ca2fd55b50a5c9f8660
 D:irssi so:libc.musl-x86_64.so.1 so:libgcrypt.so.20 so:libotr.so.5
-
-C:Q1u2PwppV2EFhtNvmmEM84dfjHJgc=
-P:mesa-dri-nouveau
-V:21.3.8-r2
-A:x86_64
-S:1540
-I:4096
-T:Mesa DRI drivers for nouveau (DEPRECATED)
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1660060925
-c:d76f9d8b357220d55f0ae93437e11fa4c5183c63
-D:mesa-dri-classic=21.3.8-r2 mesa-dri-gallium=21.3.8-r2 mesa-va-gallium mesa-vdpau-gallium
 
 C:Q1zLj96FG+jyJjfKLGHyiCGcd34zM=
 P:py3-lxml
@@ -15993,22 +15932,6 @@ t:1627905419
 c:bc3824bf83e8513b09f5eb7ccaa6c70cb2f476f4
 D:so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libncursesw.so.6 so:libnl.so.1 so:libpci.so.3 so:libstdc++.so.6
 p:cmd:powertop=2.14-r0
-
-C:Q1Pb7MOP5E5JvM7htFnrXX7rZgQJI=
-P:mesa-vulkan-ati
-V:21.3.8-r2
-A:x86_64
-S:1803173
-I:7311360
-T:Mesa Vulkan API driver for ati
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1660060925
-c:d76f9d8b357220d55f0ae93437e11fa4c5183c63
-D:mesa=21.3.8-r2 so:libLLVM-13.so so:libX11-xcb.so.1 so:libc.musl-x86_64.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libwayland-client.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-randr.so.0 so:libxcb-shm.so.0 so:libxcb-sync.so.1 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1 so:libzstd.so.1
-p:so:libvulkan_radeon.so=0
 
 C:Q1PtYoKeRpqWOf90+1+ovjUfYI4dw=
 P:perl-socket-getaddrinfo-doc
@@ -17626,6 +17549,20 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1645090616
 c:255a8ffdfb9329b8afa227e576fa78ce398b8e4b
 i:openrc rp-pppoe=3.15-r0
+
+C:Q1EWX92V8ZpPDiJnAFFPkdxS3gVz4=
+P:mesa-dbg
+V:21.3.9-r0
+A:x86_64
+S:39809114
+I:119169024
+T:Mesa DRI OpenGL library (debug symbols)
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1676112652
+c:c2c0bdb96e59c9d348e049ca9218331d6f354023
 
 C:Q1dbusupKHDHjkUISC43Wt1nJTquw=
 P:s6-linux-init-dev
@@ -19543,6 +19480,22 @@ t:1649815229
 c:57ff2391507b5c38dccc5fa27fcd9e23fc416773
 D:so:libc.musl-x86_64.so.1 so:librrd.so.8
 
+C:Q1ff7emwWoKXeJ1hMWlz8840ZfBOo=
+P:mesa-gl
+V:21.3.9-r0
+A:x86_64
+S:221431
+I:679936
+T:Mesa libGL runtime libraries
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1676112652
+c:c2c0bdb96e59c9d348e049ca9218331d6f354023
+D:mesa=21.3.9-r0 so:libX11-xcb.so.1 so:libX11.so.6 so:libXext.so.6 so:libXfixes.so.3 so:libXxf86vm.so.1 so:libc.musl-x86_64.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libglapi.so.0 so:libstdc++.so.6 so:libxcb-dri2.so.0 so:libxcb-dri3.so.0 so:libxcb-glx.so.0 so:libxcb-present.so.0 so:libxcb-shm.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1
+p:so:libGL.so.1=1.2.0
+
 C:Q1AD9T1ZuLAvzd9jB8Dg9KdJfQzNc=
 P:perl-http-cookies
 V:6.10-r0
@@ -21436,6 +21389,21 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-config-grammar=1.13-r2
+
+C:Q1q7koXOqWKHxasmdNylGnsC292Eg=
+P:mesa-dri-intel
+V:21.3.9-r0
+A:x86_64
+S:1523
+I:4096
+T:Mesa DRI drivers for intel (DEPRECATED)
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1676112652
+c:c2c0bdb96e59c9d348e049ca9218331d6f354023
+D:mesa-dri-classic=21.3.9-r0 mesa-dri-gallium=21.3.9-r0
 
 C:Q1PrFiCQHuENpPTcs7bXoUkjSssbM=
 P:dovecot-pigeonhole-plugin-ldap
@@ -24414,6 +24382,21 @@ o:libuv
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1646908583
 c:f1c82701a473c44f13138f1cc446f8d1c8d101c9
+
+C:Q1pNV5d7giVrgrECsSqkQMR68KIr8=
+P:mesa-dri-ati
+V:21.3.9-r0
+A:x86_64
+S:1535
+I:4096
+T:Mesa DRI drivers for ati (DEPRECATED)
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1676112652
+c:c2c0bdb96e59c9d348e049ca9218331d6f354023
+D:mesa-dri-classic=21.3.9-r0 mesa-dri-gallium=21.3.9-r0 mesa-va-gallium mesa-vdpau-gallium
 
 C:Q1a5A9iWCQaWaSGMYyKw/k2+02M9c=
 P:speexdsp
@@ -32710,6 +32693,21 @@ c:9e56fb42eb96497122b03685e9d29d7e358fde31
 D:so:libc.musl-x86_64.so.1 so:libdnet.so.1 so:libnetfilter_queue.so.1 so:libpcap.so.1 so:libsfbpf.so.0
 p:so:libdaq.so.2=2.0.4
 
+C:Q1+Lfpn6fpTPg39kxwdc67RoXSP64=
+P:mesa-va-gallium
+V:21.3.9-r0
+A:x86_64
+S:3991599
+I:12910592
+T:Mesa gallium VAAPI drivers
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1676112652
+c:c2c0bdb96e59c9d348e049ca9218331d6f354023
+D:mesa=21.3.9-r0 libva so:libLLVM-13.so so:libX11-xcb.so.1 so:libc.musl-x86_64.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libdrm_nouveau.so.2 so:libdrm_radeon.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libxcb-dri2.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1 so:libzstd.so.1
+
 C:Q1PlGdYw2vT8vUMlpIK6x1ERsCI7o=
 P:uwsgi-http
 V:2.0.20-r0
@@ -34428,22 +34426,6 @@ m:Sören Tempel <soeren+alpine@soeren-tempel.net>
 t:1614323720
 c:71a8ac443e012f0f4681d01097aeef1cf0f2c6a5
 D:gnupg
-
-C:Q1/yUsmvf4K0zgtyEJINlEkwZfxEM=
-P:mesa-gl
-V:21.3.8-r2
-A:x86_64
-S:181687
-I:540672
-T:Mesa libGL runtime libraries
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1660060925
-c:d76f9d8b357220d55f0ae93437e11fa4c5183c63
-D:mesa=21.3.8-r2 so:libX11-xcb.so.1 so:libX11.so.6 so:libXext.so.6 so:libXfixes.so.3 so:libXxf86vm.so.1 so:libc.musl-x86_64.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libglapi.so.0 so:libstdc++.so.6 so:libxcb-dri2.so.0 so:libxcb-dri3.so.0 so:libxcb-glx.so.0 so:libxcb-present.so.0 so:libxcb-shm.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1
-p:so:libGL.so.1=1.2.0
 
 C:Q10OxPvHPng6l6BKtRURk5cVDSYEo=
 P:freeswitch-sounds-fr-fr-sibylle-8000
@@ -42049,21 +42031,6 @@ c:cd3da8d82f9459a600d8f0267568c40b6c83abac
 D:perl
 p:cmd:config_data=0.4231-r1
 
-C:Q1OE00lBCt1s4NTLxD/iXK91MyqwE=
-P:mesa-dri-classic
-V:21.3.8-r2
-A:x86_64
-S:4267846
-I:13918208
-T:Mesa classic DRI drivers
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1660060925
-c:d76f9d8b357220d55f0ae93437e11fa4c5183c63
-D:mesa=21.3.8-r2 so:libc.musl-x86_64.so.1 so:libdrm.so.2 so:libdrm_intel.so.1 so:libdrm_nouveau.so.2 so:libdrm_radeon.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libglapi.so.0 so:libstdc++.so.6 so:libz.so.1 so:libzstd.so.1
-
 C:Q1uuGJu87h6TTNvcxk49F6+lPQp2Q=
 P:linux-firmware-dabusb
 V:20220509-r1
@@ -43212,6 +43179,22 @@ c:e9a4a7add2f91310dfca51651193a69aaad00b2a
 D:so:libc.musl-x86_64.so.1 so:libgcc_s.so.1
 p:lua so:libluajit-5.1.so.2=2.1.0 cmd:luajit-2.1.0-beta3=2.1_p20210510-r2 cmd:luajit=2.1_p20210510-r2
 
+C:Q1pGZ76lcmwbrovcvW2tThIyyhv8I=
+P:mesa-glapi
+V:21.3.9-r0
+A:x86_64
+S:75594
+I:430080
+T:Mesa shared glapi
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1676112652
+c:c2c0bdb96e59c9d348e049ca9218331d6f354023
+D:so:libc.musl-x86_64.so.1
+p:so:libglapi.so.0=0.0.0
+
 C:Q11YHbnseHVF1ugmToI8oc3HzMgJo=
 P:rssh
 V:2.3.4-r2
@@ -43320,22 +43303,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1635117238
 c:2cf3fe063b1b9e308372af7e2c2348e9e494a135
 i:openrc ulogd=2.0.7-r8
-
-C:Q10o1/4Ek9MBw0Pp9KkuAT+Ag0IpU=
-P:mesa-xatracker
-V:21.3.8-r2
-A:x86_64
-S:1827629
-I:6995968
-T:Mesa XA state tracker for vmware
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1660060925
-c:d76f9d8b357220d55f0ae93437e11fa4c5183c63
-D:mesa=21.3.8-r2 so:libLLVM-13.so so:libc.musl-x86_64.so.1 so:libdrm.so.2 so:libdrm_nouveau.so.2 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1 so:libzstd.so.1
-p:so:libxatracker.so.2=2.5.0
 
 C:Q1JYQizyBl07yp59gxLQ/S3ewc0qA=
 P:openldap-overlay-unique
@@ -44370,22 +44337,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1640092805
 c:ed4e519e5c2e7e4b635534cc0e17e232a6815f2d
 D:uwsgi so:libc.musl-x86_64.so.1
-
-C:Q1eKxMDs4ylfEo8/z6B2LmWNS2cV4=
-P:mesa-gles
-V:21.3.8-r2
-A:x86_64
-S:18631
-I:73728
-T:Mesa libGLESv2 runtime libraries
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1660060925
-c:d76f9d8b357220d55f0ae93437e11fa4c5183c63
-D:mesa=21.3.8-r2 so:libglapi.so.0
-p:so:libGLESv2.so.2=2.0.0
 
 C:Q1irJUlRSqhqGKeDMFzPejvwdIwG0=
 P:sc-doc
@@ -45609,21 +45560,6 @@ t:1652483254
 c:1e8c2dbaa99a1f3f74d5be13261513d651ca1f00
 D:so:libc.musl-x86_64.so.1 so:libgcc_s.so.1
 p:boost-stacktrace_basic=1.78.0-r1 so:libboost_stacktrace_basic.so.1.78.0=1.78.0
-
-C:Q1PPvYxxDFU2OcseVkPPHuwJuJ2aQ=
-P:mesa-va-gallium
-V:21.3.8-r2
-A:x86_64
-S:3075954
-I:10399744
-T:Mesa gallium VAAPI drivers
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1660060925
-c:d76f9d8b357220d55f0ae93437e11fa4c5183c63
-D:mesa=21.3.8-r2 libva so:libLLVM-13.so so:libX11-xcb.so.1 so:libc.musl-x86_64.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libdrm_nouveau.so.2 so:libdrm_radeon.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libxcb-dri2.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1 so:libzstd.so.1
 
 C:Q1/QQDcMeVh2MmI5U5QxNBbbLiHUw=
 P:dropbear-convert
@@ -46896,6 +46832,22 @@ t:1651086758
 c:3a1a6c29fd6f7365aaaf0d6ac4c24129e464d51a
 D:so:libbtrfsutil.so.1 so:libc.musl-x86_64.so.1
 p:py-btrfs-progs=5.17-r0
+
+C:Q1Ps/jznzSbSUytiTvlWWYWOR7+IM=
+P:mesa-vulkan-intel
+V:21.3.9-r0
+A:x86_64
+S:3052449
+I:10145792
+T:Mesa Vulkan API driver for intel
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1676112652
+c:c2c0bdb96e59c9d348e049ca9218331d6f354023
+D:mesa=21.3.9-r0 so:libX11-xcb.so.1 so:libc.musl-x86_64.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libwayland-client.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-randr.so.0 so:libxcb-shm.so.0 so:libxcb-sync.so.1 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1 so:libzstd.so.1
+p:so:libvulkan_intel.so=0
 
 C:Q1IFS5t/09nzLQMjPppCLXIm935XM=
 P:acf-dovecot
@@ -50152,6 +50104,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1644960820
 c:ee0bfb5bb06a849dc759c77eec22949b3900402f
 
+C:Q1f2oR5O8FCRcl0I1L5G/vSlMCwes=
+P:mesa-dri-classic
+V:21.3.9-r0
+A:x86_64
+S:5078224
+I:15880192
+T:Mesa classic DRI drivers
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1676112652
+c:c2c0bdb96e59c9d348e049ca9218331d6f354023
+D:mesa=21.3.9-r0 so:libc.musl-x86_64.so.1 so:libdrm.so.2 so:libdrm_intel.so.1 so:libdrm_nouveau.so.2 so:libdrm_radeon.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libglapi.so.0 so:libstdc++.so.6 so:libz.so.1 so:libzstd.so.1
+
 C:Q1QKITwg8Y/N7uLtRvYBR0TgHMw6c=
 P:confuse
 V:3.3-r0
@@ -51527,6 +51494,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:encodings font-alias mkfontscale mkfontdir fontconfig
+
+C:Q1zmtGUjvVnJ9FA/tbpkJTONcbGFE=
+P:mesa-vulkan-layers
+V:21.3.9-r0
+A:x86_64
+S:785486
+I:2400256
+T:collection of vulkan layers from mesa
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1676112652
+c:c2c0bdb96e59c9d348e049ca9218331d6f354023
+D:python3 so:libc.musl-x86_64.so.1 so:libdrm.so.2 so:libgcc_s.so.1 so:libstdc++.so.6 so:libwayland-client.so.0 so:libxcb-dri3.so.0 so:libxcb.so.1
+p:mesa-vulkan-layer=21.3.9-r0 so:libVkLayer_INTEL_nullhw.so=0 so:libVkLayer_MESA_device_select.so=0 so:libVkLayer_MESA_overlay.so=0 cmd:mesa-overlay-control.py=21.3.9-r0
 
 C:Q1YP95ZGu7AK+Qq+uentMhFNNigZ4=
 P:rtpproxy-doc
@@ -53928,22 +53911,6 @@ t:1649884023
 c:90b6a6a72f21c4212cba715a40a7583524bdf6da
 i:docs lua-xctrl=2015.04.10-r3
 
-C:Q1s62QwA4KKZBHEJ7uuKLh3BH+Vks=
-P:mesa-vulkan-layers
-V:21.3.8-r2
-A:x86_64
-S:661271
-I:2019328
-T:collection of vulkan layers from mesa
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1660060925
-c:d76f9d8b357220d55f0ae93437e11fa4c5183c63
-D:python3 so:libc.musl-x86_64.so.1 so:libdrm.so.2 so:libgcc_s.so.1 so:libstdc++.so.6 so:libwayland-client.so.0 so:libxcb-dri3.so.0 so:libxcb.so.1
-p:mesa-vulkan-layer=21.3.8-r2 so:libVkLayer_INTEL_nullhw.so=0 so:libVkLayer_MESA_device_select.so=0 so:libVkLayer_MESA_overlay.so=0 cmd:mesa-overlay-control.py=21.3.8-r2
-
 C:Q1FAiMsCixUXlLIc2KysHNveShTcc=
 P:rabbitmq-c
 V:0.11.0-r3
@@ -54204,20 +54171,6 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1653047086
 c:2255506b85303c3e6d30233a4550992875e7b70b
 i:docs pgpool=4.3.2-r0
-
-C:Q1zANXoAV5a6PzBM0MPcJ3GKO2jDw=
-P:mesa
-V:21.3.8-r2
-A:x86_64
-S:10191
-I:98304
-T:Mesa DRI OpenGL library
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1660060925
-c:d76f9d8b357220d55f0ae93437e11fa4c5183c63
 
 C:Q1XQ5WPgrdZO5Da7HwHYGJvSfqyaQ=
 P:nginx-mod-http-cookie-flag
@@ -55202,20 +55155,6 @@ o:nsd
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1652519941
 c:2511ae89b7bf632904f8e5d96a818d1961c14d87
-
-C:Q1MsVW9GbMnClKettTnIEDw2Nrplc=
-P:mesa-dbg
-V:21.3.8-r2
-A:x86_64
-S:27819850
-I:88539136
-T:Mesa DRI OpenGL library (debug symbols)
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1660060925
-c:d76f9d8b357220d55f0ae93437e11fa4c5183c63
 
 C:Q1Y52j78kKW7ExzuLP5bPUEouloPI=
 P:pythonispython3
@@ -59470,6 +59409,21 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
 
+C:Q1kNN2GRJBvHOqh62bm5v0tFVdjsg=
+P:mesa-dri-nouveau
+V:21.3.9-r0
+A:x86_64
+S:1538
+I:4096
+T:Mesa DRI drivers for nouveau (DEPRECATED)
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1676112652
+c:c2c0bdb96e59c9d348e049ca9218331d6f354023
+D:mesa-dri-classic=21.3.9-r0 mesa-dri-gallium=21.3.9-r0 mesa-va-gallium mesa-vdpau-gallium
+
 C:Q1VFFFWMKjB9aRkehIATc5kwgAhlU=
 P:apk-tools
 V:2.12.9-r3
@@ -62813,22 +62767,6 @@ t:1649878514
 c:9abd2a3af4f352c804f06f9584a57794c5519c52
 i:docs librsync=2.3.2-r2
 
-C:Q1DDQHVEXObuU0xyyBvV8lRfT5NPA=
-P:mesa-egl
-V:21.3.8-r2
-A:x86_64
-S:94422
-I:229376
-T:Mesa libEGL runtime libraries
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1660060925
-c:d76f9d8b357220d55f0ae93437e11fa4c5183c63
-D:mesa=21.3.8-r2 so:libX11-xcb.so.1 so:libc.musl-x86_64.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libgbm.so.1 so:libgcc_s.so.1 so:libglapi.so.0 so:libstdc++.so.6 so:libwayland-client.so.0 so:libwayland-server.so.0 so:libxcb-dri2.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1
-p:so:libEGL.so.1=1.0.0
-
 C:Q1YqL3HZspQqfJitacbgMZ9FSUjuw=
 P:font-util
 V:1.3.2-r0
@@ -63812,6 +63750,22 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1651220051
 c:b60d787f9447709996cffdb69bb3ac9178f8186f
 D:perl
+
+C:Q1ZQ0z0+mar8meBKHnlqdcW1/+OaQ=
+P:mesa-dri-gallium
+V:21.3.9-r0
+A:x86_64
+S:9000465
+I:25210880
+T:Mesa gallium DRI drivers
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1676112652
+c:c2c0bdb96e59c9d348e049ca9218331d6f354023
+D:mesa=21.3.9-r0 so:libLLVM-13.so so:libc.musl-x86_64.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libdrm_nouveau.so.2 so:libdrm_radeon.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libglapi.so.0 so:libstdc++.so.6 so:libz.so.1 so:libzstd.so.1
+p:mesa-dri-swrast=21.3.9-r0 mesa-dri-virtio=21.3.9-r0 mesa-dri-vmwgfx=21.3.9-r0
 
 C:Q1FiZqoazy47DKSwEN4//tjcNg0Y4=
 P:ivykis-static
@@ -67507,6 +67461,22 @@ c:0c813d4276d2e36ead29ca22b6c01045d86db58b
 D:zsh
 i:zsh=5.8.1-r4 zfs
 
+C:Q14RmmBmKDZZjWXHq3UpTSBxUQ5ug=
+P:mesa-xatracker
+V:21.3.9-r0
+A:x86_64
+S:2373456
+I:8519680
+T:Mesa XA state tracker for vmware
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1676112652
+c:c2c0bdb96e59c9d348e049ca9218331d6f354023
+D:mesa=21.3.9-r0 so:libLLVM-13.so so:libc.musl-x86_64.so.1 so:libdrm.so.2 so:libdrm_nouveau.so.2 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1 so:libzstd.so.1
+p:so:libxatracker.so.2=2.5.0
+
 C:Q11M9oYQfIzcpFUpEfG9G0LtYDpQY=
 P:openldap-overlay-dynlist
 V:2.6.3-r3
@@ -67796,6 +67766,20 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1675915414
 c:78df94ec1354835c438381513faec206c2061f68
 i:openrc heimdal=7.7.1-r0
+
+C:Q1AbrnhLEe46gv37W2MiMsPFkVG6E=
+P:mesa
+V:21.3.9-r0
+A:x86_64
+S:10185
+I:98304
+T:Mesa DRI OpenGL library
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1676112652
+c:c2c0bdb96e59c9d348e049ca9218331d6f354023
 
 C:Q11fgss8CxUo8pezn8/bHB6nJyIZs=
 P:ghostscript-dev
@@ -70218,6 +70202,22 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl perl-html-parser
 
+C:Q1xE5s+0KTBfbnxOKUiesVAAzusWU=
+P:mesa-egl
+V:21.3.9-r0
+A:x86_64
+S:110108
+I:274432
+T:Mesa libEGL runtime libraries
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1676112652
+c:c2c0bdb96e59c9d348e049ca9218331d6f354023
+D:mesa=21.3.9-r0 so:libX11-xcb.so.1 so:libc.musl-x86_64.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libgbm.so.1 so:libgcc_s.so.1 so:libglapi.so.0 so:libstdc++.so.6 so:libwayland-client.so.0 so:libwayland-server.so.0 so:libxcb-dri2.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1
+p:so:libEGL.so.1=1.0.0
+
 C:Q1ZQhTygMoMqiAUbYaOYKjZCEnYKA=
 P:perl-io-html-doc
 V:1.004-r0
@@ -72083,22 +72083,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-inc-latest=0.500-r1
 
-C:Q1iZcozenNUZkXJxCvgIkVKJNpgGg=
-P:mesa-osmesa
-V:21.3.8-r2
-A:x86_64
-S:3205209
-I:11055104
-T:Mesa offscreen rendering libraries
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1660060925
-c:d76f9d8b357220d55f0ae93437e11fa4c5183c63
-D:mesa=21.3.8-r2 so:libLLVM-13.so so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libglapi.so.0 so:libstdc++.so.6 so:libz.so.1 so:libzstd.so.1
-p:so:libOSMesa.so.8=8.0.0
-
 C:Q1iW1gsGDRYpkFpT1hxY2ztP5RXYs=
 P:musl-utils
 V:1.2.3-r2
@@ -72837,6 +72821,22 @@ t:1639595860
 c:4f17e838f783b6faf49e28f7998a80324931e454
 D:python3
 
+C:Q1zKWSU8FxpUZbctxXZFH9CYaLovw=
+P:mesa-vulkan-ati
+V:21.3.9-r0
+A:x86_64
+S:2374390
+I:8855552
+T:Mesa Vulkan API driver for ati
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1676112652
+c:c2c0bdb96e59c9d348e049ca9218331d6f354023
+D:mesa=21.3.9-r0 so:libLLVM-13.so so:libX11-xcb.so.1 so:libc.musl-x86_64.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libwayland-client.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-randr.so.0 so:libxcb-shm.so.0 so:libxcb-sync.so.1 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1 so:libzstd.so.1
+p:so:libvulkan_radeon.so=0
+
 C:Q1XnkvrS7WDiCHA+ohTrjHla8xhpM=
 P:perl-datetime-format-w3cdtf
 V:0.08-r0
@@ -73240,22 +73240,6 @@ o:libgpg-error
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1649481758
 c:d8568436ec2beb5e5415094c6724f653829056b1
-
-C:Q1Lw03QJuurIGluPvw+BTlNxSvm+k=
-P:mesa-gbm
-V:21.3.8-r2
-A:x86_64
-S:26092
-I:73728
-T:Mesa gbm library
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1660060925
-c:d76f9d8b357220d55f0ae93437e11fa4c5183c63
-D:mesa=21.3.8-r2 so:libc.musl-x86_64.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libstdc++.so.6 so:libwayland-server.so.0
-p:so:libgbm.so.1=1.0.0
 
 C:Q1Mu9+IKHlYQgCuAfMmdjALQIYzKc=
 P:samba-dc-libs
@@ -75594,6 +75578,22 @@ t:1658765068
 c:3fe7634e33d647a7c20f21e80c5fe0d4a1efe164
 D:openssh-keygen=9.0_p1-r2 openssh-client-common=9.0_p1-r2 !openssh-client-default so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libgssapi_krb5.so.2 so:libz.so.1
 p:openssh-client=9.0_p1-r2 cmd:ssh=9.0_p1-r2
+
+C:Q1UwHhmdLwxoD0aQ+h8yI60aPXOzU=
+P:mesa-osmesa
+V:21.3.9-r0
+A:x86_64
+S:4035236
+I:13578240
+T:Mesa offscreen rendering libraries
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1676112652
+c:c2c0bdb96e59c9d348e049ca9218331d6f354023
+D:mesa=21.3.9-r0 so:libLLVM-13.so so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libglapi.so.0 so:libstdc++.so.6 so:libz.so.1 so:libzstd.so.1
+p:so:libOSMesa.so.8=8.0.0
 
 C:Q11i84CDRCA+shFcMY9SoxVdjkBHI=
 P:perl-net-cidr-lite-doc
