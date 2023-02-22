@@ -2908,23 +2908,6 @@ c:b302c2b70adfc9f3a7a60f6c919aa93e863f3757
 D:tcl pc:zlib>=1.2.3 pkgconfig
 p:pc:tcl=8.6.12
 
-C:Q13pQZXOlP0KhQ6SMdsjuHnK9i3Kw=
-P:zfs-lts
-V:5.15.94-r0
-A:x86
-S:1627933
-I:1720320
-T:ZFS Linux kernel modules
-U:https://openzfs.org
-L:CDDL-1.0
-o:zfs-lts
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1676586597
-c:da8bdec06a8e2782c131a24fe93d5a6f37df4a0e
-D:linux-lts=5.15.94-r0
-p:spl-vanilla
-i:zfs linux-lts=5.15.94-r0
-
 C:Q18taWuTwERpVuJByezbSNvC46iL0=
 P:boost1.77-stacktrace_noop
 V:1.77.0-r7
@@ -13755,6 +13738,21 @@ c:51a61c675785d23dde844af388728dcbb80812c6
 D:fakeroot scanelf openssl apk-tools>=2.0.7-r1 libc-utils attr tar pkgconf patch lzip curl /bin/sh so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libz.so.1
 p:cmd:abuild-addgroup=3.9.0-r0 cmd:abuild-adduser=3.9.0-r0 cmd:abuild-apk=3.9.0-r0 cmd:abuild-fetch=3.9.0-r0 cmd:abuild-gzsplit=3.9.0-r0 cmd:abuild-keygen=3.9.0-r0 cmd:abuild-rmtemp=3.9.0-r0 cmd:abuild-sign=3.9.0-r0 cmd:abuild-sudo=3.9.0-r0 cmd:abuild-tar=3.9.0-r0 cmd:abuild=3.9.0-r0 cmd:abump=3.9.0-r0 cmd:apkgrel=3.9.0-r0 cmd:buildlab=3.9.0-r0 cmd:checkapk=3.9.0-r0 cmd:newapkbuild=3.9.0-r0
 
+C:Q1KqmH+yNfklV1R2i/ev7370hx3T8=
+P:zfs-lts-dev
+V:5.15.95-r0
+A:x86
+S:492004
+I:3878912
+T:ZFS Linux kernel modules (development files)
+U:https://openzfs.org
+L:CDDL-1.0
+o:zfs-lts
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1677081091
+c:25c3e7e42259946fcf48e857ef20f40967e68dcb
+D:glib-dev e2fsprogs-dev util-linux-dev libtirpc-dev linux-lts-dev=5.15.95-r0
+
 C:Q1pKkCPgpFNAR0nsuDVOsxQsaB0V0=
 P:boost1.77-log_setup
 V:1.77.0-r7
@@ -14876,6 +14874,22 @@ m:Kevin Daudt <kdaudt@alpinelinux.org>
 t:1627487164
 c:71ae06ca190357a24ddbc64b09e20a8c6222e70d
 i:docs perl-common-sense=3.75-r2
+
+C:Q1ILspYqE5b5TsqoTi1oEGotMZr1o=
+P:zfs-virt
+V:5.15.95-r0
+A:x86
+S:1603758
+I:1683456
+T:ZFS Linux kernel modules for virt
+U:https://openzfs.org
+L:CDDL-1.0
+o:zfs-lts
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1677081091
+c:25c3e7e42259946fcf48e857ef20f40967e68dcb
+D:linux-virt=5.15.95-r0
+i:zfs linux-virt=5.15.95-r0
 
 C:Q1sArGGLIsAWUxpsZU1syEhpaVaNE=
 P:py3-installer
@@ -17516,21 +17530,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-test-requires=0.11-r1
 
-C:Q1jK+UIUu4h71h4ybEno1a3HlqEbI=
-P:linux-virt-dev
-V:5.15.94-r0
-A:x86
-S:18756208
-I:125960192
-T:Headers and script for third party modules for virt kernel
-U:https://www.kernel.org
-L:GPL-2.0
-o:linux-lts
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1676586431
-c:7b906bf082d95c2537f6612a599c7971c01258b5
-D:perl gmp-dev mpc1-dev mpfr-dev elfutils-dev bash flex bison zstd so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libstdc++.so.6
-
 C:Q1n+k2gDoKnpPTHdvoxDW0Sux6TXk=
 P:rsyslog-mmpstrucdata
 V:8.2204.1-r0
@@ -19378,6 +19377,21 @@ t:1666194322
 c:b93bd0b54656fcd38971a5cd625ebce30637d2d6
 D:nginx nginx-mod-stream so:libc.musl-x86.so.1 so:libmaxminddb.so.0
 
+C:Q1PL7yJt+ysenP667jsXVDiza+LhU=
+P:linux-lts-dev
+V:5.15.95-r0
+A:x86
+S:19076322
+I:126980096
+T:Headers and script for third party modules for lts kernel
+U:https://www.kernel.org
+L:GPL-2.0
+o:linux-lts
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1677080816
+c:7cd923c4e617eceafd57ccb6fc7b52afd4267f89
+D:perl gmp-dev mpc1-dev mpfr-dev elfutils-dev bash flex bison zstd so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libstdc++.so.6
+
 C:Q1rsKmDQWVJHPRyj/9vXMHVMpZ8PQ=
 P:libxv
 V:1.0.11-r2
@@ -21147,21 +21161,6 @@ c:3f28965a3ed74837435bd0d488463d10afe72f3f
 D:!shadow-login-doc
 i:docs util-linux-login=2.38-r1
 
-C:Q1zEGcRzjtf47yS99ncRTRxNIr/js=
-P:zfs-lts-dev
-V:5.15.94-r0
-A:x86
-S:492025
-I:3878912
-T:ZFS Linux kernel modules (development files)
-U:https://openzfs.org
-L:CDDL-1.0
-o:zfs-lts
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1676586597
-c:da8bdec06a8e2782c131a24fe93d5a6f37df4a0e
-D:glib-dev e2fsprogs-dev util-linux-dev libtirpc-dev linux-lts-dev=5.15.94-r0
-
 C:Q1gB8TSHF0tk43ACPuYpVjSNncLqo=
 P:perl-module-runtime
 V:0.016-r4
@@ -21850,6 +21849,23 @@ m:Ted Trask <ttrask01@yahoo.com>
 t:1621087673
 c:ec4e35bcdcf38829d2a36ff4d7cd4351ebb67d1c
 D:acf-core openssh
+
+C:Q1ldCfHdY53eDMMuZ1fX8Kd81JYG4=
+P:zfs-lts
+V:5.15.95-r0
+A:x86
+S:1628062
+I:1720320
+T:ZFS Linux kernel modules
+U:https://openzfs.org
+L:CDDL-1.0
+o:zfs-lts
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1677081091
+c:25c3e7e42259946fcf48e857ef20f40967e68dcb
+D:linux-lts=5.15.95-r0
+p:spl-vanilla
+i:zfs linux-lts=5.15.95-r0
 
 C:Q1pXHBInpsL5EQ9Fo8xW2b0kv7Lhs=
 P:ngircd-doc
@@ -29062,21 +29078,6 @@ t:1652441839
 c:aecebd09018ac2c8208bb57ef2b3686f03dc2edf
 D:so:libc.musl-x86.so.1 so:libgcc_s.so.1
 p:so:libboost_chrono.so.1.77.0=1.77.0
-
-C:Q1ryWuIDtutLW+tWF6JrscXExEbck=
-P:linux-lts
-V:5.15.94-r0
-A:x86
-S:58664808
-I:75079680
-T:Linux lts kernel
-U:https://www.kernel.org
-L:GPL-2.0
-o:linux-lts
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1676586431
-c:7b906bf082d95c2537f6612a599c7971c01258b5
-D:mkinitfs>=3.6.0 linux-firmware-any
 
 C:Q1FNN9V367vLXqjTnREqwFGKpQcFU=
 P:pzstd
@@ -41362,6 +41363,21 @@ c:413a21a917f6ea55ec921ac2f844535418599975
 D:samurai python3
 i:vim meson=0.62.1-r0
 
+C:Q1qCpKy7Llqb5ulx4Wv8CVjW9Uiwg=
+P:linux-virt
+V:5.15.95-r0
+A:x86
+S:21494243
+I:27136000
+T:Linux lts kernel
+U:https://www.kernel.org
+L:GPL-2.0
+o:linux-lts
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1677080816
+c:7cd923c4e617eceafd57ccb6fc7b52afd4267f89
+D:mkinitfs>=3.6.0
+
 C:Q1uSFbizhHTSMuMiAgGtrjNeBpH7Y=
 P:syslog-ng-tags-parser
 V:3.36.1-r0
@@ -44548,6 +44564,21 @@ t:1639595861
 c:a22e850510941a054d210c63aa62f73da0c0c74b
 D:pkgconfig subunit-libs=1.4.0-r3
 p:pc:libcppunit_subunit=1.4.0 pc:libsubunit=1.4.0
+
+C:Q1823uPValm9nKOEn8ecWsWZDPRSk=
+P:linux-lts
+V:5.15.95-r0
+A:x86
+S:58664555
+I:75079680
+T:Linux lts kernel
+U:https://www.kernel.org
+L:GPL-2.0
+o:linux-lts
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1677080816
+c:7cd923c4e617eceafd57ccb6fc7b52afd4267f89
+D:mkinitfs>=3.6.0 linux-firmware-any
 
 C:Q1tF/Z/0qR162ehnqEou+DtTr3K7U=
 P:libgpg-error-dev
@@ -49349,6 +49380,21 @@ t:1652441839
 c:aecebd09018ac2c8208bb57ef2b3686f03dc2edf
 D:so:libboost_context.so.1.77.0 so:libc.musl-x86.so.1 so:libgcc_s.so.1
 p:so:libboost_fiber.so.1.77.0=1.77.0
+
+C:Q1dU0ZXtJqz+ALf57hvzagyBQDJXc=
+P:linux-virt-dev
+V:5.15.95-r0
+A:x86
+S:18755995
+I:125960192
+T:Headers and script for third party modules for virt kernel
+U:https://www.kernel.org
+L:GPL-2.0
+o:linux-lts
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1677080816
+c:7cd923c4e617eceafd57ccb6fc7b52afd4267f89
+D:perl gmp-dev mpc1-dev mpfr-dev elfutils-dev bash flex bison zstd so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libstdc++.so.6
 
 C:Q1x06mPi1iUbkRyQsimsgZ2W5CEjA=
 P:pcsc-lite-openrc
@@ -58910,21 +58956,6 @@ t:1644658193
 c:e28d8f3a434c397fddba39404ccc4aeecbd8a9a2
 i:docs lcms2=2.13.1-r0
 
-C:Q18jzujmOoTm0I4kx/Lh7q4Usk9Hc=
-P:linux-virt
-V:5.15.94-r0
-A:x86
-S:21491306
-I:27131904
-T:Linux lts kernel
-U:https://www.kernel.org
-L:GPL-2.0
-o:linux-lts
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1676586431
-c:7b906bf082d95c2537f6612a599c7971c01258b5
-D:mkinitfs>=3.6.0
-
 C:Q1BAhgxER6gRz9lwTyXBY8qnHS+7g=
 P:perl-file-sharedir-install-doc
 V:0.13-r2
@@ -61038,22 +61069,6 @@ m:Carlo Landmeter <clandmeter@alpinelinux.org>
 t:1637458715
 c:9eb58e5720f8b31c64bb08f937bdcbb508f26326
 
-C:Q1FerBJO4mRedocUCTUlXlDUqfsPw=
-P:zfs-virt
-V:5.15.94-r0
-A:x86
-S:1603703
-I:1683456
-T:ZFS Linux kernel modules for virt
-U:https://openzfs.org
-L:CDDL-1.0
-o:zfs-lts
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1676586597
-c:da8bdec06a8e2782c131a24fe93d5a6f37df4a0e
-D:linux-virt=5.15.94-r0
-i:zfs linux-virt=5.15.94-r0
-
 C:Q1NZLYCaOeevnJ9fWUR1roIM2O65g=
 P:perl-test-metrics-any
 V:0.01-r1
@@ -62834,22 +62849,6 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:encodings font-alias mkfontscale mkfontdir fontconfig
 
-C:Q1EDBvxdLWy8d+xiDr1w1gUtjqsU8=
-P:xtables-addons-lts
-V:5.15.94-r0
-A:x86
-S:81328
-I:151552
-T:Iptables extensions kernel modules
-U:https://inai.de/projects/xtables-addons/
-L:GPL-2.0
-o:xtables-addons-lts
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1676586480
-c:0d3192a6a36cbf0cca609f860488e92f9b45d075
-D:linux-lts=5.15.94-r0
-i:linux-lts=5.15.94-r0 xtables-addons
-
 C:Q1oQe3tuu4NGwnYO0nfnS1SWxIqK4=
 P:nginx-mod-rtmp
 V:1.22.1-r0
@@ -63828,21 +63827,6 @@ o:libtirpc
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1659694609
 c:aa80fe4eaed3acff198d3f22f6255809edaf01e3
-
-C:Q1jEHDunWFBR07jDIQm7AgKwclMas=
-P:linux-lts-dev
-V:5.15.94-r0
-A:x86
-S:19076646
-I:126980096
-T:Headers and script for third party modules for lts kernel
-U:https://www.kernel.org
-L:GPL-2.0
-o:linux-lts
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1676586431
-c:7b906bf082d95c2537f6612a599c7971c01258b5
-D:perl gmp-dev mpc1-dev mpfr-dev elfutils-dev bash flex bison zstd so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libstdc++.so.6
 
 C:Q1PsrBv1rtsAfcNSCN12pmmzMfesY=
 P:uwsgi-rsyslog
@@ -66070,6 +66054,22 @@ t:1665374395
 c:59bf173b777ec90191bcaf7e9d7b372c1437ffe8
 D:so:libc.musl-x86.so.1 so:libpq.so.5
 p:so:postfix-pgsql.so=0
+
+C:Q1GRtXjFwEGaDTrnmvXp0H++i1ZLA=
+P:xtables-addons-lts
+V:5.15.95-r0
+A:x86
+S:81320
+I:151552
+T:Iptables extensions kernel modules
+U:https://inai.de/projects/xtables-addons/
+L:GPL-2.0
+o:xtables-addons-lts
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1677080883
+c:8ee1ce8d3d4d0add8db6bd76147c214cbff5a389
+D:linux-lts=5.15.95-r0
+i:linux-lts=5.15.95-r0 xtables-addons
 
 C:Q1aics9rsVQz8/d8HWY6dKtCLXJVg=
 P:perl-mail-authenticationresults-doc
