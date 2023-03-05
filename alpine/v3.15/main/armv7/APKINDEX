@@ -7664,21 +7664,6 @@ c:670bf5a8cc5bc605eede8ca2fd55b50a5c9f8660
 D:encfs-libs=1.9.5-r12 so:libc.musl-armv7.so.1 so:libencfs.so.1.9 so:libfuse.so.2 so:libgcc_s.so.1 so:libintl.so.8 so:libssl.so.1.1 so:libstdc++.so.6
 p:cmd:encfs=1.9.5-r12 cmd:encfsctl=1.9.5-r12 cmd:encfssh=1.9.5-r12
 
-C:Q1V8obc6ryn7YcQFizG5sC68IjaOc=
-P:musl
-V:1.2.2-r7
-A:armv7
-S:361192
-I:516096
-T:the musl c library (libc) implementation
-U:https://musl.libc.org/
-L:MIT
-o:musl
-m:Timo Teräs <timo.teras@iki.fi>
-t:1632431095
-c:bf5bbfdbf780092f387b7abe401fbfceda90c84d
-p:so:libc.musl-armv7.so.1=1
-
 C:Q1GUUApJ4YQV09Z2BoTf1puAOtl+U=
 P:openssh-keygen
 V:8.8_p1-r1
@@ -13490,6 +13475,20 @@ k:13
 D:postgresql13=13.10-r0 so:libLLVM-12.so so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:postgresql-jit
 
+C:Q1BVWGXgboEfUQhpbU9QLPY8cxLF4=
+P:musl-dbg
+V:1.2.2-r8
+A:armv7
+S:926460
+I:2912256
+T:the musl c library (libc) implementation (debug symbols)
+U:https://musl.libc.org/
+L:MIT
+o:musl
+m:Timo Teräs <timo.teras@iki.fi>
+t:1678012534
+c:4b4d7d14ebcb9669a179513ba782d9f4d9c62a51
+
 C:Q1dgyNIfDyOg6tduD7V6p3ilyGeuY=
 P:perl-socket-getaddrinfo-doc
 V:0.22-r3
@@ -13659,6 +13658,22 @@ o:libpng
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1610489771
 c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
+
+C:Q11lxT2B2KUWU/wW3PJ4YyIc7xliU=
+P:musl-utils
+V:1.2.2-r8
+A:armv7
+S:34012
+I:110592
+T:the musl c library (libc) implementation
+U:https://musl.libc.org/
+L:MIT BSD GPL2+
+o:musl
+m:Timo Teräs <timo.teras@iki.fi>
+t:1678012534
+c:4b4d7d14ebcb9669a179513ba782d9f4d9c62a51
+D:scanelf so:libc.musl-armv7.so.1
+p:cmd:getconf=1.2.2-r8 cmd:getent=1.2.2-r8 cmd:iconv=1.2.2-r8 cmd:ldconfig=1.2.2-r8 cmd:ldd=1.2.2-r8
 
 C:Q1qBjjU0Ox4dcbGqRMMm+cdUqrp94=
 P:unifont-dev
@@ -32037,6 +32052,21 @@ c:92847f4dd6f4dd1721b1cf4a6a76764468e2879c
 D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 p:so:libhiredis_ssl.so.1.0.0=1.0.0
 
+C:Q1JcqnIf43xinDS2U0ZfmbTO0qJsU=
+P:libc6-compat
+V:1.2.2-r8
+A:armv7
+S:1695
+I:8192
+T:compatibility libraries for glibc
+U:https://musl.libc.org/
+L:MIT
+o:musl
+m:Timo Teräs <timo.teras@iki.fi>
+t:1678012534
+c:4b4d7d14ebcb9669a179513ba782d9f4d9c62a51
+D:musl=1.2.2-r8
+
 C:Q1FhsZ8XAg55yrLxltUyCjF4kOAsQ=
 P:libvorbis-dev
 V:1.3.7-r0
@@ -33234,20 +33264,6 @@ t:1632679830
 c:b45967976c1912b2936b0ed57bb9ec35cb9ca1b6
 D:so:libc.musl-armv7.so.1 so:libskarnet.so.2.11
 p:so:libexecline.so.2.8=2.8.1.0 cmd:background=2.8.1.0-r0 cmd:backtick=2.8.1.0-r0 cmd:case=2.8.1.0-r0 cmd:cd=2.8.1.0-r0 cmd:define=2.8.1.0-r0 cmd:dollarat=2.8.1.0-r0 cmd:elgetopt=2.8.1.0-r0 cmd:elgetpositionals=2.8.1.0-r0 cmd:elglob=2.8.1.0-r0 cmd:emptyenv=2.8.1.0-r0 cmd:envfile=2.8.1.0-r0 cmd:exec=2.8.1.0-r0 cmd:execline-cd=2.8.1.0-r0 cmd:execline-umask=2.8.1.0-r0 cmd:execlineb=2.8.1.0-r0 cmd:exit=2.8.1.0-r0 cmd:export=2.8.1.0-r0 cmd:fdblock=2.8.1.0-r0 cmd:fdclose=2.8.1.0-r0 cmd:fdmove=2.8.1.0-r0 cmd:fdreserve=2.8.1.0-r0 cmd:fdswap=2.8.1.0-r0 cmd:forbacktickx=2.8.1.0-r0 cmd:foreground=2.8.1.0-r0 cmd:forstdin=2.8.1.0-r0 cmd:forx=2.8.1.0-r0 cmd:getcwd=2.8.1.0-r0 cmd:getpid=2.8.1.0-r0 cmd:heredoc=2.8.1.0-r0 cmd:homeof=2.8.1.0-r0 cmd:if=2.8.1.0-r0 cmd:ifelse=2.8.1.0-r0 cmd:ifte=2.8.1.0-r0 cmd:ifthenelse=2.8.1.0-r0 cmd:importas=2.8.1.0-r0 cmd:loopwhilex=2.8.1.0-r0 cmd:multidefine=2.8.1.0-r0 cmd:multisubstitute=2.8.1.0-r0 cmd:pipeline=2.8.1.0-r0 cmd:piperw=2.8.1.0-r0 cmd:posix-cd=2.8.1.0-r0 cmd:posix-umask=2.8.1.0-r0 cmd:redirfd=2.8.1.0-r0 cmd:runblock=2.8.1.0-r0 cmd:shift=2.8.1.0-r0 cmd:trap=2.8.1.0-r0 cmd:tryexec=2.8.1.0-r0 cmd:umask=2.8.1.0-r0 cmd:unexport=2.8.1.0-r0 cmd:wait=2.8.1.0-r0 cmd:withstdinas=2.8.1.0-r0
-
-C:Q1QwcMQhxTQM2EkAFpf5pTdFZqEEQ=
-P:musl-dbg
-V:1.2.2-r7
-A:armv7
-S:926277
-I:2912256
-T:the musl c library (libc) implementation (debug symbols)
-U:https://musl.libc.org/
-L:MIT
-o:musl
-m:Timo Teräs <timo.teras@iki.fi>
-t:1632431095
-c:bf5bbfdbf780092f387b7abe401fbfceda90c84d
 
 C:Q1RJa/d9n2iMImgCsRG4GiHIHX0LY=
 P:perl-io-socket-inet6
@@ -42217,21 +42233,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl perl-http-message
 
-C:Q1a+T/X8FHzzCnexUmY8B6X/Pfz94=
-P:musl-dev
-V:1.2.2-r7
-A:armv7
-S:2222379
-I:9248768
-T:the musl c library (libc) implementation (development files)
-U:https://musl.libc.org/
-L:MIT
-o:musl
-m:Timo Teräs <timo.teras@iki.fi>
-t:1632431095
-c:bf5bbfdbf780092f387b7abe401fbfceda90c84d
-D:musl=1.2.2-r7
-
 C:Q1m+fZpzXW6mNxXuZMguPrTqnQv1k=
 P:openldap-back-mdb
 V:2.6.2-r0
@@ -45848,20 +45849,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1635494978
 c:87f6509d7aee77e5c5f5b2753690e039be33d359
 p:linux-firmware-any
-
-C:Q1+zB2yURN6Mv1KrbWyL0ej87Lnhc=
-P:musl-libintl
-V:1.2.2-r7
-A:armv7
-S:1855
-I:16384
-T:musl libintl.h header
-U:https://musl.libc.org/
-L:MIT
-o:musl
-m:Timo Teräs <timo.teras@iki.fi>
-t:1632431095
-c:bf5bbfdbf780092f387b7abe401fbfceda90c84d
 
 C:Q1nYcAdqH4V3Tv2M1rSki+coGSA5s=
 P:perl-cpan-meta-check
@@ -50041,22 +50028,6 @@ c:405bbad926a985d6abba5fabd1f2266e050a2d18
 D:so:libc.musl-armv7.so.1
 p:cmd:acpi=1.7-r4
 
-C:Q1DzPx+OLl3r4DrwyTbPtDVeb6/9U=
-P:musl-utils
-V:1.2.2-r7
-A:armv7
-S:33969
-I:110592
-T:the musl c library (libc) implementation
-U:https://musl.libc.org/
-L:MIT BSD GPL2+
-o:musl
-m:Timo Teräs <timo.teras@iki.fi>
-t:1632431095
-c:bf5bbfdbf780092f387b7abe401fbfceda90c84d
-D:scanelf so:libc.musl-armv7.so.1
-p:cmd:getconf=1.2.2-r7 cmd:getent=1.2.2-r7 cmd:iconv=1.2.2-r7 cmd:ldconfig=1.2.2-r7 cmd:ldd=1.2.2-r7
-
 C:Q1XxqtR0epbBrMjT/7YbNI9zGTgx0=
 P:libasr-static
 V:1.0.4-r2
@@ -51340,6 +51311,21 @@ c:15330396d0dcf2f99686a5d36cc9dbdb23a74cab
 D:so:libc.musl-armv7.so.1
 p:so:libpcre2-8.so.0=0.11.0 so:libpcre2-posix.so.3=3.0.2
 
+C:Q1RhSpozf+2VWiBLekMCX1gx/PmjA=
+P:musl
+V:1.2.2-r8
+A:armv7
+S:361379
+I:520192
+T:the musl c library (libc) implementation
+U:https://musl.libc.org/
+L:MIT
+o:musl
+m:Timo Teräs <timo.teras@iki.fi>
+t:1678012534
+c:4b4d7d14ebcb9669a179513ba782d9f4d9c62a51
+p:so:libc.musl-armv7.so.1=1
+
 C:Q1yFEcvmPCjKn4KFCKOSts5+nxAik=
 P:lxc-libs
 V:4.0.12-r2
@@ -52321,6 +52307,20 @@ t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.2 so:libc.musl-armv7.so.1
 i:lua-cjson=2.1.0-r10 lua5.2
+
+C:Q1Bge6Tdkg84+/yHIZQgF/VTtORDc=
+P:musl-libintl
+V:1.2.2-r8
+A:armv7
+S:1853
+I:16384
+T:musl libintl.h header
+U:https://musl.libc.org/
+L:MIT
+o:musl
+m:Timo Teräs <timo.teras@iki.fi>
+t:1678012534
+c:4b4d7d14ebcb9669a179513ba782d9f4d9c62a51
 
 C:Q12F1kqUguvjHfjPmwsEsZCU73uMs=
 P:nmap-doc
@@ -64156,21 +64156,6 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.2 so:libc.musl-armv7.so.1
 i:lua-b64=0.1-r4 lua5.2
 
-C:Q1Fwrm/ubpgixAtzp2lSoLEWqzXEo=
-P:libc6-compat
-V:1.2.2-r7
-A:armv7
-S:1698
-I:8192
-T:compatibility libraries for glibc
-U:https://musl.libc.org/
-L:MIT
-o:musl
-m:Timo Teräs <timo.teras@iki.fi>
-t:1632431095
-c:bf5bbfdbf780092f387b7abe401fbfceda90c84d
-D:musl=1.2.2-r7
-
 C:Q1bzDuxpZLe2OwUSuuDzAGYzFgxzE=
 P:igmpproxy-doc
 V:0.3-r0
@@ -69578,6 +69563,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487152
 c:681e08741504699f386b3fe4057f6d07ae735001
 i:docs perl-file-tail=1.3-r3
+
+C:Q1p8933LHfXPQNhXlL6zpKeEIzCvI=
+P:musl-dev
+V:1.2.2-r8
+A:armv7
+S:2222104
+I:9248768
+T:the musl c library (libc) implementation (development files)
+U:https://musl.libc.org/
+L:MIT
+o:musl
+m:Timo Teräs <timo.teras@iki.fi>
+t:1678012534
+c:4b4d7d14ebcb9669a179513ba782d9f4d9c62a51
+D:musl=1.2.2-r8
 
 C:Q1SBrgEbgy+W4tCWor9ngABOwvm8k=
 P:yajl-dev
