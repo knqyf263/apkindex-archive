@@ -1632,21 +1632,6 @@ c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 D:so:libc.musl-x86.so.1
 p:so:libtxc_dxtn.so=0
 
-C:Q1XK5UVqvGUe4Van0RVu1qodO6JDk=
-P:apache2-proxy
-V:2.4.55-r0
-A:x86
-S:195714
-I:647168
-T:Proxy modules for the Apache HTTP Server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1673983374
-c:2597ee1de8724eefd43f496977d830bf02364905
-D:apache2 so:libc.musl-x86.so.1
-
 C:Q1Hda+MUlwQWzymS4RwGicUuPtBM4=
 P:ip6tables-openrc
 V:1.8.7-r1
@@ -2153,6 +2138,21 @@ t:1619343937
 c:694cae2ccfca3c5413548a4561ce9d940619c414
 D:wireguard-tools-wg=1.0.20210424-r0 iproute2 ip6tables bash openresolv
 p:cmd:wg-quick
+
+C:Q1HmB9Hxx5vzMe+ylZmj2GqEBFlXs=
+P:apache2-ssl
+V:2.4.56-r0
+A:x86
+S:101446
+I:282624
+T:SSL/TLS module for the Apache HTTP Server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1678217679
+c:547d4c893ff6819d5bf2138bbf9ac1fb28ef227e
+D:apache2 openssl /bin/sh so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 
 C:Q1ICbOnhjDvb0P4yWU/STu31f1Th0=
 P:pax-utils
@@ -5623,6 +5623,21 @@ m:Timothy Legge <timlegge@gmail.com>
 t:1600709980
 c:78b449eb09a6e6e9b6172fee47c8c64ceebc76c8
 i:docs perl-time-parsedate=2015.103-r4
+
+C:Q1H2cEWU0EYGznFpr0mW3alauX2Uc=
+P:apache2-lua
+V:2.4.56-r0
+A:x86
+S:52235
+I:163840
+T:Lua support for the Apache HTTP server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1678217679
+c:547d4c893ff6819d5bf2138bbf9ac1fb28ef227e
+D:apache2 so:libc.musl-x86.so.1 so:liblua.so.5
 
 C:Q1gn6Cd72jxFoc7jjhK6Qx9IiM+M0=
 P:perl-module-util
@@ -12446,6 +12461,21 @@ c:094e58de95cb2a6000025a818321d6b80fcda43d
 D:python3 py3-pbr py3-fixtures py3-extras py3-six py3-mimeparse
 p:py-testtools=2.4.0-r3 py3.9:testtools=2.4.0-r3
 
+C:Q1YVzNGGJ1Ol9u4sJxqyevGnlN658=
+P:apache2-ldap
+V:2.4.56-r0
+A:x86
+S:46657
+I:159744
+T:LDAP authentication/authorization module for the Apache HTTP Server
+U:https://httpd.apache.org/docs/2.4/mod/mod_authnz_ldap.html
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1678217679
+c:547d4c893ff6819d5bf2138bbf9ac1fb28ef227e
+D:apache2 apr-util-ldap so:libc.musl-x86.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2
+
 C:Q1BS7/v2ceEWDFQlSUH8mEVXkw27c=
 P:privoxy-openrc
 V:3.0.33-r0
@@ -12918,6 +12948,22 @@ t:1649789422
 c:2a1bd37a913af03f6ca05a6aad5862d7758c64fc
 D:so:libapr-1.so.0 so:libc.musl-x86.so.1 so:libsvn_client-1.so.0 so:libsvn_delta-1.so.0 so:libsvn_diff-1.so.0 so:libsvn_fs-1.so.0 so:libsvn_ra-1.so.0 so:libsvn_repos-1.so.0 so:libsvn_subr-1.so.0 so:libsvn_wc-1.so.0
 p:so:libsvn_swig_py-1.so.0=0.0.0
+
+C:Q1WGl5CUwviVYN13LHgp0ivVMUJCg=
+P:apache2-utils
+V:2.4.56-r0
+A:x86
+S:72098
+I:274432
+T:Apache utility programs for webservers
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1678217679
+c:547d4c893ff6819d5bf2138bbf9ac1fb28ef227e
+D:so:libapr-1.so.0 so:libaprutil-1.so.0 so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
+p:cmd:ab cmd:checkgid cmd:dbmmanage cmd:htcacheclean cmd:htdbm cmd:htdigest cmd:htpasswd cmd:httxt2dbm cmd:logresolve cmd:rotatelogs
 
 C:Q1HZvi0CMS1v2a0fcVkGTBSGPszKA=
 P:postgresql-bdr-client
@@ -13847,21 +13893,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1628001887
 c:10998b5ca77ec8229976ed01346cfc819ddbbb99
 p:linux-firmware-any
-
-C:Q1PSZWZn8TVjrFdtV01F3rWLNw/QE=
-P:apache2-proxy-html
-V:2.4.55-r0
-A:x86
-S:24626
-I:102400
-T:HTML and XML content filters for the Apache HTTP Server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1673983374
-c:2597ee1de8724eefd43f496977d830bf02364905
-D:apache2 so:libc.musl-x86.so.1 so:libxml2.so.2
 
 C:Q1DtIsoIbjPO125Zx9Ze2wJ0AkoDA=
 P:bacula-doc
@@ -16406,6 +16437,22 @@ c:d6a9bd45905d9619d60e522a7df98569c2917853
 D:perl mariadb-common=10.5.19-r0 so:libc.musl-x86.so.1 so:libgcc_s.so.1
 p:cmd:mariadb-convert-table-format cmd:mariadb-hotcopy cmd:mariadb-setpermission cmd:mariadb-upgrade cmd:mariadbd-multi cmd:mariadbd-safe-helper cmd:mysql_convert_table_format cmd:mysql_setpermission cmd:mysql_upgrade cmd:mysqld_multi cmd:mysqld_safe_helper cmd:mysqlhotcopy cmd:perror
 
+C:Q1odu6kWve0e8cSdI/aQe00SYvjyA=
+P:apache2
+V:2.4.56-r0
+A:x86
+S:870043
+I:2994176
+T:A high performance Unix-based HTTP server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1678217679
+c:547d4c893ff6819d5bf2138bbf9ac1fb28ef227e
+D:/bin/sh so:libapr-1.so.0 so:libaprutil-1.so.0 so:libc.musl-x86.so.1 so:libpcre.so.1 so:libz.so.1
+p:cmd:fcgistarter cmd:httpd cmd:suexec
+
 C:Q1k5gZfKD0seWr5Zqwd5l1aOpm3X8=
 P:mosh-server
 V:1.3.2-r18
@@ -16574,22 +16621,6 @@ t:1522928751
 c:a5b24f0478248282ba6904a88ef8b15218baceda
 D:so:libc.musl-x86.so.1
 p:so:liba52.so.0=0.0.0 cmd:a52dec cmd:extract_a52
-
-C:Q1041r4cZTu44v5368qXnCDXGMHZM=
-P:apache2-ctl
-V:2.4.55-r0
-A:x86
-S:2869
-I:16384
-T:Apache control script
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1673983374
-c:2597ee1de8724eefd43f496977d830bf02364905
-D:lynx
-p:cmd:apachectl
 
 C:Q1c4mEkR4X+N/TghYv0OTuNgl7YmI=
 P:ruby-dev
@@ -17591,21 +17622,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1628001887
 c:10998b5ca77ec8229976ed01346cfc819ddbbb99
 p:linux-firmware-any
-
-C:Q1SDDX1F6h2RpkgXJ5UXWuLkLfCvg=
-P:apache2-doc
-V:2.4.55-r0
-A:x86
-S:5752169
-I:25878528
-T:A high performance Unix-based HTTP server (documentation)
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1673983374
-c:2597ee1de8724eefd43f496977d830bf02364905
-i:docs apache2=2.4.55-r0
 
 C:Q1arzii5XQToVEwpbTM2YaVKLHA4s=
 P:lftp-doc
@@ -19785,6 +19801,21 @@ c:babf657f3b1af2b2bc8c17e392d250759cc8b2c9
 D:openssh /bin/sh so:libc.musl-x86.so.1
 p:cmd:rssh
 
+C:Q1YTYQ7eOlJzO95bw8zhX+xWWFllw=
+P:apache2-webdav
+V:2.4.56-r0
+A:x86
+S:81096
+I:233472
+T:WebDAV support for the Apache HTTP Server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1678217679
+c:547d4c893ff6819d5bf2138bbf9ac1fb28ef227e
+D:apache2 so:libc.musl-x86.so.1
+
 C:Q1osAqgUUseGalJlWvQWbr6gk+KnI=
 P:s6-portable-utils-doc
 V:2.2.3.2-r0
@@ -21252,22 +21283,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1600709954
 c:f91d70b75b860eea14d4e3bcbadf90e9ff755cd2
 i:docs perl-class-mix=0.006-r2
-
-C:Q1ODfpBPTvypk4hTgwkp1B5AmlPRY=
-P:apache2
-V:2.4.55-r0
-A:x86
-S:869661
-I:2994176
-T:A high performance Unix-based HTTP server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1673983374
-c:2597ee1de8724eefd43f496977d830bf02364905
-D:/bin/sh so:libapr-1.so.0 so:libaprutil-1.so.0 so:libc.musl-x86.so.1 so:libpcre.so.1 so:libz.so.1
-p:cmd:fcgistarter cmd:httpd cmd:suexec
 
 C:Q1azGfsFXzT0nZHThNPqb0xdytblg=
 P:rtmpdump-doc
@@ -25041,21 +25056,6 @@ t:1628001887
 c:10998b5ca77ec8229976ed01346cfc819ddbbb99
 p:linux-firmware-any
 
-C:Q1abP3TzRQLhWUdZ6IrmHguiml+K4=
-P:apache2-http2
-V:2.4.55-r0
-A:x86
-S:95148
-I:262144
-T:HTTP/2 transport layer for the Apache HTTP Server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1673983374
-c:2597ee1de8724eefd43f496977d830bf02364905
-D:apache2 so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libnghttp2.so.14
-
 C:Q1ycA77nT14w3VNwGVL1f4QO6HkIY=
 P:glib-dbg
 V:2.68.3-r0
@@ -26908,20 +26908,6 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1619080659
 c:553b52b33f4111f77c68ac4f2d42c6763e561527
 D:nagios-plugins so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libmariadb.so.3
-
-C:Q14o4wOS8PI0pKMP0LLJTVPl25Zc8=
-P:apache2-icons
-V:2.4.55-r0
-A:x86
-S:159042
-I:1368064
-T:Apache Public Domain Icons
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1673983374
-c:2597ee1de8724eefd43f496977d830bf02364905
 
 C:Q1wu7o0SFSMaNsNB/sthmd3M0VnX4=
 P:perl-file-temp-doc
@@ -30173,21 +30159,6 @@ t:1621087673
 c:ec4e35bcdcf38829d2a36ff4d7cd4351ebb67d1c
 D:acf-core dansguardian
 
-C:Q1wkU4o/GxBEEuNlc2CZm4Esxa1IM=
-P:apache2-ldap
-V:2.4.55-r0
-A:x86
-S:46611
-I:159744
-T:LDAP authentication/authorization module for the Apache HTTP Server
-U:https://httpd.apache.org/docs/2.4/mod/mod_authnz_ldap.html
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1673983374
-c:2597ee1de8724eefd43f496977d830bf02364905
-D:apache2 apr-util-ldap so:libc.musl-x86.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2
-
 C:Q1xhiB4Sajq5ESmLn2jhOTqc7QsaU=
 P:nasm-doc
 V:2.15.05-r0
@@ -31862,6 +31833,20 @@ m:Ted Trask <ttrask01@yahoo.com>
 t:1621087673
 c:ec4e35bcdcf38829d2a36ff4d7cd4351ebb67d1c
 D:acf-core heimdal
+
+C:Q1wrSQgUi3aEbh/1fGSGE0zZDXC1M=
+P:apache2-icons
+V:2.4.56-r0
+A:x86
+S:159042
+I:1368064
+T:Apache Public Domain Icons
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1678217679
+c:547d4c893ff6819d5bf2138bbf9ac1fb28ef227e
 
 C:Q1c9zj++w7TT/qvkmc3dX3hWRR48k=
 P:tree
@@ -33592,6 +33577,21 @@ t:1602442045
 c:db93314c6666790d3a0fcb9d421a1563f115f02f
 D:so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libpcap.so.1 so:libssl.so.1.1 so:libstdc++.so.6
 p:cmd:nping
+
+C:Q1n5G7HM/wfRiUGCJlhpWxpfielBM=
+P:apache2-http2
+V:2.4.56-r0
+A:x86
+S:95150
+I:262144
+T:HTTP/2 transport layer for the Apache HTTP Server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1678217679
+c:547d4c893ff6819d5bf2138bbf9ac1fb28ef227e
+D:apache2 so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libnghttp2.so.14
 
 C:Q1hPVsvfziiOGQmjxVmwKhb1t4+s4=
 P:perl-sub-quote-doc
@@ -37295,22 +37295,6 @@ c:256d26f4f7e435c58a69e52ba27a6012ecdf3851
 D:fribidi=1.0.10-r0 pkgconfig
 p:pc:fribidi=1.0.10
 
-C:Q12bqURZrYu0YBoxDCao2xPiwuC3I=
-P:apache2-dev
-V:2.4.55-r0
-A:x86
-S:218263
-I:1085440
-T:A high performance Unix-based HTTP server (development files)
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1673983374
-c:2597ee1de8724eefd43f496977d830bf02364905
-D:perl apr-util-dev
-p:cmd:apxs
-
 C:Q1qcSIQEMcrp1mTism63LKtoPtL18=
 P:boost1.76-wserialization
 V:1.76.0-r0
@@ -37371,6 +37355,21 @@ m:Sheila Aman <sheila@vulpine.house>
 t:1620852262
 c:2d63700fe78744e22c497d2cf7f8610828f00544
 i:docs perl-ipc-system-simple=1.30-r2
+
+C:Q1Nv9fvQA5+eHL8fgdtCBEXyGSllQ=
+P:apache2-proxy-html
+V:2.4.56-r0
+A:x86
+S:24608
+I:102400
+T:HTML and XML content filters for the Apache HTTP Server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1678217679
+c:547d4c893ff6819d5bf2138bbf9ac1fb28ef227e
+D:apache2 so:libc.musl-x86.so.1 so:libxml2.so.2
 
 C:Q1dz1GQHGlCjQD6pYPjftegPEmq08=
 P:lua5.1-dbi-postgresql
@@ -38866,6 +38865,20 @@ t:1621223837
 c:8faac1666b8aa9fb68dacfec8f5332a27702bd8d
 D:liblksctp=1.0.19-r0 pkgconfig
 p:pc:libsctp=1.0.19
+
+C:Q1UeyFm6WdiWS2ArtlvfxJ/LZ52u4=
+P:apache2-error
+V:2.4.56-r0
+A:x86
+S:43503
+I:299008
+T:Apache Multi Language Custom Error Documents
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1678217679
+c:547d4c893ff6819d5bf2138bbf9ac1fb28ef227e
 
 C:Q10uCC49oARWbQdl4ZAuF0t/eM8/s=
 P:perl-xml-sax-doc
@@ -43242,20 +43255,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1610522534
 c:f8728fab65ed79764c8afca55fb72a170a443c92
 
-C:Q1QE1M0tR9PKbaKUot+uxcGoQvUL0=
-P:apache2-error
-V:2.4.55-r0
-A:x86
-S:43492
-I:299008
-T:Apache Multi Language Custom Error Documents
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1673983374
-c:2597ee1de8724eefd43f496977d830bf02364905
-
 C:Q1MOWXmnFYlCAD3mat2pHBZ80sfp8=
 P:lua5.2-libs
 V:5.2.4-r7
@@ -43980,6 +43979,21 @@ t:1600933831
 c:e57da0caec73a38d78361795e5f901e67f1c2285
 D:so:libc.musl-x86.so.1
 p:so:libvanessa_logger.so.0=0.0.5 cmd:vanessa_logger_sample
+
+C:Q1kH0zdgPn9xvs2c38qbVMTEIYVz8=
+P:apache2-brotli
+V:2.4.56-r0
+A:x86
+S:7747
+I:53248
+T:Brotli content compression for the Apache HTTP Server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1678217679
+c:547d4c893ff6819d5bf2138bbf9ac1fb28ef227e
+D:apache2 so:libbrotlienc.so.1 so:libc.musl-x86.so.1
 
 C:Q1Ew/Gx/SgvGE4NE4eChlPx85lk5Q=
 P:cyrus-sasl-gs2
@@ -51242,22 +51256,6 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:encodings font-alias mkfontscale mkfontdir fontconfig
 
-C:Q1iG9lzVODuJETL5Qrqji6fN1WYuQ=
-P:apache2-utils
-V:2.4.55-r0
-A:x86
-S:71905
-I:274432
-T:Apache utility programs for webservers
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1673983374
-c:2597ee1de8724eefd43f496977d830bf02364905
-D:so:libapr-1.so.0 so:libaprutil-1.so.0 so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
-p:cmd:ab cmd:checkgid cmd:dbmmanage cmd:htcacheclean cmd:htdbm cmd:htdigest cmd:htpasswd cmd:httxt2dbm cmd:logresolve cmd:rotatelogs
-
 C:Q1SG8+5OcOFY4GJPswcH1+t4glSFI=
 P:aspell-lang
 V:0.60.8-r1
@@ -51640,6 +51638,21 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 i:docs libdaemon=0.14-r2
 
+C:Q1MfzE7jC0ypwVbAcVXMv69hup/bs=
+P:apache2-doc
+V:2.4.56-r0
+A:x86
+S:5756123
+I:25886720
+T:A high performance Unix-based HTTP server (documentation)
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1678217679
+c:547d4c893ff6819d5bf2138bbf9ac1fb28ef227e
+i:docs apache2=2.4.56-r0
+
 C:Q1w+8l4qP9x+6HvMca8EHZ3RnEG0A=
 P:network-extras
 V:1.2-r0
@@ -51970,21 +51983,6 @@ t:1676091401
 c:5fa50735420cc6af9867576051934c7d34a6f117
 D:so:libc.musl-x86.so.1 so:libgnutls.so.30 so:libtasn1.so.6 so:libunistring.so.2
 p:cmd:certtool cmd:gnutls-cli cmd:gnutls-cli-debug cmd:gnutls-serv cmd:ocsptool cmd:p11tool cmd:psktool cmd:srptool
-
-C:Q1jsU6cXMykDhWgNEH4XvuilAq8BI=
-P:apache2-brotli
-V:2.4.55-r0
-A:x86
-S:7746
-I:53248
-T:Brotli content compression for the Apache HTTP Server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1673983374
-c:2597ee1de8724eefd43f496977d830bf02364905
-D:apache2 so:libbrotlienc.so.1 so:libc.musl-x86.so.1
 
 C:Q1Ty/Ewor80qOci2nHH3OYT+80GDA=
 P:subversion-bash-completion
@@ -54990,6 +54988,22 @@ c:9b94774500c5c778ed475a5c4b6e6c7dd6cd2b34
 D:perl
 p:cmd:spamalyze
 
+C:Q1LYMvbnrvSDD2kWBrHqscRFfzG1Y=
+P:apache2-dev
+V:2.4.56-r0
+A:x86
+S:218279
+I:1085440
+T:A high performance Unix-based HTTP server (development files)
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1678217679
+c:547d4c893ff6819d5bf2138bbf9ac1fb28ef227e
+D:perl apr-util-dev
+p:cmd:apxs
+
 C:Q1UgX2FPmHP8kLnDKE06ju5XRa+es=
 P:run-parts-doc
 V:4.11.2-r0
@@ -57009,21 +57023,6 @@ t:1651172625
 c:5aa19b5b67b6fa7ce97da062bd762af80c4630fe
 D:xxd so:libc.musl-x86.so.1 so:liblua-5.3.so.0 so:libncursesw.so.6
 p:cmd:ex cmd:rview cmd:rvim cmd:view cmd:vim
-
-C:Q1xtAkp+kFmfTdkBPQt+uRMkZxQeY=
-P:apache2-lua
-V:2.4.55-r0
-A:x86
-S:52227
-I:163840
-T:Lua support for the Apache HTTP server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1673983374
-c:2597ee1de8724eefd43f496977d830bf02364905
-D:apache2 so:libc.musl-x86.so.1 so:liblua.so.5
 
 C:Q1BjlSHXiC2yzEPIlTgUnzwati5os=
 P:sipcalc-doc
@@ -61314,6 +61313,22 @@ t:1626352809
 c:cb9ae5a494e79f54358e972d8ca28369c7913f5f
 D:kamailio so:libc.musl-x86.so.1 so:libcurl.so.4 so:libsrdb1.so.1 so:libxml2.so.2
 
+C:Q1G9cZaktvkiriNVLH45ToxW7m6Zk=
+P:apache2-ctl
+V:2.4.56-r0
+A:x86
+S:2871
+I:16384
+T:Apache control script
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1678217679
+c:547d4c893ff6819d5bf2138bbf9ac1fb28ef227e
+D:lynx
+p:cmd:apachectl
+
 C:Q15SgQbLbN+DSQe5kiTfWfMKESdLA=
 P:npm-bash-completion
 V:7.17.0-r0
@@ -64138,6 +64153,21 @@ c:4fb32c21d6cbd2ed26b9045d53f2cf67982ea7d8
 D:python3
 p:py-tz=2022.6-r0 py3.9:pytz=2022.6-r0
 
+C:Q1i1QEuYO1KdsPzOWNt8PduxDoOzE=
+P:apache2-proxy
+V:2.4.56-r0
+A:x86
+S:196367
+I:647168
+T:Proxy modules for the Apache HTTP Server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1678217679
+c:547d4c893ff6819d5bf2138bbf9ac1fb28ef227e
+D:apache2 so:libc.musl-x86.so.1
+
 C:Q17Vcm2d2bkX0YFE8G85uAg14fdzA=
 P:perl-params-util-doc
 V:1.102-r0
@@ -64704,21 +64734,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:encodings font-alias mkfontscale mkfontdir fontconfig
-
-C:Q1m83UIyS1VpFd+jFgb086qVdiOPA=
-P:apache2-ssl
-V:2.4.55-r0
-A:x86
-S:101447
-I:282624
-T:SSL/TLS module for the Apache HTTP Server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1673983374
-c:2597ee1de8724eefd43f496977d830bf02364905
-D:apache2 openssl /bin/sh so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 
 C:Q1y8SsQj2ZAwpDLotY7AwFq/5vy3A=
 P:btrfs-progs-doc
@@ -71538,21 +71553,6 @@ m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
 t:1535827158
 c:dbe1d93b6783f0294ac7b364a7868ca0bdff4c9a
 D:lua-stringy
-
-C:Q1LeeJCg+Dn+2BAlPgrUDES/wboEk=
-P:apache2-webdav
-V:2.4.55-r0
-A:x86
-S:81093
-I:233472
-T:WebDAV support for the Apache HTTP Server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1673983374
-c:2597ee1de8724eefd43f496977d830bf02364905
-D:apache2 so:libc.musl-x86.so.1
 
 C:Q10plOieoH7D75Em9a2swHH2q2PHQ=
 P:lsyncd-doc
