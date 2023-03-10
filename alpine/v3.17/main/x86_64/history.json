@@ -1003,7 +1003,8 @@
     "dnsmasq-openrc": {
       "origin": "dnsmasq",
       "versions": {
-        "2.87-r0": 1665704560
+        "2.87-r0": 1665704560,
+        "2.87-r1": 1678489679
       }
     },
     "mbedtls-static": {
@@ -11652,10 +11653,12 @@
     "dnsmasq-dnssec-dbus": {
       "origin": "dnsmasq",
       "versions": {
-        "2.87-r0": 1665704560
+        "2.87-r0": 1665704560,
+        "2.87-r1": 1678489679
       },
       "dependencies": [
-        "dnsmasq-common=2.87-r0",
+        "dnsmasq-common=2.87-r1",
+        "/bin/sh",
         "so:libc.musl-x86_64.so.1",
         "so:libdbus-1.so.3",
         "so:libgmp.so.10",
@@ -11663,10 +11666,10 @@
         "so:libnettle.so.8"
       ],
       "provides": [
-        "dnsmasq=2.87-r0",
-        "dnsmasq-dbus=2.87-r0",
-        "dnsmasq-dnssec=2.87-r0",
-        "cmd:dnsmasq=2.87-r0"
+        "dnsmasq=2.87-r1",
+        "dnsmasq-dbus=2.87-r1",
+        "dnsmasq-dnssec=2.87-r1",
+        "cmd:dnsmasq=2.87-r1"
       ]
     },
     "bubblewrap-doc": {
@@ -17443,15 +17446,16 @@
     "dnsmasq": {
       "origin": "dnsmasq",
       "versions": {
-        "2.87-r0": 1665704560
+        "2.87-r0": 1665704560,
+        "2.87-r1": 1678489679
       },
       "dependencies": [
-        "dnsmasq-common=2.87-r0",
+        "dnsmasq-common=2.87-r1",
         "/bin/sh",
         "so:libc.musl-x86_64.so.1"
       ],
       "provides": [
-        "cmd:dnsmasq=2.87-r0"
+        "cmd:dnsmasq=2.87-r1"
       ]
     },
     "perl-list-moreutils-doc": {
@@ -27442,7 +27446,8 @@
     "dnsmasq-common": {
       "origin": "dnsmasq",
       "versions": {
-        "2.87-r0": 1665704560
+        "2.87-r0": 1665704560,
+        "2.87-r1": 1678489679
       }
     },
     "perl-convert-asn1": {
@@ -36356,10 +36361,11 @@
     "dnsmasq-dnssec": {
       "origin": "dnsmasq",
       "versions": {
-        "2.87-r0": 1665704560
+        "2.87-r0": 1665704560,
+        "2.87-r1": 1678489679
       },
       "dependencies": [
-        "dnsmasq-common=2.87-r0",
+        "dnsmasq-common=2.87-r1",
         "/bin/sh",
         "so:libc.musl-x86_64.so.1",
         "so:libgmp.so.10",
@@ -36367,8 +36373,8 @@
         "so:libnettle.so.8"
       ],
       "provides": [
-        "dnsmasq=2.87-r0",
-        "cmd:dnsmasq=2.87-r0"
+        "dnsmasq=2.87-r1",
+        "cmd:dnsmasq=2.87-r1"
       ]
     },
     "gdl-lang": {
@@ -52993,7 +52999,8 @@
     "dnsmasq-doc": {
       "origin": "dnsmasq",
       "versions": {
-        "2.87-r0": 1665704560
+        "2.87-r0": 1665704560,
+        "2.87-r1": 1678489679
       }
     },
     "efi-mkuki": {
@@ -63377,16 +63384,16 @@
         "version": "12.2.1_git20220924-r4"
       },
       "dnsmasq": {
-        "package": "dnsmasq-dnssec",
-        "version": "2.87-r0"
+        "package": "dnsmasq-dnssec-dbus",
+        "version": "2.87-r1"
       },
       "dnsmasq-dbus": {
         "package": "dnsmasq-dnssec-dbus",
-        "version": "2.87-r0"
+        "version": "2.87-r1"
       },
       "dnsmasq-dnssec": {
         "package": "dnsmasq-dnssec-dbus",
-        "version": "2.87-r0"
+        "version": "2.87-r1"
       },
       "rsyslog-omclickhouse": {
         "package": "rsyslog-clickhouse",
