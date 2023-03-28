@@ -1145,6 +1145,22 @@ c:ee490ceff85fcf78ef9f0004f2e0c6bbc1040f30
 D:s6-ipcserver /bin/sh so:libc.musl-x86_64.so.1 so:libskarnet.so.2.11
 p:so:libutmps.so.0.1=0.1.0.3 cmd:utmps-utmpd=0.1.0.3-r0 cmd:utmps-wtmpd=0.1.0.3-r0
 
+C:Q1pwGCTw8FAGwUdj9O6316N2hK1YE=
+P:libssl1.1
+V:1.1.1t-r3
+A:x86_64
+S:213515
+I:540672
+T:SSL shared libraries
+U:https://www.openssl.org/
+L:OpenSSL
+o:openssl
+m:Timo Teras <timo.teras@iki.fi>
+t:1680013020
+c:ccb251b6f668b5c90be7f82626aa72f0c77f876a
+D:so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1
+p:so:libssl.so.1.1=1.1
+
 C:Q1KfuklDUxGS+QW/eZOpH4UUs1CWg=
 P:tinyproxy-doc
 V:1.11.0-r0
@@ -4492,6 +4508,22 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-regexp-ipv6=0.03-r2
 
+C:Q1ffZ+sNrJpTwYZLocW2fj14s1vQY=
+P:openssl3
+V:3.0.8-r2
+A:x86_64
+S:338204
+I:897024
+T:Toolkit for Transport Layer Security (TLS)
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl3
+m:Timo Teras <timo.teras@iki.fi>
+t:1680012808
+c:96e48a0867642b94bfbdcd55dfe188d4388ff0ee
+D:so:libc.musl-x86_64.so.1 so:openssl3:so:libcrypto.so.3 so:openssl3:so:libssl.so.3
+p:cmd:openssl3=3.0.8-r2
+
 C:Q14VO8TEQ15xlI20GDYExORRCbpzQ=
 P:openvpn-auth-ldap
 V:2.0.4-r4
@@ -6059,20 +6091,6 @@ t:1630982368
 c:47252e8d8749fc0d92e6d716a45015d7dda3b42a
 D:util-linux
 i:docs fish=3.3.1-r1
-
-C:Q1dq/qt1+3ElTLDfsS0/Tu7fEk6vk=
-P:openssl-dbg
-V:1.1.1t-r2
-A:x86_64
-S:3809222
-I:12046336
-T:toolkit for transport layer security (TLS) - version 1.1 (debug symbols)
-U:https://www.openssl.org/
-L:OpenSSL
-o:openssl
-m:Timo Teras <timo.teras@iki.fi>
-t:1679502647
-c:b17870c9f81e8722c1529470f6ee5843ddb3e145
 
 C:Q1N9ya3iRlW6Wscz2RzUdN/Hn5jAg=
 P:pjproject
@@ -14783,22 +14801,6 @@ c:87fbbd17b5ae73d934c8872c12f3e7563ce6b483
 D:so:libc.musl-x86_64.so.1 so:libgcc_s.so.1
 p:boost-unit_test_framework=1.77.0-r1 so:libboost_unit_test_framework.so.1.77.0=1.77.0
 
-C:Q1tQCO6/n3g5FsXzrSk1UkUYSb9k0=
-P:openssl
-V:1.1.1t-r2
-A:x86_64
-S:265992
-I:679936
-T:toolkit for transport layer security (TLS) - version 1.1
-U:https://www.openssl.org/
-L:OpenSSL
-o:openssl
-m:Timo Teras <timo.teras@iki.fi>
-t:1679502647
-c:b17870c9f81e8722c1529470f6ee5843ddb3e145
-D:so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
-p:cmd:openssl=1.1.1t-r2
-
 C:Q1CiXXR0EAADZuVj18usvItGTyXFQ=
 P:perl-test-fork
 V:0.02-r1
@@ -16580,6 +16582,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1635951019
 c:9359922aac493ab768960f230e8a76d6c8c0d9bd
 
+C:Q11vc6uA69O7X1FV4z8nx9lu6jUDs=
+P:openssl3-dev
+V:3.0.8-r2
+A:x86_64
+S:350605
+I:2281472
+T:Toolkit for Transport Layer Security (TLS) (development files)
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl3
+m:Timo Teras <timo.teras@iki.fi>
+t:1680012808
+c:96e48a0867642b94bfbdcd55dfe188d4388ff0ee
+D:libcrypto3=3.0.8-r2 libssl3=3.0.8-r2 pkgconfig
+p:pc:openssl3:pc:libcrypto=3.0.8 pc:openssl3:pc:libssl=3.0.8 pc:openssl3:pc:openssl=3.0.8
+
 C:Q195PFDQH17BfRlgVM2pvEfmUEZWc=
 P:fcgiwrap-doc
 V:1.1.0-r5
@@ -16919,22 +16937,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1654719271
 c:714619e1d8333f78def668dc12ab3ba9fe246d51
 i:openrc openldap=2.6.2-r0
-
-C:Q1sn4pnW759TXWCTUmTlyNws6ZI/A=
-P:openssl3-dev
-V:3.0.8-r1
-A:x86_64
-S:350621
-I:2281472
-T:Toolkit for Transport Layer Security (TLS) (development files)
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl3
-m:Timo Teras <timo.teras@iki.fi>
-t:1679501758
-c:42c57c948a229f46b3a891a6e136c66298ccfdc1
-D:libcrypto3=3.0.8-r1 libssl3=3.0.8-r1 pkgconfig
-p:pc:openssl3:pc:libcrypto=3.0.8 pc:openssl3:pc:libssl=3.0.8 pc:openssl3:pc:openssl=3.0.8
 
 C:Q1g2DiHoMn8tN2zH3e+O0ia82XFns=
 P:libusb-dev
@@ -19740,21 +19742,6 @@ m:Valery Kartel <valery.kartel@gmail.com>
 t:1629888045
 c:5fafa5dd0ee14f16f7479ebf3c25152121c7d696
 i:docs perl-yaml-libyaml=0.83-r0
-
-C:Q1HoWiobH25zT8n/hNGYTi97wWy30=
-P:openssl-libs-static
-V:1.1.1t-r2
-A:x86_64
-S:7242854
-I:17301504
-T:toolkit for transport layer security (TLS) - version 1.1 (static library)
-U:https://www.openssl.org/
-L:OpenSSL
-o:openssl
-m:Timo Teras <timo.teras@iki.fi>
-t:1679502647
-c:b17870c9f81e8722c1529470f6ee5843ddb3e145
-p:openssl1.1-compat-libs-static=1.1.1t-r2
 
 C:Q1wAnXYfnjJBxuqX8NvUc8/3zmzS0=
 P:perl-sub-info
@@ -25205,20 +25192,6 @@ c:22e9fe58399f7770df70b6911e21619ada00f21e
 D:so:libc.musl-x86_64.so.1 so:libcgraph.so.6 so:libgcc_s.so.1 so:libgvc.so.6 so:liblua-5.4.so.0 so:libstdc++.so.6
 p:lua-graphviz=2.49.3-r0
 
-C:Q1YDoRFN/kf0N75BiiklDksOdgCQY=
-P:openssl3-dbg
-V:3.0.8-r1
-A:x86_64
-S:5767116
-I:18350080
-T:Toolkit for Transport Layer Security (TLS) (debug symbols)
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl3
-m:Timo Teras <timo.teras@iki.fi>
-t:1679501758
-c:42c57c948a229f46b3a891a6e136c66298ccfdc1
-
 C:Q10kMrlLG1/QiXeXCAb5UJa1r9G0Y=
 P:apache2
 V:2.4.56-r0
@@ -26644,6 +26617,20 @@ D:so:libblkid.so.1 so:libc.musl-x86_64.so.1 so:libmount.so.1 so:libsmartcols.so.
 p:cmd:findmnt=2.37.4-r0
 i:util-linux=2.37.4-r0
 
+C:Q1PoRlVlQf93Yu3Ar/heXpcVo1GX0=
+P:openssl3-libs-static
+V:3.0.8-r2
+A:x86_64
+S:10815050
+I:26648576
+T:Toolkit for Transport Layer Security (TLS) (static library)
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl3
+m:Timo Teras <timo.teras@iki.fi>
+t:1680012808
+c:96e48a0867642b94bfbdcd55dfe188d4388ff0ee
+
 C:Q14tb6oOSlS4ZUwU1FEFePDEm6fn4=
 P:lua5.4-rex-posix
 V:2.9.1-r1
@@ -26875,6 +26862,22 @@ t:1620120017
 c:48c4d91b5aecafc8ccc3fff3bf1c3fb49d33c153
 D:so:libc.musl-x86_64.so.1
 p:cmd:locate=4.8.0-r1 cmd:updatedb=4.8.0-r1
+
+C:Q10K4nPM731HMFCkr8BzZHTBuX+Zk=
+P:openssl-dev
+V:1.1.1t-r3
+A:x86_64
+S:267698
+I:1634304
+T:toolkit for transport layer security (TLS) - version 1.1 (development files)
+U:https://www.openssl.org/
+L:OpenSSL
+o:openssl
+m:Timo Teras <timo.teras@iki.fi>
+t:1680013020
+c:ccb251b6f668b5c90be7f82626aa72f0c77f876a
+D:libcrypto1.1=1.1.1t-r3 libssl1.1=1.1.1t-r3 pkgconfig
+p:openssl1.1-compat-dev=1.1.1t-r3 pc:libcrypto=1.1.1t pc:libssl=1.1.1t pc:openssl=1.1.1t
 
 C:Q1sY1mEUihdruAD7v5o7iZYGLTYig=
 P:nagios-plugins-smtp
@@ -27795,22 +27798,6 @@ m:Cameron Banta <cbanta@gmail.com>
 t:1651985332
 c:e94e0a3d62602f3460ea6bc2f97f676203d7cc49
 D:rsyslog=8.2108.0-r2 so:libc.musl-x86_64.so.1
-
-C:Q1UQdAe/ak1xKiWRwQROF9ts62LLc=
-P:libcrypto1.1
-V:1.1.1t-r2
-A:x86_64
-S:1211537
-I:2748416
-T:Crypto library from openssl
-U:https://www.openssl.org/
-L:OpenSSL
-o:openssl
-m:Timo Teras <timo.teras@iki.fi>
-t:1679502647
-c:b17870c9f81e8722c1529470f6ee5843ddb3e145
-D:so:libc.musl-x86_64.so.1
-p:so:libcrypto.so.1.1=1.1
 
 C:Q1Yp9nYDoeASoWGcPIzniqAqSrkz8=
 P:libuuid
@@ -32563,21 +32550,6 @@ D:lua5.1 so:libc.musl-x86_64.so.1
 p:lua5.1-bitlib=5.3.0-r4
 i:lua-bit32=5.3.0-r4 lua5.1
 
-C:Q1veFNevz3Y6cud2bJ+LmDgAAxnWk=
-P:openssl3-doc
-V:3.0.8-r1
-A:x86_64
-S:4722341
-I:12128256
-T:Toolkit for Transport Layer Security (TLS) (documentation)
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl3
-m:Timo Teras <timo.teras@iki.fi>
-t:1679501758
-c:42c57c948a229f46b3a891a6e136c66298ccfdc1
-i:docs openssl3=3.0.8-r1
-
 C:Q1v6moIKk8LP0u14f1cVj5R1wRvFM=
 P:nmap-ncat
 V:7.92-r2
@@ -32744,22 +32716,6 @@ t:1634364270
 c:670bf5a8cc5bc605eede8ca2fd55b50a5c9f8660
 D:pkgconfig vde2-libs=2.3.2-r15
 p:pc:vdehist=2.3.2 pc:vdemgmt=2.3.2 pc:vdeplug=2.3.2 pc:vdesnmp=2.3.2
-
-C:Q1jkAQbB0r8xCSSt8CYZSTkDE7lWc=
-P:libssl1.1
-V:1.1.1t-r2
-A:x86_64
-S:213517
-I:540672
-T:SSL shared libraries
-U:https://www.openssl.org/
-L:OpenSSL
-o:openssl
-m:Timo Teras <timo.teras@iki.fi>
-t:1679502647
-c:b17870c9f81e8722c1529470f6ee5843ddb3e145
-D:so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1
-p:so:libssl.so.1.1=1.1
 
 C:Q1L47eQSqR54dUwpqYB1nueMR7PLw=
 P:cvs-zsh-completion
@@ -33189,22 +33145,6 @@ t:1636078877
 c:fc15051fb68015ee8b30ac6f80f1fa494dba4676
 D:glib-dev pc:glib-2.0 pc:gmodule-2.0 pc:gobject-2.0 pc:libgvc pkgconfig so:libc.musl-x86_64.so.1 so:libcgraph.so.6 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libgvc.so.6
 p:so:libvala-0.54.so.0=0.0.0 so:libvalaccodegen.so=0 so:libvaladoc-0.54.so.0=0.0.0 pc:libvala-0.54=0.54.3 pc:valadoc-0.54=0.54.3 pc:vapigen-0.54=0.54.3 pc:vapigen=0.54.3 cmd:vala-0.54=0.54.3-r0 cmd:vala-gen-introspect-0.54=0.54.3-r0 cmd:vala-gen-introspect=0.54.3-r0 cmd:vala=0.54.3-r0 cmd:valac-0.54=0.54.3-r0 cmd:valac=0.54.3-r0 cmd:valadoc-0.54=0.54.3-r0 cmd:valadoc=0.54.3-r0 cmd:vapigen-0.54=0.54.3-r0 cmd:vapigen=0.54.3-r0
-
-C:Q163b3W1raQvm553q+IKn73dpLXqg=
-P:openssl-dev
-V:1.1.1t-r2
-A:x86_64
-S:267715
-I:1634304
-T:toolkit for transport layer security (TLS) - version 1.1 (development files)
-U:https://www.openssl.org/
-L:OpenSSL
-o:openssl
-m:Timo Teras <timo.teras@iki.fi>
-t:1679502647
-c:b17870c9f81e8722c1529470f6ee5843ddb3e145
-D:libcrypto1.1=1.1.1t-r2 libssl1.1=1.1.1t-r2 pkgconfig
-p:openssl1.1-compat-dev=1.1.1t-r2 pc:libcrypto=1.1.1t pc:libssl=1.1.1t pc:openssl=1.1.1t
 
 C:Q1vKIm5UotV3FsU56mUyEolt4h8dY=
 P:mtx
@@ -33726,22 +33666,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1600709957
 c:f45e6f07f0513021033d0f3065dddf171699ca1a
 D:perl-data-page perl-test-exception perl-class-accessor
-
-C:Q1JQ4KrlwQe1ODwQXfw6rnhrmj6I0=
-P:libcrypto3
-V:3.0.8-r1
-A:x86_64
-S:1716758
-I:4235264
-T:Crypto library from openssl
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl3
-m:Timo Teras <timo.teras@iki.fi>
-t:1679501758
-c:42c57c948a229f46b3a891a6e136c66298ccfdc1
-D:so:libc.musl-x86_64.so.1
-p:so:openssl3:so:libcrypto.so.3=3
 
 C:Q1iomVUdf/op6l+cXEJHjbE18Yr1k=
 P:perl-io-multiplex
@@ -36124,6 +36048,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1634575484
 c:c9777d4c99b32466dd3ea1df3f89e49cb4c1b4f3
 i:protobuf=3.18.1-r1 vim
+
+C:Q1qc7DNVT40aqyeS45HY5IfUeUekE=
+P:libcrypto1.1
+V:1.1.1t-r3
+A:x86_64
+S:1211584
+I:2748416
+T:Crypto library from openssl
+U:https://www.openssl.org/
+L:OpenSSL
+o:openssl
+m:Timo Teras <timo.teras@iki.fi>
+t:1680013020
+c:ccb251b6f668b5c90be7f82626aa72f0c77f876a
+D:so:libc.musl-x86_64.so.1
+p:so:libcrypto.so.1.1=1.1
 
 C:Q1ShZ2eEKzjuujF4yj/gBvf8dsPX4=
 P:haserl
@@ -39347,6 +39287,22 @@ o:gnutls
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1676091395
 c:1a26dc12a31da944c32d7d2076d1211e45b2155e
+
+C:Q198mOjUXV9gYiNAYRyFM+KE46iJM=
+P:libcrypto3
+V:3.0.8-r2
+A:x86_64
+S:1716890
+I:4235264
+T:Crypto library from openssl
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl3
+m:Timo Teras <timo.teras@iki.fi>
+t:1680012808
+c:96e48a0867642b94bfbdcd55dfe188d4388ff0ee
+D:so:libc.musl-x86_64.so.1
+p:so:openssl3:so:libcrypto.so.3=3
 
 C:Q1+IY0TqCuVm74gSiqiHm0YJH0w9w=
 P:perl-class-inspector
@@ -45782,6 +45738,21 @@ c:d32e0b04b9e2cb99ad18a198ba8e625df15cbc44
 D:libxfixes=6.0.0-r0 pc:fixesproto>=6.0 pc:x11 pc:xproto pkgconfig
 p:pc:xfixes=6.0.0
 
+C:Q1U4OWzKGQTv7CMXTS2AwvGXGPXBI=
+P:openssl3-doc
+V:3.0.8-r2
+A:x86_64
+S:4721703
+I:12124160
+T:Toolkit for Transport Layer Security (TLS) (documentation)
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl3
+m:Timo Teras <timo.teras@iki.fi>
+t:1680012808
+c:96e48a0867642b94bfbdcd55dfe188d4388ff0ee
+i:docs openssl3=3.0.8-r2
+
 C:Q1hGmlTTasDob4KR64XUB7pMxPt9I=
 P:npm-doc
 V:8.1.3-r0
@@ -46872,22 +46843,6 @@ t:1634364270
 c:670bf5a8cc5bc605eede8ca2fd55b50a5c9f8660
 D:irssi perl so:libc.musl-x86_64.so.1 so:libperl.so
 
-C:Q14FJvBzCpE9L4RCHuK0Wka04V+N4=
-P:openssl3
-V:3.0.8-r1
-A:x86_64
-S:338214
-I:897024
-T:Toolkit for Transport Layer Security (TLS)
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl3
-m:Timo Teras <timo.teras@iki.fi>
-t:1679501758
-c:42c57c948a229f46b3a891a6e136c66298ccfdc1
-D:so:libc.musl-x86_64.so.1 so:openssl3:so:libcrypto.so.3 so:openssl3:so:libssl.so.3
-p:cmd:openssl3=3.0.8-r1
-
 C:Q1QWnHGnf5nRjbsP19xHJg8VhoHME=
 P:dhcp
 V:4.4.3_p1-r1
@@ -47615,6 +47570,20 @@ t:1630401903
 c:fc767a058048c2ff75253d3a53d7c3a6ababfd66
 D:so:libc.musl-x86_64.so.1
 p:so:libnuma.so.1=1.0.0
+
+C:Q1BN1K/6olYDv1ElbgnW1AVTWaAC8=
+P:openssl3-dbg
+V:3.0.8-r2
+A:x86_64
+S:5767121
+I:18350080
+T:Toolkit for Transport Layer Security (TLS) (debug symbols)
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl3
+m:Timo Teras <timo.teras@iki.fi>
+t:1680012808
+c:96e48a0867642b94bfbdcd55dfe188d4388ff0ee
 
 C:Q11zaB0X5bNQ/DbpFr8N8tNa6m9Sg=
 P:ack-doc
@@ -56284,6 +56253,22 @@ c:a90f86899cf346e458a33af5d1068dfd888854cf
 D:s6-ipcserver /bin/sh so:libc.musl-x86_64.so.1 so:libexecline.so.2.8 so:libskarnet.so.2.11
 p:so:libs6.so.2.11=2.11.0.0 cmd:s6-accessrules-cdb-from-fs=2.11.0.0-r0 cmd:s6-accessrules-fs-from-cdb=2.11.0.0-r0 cmd:s6-cleanfifodir=2.11.0.0-r0 cmd:s6-connlimit=2.11.0.0-r0 cmd:s6-envdir=2.11.0.0-r0 cmd:s6-envuidgid=2.11.0.0-r0 cmd:s6-fdholder-daemon=2.11.0.0-r0 cmd:s6-fdholder-delete=2.11.0.0-r0 cmd:s6-fdholder-getdump=2.11.0.0-r0 cmd:s6-fdholder-list=2.11.0.0-r0 cmd:s6-fdholder-retrieve=2.11.0.0-r0 cmd:s6-fdholder-setdump=2.11.0.0-r0 cmd:s6-fdholder-store=2.11.0.0-r0 cmd:s6-fdholder-transferdump=2.11.0.0-r0 cmd:s6-fdholderd=2.11.0.0-r0 cmd:s6-fghack=2.11.0.0-r0 cmd:s6-ftrig-listen1=2.11.0.0-r0 cmd:s6-ftrig-listen=2.11.0.0-r0 cmd:s6-ftrig-notify=2.11.0.0-r0 cmd:s6-ftrig-wait=2.11.0.0-r0 cmd:s6-ftrigrd=2.11.0.0-r0 cmd:s6-ioconnect=2.11.0.0-r0 cmd:s6-ipcclient=2.11.0.0-r0 cmd:s6-ipcserver-access=2.11.0.0-r0 cmd:s6-log=2.11.0.0-r0 cmd:s6-mkfifodir=2.11.0.0-r0 cmd:s6-notifyoncheck=2.11.0.0-r0 cmd:s6-permafailon=2.11.0.0-r0 cmd:s6-setlock=2.11.0.0-r0 cmd:s6-setsid=2.11.0.0-r0 cmd:s6-setuidgid=2.11.0.0-r0 cmd:s6-socklog=2.11.0.0-r0 cmd:s6-softlimit=2.11.0.0-r0 cmd:s6-sudo=2.11.0.0-r0 cmd:s6-sudoc=2.11.0.0-r0 cmd:s6-sudod=2.11.0.0-r0 cmd:s6-supervise=2.11.0.0-r0 cmd:s6-svc=2.11.0.0-r0 cmd:s6-svdt-clear=2.11.0.0-r0 cmd:s6-svdt=2.11.0.0-r0 cmd:s6-svlink=2.11.0.0-r0 cmd:s6-svlisten1=2.11.0.0-r0 cmd:s6-svlisten=2.11.0.0-r0 cmd:s6-svok=2.11.0.0-r0 cmd:s6-svperms=2.11.0.0-r0 cmd:s6-svscan=2.11.0.0-r0 cmd:s6-svscanctl=2.11.0.0-r0 cmd:s6-svstat=2.11.0.0-r0 cmd:s6-svunlink=2.11.0.0-r0 cmd:s6-svwait=2.11.0.0-r0 cmd:s6-tai64n=2.11.0.0-r0 cmd:s6-tai64nlocal=2.11.0.0-r0 cmd:s6-usertree-maker=2.11.0.0-r0 cmd:s6lockd=2.11.0.0-r0 cmd:ucspilogd=2.11.0.0-r0
 
+C:Q1RiBeBI8J9uIihnf9+Z6e362vMk4=
+P:openssl
+V:1.1.1t-r3
+A:x86_64
+S:265993
+I:679936
+T:toolkit for transport layer security (TLS) - version 1.1
+U:https://www.openssl.org/
+L:OpenSSL
+o:openssl
+m:Timo Teras <timo.teras@iki.fi>
+t:1680013020
+c:ccb251b6f668b5c90be7f82626aa72f0c77f876a
+D:so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
+p:cmd:openssl=1.1.1t-r3
+
 C:Q1xwdxYVRu7yEmo6/RmVmoUaMdBP4=
 P:gobject-introspection-dev
 V:1.70.0-r1
@@ -56590,20 +56575,6 @@ o:git
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1676401937
 c:a6d375921c3ddcc8bec475d419675da6d639e6c2
-
-C:Q1nL9Gb9a5h9+79jGpjajO2ZHF7XM=
-P:openssl3-libs-static
-V:3.0.8-r1
-A:x86_64
-S:10814597
-I:26644480
-T:Toolkit for Transport Layer Security (TLS) (static library)
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl3
-m:Timo Teras <timo.teras@iki.fi>
-t:1679501758
-c:42c57c948a229f46b3a891a6e136c66298ccfdc1
 
 C:Q14TK6G2JqYveN8BxUCZv5EYs8Qsc=
 P:net-tools-dbg
@@ -62113,22 +62084,6 @@ c:598522d43038a696a23f37057ff309f6fe7d6722
 D:so:libc.musl-x86_64.so.1
 p:so:libjson-c.so.5=5.1.0
 
-C:Q13pe5NDCmvpiGlEvd3r5twPsTFzg=
-P:libssl3
-V:3.0.8-r1
-A:x86_64
-S:246280
-I:618496
-T:SSL shared libraries
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl3
-m:Timo Teras <timo.teras@iki.fi>
-t:1679501758
-c:42c57c948a229f46b3a891a6e136c66298ccfdc1
-D:so:libc.musl-x86_64.so.1 so:openssl3:so:libcrypto.so.3
-p:so:openssl3:so:libssl.so.3=3
-
 C:Q1okuoBB+6XxBFPAmaRixJe4USLes=
 P:utmps-dev
 V:0.1.0.3-r0
@@ -63025,6 +62980,20 @@ t:1637699421
 c:9ac848519a2ac94cfb132142d70e774fb9dd64e1
 D:ghostscript bash tiff-tools
 i:hylafax=6.0.7-r3 lang
+
+C:Q1YPMYZx0Mb6sEIlySSTfn1NGhg5M=
+P:openssl-dbg
+V:1.1.1t-r3
+A:x86_64
+S:3809235
+I:12046336
+T:toolkit for transport layer security (TLS) - version 1.1 (debug symbols)
+U:https://www.openssl.org/
+L:OpenSSL
+o:openssl
+m:Timo Teras <timo.teras@iki.fi>
+t:1680013020
+c:ccb251b6f668b5c90be7f82626aa72f0c77f876a
 
 C:Q1dX6NwOqT5N5qr5GbvxNOz79jeyw=
 P:boost1.77-thread
@@ -65472,6 +65441,21 @@ t:1584211375
 c:81633f00dd52212d62c630bbf6f6c8a9bc1f29cd
 D:so:libaugeas.so.0 so:libc.musl-x86_64.so.1 so:libfa.so.1 so:libgcc_s.so.1 so:libreadline.so.8
 p:cmd:augmatch=1.12.0-r0 cmd:augparse=1.12.0-r0 cmd:augtool=1.12.0-r0 cmd:fadot=1.12.0-r0
+
+C:Q1Bsdqb6ZQbKM/wFx712bYuJ6G8tI=
+P:openssl-libs-static
+V:1.1.1t-r3
+A:x86_64
+S:7242892
+I:17301504
+T:toolkit for transport layer security (TLS) - version 1.1 (static library)
+U:https://www.openssl.org/
+L:OpenSSL
+o:openssl
+m:Timo Teras <timo.teras@iki.fi>
+t:1680013020
+c:ccb251b6f668b5c90be7f82626aa72f0c77f876a
+p:openssl1.1-compat-libs-static=1.1.1t-r3
 
 C:Q12e5ZajcBya8e/w+qnH06KQOiJkk=
 P:perl-inc-latest
@@ -73385,6 +73369,22 @@ t:1600933831
 c:e57da0caec73a38d78361795e5f901e67f1c2285
 D:so:libc.musl-x86_64.so.1
 p:so:libvanessa_logger.so.0=0.0.5 cmd:vanessa_logger_sample=0.0.10-r1
+
+C:Q1PQUJd2toVB+hQGMBI144//g6YTE=
+P:libssl3
+V:3.0.8-r2
+A:x86_64
+S:246276
+I:618496
+T:SSL shared libraries
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl3
+m:Timo Teras <timo.teras@iki.fi>
+t:1680012808
+c:96e48a0867642b94bfbdcd55dfe188d4388ff0ee
+D:so:libc.musl-x86_64.so.1 so:openssl3:so:libcrypto.so.3
+p:so:openssl3:so:libssl.so.3=3
 
 C:Q1MAmbWnNnpeEjacyEGkY6LX4qa6Y=
 P:nagios-plugins-ping
