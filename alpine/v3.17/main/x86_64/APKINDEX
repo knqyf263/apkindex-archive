@@ -1229,6 +1229,22 @@ c:2ac78819c49edc6fb4297edf3f773f33a2604b16
 D:so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libgtest.so.1.12.1 so:libstdc++.so.6
 p:so:libgmock.so.1.12.1=1.12.1 so:libgmock_main.so.1.12.1=1.12.1
 
+C:Q1NH8rSC8GABAxRylvxo1wQAVkrWo=
+P:libde265-examples
+V:1.0.11-r1
+A:x86_64
+S:8049
+I:36864
+T:Open h.265 video codec implementation (examples)
+U:https://github.com/strukturag/libde265
+L:LGPL-3.0-or-later
+o:libde265
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1680053894
+c:fac490311492586cb2bf0de9f0706dcd3107505e
+D:libde265=1.0.11-r1 so:libc.musl-x86_64.so.1 so:libde265.so.0 so:libstdc++.so.6
+p:cmd:libde265-dec265=1.0.11-r1
+
 C:Q1lyOwqmtPlK74od3+2dTFlhrvx2A=
 P:cunit-dev
 V:2.1.3-r4
@@ -9461,22 +9477,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1660438017
 c:3129151ea31fc766babe971861123cd1145e2ac5
 
-C:Q1b5qfdk9beEZ6wCQyEAo/JMCMW7g=
-P:libde265
-V:1.0.11-r0
-A:x86_64
-S:208262
-I:454656
-T:Open h.265 video codec implementation
-U:https://github.com/strukturag/libde265
-L:LGPL-3.0-or-later
-o:libde265
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1675353274
-c:218d4aa164bc2298d0bc0c60347603403efeae4c
-D:so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-p:so:libde265.so.0=0.1.4
-
 C:Q1cOKsXe0pSLMtoD5h2Wn1Pto5nXo=
 P:strongswan-logfile
 V:5.9.8-r1
@@ -9988,6 +9988,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1654895203
 c:2dd25e6f580199b7ca8303940072ca483ddc7cb8
 D:iptables=1.8.8-r2 so:libc.musl-x86_64.so.1 so:libxtables.so.12
+
+C:Q1w42pWg6yUYaMNoKH94VN0SnbZZA=
+P:tzdata-utils
+V:2023c-r0
+A:x86_64
+S:44506
+I:126976
+T:Timezone data
+U:https://www.iana.org/time-zones
+L:Public-Domain
+o:tzdata
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1680044278
+c:f0fc0d47fb725b98cc2cdbe8894f6df648aa32c5
+D:so:libc.musl-x86_64.so.1
+p:cmd:posixtz=2023c-r0 cmd:zdump=2023c-r0 cmd:zic=2023c-r0
 
 C:Q1JPLLX+jFQBBamEbM6MPkcKnXV0o=
 P:nginx-mod-rtmp
@@ -24782,6 +24798,23 @@ t:1655409611
 c:5846555dab92bda18badfdf1389b34f0cf274b3b
 i:docs s6-rc=0.5.3.2-r0
 
+C:Q1NO+go03k3XVyeWPS6IMIQMauHJM=
+P:dnsmasq-dnssec-dbus
+V:2.87-r2
+A:x86_64
+S:190859
+I:405504
+T:A lightweight DNS, DHCP, RA, TFTP and PXE server with DNSSEC and D-Bus support
+U:https://www.thekelleys.org.uk/dnsmasq/
+L:GPL-2.0-only OR GPL-3.0-only
+o:dnsmasq
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1680054912
+c:742ab8b6a3ae7ffb844978546d0d2890e4421448
+k:10
+D:dnsmasq-common=2.87-r2 /bin/sh so:libc.musl-x86_64.so.1 so:libdbus-1.so.3 so:libgmp.so.10 so:libhogweed.so.6 so:libnettle.so.8
+p:dnsmasq=2.87-r2 dnsmasq-dbus=2.87-r2 dnsmasq-dnssec=2.87-r2 cmd:dnsmasq=2.87-r2
+
 C:Q1Nbel/kmGOyKHgSK0/MylOCcZ3uU=
 P:syslog-ng-dev
 V:3.38.1-r0
@@ -27256,20 +27289,6 @@ m:Rasmus Thomsen <oss@cogitri.dev>
 t:1677186801
 c:2e57dc782ea76e148b9a83c968d1694ad650d2d6
 D:gettext-static
-
-C:Q1Bz3lPSyRI0EZgH3K7EoBTtsC8VQ=
-P:dnsmasq-common
-V:2.87-r1
-A:x86_64
-S:12238
-I:57344
-T:A lightweight DNS, DHCP, RA, TFTP and PXE server (common files)
-U:https://www.thekelleys.org.uk/dnsmasq/
-L:GPL-2.0-only OR GPL-3.0-only
-o:dnsmasq
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1678489679
-c:1418ea7eecd1c2f17ccf641e2f6b1b6660967ddc
 
 C:Q1DEBATtMXu7f3BJNapyTSGHT1hKs=
 P:cifs-utils-dev
@@ -31362,6 +31381,22 @@ t:1673689036
 c:90a9c950027e44610292c63dc1d97ff92c485b74
 i:docs clang15=15.0.7-r0
 
+C:Q1yo2EJXACvUNTyLPBKYfEjeEUcHo=
+P:libde265-dev
+V:1.0.11-r1
+A:x86_64
+S:293002
+I:929792
+T:Open h.265 video codec implementation (development files)
+U:https://github.com/strukturag/libde265
+L:LGPL-3.0-or-later
+o:libde265
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1680053894
+c:fac490311492586cb2bf0de9f0706dcd3107505e
+D:libde265=1.0.11-r1 pkgconfig
+p:pc:libde265=1.0.11
+
 C:Q1C4y/4tj132JVKvMpWADbtkJp/OQ=
 P:crconf
 V:0_pre2-r2
@@ -33053,21 +33088,6 @@ t:1662634859
 c:9f2edae2fe5c2c4a283f024a02b7e03d314b66fa
 D:wayland-libs-client wayland-libs-cursor wayland-libs-egl wayland-libs-server
 
-C:Q1fEMUQq5o0qY0wJGcOXsUl7roxzY=
-P:dnsmasq-openrc
-V:2.87-r1
-A:x86_64
-S:3825
-I:28672
-T:A lightweight DNS, DHCP, RA, TFTP and PXE server (OpenRC init scripts)
-U:https://www.thekelleys.org.uk/dnsmasq/
-L:GPL-2.0-only OR GPL-3.0-only
-o:dnsmasq
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1678489679
-c:1418ea7eecd1c2f17ccf641e2f6b1b6660967ddc
-i:openrc dnsmasq-common=2.87-r1
-
 C:Q1zqnTwQUgmfuW6M8coIsKLZw6gIY=
 P:gobject-introspection-dev
 V:1.74.0-r1
@@ -33771,6 +33791,21 @@ t:1662909677
 c:2dc4f1e2f19c5dac4ee872bf7046776a050df940
 D:cdparanoia-libs=10.2-r11
 
+C:Q1Fx7DE159oPDrul6zKBQfCsEk8KI=
+P:dnsmasq-openrc
+V:2.87-r2
+A:x86_64
+S:3824
+I:28672
+T:A lightweight DNS, DHCP, RA, TFTP and PXE server (OpenRC init scripts)
+U:https://www.thekelleys.org.uk/dnsmasq/
+L:GPL-2.0-only OR GPL-3.0-only
+o:dnsmasq
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1680054912
+c:742ab8b6a3ae7ffb844978546d0d2890e4421448
+i:openrc dnsmasq-common=2.87-r2
+
 C:Q1rKNwlud5AYSIcTqcxyWavyEuQI4=
 P:perl-http-date-doc
 V:6.05-r1
@@ -34219,20 +34254,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1627487153
 c:f5925376a0576a9572e7209cb95c66c4426bbb0b
 i:docs perl-yaml-tiny=1.73-r2
-
-C:Q1t2lkzwB9kQ0YaWQAE0jqxEVmucI=
-P:tzdata
-V:2023b-r1
-A:x86_64
-S:402817
-I:3141632
-T:Timezone data
-U:https://www.iana.org/time-zones
-L:Public-Domain
-o:tzdata
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1679675205
-c:d97103b03c929321280677dc5ea62ee080662524
 
 C:Q1nKsgBimrSjD1XCU5jk49hF6FGtY=
 P:samba-pidl
@@ -35332,6 +35353,22 @@ t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:m4 perl
 p:cmd:autoconf=2.71-r1 cmd:autoheader=2.71-r1 cmd:autom4te=2.71-r1 cmd:autoreconf=2.71-r1 cmd:autoscan=2.71-r1 cmd:autoupdate=2.71-r1 cmd:ifnames=2.71-r1
+
+C:Q1u5+ScTzj++3SayCyIXW7HcZXeXk=
+P:libde265
+V:1.0.11-r1
+A:x86_64
+S:208243
+I:454656
+T:Open h.265 video codec implementation
+U:https://github.com/strukturag/libde265
+L:LGPL-3.0-or-later
+o:libde265
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1680053894
+c:fac490311492586cb2bf0de9f0706dcd3107505e
+D:so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+p:so:libde265.so.0=0.1.4
 
 C:Q1kQ187wP5tLrjTT6fbLZYx3/cXjU=
 P:ruby-typeprof-doc
@@ -36450,22 +36487,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 i:docs bridge-utils=1.7.1-r1
-
-C:Q1PQHGvwRWTXrWwd8FRNfWBf3Db2o=
-P:libde265-examples
-V:1.0.11-r0
-A:x86_64
-S:8045
-I:36864
-T:Open h.265 video codec implementation (examples)
-U:https://github.com/strukturag/libde265
-L:LGPL-3.0-or-later
-o:libde265
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1675353274
-c:218d4aa164bc2298d0bc0c60347603403efeae4c
-D:libde265=1.0.11-r0 so:libc.musl-x86_64.so.1 so:libde265.so.0 so:libstdc++.so.6
-p:cmd:libde265-dec265=1.0.11-r0
 
 C:Q1/QMEFfetMBcyIJZ0P1/TDsJGEDc=
 P:guile-libs
@@ -48668,6 +48689,23 @@ t:1667984906
 c:ce6f81df0382091a7b4dbf3c974b61f133e1291b
 D:nagios-plugins so:libc.musl-x86_64.so.1 so:libcrypto.so.3
 
+C:Q1Pl6WUp5yDXEvI7552Iy8HFlOJRQ=
+P:dnsmasq
+V:2.87-r2
+A:x86_64
+S:168700
+I:348160
+T:A lightweight DNS, DHCP, RA, TFTP and PXE server
+U:https://www.thekelleys.org.uk/dnsmasq/
+L:GPL-2.0-only OR GPL-3.0-only
+o:dnsmasq
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1680054912
+c:742ab8b6a3ae7ffb844978546d0d2890e4421448
+k:100
+D:dnsmasq-common=2.87-r2 /bin/sh so:libc.musl-x86_64.so.1
+p:cmd:dnsmasq=2.87-r2
+
 C:Q1oE2PLYfIblj6oiKN5+spcRVwj8w=
 P:perl-io-tty
 V:1.17-r0
@@ -49418,6 +49456,23 @@ c:3f587f98a7ee1b6e849db5f4bbc57b7c67e2d286
 D:libucontext-dev libunwind=1.6.2-r0 pkgconfig
 p:pc:libunwind-coredump=1.6.2 pc:libunwind-generic=1.6.2 pc:libunwind-ptrace=1.6.2 pc:libunwind-setjmp=1.6.2 pc:libunwind=1.6.2
 
+C:Q1kHTUTjPOtmHVJm6NzKyd32E/F78=
+P:dnsmasq-dnssec
+V:2.87-r2
+A:x86_64
+S:184679
+I:376832
+T:A lightweight DNS, DHCP, RA, TFTP and PXE server with DNSSEC support
+U:https://www.thekelleys.org.uk/dnsmasq/
+L:GPL-2.0-only OR GPL-3.0-only
+o:dnsmasq
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1680054912
+c:742ab8b6a3ae7ffb844978546d0d2890e4421448
+k:20
+D:dnsmasq-common=2.87-r2 /bin/sh so:libc.musl-x86_64.so.1 so:libgmp.so.10 so:libhogweed.so.6 so:libnettle.so.8
+p:dnsmasq=2.87-r2 cmd:dnsmasq=2.87-r2
+
 C:Q14yMfX6YlC61EvK7Xnjo5m1nOwaE=
 P:kea
 V:2.2.0-r3
@@ -49432,6 +49487,21 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1677189438
 c:3f5d57c514667b9a13948486b60ce1fae29e7c95
 D:kea-dhcp4 kea-dhcp6
+
+C:Q1thYr5XE4rHac+pT0fyapxPl4axg=
+P:dnsmasq-doc
+V:2.87-r2
+A:x86_64
+S:45446
+I:65536
+T:A lightweight DNS, DHCP, RA, TFTP and PXE server (documentation)
+U:https://www.thekelleys.org.uk/dnsmasq/
+L:GPL-2.0-only OR GPL-3.0-only
+o:dnsmasq
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1680054912
+c:742ab8b6a3ae7ffb844978546d0d2890e4421448
+i:docs dnsmasq=2.87-r2
 
 C:Q1acpKy/hrIjtWPe8YCDX5y7KHrag=
 P:perl-html-mason-doc
@@ -51588,21 +51658,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1672591081
 c:af42d45cd558323043f855dd09fc1c7381a17803
 p:linux-firmware-any
-
-C:Q1WpP+YCma3K0buQ6gy3x3AEBUYQo=
-P:dnsmasq-doc
-V:2.87-r1
-A:x86_64
-S:45422
-I:65536
-T:A lightweight DNS, DHCP, RA, TFTP and PXE server (documentation)
-U:https://www.thekelleys.org.uk/dnsmasq/
-L:GPL-2.0-only OR GPL-3.0-only
-o:dnsmasq
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1678489679
-c:1418ea7eecd1c2f17ccf641e2f6b1b6660967ddc
-i:docs dnsmasq=2.87-r1
 
 C:Q1vyJd/lOxsxsuqg2VuNDNuOxzCkw=
 P:openldap-back-null
@@ -56180,22 +56235,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1666648007
 c:56a76eec7d28d41b22e7eae22c7b8ba297ab0876
 
-C:Q1HGCtCQIvbjAjO/AxNxicIPU70KU=
-P:libde265-dev
-V:1.0.11-r0
-A:x86_64
-S:292918
-I:929792
-T:Open h.265 video codec implementation (development files)
-U:https://github.com/strukturag/libde265
-L:LGPL-3.0-or-later
-o:libde265
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1675353274
-c:218d4aa164bc2298d0bc0c60347603403efeae4c
-D:libde265=1.0.11-r0 pkgconfig
-p:pc:libde265=1.0.11
-
 C:Q178zmFaQqEur/K+mGsGwKryoLmfk=
 P:liblockfile-doc
 V:1.17-r1
@@ -58357,6 +58396,20 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-css-squish=0.10-r2
+
+C:Q1A/CizbJXgQCp1pv0Jegytd1wrYA=
+P:tzdata
+V:2023c-r0
+A:x86_64
+S:402782
+I:3141632
+T:Timezone data
+U:https://www.iana.org/time-zones
+L:Public-Domain
+o:tzdata
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1680044278
+c:f0fc0d47fb725b98cc2cdbe8894f6df648aa32c5
 
 C:Q1lZUb1HHWwm/0hBnS+ZzhAb6plDQ=
 P:s6-portable-utils-doc
@@ -66168,6 +66221,21 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:so:libc.musl-x86_64.so.1 so:libpcre.so.1
 i:lua5.3 lua-rex-pcre=2.9.1-r1
 
+C:Q11F9upz+vyHRXSWaY7SP2hkPKOcU=
+P:tzdata-doc
+V:2023c-r0
+A:x86_64
+S:13835
+I:36864
+T:Timezone data (documentation)
+U:https://www.iana.org/time-zones
+L:Public-Domain
+o:tzdata
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1680044278
+c:f0fc0d47fb725b98cc2cdbe8894f6df648aa32c5
+i:docs tzdata=2023c-r0
+
 C:Q1ZW46fuph89VrEbR94MzkvrBr8sA=
 P:lua5.1-discount
 V:1.2.10.1-r7
@@ -67353,6 +67421,20 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1659175902
 c:7867efc89b6023b9e421c979b70e2c336c08ba8b
 i:docs dialog=1.3.20220728-r0
+
+C:Q1yy3pE3zvD6BJ8kZtde8LbeL2rms=
+P:dnsmasq-common
+V:2.87-r2
+A:x86_64
+S:12233
+I:57344
+T:A lightweight DNS, DHCP, RA, TFTP and PXE server (common files)
+U:https://www.thekelleys.org.uk/dnsmasq/
+L:GPL-2.0-only OR GPL-3.0-only
+o:dnsmasq
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1680054912
+c:742ab8b6a3ae7ffb844978546d0d2890e4421448
 
 C:Q1cJ7cjD4QlbXXHMnTooFvsK8lM4k=
 P:freeswitch-timezones
@@ -68822,21 +68904,6 @@ t:1657073070
 c:474e26c6133e5bf041b77bcb302681e42b6854a1
 i:docs pam-pgsql=0.7.3.2-r2
 
-C:Q1HMGiEfyxhfyrBf1sBfuGu1K3JiU=
-P:tzdata-doc
-V:2023b-r1
-A:x86_64
-S:13832
-I:36864
-T:Timezone data (documentation)
-U:https://www.iana.org/time-zones
-L:Public-Domain
-o:tzdata
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1679675205
-c:d97103b03c929321280677dc5ea62ee080662524
-i:docs tzdata=2023b-r1
-
 C:Q1HQKVkn8YlBXPbQNTMbdBTqhlo58=
 P:libxrandr-doc
 V:1.5.3-r0
@@ -68866,23 +68933,6 @@ m:Laurent Bercot <ska-devel@skarnet.org>
 t:1655409612
 c:0dcdcf56fc63a2c5d1251e0c4b72a490b8a71a7b
 i:docs s6-linux-utils=2.6.0.0-r0
-
-C:Q1FCaVxOi2Efe1lhEXYwLNQpHtJ8s=
-P:dnsmasq-dnssec
-V:2.87-r1
-A:x86_64
-S:184676
-I:376832
-T:A lightweight DNS, DHCP, RA, TFTP and PXE server with DNSSEC support
-U:https://www.thekelleys.org.uk/dnsmasq/
-L:GPL-2.0-only OR GPL-3.0-only
-o:dnsmasq
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1678489679
-c:1418ea7eecd1c2f17ccf641e2f6b1b6660967ddc
-k:20
-D:dnsmasq-common=2.87-r1 /bin/sh so:libc.musl-x86_64.so.1 so:libgmp.so.10 so:libhogweed.so.6 so:libnettle.so.8
-p:dnsmasq=2.87-r1 cmd:dnsmasq=2.87-r1
 
 C:Q1dWlvje92degIHbxAiHMU51954mM=
 P:gross-doc
@@ -70495,23 +70545,6 @@ c:0b8e8e1b95c1e204a138d45e74030b028cfaacfd
 D:so:libc.musl-x86_64.so.1 so:libp11-kit.so.0 so:libtasn1.so.6
 p:cmd:trust=0.24.1-r1
 
-C:Q1ekU3NxZA4ldASQAIjZcNd12vGDs=
-P:dnsmasq
-V:2.87-r1
-A:x86_64
-S:168705
-I:348160
-T:A lightweight DNS, DHCP, RA, TFTP and PXE server
-U:https://www.thekelleys.org.uk/dnsmasq/
-L:GPL-2.0-only OR GPL-3.0-only
-o:dnsmasq
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1678489679
-c:1418ea7eecd1c2f17ccf641e2f6b1b6660967ddc
-k:100
-D:dnsmasq-common=2.87-r1 /bin/sh so:libc.musl-x86_64.so.1
-p:cmd:dnsmasq=2.87-r1
-
 C:Q1i1HxOK5hN235JVkCttguwh+8YvQ=
 P:perl-html-formattext-withlinks-doc
 V:0.15-r4
@@ -71281,22 +71314,6 @@ t:1666042195
 c:609b0c2b543a2ff1047099462641ba57a31852c8
 D:pkgconfig skalibs=2.12.0.1-r0
 p:pc:skalibs=2.12.0.1
-
-C:Q1YJJIyKwY9lLCxDKaVQdlR9otWQ0=
-P:tzdata-utils
-V:2023b-r1
-A:x86_64
-S:44511
-I:126976
-T:Timezone data
-U:https://www.iana.org/time-zones
-L:Public-Domain
-o:tzdata
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1679675205
-c:d97103b03c929321280677dc5ea62ee080662524
-D:so:libc.musl-x86_64.so.1
-p:cmd:posixtz=2023b-r1 cmd:zdump=2023b-r1 cmd:zic=2023b-r1
 
 C:Q1iZ47zA/hd9HXQ/1KtNYxbzrng7c=
 P:bwm-ng-doc
@@ -72306,23 +72323,6 @@ t:1667660627
 c:420d875c4d8cf332e8018aadd3f6d281320c2623
 D:so:libc.musl-x86_64.so.1 so:libcrypto.so.3 so:libnl-3.so.200 so:libnl-genl-3.so.200 so:libssl.so.3
 p:cmd:hostapd=2.10-r5 cmd:hostapd_cli=2.10-r5 cmd:nt_password_hash=2.10-r5
-
-C:Q1/g1dbyvW2kXl115Y5bPyBh/hOus=
-P:dnsmasq-dnssec-dbus
-V:2.87-r1
-A:x86_64
-S:190866
-I:405504
-T:A lightweight DNS, DHCP, RA, TFTP and PXE server with DNSSEC and D-Bus support
-U:https://www.thekelleys.org.uk/dnsmasq/
-L:GPL-2.0-only OR GPL-3.0-only
-o:dnsmasq
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1678489679
-c:1418ea7eecd1c2f17ccf641e2f6b1b6660967ddc
-k:10
-D:dnsmasq-common=2.87-r1 /bin/sh so:libc.musl-x86_64.so.1 so:libdbus-1.so.3 so:libgmp.so.10 so:libhogweed.so.6 so:libnettle.so.8
-p:dnsmasq=2.87-r1 dnsmasq-dbus=2.87-r1 dnsmasq-dnssec=2.87-r1 cmd:dnsmasq=2.87-r1
 
 C:Q1f2/ZSNqd/JfVvC2Wefz8srbtOIc=
 P:perl-dbd-sqlite

@@ -1283,6 +1283,22 @@ t:1614408115
 c:c2b4aba4b85104764556875830ed09bde525d8d5
 D:so:libc.musl-armhf.so.1 so:libgcrypt.so.20 so:libpam.so.0 so:libpq.so.5
 
+C:Q1jFBdLdDC4baV+J0gjMbWOFMEcz0=
+P:dnsmasq-dnssec
+V:2.85-r3
+A:armhf
+S:181080
+I:401408
+T:A lightweight DNS, DHCP, RA, TFTP and PXE server with DNSSEC support
+U:https://www.thekelleys.org.uk/dnsmasq/
+L:GPL-2.0-only OR GPL-3.0-only
+o:dnsmasq
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1680055158
+c:6323d36e6e8e6d49e01d20c5a28407a7abd1febd
+D:!dnsmasq /bin/sh so:libc.musl-armhf.so.1 so:libgmp.so.10 so:libhogweed.so.6 so:libnettle.so.8
+p:cmd:dnsmasq
+
 C:Q1MC1uNp2bgja0WsmWldQxFf2WCCY=
 P:g++
 V:10.3.1_git20210424-r2
@@ -8933,6 +8949,21 @@ t:1648136563
 c:2b54340fa34f705823856221ad2fdaf9ece721a8
 D:iproute2 /bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:liblzo2.so.2 so:libssl.so.1.1
 p:cmd:openvpn
+
+C:Q16xcEnacTf/yG43NhjTg3X8drJIk=
+P:dnsmasq-doc
+V:2.85-r3
+A:armhf
+S:42382
+I:61440
+T:A lightweight DNS, DHCP, RA, TFTP and PXE server (documentation)
+U:https://www.thekelleys.org.uk/dnsmasq/
+L:GPL-2.0-only OR GPL-3.0-only
+o:dnsmasq
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1680055158
+c:6323d36e6e8e6d49e01d20c5a28407a7abd1febd
+i:docs dnsmasq=2.85-r3
 
 C:Q17NhNC9QyPGmoF2hFGa49wUFl/ds=
 P:execline-dev
@@ -35223,22 +35254,6 @@ t:1628527076
 c:4b051e4e9ef1d4ce09f437141c1911cd70d555d5
 i:openrc gpsd=3.23-r0
 
-C:Q1Ku2FV1O9IHJ1tJ5Tm/eh5PQmiqo=
-P:libde265
-V:1.0.11-r0
-A:armhf
-S:165325
-I:372736
-T:Open h.265 video codec implementation
-U:https://github.com/strukturag/libde265
-L:LGPL-3.0-or-later
-o:libde265
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1675353615
-c:4b1b40c36698f034dbf0deb4dbb915c523a63dad
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-p:so:libde265.so.0=0.1.4
-
 C:Q1zPF36FzE2/gLvqFbLVmxa0+Kio0=
 P:cifs-utils
 V:6.13-r0
@@ -38421,6 +38436,22 @@ t:1600709977
 c:194c37c81b43fcc547cf6336142d53b9a7372a76
 i:docs perl-test-number-delta=1.06-r2
 
+C:Q1F9S9Pz4ke13kI8K6zI3AJV34gzo=
+P:libde265-examples
+V:1.0.11-r1
+A:armhf
+S:7812
+I:28672
+T:Open h.265 video codec implementation (examples)
+U:https://github.com/strukturag/libde265
+L:LGPL-3.0-or-later
+o:libde265
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1680053927
+c:25dd8b78deff0f4ce0c11123d8688e79d67ed972
+D:libde265=1.0.11-r1 so:libc.musl-armhf.so.1 so:libde265.so.0 so:libgcc_s.so.1 so:libstdc++.so.6
+p:cmd:libde265-dec265
+
 C:Q1KfW9VNd3pbapQEYwZCEzXQIorg0=
 P:linux-firmware-ti-keystone
 V:20210716-r0
@@ -38498,22 +38529,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1620121343
 c:2b6a04f7fe009ec2e5d4781106639fabf603fc5b
 i:mc=4.8.26-r1 lang
-
-C:Q1rmEYnwNoMleNbvgekP6XQX+Lhk0=
-P:dnsmasq
-V:2.85-r2
-A:armhf
-S:166373
-I:360448
-T:A lightweight DNS, DHCP, RA, TFTP and PXE server
-U:https://www.thekelleys.org.uk/dnsmasq/
-L:GPL-2.0-only OR GPL-3.0-only
-o:dnsmasq
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1619360367
-c:df100457a358fdf36cae7d86d5baa3e8049755b4
-D:!dnsmasq-dnssec /bin/sh so:libc.musl-armhf.so.1
-p:cmd:dnsmasq
 
 C:Q1Lz2mVjzCykfn1LOmvE+4SWnCPAM=
 P:lua-sql-mysql
@@ -40498,22 +40513,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1621253816
 c:8748c7dc25cbcb3c103c0140a571d528ddc58ec9
 D:so:libc.musl-armhf.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
-
-C:Q1wS/W6lvbinLN6KIdQ0K2Zuxkruw=
-P:libde265-dev
-V:1.0.11-r0
-A:armhf
-S:254089
-I:753664
-T:Open h.265 video codec implementation (development files)
-U:https://github.com/strukturag/libde265
-L:LGPL-3.0-or-later
-o:libde265
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1675353615
-c:4b1b40c36698f034dbf0deb4dbb915c523a63dad
-D:libde265=1.0.11-r0 pkgconfig
-p:pc:libde265=1.0.11
 
 C:Q1MuCWaZXzGqxVOojIWLMVbESzTIs=
 P:perl-role-tiny
@@ -46452,22 +46451,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1619529418
 c:ea0e64a2ab874ed15f5a95834b7f90ec92e4d2bf
 i:iproute2=5.12.0-r0 bash-completion
-
-C:Q1lsfF71/NE0+IFHrNLpUep3PyQyM=
-P:libde265-examples
-V:1.0.11-r0
-A:armhf
-S:7815
-I:28672
-T:Open h.265 video codec implementation (examples)
-U:https://github.com/strukturag/libde265
-L:LGPL-3.0-or-later
-o:libde265
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1675353615
-c:4b1b40c36698f034dbf0deb4dbb915c523a63dad
-D:libde265=1.0.11-r0 so:libc.musl-armhf.so.1 so:libde265.so.0 so:libgcc_s.so.1 so:libstdc++.so.6
-p:cmd:libde265-dec265
 
 C:Q16Wr6CZpLJDgzegJLYdb+pzytPN4=
 P:lua-cmsgpack
@@ -58348,22 +58331,6 @@ t:1621485419
 c:1900db34ee50bab2ec08a92aacc6074a01ccd836
 p:so:libboost_stacktrace_noop.so.1.75.0=1.75.0
 
-C:Q11+xIFu/AHu2ChHCZ3w/iOFb3qPk=
-P:dnsmasq-dnssec
-V:2.85-r2
-A:armhf
-S:181084
-I:401408
-T:A lightweight DNS, DHCP, RA, TFTP and PXE server with DNSSEC support
-U:https://www.thekelleys.org.uk/dnsmasq/
-L:GPL-2.0-only OR GPL-3.0-only
-o:dnsmasq
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1619360367
-c:df100457a358fdf36cae7d86d5baa3e8049755b4
-D:!dnsmasq /bin/sh so:libc.musl-armhf.so.1 so:libgmp.so.10 so:libhogweed.so.6 so:libnettle.so.8
-p:cmd:dnsmasq
-
 C:Q1WLiHpPgrBV9EhITIP0i4fohNISI=
 P:libxkbcommon-x11
 V:1.2.1-r0
@@ -60194,6 +60161,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1600709957
 c:02ded52ef5b210d2c9332ab56bfc54182e26a7ca
 i:docs perl-data-uuid=1.226-r1
+
+C:Q1d9kiFCsW+ZA5fQz6MHumrqggpbU=
+P:libde265-dev
+V:1.0.11-r1
+A:armhf
+S:254151
+I:753664
+T:Open h.265 video codec implementation (development files)
+U:https://github.com/strukturag/libde265
+L:LGPL-3.0-or-later
+o:libde265
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1680053927
+c:25dd8b78deff0f4ce0c11123d8688e79d67ed972
+D:libde265=1.0.11-r1 pkgconfig
+p:pc:libde265=1.0.11
 
 C:Q1CXJ53+Jd0V2aS2lYk6sTRI78Rvo=
 P:nginx-openrc
@@ -67088,6 +67071,22 @@ t:1600709969
 c:69d58e5e0739d800e4c825b23abc3483c510e7aa
 i:docs perl-namespace-autoclean=0.29-r2
 
+C:Q1nKZWyWanaXxrwJ+R9dBJbpjAwC8=
+P:libde265
+V:1.0.11-r1
+A:armhf
+S:165403
+I:372736
+T:Open h.265 video codec implementation
+U:https://github.com/strukturag/libde265
+L:LGPL-3.0-or-later
+o:libde265
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1680053927
+c:25dd8b78deff0f4ce0c11123d8688e79d67ed972
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+p:so:libde265.so.0=0.1.4
+
 C:Q1YYC4aTg1q4p0QE8ExfdLS784qeI=
 P:alsa-utils-doc
 V:1.2.5-r2
@@ -70174,21 +70173,6 @@ t:1617588644
 c:95f44864c67cbfb8964888e5e61bbc8452cf3573
 i:docs perl-digest-md5=2.58-r1
 
-C:Q1fgk0HVxn7RPWJfngBmMqsIc/Qao=
-P:dnsmasq-doc
-V:2.85-r2
-A:armhf
-S:42355
-I:61440
-T:A lightweight DNS, DHCP, RA, TFTP and PXE server (documentation)
-U:https://www.thekelleys.org.uk/dnsmasq/
-L:GPL-2.0-only OR GPL-3.0-only
-o:dnsmasq
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1619360367
-c:df100457a358fdf36cae7d86d5baa3e8049755b4
-i:docs dnsmasq=2.85-r2
-
 C:Q10KpEuyKtFJr0ucBBv1wUlJQDy1o=
 P:xkbcomp-dev
 V:1.4.5-r0
@@ -72675,6 +72659,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1628001887
 c:10998b5ca77ec8229976ed01346cfc819ddbbb99
 p:linux-firmware-any
+
+C:Q17Qb18O+QIoklud1S7MwfFAt4Obk=
+P:dnsmasq
+V:2.85-r3
+A:armhf
+S:166360
+I:360448
+T:A lightweight DNS, DHCP, RA, TFTP and PXE server
+U:https://www.thekelleys.org.uk/dnsmasq/
+L:GPL-2.0-only OR GPL-3.0-only
+o:dnsmasq
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1680055158
+c:6323d36e6e8e6d49e01d20c5a28407a7abd1febd
+D:!dnsmasq-dnssec /bin/sh so:libc.musl-armhf.so.1
+p:cmd:dnsmasq
 
 C:Q1IGqw/M1Pzhe6wig/xKDiH5v8W5Y=
 P:libssh2-dev
