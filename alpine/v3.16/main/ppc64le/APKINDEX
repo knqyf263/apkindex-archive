@@ -3757,22 +3757,6 @@ c:0923472fce097ebae9470b4a06cf3f7b9377cfe1
 D:so:libacl.so.1 so:libbz2.so.1 so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libexpat.so.1 so:liblz4.so.1 so:liblzma.so.5 so:libz.so.1 so:libzstd.so.1
 p:so:libarchive.so.13=13.6.1
 
-C:Q1D6oPXMZr3ChVzq+3rGiccm6xqEc=
-P:sqlite-libs
-V:3.38.5-r0
-A:ppc64le
-S:577955
-I:1216512
-T:Sqlite3 library
-U:https://www.sqlite.org/
-L:blessing
-o:sqlite
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1652001762
-c:f796162b1714f2dcc7180ef69eb6cb35d59f7cd7
-D:so:libc.musl-ppc64le.so.1
-p:so:libsqlite3.so.0=0.8.6
-
 C:Q10Xeq2HWaCy7JVQI9osqf3+7PpMY=
 P:samurai
 V:1.2-r1
@@ -3880,6 +3864,21 @@ t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:so:libc.musl-ppc64le.so.1 so:libmaxminddb.so.0
 i:lua5.3 lua-maxminddb=0.1-r3
+
+C:Q17xaaHLH+YKzqqM0aTX6GRFUSTQI=
+P:sqlite-tcl
+V:3.40.1-r0
+A:ppc64le
+S:22875
+I:98304
+T:Sqlite Tcl Extension Architecture (TEA)
+U:https://www.sqlite.org/
+L:blessing
+o:sqlite-tcl
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1681753839
+c:cbb3b37325fcbbb1317c9b2444c4345bff51ea1a
+D:so:libc.musl-ppc64le.so.1 so:libsqlite3.so.0
 
 C:Q1UFhj1ALobI32Umavtk0FLeJHrW0=
 P:giflib-utils
@@ -11334,6 +11333,22 @@ c:d6fead8b163ca39afaf876029e621f69985a0233
 D:so:libc.musl-ppc64le.so.1
 p:so:libtasn1.so.6=6.6.2
 
+C:Q1/2yavlBLKnJteyFgnOF1qgA8BWc=
+P:sqlite
+V:3.40.1-r0
+A:ppc64le
+S:690693
+I:1409024
+T:C library that implements an SQL database engine
+U:https://www.sqlite.org/
+L:blessing
+o:sqlite
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1681541937
+c:76a7238dea5dd9db2b1159083c84accfbd0676d3
+D:so:libc.musl-ppc64le.so.1 so:libreadline.so.8
+p:cmd:sqlite3=3.40.1-r0
+
 C:Q1ty/1PHKxtGIKM4OJH6dwp0zNnZg=
 P:lua5.4-posix
 V:35.1-r0
@@ -12104,6 +12119,22 @@ t:1615951283
 c:bed128630fb714dba99013ba3a64289ff9dfe459
 D:so:libc.musl-ppc64le.so.1
 p:so:libevtlog.so.0=0.0.0
+
+C:Q1lxFgTQBO8Ymx5WnP4iybR4Bozhk=
+P:sqlite-dev
+V:3.40.1-r0
+A:ppc64le
+S:167179
+I:684032
+T:C library that implements an SQL database engine (development files)
+U:https://www.sqlite.org/
+L:blessing
+o:sqlite
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1681541937
+c:76a7238dea5dd9db2b1159083c84accfbd0676d3
+D:pkgconfig sqlite-libs=3.40.1-r0
+p:pc:sqlite3=3.40.1
 
 C:Q127uZzmR/mVdBhW18Uc9i7R5bkJQ=
 P:gpsd
@@ -14188,22 +14219,6 @@ t:1649062565
 c:1579acf67a30ecd20f63e588baab94a931b28efd
 D:lua5.2 so:libc.musl-ppc64le.so.1 so:libmosquitto.so.1
 i:lua-mosquitto=0.4.1-r1 lua5.2
-
-C:Q1xy6bQAl1ePZsKo6DQa8ykO2oayo=
-P:sqlite-dev
-V:3.38.5-r0
-A:ppc64le
-S:166094
-I:675840
-T:C library that implements an SQL database engine (development files)
-U:https://www.sqlite.org/
-L:blessing
-o:sqlite
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1652001762
-c:f796162b1714f2dcc7180ef69eb6cb35d59f7cd7
-D:pkgconfig sqlite-libs=3.38.5-r0
-p:pc:sqlite3=3.38.5
 
 C:Q1Ces8SJUv0cfA15zxZRLibaLSG+Q=
 P:uwsgi-pty
@@ -26603,21 +26618,6 @@ t:1621087673
 c:ec4e35bcdcf38829d2a36ff4d7cd4351ebb67d1c
 D:acf-core snort
 
-C:Q1Nx5gFCM84nwRxlwABeP5/gLqgzA=
-P:sqlite-doc
-V:3.38.5-r0
-A:ppc64le
-S:5778
-I:36864
-T:C library that implements an SQL database engine (documentation)
-U:https://www.sqlite.org/
-L:blessing
-o:sqlite
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1652001762
-c:f796162b1714f2dcc7180ef69eb6cb35d59f7cd7
-i:docs sqlite=3.38.5-r0
-
 C:Q1+D4LzglVRxqpVIv8q/09Z9WYKds=
 P:ghostscript-fonts
 V:8.11-r2
@@ -29255,6 +29255,21 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1627487155
 c:3f155240bca82117a4342eb34a14dbda8475b79a
 D:perl perl-dbi so:libc.musl-ppc64le.so.1 so:libmariadb.so.3
+
+C:Q1bCva2auY8f8MfMkBMBTyRSBzcK0=
+P:sqlite-doc
+V:3.40.1-r0
+A:ppc64le
+S:5513
+I:36864
+T:C library that implements an SQL database engine (documentation)
+U:https://www.sqlite.org/
+L:blessing
+o:sqlite
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1681541937
+c:76a7238dea5dd9db2b1159083c84accfbd0676d3
+i:docs sqlite=3.40.1-r0
 
 C:Q17kyDU2gfWhFQMXRZYLh5ZiZoS4k=
 P:lmdb-dev
@@ -32554,6 +32569,22 @@ t:1634035663
 c:427c296eb3a56483d4abc7aa3d0779579b810c8f
 D:gmp-dev isl22=0.22-r0 pkgconfig
 p:pc:isl=0.22
+
+C:Q1uTbOwgqEsRRiSWFJy9+FBnDntLc=
+P:sqlite-libs
+V:3.40.1-r0
+A:ppc64le
+S:584266
+I:1216512
+T:Sqlite3 library
+U:https://www.sqlite.org/
+L:blessing
+o:sqlite
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1681541937
+c:76a7238dea5dd9db2b1159083c84accfbd0676d3
+D:so:libc.musl-ppc64le.so.1
+p:so:libsqlite3.so.0=0.8.6
 
 C:Q1Yc63TB91NvgeScT8hW4A57TljvQ=
 P:tiff
@@ -38344,6 +38375,21 @@ o:iproute2
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1647974610
 c:dd337429fe3e0bc20f3b5558f9a1757420a29dc6
+
+C:Q1FRFX39fJ3s9p6ii6BCh9EbMTLHo=
+P:sqlite-tcl-doc
+V:3.40.1-r0
+A:ppc64le
+S:2158
+I:36864
+T:Sqlite Tcl Extension Architecture (TEA) (documentation)
+U:https://www.sqlite.org/
+L:blessing
+o:sqlite-tcl
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1681753839
+c:cbb3b37325fcbbb1317c9b2444c4345bff51ea1a
+i:docs sqlite-tcl=3.40.1-r0
 
 C:Q1ew2t+h9Z2DMyREB1kOB0ol75qmY=
 P:lua5.4-mqtt-publish
@@ -63591,20 +63637,6 @@ t:1644017791
 c:07d30f827fff5f8c8962356a35c0fe8367727194
 i:docs aumix=2.9.1-r8
 
-C:Q1ZskSsdfWrkV4V2BWFeMAOv4G0ks=
-P:sqlite-static
-V:3.38.5-r0
-A:ppc64le
-S:651624
-I:1916928
-T:Sqlite3 static library
-U:https://www.sqlite.org/
-L:blessing
-o:sqlite
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1652001762
-c:f796162b1714f2dcc7180ef69eb6cb35d59f7cd7
-
 C:Q1No7642T1i8U3iTs83pC/7+ULUlU=
 P:lua5.2-filesystem
 V:1.8.0-r1
@@ -66920,22 +66952,6 @@ c:4ba315887c3db89d2ef9eca31e5581f3b4a41b3b
 D:so:libc.musl-ppc64le.so.1
 p:so:libburn.so.4=4.107.0 cmd:cdrskin=1.5.4-r1
 
-C:Q1k/SbcFIC98UmLlZwAKLuZFoINzM=
-P:sqlite
-V:3.38.5-r0
-A:ppc64le
-S:677052
-I:1409024
-T:C library that implements an SQL database engine
-U:https://www.sqlite.org/
-L:blessing
-o:sqlite
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1652001762
-c:f796162b1714f2dcc7180ef69eb6cb35d59f7cd7
-D:so:libc.musl-ppc64le.so.1 so:libreadline.so.8
-p:cmd:sqlite3=3.38.5-r0
-
 C:Q1aV+nYbna9lGjP0A91qEyCRVMDjU=
 P:lua5.2-struct
 V:0.2-r3
@@ -68625,6 +68641,20 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
+
+C:Q1d8HqJj3yWnGqAybKsRGQV42JagQ=
+P:sqlite-static
+V:3.40.1-r0
+A:ppc64le
+S:660286
+I:1937408
+T:Sqlite3 static library
+U:https://www.sqlite.org/
+L:blessing
+o:sqlite
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1681541937
+c:76a7238dea5dd9db2b1159083c84accfbd0676d3
 
 C:Q1SPoogO6QtcfZ/Rr73Sc8P9OW278=
 P:oidentd-doc
@@ -70425,21 +70455,6 @@ t:1652592000
 c:34d90ac8388e88126893f5d27ea35d304e65e5ab
 D:apk-tools=2.12.9-r3 pc:openssl pc:zlib pkgconfig
 p:pc:apk=2.12.9
-
-C:Q1yYPZFMQCFd7feYyY4LCjWgjWq6o=
-P:sqlite-tcl
-V:3.38.5-r0
-A:ppc64le
-S:23068
-I:98304
-T:Sqlite Tcl Extension Architecture (TEA)
-U:https://www.sqlite.org/
-L:blessing
-o:sqlite-tcl
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1652001762
-c:a4d0b00b8aa47186fbe9fcaf70fec9cd65fffa7f
-D:so:libc.musl-ppc64le.so.1 so:libsqlite3.so.0
 
 C:Q129u5U/bBYfo0hYjkO4/mxdBvsVI=
 P:perl-convert-uulib-doc
@@ -72349,21 +72364,6 @@ t:1651077327
 c:c25fd8e15ba7a9885159c1d54daf04309fd9339a
 D:rsync so:libc.musl-ppc64le.so.1 so:liblua-5.4.so.0
 p:cmd:lsyncd=2.2.4-r0
-
-C:Q1m4Cgb5jIaOE8+4u8U93jkJn5kKQ=
-P:sqlite-tcl-doc
-V:3.38.5-r0
-A:ppc64le
-S:2422
-I:36864
-T:Sqlite Tcl Extension Architecture (TEA) (documentation)
-U:https://www.sqlite.org/
-L:blessing
-o:sqlite-tcl
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1652001762
-c:a4d0b00b8aa47186fbe9fcaf70fec9cd65fffa7f
-i:docs sqlite-tcl=3.38.5-r0
 
 C:Q1PBOdrl36S77vck0eCriIV4Te/dk=
 P:libtasn1-dev
