@@ -23197,6 +23197,20 @@ c:9e56fb42eb96497122b03685e9d29d7e358fde31
 D:so:libc.musl-x86.so.1
 p:so:libsfbpf.so.0=0.0.1
 
+C:Q1LAcXq1Qyq6dcnzc870QuGsiipAk=
+P:openssl3-libs-static
+V:3.0.8-r3
+A:x86
+S:9303177
+I:16748544
+T:Toolkit for Transport Layer Security (TLS) (static library)
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl3
+m:Timo Teras <timo.teras@iki.fi>
+t:1682007985
+c:3408e999e747c43e2a202150d390a6ed1eade7fd
+
 C:Q1Xo+nj96mK9KQmwxBnLbFeonl5Sc=
 P:cvechecker
 V:4.0-r1
@@ -26271,19 +26285,21 @@ c:670bf5a8cc5bc605eede8ca2fd55b50a5c9f8660
 D:so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:liblzo2.so.2 so:libz.so.1
 p:cmd:tincd=1.0.36-r3
 
-C:Q17KE4a2UC2m/0LF3uI/nBFatq3tQ=
-P:openssl3-dbg
-V:3.0.8-r2
+C:Q1D4haBwv1gI6JNMNAdUxU98RL/gM=
+P:openssl3
+V:3.0.8-r3
 A:x86
-S:4710473
-I:13176832
-T:Toolkit for Transport Layer Security (TLS) (debug symbols)
+S:345731
+I:876544
+T:Toolkit for Transport Layer Security (TLS)
 U:https://www.openssl.org/
 L:Apache-2.0
 o:openssl3
 m:Timo Teras <timo.teras@iki.fi>
-t:1680012808
-c:96e48a0867642b94bfbdcd55dfe188d4388ff0ee
+t:1682007985
+c:3408e999e747c43e2a202150d390a6ed1eade7fd
+D:so:libc.musl-x86.so.1 so:openssl3:so:libcrypto.so.3 so:openssl3:so:libssl.so.3
+p:cmd:openssl3=3.0.8-r3
 
 C:Q1kr3R40XTCuCeDoDX8t3mVG/RBUg=
 P:perl-dist-checkconflicts
@@ -29900,6 +29916,22 @@ t:1614323720
 c:71a8ac443e012f0f4681d01097aeef1cf0f2c6a5
 i:docs debian-archive-keyring=2021.1.1-r0
 
+C:Q1+kIvqjj+cvlPhMAp2SprIWY/QfQ=
+P:openssl3-dev
+V:3.0.8-r3
+A:x86
+S:350621
+I:2281472
+T:Toolkit for Transport Layer Security (TLS) (development files)
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl3
+m:Timo Teras <timo.teras@iki.fi>
+t:1682007985
+c:3408e999e747c43e2a202150d390a6ed1eade7fd
+D:libcrypto3=3.0.8-r3 libssl3=3.0.8-r3 pkgconfig
+p:pc:openssl3:pc:libcrypto=3.0.8 pc:openssl3:pc:libssl=3.0.8 pc:openssl3:pc:openssl=3.0.8
+
 C:Q1TRq2JDOfdob4gnNqGGJizY32gqc=
 P:lua5.1-sql-postgres
 V:2.6.0-r1
@@ -30461,6 +30493,22 @@ o:fstrm
 t:1617757810
 c:8f091d5cdd860498065735eff58df066c8e834ce
 i:docs fstrm=0.6.1-r0
+
+C:Q1n8uApNcs9xCKeK9KU4kEKVlCcoc=
+P:libssl3
+V:3.0.8-r3
+A:x86
+S:266456
+I:651264
+T:SSL shared libraries
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl3
+m:Timo Teras <timo.teras@iki.fi>
+t:1682007985
+c:3408e999e747c43e2a202150d390a6ed1eade7fd
+D:so:libc.musl-x86.so.1 so:openssl3:so:libcrypto.so.3
+p:so:openssl3:so:libssl.so.3=3
 
 C:Q1glkG48awH+HWSmalIC76lIFyR1Q=
 P:perl-test-cpan-meta
@@ -39255,22 +39303,6 @@ t:1635494978
 c:87f6509d7aee77e5c5f5b2753690e039be33d359
 p:linux-firmware-any
 
-C:Q13lelu5MFuxNSrlATP0JtG4ieH1k=
-P:libssl3
-V:3.0.8-r2
-A:x86
-S:266468
-I:651264
-T:SSL shared libraries
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl3
-m:Timo Teras <timo.teras@iki.fi>
-t:1680012808
-c:96e48a0867642b94bfbdcd55dfe188d4388ff0ee
-D:so:libc.musl-x86.so.1 so:openssl3:so:libcrypto.so.3
-p:so:openssl3:so:libssl.so.3=3
-
 C:Q1wCIS+Qr+O2/W+sykDec5PLCFlvo=
 P:abi-compliance-checker
 V:2.3-r0
@@ -42376,22 +42408,6 @@ c:9c15e0596ae3254d1b3f011c63d8d8a966ddc385
 D:linux-headers libnetfilter_log=1.0.1-r5 pc:libnfnetlink pkgconfig
 p:pc:libnetfilter_log=1.0.1
 
-C:Q19LEB70IgCrFZ8wrOD+3onvETvVM=
-P:libcrypto3
-V:3.0.8-r2
-A:x86
-S:1727925
-I:4108288
-T:Crypto library from openssl
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl3
-m:Timo Teras <timo.teras@iki.fi>
-t:1680012808
-c:96e48a0867642b94bfbdcd55dfe188d4388ff0ee
-D:so:libc.musl-x86.so.1
-p:so:openssl3:so:libcrypto.so.3=3
-
 C:Q1hO333HGMr3jxbYmCBDgiJV8vHOw=
 P:libssh2-dev
 V:1.10.0-r2
@@ -42929,22 +42945,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1654719271
 c:714619e1d8333f78def668dc12ab3ba9fe246d51
 D:openldap-overlay-accesslog openldap-overlay-auditlog openldap-overlay-autoca openldap-overlay-collect openldap-overlay-constraint openldap-overlay-dds openldap-overlay-deref openldap-overlay-dyngroup openldap-overlay-dynlist openldap-overlay-homedir openldap-overlay-lastbind openldap-overlay-memberof openldap-overlay-mqtt openldap-overlay-otp openldap-overlay-ppolicy openldap-overlay-proxycache openldap-overlay-refint openldap-overlay-remoteauth openldap-overlay-retcode openldap-overlay-rwm openldap-overlay-seqmod openldap-overlay-sssvlv openldap-overlay-syncprov openldap-overlay-translucent openldap-overlay-unique openldap-overlay-valsort
-
-C:Q1NyyXOnqXWmO7LPXzlTTsU18Yj28=
-P:openssl3
-V:3.0.8-r2
-A:x86
-S:345735
-I:876544
-T:Toolkit for Transport Layer Security (TLS)
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl3
-m:Timo Teras <timo.teras@iki.fi>
-t:1680012808
-c:96e48a0867642b94bfbdcd55dfe188d4388ff0ee
-D:so:libc.musl-x86.so.1 so:openssl3:so:libcrypto.so.3 so:openssl3:so:libssl.so.3
-p:cmd:openssl3=3.0.8-r2
 
 C:Q1xz4idkw6w5yZrObWTlcNXHBe+Ek=
 P:perl-sub-exporter-doc
@@ -46328,6 +46328,22 @@ t:1610959559
 c:70431c686ab939c793546558eee747fed76150d6
 D:so:libc.musl-x86.so.1 so:liblxc.so.1
 i:lua-lxc=3.0.2-r1 lua5.2
+
+C:Q1Wf6qAAriu2+U2ge0s2p+uR/wwWE=
+P:libcrypto3
+V:3.0.8-r3
+A:x86
+S:1727924
+I:4108288
+T:Crypto library from openssl
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl3
+m:Timo Teras <timo.teras@iki.fi>
+t:1682007985
+c:3408e999e747c43e2a202150d390a6ed1eade7fd
+D:so:libc.musl-x86.so.1
+p:so:openssl3:so:libcrypto.so.3=3
 
 C:Q1esnK4JrHxqc7BCROsIDg3Kr+380=
 P:perl-parse-syslog
@@ -54707,22 +54723,6 @@ c:259b31a331a5208c7af8120146c6ef799c4071d9
 D:so:libc.musl-x86.so.1
 p:so:libhandle.so.1=1.0.3
 
-C:Q1HgWz9hGBmdZxghkmoDfpivnu1jI=
-P:openssl3-dev
-V:3.0.8-r2
-A:x86
-S:350619
-I:2281472
-T:Toolkit for Transport Layer Security (TLS) (development files)
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl3
-m:Timo Teras <timo.teras@iki.fi>
-t:1680012808
-c:96e48a0867642b94bfbdcd55dfe188d4388ff0ee
-D:libcrypto3=3.0.8-r2 libssl3=3.0.8-r2 pkgconfig
-p:pc:openssl3:pc:libcrypto=3.0.8 pc:openssl3:pc:libssl=3.0.8 pc:openssl3:pc:openssl=3.0.8
-
 C:Q1X4mWQLkbd4WWaDhthZnkrtyX0dc=
 P:zd1211-firmware
 V:1.5-r0
@@ -56467,21 +56467,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-extutils-helpers=0.026-r2
 
-C:Q1wcfjcxpBwHov8vz4hdhPGRihvx8=
-P:openssl3-doc
-V:3.0.8-r2
-A:x86
-S:4721112
-I:12128256
-T:Toolkit for Transport Layer Security (TLS) (documentation)
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl3
-m:Timo Teras <timo.teras@iki.fi>
-t:1680012808
-c:96e48a0867642b94bfbdcd55dfe188d4388ff0ee
-i:docs openssl3=3.0.8-r2
-
 C:Q1YvDqRJVX9sXY0QZFnyO1a66YAoc=
 P:wayland-protocols
 V:1.23-r0
@@ -58196,6 +58181,20 @@ o:scons
 t:1627890206
 c:67baa9cd60443bd6a6455c48e48cc8dc674c4950
 i:docs scons=4.2.0-r0
+
+C:Q16pwPjqxW5AY156i7oM/GZa7VEbU=
+P:openssl3-dbg
+V:3.0.8-r3
+A:x86
+S:4710494
+I:13176832
+T:Toolkit for Transport Layer Security (TLS) (debug symbols)
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl3
+m:Timo Teras <timo.teras@iki.fi>
+t:1682007985
+c:3408e999e747c43e2a202150d390a6ed1eade7fd
 
 C:Q1a8qeiGqCW7XyycZpPwkL7P0D2uA=
 P:open-isns
@@ -60210,20 +60209,6 @@ o:glslang
 t:1632999572
 c:f6fd82b4f28bc3b62b971b3f3fa5eaf56caa27b0
 D:glslang glslang=11.6.0-r0
-
-C:Q1XZ3wftUikM/jGKQ2J63qenLEzZw=
-P:openssl3-libs-static
-V:3.0.8-r2
-A:x86
-S:9303175
-I:16748544
-T:Toolkit for Transport Layer Security (TLS) (static library)
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl3
-m:Timo Teras <timo.teras@iki.fi>
-t:1680012808
-c:96e48a0867642b94bfbdcd55dfe188d4388ff0ee
 
 C:Q13YghyV7KFVih2G8V5IxDBb3pqjc=
 P:freeradius-doc
@@ -65715,6 +65700,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1637725644
 c:a252f750cd5fc74871bd04e06da43ebcab852772
 i:btrfs-progs=5.15.1-r0 bash-completion
+
+C:Q1cawmAuZM6/Ugf1ye+vi60fb6pLY=
+P:openssl3-doc
+V:3.0.8-r3
+A:x86
+S:4721529
+I:12128256
+T:Toolkit for Transport Layer Security (TLS) (documentation)
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl3
+m:Timo Teras <timo.teras@iki.fi>
+t:1682007985
+c:3408e999e747c43e2a202150d390a6ed1eade7fd
+i:docs openssl3=3.0.8-r3
 
 C:Q1mZ4ZYX8ns62BrXDysidIxXmc01c=
 P:samba-client
