@@ -13104,7 +13104,8 @@
     "gdk-pixbuf": {
       "origin": "gdk-pixbuf",
       "versions": {
-        "2.42.10-r4": 1681228881
+        "2.42.10-r4": 1681228881,
+        "2.42.10-r5": 1682447435
       },
       "dependencies": [
         "shared-mime-info",
@@ -13121,16 +13122,17 @@
       ],
       "provides": [
         "so:libgdk_pixbuf-2.0.so.0=0.4200.10",
-        "cmd:gdk-pixbuf-csource=2.42.10-r4",
-        "cmd:gdk-pixbuf-pixdata=2.42.10-r4",
-        "cmd:gdk-pixbuf-query-loaders=2.42.10-r4",
-        "cmd:gdk-pixbuf-thumbnailer=2.42.10-r4"
+        "cmd:gdk-pixbuf-csource=2.42.10-r5",
+        "cmd:gdk-pixbuf-pixdata=2.42.10-r5",
+        "cmd:gdk-pixbuf-query-loaders=2.42.10-r5",
+        "cmd:gdk-pixbuf-thumbnailer=2.42.10-r5"
       ]
     },
     "gdk-pixbuf-dbg": {
       "origin": "gdk-pixbuf",
       "versions": {
-        "2.42.10-r4": 1681228881
+        "2.42.10-r4": 1681228881,
+        "2.42.10-r5": 1682447435
       },
       "dependencies": [
         "shared-mime-info"
@@ -13139,10 +13141,11 @@
     "gdk-pixbuf-dev": {
       "origin": "gdk-pixbuf",
       "versions": {
-        "2.42.10-r4": 1681228881
+        "2.42.10-r4": 1681228881,
+        "2.42.10-r5": 1682447435
       },
       "dependencies": [
-        "gdk-pixbuf=2.42.10-r4",
+        "gdk-pixbuf=2.42.10-r5",
         "pc:gio-2.0>=2.56.0",
         "pc:glib-2.0>=2.56.0",
         "pc:gmodule-no-export-2.0>=2.56.0",
@@ -13160,13 +13163,15 @@
     "gdk-pixbuf-doc": {
       "origin": "gdk-pixbuf",
       "versions": {
-        "2.42.10-r4": 1681228881
+        "2.42.10-r4": 1681228881,
+        "2.42.10-r5": 1682447435
       }
     },
     "gdk-pixbuf-lang": {
       "origin": "gdk-pixbuf",
       "versions": {
-        "2.42.10-r4": 1681228881
+        "2.42.10-r4": 1681228881,
+        "2.42.10-r5": 1682447435
       },
       "dependencies": [
         "shared-mime-info"
@@ -20600,12 +20605,14 @@
     "libavif": {
       "origin": "libavif",
       "versions": {
-        "0.11.1-r1": 1681228881
+        "0.11.1-r1": 1681228881,
+        "0.11.1-r2": 1682447435
       },
       "dependencies": [
         "so:libaom.so.3",
         "so:libc.musl-armv7.so.1",
-        "so:libdav1d.so.6"
+        "so:libdav1d.so.6",
+        "so:libsharpyuv.so.0"
       ],
       "provides": [
         "so:libavif.so.15=15.0.1"
@@ -20614,7 +20621,8 @@
     "libavif-apps": {
       "origin": "libavif",
       "versions": {
-        "0.11.1-r1": 1681228881
+        "0.11.1-r1": 1681228881,
+        "0.11.1-r2": 1682447435
       },
       "dependencies": [
         "so:libavif.so.15",
@@ -20623,17 +20631,18 @@
         "so:libpng16.so.16"
       ],
       "provides": [
-        "cmd:avifdec=0.11.1-r1",
-        "cmd:avifenc=0.11.1-r1"
+        "cmd:avifdec=0.11.1-r2",
+        "cmd:avifenc=0.11.1-r2"
       ]
     },
     "libavif-dev": {
       "origin": "libavif",
       "versions": {
-        "0.11.1-r1": 1681228881
+        "0.11.1-r1": 1681228881,
+        "0.11.1-r2": 1682447435
       },
       "dependencies": [
-        "libavif=0.11.1-r1",
+        "libavif=0.11.1-r2",
         "pkgconfig"
       ],
       "provides": [
@@ -61708,6 +61717,28 @@
       "versions": {
         "0.18.0-r0": 1682261945
       }
+    },
+    "gdk-pixbuf-loaders": {
+      "origin": "gdk-pixbuf",
+      "versions": {
+        "2.42.10-r5": 1682447435
+      },
+      "dependencies": [
+        "shared-mime-info"
+      ]
+    },
+    "libavif-pixbuf-loader": {
+      "origin": "libavif",
+      "versions": {
+        "0.11.1-r2": 1682447435
+      },
+      "dependencies": [
+        "so:libavif.so.15",
+        "so:libc.musl-armv7.so.1",
+        "so:libgdk_pixbuf-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0"
+      ]
     }
   },
   "provide": {
