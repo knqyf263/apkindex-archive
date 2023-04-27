@@ -5869,19 +5869,21 @@
     "ckbcomp": {
       "origin": "ckbcomp",
       "versions": {
-        "1.218-r0": 1679186019
+        "1.218-r0": 1679186019,
+        "1.219-r0": 1682566509
       },
       "dependencies": [
         "perl"
       ],
       "provides": [
-        "cmd:ckbcomp=1.218-r0"
+        "cmd:ckbcomp=1.219-r0"
       ]
     },
     "ckbcomp-doc": {
       "origin": "ckbcomp",
       "versions": {
-        "1.218-r0": 1679186019
+        "1.218-r0": 1679186019,
+        "1.219-r0": 1682566509
       }
     },
     "cksfv": {
@@ -18091,28 +18093,31 @@
     "jitterentropy-library": {
       "origin": "jitterentropy-library",
       "versions": {
-        "3.3.1-r2": 1681228881
+        "3.3.1-r2": 1681228881,
+        "3.4.1-r0": 1682564339
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1"
       ],
       "provides": [
-        "so:libjitterentropy.so.3=3.3.1"
+        "so:libjitterentropy.so.3=3.4.1"
       ]
     },
     "jitterentropy-library-dev": {
       "origin": "jitterentropy-library",
       "versions": {
-        "3.3.1-r2": 1681228881
+        "3.3.1-r2": 1681228881,
+        "3.4.1-r0": 1682564339
       },
       "dependencies": [
-        "jitterentropy-library=3.3.1-r2"
+        "jitterentropy-library=3.4.1-r0"
       ]
     },
     "jitterentropy-library-doc": {
       "origin": "jitterentropy-library",
       "versions": {
-        "3.3.1-r2": 1681228881
+        "3.3.1-r2": 1681228881,
+        "3.4.1-r0": 1682564339
       }
     },
     "joe": {
@@ -27344,7 +27349,8 @@
       "origin": "linux-lts",
       "versions": {
         "6.1.24-r1": 1681971416,
-        "6.1.25-r0": 1682005653
+        "6.1.25-r0": 1682005653,
+        "6.1.26-r0": 1682577314
       },
       "dependencies": [
         "initramfs-generator",
@@ -27355,7 +27361,8 @@
       "origin": "linux-lts",
       "versions": {
         "6.1.24-r1": 1681971416,
-        "6.1.25-r0": 1682005653
+        "6.1.25-r0": 1682005653,
+        "6.1.26-r0": 1682577314
       },
       "dependencies": [
         "perl",
@@ -27368,14 +27375,18 @@
         "bison",
         "zstd",
         "so:libc.musl-s390x.so.1",
-        "so:libstdc++.so.6"
+        "so:libcrypto.so.3",
+        "so:libelf.so.1",
+        "so:libstdc++.so.6",
+        "so:libz.so.1"
       ]
     },
     "linux-lts-doc": {
       "origin": "linux-lts",
       "versions": {
         "6.1.24-r1": 1681971416,
-        "6.1.25-r0": 1682005653
+        "6.1.25-r0": 1682005653,
+        "6.1.26-r0": 1682577314
       }
     },
     "linux-pam": {
@@ -50372,32 +50383,39 @@
     "rng-tools": {
       "origin": "rng-tools",
       "versions": {
-        "6.15-r3": 1681228881
+        "6.15-r3": 1681228881,
+        "6.16-r0": 1682564339
       },
       "dependencies": [
+        "/bin/sh",
         "so:libc.musl-s390x.so.1",
+        "so:libcap.so.2",
         "so:libcrypto.so.3",
         "so:libjitterentropy.so.3"
       ],
       "provides": [
-        "cmd:randstat=6.15-r3",
-        "cmd:rngd=6.15-r3",
-        "cmd:rngtest=6.15-r3"
+        "cmd:randstat=6.16-r0",
+        "cmd:rngd=6.16-r0",
+        "cmd:rngtest=6.16-r0"
       ]
     },
     "rng-tools-doc": {
       "origin": "rng-tools",
       "versions": {
-        "6.15-r3": 1681228881
+        "6.15-r3": 1681228881,
+        "6.16-r0": 1682564339
       }
     },
     "rng-tools-extra": {
       "origin": "rng-tools",
       "versions": {
-        "6.15-r3": 1681228881
+        "6.15-r3": 1681228881,
+        "6.16-r0": 1682564339
       },
       "dependencies": [
+        "/bin/sh",
         "so:libc.musl-s390x.so.1",
+        "so:libcap.so.2",
         "so:libcrypto.so.3",
         "so:libcurl.so.4",
         "so:libjansson.so.4",
@@ -50406,20 +50424,22 @@
       ],
       "provides": [
         "rng-tools",
-        "cmd:rngd=6.15-r3",
-        "cmd:rngtest=6.15-r3"
+        "cmd:rngd=6.16-r0",
+        "cmd:rngtest=6.16-r0"
       ]
     },
     "rng-tools-extra-openrc": {
       "origin": "rng-tools",
       "versions": {
-        "6.15-r3": 1681228881
+        "6.15-r3": 1681228881,
+        "6.16-r0": 1682564339
       }
     },
     "rng-tools-openrc": {
       "origin": "rng-tools",
       "versions": {
-        "6.15-r3": 1681228881
+        "6.15-r3": 1681228881,
+        "6.16-r0": 1682564339
       }
     },
     "rp-pppoe": {
@@ -59647,10 +59667,11 @@
       "origin": "xtables-addons-lts",
       "versions": {
         "6.1.24-r1": 1681971632,
-        "6.1.25-r0": 1682005654
+        "6.1.25-r0": 1682005654,
+        "6.1.26-r0": 1682577314
       },
       "dependencies": [
-        "linux-lts=6.1.25-r0"
+        "linux-lts=6.1.26-r0"
       ]
     },
     "xtrans": {
@@ -60079,27 +60100,29 @@
       "origin": "zfs-lts",
       "versions": {
         "6.1.24-r4": 1681971633,
-        "6.1.25-r3": 1682005654
+        "6.1.25-r3": 1682005654,
+        "6.1.26-r3": 1682577314
       },
       "dependencies": [
-        "linux-lts=6.1.25-r0"
+        "linux-lts=6.1.26-r0"
       ],
       "provides": [
-        "spl-vanilla=6.1.25-r3"
+        "spl-vanilla=6.1.26-r3"
       ]
     },
     "zfs-lts-dev": {
       "origin": "zfs-lts",
       "versions": {
         "6.1.24-r4": 1681971633,
-        "6.1.25-r3": 1682005654
+        "6.1.25-r3": 1682005654,
+        "6.1.26-r3": 1682577314
       },
       "dependencies": [
         "glib-dev",
         "e2fsprogs-dev",
         "util-linux-dev",
         "libtirpc-dev",
-        "linux-lts-dev=6.1.25-r0"
+        "linux-lts-dev=6.1.26-r0"
       ]
     },
     "zfs-openrc": {
@@ -61566,7 +61589,7 @@
       },
       "spl-vanilla": {
         "package": "zfs-lts",
-        "version": "6.1.25-r3"
+        "version": "6.1.26-r3"
       }
     },
     "so": {
@@ -63464,7 +63487,7 @@
       },
       "libjitterentropy.so.3": {
         "package": "jitterentropy-library",
-        "version": "3.3.1"
+        "version": "3.4.1"
       },
       "libjq.so.1": {
         "package": "jq",
