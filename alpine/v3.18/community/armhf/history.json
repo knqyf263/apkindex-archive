@@ -81794,7 +81794,8 @@
     "openrazer": {
       "origin": "openrazer",
       "versions": {
-        "3.5.1-r2": 1682158406
+        "3.5.1-r2": 1682158406,
+        "3.6.0-r0": 1682860195
       },
       "dependencies": [
         "py3-daemonize",
@@ -81805,20 +81806,22 @@
         "python3~3.11"
       ],
       "provides": [
-        "cmd:openrazer-daemon=3.5.1-r2",
-        "py3.11:openrazer_daemon=3.5.1-r2"
+        "cmd:openrazer-daemon=3.6.0-r0",
+        "py3.11:openrazer_daemon=3.6.0-r0"
       ]
     },
     "openrazer-doc": {
       "origin": "openrazer",
       "versions": {
-        "3.5.1-r2": 1682158406
+        "3.5.1-r2": 1682158406,
+        "3.6.0-r0": 1682860195
       }
     },
     "openrazer-src": {
       "origin": "openrazer",
       "versions": {
-        "3.5.1-r2": 1682158406
+        "3.5.1-r2": 1682158406,
+        "3.6.0-r0": 1682860195
       },
       "dependencies": [
         "akms"
@@ -106275,21 +106278,23 @@
       "origin": "py3-gast",
       "versions": {
         "0.5.3-r2": 1681982113,
-        "0.5.4-r0": 1682818741
+        "0.5.4-r0": 1682818741,
+        "0.5.3-r3": 1682860748
       },
       "dependencies": [
         "python3",
         "python3~3.11"
       ],
       "provides": [
-        "py3.11:gast=0.5.4-r0"
+        "py3.11:gast=0.5.3-r3"
       ]
     },
     "py3-gast-pyc": {
       "origin": "py3-gast",
       "versions": {
         "0.5.3-r2": 1681982113,
-        "0.5.4-r0": 1682818741
+        "0.5.4-r0": 1682818741,
+        "0.5.3-r3": 1682860748
       },
       "dependencies": [
         "python3",
@@ -113334,20 +113339,22 @@
     "py3-openrazer": {
       "origin": "openrazer",
       "versions": {
-        "3.5.1-r2": 1682158406
+        "3.5.1-r2": 1682158406,
+        "3.6.0-r0": 1682860195
       },
       "dependencies": [
         "py3-numpy",
         "python3~3.11"
       ],
       "provides": [
-        "py3.11:openrazer=3.5.1-r2"
+        "py3.11:openrazer=3.6.0-r0"
       ]
     },
     "py3-openrazer-pyc": {
       "origin": "openrazer",
       "versions": {
-        "3.5.1-r2": 1682158406
+        "3.5.1-r2": 1682158406,
+        "3.6.0-r0": 1682860195
       },
       "dependencies": [
         "py3-daemonize",
@@ -125901,31 +125908,33 @@
     "pythran": {
       "origin": "pythran",
       "versions": {
-        "0.12.1-r1": 1682180958
+        "0.12.1-r1": 1682180958,
+        "0.12.1-r2": 1682860748
       },
       "dependencies": [
         "py3-beniget",
-        "py3-gast",
+        "py3-gast<0.5.4",
         "py3-numpy",
         "py3-ply",
         "python3",
         "python3~3.11"
       ],
       "provides": [
-        "cmd:pythran-config=0.12.1-r1",
-        "cmd:pythran=0.12.1-r1",
-        "py3.11:omp=0.12.1-r1",
-        "py3.11:pythran=0.12.1-r1"
+        "cmd:pythran-config=0.12.1-r2",
+        "cmd:pythran=0.12.1-r2",
+        "py3.11:omp=0.12.1-r2",
+        "py3.11:pythran=0.12.1-r2"
       ]
     },
     "pythran-pyc": {
       "origin": "pythran",
       "versions": {
-        "0.12.1-r1": 1682180958
+        "0.12.1-r1": 1682180958,
+        "0.12.1-r2": 1682860748
       },
       "dependencies": [
         "py3-beniget",
-        "py3-gast",
+        "py3-gast<0.5.4",
         "py3-numpy",
         "py3-ply",
         "python3",
@@ -132645,102 +132654,110 @@
     "raspberrypi-utils": {
       "origin": "raspberrypi-utils",
       "versions": {
-        "0.20230330-r0": 1680563451
+        "0.20230330-r0": 1680563451,
+        "0.20230424-r0": 1682860163
       },
       "dependencies": [
-        "raspberrypi-utils-vclog=0.20230330-r0",
-        "raspberrypi-utils-raspinfo=0.20230330-r0",
-        "raspberrypi-utils-dtmerge=0.20230330-r0",
-        "raspberrypi-utils-ovmerge=0.20230330-r0",
-        "raspberrypi-utils-overlaycheck=0.20230330-r0",
-        "raspberrypi-utils-otpset=0.20230330-r0"
+        "raspberrypi-utils-vclog=0.20230424-r0",
+        "raspberrypi-utils-raspinfo=0.20230424-r0",
+        "raspberrypi-utils-dtmerge=0.20230424-r0",
+        "raspberrypi-utils-ovmerge=0.20230424-r0",
+        "raspberrypi-utils-overlaycheck=0.20230424-r0",
+        "raspberrypi-utils-otpset=0.20230424-r0"
       ]
     },
     "raspberrypi-utils-dtmerge": {
       "origin": "raspberrypi-utils",
       "versions": {
-        "0.20230330-r0": 1680563451
+        "0.20230330-r0": 1680563451,
+        "0.20230424-r0": 1682860163
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libfdt.so.1"
       ],
       "provides": [
-        "cmd:dtmerge=0.20230330-r0"
+        "cmd:dtmerge=0.20230424-r0"
       ]
     },
     "raspberrypi-utils-dtmerge-doc": {
       "origin": "raspberrypi-utils",
       "versions": {
-        "0.20230330-r0": 1680563451
+        "0.20230330-r0": 1680563451,
+        "0.20230424-r0": 1682860163
       }
     },
     "raspberrypi-utils-otpset": {
       "origin": "raspberrypi-utils",
       "versions": {
-        "0.20230330-r0": 1680563451
+        "0.20230330-r0": 1680563451,
+        "0.20230424-r0": 1682860163
       },
       "dependencies": [
         "python3",
         "raspberrypi-userland"
       ],
       "provides": [
-        "cmd:otpset=0.20230330-r0"
+        "cmd:otpset=0.20230424-r0"
       ]
     },
     "raspberrypi-utils-overlaycheck": {
       "origin": "raspberrypi-utils",
       "versions": {
-        "0.20230330-r0": 1680563451
+        "0.20230330-r0": 1680563451,
+        "0.20230424-r0": 1682860163
       },
       "dependencies": [
-        "raspberrypi-utils-dtmerge=0.20230330-r0",
-        "raspberrypi-utils-ovmerge=0.20230330-r0",
+        "raspberrypi-utils-dtmerge=0.20230424-r0",
+        "raspberrypi-utils-ovmerge=0.20230424-r0",
         "dtc",
         "perl"
       ],
       "provides": [
-        "cmd:overlaycheck=0.20230330-r0"
+        "cmd:overlaycheck=0.20230424-r0"
       ]
     },
     "raspberrypi-utils-ovmerge": {
       "origin": "raspberrypi-utils",
       "versions": {
-        "0.20230330-r0": 1680563451
+        "0.20230330-r0": 1680563451,
+        "0.20230424-r0": 1682860163
       },
       "dependencies": [
         "perl"
       ],
       "provides": [
-        "cmd:ovmerge=0.20230330-r0"
+        "cmd:ovmerge=0.20230424-r0"
       ]
     },
     "raspberrypi-utils-raspinfo": {
       "origin": "raspberrypi-utils",
       "versions": {
-        "0.20230330-r0": 1680563451
+        "0.20230330-r0": 1680563451,
+        "0.20230424-r0": 1682860163
       },
       "dependencies": [
-        "raspberrypi-utils-vclog=0.20230330-r0",
+        "raspberrypi-utils-vclog=0.20230424-r0",
         "bash",
         "raspberrypi-userland",
         "sudo-virt",
         "usbutils"
       ],
       "provides": [
-        "cmd:raspinfo=0.20230330-r0"
+        "cmd:raspinfo=0.20230424-r0"
       ]
     },
     "raspberrypi-utils-vclog": {
       "origin": "raspberrypi-utils",
       "versions": {
-        "0.20230330-r0": 1680563451
+        "0.20230330-r0": 1680563451,
+        "0.20230424-r0": 1682860163
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1"
       ],
       "provides": [
-        "cmd:vclog=0.20230330-r0"
+        "cmd:vclog=0.20230424-r0"
       ]
     },
     "rasqal": {
