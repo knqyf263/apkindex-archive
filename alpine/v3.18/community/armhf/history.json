@@ -12684,13 +12684,14 @@
       "origin": "clamav",
       "versions": {
         "1.0.1-r1": 1681263464,
-        "1.0.1-r2": 1682716390
+        "1.0.1-r2": 1682716390,
+        "1.1.0-r0": 1682995255
       },
       "dependencies": [
         "clamav-scanner",
         "clamav-daemon",
         "so:libc.musl-armhf.so.1",
-        "so:libclamav.so.11",
+        "so:libclamav.so.12",
         "so:libcrypto.so.3",
         "so:libcurl.so.4",
         "so:libfts.so.0",
@@ -12699,55 +12700,58 @@
         "so:libssl.so.3"
       ],
       "provides": [
-        "cmd:clamonacc=1.0.1-r2",
-        "cmd:clamsubmit=1.0.1-r2",
-        "cmd:ex_basic_scandesc=1.0.1-r2",
-        "cmd:ex_file_inspection_callback=1.0.1-r2",
-        "cmd:ex_prescan_callback=1.0.1-r2"
+        "cmd:clamonacc=1.1.0-r0",
+        "cmd:clamsubmit=1.1.0-r0",
+        "cmd:ex_basic_scandesc=1.1.0-r0",
+        "cmd:ex_file_inspection_callback=1.1.0-r0",
+        "cmd:ex_prescan_callback=1.1.0-r0"
       ]
     },
     "clamav-clamdscan": {
       "origin": "clamav",
       "versions": {
         "1.0.1-r1": 1681263464,
-        "1.0.1-r2": 1682716390
+        "1.0.1-r2": 1682716390,
+        "1.1.0-r0": 1682995255
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
-        "so:libclamav.so.11",
+        "so:libclamav.so.12",
         "so:libgcc_s.so.1"
       ],
       "provides": [
-        "cmd:clamdscan=1.0.1-r2"
+        "cmd:clamdscan=1.1.0-r0"
       ]
     },
     "clamav-daemon": {
       "origin": "clamav",
       "versions": {
         "1.0.1-r1": 1681263464,
-        "1.0.1-r2": 1682716390
+        "1.0.1-r2": 1682716390,
+        "1.1.0-r0": 1682995255
       },
       "dependencies": [
         "freshclam",
         "clamav-clamdscan",
         "/bin/sh",
         "so:libc.musl-armhf.so.1",
-        "so:libclamav.so.11",
+        "so:libclamav.so.12",
         "so:libgcc_s.so.1",
         "so:libncursesw.so.6",
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:clamconf=1.0.1-r2",
-        "cmd:clamd=1.0.1-r2",
-        "cmd:clamdtop=1.0.1-r2"
+        "cmd:clamconf=1.1.0-r0",
+        "cmd:clamd=1.1.0-r0",
+        "cmd:clamdtop=1.1.0-r0"
       ]
     },
     "clamav-daemon-openrc": {
       "origin": "clamav",
       "versions": {
         "1.0.1-r1": 1681263464,
-        "1.0.1-r2": 1682716390
+        "1.0.1-r2": 1682716390,
+        "1.1.0-r0": 1682995255
       },
       "dependencies": [
         "freshclam-openrc"
@@ -12757,7 +12761,8 @@
       "origin": "clamav",
       "versions": {
         "1.0.1-r1": 1681263464,
-        "1.0.1-r2": 1682716390
+        "1.0.1-r2": 1682716390,
+        "1.1.0-r0": 1682995255
       },
       "dependencies": [
         "freshclam"
@@ -12767,31 +12772,34 @@
       "origin": "clamav",
       "versions": {
         "1.0.1-r1": 1681263464,
-        "1.0.1-r2": 1682716390
+        "1.0.1-r2": 1682716390,
+        "1.1.0-r0": 1682995255
       },
       "dependencies": [
         "openssl-dev>3",
-        "clamav-libs=1.0.1-r2",
-        "clamav-libunrar=1.0.1-r2",
+        "clamav-libs=1.1.0-r0",
+        "clamav-libunrar=1.1.0-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libclamav=1.0.1",
-        "cmd:clamav-config=1.0.1-r2"
+        "pc:libclamav=1.1.0",
+        "cmd:clamav-config=1.1.0-r0"
       ]
     },
     "clamav-doc": {
       "origin": "clamav",
       "versions": {
         "1.0.1-r1": 1681263464,
-        "1.0.1-r2": 1682716390
+        "1.0.1-r2": 1682716390,
+        "1.1.0-r0": 1682995255
       }
     },
     "clamav-libs": {
       "origin": "clamav",
       "versions": {
         "1.0.1-r1": 1681263464,
-        "1.0.1-r2": 1682716390
+        "1.0.1-r2": 1682716390,
+        "1.1.0-r0": 1682995255
       },
       "dependencies": [
         "so:libbz2.so.1",
@@ -12807,15 +12815,16 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "so:libclamav.so.11=11.0.0",
-        "so:libfreshclam.so.2=2.0.2"
+        "so:libclamav.so.12=12.0.0",
+        "so:libfreshclam.so.3=3.0.0"
       ]
     },
     "clamav-libunrar": {
       "origin": "clamav",
       "versions": {
         "1.0.1-r1": 1681263464,
-        "1.0.1-r2": 1682716390
+        "1.0.1-r2": 1682716390,
+        "1.1.0-r0": 1682995255
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -12823,43 +12832,45 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libclamunrar.so.11=11.0.0",
-        "so:libclamunrar_iface.so.11=11.0.0"
+        "so:libclamunrar.so.12=12.0.0",
+        "so:libclamunrar_iface.so.12=12.0.0"
       ]
     },
     "clamav-milter": {
       "origin": "clamav",
       "versions": {
         "1.0.1-r1": 1681263464,
-        "1.0.1-r2": 1682716390
+        "1.0.1-r2": 1682716390,
+        "1.1.0-r0": 1682995255
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
-        "so:libclamav.so.11",
+        "so:libclamav.so.12",
         "so:libgcc_s.so.1",
         "so:libmilter.so.1.0.2"
       ],
       "provides": [
-        "cmd:clamav-milter=1.0.1-r2"
+        "cmd:clamav-milter=1.1.0-r0"
       ]
     },
     "clamav-scanner": {
       "origin": "clamav",
       "versions": {
         "1.0.1-r1": 1681263464,
-        "1.0.1-r2": 1682716390
+        "1.0.1-r2": 1682716390,
+        "1.1.0-r0": 1682995255
       },
       "dependencies": [
         "freshclam",
         "so:libc.musl-armhf.so.1",
-        "so:libclamav.so.11",
+        "so:libclamav.so.12",
         "so:libgcc_s.so.1",
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:clambc=1.0.1-r2",
-        "cmd:clamscan=1.0.1-r2",
-        "cmd:sigtool=1.0.1-r2"
+        "cmd:clambc=1.1.0-r0",
+        "cmd:clamscan=1.1.0-r0",
+        "cmd:sigtool=1.1.0-r0"
       ]
     },
     "clamsmtp": {
@@ -20479,7 +20490,8 @@
     "easyeffects": {
       "origin": "easyeffects",
       "versions": {
-        "7.0.3-r1": 1681263464
+        "7.0.3-r1": 1681263464,
+        "7.0.4-r0": 1682994402
       },
       "dependencies": [
         "lv2",
@@ -20514,19 +20526,21 @@
         "so:libzita-convolver.so.4"
       ],
       "provides": [
-        "cmd:easyeffects=7.0.3-r1"
+        "cmd:easyeffects=7.0.4-r0"
       ]
     },
     "easyeffects-doc": {
       "origin": "easyeffects",
       "versions": {
-        "7.0.3-r1": 1681263464
+        "7.0.3-r1": 1681263464,
+        "7.0.4-r0": 1682994402
       }
     },
     "easyeffects-lang": {
       "origin": "easyeffects",
       "versions": {
-        "7.0.3-r1": 1681263464
+        "7.0.3-r1": 1681263464,
+        "7.0.4-r0": 1682994402
       },
       "dependencies": [
         "lv2"
@@ -23617,27 +23631,29 @@
     "faudio": {
       "origin": "faudio",
       "versions": {
-        "23.04-r1": 1681263464
+        "23.04-r1": 1681263464,
+        "23.05-r0": 1682994780
       },
       "dependencies": [
         "so:libSDL2-2.0.so.0",
         "so:libc.musl-armhf.so.1"
       ],
       "provides": [
-        "so:libFAudio.so.0=0.23.04"
+        "so:libFAudio.so.0=0.23.05"
       ]
     },
     "faudio-dev": {
       "origin": "faudio",
       "versions": {
-        "23.04-r1": 1681263464
+        "23.04-r1": 1681263464,
+        "23.05-r0": 1682994780
       },
       "dependencies": [
-        "faudio=23.04-r1",
+        "faudio=23.05-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:FAudio=0.23.04"
+        "pc:FAudio=0.23.05"
       ]
     },
     "fbgrab": {
@@ -28638,23 +28654,25 @@
       "origin": "clamav",
       "versions": {
         "1.0.1-r1": 1681263464,
-        "1.0.1-r2": 1682716390
+        "1.0.1-r2": 1682716390,
+        "1.1.0-r0": 1682995255
       },
       "dependencies": [
         "/bin/sh",
         "so:libc.musl-armhf.so.1",
-        "so:libclamav.so.11",
-        "so:libfreshclam.so.2"
+        "so:libclamav.so.12",
+        "so:libfreshclam.so.3"
       ],
       "provides": [
-        "cmd:freshclam=1.0.1-r2"
+        "cmd:freshclam=1.1.0-r0"
       ]
     },
     "freshclam-openrc": {
       "origin": "clamav",
       "versions": {
         "1.0.1-r1": 1681263464,
-        "1.0.1-r2": 1682716390
+        "1.0.1-r2": 1682716390,
+        "1.1.0-r0": 1682995255
       }
     },
     "frog": {
@@ -54051,7 +54069,8 @@
     "libimagequant": {
       "origin": "libimagequant",
       "versions": {
-        "4.1.1-r0": 1681648010
+        "4.1.1-r0": 1681648010,
+        "4.2.0-r0": 1682994693
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -54064,11 +54083,12 @@
     "libimagequant-dev": {
       "origin": "libimagequant",
       "versions": {
-        "4.1.1-r0": 1681648010
+        "4.1.1-r0": 1681648010,
+        "4.2.0-r0": 1682994693
       },
       "dependencies": [
-        "libimagequant=4.1.1-r0",
-        "libimagequant=4.1.1-r0",
+        "libimagequant=4.2.0-r0",
+        "libimagequant=4.2.0-r0",
         "pkgconfig"
       ],
       "provides": [
@@ -125654,7 +125674,8 @@
       "origin": "py3-zeroconf",
       "versions": {
         "0.58.0-r0": 1682314172,
-        "0.58.2-r0": 1682566121
+        "0.58.2-r0": 1682566121,
+        "0.60.0-r0": 1682994473
       },
       "dependencies": [
         "python3",
@@ -125663,15 +125684,16 @@
         "so:libc.musl-armhf.so.1"
       ],
       "provides": [
-        "py-zeroconf=0.58.2-r0",
-        "py3.11:zeroconf=0.58.2-r0"
+        "py-zeroconf=0.60.0-r0",
+        "py3.11:zeroconf=0.60.0-r0"
       ]
     },
     "py3-zeroconf-pyc": {
       "origin": "py3-zeroconf",
       "versions": {
         "0.58.0-r0": 1682314172,
-        "0.58.2-r0": 1682566121
+        "0.58.2-r0": 1682566121,
+        "0.60.0-r0": 1682994473
       },
       "dependencies": [
         "python3",
@@ -166535,7 +166557,7 @@
       },
       "libFAudio.so.0": {
         "package": "faudio",
-        "version": "0.23.04"
+        "version": "0.23.05"
       },
       "libfcft.so.4": {
         "package": "fcft",
@@ -176308,6 +176330,22 @@
       "libhdf5hl_fortran.so.310": {
         "package": "hdf5-hl-fortran",
         "version": "310.0.0"
+      },
+      "libclamav.so.12": {
+        "package": "clamav-libs",
+        "version": "12.0.0"
+      },
+      "libfreshclam.so.3": {
+        "package": "clamav-libs",
+        "version": "3.0.0"
+      },
+      "libclamunrar.so.12": {
+        "package": "clamav-libunrar",
+        "version": "12.0.0"
+      },
+      "libclamunrar_iface.so.12": {
+        "package": "clamav-libunrar",
+        "version": "12.0.0"
       }
     },
     "package": {
@@ -178425,7 +178463,7 @@
       },
       "py-zeroconf": {
         "package": "py3-zeroconf",
-        "version": "0.58.2-r0"
+        "version": "0.60.0-r0"
       },
       "py-zipp": {
         "package": "py3-zipp",
