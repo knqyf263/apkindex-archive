@@ -2770,7 +2770,8 @@
     "adw-gtk3": {
       "origin": "adw-gtk3",
       "versions": {
-        "4.5-r0": 1680563675
+        "4.5-r0": 1680563675,
+        "4.6-r0": 1683105540
       }
     },
     "adwaita-icon-theme": {
@@ -4153,7 +4154,8 @@
     "apache-arrow": {
       "origin": "apache-arrow",
       "versions": {
-        "11.0.0-r11": 1681548933
+        "11.0.0-r11": 1681548933,
+        "12.0.0-r0": 1683105585
       },
       "dependencies": [
         "so:libabsl_synchronization.so.2301.0.0",
@@ -4178,51 +4180,43 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "so:libarrow.so.1100=1100.0.0",
-        "so:libarrow_dataset.so.1100=1100.0.0",
-        "so:libarrow_flight.so.1100=1100.0.0",
-        "so:libparquet.so.1100=1100.0.0",
-        "so:libplasma.so.1100=1100.0.0"
+        "so:libarrow.so.1200=1200.0.0",
+        "so:libarrow_acero.so.1200=1200.0.0",
+        "so:libarrow_dataset.so.1200=1200.0.0",
+        "so:libarrow_flight.so.1200=1200.0.0",
+        "so:libparquet.so.1200=1200.0.0"
       ]
     },
     "apache-arrow-dev": {
       "origin": "apache-arrow",
       "versions": {
-        "11.0.0-r11": 1681548933
+        "11.0.0-r11": 1681548933,
+        "12.0.0-r0": 1683105585
       },
       "dependencies": [
-        "apache-arrow=11.0.0-r11",
-        "pc:grpc++",
-        "pc:libbrotlidec",
-        "pc:libbrotlienc",
-        "pc:libglog",
-        "pc:liblz4",
-        "pc:libutf8proc",
-        "pc:libzstd",
-        "pc:protobuf",
-        "pc:thrift",
-        "pc:zlib",
+        "apache-arrow=12.0.0-r0",
         "pkgconfig",
         "python3~3.11"
       ],
       "provides": [
-        "pc:arrow-compute=11.0.0",
-        "pc:arrow-csv=11.0.0",
-        "pc:arrow-dataset=11.0.0",
-        "pc:arrow-filesystem=11.0.0",
-        "pc:arrow-flight=11.0.0",
-        "pc:arrow-json=11.0.0",
-        "pc:arrow-orc=11.0.0",
-        "pc:arrow-tensorflow=11.0.0",
-        "pc:arrow=11.0.0",
-        "pc:parquet=11.0.0",
-        "pc:plasma=11.0.0"
+        "pc:arrow-acero=12.0.0",
+        "pc:arrow-compute=12.0.0",
+        "pc:arrow-csv=12.0.0",
+        "pc:arrow-dataset=12.0.0",
+        "pc:arrow-filesystem=12.0.0",
+        "pc:arrow-flight=12.0.0",
+        "pc:arrow-json=12.0.0",
+        "pc:arrow-orc=12.0.0",
+        "pc:arrow-tensorflow=12.0.0",
+        "pc:arrow=12.0.0",
+        "pc:parquet=12.0.0"
       ]
     },
     "apache-arrow-doc": {
       "origin": "apache-arrow",
       "versions": {
-        "11.0.0-r11": 1681548933
+        "11.0.0-r11": 1681548933,
+        "12.0.0-r0": 1683105585
       }
     },
     "apache-arrow-tools": {
@@ -18155,16 +18149,17 @@
       "versions": {
         "0.12.0-r2": 1681263464,
         "0.12.2-r0": 1683039879,
-        "0.12.2-r1": 1683048454
+        "0.12.2-r1": 1683048454,
+        "0.12.3-r0": 1683105417
       },
       "dependencies": [
         "/bin/sh",
         "so:libc.musl-armhf.so.1"
       ],
       "provides": [
-        "cmd:dendrite-create-account=0.12.2-r1",
-        "cmd:dendrite-generate-keys=0.12.2-r1",
-        "cmd:dendrite=0.12.2-r1"
+        "cmd:dendrite-create-account=0.12.3-r0",
+        "cmd:dendrite-generate-keys=0.12.3-r0",
+        "cmd:dendrite=0.12.3-r0"
       ]
     },
     "dendrite-openrc": {
@@ -18172,7 +18167,8 @@
       "versions": {
         "0.12.0-r2": 1681263464,
         "0.12.2-r0": 1683039879,
-        "0.12.2-r1": 1683048454
+        "0.12.2-r1": 1683048454,
+        "0.12.3-r0": 1683105417
       }
     },
     "desktop-file-utils": {
@@ -45072,35 +45068,38 @@
     "jasper": {
       "origin": "jasper",
       "versions": {
-        "3.0.6-r0": 1668699494
+        "3.0.6-r0": 1668699494,
+        "4.0.0-r0": 1683106447
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1"
       ],
       "provides": [
-        "so:libjasper.so.6=6.0.0",
-        "cmd:imgcmp=3.0.6-r0",
-        "cmd:imginfo=3.0.6-r0",
-        "cmd:jasper=3.0.6-r0"
+        "so:libjasper.so.7=7.0.0",
+        "cmd:imgcmp=4.0.0-r0",
+        "cmd:imginfo=4.0.0-r0",
+        "cmd:jasper=4.0.0-r0"
       ]
     },
     "jasper-dev": {
       "origin": "jasper",
       "versions": {
-        "3.0.6-r0": 1668699494
+        "3.0.6-r0": 1668699494,
+        "4.0.0-r0": 1683106447
       },
       "dependencies": [
-        "jasper=3.0.6-r0",
+        "jasper=4.0.0-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:jasper=3.0.6"
+        "pc:jasper=4.0.0"
       ]
     },
     "jasper-doc": {
       "origin": "jasper",
       "versions": {
-        "3.0.6-r0": 1668699494
+        "3.0.6-r0": 1668699494,
+        "4.0.0-r0": 1683106447
       }
     },
     "jattach": {
@@ -48155,7 +48154,8 @@
       "versions": {
         "0.37.0-r4": 1680747537,
         "0.38.1-r0": 1683040637,
-        "0.38.1-r1": 1683048454
+        "0.38.1-r1": 1683048454,
+        "0.38.2-r0": 1683105519
       },
       "dependencies": [
         "ncurses",
@@ -48163,7 +48163,7 @@
         "so:libc.musl-armhf.so.1"
       ],
       "provides": [
-        "cmd:lazygit=0.38.1-r1"
+        "cmd:lazygit=0.38.2-r0"
       ]
     },
     "lazygit-doc": {
@@ -48171,7 +48171,8 @@
       "versions": {
         "0.37.0-r4": 1680747537,
         "0.38.1-r0": 1683040637,
-        "0.38.1-r1": 1683048454
+        "0.38.1-r1": 1683048454,
+        "0.38.2-r0": 1683105519
       }
     },
     "lbreakout2": {
@@ -96535,7 +96536,8 @@
       "versions": {
         "11.2.0-r1": 1681983816,
         "11.2.1-r0": 1682441737,
-        "11.2.1-r1": 1682716390
+        "11.2.1-r1": 1682716390,
+        "11.3.0-r0": 1683105192
       },
       "dependencies": [
         "postgresql15",
@@ -96553,10 +96555,11 @@
       "versions": {
         "11.2.0-r1": 1681983816,
         "11.2.1-r0": 1682441737,
-        "11.2.1-r1": 1682716390
+        "11.2.1-r1": 1682716390,
+        "11.3.0-r0": 1683105192
       },
       "dependencies": [
-        "postgresql-citus=11.2.1-r1"
+        "postgresql-citus=11.3.0-r0"
       ]
     },
     "postgresql-citus-dev": {
@@ -96564,7 +96567,8 @@
       "versions": {
         "11.2.0-r1": 1681983816,
         "11.2.1-r0": 1682441737,
-        "11.2.1-r1": 1682716390
+        "11.2.1-r1": 1682716390,
+        "11.3.0-r0": 1683105192
       }
     },
     "postgresql-hypopg": {
@@ -116738,22 +116742,22 @@
     "py3-pyarrow": {
       "origin": "apache-arrow",
       "versions": {
-        "11.0.0-r11": 1681548933
+        "11.0.0-r11": 1681548933,
+        "12.0.0-r0": 1683105585
       },
       "dependencies": [
         "python3",
         "py3-cffi",
         "py3-numpy",
         "python3~3.11",
-        "so:libarrow.so.1100",
+        "so:libarrow.so.1200",
         "so:libc.musl-armhf.so.1",
         "so:libgcc_s.so.1",
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "py3-apache-arrow=11.0.0-r11",
-        "cmd:plasma_store=11.0.0-r11",
-        "py3.11:pyarrow=11.0.0-r11"
+        "py3-apache-arrow=12.0.0-r0",
+        "py3.11:pyarrow=12.0.0-r0"
       ]
     },
     "py3-pyaudio": {
@@ -177211,6 +177215,30 @@
       "libzerovec_derive-27d5d2dc428d0058.so": {
         "package": "rust",
         "version": "0"
+      },
+      "libarrow.so.1200": {
+        "package": "apache-arrow",
+        "version": "1200.0.0"
+      },
+      "libarrow_acero.so.1200": {
+        "package": "apache-arrow",
+        "version": "1200.0.0"
+      },
+      "libarrow_dataset.so.1200": {
+        "package": "apache-arrow",
+        "version": "1200.0.0"
+      },
+      "libarrow_flight.so.1200": {
+        "package": "apache-arrow",
+        "version": "1200.0.0"
+      },
+      "libparquet.so.1200": {
+        "package": "apache-arrow",
+        "version": "1200.0.0"
+      },
+      "libjasper.so.7": {
+        "package": "jasper",
+        "version": "7.0.0"
       }
     },
     "package": {
@@ -178880,7 +178908,7 @@
       },
       "py3-apache-arrow": {
         "package": "py3-pyarrow",
-        "version": "11.0.0-r11"
+        "version": "12.0.0-r0"
       },
       "py-pybind11": {
         "package": "py3-pybind11",
