@@ -5555,7 +5555,8 @@
     "ca-certificates": {
       "origin": "ca-certificates",
       "versions": {
-        "20230106-r1": 1681228881
+        "20230106-r1": 1681228881,
+        "20230506-r0": 1683374901
       },
       "dependencies": [
         "/bin/sh",
@@ -5563,23 +5564,25 @@
         "so:libcrypto.so.3"
       ],
       "provides": [
-        "cmd:c_rehash=20230106-r1",
-        "cmd:update-ca-certificates=20230106-r1"
+        "cmd:c_rehash=20230506-r0",
+        "cmd:update-ca-certificates=20230506-r0"
       ]
     },
     "ca-certificates-bundle": {
       "origin": "ca-certificates",
       "versions": {
-        "20230106-r1": 1681228881
+        "20230106-r1": 1681228881,
+        "20230506-r0": 1683374901
       },
       "provides": [
-        "ca-certificates-cacert=20230106-r1"
+        "ca-certificates-cacert=20230506-r0"
       ]
     },
     "ca-certificates-doc": {
       "origin": "ca-certificates",
       "versions": {
-        "20230106-r1": 1681228881
+        "20230106-r1": 1681228881,
+        "20230506-r0": 1683374901
       }
     },
     "cairo": {
@@ -37016,58 +37019,64 @@
     "nfdump": {
       "origin": "nfdump",
       "versions": {
-        "1.7.1-r0": 1681609622
+        "1.7.1-r0": 1681609622,
+        "1.7.2-r0": 1683373746
       },
       "dependencies": [
         "so:libbz2.so.1",
         "so:libc.musl-armv7.so.1"
       ],
       "provides": [
-        "so:libnfdump-1.7.1.so=0",
-        "cmd:nfanon=1.7.1-r0",
-        "cmd:nfcapd=1.7.1-r0",
-        "cmd:nfdump=1.7.1-r0",
-        "cmd:nfexpire=1.7.1-r0",
-        "cmd:nfreplay=1.7.1-r0"
+        "so:libnfdump-1.7.2.so=0",
+        "cmd:nfanon=1.7.2-r0",
+        "cmd:nfcapd=1.7.2-r0",
+        "cmd:nfdump=1.7.2-r0",
+        "cmd:nfexpire=1.7.2-r0",
+        "cmd:nfreplay=1.7.2-r0"
       ]
     },
     "nfdump-dbg": {
       "origin": "nfdump",
       "versions": {
-        "1.7.1-r0": 1681609622
+        "1.7.1-r0": 1681609622,
+        "1.7.2-r0": 1683373746
       }
     },
     "nfdump-doc": {
       "origin": "nfdump",
       "versions": {
-        "1.7.1-r0": 1681609622
+        "1.7.1-r0": 1681609622,
+        "1.7.2-r0": 1683373746
       }
     },
     "nfdump-openrc": {
       "origin": "nfdump",
       "versions": {
-        "1.7.1-r0": 1681609622
+        "1.7.1-r0": 1681609622,
+        "1.7.2-r0": 1683373746
       }
     },
     "nfdump-static": {
       "origin": "nfdump",
       "versions": {
-        "1.7.1-r0": 1681609622
+        "1.7.1-r0": 1681609622,
+        "1.7.2-r0": 1683373746
       }
     },
     "nfprofile": {
       "origin": "nfdump",
       "versions": {
-        "1.7.1-r0": 1681609622
+        "1.7.1-r0": 1681609622,
+        "1.7.2-r0": 1683373746
       },
       "dependencies": [
-        "nfdump",
+        "nfdump=1.7.2-r0",
         "so:libc.musl-armv7.so.1",
-        "so:libnfdump-1.7.1.so",
+        "so:libnfdump-1.7.2.so",
         "so:librrd.so.8"
       ],
       "provides": [
-        "cmd:nfprofile=1.7.1-r0"
+        "cmd:nfprofile=1.7.2-r0"
       ]
     },
     "nfs-utils": {
@@ -46409,7 +46418,8 @@
     "perl-uri": {
       "origin": "perl-uri",
       "versions": {
-        "5.17-r0": 1667441773
+        "5.17-r0": 1667441773,
+        "5.19-r0": 1683373816
       },
       "dependencies": [
         "perl"
@@ -46418,7 +46428,8 @@
     "perl-uri-doc": {
       "origin": "perl-uri",
       "versions": {
-        "5.17-r0": 1667441773
+        "5.17-r0": 1667441773,
+        "5.19-r0": 1683373816
       }
     },
     "perl-utils": {
@@ -55327,20 +55338,22 @@
     "sfcapd": {
       "origin": "nfdump",
       "versions": {
-        "1.7.1-r0": 1681609622
+        "1.7.1-r0": 1681609622,
+        "1.7.2-r0": 1683373746
       },
       "dependencies": [
         "so:libc.musl-armv7.so.1",
-        "so:libnfdump-1.7.1.so"
+        "so:libnfdump-1.7.2.so"
       ],
       "provides": [
-        "cmd:sfcapd=1.7.1-r0"
+        "cmd:sfcapd=1.7.2-r0"
       ]
     },
     "sfcapd-openrc": {
       "origin": "nfdump",
       "versions": {
-        "1.7.1-r0": 1681609622
+        "1.7.1-r0": 1681609622,
+        "1.7.2-r0": 1683373746
       }
     },
     "sfdisk": {
@@ -63225,7 +63238,7 @@
       },
       "ca-certificates-cacert": {
         "package": "ca-certificates-bundle",
-        "version": "20230106-r1"
+        "version": "20230506-r0"
       },
       "clang": {
         "package": "clang16",
@@ -69808,6 +69821,10 @@
       "libpoppler.so.128": {
         "package": "poppler",
         "version": "128.0.0"
+      },
+      "libnfdump-1.7.2.so": {
+        "package": "nfdump",
+        "version": "0"
       }
     }
   }
