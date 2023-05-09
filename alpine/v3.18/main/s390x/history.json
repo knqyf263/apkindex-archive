@@ -21518,7 +21518,8 @@
     "libdrm": {
       "origin": "libdrm",
       "versions": {
-        "2.4.115-r1": 1681228881
+        "2.4.115-r1": 1681228881,
+        "2.4.115-r3": 1683602920
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1"
@@ -21538,11 +21539,12 @@
     "libdrm-dev": {
       "origin": "libdrm",
       "versions": {
-        "2.4.115-r1": 1681228881
+        "2.4.115-r1": 1681228881,
+        "2.4.115-r3": 1683602920
       },
       "dependencies": [
         "linux-headers",
-        "libdrm=2.4.115-r1",
+        "libdrm=2.4.115-r3",
         "pkgconfig"
       ],
       "provides": [
@@ -61921,6 +61923,41 @@
         "tiny-cloud=3.0.0_rc1-r4",
         "/bin/sh",
         "tiny-cloud-nocloud=3.0.0_rc1-r4"
+      ]
+    },
+    "libdrm-tests": {
+      "origin": "libdrm",
+      "versions": {
+        "2.4.115-r3": 1683602920
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1",
+        "so:libdrm.so.2",
+        "so:libdrm_amdgpu.so.1",
+        "so:libdrm_etnaviv.so.1",
+        "so:libdrm_exynos.so.1",
+        "so:libdrm_tegra.so.0"
+      ],
+      "provides": [
+        "cmd:amdgpu_stress=2.4.115-r3",
+        "cmd:drmdevice=2.4.115-r3",
+        "cmd:etnaviv_2d_test=2.4.115-r3",
+        "cmd:etnaviv_bo_cache_test=2.4.115-r3",
+        "cmd:etnaviv_cmd_stream_test=2.4.115-r3",
+        "cmd:exynos_fimg2d_event=2.4.115-r3",
+        "cmd:exynos_fimg2d_perf=2.4.115-r3",
+        "cmd:exynos_fimg2d_test=2.4.115-r3",
+        "cmd:modeprint=2.4.115-r3",
+        "cmd:modetest=2.4.115-r3",
+        "cmd:proptest=2.4.115-r3",
+        "cmd:tegra-gr2d-fill=2.4.115-r3",
+        "cmd:tegra-openclose=2.4.115-r3",
+        "cmd:tegra-syncpt-timeout=2.4.115-r3",
+        "cmd:tegra-syncpt-wait=2.4.115-r3",
+        "cmd:tegra-vic-blit=2.4.115-r3",
+        "cmd:tegra-vic-clear=2.4.115-r3",
+        "cmd:tegra-vic-flip=2.4.115-r3",
+        "cmd:vbltest=2.4.115-r3"
       ]
     }
   },
