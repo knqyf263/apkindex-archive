@@ -1637,6 +1637,22 @@ t:1630780508
 c:a3739a07d478bc4f1f6e0c17612a1c83dffa9ecd
 D:perl perl-error perl-net-dns perl-uri perl-netaddr-ip perl-net-dns-resolver-programmable
 
+C:Q1lPP2F/EADW5WkNrqIRpipfLNmNg=
+P:mariadb-server-utils
+V:10.6.13-r0
+A:armhf
+S:2448017
+I:10502144
+T:Non-essential server utilities for MariaDB/MySQL applications
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1683861708
+c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
+D:perl mariadb-common=10.6.13-r0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:cmd:mariadb-convert-table-format=10.6.13-r0 cmd:mariadb-hotcopy=10.6.13-r0 cmd:mariadb-setpermission=10.6.13-r0 cmd:mariadb-upgrade=10.6.13-r0 cmd:mariadbd-multi=10.6.13-r0 cmd:mariadbd-safe-helper=10.6.13-r0 cmd:mysql_convert_table_format=10.6.13-r0 cmd:mysql_setpermission=10.6.13-r0 cmd:mysql_upgrade=10.6.13-r0 cmd:mysqld_multi=10.6.13-r0 cmd:mysqld_safe_helper=10.6.13-r0 cmd:mysqlhotcopy=10.6.13-r0 cmd:perror=10.6.13-r0
+
 C:Q1DCr0KJ1ks2WWSPJNCcHTCJGVXWU=
 P:perl-test-warn-doc
 V:0.37-r0
@@ -2345,6 +2361,23 @@ c:7ef5759924d035db4893befd7a383d647009f5d6
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libprotobuf.so.32 so:libprotoc.so.32 so:libstdc++.so.6
 p:cmd:protoc-c=1.4.1-r1 cmd:protoc-gen-c=1.4.1-r1
 
+C:Q1RWv0HEJJMLLhTi13J+jka579On0=
+P:libpq
+V:15.3-r0
+A:armhf
+S:124823
+I:344064
+T:PostgreSQL client library
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql15
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831032
+c:8f940e4f2308f6f432a8680a79156a6f5040857d
+k:15
+D:so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libssl.so.3
+p:so:libpq.so.5=5.15
+
 C:Q1Rf2Kdjx457LcGdqI54PMa4aMjYY=
 P:acf-lib
 V:0.11.0-r2
@@ -2880,23 +2913,6 @@ t:1666619912
 c:5486cbe86fb9ef78960c3c3b3275dd60a159504a
 D:so:libc.musl-armhf.so.1 so:libidn2.so.0 so:libunistring.so.5
 p:cmd:idn2=2.3.4-r0
-
-C:Q1/oU5BwUWfPw1HL60TiAihz5EuvM=
-P:postgresql15-plpython3
-V:15.2-r0
-A:armhf
-S:45362
-I:172032
-T:PL/Python3 procedural language for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql15
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040883
-c:d813170f45ebf6b6a884f54003e85cccfe3a0166
-k:15
-D:postgresql15=15.2-r0 python3 so:libc.musl-armhf.so.1 so:libpython3.10.so.1.0
-p:postgresql-plpython3
 
 C:Q1ILbou8stK95Ub39q4dAiH/YcCJE=
 P:uwsgi-router_http
@@ -3804,22 +3820,6 @@ t:1664676809
 c:9466b6a53411ddfd4a9d8a785e29feb1bce1f824
 i:docs links=2.28-r0
 
-C:Q1Pnjtae8svNR4Lrcm7PQI/kBoX3c=
-P:nodejs-doc
-V:18.14.2-r0
-A:armhf
-S:14658
-I:53248
-T:JavaScript runtime built on V8 engine - LTS version (documentation)
-U:https://nodejs.org/
-L:MIT
-o:nodejs
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1677212426
-c:680c2e279b7e926bfe84e7b90e818c7bb11f33fb
-k:100
-i:docs nodejs=18.14.2-r0
-
 C:Q1xIHye8Z4zqoxOMTujiGPeyvoxhs=
 P:xtables-addons-doc
 V:3.22-r0
@@ -4080,24 +4080,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1667998723
 c:40ae2e500da1eedc4aa2de12ae5082c33eb4fdc5
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libperl.so so:libstdc++.so.6
-
-C:Q1Ocw8BT8XNHRp9qhiclghPBNAzW8=
-P:postgresql14-contrib-jit
-V:14.7-r0
-A:armhf
-S:1611271
-I:3604480
-T:Extension modules distributed with PostgreSQL (JIT support)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040850
-c:73074efc701b915ea8aa19f6c70af0ce1b2547d9
-k:14
-D:postgresql14-contrib=14.7-r0
-p:postgresql-contrib-jit
-i:postgresql14-jit postgresql14-contrib=14.7-r0
 
 C:Q1S2n9PMP2WtA572YZpuogH/iHLUk=
 P:logrotate-doc
@@ -4769,23 +4751,6 @@ c:d34ee2545766582f86b0904420acea80d1f52283
 D:so:libc.musl-armhf.so.1
 p:so:liburcu-bp.so.8=8.0.0 so:liburcu-cds.so.8=8.0.0 so:liburcu-common.so.8=8.0.0 so:liburcu-mb.so.8=8.0.0 so:liburcu-memb.so.8=8.0.0 so:liburcu-qsbr.so.8=8.0.0 so:liburcu-signal.so.8=8.0.0 so:liburcu.so.8=8.0.0
 
-C:Q1FcCRd24QFEICfRt43tiLjP7GdRc=
-P:postgresql14-client
-V:14.7-r0
-A:armhf
-S:1058754
-I:2912256
-T:PostgreSQL client
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040850
-c:73074efc701b915ea8aa19f6c70af0ce1b2547d9
-k:14
-D:postgresql-common so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libpq.so.5 so:libreadline.so.8 so:libz.so.1
-p:postgresql-client cmd:clusterdb cmd:createdb cmd:createuser cmd:dropdb cmd:dropuser cmd:pg_amcheck cmd:pg_basebackup cmd:pg_dump cmd:pg_dumpall cmd:pg_isready cmd:pg_receivewal cmd:pg_recvlogical cmd:pg_restore cmd:pg_verifybackup cmd:pgbench cmd:psql cmd:reindexdb cmd:vacuumdb
-
 C:Q1qHFdWww7ABlRg2AaMmP3evgHmLM=
 P:patch-doc
 V:2.7.6-r9
@@ -4986,21 +4951,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1656180908
 c:84549a9a07a9010f87cb9b43900a29dd4706c2eb
 p:cmd:resolvconf=3.12.0-r1
-
-C:Q1wOGKBDnMkeNl71wSXSyCeGV41EA=
-P:wget-doc
-V:1.21.3-r2
-A:armhf
-S:111148
-I:299008
-T:Network utility to retrieve files from the Web (documentation)
-U:https://www.gnu.org/software/wget/wget.html
-L:GPL-3.0-or-later WITH OpenSSL-Exception
-o:wget
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1668110336
-c:2d376b3ce3f4b988d93cff8e5fb83c4b57851eaf
-i:docs wget=1.21.3-r2
 
 C:Q1kdVEqR88qSr44E50ch6kgpDpEhQ=
 P:acf-lighttpd
@@ -6433,6 +6383,21 @@ k:100
 D:so:libc.musl-armhf.so.1 so:libz.so.1
 p:doc-provider so:libmandoc.so=0 cmd:demandoc=1.14.6-r6 cmd:man=1.14.6-r6 cmd:mandoc=1.14.6-r6
 
+C:Q13gg84K4YHYvGoGpkBO37ZcE8OIg=
+P:mysql-client
+V:10.6.13-r0
+A:armhf
+S:1485
+I:4096
+T:Dummy package for mysql-client migration
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1683861708
+c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
+D:mariadb-client
+
 C:Q18N0jjG7wsFVBWTQSh9/R76hkSIA=
 P:mawk-doc
 V:1.3.4-r2
@@ -6787,22 +6752,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1585632275
 c:60424133be2e79bbfeff3d58147a22886f817ce2
 
-C:Q1XhzOGE5wms9pHkz8wTtNvn6MuUU=
-P:mariadb-mytop
-V:10.6.12-r0
-A:armhf
-S:22876
-I:86016
-T:Command line tool used for monitoring MariaDB performance
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1675774246
-c:cf0483a57b13acf6142b872f5f97b6aa4f33b1b2
-D:perl perl-dbd-mysql perl-dbi perl-getopt-long perl-socket perl-term-readkey
-p:cmd:mytop=10.6.12-r0
-
 C:Q1P76Dhob1Hq7s9+lqT7GIOhD331M=
 P:bcache-tools-dbg
 V:1.1-r1
@@ -6815,6 +6764,21 @@ L:GPL-2.0-only
 o:bcache-tools
 t:1666012051
 c:a0e6ec6f96db5c251fa34de19e023d8c87ac67f4
+
+C:Q1kWuE09JMulBhNWcgNaqxztM2geA=
+P:mariadb-openrc
+V:10.6.13-r0
+A:armhf
+S:2055
+I:16384
+T:A fast SQL database server (OpenRC init scripts)
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1683861708
+c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
+i:openrc mariadb=10.6.13-r0
 
 C:Q1YlFSBbd3xk0DUMqaKiqaGVVxgVs=
 P:libcap
@@ -6876,6 +6840,22 @@ t:1666787249
 c:7e1e53fd0ee469ae110f8e7e71968cb0845c61a2
 D:shared-mime-info /bin/sh so:libc.musl-armhf.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libjpeg.so.8 so:libpng16.so.16 so:libtiff.so.5
 p:so:libgdk_pixbuf-2.0.so.0=0.4200.10 cmd:gdk-pixbuf-csource=2.42.10-r0 cmd:gdk-pixbuf-pixdata=2.42.10-r0 cmd:gdk-pixbuf-query-loaders=2.42.10-r0 cmd:gdk-pixbuf-thumbnailer=2.42.10-r0
+
+C:Q10ZzBqCMjeakHWso02Tz7CWftJdM=
+P:mariadb-embedded
+V:10.6.13-r0
+A:armhf
+S:5307987
+I:15273984
+T:MariaDB as an embeddable library
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1683861708
+c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
+D:mariadb-common=10.6.13-r0 so:libaio.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libgcc_s.so.1 so:liblzma.so.5 so:libpcre2-8.so.0 so:libssl.so.3 so:libstdc++.so.6 so:libz.so.1
+p:so:libmariadbd.so.19=19
 
 C:Q1qAyb+Gf3BlKNu+nmQfUtA1BB9O8=
 P:lua5.1-stdlib
@@ -7739,6 +7719,23 @@ c:71caa93e1e0acecba951c52353e84fcba59165ce
 D:expat-dev pc:libevent pc:python3 pkgconfig unbound-libs=1.17.1-r0
 p:pc:libunbound=1.17.1
 
+C:Q1W8oa5OCwHYxA4J+oDyLwu65rOi8=
+P:postgresql15-contrib
+V:15.3-r0
+A:armhf
+S:659615
+I:5046272
+T:Extension modules distributed with PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql15
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831032
+c:8f940e4f2308f6f432a8680a79156a6f5040857d
+k:15
+D:postgresql15=15.3-r0 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libpq.so.5 so:libuuid.so.1 so:libxml2.so.2 so:libz.so.1
+p:postgresql-contrib cmd:oid2name cmd:vacuumlo
+
 C:Q1u/QPg1r8BuURfn/ULE4Vdc/d17Q=
 P:nginx-mod-http-vod
 V:1.22.1-r0
@@ -8394,23 +8391,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1660549121
 c:7232044b70a417a85f11ee96a8eb2eac8f1d9d9b
 
-C:Q1muVZlwMmP+wSeBnt2js32duPonc=
-P:postgresql14-doc
-V:14.7-r0
-A:armhf
-S:489863
-I:2654208
-T:A sophisticated object-relational DBMS, version 14 (documentation)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040850
-c:73074efc701b915ea8aa19f6c70af0ce1b2547d9
-k:14
-p:postgresql-doc
-i:docs postgresql14=14.7-r0
-
 C:Q1TtpU7VA411mzKSKAru3EAA8/PcM=
 P:nano-doc
 V:7.0-r0
@@ -8516,21 +8496,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1667660627
 c:420d875c4d8cf332e8018aadd3f6d281320c2623
 i:docs hostapd=2.10-r5
-
-C:Q1W2yJufgD5ycAYvRQuCpks2u3DDA=
-P:mariadb-doc
-V:10.6.12-r0
-A:armhf
-S:324737
-I:1183744
-T:A fast SQL database server (documentation)
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1675774246
-c:cf0483a57b13acf6142b872f5f97b6aa4f33b1b2
-i:docs mariadb=10.6.12-r0
 
 C:Q1zRAlfS7hkrtcmk5MlkA8VojISoI=
 P:pingu-doc
@@ -9377,6 +9342,21 @@ t:1661033118
 c:9157c604eb26b44295c5dcc7a2e299ae20e8aef5
 D:mii-tool so:libc.musl-armhf.so.1
 p:cmd:arp=2.10-r0 cmd:dnsdomainname=2.10-r0 cmd:domainname=2.10-r0 cmd:hostname=2.10-r0 cmd:ifconfig=2.10-r0 cmd:ipmaddr=2.10-r0 cmd:iptunnel=2.10-r0 cmd:nameif=2.10-r0 cmd:netstat=2.10-r0 cmd:nisdomainname=2.10-r0 cmd:plipconfig=2.10-r0 cmd:rarp=2.10-r0 cmd:route=2.10-r0 cmd:slattach=2.10-r0 cmd:ypdomainname=2.10-r0
+
+C:Q1cmxOs/1Ft9ItQnTowkxbCVyO3sA=
+P:mysql
+V:10.6.13-r0
+A:armhf
+S:1482
+I:4096
+T:Dummy package for mysql migration
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1683861708
+c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
+D:mariadb
 
 C:Q1F+O+mu3pT/yijWlUuoXhFm0Ev3M=
 P:privoxy-openrc
@@ -10925,6 +10905,23 @@ t:1661083687
 c:194e176da358178023b2ea4761878dfca5761407
 i:docs dbus-glib=0.112-r1
 
+C:Q13jzbQ9uqoPZW4w33T7crJY+UAOY=
+P:postgresql14
+V:14.8-r0
+A:armhf
+S:5316318
+I:14581760
+T:A sophisticated object-relational DBMS, version 14
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831074
+c:7d5c02859cd68e09ff5c3101558f790c99448d63
+k:14
+D:postgresql14-client postgresql-common tzdata /bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libicui18n.so.72 so:libicuuc.so.72 so:libldap.so.2 so:libpq.so.5 so:libssl.so.3 so:libxml2.so.2
+p:postgresql cmd:pg_checksums cmd:pg_archivecleanup cmd:pg_test_timing cmd:pg_upgrade cmd:pg_rewind cmd:pg_test_fsync cmd:pg_controldata cmd:pg_ctl cmd:pg_resetwal cmd:pg_waldump cmd:postgres cmd:initdb cmd:postmaster
+
 C:Q11UwOdXkMk3PVd3ZEBVaZCn+PYy4=
 P:py3-sphinxcontrib-serializinghtml
 V:1.1.5-r2
@@ -11805,6 +11802,23 @@ m:Ted Trask <ttrask01@yahoo.com>
 t:1621087673
 c:ec4e35bcdcf38829d2a36ff4d7cd4351ebb67d1c
 D:acf-core nsd
+
+C:Q1GU94Jf1uJss7YB3CMtrzDkEaB6k=
+P:postgresql14-dev
+V:14.8-r0
+A:armhf
+S:1780086
+I:8720384
+T:A sophisticated object-relational DBMS, version 14 (development files)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831074
+c:7d5c02859cd68e09ff5c3101558f790c99448d63
+k:14
+D:libpq-dev libecpg-dev clang14 icu-dev llvm14 openssl-dev>3 so:libc.musl-armhf.so.1 so:libpq.so.5
+p:postgresql-dev
 
 C:Q1W7HHUdUEcFXDrjB8qCNRoI1tcY4=
 P:rlog-dev
@@ -12807,21 +12821,6 @@ t:1659429320
 c:39cde24fb54a667a6730bdaec3233184227131f6
 i:docs rng-tools=6.15-r1
 
-C:Q1xxQFd3mvR51CGvf34FYmciIx7CI=
-P:mysql-bench
-V:10.6.12-r0
-A:armhf
-S:1485
-I:4096
-T:Dummy package for mysql-bench migration
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1675774246
-c:cf0483a57b13acf6142b872f5f97b6aa4f33b1b2
-D:mariadb-client
-
 C:Q1GVWCjJFEtQj2hU0XbCsGI13AjTk=
 P:nagios-plugins
 V:2.4.2-r0
@@ -13588,6 +13587,22 @@ t:1665753996
 c:84d02e8c3abb163d4ca89e62e831c4116b9ea195
 i:openrc rpcbind=1.2.6-r1
 
+C:Q1r/SQfUAmyOlHvsBH+JI0F9KJWtw=
+P:wget
+V:1.21.4-r0
+A:armhf
+S:226928
+I:503808
+T:Network utility to retrieve files from the Web
+U:https://www.gnu.org/software/wget/wget.html
+L:GPL-3.0-or-later WITH OpenSSL-Exception
+o:wget
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1683785558
+c:9a589d27eb2fd0c2207fdd63689ff97c9ec43228
+D:so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libidn2.so.0 so:libpcre2-8.so.0 so:libssl.so.3 so:libz.so.1
+p:cmd:wget=1.21.4-r0
+
 C:Q1zwhdLWaonLHd7rkqmD4mbf6fnCs=
 P:libmilter-dev
 V:1.0.2-r8
@@ -13882,6 +13897,23 @@ t:1665692669
 c:a08166e2019068e3bb87e7c0edb4a2bc42e9b1ac
 D:perl
 
+C:Q1uzEj0uIuLYWPkgucSBD30mskYiM=
+P:postgresql15-pltcl
+V:15.3-r0
+A:armhf
+S:24784
+I:118784
+T:PL/Tcl procedural language for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql15
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831032
+c:8f940e4f2308f6f432a8680a79156a6f5040857d
+k:15
+D:postgresql15=15.3-r0 pgtcl so:libc.musl-armhf.so.1 so:libtcl8.6.so
+p:postgresql-pltcl
+
 C:Q128BEZr7RVBPgZPGb7a9HNOYho7w=
 P:libice-doc
 V:1.0.10-r1
@@ -13927,6 +13959,23 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 i:openrc spamassassin=3.4.6-r4
+
+C:Q1X37JSYUkeTLYRlAsjkA3XsFN7fQ=
+P:postgresql14-client
+V:14.8-r0
+A:armhf
+S:1059219
+I:2912256
+T:PostgreSQL client
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831074
+c:7d5c02859cd68e09ff5c3101558f790c99448d63
+k:14
+D:postgresql-common so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libpq.so.5 so:libreadline.so.8 so:libz.so.1
+p:postgresql-client cmd:clusterdb cmd:createdb cmd:createuser cmd:dropdb cmd:dropuser cmd:pg_amcheck cmd:pg_basebackup cmd:pg_dump cmd:pg_dumpall cmd:pg_isready cmd:pg_receivewal cmd:pg_recvlogical cmd:pg_restore cmd:pg_verifybackup cmd:pgbench cmd:psql cmd:reindexdb cmd:vacuumdb
 
 C:Q1s2DUQ2qHYU+xlSh2S6bDxOM5HA0=
 P:tdb-doc
@@ -15414,6 +15463,21 @@ t:1667099435
 c:5294d698a218c8c3da165067b480b4c281752598
 i:docs strace=6.0-r0
 
+C:Q10/2jLRmFpMj2RZWf+yfbWkXU64c=
+P:mariadb-bench
+V:10.6.13-r0
+A:armhf
+S:489049
+I:2891776
+T:MariaDB benchmark scripts and data
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1683861708
+c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
+D:mariadb-common
+
 C:Q15XF4ifm/ih+a8c2+bpg6H104pVY=
 P:rsyslog-pmsnare
 V:8.2212.0-r0
@@ -15779,6 +15843,23 @@ c:c6ea08f9d62311d6790e56882c73874dc2562b40
 D:/bin/sh so:libc.musl-armhf.so.1 so:libfontenc.so.1 so:libfreetype.so.6 so:libz.so.1
 p:mkfontdir=1.2.2-r1 cmd:mkfontdir=1.2.2-r1 cmd:mkfontscale=1.2.2-r1
 
+C:Q1+DlRBNVRF6qTLFhdDrdcUf6aTCg=
+P:libecpg
+V:15.3-r0
+A:armhf
+S:76826
+I:282624
+T:ECPG - Embedded SQL in C
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql15
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831032
+c:8f940e4f2308f6f432a8680a79156a6f5040857d
+k:15
+D:so:libc.musl-armhf.so.1 so:libpq.so.5
+p:postgresql-libs so:libecpg.so.6=6.15 so:libpgtypes.so.3=3.15
+
 C:Q1G+HLRJeq4qT8i2d/if/NQ2oHe+Y=
 P:lua5.1-maxminddb
 V:0.1-r3
@@ -15809,21 +15890,6 @@ m:Michael Aldridge <maldridge@voidlinux.org>
 t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:bison flex
-
-C:Q1UaWOH1UZ9wDMJ9r/gkh5663klQ0=
-P:mariadb-static
-V:10.6.12-r0
-A:armhf
-S:10679681
-I:40538112
-T:Static libraries for MariaDB
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1675774246
-c:cf0483a57b13acf6142b872f5f97b6aa4f33b1b2
-D:mariadb-common
 
 C:Q1Mo5+cAuKdF71IgqGkKm6jKK2PpE=
 P:sharutils
@@ -17142,24 +17208,6 @@ t:1658587039
 c:333be3f71737701d69e2eaae75f035b153503af5
 i:docs bison=3.8.2-r0
 
-C:Q1yLQw24UE7PV1H0V9DWO2Rkqvo94=
-P:postgresql14-plpython3-contrib
-V:14.7-r0
-A:armhf
-S:8277
-I:184320
-T:PL/Python 3 extension modules distributed with PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040850
-c:73074efc701b915ea8aa19f6c70af0ce1b2547d9
-k:14
-D:postgresql14-plpython3=14.7-r0 so:libc.musl-armhf.so.1 so:libpython3.10.so.1.0
-p:postgresql-plpython3-contrib
-i:postgresql14-plpython3=14.7-r0 postgresql14-contrib=14.7-r0
-
 C:Q1msJgvjuGtBhkbRMJUxSEEdPM/gw=
 P:lua-iconv
 V:7-r2
@@ -18063,22 +18111,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-test-without=0.10-r2
 
-C:Q1xKP9wi86HuwUOaJAo6mFkoIsH4s=
-P:mariadb-server-utils
-V:10.6.12-r0
-A:armhf
-S:2448554
-I:10502144
-T:Non-essential server utilities for MariaDB/MySQL applications
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1675774246
-c:cf0483a57b13acf6142b872f5f97b6aa4f33b1b2
-D:perl mariadb-common=10.6.12-r0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:cmd:mariadb-convert-table-format=10.6.12-r0 cmd:mariadb-hotcopy=10.6.12-r0 cmd:mariadb-setpermission=10.6.12-r0 cmd:mariadb-upgrade=10.6.12-r0 cmd:mariadbd-multi=10.6.12-r0 cmd:mariadbd-safe-helper=10.6.12-r0 cmd:mysql_convert_table_format=10.6.12-r0 cmd:mysql_setpermission=10.6.12-r0 cmd:mysql_upgrade=10.6.12-r0 cmd:mysqld_multi=10.6.12-r0 cmd:mysqld_safe_helper=10.6.12-r0 cmd:mysqlhotcopy=10.6.12-r0 cmd:perror=10.6.12-r0
-
 C:Q1xTldr9NqiXoIx0vo7C3BIZa4Nfs=
 P:libdnet-dev
 V:1.16.1-r0
@@ -18556,23 +18588,6 @@ t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.2 so:libc.musl-armhf.so.1 so:libsqlite3.so.0
 i:lua-sqlite=0.9.5-r4 lua5.2
-
-C:Q1nOWWttM5NEcFcQZ4TyOMa/Agq7s=
-P:libecpg
-V:15.2-r0
-A:armhf
-S:76848
-I:282624
-T:ECPG - Embedded SQL in C
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql15
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040883
-c:d813170f45ebf6b6a884f54003e85cccfe3a0166
-k:15
-D:so:libc.musl-armhf.so.1 so:libpq.so.5
-p:postgresql-libs so:libecpg.so.6=6.15 so:libpgtypes.so.3=3.15
 
 C:Q1zAQTBVGKNi6MkMo8MQGJ1wkyDHs=
 P:kbd-openrc
@@ -19252,6 +19267,22 @@ t:1665751673
 c:e16595c7945ca36ac41a0f3d5cd6056505b541f1
 i:encfs=1.9.5-r18 lang
 
+C:Q1S0p7cpB6tENNt7w/a8Eeb+g6UQE=
+P:mariadb-backup
+V:10.6.13-r0
+A:armhf
+S:6871290
+I:20004864
+T:The mariabackup tool for physical online backups
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1683861708
+c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
+D:mariadb-common so:libaio.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libgcc_s.so.1 so:liblzma.so.5 so:libpcre2-8.so.0 so:libssl.so.3 so:libstdc++.so.6 so:libz.so.1
+p:cmd:mariabackup=10.6.13-r0 cmd:mariadb-backup=10.6.13-r0 cmd:mbstream=10.6.13-r0
+
 C:Q1DPUXhFr7wysuyNVcjFTBa0eBAXI=
 P:perl-test-deep-doc
 V:1.130-r3
@@ -19451,6 +19482,23 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
 
+C:Q1p3lI/pPglAt2sUK19mvBIjEZsrQ=
+P:postgresql15
+V:15.3-r0
+A:armhf
+S:5418595
+I:14815232
+T:A sophisticated object-relational DBMS, version 15
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql15
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831032
+c:8f940e4f2308f6f432a8680a79156a6f5040857d
+k:15
+D:postgresql15-client postgresql-common tzdata /bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libicui18n.so.72 so:libicuuc.so.72 so:libldap.so.2 so:liblz4.so.1 so:libpq.so.5 so:libssl.so.3 so:libxml2.so.2 so:libz.so.1 so:libzstd.so.1
+p:postgresql cmd:pg_resetwal cmd:postmaster cmd:initdb cmd:pg_test_fsync cmd:pg_rewind cmd:pg_waldump cmd:pg_upgrade cmd:postgres cmd:pg_archivecleanup cmd:pg_test_timing cmd:pg_controldata cmd:pg_checksums cmd:pg_ctl
+
 C:Q1iMeHh+Zj5ptpiX2Sr0ruO8PYK74=
 P:perl-async-mergepoint-doc
 V:0.04-r3
@@ -19638,6 +19686,22 @@ t:1664929770
 c:d0d363795478fb22e1e1d35705cb751971af50e1
 D:so:libc.musl-armhf.so.1 so:libexpat.so.1
 i:lua5.4 lua-expat=1.5.1-r0
+
+C:Q1e38dWuUNfN2x8K5/UKEiEXlhMUw=
+P:mariadb
+V:10.6.13-r0
+A:armhf
+S:38381890
+I:127438848
+T:A fast SQL database server
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1683861708
+c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
+D:mariadb-common /bin/sh so:libaio.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libcurl.so.4 so:libgcc_s.so.1 so:liblzma.so.5 so:libncursesw.so.6 so:libpam.so.0 so:libpcre2-8.so.0 so:libssl.so.3 so:libstdc++.so.6 so:libxml2.so.2 so:libz.so.1
+p:cmd:aria_chk=10.6.13-r0 cmd:aria_dump_log=10.6.13-r0 cmd:aria_ftdump=10.6.13-r0 cmd:aria_pack=10.6.13-r0 cmd:aria_read_log=10.6.13-r0 cmd:aria_s3_copy=10.6.13-r0 cmd:innochecksum=10.6.13-r0 cmd:mariadb-binlog=10.6.13-r0 cmd:mariadb-conv=10.6.13-r0 cmd:mariadb-embedded=10.6.13-r0 cmd:mariadb-install-db=10.6.13-r0 cmd:mariadb-ldb=10.6.13-r0 cmd:mariadb-plugin=10.6.13-r0 cmd:mariadb-secure-installation=10.6.13-r0 cmd:mariadb-slap=10.6.13-r0 cmd:mariadb-tzinfo-to-sql=10.6.13-r0 cmd:mariadbd-safe=10.6.13-r0 cmd:mariadbd=10.6.13-r0 cmd:msql2mysql=10.6.13-r0 cmd:my_print_defaults=10.6.13-r0 cmd:myisamchk=10.6.13-r0 cmd:myisamlog=10.6.13-r0 cmd:myisampack=10.6.13-r0 cmd:myrocks_hotbackup=10.6.13-r0 cmd:mysql_embedded=10.6.13-r0 cmd:mysql_install_db=10.6.13-r0 cmd:mysql_ldb=10.6.13-r0 cmd:mysql_plugin=10.6.13-r0 cmd:mysql_secure_installation=10.6.13-r0 cmd:mysql_tzinfo_to_sql=10.6.13-r0 cmd:mysqlbinlog=10.6.13-r0 cmd:mysqld=10.6.13-r0 cmd:mysqld_safe=10.6.13-r0 cmd:mysqlslap=10.6.13-r0 cmd:replace=10.6.13-r0 cmd:resolve_stack_dump=10.6.13-r0 cmd:resolveip=10.6.13-r0 cmd:sst_dump=10.6.13-r0 cmd:test-connect-t=10.6.13-r0 cmd:wsrep_sst_backup=10.6.13-r0 cmd:wsrep_sst_mariabackup=10.6.13-r0 cmd:wsrep_sst_mysqldump=10.6.13-r0 cmd:wsrep_sst_rsync=10.6.13-r0 cmd:wsrep_sst_rsync_wan=10.6.13-r0
 
 C:Q1vH8PN7I+VYyvDY+31Dlm/xtgBMg=
 P:yasm-dev
@@ -21503,22 +21567,6 @@ c:348d23204053291f9275632480ebb8a4c969d282
 D:/bin/sh so:libc.musl-armhf.so.1
 p:cmd:dash=0.5.11.5-r2
 
-C:Q1cTgZAGjVrHk4lFFqE/XWZ4fF5Gw=
-P:nodejs-dev
-V:18.14.2-r0
-A:armhf
-S:214292
-I:1138688
-T:JavaScript runtime built on V8 engine - LTS version (development files)
-U:https://nodejs.org/
-L:MIT
-o:nodejs
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1677212426
-c:680c2e279b7e926bfe84e7b90e818c7bb11f33fb
-k:100
-p:nodejs-lts-dev=18.14.2
-
 C:Q1AeZOChiz7aoJM7WV+TWBjU2n4ms=
 P:graphicsmagick-zsh-completion
 V:5.9-r0
@@ -22377,6 +22425,21 @@ t:1668247949
 c:c24db9734c75d431c7bb8e109516682ca605c6f0
 i:docs perl-io-tty=1.17-r0
 
+C:Q1da+KOE4yfDV59DwQyJQDy9/K5sM=
+P:mariadb-plugin-rocksdb
+V:10.6.13-r0
+A:armhf
+S:1552942
+I:3899392
+T:MariaDB plugin for RocksDB (MyRocks)
+U:https://mariadb.com/kb/en/library/myrocks/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1683861708
+c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
+D:mariadb=10.6.13-r0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1
+
 C:Q1Bw+aDCUm8KoS7McXQ63lbvFAH9s=
 P:libgcrypt
 V:1.10.1-r0
@@ -22778,23 +22841,6 @@ t:1658810585
 c:2b8e5c3e83711eb800c40bf2df72b2d3b2bc633b
 D:so:libc.musl-armhf.so.1
 p:so:libconfuse.so.2=2.1.0
-
-C:Q1tnAegiKHjZ00aX+JLcQ3MQPbF8A=
-P:postgresql15-plperl
-V:15.2-r0
-A:armhf
-S:38538
-I:180224
-T:PL/Perl procedural language for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql15
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040883
-c:d813170f45ebf6b6a884f54003e85cccfe3a0166
-k:15
-D:postgresql15=15.2-r0 so:libc.musl-armhf.so.1 so:libperl.so
-p:postgresql-plperl
 
 C:Q1FtfyDyofgOst8qHLi1AUkA4pIXY=
 P:avahi-glib
@@ -24280,23 +24326,6 @@ t:1658964336
 c:c5a56d9a0db850192573dc042cb7524167d79fd1
 D:python3
 
-C:Q1pYTrXlXueZspYB90/98ru064aRk=
-P:postgresql14
-V:14.7-r0
-A:armhf
-S:5314740
-I:14581760
-T:A sophisticated object-relational DBMS, version 14
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040850
-c:73074efc701b915ea8aa19f6c70af0ce1b2547d9
-k:14
-D:postgresql14-client postgresql-common tzdata /bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libicui18n.so.72 so:libicuuc.so.72 so:libldap.so.2 so:libpq.so.5 so:libssl.so.3 so:libxml2.so.2
-p:postgresql cmd:pg_controldata cmd:pg_test_timing cmd:pg_waldump cmd:pg_rewind cmd:postgres cmd:pg_checksums cmd:pg_test_fsync cmd:postmaster cmd:initdb cmd:pg_upgrade cmd:pg_archivecleanup cmd:pg_resetwal cmd:pg_ctl
-
 C:Q1equozUrrZXGzuzD2rmmok0k8br4=
 P:cups-lang
 V:2.4.2-r1
@@ -24851,6 +24880,21 @@ t:1659292995
 c:1606e8c9e7f674d2f9f7a9e5428859f4c87623a5
 D:python3
 p:py-parsing=3.0.9-r0 py3.10:pyparsing=3.0.9-r0
+
+C:Q171FE2f/J062fa/N1RlhLkPIclVQ=
+P:mariadb-doc
+V:10.6.13-r0
+A:armhf
+S:324787
+I:1183744
+T:A fast SQL database server (documentation)
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1683861708
+c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
+i:docs mariadb=10.6.13-r0
 
 C:Q1ID5jbIDI8PiP0zTbGSYh9HCJJes=
 P:perl-class-mix-doc
@@ -25422,21 +25466,6 @@ c:533db63eeb333d975c0c1edef33d0e42008ccb57
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
 p:so:libc++.so.1=1.0 so:libc++abi.so.1=1.0
 
-C:Q1K2wnJDS4qVvsMPAWkfq+hS2wqH4=
-P:mariadb-embedded-dev
-V:10.6.12-r0
-A:armhf
-S:1550
-I:12288
-T:MariaDB as an embeddable library - development files
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1675774246
-c:cf0483a57b13acf6142b872f5f97b6aa4f33b1b2
-D:mariadb-common mariadb-embedded=10.6.12-r0
-
 C:Q13I+tZZs3+QrB+hOrkOjhpK9O+AU=
 P:ruby-rss
 V:0.2.9-r1
@@ -25837,6 +25866,22 @@ c:940ad09c4c15ba095468c5c81cb6f7c1a74de084
 D:so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libreadline.so.8 so:libssl.so.3
 p:cmd:filan=1.7.4.4-r0 cmd:procan=1.7.4.4-r0 cmd:socat=1.7.4.4-r0
 
+C:Q1bF81rjgDwQaNREpJClkgfwaml9A=
+P:nodejs-doc
+V:18.16.0-r0
+A:armhf
+S:14718
+I:53248
+T:JavaScript runtime built on V8 engine - LTS version (documentation)
+U:https://nodejs.org/
+L:MIT
+o:nodejs
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683803972
+c:31256f878fc2f70e2b3eaeb6bca6fde59766e1ba
+k:100
+i:docs nodejs=18.16.0-r0
+
 C:Q1j7xgH8MhHfZBCVrAYyMvvfs7x74=
 P:py3-tomli
 V:2.0.1-r1
@@ -26054,24 +26099,6 @@ t:1669871175
 c:5418012a8912986d8d50a750b9fc699dadc17906
 D:perl so:libc.musl-armhf.so.1 so:libncursesw.so.6
 p:cmd:info=7.0.1-r0 cmd:install-info=7.0.1-r0 cmd:makeinfo=7.0.1-r0 cmd:pdftexi2dvi=7.0.1-r0 cmd:pod2texi=7.0.1-r0 cmd:texi2any=7.0.1-r0 cmd:texi2dvi=7.0.1-r0 cmd:texi2pdf=7.0.1-r0 cmd:texindex=7.0.1-r0
-
-C:Q17z93XlUnl02UWKsjX2g4KtPiwMk=
-P:postgresql14-plperl-contrib
-V:14.7-r0
-A:armhf
-S:6344
-I:114688
-T:PL/Perl extension modules distributed with PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040850
-c:73074efc701b915ea8aa19f6c70af0ce1b2547d9
-k:14
-D:postgresql14-plperl=14.7-r0 so:libc.musl-armhf.so.1 so:libperl.so
-p:postgresql-plperl-contrib
-i:postgresql14-plperl=14.7-r0 postgresql14-contrib=14.7-r0
 
 C:Q1kRDZRbTMGsdED3WMYTq5V4o5sZo=
 P:py3-sphinxcontrib-websupport
@@ -26708,21 +26735,6 @@ c:e1cb7c8d0430bf700a25c41e492ba5beda72a43b
 D:so:libc.musl-armhf.so.1
 p:so:libsamplerate.so.0=0.2.2
 
-C:Q1SN8A4A1QifQSBVndNjdliNew5Vg=
-P:mariadb-bench
-V:10.6.12-r0
-A:armhf
-S:489040
-I:2891776
-T:MariaDB benchmark scripts and data
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1675774246
-c:cf0483a57b13acf6142b872f5f97b6aa4f33b1b2
-D:mariadb-common
-
 C:Q16tDkpl02LFM/MW/8ZqQDBBXBOK0=
 P:libxshmfence
 V:1.3.1-r0
@@ -27270,6 +27282,23 @@ t:1683031282
 c:edb697f0a2560f37f02bfee3c3b1d7171ffccd1a
 D:so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libglib-2.0.so.0 so:libssl.so.3 so:libz.so.1
 p:so:libsofia-sip-ua-glib.so.3=3.0.0 so:libsofia-sip-ua.so.0=0.6.0 cmd:addrinfo=1.13.14-r0 cmd:localinfo=1.13.14-r0 cmd:sip-date=1.13.14-r0 cmd:sip-dig=1.13.14-r0 cmd:sip-options=1.13.14-r0 cmd:stunc=1.13.14-r0
+
+C:Q1cOVgpF0G32uzU3xtnQIu/cXf8LE=
+P:postgresql15-doc
+V:15.3-r0
+A:armhf
+S:507177
+I:2719744
+T:A sophisticated object-relational DBMS, version 15 (documentation)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql15
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831032
+c:8f940e4f2308f6f432a8680a79156a6f5040857d
+k:15
+p:postgresql-doc
+i:docs postgresql15=15.3-r0
 
 C:Q14DM7z7X9NXyvcaliwu4oVD0T3/0=
 P:uwsgi-stats_pusher_statsd
@@ -28020,21 +28049,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-extutils-helpers=0.026-r2
 
-C:Q1vGeckrNd8e/Qc31Xg2TEtEQLL54=
-P:mariadb-common
-V:10.6.12-r0
-A:armhf
-S:623048
-I:2314240
-T:MariaDB common files for both server and client
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1675774246
-c:cf0483a57b13acf6142b872f5f97b6aa4f33b1b2
-D:/bin/sh
-
 C:Q18CSqeazj5BF4p0Xth07RaNOfn3A=
 P:gperf
 V:3.1-r3
@@ -28552,23 +28566,6 @@ c:831108208be8b9b447a320386ef31d17d947e660
 D:libconfig++=1.7.3-r0 libconfig=1.7.3-r0 pkgconfig
 p:pc:libconfig++=1.7.3 pc:libconfig=1.7.3
 
-C:Q1wSYNj6TD4Y8laEVsVv6UTPIagII=
-P:postgresql15-jit
-V:15.2-r0
-A:armhf
-S:12307603
-I:23019520
-T:Just-in-time compilation support for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql15
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040883
-c:d813170f45ebf6b6a884f54003e85cccfe3a0166
-k:15
-D:postgresql15=15.2-r0 so:libLLVM-14.so so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-p:postgresql-jit
-
 C:Q1UbCmNpWtbnypvz62pOUftyXBdys=
 P:perl-email-date-format-doc
 V:1.006-r0
@@ -28631,23 +28628,6 @@ t:1667794257
 c:eb145db2d0aba174e3b1c8d1520b9dd027ac18f6
 D:pkgconfig
 p:pc:iso-codes=4.12.0
-
-C:Q1hT/JfOgOFmXvwEco3InP6Ukf5Y0=
-P:nodejs
-V:18.14.2-r0
-A:armhf
-S:12365526
-I:34750464
-T:JavaScript runtime built on V8 engine - LTS version
-U:https://nodejs.org/
-L:MIT
-o:nodejs
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1677212426
-c:680c2e279b7e926bfe84e7b90e818c7bb11f33fb
-k:100
-D:ca-certificates /bin/sh so:libbrotlidec.so.1 so:libbrotlienc.so.1 so:libc.musl-armhf.so.1 so:libcares.so.2 so:libcrypto.so.3 so:libgcc_s.so.1 so:libicui18n.so.72 so:libicuuc.so.72 so:libnghttp2.so.14 so:libssl.so.3 so:libstdc++.so.6 so:libz.so.1
-p:nodejs-lts=18.14.2-r0 cmd:node=18.14.2-r0
 
 C:Q1Zrc+4Z/BgQyrpF47+gFBa8xcBHw=
 P:perl-file-listing-doc
@@ -28970,23 +28950,6 @@ t:1651639605
 c:150f20497ecab94afd249f7a320c9ac251024bca
 D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-armhf.so.1
 p:so:libdns_sd.so.1=1.0.0
-
-C:Q1M3b8m8ozirqjais3ToYLs8Q64uw=
-P:libpq
-V:15.2-r0
-A:armhf
-S:124864
-I:344064
-T:PostgreSQL client library
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql15
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040883
-c:d813170f45ebf6b6a884f54003e85cccfe3a0166
-k:15
-D:so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libssl.so.3
-p:so:libpq.so.5=5.15
 
 C:Q1pGEL9e8CNxiaDuMuAIaB5ehrEig=
 P:perl-test-mocktime-doc
@@ -30619,21 +30582,6 @@ c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:so:libc.musl-armhf.so.1 so:libgmp.so.10 so:libgnutls.so.30 so:libhogweed.so.6 so:libnettle.so.8 so:libz.so.1
 p:so:librtmp.so.1=1
 
-C:Q1D7LzGBTsjtmbiAHclssEtGXpaMQ=
-P:mariadb-openrc
-V:10.6.12-r0
-A:armhf
-S:2048
-I:16384
-T:A fast SQL database server (OpenRC init scripts)
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1675774246
-c:cf0483a57b13acf6142b872f5f97b6aa4f33b1b2
-i:openrc mariadb=10.6.12-r0
-
 C:Q1wrBj9HVbGsVAzlYv47IGACpln8Q=
 P:openssl-dbg
 V:3.0.8-r4
@@ -30814,24 +30762,6 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1602784850
 c:edb5939afb3c41aa5cde164a9d46d7f9f3d1cedb
 D:perl perl-datetime-format-w3cdtf perl-xml-parser perl-html-parser perl-datetime-format-mail
-
-C:Q1yR5RuChnNVVYRKm0q/MxustiZG0=
-P:postgresql15-contrib-jit
-V:15.2-r0
-A:armhf
-S:1659991
-I:3706880
-T:Extension modules distributed with PostgreSQL (JIT support)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql15
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040883
-c:d813170f45ebf6b6a884f54003e85cccfe3a0166
-k:15
-D:postgresql15-contrib=15.2-r0
-p:postgresql-contrib-jit
-i:postgresql15-jit postgresql15-contrib=15.2-r0
 
 C:Q1uaersqgZxEIXyn+XjsYkkOCytsQ=
 P:npth-dev
@@ -32010,6 +31940,24 @@ c:5ce727e48829898b7de8c390b0ee07d8dfdb8ac8
 D:bacula so:libc.musl-armhf.so.1 so:libpq.so.5
 p:so:libbaccats-postgresql-13.0.1.so=0
 
+C:Q1xH/yoYiJ5f0v6NJRjv9Q/WUjx5M=
+P:postgresql15-plperl-contrib
+V:15.3-r0
+A:armhf
+S:6369
+I:114688
+T:PL/Perl extension modules distributed with PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql15
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831032
+c:8f940e4f2308f6f432a8680a79156a6f5040857d
+k:15
+D:postgresql15-plperl=15.3-r0 so:libc.musl-armhf.so.1 so:libperl.so
+p:postgresql-plperl-contrib
+i:postgresql15-plperl=15.3-r0 postgresql15-contrib=15.3-r0
+
 C:Q16jk1F6v13AvOoJ090d1dWzspUcA=
 P:libisoburn
 V:1.5.4-r2
@@ -32411,6 +32359,24 @@ t:1674309047
 c:af533ad976aec4e79b6896ad419b443339abeca2
 D:so:libc.musl-armhf.so.1
 p:cmd:find=4.9.0-r3 cmd:xargs=4.9.0-r3
+
+C:Q1cO1OA65tVLYBS7xdUzjdQMACcdQ=
+P:postgresql15-contrib-jit
+V:15.3-r0
+A:armhf
+S:1660772
+I:3710976
+T:Extension modules distributed with PostgreSQL (JIT support)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql15
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831032
+c:8f940e4f2308f6f432a8680a79156a6f5040857d
+k:15
+D:postgresql15-contrib=15.3-r0
+p:postgresql-contrib-jit
+i:postgresql15-jit postgresql15-contrib=15.3-r0
 
 C:Q1411GwcAq2TMjCTTKJabpQcQJ0Pk=
 P:openvpn
@@ -33285,6 +33251,24 @@ t:1658964336
 c:c5a56d9a0db850192573dc042cb7524167d79fd1
 D:python3 py3-ptyprocess
 p:py-pexpect=4.8.0-r3 py3.10:pexpect=4.8.0-r3
+
+C:Q18lGrqqUFLmfBWDfKUwQCpXv234w=
+P:postgresql14-plperl-contrib
+V:14.8-r0
+A:armhf
+S:6342
+I:114688
+T:PL/Perl extension modules distributed with PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831074
+c:7d5c02859cd68e09ff5c3101558f790c99448d63
+k:14
+D:postgresql14-plperl=14.8-r0 so:libc.musl-armhf.so.1 so:libperl.so
+p:postgresql-plperl-contrib
+i:postgresql14-plperl=14.8-r0 postgresql14-contrib=14.8-r0
 
 C:Q188qK/F30vmKkVojvNLcP01bsnqA=
 P:linux-firmware-bnx2
@@ -34502,6 +34486,23 @@ c:1579acf67a30ecd20f63e588baab94a931b28efd
 D:lua5.4 so:libc.musl-armhf.so.1 so:libmosquitto.so.1
 i:lua-mosquitto=0.4.1-r1 lua5.4
 
+C:Q1+Oq9glmtgwmGNjPEoXSnPXRecsA=
+P:postgresql15-dev
+V:15.3-r0
+A:armhf
+S:1821524
+I:8896512
+T:A sophisticated object-relational DBMS, version 15 (development files)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql15
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831032
+c:8f940e4f2308f6f432a8680a79156a6f5040857d
+k:15
+D:libpq-dev libecpg-dev clang14 icu-dev llvm14 lz4-dev openssl-dev zstd-dev so:libc.musl-armhf.so.1 so:libpq.so.5
+p:postgresql-dev
+
 C:Q1i9yh+TFxsBSOEZfabkdiq94H0uE=
 P:alpine-release
 V:3.17.3-r0
@@ -35377,24 +35378,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1659792088
 c:0714a84b7f79009ae8b96aef50216ed72f54b885
 
-C:Q1qTIlN8COJxjgT1Vw941el+/uqVo=
-P:postgresql15-plpython3-contrib
-V:15.2-r0
-A:armhf
-S:8316
-I:184320
-T:PL/Python 3 extension modules distributed with PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql15
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040883
-c:d813170f45ebf6b6a884f54003e85cccfe3a0166
-k:15
-D:postgresql15-plpython3=15.2-r0 so:libc.musl-armhf.so.1 so:libpython3.10.so.1.0
-p:postgresql-plpython3-contrib
-i:postgresql15-plpython3=15.2-r0 postgresql15-contrib=15.2-r0
-
 C:Q1iglfkb6f1u7eAmaST+Q2ruPmZgk=
 P:supervisor
 V:4.2.4-r0
@@ -36054,23 +36037,6 @@ c:78cd2a423b11de43c58b01e37b7930e3c3121c1f
 D:lua so:libc.musl-armhf.so.1 so:libgdbm.so.6 so:libpcre.so.1
 p:cmd:hypermail=2.3.0-r6 cmd:mdir2mbox.lua=2.3.0-r6 cmd:msgarchive=2.3.0-r6 cmd:rdmsg=2.3.0-r6
 
-C:Q1fz/WvbRTs5uPUdnGBUX8kEPA8f8=
-P:postgresql14-dev
-V:14.7-r0
-A:armhf
-S:1779809
-I:8716288
-T:A sophisticated object-relational DBMS, version 14 (development files)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040850
-c:73074efc701b915ea8aa19f6c70af0ce1b2547d9
-k:14
-D:libpq-dev libecpg-dev clang14 icu-dev llvm14 openssl-dev>3 so:libc.musl-armhf.so.1 so:libpq.so.5
-p:postgresql-dev
-
 C:Q1IZfuOrkNzkV6uQS0gtsNtR7/mH4=
 P:mbedtls-dev
 V:2.28.3-r0
@@ -36162,23 +36128,6 @@ m:Sheila Aman <sheila@vulpine.house>
 t:1668435679
 c:20e3b1d46e5a93b71e71c0647890358530e151df
 D:perl
-
-C:Q1z26UE+0xT7xqd8Y6DK1JKBeO2Ec=
-P:postgresql14-pltcl
-V:14.7-r0
-A:armhf
-S:24596
-I:118784
-T:PL/Tcl procedural language for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040850
-c:73074efc701b915ea8aa19f6c70af0ce1b2547d9
-k:14
-D:postgresql14=14.7-r0 pgtcl so:libc.musl-armhf.so.1 so:libtcl8.6.so
-p:postgresql-pltcl
 
 C:Q1aPQ8/zm7ccx1830dvE5SL3ldI50=
 P:flac
@@ -36692,6 +36641,22 @@ t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:so:libbluetooth.so.3 so:libc.musl-armhf.so.1 so:libglib-2.0.so.0 so:libical.so.3 so:libintl.so.8 so:libusb-0.1.so.4
 p:so:libgnokii.so.7=7.0.0
+
+C:Q1F6Wl36EgwaPH7jgtHlDL414qIB8=
+P:mariadb-mytop
+V:10.6.13-r0
+A:armhf
+S:22877
+I:86016
+T:Command line tool used for monitoring MariaDB performance
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1683861708
+c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
+D:perl perl-dbd-mysql perl-dbi perl-getopt-long perl-socket perl-term-readkey
+p:cmd:mytop=10.6.13-r0
 
 C:Q1aIB4adVU6c5ootnYdKUAM6/FrR0=
 P:u-boot-sunxi
@@ -37496,6 +37461,23 @@ c:daffefce35d0c2e624cc295b8135ce09b30e4777
 D:libverto-libev so:libc.musl-armhf.so.1 so:libcom_err.so.2 so:libgssapi_krb5.so.2 so:libgssrpc.so.4 so:libk5crypto.so.3 so:libkadm5clnt_mit.so.12 so:libkadm5srv_mit.so.12 so:libkdb5.so.10 so:libkdb_ldap.so.1 so:libkrb5.so.3 so:libkrb5support.so.0 so:libss.so.2 so:libverto.so.1
 p:cmd:gss-server=1.20.1-r0 cmd:kadmin.local=1.20.1-r0 cmd:kadmind=1.20.1-r0 cmd:kdb5_ldap_util=1.20.1-r0 cmd:kdb5_util=1.20.1-r0 cmd:kprop=1.20.1-r0 cmd:kpropd=1.20.1-r0 cmd:kproplog=1.20.1-r0 cmd:krb5-send-pr=1.20.1-r0 cmd:krb5kdc=1.20.1-r0 cmd:sclient=1.20.1-r0 cmd:sim_server=1.20.1-r0 cmd:sserver=1.20.1-r0 cmd:uuserver=1.20.1-r0
 
+C:Q1Ymf9RT/+TVJy4+2RhFzY84tUkJ8=
+P:postgresql14-jit
+V:14.8-r0
+A:armhf
+S:11963166
+I:22298624
+T:Just-in-time compilation support for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831074
+c:7d5c02859cd68e09ff5c3101558f790c99448d63
+k:14
+D:postgresql14=14.8-r0 so:libLLVM-14.so so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+p:postgresql-jit
+
 C:Q11OtlwCmdMoTNidwnW0IbAklXcxY=
 P:beep-doc
 V:1.4.12-r0
@@ -37648,6 +37630,23 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1631440617
 c:d71d571f06c7f1283bb33da41b37327d862d1e92
 
+C:Q1eZOwnfGVCNqJspRNk4ae0mIu9Z4=
+P:libecpg-dev
+V:15.3-r0
+A:armhf
+S:289680
+I:1286144
+T:ECPG - Embedded SQL in C (development files)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql15
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831032
+c:8f940e4f2308f6f432a8680a79156a6f5040857d
+k:15
+D:libpq-dev=15.3-r0 libecpg=15.3-r0 pc:libpq pkgconfig so:libc.musl-armhf.so.1
+p:pc:libecpg=15.3 pc:libpgtypes=15.3 cmd:ecpg=15.3-r0
+
 C:Q1Ca4pQ0IUZNTmf53D6z+wQGVwdH0=
 P:perl-list-allutils
 V:0.19-r0
@@ -37708,23 +37707,6 @@ t:1665753996
 c:84d02e8c3abb163d4ca89e62e831c4116b9ea195
 D:so:libc.musl-armhf.so.1
 p:so:libcmph.so.0=0.0.0
-
-C:Q1U4wJHbMmZ/eMo3FU792+6wXA9j0=
-P:postgresql14-contrib
-V:14.7-r0
-A:armhf
-S:641678
-I:4812800
-T:Extension modules distributed with PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040850
-c:73074efc701b915ea8aa19f6c70af0ce1b2547d9
-k:14
-D:postgresql14=14.7-r0 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libpq.so.5 so:libuuid.so.1 so:libxml2.so.2 so:libz.so.1
-p:postgresql-contrib cmd:oid2name cmd:vacuumlo
 
 C:Q1G00CJtvTCnN8OvzHKc2C9HdRFkk=
 P:ser2net
@@ -38242,22 +38224,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1630247205
 c:1db86a6e236a9479c0d72f8f5596d752a8a4ddf8
 D:perl perl-data-optlist perl-sub-install perl-params-util
-
-C:Q1OrZa7XMBx9n3Zsath4vDPI8r76I=
-P:mariadb-dev
-V:10.6.12-r0
-A:armhf
-S:1396400
-I:6975488
-T:A fast SQL database server (development files)
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1675774246
-c:cf0483a57b13acf6142b872f5f97b6aa4f33b1b2
-D:mariadb-connector-c-dev openssl-dev zlib-dev mariadb-embedded=10.6.12-r0 pkgconfig
-p:mysql-dev=10.6.12-r0 pc:mariadb=10.6.12
 
 C:Q1iy9vTFbsE2FrykG2LAiAlmDnjw8=
 P:shorewall6-openrc
@@ -40559,23 +40525,6 @@ o:clang14
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1665372241
 c:49ee8ca363cff833eeb93a4d5b2140a0e02df157
-
-C:Q1EZe/bAUzY7VrYuDgWSKltEVtrss=
-P:postgresql15-openrc
-V:15.2-r0
-A:armhf
-S:1560
-I:4096
-T:A sophisticated object-relational DBMS, version 15 (OpenRC init scripts)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql15
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040883
-c:d813170f45ebf6b6a884f54003e85cccfe3a0166
-k:15
-D:postgresql-common-openrc
-i:openrc postgresql15=15.2-r0
 
 C:Q1AelpsrdfxiBXJkmRO9EHIWfaa9M=
 P:freeradius-sqlite
@@ -43017,6 +42966,21 @@ c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:perl
 p:cmd:start_server=0.35-r2
 
+C:Q1c8NkHElqBrEH4k49vecYFEJibm0=
+P:mysql-bench
+V:10.6.13-r0
+A:armhf
+S:1487
+I:4096
+T:Dummy package for mysql-bench migration
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1683861708
+c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
+D:mariadb-client
+
 C:Q1hrQh+bgEZ3OdeJaYIBBRk4Zpgy0=
 P:openssh-client-yash-completion
 V:2.53-r2
@@ -43235,22 +43199,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl perl-class-inspector
 
-C:Q1D3NhHeCL1JI/IB+DOpBQ4JCywZc=
-P:mariadb
-V:10.6.12-r0
-A:armhf
-S:38282311
-I:127156224
-T:A fast SQL database server
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1675774246
-c:cf0483a57b13acf6142b872f5f97b6aa4f33b1b2
-D:mariadb-common /bin/sh so:libaio.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libcurl.so.4 so:libgcc_s.so.1 so:liblzma.so.5 so:libncursesw.so.6 so:libpam.so.0 so:libpcre2-8.so.0 so:libssl.so.3 so:libstdc++.so.6 so:libxml2.so.2 so:libz.so.1
-p:cmd:aria_chk=10.6.12-r0 cmd:aria_dump_log=10.6.12-r0 cmd:aria_ftdump=10.6.12-r0 cmd:aria_pack=10.6.12-r0 cmd:aria_read_log=10.6.12-r0 cmd:aria_s3_copy=10.6.12-r0 cmd:innochecksum=10.6.12-r0 cmd:mariadb-binlog=10.6.12-r0 cmd:mariadb-conv=10.6.12-r0 cmd:mariadb-embedded=10.6.12-r0 cmd:mariadb-install-db=10.6.12-r0 cmd:mariadb-ldb=10.6.12-r0 cmd:mariadb-plugin=10.6.12-r0 cmd:mariadb-secure-installation=10.6.12-r0 cmd:mariadb-slap=10.6.12-r0 cmd:mariadb-tzinfo-to-sql=10.6.12-r0 cmd:mariadbd-safe=10.6.12-r0 cmd:mariadbd=10.6.12-r0 cmd:msql2mysql=10.6.12-r0 cmd:my_print_defaults=10.6.12-r0 cmd:myisamchk=10.6.12-r0 cmd:myisamlog=10.6.12-r0 cmd:myisampack=10.6.12-r0 cmd:myrocks_hotbackup=10.6.12-r0 cmd:mysql_embedded=10.6.12-r0 cmd:mysql_install_db=10.6.12-r0 cmd:mysql_ldb=10.6.12-r0 cmd:mysql_plugin=10.6.12-r0 cmd:mysql_secure_installation=10.6.12-r0 cmd:mysql_tzinfo_to_sql=10.6.12-r0 cmd:mysqlbinlog=10.6.12-r0 cmd:mysqld=10.6.12-r0 cmd:mysqld_safe=10.6.12-r0 cmd:mysqlslap=10.6.12-r0 cmd:replace=10.6.12-r0 cmd:resolve_stack_dump=10.6.12-r0 cmd:resolveip=10.6.12-r0 cmd:sst_dump=10.6.12-r0 cmd:test-connect-t=10.6.12-r0 cmd:wsrep_sst_backup=10.6.12-r0 cmd:wsrep_sst_mariabackup=10.6.12-r0 cmd:wsrep_sst_mysqldump=10.6.12-r0 cmd:wsrep_sst_rsync=10.6.12-r0 cmd:wsrep_sst_rsync_wan=10.6.12-r0
-
 C:Q1gEl/vUync7KkzxyT/u+63Vh9ydw=
 P:nagios-plugins-disk_smb
 V:2.4.2-r0
@@ -43265,23 +43213,6 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1667984906
 c:ce6f81df0382091a7b4dbf3c974b61f133e1291b
 D:nagios-plugins samba-client perl
-
-C:Q1gDEoZJKIWLNZge5915VOA5nXJJA=
-P:postgresql14-plperl
-V:14.7-r0
-A:armhf
-S:38450
-I:180224
-T:PL/Perl procedural language for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040850
-c:73074efc701b915ea8aa19f6c70af0ce1b2547d9
-k:14
-D:postgresql14=14.7-r0 so:libc.musl-armhf.so.1 so:libperl.so
-p:postgresql-plperl
 
 C:Q1kPOkEDd7y83yHNjggx6qboLGa/g=
 P:apache2-ssl
@@ -43467,6 +43398,22 @@ c:2c6c06129dee0f51d5a5b77f0a23c7a319ba781c
 D:so:libc.musl-armhf.so.1 so:libfontconfig.so.1 so:libfreetype.so.6 so:libgcc_s.so.1 so:libjpeg.so.8 so:liblcms2.so.2 so:libopenjp2.so.7 so:libpng16.so.16 so:libstdc++.so.6 so:libtiff.so.5 so:libz.so.1
 p:so:libpoppler-cpp.so.0=0.11.0 so:libpoppler.so.125=125.0.0
 
+C:Q1p4MJWdATJTKVq/vTec8S9caS+Nw=
+P:mariadb-test
+V:10.6.13-r0
+A:armhf
+S:42799296
+I:296341504
+T:The test suite distributed with MariaDB
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1683861708
+c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
+D:mariadb-common so:libaio.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libgcc_s.so.1 so:liblzma.so.5 so:libpam.so.0 so:libpcre2-8.so.0 so:libpcre2-posix.so.3 so:libssl.so.3 so:libstdc++.so.6 so:libz.so.1
+p:cmd:mariadb-client-test-embedded=10.6.13-r0 cmd:mariadb-client-test=10.6.13-r0 cmd:mariadb-test-embedded=10.6.13-r0 cmd:mariadb-test=10.6.13-r0 cmd:my_safe_process=10.6.13-r0 cmd:mysql_client_test=10.6.13-r0 cmd:mysql_client_test_embedded=10.6.13-r0 cmd:mysqltest=10.6.13-r0 cmd:mysqltest_embedded=10.6.13-r0
+
 C:Q1+CQWUTxPALcQXLwEqOk7k3Sy/Tw=
 P:u-boot-raspberrypi
 V:2022.10-r0
@@ -43497,6 +43444,23 @@ t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:so:libc.musl-armhf.so.1 so:libz.so.1
 i:lua5.2 lua-lzlib=0.4.3-r1
+
+C:Q1anCaAk1H51XEvP/NgQu6o1rU6jU=
+P:postgresql15-openrc
+V:15.3-r0
+A:armhf
+S:1559
+I:4096
+T:A sophisticated object-relational DBMS, version 15 (OpenRC init scripts)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql15
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831032
+c:8f940e4f2308f6f432a8680a79156a6f5040857d
+k:15
+D:postgresql-common-openrc
+i:openrc postgresql15=15.3-r0
 
 C:Q1a0F0mB3SeciyWCHnjtd2TVc2VhU=
 P:ifupdown
@@ -44012,22 +43976,6 @@ k:200
 D:lua5.2 lua5.2-libs=5.2.4-r10 pkgconfig
 p:pc:lua5.2=5.2.4
 
-C:Q1+sPp6x9nlztdJiKnSqDD8RavOzw=
-P:mariadb-backup
-V:10.6.12-r0
-A:armhf
-S:6843462
-I:19865600
-T:The mariabackup tool for physical online backups
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1675774246
-c:cf0483a57b13acf6142b872f5f97b6aa4f33b1b2
-D:mariadb-common so:libaio.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libgcc_s.so.1 so:liblzma.so.5 so:libpcre2-8.so.0 so:libssl.so.3 so:libstdc++.so.6 so:libz.so.1
-p:cmd:mariabackup=10.6.12-r0 cmd:mariadb-backup=10.6.12-r0 cmd:mbstream=10.6.12-r0
-
 C:Q1m/JdBH3VG7Ea9u/Z5tqZ47UMh4o=
 P:syslog-ng-openrc
 V:3.38.1-r0
@@ -44073,21 +44021,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1672882917
 c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
 i:openrc util-linux=2.38.1-r1
-
-C:Q1DvtWEP5FFNELbs5MpRQ9LOaQ6x4=
-P:mysql-client
-V:10.6.12-r0
-A:armhf
-S:1480
-I:4096
-T:Dummy package for mysql-client migration
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1675774246
-c:cf0483a57b13acf6142b872f5f97b6aa4f33b1b2
-D:mariadb-client
 
 C:Q1D27srAA4iIyu2CkE0vjLcPeP/Io=
 P:boost-dev
@@ -46501,6 +46434,22 @@ c:6cb1cea145714394a2ea7e30c4e60885c5f70dc8
 D:m4 so:libc.musl-armhf.so.1
 p:cmd:flex++=2.6.4-r3 cmd:flex=2.6.4-r3 cmd:lex=2.6.4-r3
 
+C:Q1B5MpdoHTEDY2gWH9yTN1Vt/hBgI=
+P:mariadb-dev
+V:10.6.13-r0
+A:armhf
+S:1403251
+I:7008256
+T:A fast SQL database server (development files)
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1683861708
+c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
+D:mariadb-connector-c-dev openssl-dev zlib-dev mariadb-embedded=10.6.13-r0 pkgconfig
+p:mysql-dev=10.6.13-r0 pc:mariadb=10.6.13
+
 C:Q1mDHGUInJ79849j0WZSza0zFdMEk=
 P:aaudit
 V:0.7.2-r3
@@ -47195,6 +47144,23 @@ c:ad9f866c25935c5b46670706bd6477ac46673ea0
 D:libxext-dev libxrandr=1.5.3-r0 pc:randrproto>=1.5 pc:x11 pc:xext pc:xproto pc:xrender pkgconfig
 p:pc:xrandr=1.5.3
 
+C:Q1T8gab+/LPRyZrd4gdYN6hxM63zc=
+P:nodejs
+V:18.16.0-r0
+A:armhf
+S:12425882
+I:34881536
+T:JavaScript runtime built on V8 engine - LTS version
+U:https://nodejs.org/
+L:MIT
+o:nodejs
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683803972
+c:31256f878fc2f70e2b3eaeb6bca6fde59766e1ba
+k:100
+D:ca-certificates /bin/sh so:libbrotlidec.so.1 so:libbrotlienc.so.1 so:libc.musl-armhf.so.1 so:libcares.so.2 so:libcrypto.so.3 so:libgcc_s.so.1 so:libicui18n.so.72 so:libicuuc.so.72 so:libnghttp2.so.14 so:libssl.so.3 so:libstdc++.so.6 so:libz.so.1
+p:nodejs-lts=18.16.0-r0 cmd:node=18.16.0-r0
+
 C:Q15IdEuY+aUNdcV1/3aiyu7ya62HA=
 P:perl-convert-uulib-doc
 V:1.8-r0
@@ -47500,22 +47466,6 @@ t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 i:docs perl-string-shellquote=1.04-r3
 
-C:Q1iHtmYa6xm6/uQUQgBXu2XYfYsDE=
-P:mariadb-client
-V:10.6.12-r0
-A:armhf
-S:7016948
-I:28020736
-T:Client for the MariaDB database
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1675774246
-c:cf0483a57b13acf6142b872f5f97b6aa4f33b1b2
-D:mariadb-common=10.6.12-r0 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libgcc_s.so.1 so:libncursesw.so.6 so:libssl.so.3 so:libstdc++.so.6 so:libz.so.1
-p:cmd:mariadb-access=10.6.12-r0 cmd:mariadb-admin=10.6.12-r0 cmd:mariadb-check=10.6.12-r0 cmd:mariadb-dump=10.6.12-r0 cmd:mariadb-dumpslow=10.6.12-r0 cmd:mariadb-find-rows=10.6.12-r0 cmd:mariadb-fix-extensions=10.6.12-r0 cmd:mariadb-import=10.6.12-r0 cmd:mariadb-show=10.6.12-r0 cmd:mariadb-waitpid=10.6.12-r0 cmd:mariadb=10.6.12-r0 cmd:myisam_ftdump=10.6.12-r0 cmd:mysql=10.6.12-r0 cmd:mysql_find_rows=10.6.12-r0 cmd:mysql_fix_extensions=10.6.12-r0 cmd:mysql_waitpid=10.6.12-r0 cmd:mysqlaccess=10.6.12-r0 cmd:mysqladmin=10.6.12-r0 cmd:mysqlcheck=10.6.12-r0 cmd:mysqldump=10.6.12-r0 cmd:mysqldumpslow=10.6.12-r0 cmd:mysqlimport=10.6.12-r0 cmd:mysqlshow=10.6.12-r0
-
 C:Q1u0Fp0T0jKfVsOk051fUyu8OMSZI=
 P:libxdmcp
 V:1.1.4-r0
@@ -47775,22 +47725,6 @@ c:1fdcc7121e207cc41fc068a3582cba3be1deefc2
 D:so:libc.musl-armhf.so.1 so:libdav1d.so.6
 p:cmd:dav1d=1.0.0-r2
 
-C:Q1pt2ceJH4gqPTL4VjNquIc8Gco9I=
-P:mariadb-test
-V:10.6.12-r0
-A:armhf
-S:42687980
-I:295809024
-T:The test suite distributed with MariaDB
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1675774246
-c:cf0483a57b13acf6142b872f5f97b6aa4f33b1b2
-D:mariadb-common so:libaio.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libgcc_s.so.1 so:liblzma.so.5 so:libpam.so.0 so:libpcre2-8.so.0 so:libpcre2-posix.so.3 so:libssl.so.3 so:libstdc++.so.6 so:libz.so.1
-p:cmd:mariadb-client-test-embedded=10.6.12-r0 cmd:mariadb-client-test=10.6.12-r0 cmd:mariadb-test-embedded=10.6.12-r0 cmd:mariadb-test=10.6.12-r0 cmd:my_safe_process=10.6.12-r0 cmd:mysql_client_test=10.6.12-r0 cmd:mysql_client_test_embedded=10.6.12-r0 cmd:mysqltest=10.6.12-r0 cmd:mysqltest_embedded=10.6.12-r0
-
 C:Q16Ogi/LV90wSdcSRF5slIQGvhABw=
 P:sqsh-doc
 V:2.5.16.1-r5
@@ -48003,6 +47937,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1678035306
 c:d794bc89a8786a9d97a7ce341fd2158b77aaf398
 i:docs opusfile=0.12-r4
+
+C:Q1XPNRrg6iQjvaupUAW47Ks26o5sw=
+P:mariadb-common
+V:10.6.13-r0
+A:armhf
+S:623042
+I:2314240
+T:MariaDB common files for both server and client
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1683861708
+c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
+D:/bin/sh
 
 C:Q1rYonakBJcgP1umc+FanWfuCD7Iw=
 P:font-adobe-75dpi
@@ -48492,22 +48441,22 @@ t:1654671542
 c:12d19048766cd373cf0a1244c9ceb5e86e55fe3b
 i:docs perl-css-minifier-xs=0.13-r2
 
-C:Q1FQYEwZzcBIzdIFcWzSmIn4fspOk=
-P:postgresql15
-V:15.2-r0
+C:Q1MxIzu6MtSgzIdFiCDMpA61UHnv8=
+P:postgresql14-pltcl
+V:14.8-r0
 A:armhf
-S:5415376
-I:14815232
-T:A sophisticated object-relational DBMS, version 15
+S:24586
+I:118784
+T:PL/Tcl procedural language for PostgreSQL
 U:https://www.postgresql.org/
 L:PostgreSQL
-o:postgresql15
+o:postgresql14
 m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040883
-c:d813170f45ebf6b6a884f54003e85cccfe3a0166
-k:15
-D:postgresql15-client postgresql-common tzdata /bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libicui18n.so.72 so:libicuuc.so.72 so:libldap.so.2 so:liblz4.so.1 so:libpq.so.5 so:libssl.so.3 so:libxml2.so.2 so:libz.so.1 so:libzstd.so.1
-p:postgresql cmd:pg_resetwal cmd:pg_archivecleanup cmd:pg_checksums cmd:pg_waldump cmd:postmaster cmd:postgres cmd:pg_upgrade cmd:pg_ctl cmd:pg_test_timing cmd:initdb cmd:pg_rewind cmd:pg_controldata cmd:pg_test_fsync
+t:1683831074
+c:7d5c02859cd68e09ff5c3101558f790c99448d63
+k:14
+D:postgresql14=14.8-r0 pgtcl so:libc.musl-armhf.so.1 so:libtcl8.6.so
+p:postgresql-pltcl
 
 C:Q1NRR2lHnGt/CxDQe40rp0QYBjJFg=
 P:memcached-openrc
@@ -49913,23 +49862,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1659429320
 c:39cde24fb54a667a6730bdaec3233184227131f6
 
-C:Q1B9PQvh8P4uiEI0kWs/+jH7ehfK0=
-P:libecpg-dev
-V:15.2-r0
-A:armhf
-S:289691
-I:1286144
-T:ECPG - Embedded SQL in C (development files)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql15
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040883
-c:d813170f45ebf6b6a884f54003e85cccfe3a0166
-k:15
-D:libpq-dev=15.2-r0 libecpg=15.2-r0 pc:libpq pkgconfig so:libc.musl-armhf.so.1
-p:pc:libecpg=15.2 pc:libpgtypes=15.2 cmd:ecpg=15.2-r0
-
 C:Q1+FinHSogfLYhBnIrqTow4pKM4ts=
 P:g++
 V:12.2.1_git20220924-r4
@@ -50306,6 +50238,24 @@ t:1661476335
 c:6d7f6deab2eda02753821f484a8ab66de6773c91
 D:pkgconfig
 p:pc:xcb-proto=1.15.2 py3.10:xcbgen=1.15.2-r0
+
+C:Q1VYeRfiiElsnWhjLE0500IxA7MQE=
+P:postgresql14-contrib-jit
+V:14.8-r0
+A:armhf
+S:1611546
+I:3608576
+T:Extension modules distributed with PostgreSQL (JIT support)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831074
+c:7d5c02859cd68e09ff5c3101558f790c99448d63
+k:14
+D:postgresql14-contrib=14.8-r0
+p:postgresql-contrib-jit
+i:postgresql14-jit postgresql14-contrib=14.8-r0
 
 C:Q1aYqNVo2og9K1xInsu8t0EoH5zqk=
 P:cmake-doc
@@ -51825,6 +51775,21 @@ k:100
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libasprintf.so.0=0.0.0
 
+C:Q1VJtt4WPaVkseJ8jHYdvjsiK/sAA=
+P:wget-doc
+V:1.21.4-r0
+A:armhf
+S:111154
+I:299008
+T:Network utility to retrieve files from the Web (documentation)
+U:https://www.gnu.org/software/wget/wget.html
+L:GPL-3.0-or-later WITH OpenSSL-Exception
+o:wget
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1683785558
+c:9a589d27eb2fd0c2207fdd63689ff97c9ec43228
+i:docs wget=1.21.4-r0
+
 C:Q1lE6ymhs4bvJpj1auKcbvqZ+gU/w=
 P:fstrm-dev
 V:0.6.1-r1
@@ -52454,6 +52419,23 @@ m:Fabian Affolter <fabian@affolter-engineering.ch>
 t:1660908211
 c:d34ee2545766582f86b0904420acea80d1f52283
 i:docs userspace-rcu=0.13.2-r0
+
+C:Q14qVUC3XNcJrRZP4w/qbqoaAbMsA=
+P:postgresql14-doc
+V:14.8-r0
+A:armhf
+S:489858
+I:2654208
+T:A sophisticated object-relational DBMS, version 14 (documentation)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831074
+c:7d5c02859cd68e09ff5c3101558f790c99448d63
+k:14
+p:postgresql-doc
+i:docs postgresql14=14.8-r0
 
 C:Q1qR0MTgReRqjsc4oq3I9uaZ3tB+Y=
 P:bison
@@ -53400,6 +53382,23 @@ t:1654638378
 c:02e97d24084a7c04f383e04637b57673e2c0d66e
 D:libjpeg-turbo-dev
 
+C:Q1PrfZxlSUb82K+22NHA+G5PPa790=
+P:postgresql14-contrib
+V:14.8-r0
+A:armhf
+S:641873
+I:4812800
+T:Extension modules distributed with PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831074
+c:7d5c02859cd68e09ff5c3101558f790c99448d63
+k:14
+D:postgresql14=14.8-r0 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libpq.so.5 so:libuuid.so.1 so:libxml2.so.2 so:libz.so.1
+p:postgresql-contrib cmd:oid2name cmd:vacuumlo
+
 C:Q1n4ZNQpCwQW+s0XetNRwU0yA/qAQ=
 P:perl-xml-simple-doc
 V:2.25-r2
@@ -53585,23 +53584,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1665238927
 c:972423e8914dcd61be62a33feaf6b5b1a9515326
 D:encodings font-alias mkfontscale fontconfig
-
-C:Q1/U9KN5nBbhXFaLNsKYfzI6liQ/4=
-P:postgresql15-doc
-V:15.2-r0
-A:armhf
-S:507134
-I:2719744
-T:A sophisticated object-relational DBMS, version 15 (documentation)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql15
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040883
-c:d813170f45ebf6b6a884f54003e85cccfe3a0166
-k:15
-p:postgresql-doc
-i:docs postgresql15=15.2-r0
 
 C:Q1rj0o1PFzLczxpj4yaeWgTQs+JjY=
 P:linux-firmware-matrox
@@ -54066,6 +54048,23 @@ t:1646868262
 c:d9636a1539774bcac45dc0341b8970e38b667ad6
 D:so:libc.musl-armhf.so.1
 p:cmd:fping=5.1-r1
+
+C:Q17+hedBaJ/WNZNH5gxLH179M8ulc=
+P:postgresql15-plpython3
+V:15.3-r0
+A:armhf
+S:45360
+I:172032
+T:PL/Python3 procedural language for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql15
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831032
+c:8f940e4f2308f6f432a8680a79156a6f5040857d
+k:15
+D:postgresql15=15.3-r0 python3 so:libc.musl-armhf.so.1 so:libpython3.10.so.1.0
+p:postgresql-plpython3
 
 C:Q1MN6Ugca+3/pfcL6DRn+CTHOJiEA=
 P:squid-lang-fr
@@ -55203,23 +55202,6 @@ c:e2aed4fb54b90ac4a17234b76f19d178adcfe1b4
 D:so:libc.musl-armhf.so.1
 p:so:libunistring.so.5=5.0.0
 
-C:Q1QSfJsoN0VBWgwQezIU7vCkFVFu8=
-P:libpq-dev
-V:15.2-r0
-A:armhf
-S:443111
-I:1241088
-T:PostgreSQL client library (development files)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql15
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040883
-c:d813170f45ebf6b6a884f54003e85cccfe3a0166
-k:15
-D:libpq=15.2-r0 pc:libcrypto pc:libssl pkgconfig so:libc.musl-armhf.so.1
-p:pc:libpq=15.2 cmd:pg_config=15.2-r0
-
 C:Q1YkhV0aimMMNuZBitSWW7DZE4LB4=
 P:lua5.2-b64
 V:0.1-r4
@@ -55406,23 +55388,6 @@ t:1639595859
 c:11e0637220430047708bd314542d8835a2a2bc12
 D:python3 cmd:ssh
 p:cmd:pnuke=2.3.4-r2 cmd:prsync=2.3.4-r2 cmd:pscp=2.3.4-r2 cmd:pslurp=2.3.4-r2 cmd:pssh=2.3.4-r2 py3.10:psshlib=2.3.4-r2
-
-C:Q1G/tmXk+jURfVmSjwe/fWWY3puS4=
-P:postgresql15-client
-V:15.2-r0
-A:armhf
-S:1086082
-I:2846720
-T:PostgreSQL client
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql15
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040883
-c:d813170f45ebf6b6a884f54003e85cccfe3a0166
-k:15
-D:postgresql-common so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:liblz4.so.1 so:libpq.so.5 so:libreadline.so.8 so:libz.so.1 so:libzstd.so.1
-p:postgresql-client cmd:clusterdb cmd:createdb cmd:createuser cmd:dropdb cmd:dropuser cmd:pg_amcheck cmd:pg_basebackup cmd:pg_dump cmd:pg_dumpall cmd:pg_isready cmd:pg_receivewal cmd:pg_recvlogical cmd:pg_restore cmd:pg_verifybackup cmd:pgbench cmd:psql cmd:reindexdb cmd:vacuumdb
 
 C:Q1PDF32a6r87XbrlRDzG24MVJE7/I=
 P:openldap-clients
@@ -56112,6 +56077,21 @@ t:1664241803
 c:b18912c2a9e61939c5412dba4522cb7342ab8b6a
 D:so:libX11.so.6 so:libXext.so.6 so:libc.musl-armhf.so.1
 p:so:libXtst.so.6=6.1.0
+
+C:Q1FzbdTxuRvZvYyP9p5MHwxI1wYMg=
+P:mariadb-embedded-dev
+V:10.6.13-r0
+A:armhf
+S:1553
+I:12288
+T:MariaDB as an embeddable library - development files
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1683861708
+c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
+D:mariadb-common mariadb-embedded=10.6.13-r0
 
 C:Q1mFVOgFobojQUaSsa8UvdK3fX4DQ=
 P:ipset
@@ -57410,21 +57390,6 @@ t:1666625766
 c:af2c37ae851b3611e829441ac12d18ccfa8cc8c0
 i:docs jq=1.6-r2
 
-C:Q13aqzTgjroZ47XGNrdIxIkeZ94W4=
-P:mariadb-plugin-rocksdb
-V:10.6.12-r0
-A:armhf
-S:1552859
-I:3899392
-T:MariaDB plugin for RocksDB (MyRocks)
-U:https://mariadb.com/kb/en/library/myrocks/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1675774246
-c:cf0483a57b13acf6142b872f5f97b6aa4f33b1b2
-D:mariadb=10.6.12-r0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1
-
 C:Q1AmVkglJUtb1AZ6qkMOw0MTYkw5A=
 P:nfs-utils-dbg
 V:2.6.2-r0
@@ -58668,6 +58633,24 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1603204172
 c:573e07da91784d4d27c4bc8b9e9122495c7356d3
 
+C:Q1YnSiXdzJGbkzUR+G9xuFcwYTMKs=
+P:postgresql14-plpython3-contrib
+V:14.8-r0
+A:armhf
+S:8305
+I:184320
+T:PL/Python 3 extension modules distributed with PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831074
+c:7d5c02859cd68e09ff5c3101558f790c99448d63
+k:14
+D:postgresql14-plpython3=14.8-r0 so:libc.musl-armhf.so.1 so:libpython3.10.so.1.0
+p:postgresql-plpython3-contrib
+i:postgresql14-plpython3=14.8-r0 postgresql14-contrib=14.8-r0
+
 C:Q1I7mnilFMX7if3KizsFV27ywOA54=
 P:log4cplus
 V:2.0.8-r0
@@ -58743,23 +58726,6 @@ o:musl
 m:Timo Teräs <timo.teras@iki.fi>
 t:1668104640
 c:f93af038c3de7146121c2ea8124ba5ce29b4b058
-
-C:Q1PLvJdMAsGjP/vP0tJnAgdVsPlUM=
-P:postgresql15-contrib
-V:15.2-r0
-A:armhf
-S:659144
-I:5046272
-T:Extension modules distributed with PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql15
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040883
-c:d813170f45ebf6b6a884f54003e85cccfe3a0166
-k:15
-D:postgresql15=15.2-r0 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libpq.so.5 so:libuuid.so.1 so:libxml2.so.2 so:libz.so.1
-p:postgresql-contrib cmd:oid2name cmd:vacuumlo
 
 C:Q1DJL/2JoPvUUdMYRLbT7pzzYaUjU=
 P:libsndfile-doc
@@ -60117,21 +60083,6 @@ t:1673689038
 c:1370efda00c4e0fc44e48a9c724f9bb28560fa7e
 D:lld=15.0.7-r0 lld-libs=15.0.7-r0
 
-C:Q1wopNtb78/xQQBlbvHPPw65/pPxM=
-P:mysql
-V:10.6.12-r0
-A:armhf
-S:1473
-I:4096
-T:Dummy package for mysql migration
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1675774246
-c:cf0483a57b13acf6142b872f5f97b6aa4f33b1b2
-D:mariadb
-
 C:Q1gyleNwXryl0wla+f2NeKTm6Otqs=
 P:uwsgi-zabbix
 V:2.0.21-r0
@@ -60988,6 +60939,23 @@ t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 i:docs cksfv=1.3.15-r2
 
+C:Q1wTYB/EABhyhS3ZSoaRdg/POADgo=
+P:libpq-dev
+V:15.3-r0
+A:armhf
+S:443051
+I:1245184
+T:PostgreSQL client library (development files)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql15
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831032
+c:8f940e4f2308f6f432a8680a79156a6f5040857d
+k:15
+D:libpq=15.3-r0 pc:libcrypto pc:libssl pkgconfig so:libc.musl-armhf.so.1
+p:pc:libpq=15.3 cmd:pg_config=15.3-r0
+
 C:Q1XQyfP0qb8kfmESk5KQ6ntbo+oKA=
 P:mosquitto-doc
 V:2.0.15-r1
@@ -61403,23 +61371,6 @@ c:1c7c4bb4e47ff4c26aec8ff77dc30fe06941c930
 D:lua5.1 so:libc.musl-armhf.so.1 so:liblber.so.2 so:libldap.so.2
 i:lua-ldap=1.2.6-r3 lua5.1
 
-C:Q1SgsEi1TwA1/5un4e/KlzWKOy2aw=
-P:postgresql15-dev
-V:15.2-r0
-A:armhf
-S:1820704
-I:8892416
-T:A sophisticated object-relational DBMS, version 15 (development files)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql15
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040883
-c:d813170f45ebf6b6a884f54003e85cccfe3a0166
-k:15
-D:libpq-dev libecpg-dev clang14 icu-dev llvm14 lz4-dev openssl-dev zstd-dev so:libc.musl-armhf.so.1 so:libpq.so.5
-p:postgresql-dev
-
 C:Q1Ov0dwYxnd9z+qnT/Dkv46ksMQpY=
 P:apparmor
 V:3.1.2-r0
@@ -61620,22 +61571,6 @@ t:1668176703
 c:d484333151e53f5aeca39546e7d70500fa4a08aa
 D:lua5.3 so:libc.musl-armhf.so.1 so:libodbc.so.2
 i:lua-sql-odbc=2.6.0-r2 lua5.3
-
-C:Q1cPeiRdxmsnXN4zbdF4drj79IfEk=
-P:mariadb-embedded
-V:10.6.12-r0
-A:armhf
-S:5286163
-I:15204352
-T:MariaDB as an embeddable library
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1675774246
-c:cf0483a57b13acf6142b872f5f97b6aa4f33b1b2
-D:mariadb-common=10.6.12-r0 so:libaio.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libgcc_s.so.1 so:liblzma.so.5 so:libpcre2-8.so.0 so:libssl.so.3 so:libstdc++.so.6 so:libz.so.1
-p:so:libmariadbd.so.19=19
 
 C:Q1k88N7By3sHjGkgRTvAv8UpGqZK8=
 P:perl-encode
@@ -63383,6 +63318,22 @@ t:1662215060
 c:72f38ece22272cb7bb278329c1ff67125cbefc77
 i:docs libxkbcommon=1.4.1-r0
 
+C:Q19ch4Iyn+qhLvGBZAdOLpJ5cpvR0=
+P:nodejs-dev
+V:18.16.0-r0
+A:armhf
+S:214499
+I:1138688
+T:JavaScript runtime built on V8 engine - LTS version (development files)
+U:https://nodejs.org/
+L:MIT
+o:nodejs
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683803972
+c:31256f878fc2f70e2b3eaeb6bca6fde59766e1ba
+k:100
+p:nodejs-lts-dev=18.16.0
+
 C:Q1xy+f2eY37rK1N8x0VEPSySHrnzM=
 P:liblogging-dev
 V:1.0.6-r2
@@ -65100,6 +65051,23 @@ c:f4adb9cb837fb85e9aba247e873b97b3f1b04701
 D:so:libc.musl-armhf.so.1 so:libkmod.so.2
 p:so:libopeniscsiusr.so.0=0.2.0
 
+C:Q1nIQVrRb2ehXO/JUguvrCQtJ18CI=
+P:postgresql14-plperl
+V:14.8-r0
+A:armhf
+S:38535
+I:180224
+T:PL/Perl procedural language for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831074
+c:7d5c02859cd68e09ff5c3101558f790c99448d63
+k:14
+D:postgresql14=14.8-r0 so:libc.musl-armhf.so.1 so:libperl.so
+p:postgresql-plperl
+
 C:Q1kG0n78J3XM/oZo09zEdbodEU7fM=
 P:mosh
 V:1.4.0-r0
@@ -66119,6 +66087,24 @@ t:1666843581
 c:26b7430674b2c5aa3e7a81b122f1af05a05ca70c
 i:docs libffi=3.4.4-r0
 
+C:Q1iv4vVeFqJEvE0bGd1kdoZqSwPuU=
+P:postgresql15-plpython3-contrib
+V:15.3-r0
+A:armhf
+S:8335
+I:184320
+T:PL/Python 3 extension modules distributed with PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql15
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831032
+c:8f940e4f2308f6f432a8680a79156a6f5040857d
+k:15
+D:postgresql15-plpython3=15.3-r0 so:libc.musl-armhf.so.1 so:libpython3.10.so.1.0
+p:postgresql-plpython3-contrib
+i:postgresql15-plpython3=15.3-r0 postgresql15-contrib=15.3-r0
+
 C:Q1yy3pE3zvD6BJ8kZtde8LbeL2rms=
 P:dnsmasq-common
 V:2.87-r2
@@ -66375,23 +66361,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
 
-C:Q1QmsGgkA5LdKfQ/9Sg5S1zvQtJGI=
-P:postgresql14-plpython3
-V:14.7-r0
-A:armhf
-S:45259
-I:172032
-T:PL/Python3 procedural language for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040850
-c:73074efc701b915ea8aa19f6c70af0ce1b2547d9
-k:14
-D:postgresql14=14.7-r0 python3 so:libc.musl-armhf.so.1 so:libpython3.10.so.1.0
-p:postgresql-plpython3
-
 C:Q1BVhbNVIsJ6sPtgmPCoqHIClxR2Y=
 P:ppp-radius
 V:2.4.9-r6
@@ -66512,23 +66481,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1667743833
 c:76988828c18a4ab5d9aa4aee13a4fe7501a6efec
 D:so:libc.musl-armhf.so.1 so:liblber.so.2 so:libldap.so.2
-
-C:Q1eOH13cCtAuiX0V09GTrzB2mOez8=
-P:postgresql15-pltcl
-V:15.2-r0
-A:armhf
-S:24771
-I:118784
-T:PL/Tcl procedural language for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql15
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040883
-c:d813170f45ebf6b6a884f54003e85cccfe3a0166
-k:15
-D:postgresql15=15.2-r0 pgtcl so:libc.musl-armhf.so.1 so:libtcl8.6.so
-p:postgresql-pltcl
 
 C:Q1elOUgr0lBwEofPHsLGLPUj+35Fk=
 P:lua5.3-curl
@@ -68104,6 +68056,22 @@ t:1659429320
 c:39cde24fb54a667a6730bdaec3233184227131f6
 D:so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libssl.so.3
 p:so:libevent-2.1.so.7=7.0.1 so:libevent_core-2.1.so.7=7.0.1 so:libevent_extra-2.1.so.7=7.0.1 so:libevent_openssl-2.1.so.7=7.0.1 so:libevent_pthreads-2.1.so.7=7.0.1
+
+C:Q1hL0zIY+y+k44jFlVFi3os/rG9xg=
+P:mariadb-client
+V:10.6.13-r0
+A:armhf
+S:7015886
+I:28020736
+T:Client for the MariaDB database
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1683861708
+c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
+D:mariadb-common=10.6.13-r0 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libgcc_s.so.1 so:libncursesw.so.6 so:libssl.so.3 so:libstdc++.so.6 so:libz.so.1
+p:cmd:mariadb-access=10.6.13-r0 cmd:mariadb-admin=10.6.13-r0 cmd:mariadb-check=10.6.13-r0 cmd:mariadb-dump=10.6.13-r0 cmd:mariadb-dumpslow=10.6.13-r0 cmd:mariadb-find-rows=10.6.13-r0 cmd:mariadb-fix-extensions=10.6.13-r0 cmd:mariadb-import=10.6.13-r0 cmd:mariadb-show=10.6.13-r0 cmd:mariadb-waitpid=10.6.13-r0 cmd:mariadb=10.6.13-r0 cmd:myisam_ftdump=10.6.13-r0 cmd:mysql=10.6.13-r0 cmd:mysql_find_rows=10.6.13-r0 cmd:mysql_fix_extensions=10.6.13-r0 cmd:mysql_waitpid=10.6.13-r0 cmd:mysqlaccess=10.6.13-r0 cmd:mysqladmin=10.6.13-r0 cmd:mysqlcheck=10.6.13-r0 cmd:mysqldump=10.6.13-r0 cmd:mysqldumpslow=10.6.13-r0 cmd:mysqlimport=10.6.13-r0 cmd:mysqlshow=10.6.13-r0
 
 C:Q19fbzB1cl8KxMZU2N4glIdLsfbu4=
 P:libcap-dev
@@ -70704,22 +70672,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1653034879
 c:7e75418bac17e6f0c3043cf7b0ecc6263f8ce103
 
-C:Q1/tK/RcUBIc8JnJohexDqHHc5W10=
-P:wget
-V:1.21.3-r2
-A:armhf
-S:226237
-I:503808
-T:Network utility to retrieve files from the Web
-U:https://www.gnu.org/software/wget/wget.html
-L:GPL-3.0-or-later WITH OpenSSL-Exception
-o:wget
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1668110336
-c:2d376b3ce3f4b988d93cff8e5fb83c4b57851eaf
-D:so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libidn2.so.0 so:libpcre2-8.so.0 so:libssl.so.3 so:libz.so.1
-p:cmd:wget=1.21.3-r2
-
 C:Q1DsvV0SR+nIPx9W/FdWI+ZB2wCCE=
 P:libidn-dev
 V:1.41-r0
@@ -70948,6 +70900,23 @@ m:Milan P. Stanić <mps@arvanta.net>
 t:1664904034
 c:0be1381350907a851cf56b82e8993ac3ca3c0721
 D:u-boot
+
+C:Q1FHzoyBbKQ8nJh/AMm5UUWIdls8g=
+P:postgresql15-jit
+V:15.3-r0
+A:armhf
+S:12312712
+I:23031808
+T:Just-in-time compilation support for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql15
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831032
+c:8f940e4f2308f6f432a8680a79156a6f5040857d
+k:15
+D:postgresql15=15.3-r0 so:libLLVM-14.so so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+p:postgresql-jit
 
 C:Q1d8x1HR+fRaFU08ne70OIMRKqBi0=
 P:perl-locale-maketext-fuzzy
@@ -71256,6 +71225,23 @@ t:1668032422
 c:ae4888db815968e879d4f8a24e5bb252c911ed3f
 i:docs py3-wheel=0.38.4-r0
 
+C:Q1aMNfpFVaTylkfcFPKp81vjBXOtw=
+P:postgresql15-client
+V:15.3-r0
+A:armhf
+S:1086800
+I:2846720
+T:PostgreSQL client
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql15
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831032
+c:8f940e4f2308f6f432a8680a79156a6f5040857d
+k:15
+D:postgresql-common so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:liblz4.so.1 so:libpq.so.5 so:libreadline.so.8 so:libz.so.1 so:libzstd.so.1
+p:postgresql-client cmd:clusterdb cmd:createdb cmd:createuser cmd:dropdb cmd:dropuser cmd:pg_amcheck cmd:pg_basebackup cmd:pg_dump cmd:pg_dumpall cmd:pg_isready cmd:pg_receivewal cmd:pg_recvlogical cmd:pg_restore cmd:pg_verifybackup cmd:pgbench cmd:psql cmd:reindexdb cmd:vacuumdb
+
 C:Q1uNVCzTmp3ldW5f5SjnL9f2KEU48=
 P:bash-completion
 V:2.11-r4
@@ -71534,23 +71520,6 @@ c:79fd52e542111ab7a845cef14ac5a80a397249ad
 D:pkgconfig py3-talloc=2.3.4-r0 talloc=2.3.4-r0
 p:pc:pytalloc-util.cpython-310-arm-linux-gnueabihf=2.3.4 pc:talloc=2.3.4
 
-C:Q1MrEJ1rVSaA0b5J+DI6RLas0LPdI=
-P:postgresql14-jit
-V:14.7-r0
-A:armhf
-S:11962297
-I:22294528
-T:Just-in-time compilation support for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040850
-c:73074efc701b915ea8aa19f6c70af0ce1b2547d9
-k:14
-D:postgresql14=14.7-r0 so:libLLVM-14.so so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-p:postgresql-jit
-
 C:Q1JUHW45R7TrSnlMDv2oFsfkw8nwI=
 P:uwsgi-router_basicauth
 V:2.0.21-r0
@@ -71751,6 +71720,23 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1666423171
 c:530dc33325186b93bee950307082848454a6ff16
 i:docs rsync=3.2.7-r0
+
+C:Q1llKa6z0cFbB3GrtxF4JBldESM68=
+P:postgresql14-openrc
+V:14.8-r0
+A:armhf
+S:1559
+I:4096
+T:A sophisticated object-relational DBMS, version 14 (OpenRC init scripts)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831074
+c:7d5c02859cd68e09ff5c3101558f790c99448d63
+k:14
+D:postgresql-common-openrc
+i:openrc postgresql14=14.8-r0
 
 C:Q1qF/gatC3GWqWgzmegd5BV3NHgio=
 P:sshfs
@@ -73615,24 +73601,6 @@ t:1649530737
 c:08e2f41f6eefa8662cb3454bd4c64f0157f2a6ba
 i:docs snappy=1.1.9-r4
 
-C:Q1cbO6mUSJZ8cUnz0z9hfq4lOBvuo=
-P:postgresql15-plperl-contrib
-V:15.2-r0
-A:armhf
-S:6367
-I:114688
-T:PL/Perl extension modules distributed with PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql15
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040883
-c:d813170f45ebf6b6a884f54003e85cccfe3a0166
-k:15
-D:postgresql15-plperl=15.2-r0 so:libc.musl-armhf.so.1 so:libperl.so
-p:postgresql-plperl-contrib
-i:postgresql15-plperl=15.2-r0 postgresql15-contrib=15.2-r0
-
 C:Q1lA14j7luDt0a8pT1I9/QdM6xg+g=
 P:iproute2-bash-completion
 V:6.0.0-r1
@@ -74046,6 +74014,21 @@ t:1652178842
 c:4e7a73e02f55e0033e27a8500337b5cefa2efd81
 D:so:libX11.so.6 so:libXext.so.6 so:libc.musl-armhf.so.1
 p:so:libXvMC.so.1=1.0.0 so:libXvMCW.so.1=1.0.0
+
+C:Q1xO/EBirqqytb/WzwFiplAqxMs2Y=
+P:mariadb-static
+V:10.6.13-r0
+A:armhf
+S:10768292
+I:40980480
+T:Static libraries for MariaDB
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1683861708
+c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
+D:mariadb-common
 
 C:Q1lUCm1on64dLnX9mjAsiYjlHeIpE=
 P:perl-convert-tnef-doc
@@ -74510,6 +74493,23 @@ c:c20cb769bfbc27aba1bddd3e5b497a2832aa5f1e
 D:font-util pkgconfig
 p:pc:fontutil=1.3.3
 
+C:Q1XpgNZXBIkcAWbDeo1NRRI8HqAmg=
+P:postgresql15-plperl
+V:15.3-r0
+A:armhf
+S:38644
+I:180224
+T:PL/Perl procedural language for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql15
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831032
+c:8f940e4f2308f6f432a8680a79156a6f5040857d
+k:15
+D:postgresql15=15.3-r0 so:libc.musl-armhf.so.1 so:libperl.so
+p:postgresql-plperl
+
 C:Q1P432ocl2TlDhbEcHioJA3jUCPmU=
 P:lua5.4-penlight
 V:1.13.1-r0
@@ -74634,23 +74634,6 @@ t:1673787192
 c:329e3fac5271a173df1545f43f86f20f5f183e44
 D:ppp-daemon so:libc.musl-armhf.so.1
 p:cmd:pppoe-discovery=2.4.9-r6
-
-C:Q1NIZ1CLcmqS8LimLILT+YfHRw4X8=
-P:postgresql14-openrc
-V:14.7-r0
-A:armhf
-S:1559
-I:4096
-T:A sophisticated object-relational DBMS, version 14 (OpenRC init scripts)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1676040850
-c:73074efc701b915ea8aa19f6c70af0ce1b2547d9
-k:14
-D:postgresql-common-openrc
-i:openrc postgresql14=14.7-r0
 
 C:Q1yH89u1CjW/X73ChzIH6t3Jiw9CE=
 P:gd-dev
@@ -75080,6 +75063,23 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1665238927
 c:972423e8914dcd61be62a33feaf6b5b1a9515326
 D:encodings font-alias mkfontscale fontconfig
+
+C:Q1snRwYerzJ9eLN+K6QcpuYMhPL+A=
+P:postgresql14-plpython3
+V:14.8-r0
+A:armhf
+S:45300
+I:172032
+T:PL/Python3 procedural language for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1683831074
+c:7d5c02859cd68e09ff5c3101558f790c99448d63
+k:14
+D:postgresql14=14.8-r0 python3 so:libc.musl-armhf.so.1 so:libpython3.10.so.1.0
+p:postgresql-plpython3
 
 C:Q1RLpvaQcnDSs0kE8Ec2DCGdCz36w=
 P:pcmciautils
