@@ -5260,22 +5260,6 @@ c:59bf4fe84e3b2068630c114be28c0776592abbb2
 D:so:libc.musl-x86_64.so.1 so:libgcrypt.so.20 so:libxml2.so.2
 p:so:libexslt.so.0=0.8.20 so:libxslt.so.1=1.1.37 cmd:xsltproc=1.1.37-r1
 
-C:Q1q9ZpUTuAY+LBMNECeZekWvCOxGs=
-P:haproxy
-V:2.6.12-r0
-A:x86_64
-S:1357201
-I:3170304
-T:A TCP/HTTP reverse proxy for high availability environments
-U:https://www.haproxy.org/
-L:(GPL-2.0-or-later AND GPL-2.1-or-later) WITH OpenSSL-Exception
-o:haproxy
-m:Milan P. Stanić <mps@arvanta.net>
-t:1680083803
-c:1d9c9edfa79ef6712e31b1c2fb356d44f485f9be
-D:/bin/sh so:libc.musl-x86_64.so.1 so:libcrypto.so.3 so:liblua-5.4.so.0 so:libpcre.so.1 so:libssl.so.3 so:libz.so.1
-p:cmd:haproxy=2.6.12-r0
-
 C:Q1MPJUz8XjCHIIMFwdyYlGGjWKX5U=
 P:lua5.3-sql-sqlite3
 V:2.6.0-r2
@@ -10272,6 +10256,22 @@ o:openssl
 m:Ariadne Conill <ariadne@dereferenced.org>
 t:1682007832
 c:d62c0613776b85229a8b2433673dae4ed231a18a
+
+C:Q1K7WbN/rMQ86E6eOSbRziZdsoHc0=
+P:irqbalance
+V:1.9.2-r1
+A:x86_64
+S:38192
+I:110592
+T:Daemon that distributes interrupts over the processors
+U:https://github.com/Irqbalance/irqbalance
+L:GPL-2.0-or-later
+o:irqbalance
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1684141238
+c:261bd945aa72f97c1a4205ea74624aa33cb823e4
+D:so:libc.musl-x86_64.so.1 so:libglib-2.0.so.0 so:libncursesw.so.6 so:libnuma.so.1
+p:cmd:irqbalance-ui=1.9.2-r1 cmd:irqbalance=1.9.2-r1
 
 C:Q1fsGjWvJBfPvLkwx6vTwEGxImuvM=
 P:make
@@ -15328,6 +15328,21 @@ c:b8e2be09535658d719873d57f01d9ab8bc30162f
 D:so:libc.musl-x86_64.so.1
 p:so:libcom_err.so.2=2.1
 
+C:Q1XMB78C3H8H/q+9zYQBIDfsKUuwg=
+P:irqbalance-openrc
+V:1.9.2-r1
+A:x86_64
+S:2424
+I:24576
+T:Daemon that distributes interrupts over the processors (OpenRC init scripts)
+U:https://github.com/Irqbalance/irqbalance
+L:GPL-2.0-or-later
+o:irqbalance
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1684141238
+c:261bd945aa72f97c1a4205ea74624aa33cb823e4
+i:openrc irqbalance=1.9.2-r1
+
 C:Q1fQ13JJfHs26GrtGd/r62QhJBSKY=
 P:postgresql15-client
 V:15.3-r0
@@ -18081,6 +18096,21 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1667984906
 c:ce6f81df0382091a7b4dbf3c974b61f133e1291b
 D:nagios-plugins so:libc.musl-x86_64.so.1 so:libcrypto.so.3 so:libmariadb.so.3
+
+C:Q1rlOYqU17E3JhUDr92P/ylaHwxmA=
+P:haproxy-doc
+V:2.6.13-r0
+A:x86_64
+S:488843
+I:1867776
+T:A TCP/HTTP reverse proxy for high availability environments (documentation)
+U:https://www.haproxy.org/
+L:(GPL-2.0-or-later AND GPL-2.1-or-later) WITH OpenSSL-Exception
+o:haproxy
+m:Milan P. Stanić <mps@arvanta.net>
+t:1684142402
+c:ab01bc2f6a8023674775a75a2696e3948c831270
+i:docs haproxy=2.6.13-r0
 
 C:Q1MJLcdIp9yFxpbtLOAEnFe/q4kO4=
 P:minicom-doc
@@ -27528,21 +27558,6 @@ t:1616954726
 c:57c840f5f9673b81db9293097470044404da380d
 i:docs libxaw=1.0.14-r0
 
-C:Q1oDRyoj12Sl5jfGcIH+K3XHueevo=
-P:haproxy-openrc
-V:2.6.12-r0
-A:x86_64
-S:2257
-I:16384
-T:A TCP/HTTP reverse proxy for high availability environments (OpenRC init scripts)
-U:https://www.haproxy.org/
-L:(GPL-2.0-or-later AND GPL-2.1-or-later) WITH OpenSSL-Exception
-o:haproxy
-m:Milan P. Stanić <mps@arvanta.net>
-t:1680083803
-c:1d9c9edfa79ef6712e31b1c2fb356d44f485f9be
-i:openrc haproxy=2.6.12-r0
-
 C:Q1UaAaieNKwNUmQ8Lug+QHz11+9/Q=
 P:perl-dev
 V:5.36.0-r1
@@ -31249,21 +31264,6 @@ t:1670415694
 c:cba4a112ee7ae57c3cded33e742f63930b546859
 D:rsyslog=8.2212.0-r0 so:libc.musl-x86_64.so.1 so:libczmq.so.4
 p:rsyslog-imczmq=8.2212.0-r0 rsyslog-omczmq=8.2212.0-r0
-
-C:Q1y2ZCRyBKnPVs5DYcBx+MB9QCLu8=
-P:irqbalance-doc
-V:1.9.2-r0
-A:x86_64
-S:6002
-I:28672
-T:Daemon that distributes interrupts over the processors (documentation)
-U:https://github.com/Irqbalance/irqbalance
-L:GPL-2.0-or-later
-o:irqbalance
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1667280704
-c:ca9f36f1164e37e3d52c59ba6f76c16ee3485158
-i:docs irqbalance=1.9.2-r0
 
 C:Q1wPmecf+GkhKsdy3ccW/EdZebRkc=
 P:perl-config-autoconf
@@ -42149,6 +42149,21 @@ t:1645090616
 c:255a8ffdfb9329b8afa227e576fa78ce398b8e4b
 i:docs rp-pppoe=3.15-r0
 
+C:Q1C7GVNHO+lkvjW4+NCc9JP6u1APY=
+P:irqbalance-doc
+V:1.9.2-r1
+A:x86_64
+S:5999
+I:28672
+T:Daemon that distributes interrupts over the processors (documentation)
+U:https://github.com/Irqbalance/irqbalance
+L:GPL-2.0-or-later
+o:irqbalance
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1684141238
+c:261bd945aa72f97c1a4205ea74624aa33cb823e4
+i:docs irqbalance=1.9.2-r1
+
 C:Q1zhWta0NB464ZJwERw/AoxBawmyQ=
 P:checkbashisms-bash-completion
 V:2.22.2-r0
@@ -44043,6 +44058,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1672591081
 c:af42d45cd558323043f855dd09fc1c7381a17803
 p:linux-firmware-any
+
+C:Q1OzMuRdc0CsD5an7cNZerpvAjxqc=
+P:haproxy-openrc
+V:2.6.13-r0
+A:x86_64
+S:2255
+I:16384
+T:A TCP/HTTP reverse proxy for high availability environments (OpenRC init scripts)
+U:https://www.haproxy.org/
+L:(GPL-2.0-or-later AND GPL-2.1-or-later) WITH OpenSSL-Exception
+o:haproxy
+m:Milan P. Stanić <mps@arvanta.net>
+t:1684142402
+c:ab01bc2f6a8023674775a75a2696e3948c831270
+i:openrc haproxy=2.6.13-r0
 
 C:Q1PZj5D82IWiXqULD/1KbCCsiX3js=
 P:uwsgi-router_redirect
@@ -48567,21 +48597,6 @@ t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:openrc>=0.6 /bin/sh so:libc.musl-x86_64.so.1
 p:cmd:repeater=014-r9
-
-C:Q1nfaER2t3s/KQIY13kP9gGP4jVJ0=
-P:haproxy-doc
-V:2.6.12-r0
-A:x86_64
-S:488702
-I:1863680
-T:A TCP/HTTP reverse proxy for high availability environments (documentation)
-U:https://www.haproxy.org/
-L:(GPL-2.0-or-later AND GPL-2.1-or-later) WITH OpenSSL-Exception
-o:haproxy
-m:Milan P. Stanić <mps@arvanta.net>
-t:1680083803
-c:1d9c9edfa79ef6712e31b1c2fb356d44f485f9be
-i:docs haproxy=2.6.12-r0
 
 C:Q1j20W4Fjep1r8lj1kHaY1TGP/HoQ=
 P:pixman-static
@@ -53612,6 +53627,22 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.1-maxminddb lua5.2-maxminddb lua5.3-maxminddb lua5.4-maxminddb
+
+C:Q1KFSdo6X31kcKAyEbOLXTWJRS8ac=
+P:haproxy
+V:2.6.13-r0
+A:x86_64
+S:1360564
+I:3178496
+T:A TCP/HTTP reverse proxy for high availability environments
+U:https://www.haproxy.org/
+L:(GPL-2.0-or-later AND GPL-2.1-or-later) WITH OpenSSL-Exception
+o:haproxy
+m:Milan P. Stanić <mps@arvanta.net>
+t:1684142402
+c:ab01bc2f6a8023674775a75a2696e3948c831270
+D:/bin/sh so:libc.musl-x86_64.so.1 so:libcrypto.so.3 so:liblua-5.4.so.0 so:libpcre.so.1 so:libssl.so.3 so:libz.so.1
+p:cmd:haproxy=2.6.13-r0
 
 C:Q1+yOuAssx5z2zrdmIh/VoQH967bk=
 P:kea-common
@@ -61682,22 +61713,6 @@ c:0714a84b7f79009ae8b96aef50216ed72f54b885
 D:so:libc.musl-x86_64.so.1
 p:so:libudns.so.0=0 cmd:dnsget=0.4-r2 cmd:ex-rdns=0.4-r2 cmd:rblcheck=0.4-r2
 
-C:Q1FpcAHZFQ3WPdiRL71JtvXOon2rQ=
-P:irqbalance
-V:1.9.2-r0
-A:x86_64
-S:38191
-I:110592
-T:Daemon that distributes interrupts over the processors
-U:https://github.com/Irqbalance/irqbalance
-L:GPL-2.0-or-later
-o:irqbalance
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1667280704
-c:ca9f36f1164e37e3d52c59ba6f76c16ee3485158
-D:so:libc.musl-x86_64.so.1 so:libglib-2.0.so.0 so:libncursesw.so.6 so:libnuma.so.1
-p:cmd:irqbalance-ui=1.9.2-r0 cmd:irqbalance=1.9.2-r0
-
 C:Q18qNBVHA3hwHQ2UOSWYVWEC6m5Ow=
 P:gvpe-doc
 V:3.1-r3
@@ -67253,21 +67268,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-carp=1.50-r1
-
-C:Q12/Q3FQqRHgTo6IJrAe6tqyd3xPc=
-P:irqbalance-openrc
-V:1.9.2-r0
-A:x86_64
-S:2443
-I:24576
-T:Daemon that distributes interrupts over the processors (OpenRC init scripts)
-U:https://github.com/Irqbalance/irqbalance
-L:GPL-2.0-or-later
-o:irqbalance
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1667280704
-c:ca9f36f1164e37e3d52c59ba6f76c16ee3485158
-i:openrc irqbalance=1.9.2-r0
 
 C:Q17nHx0oh7fkiykLEQgzicoAZE0FU=
 P:pmacct-openrc
