@@ -2308,21 +2308,6 @@ c:39cde24fb54a667a6730bdaec3233184227131f6
 D:lua5.3 so:libc.musl-armv7.so.1 so:libcrypto.so.3 so:libssl.so.3
 i:lua5.3 lua-cqueues=20200726-r4
 
-C:Q1AV07wupPwfrDYfEEhLoXWSrBqh0=
-P:libc6-compat
-V:1.2.3-r4
-A:armv7
-S:1693
-I:8192
-T:compatibility libraries for glibc
-U:https://musl.libc.org/
-L:MIT
-o:musl
-m:Timo Teräs <timo.teras@iki.fi>
-t:1668104640
-c:f93af038c3de7146121c2ea8124ba5ce29b4b058
-D:musl=1.2.3-r4
-
 C:Q1Y8SKtZORgIwmpQ5ZV6zOeVhWM8Q=
 P:tcl
 V:8.6.12-r1
@@ -7942,6 +7927,21 @@ c:40ae2e500da1eedc4aa2de12ae5082c33eb4fdc5
 D:/bin/sh so:libc.musl-armv7.so.1 so:libcrypto.so.3 so:libcurl.so.4 so:libedit.so.0 so:libgcc_s.so.1 so:libilbc.so.0 so:libks.so.1 so:libldns.so.3 so:liblua-5.3.so.0 so:libmp3lame.so.0 so:libmpg123.so.0 so:libncursesw.so.6 so:libodbc.so.2 so:libopus.so.0 so:libpcre.so.1 so:libportaudio.so.2 so:libpq.so.5 so:libshout.so.3 so:libsndfile.so.1 so:libsofia-sip-ua.so.0 so:libspandsp.so.3 so:libspeex.so.1 so:libspeexdsp.so.1 so:libsqlite3.so.0 so:libssl.so.3 so:libstdc++.so.6 so:libuuid.so.1
 p:so:libfreeswitch.so.1=1.0.0 cmd:freeswitch=1.10.8-r0 cmd:fs_cli=1.10.8-r0 cmd:fs_encode=1.10.8-r0 cmd:fs_ivrd=1.10.8-r0 cmd:fs_tts=1.10.8-r0 cmd:fsxs=1.10.8-r0 cmd:gentls_cert=1.10.8-r0 cmd:switch_eavesdrop=1.10.8-r0 cmd:tone2wav=1.10.8-r0
 
+C:Q1DEjup8E6EqieiYCZQvsXCI1GHnM=
+P:musl
+V:1.2.3-r5
+A:armv7
+S:366700
+I:544768
+T:the musl c library (libc) implementation
+U:https://musl.libc.org/
+L:MIT
+o:musl
+m:Timo Teräs <timo.teras@iki.fi>
+t:1684510151
+c:b12380f8608f8cdd44347db413e8937ac4a5565b
+p:so:libc.musl-armv7.so.1=1
+
 C:Q1rQJXxl0RzC8oIjrHUXZFDnbYZDo=
 P:uwsgi-emperor_zeromq
 V:2.0.21-r0
@@ -8772,6 +8772,22 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1649533622
 c:3f2cf95288ab284807f85836bb4f501b478174db
 i:docs esh=0.3.2-r0
+
+C:Q1bwUWMwHK+9JshjnxMuzki6qrfwk=
+P:curl
+V:8.1.0-r1
+A:armv7
+S:136900
+I:212992
+T:URL retrival utility and library
+U:https://curl.se/
+L:curl
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1684508879
+c:891a4ccc96aad9accd17ac184cdf7483b3dc519e
+D:ca-certificates so:libc.musl-armv7.so.1 so:libcurl.so.4 so:libz.so.1
+p:cmd:curl=8.1.0-r1
 
 C:Q1cDL7FthGAVwWjRtvLRZcbvaPRto=
 P:nagios-plugins-radius
@@ -16933,6 +16949,21 @@ t:1661743169
 c:0b5d40bec9dc78aa642abe0cda32214080561eeb
 D:memcached=1.6.17-r0
 
+C:Q13X5VzTm+YE/cesDzJtVyVnWtfAc=
+P:curl-fish-completion
+V:8.1.0-r1
+A:armv7
+S:6766
+I:49152
+T:Fish completions for curl
+U:https://curl.se/
+L:curl
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1684508879
+c:891a4ccc96aad9accd17ac184cdf7483b3dc519e
+i:curl=8.1.0-r1 fish
+
 C:Q1vsrALK0gfWRUO+CqPiv9uVRjKto=
 P:spawn-fcgi
 V:1.6.4-r5
@@ -18283,21 +18314,6 @@ c:8f940e4f2308f6f432a8680a79156a6f5040857d
 k:15
 D:so:libc.musl-armv7.so.1 so:libcrypto.so.3 so:libssl.so.3
 p:so:libpq.so.5=5.15
-
-C:Q1VfNZLOiGS4zveDzQqi5v/vU3/CE=
-P:curl-doc
-V:8.1.0-r0
-A:armv7
-S:820639
-I:2154496
-T:URL retrival utility and library (documentation)
-U:https://curl.se/
-L:curl
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1684321054
-c:684550c96ee54ddffb6a180485cbb5be6001d771
-i:docs curl=8.1.0-r0
 
 C:Q1SDwTjwF5SVZFj+gc/BUxFPld8rU=
 P:lua5.3-pty
@@ -19778,21 +19794,6 @@ t:1665482350
 c:51a219647e0cef7c70b68b715c103ed8afe7e900
 D:perl so:libc.musl-armv7.so.1
 
-C:Q1UybnmeoAKNRli6qw0JX0c35YCus=
-P:curl-static
-V:8.1.0-r0
-A:armv7
-S:3263352
-I:7004160
-T:URL retrival utility and library (static library)
-U:https://curl.se/
-L:curl
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1684321054
-c:684550c96ee54ddffb6a180485cbb5be6001d771
-D:ca-certificates
-
 C:Q1hZ7WPqWml/DVMDLcbsCsCwgstDY=
 P:perl-module-versions-report
 V:1.06-r2
@@ -20394,21 +20395,6 @@ t:1670985476
 c:a286bb720c7825575bc7cfa107dc4b5961a2d248
 D:pkgconfig
 p:pc:bash=5.2.15 cmd:bashbug=5.2.15-r0
-
-C:Q1ylEZpEkZsQnq5tLISOA3dFVU9aI=
-P:curl-fish-completion
-V:8.1.0-r0
-A:armv7
-S:6771
-I:49152
-T:Fish completions for curl
-U:https://curl.se/
-L:curl
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1684321054
-c:684550c96ee54ddffb6a180485cbb5be6001d771
-i:curl=8.1.0-r0 fish
 
 C:Q1ESxaZ7FfpC6BtoxJcmA1LFdtFyM=
 P:kamailio-outbound
@@ -22008,6 +21994,22 @@ t:1673541450
 c:b6a739a981e58897aacce6770bad7bcd1670daf9
 k:900
 i:docs ifupdown-ng=0.12.1-r1
+
+C:Q1F9M0vq5A2kyiMvnTY2vx0S0RBtg=
+P:curl-dev
+V:8.1.0-r1
+A:armv7
+S:60585
+I:315392
+T:URL retrival utility and library (development files)
+U:https://curl.se/
+L:curl
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1684508879
+c:891a4ccc96aad9accd17ac184cdf7483b3dc519e
+D:openssl-dev>3 nghttp2-dev zlib-dev brotli-dev libcurl=8.1.0-r1 pkgconfig
+p:pc:libcurl=8.1.0 cmd:curl-config=8.1.0-r1
 
 C:Q1eKcoKL4ek+1J4nonGfexX1TFLRE=
 P:ncurses-terminfo-base
@@ -29418,20 +29420,6 @@ t:1673786776
 c:2c89299bdbcfb1aa1690460d109d1f5e0cbbf434
 D:openssl-dev>3 net-snmp-agent-libs=5.9.3-r2 net-snmp-libs=5.9.3-r2 pkgconfig
 p:pc:netsnmp-agent=5.9.3 pc:netsnmp=5.9.3 cmd:net-snmp-config=5.9.3-r2
-
-C:Q1DU/BlYv73K6q5mun42epQ1+AwCs=
-P:musl-dbg
-V:1.2.3-r4
-A:armv7
-S:971566
-I:2793472
-T:the musl c library (libc) implementation (debug symbols)
-U:https://musl.libc.org/
-L:MIT
-o:musl
-m:Timo Teräs <timo.teras@iki.fi>
-t:1668104640
-c:f93af038c3de7146121c2ea8124ba5ce29b4b058
 
 C:Q1Lp6d1hIhMfFjRbm89AkTISZGGZ0=
 P:libnl
@@ -38507,6 +38495,21 @@ c:9c15e0596ae3254d1b3f011c63d8d8a966ddc385
 D:libnetfilter_acct=1.0.3-r1 pkgconfig
 p:pc:libnetfilter_acct=1.0.3
 
+C:Q1x/hvN4MVPpfJM9//2E+7AF4qIwo=
+P:libc6-compat
+V:1.2.3-r5
+A:armv7
+S:1698
+I:8192
+T:compatibility libraries for glibc
+U:https://musl.libc.org/
+L:MIT
+o:musl
+m:Timo Teräs <timo.teras@iki.fi>
+t:1684510151
+c:b12380f8608f8cdd44347db413e8937ac4a5565b
+D:musl=1.2.3-r5
+
 C:Q12Epw2fk/Sls5vBBy0589CbmYBjA=
 P:sbsigntool-doc
 V:0.9.4-r4
@@ -39436,21 +39439,6 @@ o:acf-jquery
 m:Ted Trask <ttrask01@yahoo.com>
 t:1621023235
 c:6a7ffd78f6143528020404a80d363f54144095a7
-
-C:Q1EQMJP1vKp3rNLU2SHY/S0INuXjU=
-P:curl-dbg
-V:8.1.0-r0
-A:armv7
-S:1780889
-I:3842048
-T:URL retrival utility and library (debug symbols)
-U:https://curl.se/
-L:curl
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1684321054
-c:684550c96ee54ddffb6a180485cbb5be6001d771
-D:ca-certificates
 
 C:Q19ZQBxfXMeXc80vShmOjYJLmNas8=
 P:libtasn1-dev
@@ -41359,6 +41347,21 @@ c:675ddf60110a4079565e90b96c89d82d05ce7825
 D:so:libc.musl-armv7.so.1 so:libcrypto.so.3 so:libodbc.so.2 so:libodbcinst.so.2 so:libreadline.so.8 so:libssl.so.3
 p:so:libct.so.4=4.0.0 so:libsybdb.so.5=5.1.0 so:libtdsodbc.so.0=0.0.0 cmd:bsqldb=1.3.16-r0 cmd:bsqlodbc=1.3.16-r0 cmd:datacopy=1.3.16-r0 cmd:defncopy=1.3.16-r0 cmd:fisql=1.3.16-r0 cmd:freebcp=1.3.16-r0 cmd:osql=1.3.16-r0 cmd:tdspool=1.3.16-r0 cmd:tsql=1.3.16-r0
 
+C:Q1TsYIyU8A2L7J8TLfhssdfsyl76g=
+P:curl-dbg
+V:8.1.0-r1
+A:armv7
+S:1780959
+I:3842048
+T:URL retrival utility and library (debug symbols)
+U:https://curl.se/
+L:curl
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1684508879
+c:891a4ccc96aad9accd17ac184cdf7483b3dc519e
+D:ca-certificates
+
 C:Q1QBfsi8+EzVYFMdyXLPF83oS1zjA=
 P:perl-want-doc
 V:0.29-r7
@@ -43205,6 +43208,22 @@ c:39cde24fb54a667a6730bdaec3233184227131f6
 D:so:libc.musl-armv7.so.1 so:libcrypto.so.3 so:libz.so.1
 p:so:libssh2.so.1=1.0.1
 
+C:Q1q/xC/Q8GjOH2pR6rmhyHoe9S9Hk=
+P:libcurl
+V:8.1.0-r1
+A:armv7
+S:237685
+I:417792
+T:The multiprotocol file transfer library
+U:https://curl.se/
+L:curl
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1684508879
+c:891a4ccc96aad9accd17ac184cdf7483b3dc519e
+D:ca-certificates so:libbrotlidec.so.1 so:libc.musl-armv7.so.1 so:libcrypto.so.3 so:libnghttp2.so.14 so:libssl.so.3 so:libz.so.1
+p:so:libcurl.so.4=4.8.0
+
 C:Q1HROET1nxeVoQhUrsgw2ret6HDLo=
 P:linux-firmware-dabusb
 V:20221214-r1
@@ -43513,22 +43532,6 @@ m:Sören Tempel <soeren+alpine@soeren-tempel.net>
 t:1665753996
 c:84d02e8c3abb163d4ca89e62e831c4116b9ea195
 i:docs openjade=1.3.2-r7
-
-C:Q1pasdmrpp821KTcc8F2iSmZEITZs=
-P:libcurl
-V:8.1.0-r0
-A:armv7
-S:237653
-I:417792
-T:The multiprotocol file transfer library
-U:https://curl.se/
-L:curl
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1684321054
-c:684550c96ee54ddffb6a180485cbb5be6001d771
-D:ca-certificates so:libbrotlidec.so.1 so:libc.musl-armv7.so.1 so:libcrypto.so.3 so:libnghttp2.so.14 so:libssl.so.3 so:libz.so.1
-p:so:libcurl.so.4=4.8.0
 
 C:Q1hkPv0lROteeUIfOkpH/3qnlNiuA=
 P:freeswitch-flite
@@ -44921,21 +44924,6 @@ c:23daf25ad9bc2d4cf46cdd021332cae5e296c5e2
 D:so:libc.musl-armv7.so.1 so:libcap.so.2 so:libgcc_s.so.1 so:libseccomp.so.2
 p:so:liblxc.so.1=1.7.0
 
-C:Q1ruRKCADRQ8tFfuWlZ8dT3hca62I=
-P:musl
-V:1.2.3-r4
-A:armv7
-S:366663
-I:544768
-T:the musl c library (libc) implementation
-U:https://musl.libc.org/
-L:MIT
-o:musl
-m:Timo Teräs <timo.teras@iki.fi>
-t:1668104640
-c:f93af038c3de7146121c2ea8124ba5ce29b4b058
-p:so:libc.musl-armv7.so.1=1
-
 C:Q1H5iTyHTxAaeiqSBteqpcgeqNvac=
 P:tcl-tls
 V:1.7.22-r3
@@ -45040,6 +45028,20 @@ m:Ted Trask <ttrask01@yahoo.com>
 t:1621087673
 c:ec4e35bcdcf38829d2a36ff4d7cd4351ebb67d1c
 D:acf-core dnsmasq
+
+C:Q1nlJv25HfaKgAhlTEqF09rhawi0g=
+P:musl-libintl
+V:1.2.3-r5
+A:armv7
+S:1854
+I:16384
+T:musl libintl.h header
+U:https://musl.libc.org/
+L:MIT
+o:musl
+m:Timo Teräs <timo.teras@iki.fi>
+t:1684510151
+c:b12380f8608f8cdd44347db413e8937ac4a5565b
 
 C:Q1n32QvJA2Q+jwQmGlw+gYZFMGoNk=
 P:nagios-plugins-http
@@ -45455,6 +45457,21 @@ m:Timo Teras <timo.teras@iki.fi>
 t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:haserl
+
+C:Q1QIOo901uUEgci7RhDWxZP8t3J2Y=
+P:curl-doc
+V:8.1.0-r1
+A:armv7
+S:820599
+I:2154496
+T:URL retrival utility and library (documentation)
+U:https://curl.se/
+L:curl
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1684508879
+c:891a4ccc96aad9accd17ac184cdf7483b3dc519e
+i:docs curl=8.1.0-r1
 
 C:Q1AlHl3Bujdr30PuK91SDmQ+2mhWk=
 P:mksh
@@ -45958,6 +45975,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1658964336
 c:c5a56d9a0db850192573dc042cb7524167d79fd1
 D:python3
+
+C:Q1nORCClGNkVSQBKObX0hYFOXHweY=
+P:musl-dev
+V:1.2.3-r5
+A:armv7
+S:2176865
+I:8720384
+T:the musl c library (libc) implementation (development files)
+U:https://musl.libc.org/
+L:MIT
+o:musl
+m:Timo Teräs <timo.teras@iki.fi>
+t:1684510151
+c:b12380f8608f8cdd44347db413e8937ac4a5565b
+D:musl=1.2.3-r5
 
 C:Q1LSR077SQsswpdZI3RrCksEaMvf4=
 P:perl-test-manifest
@@ -52215,6 +52247,20 @@ c:13c7f6500189062c3e0b56487b19df2a7fd4812d
 D:so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libicui18n.so.72 so:libicuuc.so.72 so:libstdc++.so.6 so:libxml2.so.2
 p:so:libical-glib.so.3=3.0.16 so:libical.so.3=3.0.16 so:libical_cxx.so.3=3.0.16 so:libicalss.so.3=3.0.16 so:libicalss_cxx.so.3=3.0.16 so:libicalvcal.so.3=3.0.16
 
+C:Q1m1aq4YWVLOkGWtwQAJMQajeJliY=
+P:musl-dbg
+V:1.2.3-r5
+A:armv7
+S:971680
+I:2793472
+T:the musl c library (libc) implementation (debug symbols)
+U:https://musl.libc.org/
+L:MIT
+o:musl
+m:Timo Teräs <timo.teras@iki.fi>
+t:1684510151
+c:b12380f8608f8cdd44347db413e8937ac4a5565b
+
 C:Q1fyU4UHstDh8HD5PDe5bd9gosTHU=
 P:libsndfile-static
 V:1.1.0-r2
@@ -54917,21 +54963,6 @@ L:LGPL-3.0-or-later
 o:talloc
 t:1654838260
 c:79fd52e542111ab7a845cef14ac5a80a397249ad
-
-C:Q1RBQ6bx429BYbnyB2O9p9r2fN9/c=
-P:curl-zsh-completion
-V:8.1.0-r0
-A:armv7
-S:7279
-I:36864
-T:Zsh completions for curl
-U:https://curl.se/
-L:curl
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1684321054
-c:684550c96ee54ddffb6a180485cbb5be6001d771
-i:curl=8.1.0-r0 zsh
 
 C:Q1RtpczFC7/lIzgB1hue/U9sMzP7Y=
 P:git-subtree-doc
@@ -58677,20 +58708,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1659265640
 c:f68c541324ad07cc5b7f5228501b5f2ce4b36158
 
-C:Q1mlFYNqfxjaINvdriYvOEeDpYm/8=
-P:musl-libintl
-V:1.2.3-r4
-A:armv7
-S:1852
-I:16384
-T:musl libintl.h header
-U:https://musl.libc.org/
-L:MIT
-o:musl
-m:Timo Teräs <timo.teras@iki.fi>
-t:1668104640
-c:f93af038c3de7146121c2ea8124ba5ce29b4b058
-
 C:Q1DJL/2JoPvUUdMYRLbT7pzzYaUjU=
 P:libsndfile-doc
 V:1.1.0-r2
@@ -60169,22 +60186,6 @@ m:Fabian Affolter <fabian@affolter-engineering.ch>
 t:1665753996
 c:84d02e8c3abb163d4ca89e62e831c4116b9ea195
 i:docs cmph=2.0.2-r2
-
-C:Q1A2UXLei/vHwcDh0JrRKZs3nRpdI=
-P:musl-utils
-V:1.2.3-r4
-A:armv7
-S:37851
-I:278528
-T:the musl c library (libc) implementation
-U:https://musl.libc.org/
-L:MIT AND BSD-2-Clause AND GPL-2.0-or-later
-o:musl
-m:Timo Teräs <timo.teras@iki.fi>
-t:1668104640
-c:f93af038c3de7146121c2ea8124ba5ce29b4b058
-D:scanelf so:libc.musl-armv7.so.1
-p:cmd:getconf=1.2.3-r4 cmd:getent=1.2.3-r4 cmd:iconv=1.2.3-r4 cmd:ldconfig=1.2.3-r4 cmd:ldd=1.2.3-r4
 
 C:Q15SM/YdsH9CHZVXzenOa5OSmKAHc=
 P:linux-firmware-edgeport
@@ -62810,22 +62811,6 @@ t:1664342514
 c:9abb7835877d75624e4f455ff5dc0188958f9f07
 i:openrc cryptsetup=2.5.0-r2
 
-C:Q1QPxtjPLgQH9gI3iM5pWZIStXvfI=
-P:curl-dev
-V:8.1.0-r0
-A:armv7
-S:60592
-I:315392
-T:URL retrival utility and library (development files)
-U:https://curl.se/
-L:curl
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1684321054
-c:684550c96ee54ddffb6a180485cbb5be6001d771
-D:openssl-dev>3 nghttp2-dev zlib-dev brotli-dev libcurl=8.1.0-r0 pkgconfig
-p:pc:libcurl=8.1.0 cmd:curl-config=8.1.0-r0
-
 C:Q1lR/TzOr3B323Kk+nbgC9QLgKsDM=
 P:nagios-openrc
 V:4.4.10-r0
@@ -63775,6 +63760,22 @@ c:bd3a803c75a1fc678342cbbbb128081bc48e9bcf
 D:pkgconfig so:libc.musl-armv7.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgstreamer-1.0.so.0 so:libintl.so.8
 p:cmd:gst-inspect-1.0=1.20.6-r0 cmd:gst-launch-1.0=1.20.6-r0 cmd:gst-stats-1.0=1.20.6-r0 cmd:gst-typefind-1.0=1.20.6-r0
 
+C:Q1kXpevJI/kxLGd1XABugpKPSuxOY=
+P:musl-utils
+V:1.2.3-r5
+A:armv7
+S:37858
+I:278528
+T:the musl c library (libc) implementation
+U:https://musl.libc.org/
+L:MIT AND BSD-2-Clause AND GPL-2.0-or-later
+o:musl
+m:Timo Teräs <timo.teras@iki.fi>
+t:1684510151
+c:b12380f8608f8cdd44347db413e8937ac4a5565b
+D:scanelf so:libc.musl-armv7.so.1
+p:cmd:getconf=1.2.3-r5 cmd:getent=1.2.3-r5 cmd:iconv=1.2.3-r5 cmd:ldconfig=1.2.3-r5 cmd:ldd=1.2.3-r5
+
 C:Q1MqA/iS+8pdQJwezmy0CvTN8P484=
 P:gnokii-doc
 V:0.6.31-r13
@@ -64065,6 +64066,21 @@ m:Allan Garret <allan.garret@gmail.com>
 t:1667859568
 c:7340d7b3375c24573c0eda8dfa4b8def076bdb4a
 i:docs apparmor=3.1.2-r0
+
+C:Q1HBi0O3zDSS5zrDvikW9XN37i/KA=
+P:curl-static
+V:8.1.0-r1
+A:armv7
+S:3263470
+I:7004160
+T:URL retrival utility and library (static library)
+U:https://curl.se/
+L:curl
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1684508879
+c:891a4ccc96aad9accd17ac184cdf7483b3dc519e
+D:ca-certificates
 
 C:Q1vaDDCFN49VeG99DPsUPtta+4OEQ=
 P:libtheora-static
@@ -65346,22 +65362,6 @@ t:1635117238
 c:2cf3fe063b1b9e308372af7e2c2348e9e494a135
 D:lua5.2 so:libc.musl-armv7.so.1 so:libmariadb.so.3
 i:lua-dbi=0.7.2-r1 lua5.2
-
-C:Q1G4Lbnc054PfuD6gZQiCpQy74ou8=
-P:curl
-V:8.1.0-r0
-A:armv7
-S:136908
-I:212992
-T:URL retrival utility and library
-U:https://curl.se/
-L:curl
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1684321054
-c:684550c96ee54ddffb6a180485cbb5be6001d771
-D:ca-certificates so:libc.musl-armv7.so.1 so:libcurl.so.4 so:libz.so.1
-p:cmd:curl=8.1.0-r0
 
 C:Q1jPtaF7NCHlxQJdwrj0aML0JJdUM=
 P:kamailio-sipdump
@@ -69324,6 +69324,21 @@ t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 i:openrc sntpc=0.9-r8
 
+C:Q1jJfpyRl9rY2e/aHGr6cTfIiO8lM=
+P:curl-zsh-completion
+V:8.1.0-r1
+A:armv7
+S:7275
+I:36864
+T:Zsh completions for curl
+U:https://curl.se/
+L:curl
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1684508879
+c:891a4ccc96aad9accd17ac184cdf7483b3dc519e
+i:curl=8.1.0-r1 zsh
+
 C:Q1fSlc32Qt/QMhcoYwNvjEvna1U9c=
 P:perl-file-temp
 V:0.2311-r0
@@ -71444,21 +71459,6 @@ t:1665913112
 c:0924e88e48280daaefd7ed5f9ee2d32b1659b504
 D:so:libc.musl-armv7.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libgmp.so.10 so:libncursesw.so.6 so:libpython3.10.so.1.0 so:libreadline.so.8 so:libstdc++.so.6 so:libz.so.1
 p:cmd:gcore=12.1-r2 cmd:gdb-add-index=12.1-r2 cmd:gdb=12.1-r2 cmd:gdbserver=12.1-r2 cmd:run=12.1-r2
-
-C:Q1d9hanBcMwhLjR8pt5nA5fXVHrYA=
-P:musl-dev
-V:1.2.3-r4
-A:armv7
-S:2176746
-I:8720384
-T:the musl c library (libc) implementation (development files)
-U:https://musl.libc.org/
-L:MIT
-o:musl
-m:Timo Teräs <timo.teras@iki.fi>
-t:1668104640
-c:f93af038c3de7146121c2ea8124ba5ce29b4b058
-D:musl=1.2.3-r4
 
 C:Q1Q/VuGjE73gbj8Z5VMBlPBPytF/o=
 P:guile-readline
