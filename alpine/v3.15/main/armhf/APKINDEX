@@ -443,20 +443,6 @@ c:9c15e0596ae3254d1b3f011c63d8d8a966ddc385
 D:so:libc.musl-armhf.so.1 so:libnfnetlink.so.0
 p:so:libnetfilter_log.so.1=1.1.0 so:libnetfilter_log_libipulog.so.1=1.0.0
 
-C:Q10bdDa8KxxlVkpfAr2lLIlSiroGE=
-P:ncurses-terminfo-base
-V:6.3_p20211120-r1
-A:armhf
-S:22135
-I:221184
-T:Descriptions of common terminals
-U:https://invisible-island.net/ncurses/
-L:MIT
-o:ncurses
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1657931278
-c:f3d3e2a3aae649a21fe45f2471e6509e14e3a54a
-
 C:Q1QuViBCjT0TDGvu/wTJt/PmQ3JpA=
 P:perl-universal-can
 V:1.20140328-r1
@@ -5994,6 +5980,22 @@ c:e57da0caec73a38d78361795e5f901e67f1c2285
 D:so:libc.musl-armhf.so.1
 p:so:libvanessa_logger.so.0=0.0.5 cmd:vanessa_logger_sample=0.0.10-r1
 
+C:Q1vAg8ztOrL3b1JpHS8xJXm2NS+vY=
+P:ncurses-dev
+V:6.3_p20211120-r2
+A:armhf
+S:50156
+I:319488
+T:Console display library (development files)
+U:https://invisible-island.net/ncurses/
+L:MIT
+o:ncurses
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685173873
+c:d5af9ee6c2ad03b93c2474880262e8b34bb5aa59
+D:ncurses-libs=6.3_p20211120-r2 pkgconfig
+p:pc:form=6.3.20211120 pc:formw=6.3.20211120 pc:menu=6.3.20211120 pc:menuw=6.3.20211120 pc:ncurses=6.3.20211120 pc:ncursesw=6.3.20211120 pc:panel=6.3.20211120 pc:panelw=6.3.20211120 cmd:ncursesw6-config=6.3_p20211120-r2
+
 C:Q1E//caQtGq7vxJi5Bqvn+KYN/LSM=
 P:unbound-libs
 V:1.13.2-r2
@@ -8981,6 +8983,22 @@ m:Valery Kartel <valery.kartel@gmail.com>
 t:1627487158
 c:46980cebdbcd1e2730f7c02d0e4f6c4c4c03776c
 D:perl so:libc.musl-armhf.so.1
+
+C:Q1G83TRNHT9cFbOT7HNyBQP79Ys1s=
+P:ncurses-libs
+V:6.3_p20211120-r2
+A:armhf
+S:187051
+I:417792
+T:Ncurses libraries
+U:https://invisible-island.net/ncurses/
+L:MIT
+o:ncurses
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685173873
+c:d5af9ee6c2ad03b93c2474880262e8b34bb5aa59
+D:ncurses-terminfo-base=6.3_p20211120-r2 so:libc.musl-armhf.so.1
+p:ncurses-widec-libs=6.3_p20211120-r2 so:libformw.so.6=6.3 so:libmenuw.so.6=6.3 so:libncursesw.so.6=6.3 so:libpanelw.so.6=6.3
 
 C:Q1XAG3pmsA/nuXwDoQ+Jdmr7+TTEw=
 P:bitlbee-doc
@@ -24274,22 +24292,6 @@ c:92847f4dd6f4dd1721b1cf4a6a76764468e2879c
 D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 p:so:libhiredis_ssl.so.1.0.0=1.0.0
 
-C:Q1u1JqIr34Ll3H8T4q5h/4UjZ0eoc=
-P:ncurses-dev
-V:6.3_p20211120-r1
-A:armhf
-S:50154
-I:319488
-T:Console display library (development files)
-U:https://invisible-island.net/ncurses/
-L:MIT
-o:ncurses
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1657931278
-c:f3d3e2a3aae649a21fe45f2471e6509e14e3a54a
-D:ncurses-libs=6.3_p20211120-r1 pkgconfig
-p:pc:form=6.3.20211120 pc:formw=6.3.20211120 pc:menu=6.3.20211120 pc:menuw=6.3.20211120 pc:ncurses=6.3.20211120 pc:ncursesw=6.3.20211120 pc:panel=6.3.20211120 pc:panelw=6.3.20211120 cmd:ncursesw6-config=6.3_p20211120-r1
-
 C:Q1fSCrrZUAWNrvMdMVQ0+zpJkXW6Q=
 P:unbound-dev
 V:1.13.2-r2
@@ -27238,6 +27240,21 @@ t:1621190867
 c:e8a5f0de85a0cb268e26bc46494084e6d8515e9a
 D:iproute2 /bin/sh so:libc.musl-armhf.so.1 so:libcares.so.2 so:libnetsnmp.so.40 so:libnetsnmpagent.so.40 so:libreadline.so.8
 p:quagga-nhrp=1.2.4 so:libfpm_pb.so.0=0.0.0 so:libospf.so.0=0.0.0 so:libospfapiclient.so.0=0.0.0 so:libquagga_pb.so.0=0.0.0 so:libzebra.so.1=1.0.0 cmd:bgp_btoa=1.2.4-r5 cmd:bgpd=1.2.4-r5 cmd:isisd=1.2.4-r5 cmd:nhrpd=1.2.4-r5 cmd:ospf6d=1.2.4-r5 cmd:ospfclient=1.2.4-r5 cmd:ospfd=1.2.4-r5 cmd:pimd=1.2.4-r5 cmd:ripd=1.2.4-r5 cmd:ripngd=1.2.4-r5 cmd:test_igmpv3_join=1.2.4-r5 cmd:vtysh=1.2.4-r5 cmd:watchquagga=1.2.4-r5 cmd:zebra=1.2.4-r5
+
+C:Q1A9AiqLAlG8ma3GZAacJ0DbJT1d8=
+P:ncurses-doc
+V:6.3_p20211120-r2
+A:armhf
+S:472386
+I:770048
+T:Console display library (documentation)
+U:https://invisible-island.net/ncurses/
+L:MIT
+o:ncurses
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685173873
+c:d5af9ee6c2ad03b93c2474880262e8b34bb5aa59
+i:docs ncurses=6.3_p20211120-r2
 
 C:Q1B0Q5Mk5faN4/Jg+fjb1Uc/aXk38=
 P:perl-file-sharedir-install
@@ -35077,6 +35094,21 @@ t:1642435914
 c:e1064619f35db336b17ce1cd81e87dea33ba9712
 i:openrc cryptsetup=2.4.3-r0
 
+C:Q1RmA47cKRVUq7fmtNIGku9QfAQ7A=
+P:ncurses-terminfo
+V:6.3_p20211120-r2
+A:armhf
+S:564772
+I:7409664
+T:Console display library (other terminfo files)
+U:https://invisible-island.net/ncurses/
+L:MIT
+o:ncurses
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685173873
+c:d5af9ee6c2ad03b93c2474880262e8b34bb5aa59
+D:ncurses-terminfo-base=6.3_p20211120-r2 ncurses-terminfo-base=6.3_p20211120-r2
+
 C:Q1h1ImVd8KAHd5761fTiBZNIG5XVg=
 P:perl-yaml-doc
 V:1.30-r2
@@ -35512,6 +35544,22 @@ t:1666364315
 c:5395cf24cde9abb3039bcbf00191692db088356d
 D:abuild>2.20.0 build-base mosquitto-clients openssh-client mqtt-exec rsync lua-aports>1.0.0 lua5.2-cjson lua5.2-mqtt-publish pigz git /bin/sh
 p:cmd:aports-build=1.5.4-r0
+
+C:Q1y/h+H019g+M/5bftFZ3d8C5eSgw=
+P:ncurses
+V:6.3_p20211120-r2
+A:armhf
+S:81751
+I:258048
+T:Console display library
+U:https://invisible-island.net/ncurses/
+L:MIT
+o:ncurses
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685173873
+c:d5af9ee6c2ad03b93c2474880262e8b34bb5aa59
+D:so:libc.musl-armhf.so.1 so:libncursesw.so.6
+p:cmd:captoinfo=6.3_p20211120-r2 cmd:clear=6.3_p20211120-r2 cmd:infocmp=6.3_p20211120-r2 cmd:infotocap=6.3_p20211120-r2 cmd:reset=6.3_p20211120-r2 cmd:tabs=6.3_p20211120-r2 cmd:tic=6.3_p20211120-r2 cmd:toe=6.3_p20211120-r2 cmd:tput=6.3_p20211120-r2 cmd:tset=6.3_p20211120-r2
 
 C:Q1fKeq0NUGokLy5qbnEI7NYV2A5nY=
 P:clucene
@@ -37008,21 +37056,6 @@ o:ngrep
 m:Francesco Colista <fcolista@alpinelinux.org>
 t:1596394545
 c:661380c48b20e22f83103acaa74e687eea8e1582
-
-C:Q1ZNue1iu4Y8yVk4TUFg0tjwcsC90=
-P:ncurses-doc
-V:6.3_p20211120-r1
-A:armhf
-S:472377
-I:761856
-T:Console display library (documentation)
-U:https://invisible-island.net/ncurses/
-L:MIT
-o:ncurses
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1657931278
-c:f3d3e2a3aae649a21fe45f2471e6509e14e3a54a
-i:docs ncurses=6.3_p20211120-r1
 
 C:Q1p7MZRF1VowFCdm4oOa0gkm2AfAQ=
 P:dtach
@@ -40006,20 +40039,6 @@ m:Cameron Banta <cbanta@gmail.com>
 t:1651985332
 c:e94e0a3d62602f3460ea6bc2f97f676203d7cc49
 D:rsyslog=8.2108.0-r2 so:libc.musl-armhf.so.1
-
-C:Q1FUurSPUqLUOJTNbWNvSg9160pGE=
-P:ncurses-static
-V:6.3_p20211120-r1
-A:armhf
-S:1937321
-I:5537792
-T:Static libraries for the ncurses library
-U:https://invisible-island.net/ncurses/
-L:MIT
-o:ncurses
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1657931278
-c:f3d3e2a3aae649a21fe45f2471e6509e14e3a54a
 
 C:Q1iA0a40wPt6Ni3Dabs9zs8bzvJM0=
 P:perl-test-sharedfork-doc
@@ -50657,6 +50676,20 @@ c:547d821acde4c667c3fd08f226cb2176f9696da7
 D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libgsm.so.1 so:libportaudio.so.2 so:libsamplerate.so.0 so:libspeex.so.1 so:libspeexdsp.so.1 so:libsrtp2.so.1 so:libssl.so.1.1 so:libstdc++.so.6
 p:so:libg7221codec.so.2=2 so:libilbccodec.so.2=2 so:libpj.so.2=2 so:libpjlib-util.so.2=2 so:libpjmedia-audiodev.so.2=2 so:libpjmedia-codec.so.2=2 so:libpjmedia-videodev.so.2=2 so:libpjmedia.so.2=2 so:libpjnath.so.2=2 so:libpjsip-simple.so.2=2 so:libpjsip-ua.so.2=2 so:libpjsip.so.2=2 so:libpjsua.so.2=2 so:libpjsua2.so.2=2 so:libyuv.so.2=2
 
+C:Q1rFhsQuZxSersjLCnIswSqWKe098=
+P:ncurses-terminfo-base
+V:6.3_p20211120-r2
+A:armhf
+S:22136
+I:221184
+T:Descriptions of common terminals
+U:https://invisible-island.net/ncurses/
+L:MIT
+o:ncurses
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685173873
+c:d5af9ee6c2ad03b93c2474880262e8b34bb5aa59
+
 C:Q1v3h9q7GLQmOte0RtKQtUb4SDHew=
 P:lm-sensors
 V:3.6.0-r1
@@ -53388,6 +53421,20 @@ m:Rasmus Thomsen <oss@cogitri.dev>
 t:1558981391
 c:1606a2ff8ec904210b91ddbd61243617f0847e4f
 i:docs dmraid=1.0.0_rc16-r0
+
+C:Q11u/1qUPHOY3BiewsB2ROfhMRKFw=
+P:ncurses-static
+V:6.3_p20211120-r2
+A:armhf
+S:1937641
+I:5537792
+T:Static libraries for the ncurses library
+U:https://invisible-island.net/ncurses/
+L:MIT
+o:ncurses
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685173873
+c:d5af9ee6c2ad03b93c2474880262e8b34bb5aa59
 
 C:Q12YY9WB/4SaMWGNTKkMI1PZCTMxs=
 P:pango-doc
@@ -62962,22 +63009,6 @@ c:f4b4becf64c5f530001671162900a23220c70edc
 D:lua5.4-mosquitto
 i:lua5.4 lua-mqtt-publish=0.4-r0
 
-C:Q1hGjWE3elUZNYhdJmdfzWZWNaZvs=
-P:ncurses
-V:6.3_p20211120-r1
-A:armhf
-S:81778
-I:258048
-T:Console display library
-U:https://invisible-island.net/ncurses/
-L:MIT
-o:ncurses
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1657931278
-c:f3d3e2a3aae649a21fe45f2471e6509e14e3a54a
-D:so:libc.musl-armhf.so.1 so:libncursesw.so.6
-p:cmd:captoinfo=6.3_p20211120-r1 cmd:clear=6.3_p20211120-r1 cmd:infocmp=6.3_p20211120-r1 cmd:infotocap=6.3_p20211120-r1 cmd:reset=6.3_p20211120-r1 cmd:tabs=6.3_p20211120-r1 cmd:tic=6.3_p20211120-r1 cmd:toe=6.3_p20211120-r1 cmd:tput=6.3_p20211120-r1 cmd:tset=6.3_p20211120-r1
-
 C:Q1Vkhnc/DRafTVTK1m+6AjkP+utRM=
 P:scstadmin
 V:2.2.0-r2
@@ -63403,21 +63434,6 @@ t:1510584783
 c:c50372a0878ac343f450f5a475adb1b060eb063e
 D:ilbc=0.0.1-r0 pkgconfig
 p:pc:ilbc=0.0.1
-
-C:Q15WSMCJCDfKayfx9SHfGXrnTLJqk=
-P:ncurses-terminfo
-V:6.3_p20211120-r1
-A:armhf
-S:564836
-I:7409664
-T:Console display library (other terminfo files)
-U:https://invisible-island.net/ncurses/
-L:MIT
-o:ncurses
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1657931278
-c:f3d3e2a3aae649a21fe45f2471e6509e14e3a54a
-D:ncurses-terminfo-base=6.3_p20211120-r1 ncurses-terminfo-base=6.3_p20211120-r1
 
 C:Q1zKJZ1tbuMQnkWTJZ2fcJkS4oBk0=
 P:rrdtool-doc
@@ -71440,22 +71456,6 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1649533710
 c:7df8d08c377a1f717e4211b1df4f8b9ac7d23647
 i:docs esh=0.3.2-r0
-
-C:Q1f+TLPpCUD6i/Vu32ra6zAfIjKbw=
-P:ncurses-libs
-V:6.3_p20211120-r1
-A:armhf
-S:186872
-I:417792
-T:Ncurses libraries
-U:https://invisible-island.net/ncurses/
-L:MIT
-o:ncurses
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1657931278
-c:f3d3e2a3aae649a21fe45f2471e6509e14e3a54a
-D:ncurses-terminfo-base=6.3_p20211120-r1 so:libc.musl-armhf.so.1
-p:ncurses-widec-libs=6.3_p20211120-r1 so:libformw.so.6=6.3 so:libmenuw.so.6=6.3 so:libncursesw.so.6=6.3 so:libpanelw.so.6=6.3
 
 C:Q1+CRKVuY/VpE0/QLAz1up4D9CUaE=
 P:bacula-sqlite
