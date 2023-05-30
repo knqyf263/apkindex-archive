@@ -1143,22 +1143,6 @@ c:75a4782528b5a62d46984a9401ab904f843cc898
 D:gcr-base=3.40.0-r0 gcr=3.40.0-r0 pc:gio-2.0>=2.44 pc:glib-2.0>=2.44 pc:gobject-2.0>=2.44 pc:gtk+-3.0>=3.22 pc:p11-kit-1>=0.19.0 pkgconfig
 p:pc:gck-1=3.40.0 pc:gcr-3=3.40.0 pc:gcr-base-3=3.40.0 pc:gcr-ui-3=3.40.0
 
-C:Q1I7yRzXAtV2ZF2o4fFzKj6PiV02o=
-P:libcurl
-V:8.1.1-r1
-A:ppc64le
-S:279447
-I:684032
-T:The multiprotocol file transfer library
-U:https://curl.se/
-L:MIT
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1685002948
-c:f07c4851a96467a1d1927a6a6f7b54c329c2f14d
-D:ca-certificates so:libbrotlidec.so.1 so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libnghttp2.so.14 so:libssl.so.1.1 so:libz.so.1
-p:so:libcurl.so.4=4.8.0
-
 C:Q1Rtq5nrvI8DWbIYg+otzzknLtfOM=
 P:daq-static
 V:2.0.7-r0
@@ -1544,6 +1528,22 @@ t:1643584619
 c:ebb0df9dfa331bcc2a8156dab4b0fcdb31fdeeaa
 D:tiny-cloud=2.0.0-r0
 
+C:Q1ZHHVfc3WbUIEd24NBRiPGmWGJnc=
+P:curl-dev
+V:8.1.2-r0
+A:ppc64le
+S:60297
+I:315392
+T:URL retrival utility and library (development files)
+U:https://curl.se/
+L:MIT
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685465066
+c:e7cc999adf1e8f64c5a40c495ae5816dd495c3ea
+D:openssl1.1-compat-dev nghttp2-dev zlib-dev brotli-dev libcurl=8.1.2-r0 pkgconfig
+p:pc:libcurl=8.1.2 cmd:curl-config=8.1.2-r0
+
 C:Q117m7PvK/eeD/dJaTVDsCnAUmDwA=
 P:openvpn-openrc
 V:2.5.6-r0
@@ -1637,6 +1637,21 @@ t:1634675270
 c:c0b3bcef6de7d3ae5b326994c3282d8b4f524451
 D:so:libattr.so.1 so:libc.musl-ppc64le.so.1
 p:cmd:attr=2.5.1-r1 cmd:getfattr=2.5.1-r1 cmd:setfattr=2.5.1-r1
+
+C:Q1puLhDM964yeUJ/EuG5jBjAP1Z3Q=
+P:curl-static
+V:8.1.2-r0
+A:ppc64le
+S:3213133
+I:10321920
+T:URL retrival utility and library (static library)
+U:https://curl.se/
+L:MIT
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685465066
+c:e7cc999adf1e8f64c5a40c495ae5816dd495c3ea
+D:ca-certificates
 
 C:Q1B4lkFTM0HvKiQ8rhiG4Qc0bHXrg=
 P:asterisk-speex
@@ -6730,6 +6745,22 @@ o:yasm
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1584211375
 c:81633f00dd52212d62c630bbf6f6c8a9bc1f29cd
+
+C:Q1WVISPb462JRaN/gd9OAjbR+aUK8=
+P:libcurl
+V:8.1.2-r0
+A:ppc64le
+S:277920
+I:684032
+T:The multiprotocol file transfer library
+U:https://curl.se/
+L:MIT
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685465066
+c:e7cc999adf1e8f64c5a40c495ae5816dd495c3ea
+D:ca-certificates so:libbrotlidec.so.1 so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libnghttp2.so.14 so:libssl.so.1.1 so:libz.so.1
+p:so:libcurl.so.4=4.8.0
 
 C:Q1akm484Gy39vMtaIxHo2SKnvl/xc=
 P:execline-dev
@@ -11957,6 +11988,22 @@ t:1629706831
 c:1b79182fea5171e28a73a55bf3e32a2d1bbb12a3
 D:so:libc.musl-ppc64le.so.1 so:libodbcinst.so.2 so:libpq.so.5
 p:so:psqlodbca.so=0 so:psqlodbcw.so=0
+
+C:Q1h5K2vCLeI310ccb2+9LbHJ1/h7U=
+P:curl
+V:8.1.2-r0
+A:ppc64le
+S:146707
+I:344064
+T:URL retrival utility and library
+U:https://curl.se/
+L:MIT
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685465066
+c:e7cc999adf1e8f64c5a40c495ae5816dd495c3ea
+D:ca-certificates so:libc.musl-ppc64le.so.1 so:libcurl.so.4 so:libz.so.1
+p:cmd:curl=8.1.2-r0
 
 C:Q1+LHlrWH4Ez7GFxRdjZzNxtAJlug=
 P:alsa-utils-doc
@@ -20963,21 +21010,6 @@ c:323523f17397deffc4ae622c22006e59359341c8
 D:zsh
 i:zsh=5.8.1-r0 android-tools
 
-C:Q1OnkenFGitQ1KK+jP2rzESgKOKp0=
-P:curl-static
-V:8.1.1-r1
-A:ppc64le
-S:3219932
-I:10350592
-T:URL retrival utility and library (static library)
-U:https://curl.se/
-L:MIT
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1685002948
-c:f07c4851a96467a1d1927a6a6f7b54c329c2f14d
-D:ca-certificates
-
 C:Q1bDYjRu6Gcqfmue9rMaNJ/kprDlQ=
 P:acf-ppp
 V:0.5.0-r4
@@ -22451,6 +22483,21 @@ t:1595404768
 c:c69e3a86b4b604b287b7539c32a6aac5a072ea27
 D:lua5.1 so:libc.musl-ppc64le.so.1
 i:lua-evdev=2.2.1-r1 lua5.1
+
+C:Q1g6QBIhfg9VNeXRl3Kcoi/KG8sv8=
+P:curl-doc
+V:8.1.2-r0
+A:ppc64le
+S:820755
+I:2146304
+T:URL retrival utility and library (documentation)
+U:https://curl.se/
+L:MIT
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685465066
+c:e7cc999adf1e8f64c5a40c495ae5816dd495c3ea
+i:docs curl=8.1.2-r0
 
 C:Q19LwvAhfUGKJ9aMeze6i6eLxh/8g=
 P:harfbuzz-icu
@@ -44523,22 +44570,6 @@ c:db949f2a7ceacb8203f17f726dca47aa7eac64ae
 D:iptables so:libc.musl-ppc64le.so.1 so:libpcap.so.1
 p:cmd:knock=0.8.2-r0 cmd:knock_helper_ipt.sh=0.8.2-r0 cmd:knockd=0.8.2-r0
 
-C:Q1u3v7ywBM8iFH55o8/ByZMnGsNwM=
-P:curl
-V:8.1.1-r1
-A:ppc64le
-S:146573
-I:344064
-T:URL retrival utility and library
-U:https://curl.se/
-L:MIT
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1685002948
-c:f07c4851a96467a1d1927a6a6f7b54c329c2f14d
-D:ca-certificates so:libc.musl-ppc64le.so.1 so:libcurl.so.4 so:libz.so.1
-p:cmd:curl=8.1.1-r1
-
 C:Q1D2HHSEqgGhESCRwrJzoVUdl1hz4=
 P:squid-lang-de
 V:5.2-r0
@@ -46392,21 +46423,6 @@ t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:so:libc.musl-ppc64le.so.1
 i:lua5.1 lua-md5=1.3-r1
-
-C:Q128/vsHs75I6IAt/MSMKRneeUQKw=
-P:curl-doc
-V:8.1.1-r1
-A:ppc64le
-S:820795
-I:2150400
-T:URL retrival utility and library (documentation)
-U:https://curl.se/
-L:MIT
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1685002948
-c:f07c4851a96467a1d1927a6a6f7b54c329c2f14d
-i:docs curl=8.1.1-r1
 
 C:Q1vccRXeIBkGN8qfw0A7PmMxngnP4=
 P:augeas-tests
@@ -58002,21 +58018,6 @@ c:3864adc017ab3d72a478993398c216a9aa733ddd
 D:so:libc.musl-ppc64le.so.1 so:libskarnet.so.2.11 so:libutmps.so.0.1
 p:so:libutempter.so.0=1.2.1
 
-C:Q1qLoHiEjc9aifsW4HLLwSWZxqaEI=
-P:curl-dbg
-V:8.1.1-r1
-A:ppc64le
-S:1642730
-I:4251648
-T:URL retrival utility and library (debug symbols)
-U:https://curl.se/
-L:MIT
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1685002948
-c:f07c4851a96467a1d1927a6a6f7b54c329c2f14d
-D:ca-certificates
-
 C:Q13MB/wA8m9EOHqQ4M5zKtF6ooRG4=
 P:xtrans
 V:1.4.0-r1
@@ -65649,22 +65650,6 @@ c:323523f17397deffc4ae622c22006e59359341c8
 D:zsh
 i:zsh=5.8.1-r0 imagemagick
 
-C:Q1PDw488Q0LSryzjewP+IjkfQtWRQ=
-P:curl-dev
-V:8.1.1-r1
-A:ppc64le
-S:60290
-I:315392
-T:URL retrival utility and library (development files)
-U:https://curl.se/
-L:MIT
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1685002948
-c:f07c4851a96467a1d1927a6a6f7b54c329c2f14d
-D:openssl1.1-compat-dev nghttp2-dev zlib-dev brotli-dev libcurl=8.1.1-r1 pkgconfig
-p:pc:libcurl=8.1.1 cmd:curl-config=8.1.1-r1
-
 C:Q1UOz+qBxhgpRUvZXaH0BpcQvh/eg=
 P:py3-mimeparse
 V:1.6.0-r3
@@ -67500,6 +67485,21 @@ m:Ted Trask <ttrask01@yahoo.com>
 t:1621087673
 c:ec4e35bcdcf38829d2a36ff4d7cd4351ebb67d1c
 D:acf-core squid
+
+C:Q1b1xFkqsebv0ZNPH6NsihPkLmZK0=
+P:curl-dbg
+V:8.1.2-r0
+A:ppc64le
+S:1639394
+I:4239360
+T:URL retrival utility and library (debug symbols)
+U:https://curl.se/
+L:MIT
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685465066
+c:e7cc999adf1e8f64c5a40c495ae5816dd495c3ea
+D:ca-certificates
 
 C:Q14X4Ux0056GqytcIeweiwDTnyids=
 P:libatomic
