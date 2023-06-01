@@ -10017,22 +10017,6 @@ t:1675915414
 c:78df94ec1354835c438381513faec206c2061f68
 i:docs heimdal=7.7.1-r0
 
-C:Q1W3kotBs0E6Y3zmLaBifA3Pts99I=
-P:cups
-V:2.4.2-r0
-A:x86_64
-S:1158807
-I:5849088
-T:The CUPS Printing System
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1653596552
-c:cd9dc9f5dba64fa4298e81679a70a533c6d81883
-D:cups-client poppler-utils openssl dbus /bin/sh cups-client=2.4.2-r0 so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-x86_64.so.1 so:libcups.so.2 so:libdbus-1.so.3 so:libgcc_s.so.1 so:libpaper.so.1 so:libstdc++.so.6 so:libusb-1.0.so.0
-p:cmd:cupsd=2.4.2-r0 cmd:cupsfilter=2.4.2-r0
-
 C:Q1cJHd9B020jYipaNlB2q7OVWmFIE=
 P:perl-term-table
 V:0.016-r0
@@ -10076,22 +10060,6 @@ t:1652441839
 c:4d99ba2c7862bdfab3113367752108a92125001a
 D:so:libapr-1.so.0 so:libc.musl-x86_64.so.1 so:libsvn_client-1.so.0 so:libsvn_delta-1.so.0 so:libsvn_diff-1.so.0 so:libsvn_fs-1.so.0 so:libsvn_ra-1.so.0 so:libsvn_repos-1.so.0 so:libsvn_subr-1.so.0 so:libsvn_wc-1.so.0
 p:so:libsvn_swig_perl-1.so.0=0.0.0
-
-C:Q19L48euFP7CJsubPru66Nd3VWdx0=
-P:cups-libs
-V:2.4.2-r0
-A:x86_64
-S:236400
-I:585728
-T:CUPS libraries
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1653596552
-c:cd9dc9f5dba64fa4298e81679a70a533c6d81883
-D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-x86_64.so.1 so:libgnutls.so.30 so:libz.so.1
-p:so:libcups.so.2=2 so:libcupsimage.so.2=2
 
 C:Q1pTwFcKOPAKg0VDhmDjx+is9gTyc=
 P:lockfile-progs
@@ -10827,6 +10795,21 @@ o:s6-linux-init
 m:Laurent Bercot <ska-devel@skarnet.org>
 t:1646739217
 c:0d26305aa06fe746492989c981d71fe66c7ab9a9
+
+C:Q1KYA42Jk0rwtrTZDgqzDAuGks01o=
+P:cups-openrc
+V:2.4.2-r1
+A:x86_64
+S:2029
+I:16384
+T:The CUPS Printing System (OpenRC init scripts)
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685617450
+c:9e6ef66bb56ae2a1da241010f7ba0d8da7b1658f
+i:openrc cups=2.4.2-r1
 
 C:Q1usGNOfKsof4yAwhkg/eeboM3MfE=
 P:perl-test-tcp
@@ -12963,6 +12946,22 @@ m:Michael Pirogov <vbnet.ru@gmail.com>
 t:1652519894
 c:f64d4aa5ba43b9c3218d180a2f93dcff5f98bb2f
 D:luajit lua-resty-lrucache
+
+C:Q1y2f+QQMmRufdj7wVWc8Mj+MA3LY=
+P:cups-dev
+V:2.4.2-r1
+A:x86_64
+S:44196
+I:262144
+T:The CUPS Printing System (development files)
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685617450
+c:9e6ef66bb56ae2a1da241010f7ba0d8da7b1658f
+D:libgcrypt-dev gnutls-dev zlib-dev cups-libs=2.4.2-r1 pc:avahi-client pc:gnutls pkgconfig
+p:pc:cups=2.4.2 cmd:cups-config=2.4.2-r1
 
 C:Q1Xm5kws49o95cEm2r9Or882CA46I=
 P:tiny-cloud-aws
@@ -39270,6 +39269,22 @@ t:1630780508
 c:a3739a07d478bc4f1f6e0c17612a1c83dffa9ecd
 D:perl
 
+C:Q144c8v38Z5MzDX84ntcz7la/VUt0=
+P:ipptool
+V:2.4.2-r1
+A:x86_64
+S:4014392
+I:4734976
+T:Perform internet printing protocol requests
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685617450
+c:9e6ef66bb56ae2a1da241010f7ba0d8da7b1658f
+D:so:libc.musl-x86_64.so.1 so:libcups.so.2
+p:cmd:ipptool=2.4.2-r1
+
 C:Q1lRn+hKCr12W1Jrfw1p+oKDM2EFI=
 P:gdbm
 V:1.23-r0
@@ -45720,6 +45735,22 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:so:libc.musl-x86_64.so.1
 i:lua5.4 lua-discount=1.2.10.1-r6
 
+C:Q11j5kf2q2ZWdmhzrtKw3VRlr1OLQ=
+P:cups-lang
+V:2.4.2-r1
+A:x86_64
+S:683392
+I:4325376
+T:Languages for package cups
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685617450
+c:9e6ef66bb56ae2a1da241010f7ba0d8da7b1658f
+D:cups-client poppler-utils openssl dbus
+i:cups=2.4.2-r1 lang
+
 C:Q1SF6zvkxBdCGnh7H7/3fmu/dOCjs=
 P:libuv-dbg
 V:1.44.1-r0
@@ -46918,21 +46949,6 @@ c:c0b3bcef6de7d3ae5b326994c3282d8b4f524451
 D:so:libc.musl-x86_64.so.1
 p:so:libattr.so.1=1.1.2501
 
-C:Q1UKJZfeXAO9kaM1MSTj6VtEheu1E=
-P:cups-doc
-V:2.4.2-r0
-A:x86_64
-S:90030
-I:237568
-T:The CUPS Printing System (documentation)
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1653596552
-c:cd9dc9f5dba64fa4298e81679a70a533c6d81883
-i:docs cups=2.4.2-r0
-
 C:Q14UQ5KgMVURagmzZb4tLF4jyByzI=
 P:lua5.3-cqueues
 V:20200726-r3
@@ -47105,6 +47121,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1643119322
 c:4a18a2ad49feff22d5207836372befb18fb85df8
 i:docs libdaemon=0.14-r3
+
+C:Q1l0vflsW8MeqieYobmntUNsr+QZE=
+P:cups-dbg
+V:2.4.2-r1
+A:x86_64
+S:2950201
+I:7180288
+T:The CUPS Printing System (debug symbols)
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685617450
+c:9e6ef66bb56ae2a1da241010f7ba0d8da7b1658f
+D:cups-client poppler-utils openssl dbus
 
 C:Q1yGtZx8MQSIv1BaKXN5wi4OnIAoE=
 P:hwids-pci
@@ -50951,6 +50982,21 @@ t:1645440846
 c:345b5254f9246acce48c58b84e164b2eb815bf5a
 D:perl perl-sub-exporter-progressive perl-module-runtime perl-module-implementation perl-variable-magic
 
+C:Q1L4Uisnv7AHIgkCdvus4hmKVt4yY=
+P:cups-doc
+V:2.4.2-r1
+A:x86_64
+S:90022
+I:237568
+T:The CUPS Printing System (documentation)
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685617450
+c:9e6ef66bb56ae2a1da241010f7ba0d8da7b1658f
+i:docs cups=2.4.2-r1
+
 C:Q1BDH561ymwG/nacNVnTRAlTqWEKU=
 P:apr-util-ldap
 V:1.6.3-r0
@@ -53612,22 +53658,6 @@ t:1631406722
 c:f32d4f9ce05fe09d34dc0226a49f73f8cdfa5f5c
 i:docs perl-io=1.48-r0
 
-C:Q1rxd2Vz68D+Uz96Fg1UjrhtrVqWw=
-P:cups-lang
-V:2.4.2-r0
-A:x86_64
-S:683373
-I:4325376
-T:Languages for package cups
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1653596552
-c:cd9dc9f5dba64fa4298e81679a70a533c6d81883
-D:cups-client poppler-utils openssl dbus
-i:cups=2.4.2-r0 lang
-
 C:Q1vx+haR5fWfIwaeoCrUU1DQmJAoU=
 P:freeswitch-openrc
 V:1.10.7-r2
@@ -55989,21 +56019,6 @@ t:1626298045
 c:1b2c2ef4824e8c3478f0a2de499f0d8cdb24d7a0
 i:docs iftop=0.17-r8
 
-C:Q1br6HOXJ5hYKqtUOc+0KkVAor5sM=
-P:cups-openrc
-V:2.4.2-r0
-A:x86_64
-S:2027
-I:16384
-T:The CUPS Printing System (OpenRC init scripts)
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1653596552
-c:cd9dc9f5dba64fa4298e81679a70a533c6d81883
-i:openrc cups=2.4.2-r0
-
 C:Q14AGtflU7Epv0LVKLra9zYBUG2lU=
 P:fstrim
 V:2.38-r1
@@ -57435,22 +57450,6 @@ m:Sheila Aman <sheila@vulpine.house>
 t:1630780508
 c:a3739a07d478bc4f1f6e0c17612a1c83dffa9ecd
 D:perl
-
-C:Q1Pq/EaQemDEiQd6gWb3SBuftwyWY=
-P:cups-client
-V:2.4.2-r0
-A:x86_64
-S:332600
-I:946176
-T:CUPS command-line client programs
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1653596552
-c:cd9dc9f5dba64fa4298e81679a70a533c6d81883
-D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-x86_64.so.1 so:libcups.so.2 so:libgcc_s.so.1 so:libstdc++.so.6
-p:cmd:cancel=2.4.2-r0 cmd:cupsaccept=2.4.2-r0 cmd:cupsctl=2.4.2-r0 cmd:cupsdisable=2.4.2-r0 cmd:cupsenable=2.4.2-r0 cmd:cupstestppd=2.4.2-r0 cmd:ippeveprinter=2.4.2-r0 cmd:ippfind=2.4.2-r0 cmd:lp=2.4.2-r0 cmd:lpadmin=2.4.2-r0 cmd:lpc=2.4.2-r0 cmd:lpinfo=2.4.2-r0 cmd:lpmove=2.4.2-r0 cmd:lpoptions=2.4.2-r0 cmd:lpq=2.4.2-r0 cmd:lpr=2.4.2-r0 cmd:lprm=2.4.2-r0 cmd:lpstat=2.4.2-r0 cmd:ppdc=2.4.2-r0 cmd:ppdhtml=2.4.2-r0 cmd:ppdi=2.4.2-r0 cmd:ppdmerge=2.4.2-r0 cmd:ppdpo=2.4.2-r0
 
 C:Q1bw0uqfqhjAsFe4Hffz6HOj/+u2k=
 P:perl-digest-md5-doc
@@ -61006,6 +61005,22 @@ c:670bf5a8cc5bc605eede8ca2fd55b50a5c9f8660
 D:so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libncursesw.so.6 so:libssl.so.1.1
 p:cmd:irssi=1.2.3-r3
 
+C:Q1LtRu3ZxTgfsNwX2vO/4wpvRI22o=
+P:cups-libs
+V:2.4.2-r1
+A:x86_64
+S:236405
+I:585728
+T:CUPS libraries
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685617450
+c:9e6ef66bb56ae2a1da241010f7ba0d8da7b1658f
+D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-x86_64.so.1 so:libgnutls.so.30 so:libz.so.1
+p:so:libcups.so.2=2 so:libcupsimage.so.2=2
+
 C:Q1z16VtF8dMhFg1VY6wjRD4t/KSEU=
 P:openldap-overlay-sssvlv
 V:2.6.3-r3
@@ -61771,6 +61786,22 @@ t:1649624883
 c:336f1c44db120a6cf4cd2649b95984787fa55305
 i:docs libtool=2.4.7-r0
 
+C:Q1ch9oFAJdbPdbqCylD4nCj7Qn8nw=
+P:cups
+V:2.4.2-r1
+A:x86_64
+S:1158851
+I:5849088
+T:The CUPS Printing System
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685617450
+c:9e6ef66bb56ae2a1da241010f7ba0d8da7b1658f
+D:cups-client poppler-utils openssl dbus /bin/sh cups-client=2.4.2-r1 so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-x86_64.so.1 so:libcups.so.2 so:libdbus-1.so.3 so:libgcc_s.so.1 so:libpaper.so.1 so:libstdc++.so.6 so:libusb-1.0.so.0
+p:cmd:cupsd=2.4.2-r1 cmd:cupsfilter=2.4.2-r1
+
 C:Q1AxkOJipTqyfxKw7FKXz4plFmwJ4=
 P:talloc-doc
 V:2.3.3-r1
@@ -62049,22 +62080,6 @@ t:1634364270
 c:670bf5a8cc5bc605eede8ca2fd55b50a5c9f8660
 D:/bin/sh so:libc.musl-x86_64.so.1 so:libconfig.so.11 so:libcrypto.so.1.1 so:libprotobuf-c.so.1 so:libssl.so.1.1
 p:cmd:umurmurd=0.2.20-r2
-
-C:Q1S8T2ZjP8XqgYtyP48Gtt29ejv7E=
-P:cups-dev
-V:2.4.2-r0
-A:x86_64
-S:44190
-I:262144
-T:The CUPS Printing System (development files)
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1653596552
-c:cd9dc9f5dba64fa4298e81679a70a533c6d81883
-D:libgcrypt-dev gnutls-dev zlib-dev cups-libs=2.4.2-r0 pc:avahi-client pc:gnutls pkgconfig
-p:pc:cups=2.4.2 cmd:cups-config=2.4.2-r0
 
 C:Q1a0DdcCpWSJGA0Ay1XAIlhoSeoLk=
 P:losetup
@@ -66880,21 +66895,6 @@ t:1635117238
 c:2cf3fe063b1b9e308372af7e2c2348e9e494a135
 i:docs ulogd=2.0.7-r8
 
-C:Q1OBx/OuG3jVQYAci6kGLO3UoX8n0=
-P:cups-dbg
-V:2.4.2-r0
-A:x86_64
-S:2950133
-I:7180288
-T:The CUPS Printing System (debug symbols)
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1653596552
-c:cd9dc9f5dba64fa4298e81679a70a533c6d81883
-D:cups-client poppler-utils openssl dbus
-
 C:Q1mIXHPIxNFuLOnY4sezteH6gjvZM=
 P:acf-nsd
 V:0.0.1-r2
@@ -69142,22 +69142,6 @@ t:1626097515
 c:ad057c9ab083415a7453ec7ebc9fab9a929bab53
 i:docs which=2.21-r2
 
-C:Q15pgcWGPDjs1VVQaUa1W8Qz9ZYp0=
-P:ipptool
-V:2.4.2-r0
-A:x86_64
-S:4014388
-I:4734976
-T:Perform internet printing protocol requests
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1653596552
-c:cd9dc9f5dba64fa4298e81679a70a533c6d81883
-D:so:libc.musl-x86_64.so.1 so:libcups.so.2
-p:cmd:ipptool=2.4.2-r0
-
 C:Q1d3CUvosYJvG6jx+hjfsYw7IkP6g=
 P:perl-ipc-run3
 V:0.048-r2
@@ -70525,6 +70509,22 @@ c:0d31ebce5d7211893f8b92bd72a4f9d01cbbcb99
 k:100
 D:gnupg-gpgconf=2.2.35-r4 so:libassuan.so.0 so:libbz2.so.1 so:libc.musl-x86_64.so.1 so:libgcrypt.so.20 so:libgpg-error.so.0 so:libsqlite3.so.0 so:libz.so.1
 p:cmd:gpg2=2.2.35-r4 cmd:gpg=2.2.35-r4
+
+C:Q1hZSEty6T2d7Hve6PlKPWKC/PW9U=
+P:cups-client
+V:2.4.2-r1
+A:x86_64
+S:332615
+I:946176
+T:CUPS command-line client programs
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685617450
+c:9e6ef66bb56ae2a1da241010f7ba0d8da7b1658f
+D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-x86_64.so.1 so:libcups.so.2 so:libgcc_s.so.1 so:libstdc++.so.6
+p:cmd:cancel=2.4.2-r1 cmd:cupsaccept=2.4.2-r1 cmd:cupsctl=2.4.2-r1 cmd:cupsdisable=2.4.2-r1 cmd:cupsenable=2.4.2-r1 cmd:cupstestppd=2.4.2-r1 cmd:ippeveprinter=2.4.2-r1 cmd:ippfind=2.4.2-r1 cmd:lp=2.4.2-r1 cmd:lpadmin=2.4.2-r1 cmd:lpc=2.4.2-r1 cmd:lpinfo=2.4.2-r1 cmd:lpmove=2.4.2-r1 cmd:lpoptions=2.4.2-r1 cmd:lpq=2.4.2-r1 cmd:lpr=2.4.2-r1 cmd:lprm=2.4.2-r1 cmd:lpstat=2.4.2-r1 cmd:ppdc=2.4.2-r1 cmd:ppdhtml=2.4.2-r1 cmd:ppdi=2.4.2-r1 cmd:ppdmerge=2.4.2-r1 cmd:ppdpo=2.4.2-r1
 
 C:Q1yqdJWeiEjp3webqAAkoT93oxmd8=
 P:font-misc-misc
