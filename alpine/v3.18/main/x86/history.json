@@ -8852,20 +8852,23 @@
     "doas-sudo-shim": {
       "origin": "doas-sudo-shim",
       "versions": {
-        "0.1.1-r0": 1670958890
+        "0.1.1-r0": 1670958890,
+        "0.1.1-r1": 1685748328
       },
       "dependencies": [
         "cmd:doas",
         "!sudo"
       ],
       "provides": [
-        "cmd:sudo=0.1.1-r0"
+        "sudo-virt",
+        "cmd:sudo=0.1.1-r1"
       ]
     },
     "doas-sudo-shim-doc": {
       "origin": "doas-sudo-shim",
       "versions": {
-        "0.1.1-r0": 1670958890
+        "0.1.1-r0": 1670958890,
+        "0.1.1-r1": 1685748328
       }
     },
     "docbook-xml": {
@@ -65126,6 +65129,10 @@
       },
       "envsubst": {
         "package": "gettext-envsubst",
+        "version": 0
+      },
+      "sudo-virt": {
+        "package": "doas-sudo-shim",
         "version": 0
       }
     },
