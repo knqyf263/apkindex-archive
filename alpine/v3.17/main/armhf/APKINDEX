@@ -106,6 +106,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1665912996
 c:f71267930a9d6b88eda37c178a68d34ac6450098
 
+C:Q1ObA1dtJqN0FBgnyFgVGiUzyFlhg=
+P:ipptool
+V:2.4.2-r2
+A:armhf
+S:4016658
+I:4784128
+T:Perform internet printing protocol requests
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685617426
+c:b6dc9ce24c58c8e6c830925e85b575cd1e0ac660
+D:so:libc.musl-armhf.so.1 so:libcups.so.2
+p:cmd:ipptool=2.4.2-r2
+
 C:Q1nPdpIusrvMxMdjFwKK3bKiWt1X4=
 P:perl-date-format-doc
 V:2.33-r0
@@ -516,22 +532,6 @@ m:Drew DeVault <sir@cmpwn.com>
 t:1667922059
 c:026aa5b5b33989374f8af4af234e65476cfcc5f7
 i:docs libedit=20221030.3.1-r0
-
-C:Q17qngHv969D0yGoQ/aROMSgUAkWQ=
-P:lua5.1-sql-sqlite3
-V:2.6.0-r2
-A:armhf
-S:8709
-I:114688
-T:Lua 5.1 SQL driver for sqlite3
-U:http://lunarmodules.github.io/luasql/
-L:MIT
-o:lua-sql
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1668176703
-c:d484333151e53f5aeca39546e7d70500fa4a08aa
-D:lua5.1 so:libc.musl-armhf.so.1 so:libsqlite3.so.0
-i:lua-sql-sqlite3=2.6.0-r2 lua5.1
 
 C:Q17z/BNK70RfbAJ3B0Iur710HrzCU=
 P:lsof
@@ -1273,6 +1273,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1645714656
 c:d6d7c3591c74e4e0de1751548868d9ca1a8b5dc0
 
+C:Q1X2l0b9rdQw3Bc7t/A+fuWeEgpts=
+P:lua5.2-sql-odbc
+V:2.6.0-r3
+A:armhf
+S:9988
+I:114688
+T:Lua 5.2 SQL driver for odbc
+U:http://lunarmodules.github.io/luasql/
+L:MIT
+o:lua-sql
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685931441
+c:40030ca7d4e49d417533bb3419dac6f78b54044b
+D:lua5.2 so:libc.musl-armhf.so.1 so:libodbc.so.2
+i:lua-sql-odbc=2.6.0-r3 lua5.2
+
 C:Q1D//Gd1Yx/LQZ7OFAA9eRzTxfsRA=
 P:checkbashisms-doc
 V:2.22.2-r0
@@ -1394,21 +1410,21 @@ t:1669087759
 c:766d32aa68a0724395d8a2aabf8d59a35bd2d9b8
 D:perl ca-certificates perl-net-ssleay perl-mozilla-ca
 
-C:Q1VafYFcMYbpx9injtMBa683ZEE2k=
-P:curl-dev
-V:8.1.1-r1
+C:Q1Vf8HZkvK6mzlKQBpBODrVrv7eCY=
+P:postfix-ldap
+V:3.7.6-r0
 A:armhf
-S:60576
-I:315392
-T:URL retrival utility and library (development files)
-U:https://curl.se/
-L:curl
-o:curl
+S:13674
+I:102400
+T:ldap map support for postfix
+U:https://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1685002935
-c:d1bf7847e46b66685c1ef6baa0c4abe3b37a7d42
-D:openssl-dev>3 nghttp2-dev zlib-dev brotli-dev libcurl=8.1.1-r1 pkgconfig
-p:pc:libcurl=8.1.1 cmd:curl-config=8.1.1-r1
+t:1686104668
+c:98d6bfa6c4ce40b68b7ff4e59e694c6ff7b05893
+D:so:libc.musl-armhf.so.1 so:liblber.so.2 so:libldap.so.2
+p:so:postfix-ldap.so=0
 
 C:Q1l1moYmMMAwbGly+Yqt9bwTvuL64=
 P:lua5.4-maxminddb
@@ -1607,22 +1623,6 @@ t:1655892927
 c:5eed0f3f7b6c7e6495b36d3fdccd44ea70591008
 D:so:libc.musl-armhf.so.1 so:libskarnet.so.2.12 so:libutmps.so.0.1
 p:so:libutempter.so.0=1.2.1
-
-C:Q1lPP2F/EADW5WkNrqIRpipfLNmNg=
-P:mariadb-server-utils
-V:10.6.13-r0
-A:armhf
-S:2448017
-I:10502144
-T:Non-essential server utilities for MariaDB/MySQL applications
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1683861708
-c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
-D:perl mariadb-common=10.6.13-r0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:cmd:mariadb-convert-table-format=10.6.13-r0 cmd:mariadb-hotcopy=10.6.13-r0 cmd:mariadb-setpermission=10.6.13-r0 cmd:mariadb-upgrade=10.6.13-r0 cmd:mariadbd-multi=10.6.13-r0 cmd:mariadbd-safe-helper=10.6.13-r0 cmd:mysql_convert_table_format=10.6.13-r0 cmd:mysql_setpermission=10.6.13-r0 cmd:mysql_upgrade=10.6.13-r0 cmd:mysqld_multi=10.6.13-r0 cmd:mysqld_safe_helper=10.6.13-r0 cmd:mysqlhotcopy=10.6.13-r0 cmd:perror=10.6.13-r0
 
 C:Q1FDLMMyK4xWV2bwuQhk7dG6cWrcg=
 P:perl-mail-spf
@@ -2084,6 +2084,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1673787192
 c:329e3fac5271a173df1545f43f86f20f5f183e44
 D:ppp-daemon so:libc.musl-armhf.so.1
+
+C:Q134ceu5p2yMnPaWZCrc/6ujrmEyU=
+P:lua5.3-sql-odbc
+V:2.6.0-r3
+A:armhf
+S:10136
+I:114688
+T:Lua 5.3 SQL driver for odbc
+U:http://lunarmodules.github.io/luasql/
+L:MIT
+o:lua-sql
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685931441
+c:40030ca7d4e49d417533bb3419dac6f78b54044b
+D:lua5.3 so:libc.musl-armhf.so.1 so:libodbc.so.2
+i:lua-sql-odbc=2.6.0-r3 lua5.3
 
 C:Q1YF8dgzfFcu7CPCvznCHaBwfrCBU=
 P:musl-nscd-doc
@@ -2605,6 +2621,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1660969429
 c:467c216e82a9ad71e9a31513814fcdfee5880126
 
+C:Q1NoJvhPD1sexVFqSqa2560FgvHPY=
+P:postfix-stone
+V:3.7.6-r0
+A:armhf
+S:35652
+I:360448
+T:Postfix simulation and testing tools
+U:https://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686104668
+c:98d6bfa6c4ce40b68b7ff4e59e694c6ff7b05893
+D:so:libc.musl-armhf.so.1 so:libpostfix-global.so so:libpostfix-util.so
+p:cmd:fsstone=3.7.6-r0 cmd:qmqp-sink=3.7.6-r0 cmd:qmqp-source=3.7.6-r0 cmd:smtp-sink=3.7.6-r0 cmd:smtp-source=3.7.6-r0
+
 C:Q1Vx+qS/DY+21z0xlLUu1Hyahd+dw=
 P:perl-mail-authenticationresults-doc
 V:2.20210112-r0
@@ -2898,21 +2930,6 @@ o:tunnel
 m:Kaarle Ritvanen <kunkku@alpinelinux.org>
 t:1637852358
 c:8bb7eaaba5eee903480d8ec84008a62a4000bc96
-
-C:Q1DZ6UVkBXgM+CnHjVXiPkL7Wbnaw=
-P:curl-zsh-completion
-V:8.1.1-r1
-A:armhf
-S:7275
-I:36864
-T:Zsh completions for curl
-U:https://curl.se/
-L:curl
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1685002935
-c:d1bf7847e46b66685c1ef6baa0c4abe3b37a7d42
-i:curl=8.1.1-r1 zsh
 
 C:Q1ILbou8stK95Ub39q4dAiH/YcCJE=
 P:uwsgi-router_http
@@ -3404,6 +3421,22 @@ t:1665751132
 c:3ab6eeb2c72485ac8cc61d083bd0aa03dae49006
 D:lua5.2 lua5.2-lub so:libc.musl-armhf.so.1
 i:lua-yaml=1.1.2-r5 lua5.2
+
+C:Q13USGbxErgivZS8qULF9tNGu0dTE=
+P:cups-dev
+V:2.4.2-r2
+A:armhf
+S:44188
+I:262144
+T:The CUPS Printing System (development files)
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685617426
+c:b6dc9ce24c58c8e6c830925e85b575cd1e0ac660
+D:libgcrypt-dev gnutls-dev zlib-dev cups-libs=2.4.2-r2 pc:avahi-client pc:gnutls pkgconfig
+p:pc:cups=2.4.2 cmd:cups-config=2.4.2-r2
 
 C:Q1spKQnCNqYt6jGY3locR8mfVjNow=
 P:libgfortran
@@ -3928,20 +3961,6 @@ t:1666607260
 c:2206e020f17a70b581d26302b8097e5fec8b01ad
 D:so:libavif.so.15 so:libc.musl-armhf.so.1 so:libjpeg.so.8 so:libpng16.so.16
 p:cmd:avifdec=0.11.1-r0 cmd:avifenc=0.11.1-r0
-
-C:Q1O9Gtfiflj58ll1kFhwWM1zN3hCk=
-P:lua-sql
-V:2.6.0-r2
-A:armhf
-S:1467
-I:4096
-T:Lua SQL drivers
-U:http://lunarmodules.github.io/luasql/
-L:MIT
-o:lua-sql
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1668176703
-c:d484333151e53f5aeca39546e7d70500fa4a08aa
 
 C:Q1g2vqe95JaIZHZrSdJzfF/zq+6BY=
 P:boost1.80-log_setup
@@ -6367,22 +6386,6 @@ D:lua5.3 so:libc.musl-armhf.so.1
 p:lua5.3-bitlib=5.3.0-r4
 i:lua-bit32=5.3.0-r4 lua5.3
 
-C:Q1R5AZwGDC+VCUyNuMqCwVCyv/pZE=
-P:lua5.3-sql-sqlite3
-V:2.6.0-r2
-A:armhf
-S:8576
-I:114688
-T:Lua 5.3 SQL driver for sqlite3
-U:http://lunarmodules.github.io/luasql/
-L:MIT
-o:lua-sql
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1668176703
-c:d484333151e53f5aeca39546e7d70500fa4a08aa
-D:lua5.3 so:libc.musl-armhf.so.1 so:libsqlite3.so.0
-i:lua-sql-sqlite3=2.6.0-r2 lua5.3
-
 C:Q12YC8dLLx5s3zMrvtHFrDRa1GYlY=
 P:mesa-vulkan-ati
 V:22.2.5-r1
@@ -6428,21 +6431,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1672591081
 c:af42d45cd558323043f855dd09fc1c7381a17803
 p:linux-firmware-any
-
-C:Q13gg84K4YHYvGoGpkBO37ZcE8OIg=
-P:mysql-client
-V:10.6.13-r0
-A:armhf
-S:1485
-I:4096
-T:Dummy package for mysql-client migration
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1683861708
-c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
-D:mariadb-client
 
 C:Q1/scXqOxJeUjUUOKzteCHcAs5aBI=
 P:mandoc
@@ -6842,21 +6830,6 @@ o:bcache-tools
 t:1666012051
 c:a0e6ec6f96db5c251fa34de19e023d8c87ac67f4
 
-C:Q1kWuE09JMulBhNWcgNaqxztM2geA=
-P:mariadb-openrc
-V:10.6.13-r0
-A:armhf
-S:2055
-I:16384
-T:A fast SQL database server (OpenRC init scripts)
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1683861708
-c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
-i:openrc mariadb=10.6.13-r0
-
 C:Q11ulZXplPo9MbWtS1+Vfvm5O/ZjY=
 P:perl-convert-color-doc
 V:0.13-r0
@@ -6902,22 +6875,6 @@ t:1666787249
 c:7e1e53fd0ee469ae110f8e7e71968cb0845c61a2
 D:shared-mime-info /bin/sh so:libc.musl-armhf.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libjpeg.so.8 so:libpng16.so.16 so:libtiff.so.5
 p:so:libgdk_pixbuf-2.0.so.0=0.4200.10 cmd:gdk-pixbuf-csource=2.42.10-r0 cmd:gdk-pixbuf-pixdata=2.42.10-r0 cmd:gdk-pixbuf-query-loaders=2.42.10-r0 cmd:gdk-pixbuf-thumbnailer=2.42.10-r0
-
-C:Q10ZzBqCMjeakHWso02Tz7CWftJdM=
-P:mariadb-embedded
-V:10.6.13-r0
-A:armhf
-S:5307987
-I:15273984
-T:MariaDB as an embeddable library
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1683861708
-c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
-D:mariadb-common=10.6.13-r0 so:libaio.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libgcc_s.so.1 so:liblzma.so.5 so:libpcre2-8.so.0 so:libssl.so.3 so:libstdc++.so.6 so:libz.so.1
-p:so:libmariadbd.so.19=19
 
 C:Q1qAyb+Gf3BlKNu+nmQfUtA1BB9O8=
 P:lua5.1-stdlib
@@ -7717,6 +7674,21 @@ t:1680673858
 c:63371ce3229c08c499d5de92595ad910654dac9d
 i:docs zstd=1.5.5-r0
 
+C:Q1vK7BV1BcSNdSjd9FtBL/1uSrfXA=
+P:mariadb-doc
+V:10.6.14-r0
+A:armhf
+S:324796
+I:1183744
+T:A fast SQL database server (documentation)
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686095916
+c:fb8a980c8f396c8b5e83da21e25930edb3aae7c9
+i:docs mariadb=10.6.14-r0
+
 C:Q1LSWSyNtQKZykG1Y8CyV/uOZGhtc=
 P:dansguardian-openrc
 V:2.12.0.3-r6
@@ -8285,6 +8257,36 @@ c:8322b2b581b4e9571f51bed89c636d5219bd6772
 D:so:libacl.so.1 so:libc.musl-armhf.so.1
 p:cmd:chacl=2.3.1-r1 cmd:getfacl=2.3.1-r1 cmd:setfacl=2.3.1-r1
 
+C:Q1HPdmefpKPQGQ5UooDmdoj5pa1UU=
+P:python3-dbg
+V:3.10.12-r0
+A:armhf
+S:7060906
+I:16994304
+T:A high-level scripting language (debug symbols)
+U:https://www.python.org/
+L:PSF-2.0
+o:python3
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686277783
+c:c9d0d11c5c668797831752f8c01eaf1f89d10990
+
+C:Q1TLevIplRI5UGd8CxNck/SN1Dre0=
+P:mariadb-dev
+V:10.6.14-r0
+A:armhf
+S:1403300
+I:7008256
+T:A fast SQL database server (development files)
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686095916
+c:fb8a980c8f396c8b5e83da21e25930edb3aae7c9
+D:mariadb-connector-c-dev openssl-dev zlib-dev mariadb-embedded=10.6.14-r0 pkgconfig
+p:mysql-dev=10.6.14-r0 pc:mariadb=10.6.14
+
 C:Q1kF3EzPvw7rfRMk6ReJbPFzv1nDM=
 P:ipvsadm
 V:1.31-r1
@@ -8665,6 +8667,22 @@ t:1659792088
 c:0714a84b7f79009ae8b96aef50216ed72f54b885
 D:libart-lgpl=2.3.21-r7 pkgconfig
 p:pc:libart-2.0=2.3.21 cmd:libart2-config=2.3.21-r7
+
+C:Q19gjV5vUenZ2Ul4tv8KKZ4WnUxYQ=
+P:curl
+V:8.1.2-r0
+A:armhf
+S:143246
+I:278528
+T:URL retrival utility and library
+U:https://curl.se/
+L:curl
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685465053
+c:9e0e2d1b4bedd8bf32af1393fe459f6c8bee4ebd
+D:ca-certificates so:libc.musl-armhf.so.1 so:libcurl.so.4 so:libz.so.1
+p:cmd:curl=8.1.2-r0
 
 C:Q1mcTOGXznAsQStH8em3GZi0/niM0=
 P:fprobe-ulog-doc
@@ -9078,20 +9096,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-file-slurp=9999.32-r1
 
-C:Q1gZxsZyUIZSiB4QZadRryfn6GCAc=
-P:python3-tests
-V:3.10.11-r0
-A:armhf
-S:18668969
-I:89006080
-T:The test modules from the main python package
-U:https://www.python.org/
-L:PSF-2.0
-o:python3
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1680743814
-c:61566be9fc68afb56980ba1f0b0dac863136ccf9
-
 C:Q1EdSOMsRwVi7u4BFTb1boyNtUtsM=
 P:fftw-double-libs
 V:3.3.10-r1
@@ -9355,6 +9359,21 @@ t:1673787192
 c:329e3fac5271a173df1545f43f86f20f5f183e44
 i:openrc ppp=2.4.9-r6
 
+C:Q1R/FRvgUsp3TJHn5TPvbYVmsHqho=
+P:curl-dbg
+V:8.1.2-r0
+A:armhf
+S:1757462
+I:3801088
+T:URL retrival utility and library (debug symbols)
+U:https://curl.se/
+L:curl
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685465053
+c:9e0e2d1b4bedd8bf32af1393fe459f6c8bee4ebd
+D:ca-certificates
+
 C:Q1iqrwUwKeIvXGA5fPy8sEpNYIbvY=
 P:mailcap
 V:2.1.54-r0
@@ -9415,21 +9434,6 @@ t:1661033118
 c:9157c604eb26b44295c5dcc7a2e299ae20e8aef5
 D:mii-tool so:libc.musl-armhf.so.1
 p:cmd:arp=2.10-r0 cmd:dnsdomainname=2.10-r0 cmd:domainname=2.10-r0 cmd:hostname=2.10-r0 cmd:ifconfig=2.10-r0 cmd:ipmaddr=2.10-r0 cmd:iptunnel=2.10-r0 cmd:nameif=2.10-r0 cmd:netstat=2.10-r0 cmd:nisdomainname=2.10-r0 cmd:plipconfig=2.10-r0 cmd:rarp=2.10-r0 cmd:route=2.10-r0 cmd:slattach=2.10-r0 cmd:ypdomainname=2.10-r0
-
-C:Q1cmxOs/1Ft9ItQnTowkxbCVyO3sA=
-P:mysql
-V:10.6.13-r0
-A:armhf
-S:1482
-I:4096
-T:Dummy package for mysql migration
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1683861708
-c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
-D:mariadb
 
 C:Q1F+O+mu3pT/yijWlUuoXhFm0Ev3M=
 P:privoxy-openrc
@@ -9774,22 +9778,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 i:openrc apcupsd=3.14.14-r3
-
-C:Q1mOYYC0pm/574krcN4yNNdgfaQto=
-P:postfix
-V:3.7.4-r0
-A:armhf
-S:905312
-I:4534272
-T:Secure and fast drop-in replacement for Sendmail (MTA)
-U:https://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1674439793
-c:137798230ca4204283aa92bf650826eb22c72b3f
-D:/bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libicuuc.so.72 so:liblmdb.so.0 so:libsasl2.so.3 so:libssl.so.3
-p:so:libpostfix-dns.so=0 so:libpostfix-global.so=0 so:libpostfix-master.so=0 so:libpostfix-tls.so=0 so:libpostfix-util.so=0 so:postfix-lmdb.so=0 cmd:mailq=3.7.4-r0 cmd:newaliases=3.7.4-r0 cmd:postalias=3.7.4-r0 cmd:postcat=3.7.4-r0 cmd:postconf=3.7.4-r0 cmd:postdrop=3.7.4-r0 cmd:postfix=3.7.4-r0 cmd:postkick=3.7.4-r0 cmd:postlock=3.7.4-r0 cmd:postlog=3.7.4-r0 cmd:postmap=3.7.4-r0 cmd:postmulti=3.7.4-r0 cmd:postqueue=3.7.4-r0 cmd:postsuper=3.7.4-r0 cmd:qshape.pl=3.7.4-r0 cmd:sendmail=3.7.4-r0
 
 C:Q1SNeCHom6z24ly0XwB8O2h6FN7G4=
 P:fuse-static
@@ -10546,6 +10534,21 @@ t:1652213410
 c:d15057621b6a4c1a1a3bf4b39b16855219e900c4
 D:linux-headers libnetfilter_log=1.0.2-r0 pc:libmnl>=1.0.3 pc:libnfnetlink>=0.0.41 pkgconfig
 p:pc:libnetfilter_log=1.0.2 pc:libnetfilter_log_libipulog=1.0.2
+
+C:Q1lSlgHcd4qVN86NV5jCs6ouOuZKM=
+P:curl-static
+V:8.1.2-r0
+A:armhf
+S:3274592
+I:7094272
+T:URL retrival utility and library (static library)
+U:https://curl.se/
+L:curl
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685465053
+c:9e0e2d1b4bedd8bf32af1393fe459f6c8bee4ebd
+D:ca-certificates
 
 C:Q1V43nMPjEtpFUf652A4Zkp9x265Q=
 P:axel-doc
@@ -12184,21 +12187,6 @@ t:1600709977
 c:75aaa404e4f83841804acd9ccc5177176e1bb3f7
 i:docs perl-test-mockobject=1.20200122-r1
 
-C:Q1zM+/viM3ToUp2YKKb41gVjvTjQo=
-P:curl-static
-V:8.1.1-r1
-A:armhf
-S:3281149
-I:7114752
-T:URL retrival utility and library (static library)
-U:https://curl.se/
-L:curl
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1685002935
-c:d1bf7847e46b66685c1ef6baa0c4abe3b37a7d42
-D:ca-certificates
-
 C:Q1/irjq1t31wSvK6+GNcLXwgPDdyY=
 P:docbook-xml
 V:4.5-r8
@@ -12445,6 +12433,21 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1627487152
 c:ca0c7a580609de6e9273d08815cd144c014a152c
 D:perl
+
+C:Q1toJgqqrmARV+ahj7LBbY29f2Vb0=
+P:curl-doc
+V:8.1.2-r0
+A:armhf
+S:821012
+I:2154496
+T:URL retrival utility and library (documentation)
+U:https://curl.se/
+L:curl
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685465053
+c:9e0e2d1b4bedd8bf32af1393fe459f6c8bee4ebd
+i:docs curl=8.1.2-r0
 
 C:Q1WK+DFbd3q7n/EhaQsDVZ8qJH7fo=
 P:libavif
@@ -13000,22 +13003,6 @@ t:1666194150
 c:04c2ecb1b3013c4c0ada5c521ab041b235996f3f
 D:nginx nginx-mod-stream so:libc.musl-armhf.so.1
 
-C:Q1AniZSgpfEKZxa2fobIDV9TDQpK0=
-P:cups
-V:2.4.2-r1
-A:armhf
-S:1192259
-I:6983680
-T:The CUPS Printing System
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667923137
-c:b5984eacd3d0519caed9c4df4eb805d33f3f1593
-D:cups-client poppler-utils openssl dbus /bin/sh cups-client=2.4.2-r1 so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-armhf.so.1 so:libcups.so.2 so:libdbus-1.so.3 so:libgcc_s.so.1 so:libpaper.so.2 so:libstdc++.so.6 so:libusb-1.0.so.0
-p:cmd:cupsd=2.4.2-r1 cmd:cupsfilter=2.4.2-r1
-
 C:Q1KBcZPluHQKVhwWZUwIkpr83+CDA=
 P:perl-eval-closure-doc
 V:0.14-r2
@@ -13464,6 +13451,22 @@ t:1665443113
 c:839170b632fea0906a0a876427e6308fc9f810e3
 i:docs perl-dbix-dbschema=0.47-r0
 
+C:Q1oUMmOHFkOUDPFuwI8iEViN2ZZMc=
+P:postfix
+V:3.7.6-r0
+A:armhf
+S:906515
+I:4534272
+T:Secure and fast drop-in replacement for Sendmail (MTA)
+U:https://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686104668
+c:98d6bfa6c4ce40b68b7ff4e59e694c6ff7b05893
+D:/bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libicuuc.so.72 so:liblmdb.so.0 so:libsasl2.so.3 so:libssl.so.3
+p:so:libpostfix-dns.so=0 so:libpostfix-global.so=0 so:libpostfix-master.so=0 so:libpostfix-tls.so=0 so:libpostfix-util.so=0 so:postfix-lmdb.so=0 cmd:mailq=3.7.6-r0 cmd:newaliases=3.7.6-r0 cmd:postalias=3.7.6-r0 cmd:postcat=3.7.6-r0 cmd:postconf=3.7.6-r0 cmd:postdrop=3.7.6-r0 cmd:postfix=3.7.6-r0 cmd:postkick=3.7.6-r0 cmd:postlock=3.7.6-r0 cmd:postlog=3.7.6-r0 cmd:postmap=3.7.6-r0 cmd:postmulti=3.7.6-r0 cmd:postqueue=3.7.6-r0 cmd:postsuper=3.7.6-r0 cmd:qshape.pl=3.7.6-r0 cmd:sendmail=3.7.6-r0
+
 C:Q1QdczxF6i9DVDoef6AUsenmJ1Np4=
 P:ldb-doc
 V:2.5.3-r0
@@ -13753,6 +13756,21 @@ t:1649878514
 c:9abd2a3af4f352c804f06f9584a57794c5519c52
 D:so:libc.musl-armhf.so.1 so:libpopt.so.0
 p:so:librsync.so.2=2.3.2 cmd:rdiff=2.3.2-r2
+
+C:Q1V+SSRsFOLuU8mXhWvToYVj8c4jw=
+P:python3-doc
+V:3.10.12-r0
+A:armhf
+S:14187
+I:53248
+T:A high-level scripting language (documentation)
+U:https://www.python.org/
+L:PSF-2.0
+o:python3
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686277783
+c:c9d0d11c5c668797831752f8c01eaf1f89d10990
+i:docs python3=3.10.12-r0
 
 C:Q1Wbtsx6urov7Lzn3EWTasYHBVMY4=
 P:open-iscsi-doc
@@ -15096,21 +15114,6 @@ c:4786aab24a60b4247bdbaf5ba75c366bfe3fa3f9
 D:so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libedit.so.0 so:libz.so.1
 p:cmd:findssl.sh=9.1_p1-r3 cmd:scp=9.1_p1-r3 cmd:sftp=9.1_p1-r3 cmd:ssh-add=9.1_p1-r3 cmd:ssh-agent=9.1_p1-r3 cmd:ssh-copy-id=9.1_p1-r3 cmd:ssh-keyscan=9.1_p1-r3 cmd:ssh-pkcs11-helper=9.1_p1-r3
 
-C:Q1/8lDCwX9YF3fm0UrGPEAi9r8eSw=
-P:cups-doc
-V:2.4.2-r1
-A:armhf
-S:90030
-I:237568
-T:The CUPS Printing System (documentation)
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667923137
-c:b5984eacd3d0519caed9c4df4eb805d33f3f1593
-i:docs cups=2.4.2-r1
-
 C:Q1UqSqZdCOIQOrhbjLhv6RWEo0Swo=
 P:nettle-utils
 V:3.8.1-r0
@@ -15567,21 +15570,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1659792088
 c:0714a84b7f79009ae8b96aef50216ed72f54b885
 
-C:Q10/2jLRmFpMj2RZWf+yfbWkXU64c=
-P:mariadb-bench
-V:10.6.13-r0
-A:armhf
-S:489049
-I:2891776
-T:MariaDB benchmark scripts and data
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1683861708
-c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
-D:mariadb-common
-
 C:Q15XF4ifm/ih+a8c2+bpg6H104pVY=
 P:rsyslog-pmsnare
 V:8.2212.0-r0
@@ -15796,6 +15784,22 @@ c:e7f8617050e6b005ab4ead655da6bdeb7c31ad9f
 D:so:libc.musl-armhf.so.1
 p:so:libpcsclite.so.1=1.0.0
 
+C:Q1krucaF5pHSW9wyGJJ2a924Fv7Xc=
+P:lua5.1-sql-mysql
+V:2.6.0-r3
+A:armhf
+S:9268
+I:114688
+T:Lua 5.1 SQL driver for mysql
+U:http://lunarmodules.github.io/luasql/
+L:MIT
+o:lua-sql
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685931441
+c:40030ca7d4e49d417533bb3419dac6f78b54044b
+D:lua5.1 so:libc.musl-armhf.so.1 so:libmariadb.so.3
+i:lua-sql-mysql=2.6.0-r3 lua5.1
+
 C:Q1w0aWMf6Wk9o0dh3mWCpkvT7F72c=
 P:perl-test-exception-doc
 V:0.43-r2
@@ -15810,21 +15814,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-test-exception=0.43-r2
-
-C:Q1dGelurN7CcffTtvcZuI3WUfFvZ0=
-P:curl-dbg
-V:8.1.1-r1
-A:armhf
-S:1760747
-I:3809280
-T:URL retrival utility and library (debug symbols)
-U:https://curl.se/
-L:curl
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1685002935
-c:d1bf7847e46b66685c1ef6baa0c4abe3b37a7d42
-D:ca-certificates
 
 C:Q1JqTHTMlP9WANYeTwtp6yvTeidKo=
 P:libtxc_dxtn-dev
@@ -16871,6 +16860,22 @@ o:dhcp
 t:1667166435
 c:3ce9ec2c4d426262d5e70e56ef965e19a444769c
 
+C:Q1mIDGyLOBYwKThg86Tw7hHaEIl5k=
+P:cups
+V:2.4.2-r2
+A:armhf
+S:1192225
+I:6983680
+T:The CUPS Printing System
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685617426
+c:b6dc9ce24c58c8e6c830925e85b575cd1e0ac660
+D:cups-client poppler-utils openssl dbus /bin/sh cups-client=2.4.2-r2 so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-armhf.so.1 so:libcups.so.2 so:libdbus-1.so.3 so:libgcc_s.so.1 so:libpaper.so.2 so:libstdc++.so.6 so:libusb-1.0.so.0
+p:cmd:cupsd=2.4.2-r2 cmd:cupsfilter=2.4.2-r2
+
 C:Q1naQk4vcRRNe5CbYxu0i/y3XcJHQ=
 P:lua5.3-filesize
 V:0.1.1-r2
@@ -16947,6 +16952,22 @@ c:3103bf5eb32b28daf27b418061694ab965d7daf8
 k:100
 i:gettext=0.21.1-r1 lang
 
+C:Q1R5N2OdHvJws2wu+SklTcmWaqdXE=
+P:libcurl
+V:8.1.2-r0
+A:armhf
+S:263960
+I:548864
+T:The multiprotocol file transfer library
+U:https://curl.se/
+L:curl
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685465053
+c:9e0e2d1b4bedd8bf32af1393fe459f6c8bee4ebd
+D:ca-certificates so:libbrotlidec.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libnghttp2.so.14 so:libssl.so.3 so:libz.so.1
+p:so:libcurl.so.4=4.8.0
+
 C:Q1ziPjf0vNHNgJlZvMI4s/I7AaYPo=
 P:rsyslog-http
 V:8.2212.0-r0
@@ -17008,6 +17029,22 @@ t:1660225613
 c:1daee00317a10316c3ab678755f0bbd676165b9c
 D:so:libapr-1.so.0 so:libc.musl-armhf.so.1 so:libsvn_client-1.so.0 so:libsvn_delta-1.so.0 so:libsvn_diff-1.so.0 so:libsvn_fs-1.so.0 so:libsvn_ra-1.so.0 so:libsvn_repos-1.so.0 so:libsvn_subr-1.so.0 so:libsvn_wc-1.so.0
 p:so:libsvn_swig_perl-1.so.0=0.0.0
+
+C:Q1VyXhw0BBCwGwVJa9F8Pkgb5doiw=
+P:lua5.3-sql-mysql
+V:2.6.0-r3
+A:armhf
+S:9259
+I:114688
+T:Lua 5.3 SQL driver for mysql
+U:http://lunarmodules.github.io/luasql/
+L:MIT
+o:lua-sql
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685931441
+c:40030ca7d4e49d417533bb3419dac6f78b54044b
+D:lua5.3 so:libc.musl-armhf.so.1 so:libmariadb.so.3
+i:lua-sql-mysql=2.6.0-r3 lua5.3
 
 C:Q1+ECZKEN0/vKQ2QTFUB1rxh8sFsg=
 P:samba-pidl
@@ -17102,20 +17139,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1665913175
 c:8c12fd8dd17e0b6995648c170f1bcd828250896b
 i:docs pmacct=1.7.7-r0
-
-C:Q1x7CxYiBw+BanR8xpGQxvzkzscFM=
-P:lua-sql-mysql
-V:2.6.0-r2
-A:armhf
-S:1477
-I:4096
-T:Lua SQL drivers for mysql
-U:http://lunarmodules.github.io/luasql/
-L:MIT
-o:lua-sql
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1668176703
-c:d484333151e53f5aeca39546e7d70500fa4a08aa
 
 C:Q1KtVlicautDUPpBpV3zUCs+Id/u8=
 P:lua5.4-doc
@@ -18081,6 +18104,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1661756009
 c:bb4ae4e727e1f5b21f836143b4d0b9861471cae0
 i:docs elfutils=0.187-r2
+
+C:Q1gyH3f1JJH+FaItCgS4GfYY9Vavs=
+P:lua5.2-sql-sqlite3
+V:2.6.0-r3
+A:armhf
+S:8571
+I:114688
+T:Lua 5.2 SQL driver for sqlite3
+U:http://lunarmodules.github.io/luasql/
+L:MIT
+o:lua-sql
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685931441
+c:40030ca7d4e49d417533bb3419dac6f78b54044b
+D:lua5.2 so:libc.musl-armhf.so.1 so:libsqlite3.so.0
+i:lua-sql-sqlite3=2.6.0-r3 lua5.2
 
 C:Q102w79Qu4wLGtvkl1L19w6oxoSL4=
 P:apr-util-ldap
@@ -19433,21 +19472,19 @@ t:1665751673
 c:e16595c7945ca36ac41a0f3d5cd6056505b541f1
 i:encfs=1.9.5-r18 lang
 
-C:Q1S0p7cpB6tENNt7w/a8Eeb+g6UQE=
-P:mariadb-backup
-V:10.6.13-r0
+C:Q1y3zbD44VylhWN0iJN8D8r7HXlIo=
+P:lua-sql-postgres
+V:2.6.0-r3
 A:armhf
-S:6871290
-I:20004864
-T:The mariabackup tool for physical online backups
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
+S:1472
+I:4096
+T:Lua SQL drivers for postgres
+U:http://lunarmodules.github.io/luasql/
+L:MIT
+o:lua-sql
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1683861708
-c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
-D:mariadb-common so:libaio.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libgcc_s.so.1 so:liblzma.so.5 so:libpcre2-8.so.0 so:libssl.so.3 so:libstdc++.so.6 so:libz.so.1
-p:cmd:mariabackup=10.6.13-r0 cmd:mariadb-backup=10.6.13-r0 cmd:mbstream=10.6.13-r0
+t:1685931441
+c:40030ca7d4e49d417533bb3419dac6f78b54044b
 
 C:Q1DPUXhFr7wysuyNVcjFTBa0eBAXI=
 P:perl-test-deep-doc
@@ -19789,21 +19826,6 @@ c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:so:libc.musl-armhf.so.1
 p:cmd:sshpass=1.09-r1
 
-C:Q1ZnlTHCVJBbzo1o6ceUoKIVABXWg=
-P:python3-gdbm
-V:3.10.11-r0
-A:armhf
-S:9319
-I:90112
-T:Python backend for GNU gdbm
-U:https://www.python.org/
-L:PSF-2.0
-o:python3
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1680743814
-c:61566be9fc68afb56980ba1f0b0dac863136ccf9
-D:so:libc.musl-armhf.so.1 so:libgdbm.so.6
-
 C:Q1yUMdLVakTMOBkF6MZ/qV9boCd7M=
 P:lua5.4-expat
 V:1.5.1-r0
@@ -19819,22 +19841,6 @@ t:1664929770
 c:d0d363795478fb22e1e1d35705cb751971af50e1
 D:so:libc.musl-armhf.so.1 so:libexpat.so.1
 i:lua5.4 lua-expat=1.5.1-r0
-
-C:Q1e38dWuUNfN2x8K5/UKEiEXlhMUw=
-P:mariadb
-V:10.6.13-r0
-A:armhf
-S:38381890
-I:127438848
-T:A fast SQL database server
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1683861708
-c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
-D:mariadb-common /bin/sh so:libaio.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libcurl.so.4 so:libgcc_s.so.1 so:liblzma.so.5 so:libncursesw.so.6 so:libpam.so.0 so:libpcre2-8.so.0 so:libssl.so.3 so:libstdc++.so.6 so:libxml2.so.2 so:libz.so.1
-p:cmd:aria_chk=10.6.13-r0 cmd:aria_dump_log=10.6.13-r0 cmd:aria_ftdump=10.6.13-r0 cmd:aria_pack=10.6.13-r0 cmd:aria_read_log=10.6.13-r0 cmd:aria_s3_copy=10.6.13-r0 cmd:innochecksum=10.6.13-r0 cmd:mariadb-binlog=10.6.13-r0 cmd:mariadb-conv=10.6.13-r0 cmd:mariadb-embedded=10.6.13-r0 cmd:mariadb-install-db=10.6.13-r0 cmd:mariadb-ldb=10.6.13-r0 cmd:mariadb-plugin=10.6.13-r0 cmd:mariadb-secure-installation=10.6.13-r0 cmd:mariadb-slap=10.6.13-r0 cmd:mariadb-tzinfo-to-sql=10.6.13-r0 cmd:mariadbd-safe=10.6.13-r0 cmd:mariadbd=10.6.13-r0 cmd:msql2mysql=10.6.13-r0 cmd:my_print_defaults=10.6.13-r0 cmd:myisamchk=10.6.13-r0 cmd:myisamlog=10.6.13-r0 cmd:myisampack=10.6.13-r0 cmd:myrocks_hotbackup=10.6.13-r0 cmd:mysql_embedded=10.6.13-r0 cmd:mysql_install_db=10.6.13-r0 cmd:mysql_ldb=10.6.13-r0 cmd:mysql_plugin=10.6.13-r0 cmd:mysql_secure_installation=10.6.13-r0 cmd:mysql_tzinfo_to_sql=10.6.13-r0 cmd:mysqlbinlog=10.6.13-r0 cmd:mysqld=10.6.13-r0 cmd:mysqld_safe=10.6.13-r0 cmd:mysqlslap=10.6.13-r0 cmd:replace=10.6.13-r0 cmd:resolve_stack_dump=10.6.13-r0 cmd:resolveip=10.6.13-r0 cmd:sst_dump=10.6.13-r0 cmd:test-connect-t=10.6.13-r0 cmd:wsrep_sst_backup=10.6.13-r0 cmd:wsrep_sst_mariabackup=10.6.13-r0 cmd:wsrep_sst_mysqldump=10.6.13-r0 cmd:wsrep_sst_rsync=10.6.13-r0 cmd:wsrep_sst_rsync_wan=10.6.13-r0
 
 C:Q1vH8PN7I+VYyvDY+31Dlm/xtgBMg=
 P:yasm-dev
@@ -20125,6 +20131,21 @@ t:1664676809
 c:9466b6a53411ddfd4a9d8a785e29feb1bce1f824
 D:so:libbz2.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libevent-2.1.so.7 so:libssl.so.3 so:libz.so.1 so:libzstd.so.1
 p:cmd:links=2.28-r0
+
+C:Q1S//uhbkbt5abAwnlMb0kbUCa0rI=
+P:cups-dbg
+V:2.4.2-r2
+A:armhf
+S:2932566
+I:6807552
+T:The CUPS Printing System (debug symbols)
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685617426
+c:b6dc9ce24c58c8e6c830925e85b575cd1e0ac660
+D:cups-client poppler-utils openssl dbus
 
 C:Q1T32otzrWdQoLzczi7as6GAvqm/E=
 P:autoconf-doc
@@ -20580,6 +20601,22 @@ m:Ted Trask <ttrask01@yahoo.com>
 t:1621087673
 c:ec4e35bcdcf38829d2a36ff4d7cd4351ebb67d1c
 D:acf-core samba
+
+C:Q1lousfPs9rdDyapjUJ6KIPNWjbks=
+P:lua5.1-sql-odbc
+V:2.6.0-r3
+A:armhf
+S:10087
+I:114688
+T:Lua 5.1 SQL driver for odbc
+U:http://lunarmodules.github.io/luasql/
+L:MIT
+o:lua-sql
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685931441
+c:40030ca7d4e49d417533bb3419dac6f78b54044b
+D:lua5.1 so:libc.musl-armhf.so.1 so:libodbc.so.2
+i:lua-sql-odbc=2.6.0-r3 lua5.1
 
 C:Q1uqrzbvEtzVaMegSwkBe9eh9pmas=
 P:git-email
@@ -22318,22 +22355,6 @@ t:1665238927
 c:972423e8914dcd61be62a33feaf6b5b1a9515326
 D:encodings font-alias mkfontscale fontconfig
 
-C:Q1ByWBbHEpowQ5luZEHLamxBj2fZo=
-P:lua5.4-sql-odbc
-V:2.6.0-r2
-A:armhf
-S:9992
-I:114688
-T:Lua 5.4 SQL driver for odbc
-U:http://lunarmodules.github.io/luasql/
-L:MIT
-o:lua-sql
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1668176703
-c:d484333151e53f5aeca39546e7d70500fa4a08aa
-D:lua5.4 so:libc.musl-armhf.so.1 so:libodbc.so.2
-i:lua-sql-odbc=2.6.0-r2 lua5.4
-
 C:Q16UKk9a/tmCpGlvLFS/1e6eAkGTs=
 P:openldap-openrc
 V:2.6.3-r6
@@ -22517,21 +22538,6 @@ t:1668247949
 c:c24db9734c75d431c7bb8e109516682ca605c6f0
 i:docs perl-io-tty=1.17-r0
 
-C:Q1da+KOE4yfDV59DwQyJQDy9/K5sM=
-P:mariadb-plugin-rocksdb
-V:10.6.13-r0
-A:armhf
-S:1552942
-I:3899392
-T:MariaDB plugin for RocksDB (MyRocks)
-U:https://mariadb.com/kb/en/library/myrocks/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1683861708
-c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
-D:mariadb=10.6.13-r0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1
-
 C:Q1Bw+aDCUm8KoS7McXQ63lbvFAH9s=
 P:libgcrypt
 V:1.10.1-r0
@@ -22562,22 +22568,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1648631365
 c:2cf47a8f695fd160a3c3572f0ee46cf8f6ab746b
 i:docs gpm=1.20.7-r2
-
-C:Q1KSCp37TXNl0RrdFzSF3jiBsr/fM=
-P:python3-dev
-V:3.10.11-r0
-A:armhf
-S:26451972
-I:42270720
-T:A high-level scripting language (development files)
-U:https://www.python.org/
-L:PSF-2.0
-o:python3
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1680743814
-c:61566be9fc68afb56980ba1f0b0dac863136ccf9
-D:pkgconfig python3=3.10.11-r0
-p:pc:python-3.10-embed=3.10 pc:python-3.10=3.10 pc:python3-embed=3.10 pc:python3=3.10 cmd:python-config=3.10.11-r0 cmd:python3-config=3.10.11-r0 cmd:python3.10-config=3.10.11-r0
 
 C:Q1eZMi1bBGByb6FlSeUs6nOmuLLBQ=
 P:perl-lwp-mediatypes-doc
@@ -23037,21 +23027,6 @@ m:jv <jens@eisfair.org>
 t:1661893370
 c:e8e5d0b39d8b14d4030287504081be33b497f39a
 D:so:libc.musl-armhf.so.1 so:librabbitmq.so.4 so:libsyslog-ng-3.38.so.0
-
-C:Q1eJA4ZisUXrLkEo+CBKK+OC2PFTI=
-P:postfix-openrc
-V:3.7.4-r0
-A:armhf
-S:2513
-I:16384
-T:Secure and fast drop-in replacement for Sendmail (MTA) (OpenRC init scripts)
-U:https://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1674439793
-c:137798230ca4204283aa92bf650826eb22c72b3f
-i:openrc postfix=3.7.4-r0
 
 C:Q1+Ep7nUodUKqxGHZscyNvwZ0C2W8=
 P:atf-doc
@@ -24447,22 +24422,6 @@ c:a70f062310d85d95fc78e3caacfccccdc3027cff
 D:so:libc.musl-armhf.so.1
 p:so:libcap.so.2=2.66 so:libpsx.so.2=2.66
 
-C:Q1equozUrrZXGzuzD2rmmok0k8br4=
-P:cups-lang
-V:2.4.2-r1
-A:armhf
-S:683395
-I:4325376
-T:Languages for package cups
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667923137
-c:b5984eacd3d0519caed9c4df4eb805d33f3f1593
-D:cups-client poppler-utils openssl dbus
-i:cups=2.4.2-r1 lang
-
 C:Q1fN3PVskQtBKyB/WkWmivI0GPdKM=
 P:opusfile-dev
 V:0.12-r4
@@ -24970,37 +24929,6 @@ t:1649093063
 c:e5747fdca4a369513e73acf202d48b45264d9f40
 D:ruby
 
-C:Q1rDrhEfxhbIS85ezZDWKy/D6FCcM=
-P:lua5.1-sql-odbc
-V:2.6.0-r2
-A:armhf
-S:10098
-I:114688
-T:Lua 5.1 SQL driver for odbc
-U:http://lunarmodules.github.io/luasql/
-L:MIT
-o:lua-sql
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1668176703
-c:d484333151e53f5aeca39546e7d70500fa4a08aa
-D:lua5.1 so:libc.musl-armhf.so.1 so:libodbc.so.2
-i:lua-sql-odbc=2.6.0-r2 lua5.1
-
-C:Q171FE2f/J062fa/N1RlhLkPIclVQ=
-P:mariadb-doc
-V:10.6.13-r0
-A:armhf
-S:324787
-I:1183744
-T:A fast SQL database server (documentation)
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1683861708
-c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
-i:docs mariadb=10.6.13-r0
-
 C:Q1X3WGJ0mu7QT5+A0Ik4aPTk7CFDk=
 P:py3-parsing
 V:3.0.9-r0
@@ -25077,22 +25005,6 @@ m:Nathan Angelacos <nangel@alpinelinux.org>
 t:1681461364
 c:62f9529517f32b59704fdd60819420373b6dd4c5
 D:kamailio so:libc.musl-armhf.so.1 so:libsrdb1.so.1 so:libsrdb2.so.1 so:libtrie.so.1
-
-C:Q1F+JGRaqh5QyGUUSAe1SNMrkhFns=
-P:postfix-ldap
-V:3.7.4-r0
-A:armhf
-S:13673
-I:102400
-T:ldap map support for postfix
-U:https://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1674439793
-c:137798230ca4204283aa92bf650826eb22c72b3f
-D:so:libc.musl-armhf.so.1 so:liblber.so.2 so:libldap.so.2
-p:so:postfix-ldap.so=0
 
 C:Q1N7couXkBcSnfgrE+fEKPpQ29h0c=
 P:p11-kit-dev
@@ -25431,6 +25343,22 @@ t:1621087673
 c:ec4e35bcdcf38829d2a36ff4d7cd4351ebb67d1c
 D:acf-core dovecot
 
+C:Q1ErsAEFbma7oG0PDJy+G61/r7pIk=
+P:libssl3
+V:3.0.9-r1
+A:armhf
+S:234259
+I:557056
+T:SSL shared libraries
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl
+m:Ariadne Conill <ariadne@dereferenced.org>
+t:1685468917
+c:eb1a1f718c8b12adac569592961a345af7139a0d
+D:so:libc.musl-armhf.so.1 so:libcrypto.so.3
+p:so:libssl.so.3=3
+
 C:Q1RFpaffAwSadCG2j2BVSEVkFb8F0=
 P:docbook2x
 V:0.8.8-r8
@@ -25446,6 +25374,21 @@ t:1665753996
 c:84d02e8c3abb163d4ca89e62e831c4116b9ea195
 D:texinfo openjade docbook-xml docbook-xsl perl-xml-sax libxslt so:libc.musl-armhf.so.1
 p:cmd:db2x_manxml=0.8.8-r8 cmd:db2x_texixml=0.8.8-r8 cmd:db2x_xsltproc=0.8.8-r8 cmd:docbook2x-man=0.8.8-r8 cmd:docbook2x-texi=0.8.8-r8 cmd:sgml2xml-isoent=0.8.8-r8 cmd:utf8trans=0.8.8-r8
+
+C:Q1lo2TtgMts1mOxEfo98COcIeJhXU=
+P:mariadb-embedded-dev
+V:10.6.14-r0
+A:armhf
+S:1549
+I:12288
+T:MariaDB as an embeddable library - development files
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686095916
+c:fb8a980c8f396c8b5e83da21e25930edb3aae7c9
+D:mariadb-common mariadb-embedded=10.6.14-r0
 
 C:Q1/DL1SvUmqWxTY/HDcZyMQqxX2II=
 P:mtd-utils-misc
@@ -25661,6 +25604,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1683706998
 c:1a199215cd8b399e30ecb831809a32234a6cf9bf
 i:docs screen=4.9.0-r1
+
+C:Q1j8X6ZSfo1EyzcLsmwyyWc++vlD0=
+P:curl-fish-completion
+V:8.1.2-r0
+A:armhf
+S:6766
+I:49152
+T:Fish completions for curl
+U:https://curl.se/
+L:curl
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685465053
+c:9e0e2d1b4bedd8bf32af1393fe459f6c8bee4ebd
+i:curl=8.1.2-r0 fish
 
 C:Q1It0/M3QU3R5OZucyBM3D+MMyJEs=
 P:augeas
@@ -26279,6 +26237,22 @@ t:1643150280
 c:feb71f1a6023ee6d874ed0a62a46a205a92f5dfc
 i:docs pigz=2.7-r0
 
+C:Q1D861d+x7IBL1hPJIIw0MiOd8rG8=
+P:postfix-pgsql
+V:3.7.6-r0
+A:armhf
+S:7494
+I:102400
+T:pgsql map support for postfix
+U:https://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686104668
+c:98d6bfa6c4ce40b68b7ff4e59e694c6ff7b05893
+D:so:libc.musl-armhf.so.1 so:libpq.so.5
+p:so:postfix-pgsql.so=0
+
 C:Q1L4equNhvx321UR+zjH+YLfsilcQ=
 P:gdb
 V:12.1-r2
@@ -26386,22 +26360,6 @@ m:Nathan Angelacos <nangel@alpinelinux.org>
 t:1681461364
 c:62f9529517f32b59704fdd60819420373b6dd4c5
 D:kamailio so:libc.musl-armhf.so.1
-
-C:Q1us40wdkbjVAoKYpLI2OZzs9gEs0=
-P:postfix-pcre
-V:3.7.4-r0
-A:armhf
-S:7325
-I:102400
-T:pcre map support for postfix
-U:https://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1674439793
-c:137798230ca4204283aa92bf650826eb22c72b3f
-D:so:libc.musl-armhf.so.1 so:libpcre2-8.so.0
-p:so:postfix-pcre.so=0
 
 C:Q1cNLG8w7Zx+CWIUr1vKNSVObWDQE=
 P:perl-ldap
@@ -26618,6 +26576,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1680211753
 c:98fa1f428e93986053cd4cf5d9fc847d23ed2ac8
 D:irssi so:libc.musl-armhf.so.1 so:libgcrypt.so.20 so:libotr.so.5
+
+C:Q1/GJH9k0mrElIABE3ACjbap8lCUw=
+P:postfix-doc
+V:3.7.6-r0
+A:armhf
+S:762120
+I:2023424
+T:Secure and fast drop-in replacement for Sendmail (MTA) (documentation)
+U:https://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686104668
+c:98d6bfa6c4ce40b68b7ff4e59e694c6ff7b05893
+i:docs postfix=3.7.6-r0
 
 C:Q1jJsQ9ukz7pcNxqql2nVIHR2vOpE=
 P:lua5.3-hashids
@@ -26899,22 +26872,6 @@ t:1678702249
 c:db057b7badb30307a5c66dead3049008de2c2c07
 i:docs dovecot=2.3.20-r7
 
-C:Q1Lh4URjv5Vyovs2oZi0ui5IcYc+c=
-P:lua5.2-sql-odbc
-V:2.6.0-r2
-A:armhf
-S:9993
-I:114688
-T:Lua 5.2 SQL driver for odbc
-U:http://lunarmodules.github.io/luasql/
-L:MIT
-o:lua-sql
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1668176703
-c:d484333151e53f5aeca39546e7d70500fa4a08aa
-D:lua5.2 so:libc.musl-armhf.so.1 so:libodbc.so.2
-i:lua-sql-odbc=2.6.0-r2 lua5.2
-
 C:Q1j+ztb37fQxcrv3Q2GX5BbqWAGYc=
 P:uwsgi-router_uwsgi
 V:2.0.21-r0
@@ -27006,21 +26963,6 @@ t:1680276920
 c:8eda42c3e01a2a15a3efcdd984f9cb1c2ab4e810
 D:linux-rpi=5.15.105-r0
 i:zfs linux-rpi=5.15.105-r0
-
-C:Q1aPj6x9W1FSUAt8IPHUAFqHr8FJ4=
-P:curl-doc
-V:8.1.1-r1
-A:armhf
-S:821063
-I:2154496
-T:URL retrival utility and library (documentation)
-U:https://curl.se/
-L:curl
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1685002935
-c:d1bf7847e46b66685c1ef6baa0c4abe3b37a7d42
-i:docs curl=8.1.1-r1
 
 C:Q1eqYNophiP/6o//zBKXAzhi3NXLA=
 P:apache-mod-fcgid
@@ -27524,6 +27466,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1665627224
 c:de2fcb8a348240ed779da741770a2d45635d6b6d
 
+C:Q1fANxYpu+GMAt+6Rhtiix/9BWb08=
+P:cups-lang
+V:2.4.2-r2
+A:armhf
+S:683387
+I:4325376
+T:Languages for package cups
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685617426
+c:b6dc9ce24c58c8e6c830925e85b575cd1e0ac660
+D:cups-client poppler-utils openssl dbus
+i:cups=2.4.2-r2 lang
+
 C:Q1YUe0tFI8sy44BO8LelM/rn2HNd4=
 P:perl-test-needs-doc
 V:0.002009-r0
@@ -27554,6 +27512,22 @@ t:1677198114
 c:bd3a803c75a1fc678342cbbbb128081bc48e9bcf
 D:so:libc.musl-armhf.so.1 so:libcap.so.2 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8
 p:so:libgstbase-1.0.so.0=0.2006.0 so:libgstcontroller-1.0.so.0=0.2006.0 so:libgstnet-1.0.so.0=0.2006.0 so:libgstreamer-1.0.so.0=0.2006.0
+
+C:Q1XWzPYdnk7V6wEBZgQRl+jv9gXRQ=
+P:lua5.4-sql-odbc
+V:2.6.0-r3
+A:armhf
+S:10072
+I:114688
+T:Lua 5.4 SQL driver for odbc
+U:http://lunarmodules.github.io/luasql/
+L:MIT
+o:lua-sql
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685931441
+c:40030ca7d4e49d417533bb3419dac6f78b54044b
+D:lua5.4 so:libc.musl-armhf.so.1 so:libodbc.so.2
+i:lua-sql-odbc=2.6.0-r3 lua5.4
 
 C:Q14DIQHNcE51EVC8ykBSgmyeZGk1Q=
 P:nginx-openrc
@@ -27782,22 +27756,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1667251372
 c:d4c8c0e1ea373d3758a3b31d21648ab2208ccf6c
 i:openrc nftables=1.0.5-r2
-
-C:Q1oeHQAo1EKNbkJ9S9C5lIZ70Xq78=
-P:postfix-stone
-V:3.7.4-r0
-A:armhf
-S:35645
-I:360448
-T:Postfix simulation and testing tools
-U:https://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1674439793
-c:137798230ca4204283aa92bf650826eb22c72b3f
-D:so:libc.musl-armhf.so.1 so:libpostfix-global.so so:libpostfix-util.so
-p:cmd:fsstone=3.7.4-r0 cmd:qmqp-sink=3.7.4-r0 cmd:qmqp-source=3.7.4-r0 cmd:smtp-sink=3.7.4-r0 cmd:smtp-source=3.7.4-r0
 
 C:Q1ESHF77MIz8vo6tlBUY/twlnaJdE=
 P:uwsgi-router_memcached
@@ -28914,22 +28872,6 @@ c:2cf3fe063b1b9e308372af7e2c2348e9e494a135
 D:lua5.2 so:libc.musl-armhf.so.1 so:libmariadb.so.3
 i:lua-dbi=0.7.2-r1 lua5.2
 
-C:Q1zYZ5WurHPt5lsbvRttKjz3K1xmE=
-P:openssl
-V:3.0.8-r4
-A:armhf
-S:320257
-I:765952
-T:Toolkit for Transport Layer Security (TLS)
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl
-m:Ariadne Conill <ariadne@dereferenced.org>
-t:1682007832
-c:d62c0613776b85229a8b2433673dae4ed231a18a
-D:so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libssl.so.3
-p:openssl3=3.0.8-r4 cmd:openssl=3.0.8-r4
-
 C:Q1/eFbumWqUj/guGnbbZfcKJz9g0A=
 P:popt
 V:1.19-r0
@@ -29480,6 +29422,20 @@ c:feb71f1a6023ee6d874ed0a62a46a205a92f5dfc
 D:so:libc.musl-armhf.so.1 so:libz.so.1
 p:cmd:pigz=2.7-r0 cmd:unpigz=2.7-r0
 
+C:Q14Yv0UKRvgBrrfhcCeNDa+wSyGdE=
+P:python3-tests
+V:3.10.12-r0
+A:armhf
+S:18711853
+I:89165824
+T:The test modules from the main python package
+U:https://www.python.org/
+L:PSF-2.0
+o:python3
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686277783
+c:c9d0d11c5c668797831752f8c01eaf1f89d10990
+
 C:Q1EmOTLRaBtrOjn4pPPI3MgpvDJW0=
 P:perl-inline-doc
 V:0.86-r1
@@ -29494,22 +29450,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-inline=0.86-r1
-
-C:Q15iJsdMCVMTsQOr7iRQGElROZla0=
-P:lua5.4-sql-postgres
-V:2.6.0-r2
-A:armhf
-S:7757
-I:114688
-T:Lua 5.4 SQL driver for postgres
-U:http://lunarmodules.github.io/luasql/
-L:MIT
-o:lua-sql
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1668176703
-c:d484333151e53f5aeca39546e7d70500fa4a08aa
-D:lua5.4 so:libc.musl-armhf.so.1 so:libpq.so.5
-i:lua-sql-postgres=2.6.0-r2 lua5.4
 
 C:Q1B8r22xlwd1cjz/t5mk+hGy1IZDk=
 P:sipsak
@@ -30203,6 +30143,20 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.2 so:libc.musl-armhf.so.1
 i:lua-hashids=1.0.6-r3 lua5.2
 
+C:Q192Jsk3bI3GnSaRVeIlxLGlyNZKo=
+P:lua-sql-mysql
+V:2.6.0-r3
+A:armhf
+S:1472
+I:4096
+T:Lua SQL drivers for mysql
+U:http://lunarmodules.github.io/luasql/
+L:MIT
+o:lua-sql
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685931441
+c:40030ca7d4e49d417533bb3419dac6f78b54044b
+
 C:Q12PUzd/8peEnINbsutJRMnOUechk=
 P:py3-gobject3
 V:3.42.2-r0
@@ -30466,22 +30420,6 @@ c:f71267930a9d6b88eda37c178a68d34ac6450098
 D:freeradius=3.0.26-r0 so:libc.musl-armhf.so.1 so:libldap.so.2
 p:freeradius3-ldap=3.0.26-r0 so:rlm_ldap.so=0
 
-C:Q1c+d00yblwbHvx98LktsPKpakjX0=
-P:lua5.1-sql-mysql
-V:2.6.0-r2
-A:armhf
-S:9275
-I:114688
-T:Lua 5.1 SQL driver for mysql
-U:http://lunarmodules.github.io/luasql/
-L:MIT
-o:lua-sql
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1668176703
-c:d484333151e53f5aeca39546e7d70500fa4a08aa
-D:lua5.1 so:libc.musl-armhf.so.1 so:libmariadb.so.3
-i:lua-sql-mysql=2.6.0-r2 lua5.1
-
 C:Q1Y/xvavjXqOx6woI7PJVDOMNN9sg=
 P:ldb-tools
 V:2.5.3-r0
@@ -30592,19 +30530,21 @@ c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:so:libc.musl-armhf.so.1 so:libgmp.so.10 so:libgnutls.so.30 so:libhogweed.so.6 so:libnettle.so.8 so:libz.so.1
 p:so:librtmp.so.1=1
 
-C:Q1wrBj9HVbGsVAzlYv47IGACpln8Q=
-P:openssl-dbg
-V:3.0.8-r4
+C:Q1NOk+XcBzdgZUZ242MbQdGtbHcBo=
+P:lua5.4-sql-sqlite3
+V:2.6.0-r3
 A:armhf
-S:5712685
-I:13422592
-T:Toolkit for Transport Layer Security (TLS) (debug symbols)
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl
-m:Ariadne Conill <ariadne@dereferenced.org>
-t:1682007832
-c:d62c0613776b85229a8b2433673dae4ed231a18a
+S:8595
+I:114688
+T:Lua 5.4 SQL driver for sqlite3
+U:http://lunarmodules.github.io/luasql/
+L:MIT
+o:lua-sql
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685931441
+c:40030ca7d4e49d417533bb3419dac6f78b54044b
+D:lua5.4 so:libc.musl-armhf.so.1 so:libsqlite3.so.0
+i:lua-sql-sqlite3=2.6.0-r3 lua5.4
 
 C:Q1hHuNQB6GGzmFEYCpxuNsQHchdO0=
 P:irqbalance
@@ -30990,6 +30930,22 @@ t:1659429320
 c:39cde24fb54a667a6730bdaec3233184227131f6
 D:so:libc.musl-armhf.so.1 so:liblzo2.so.2 so:libz.so.1
 p:cmd:jffs2dump=2.1.4-r1 cmd:jffs2reader=2.1.4-r1 cmd:mkfs.jffs2=2.1.4-r1 cmd:sumtool=2.1.4-r1
+
+C:Q18Er+xhBQdw8mAKULK517oGANi/s=
+P:lua5.3-sql-sqlite3
+V:2.6.0-r3
+A:armhf
+S:8591
+I:114688
+T:Lua 5.3 SQL driver for sqlite3
+U:http://lunarmodules.github.io/luasql/
+L:MIT
+o:lua-sql
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685931441
+c:40030ca7d4e49d417533bb3419dac6f78b54044b
+D:lua5.3 so:libc.musl-armhf.so.1 so:libsqlite3.so.0
+i:lua-sql-sqlite3=2.6.0-r3 lua5.3
 
 C:Q1kNk99EhO/mkW8Z8SHqLw7r/4mKc=
 P:elinks-lang
@@ -31533,22 +31489,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1667573027
 c:bd965a7ebf7fd8f07d7a0cc0d7375bf3e4eb9b24
 
-C:Q13br5pt5cgkwgYUDk0Ce699798HY=
-P:lua5.2-sql-sqlite3
-V:2.6.0-r2
-A:armhf
-S:8572
-I:114688
-T:Lua 5.2 SQL driver for sqlite3
-U:http://lunarmodules.github.io/luasql/
-L:MIT
-o:lua-sql
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1668176703
-c:d484333151e53f5aeca39546e7d70500fa4a08aa
-D:lua5.2 so:libc.musl-armhf.so.1 so:libsqlite3.so.0
-i:lua-sql-sqlite3=2.6.0-r2 lua5.2
-
 C:Q172PPcpjGL+OkD+ykCIRqPmOKBeg=
 P:openssh-sk-helper
 V:9.1_p1-r3
@@ -31918,22 +31858,6 @@ k:900
 D:ppp-daemon
 i:ifupdown-ng ppp-daemon
 
-C:Q1EZgdLakwt7ksJ12Sminj17Cgmwg=
-P:postfix-mysql
-V:3.7.4-r0
-A:armhf
-S:7995
-I:102400
-T:mysql map support for postfix
-U:https://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1674439793
-c:137798230ca4204283aa92bf650826eb22c72b3f
-D:so:libc.musl-armhf.so.1 so:libmariadb.so.3
-p:so:postfix-mysql.so=0
-
 C:Q183cH3T2eJ6MU8siTx7CbE6F7BBk=
 P:bacula-pgsql
 V:13.0.1-r0
@@ -32154,20 +32078,6 @@ m:Laurent Bercot <ska-devel@skarnet.org>
 t:1655409612
 c:1b6bc7ee3fc98dd1c05cf72ac39770c408aabeb4
 i:docs s6-dns=2.3.5.4-r0
-
-C:Q1N4AmDrj4Ops2B3Ept+RD550R6Io=
-P:python3-dbg
-V:3.10.11-r0
-A:armhf
-S:7061256
-I:16994304
-T:A high-level scripting language (debug symbols)
-U:https://www.python.org/
-L:PSF-2.0
-o:python3
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1680743814
-c:61566be9fc68afb56980ba1f0b0dac863136ccf9
 
 C:Q1tyxpdkKYSAlCuow1lB++hpTKxHc=
 P:xkbcomp
@@ -32895,6 +32805,22 @@ c:0d60399ded1fb16dc2adcabb0d4d07f517903203
 D:libisofs=1.5.4-r2 pkgconfig
 p:pc:libisofs-1=1.5.4
 
+C:Q1Tc3hVLOGJClyU+gcAWtG0TiXzPg=
+P:lua5.1-sql-postgres
+V:2.6.0-r3
+A:armhf
+S:7938
+I:114688
+T:Lua 5.1 SQL driver for postgres
+U:http://lunarmodules.github.io/luasql/
+L:MIT
+o:lua-sql
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685931441
+c:40030ca7d4e49d417533bb3419dac6f78b54044b
+D:lua5.1 so:libc.musl-armhf.so.1 so:libpq.so.5
+i:lua-sql-postgres=2.6.0-r3 lua5.1
+
 C:Q1jYPtiXhPnSnaaruI2+bycrWSXd4=
 P:ruby-prime
 V:0.1.2-r0
@@ -33495,6 +33421,22 @@ t:1684890769
 c:323b60a66d518c5b7edc5b87aece141cd7353b86
 D:grub
 
+C:Q1DWHdtQOlvOneiKuumGNyAENRSMs=
+P:lua5.2-sql-postgres
+V:2.6.0-r3
+A:armhf
+S:7750
+I:114688
+T:Lua 5.2 SQL driver for postgres
+U:http://lunarmodules.github.io/luasql/
+L:MIT
+o:lua-sql
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685931441
+c:40030ca7d4e49d417533bb3419dac6f78b54044b
+D:lua5.2 so:libc.musl-armhf.so.1 so:libpq.so.5
+i:lua-sql-postgres=2.6.0-r3 lua5.2
+
 C:Q10Hi7D/+pmtofTkg75zi9jR1WK7k=
 P:kamailio-xml
 V:5.6.3-r1
@@ -33602,6 +33544,22 @@ t:1660225613
 c:1daee00317a10316c3ab678755f0bbd676165b9c
 D:so:libapr-1.so.0 so:libaprutil-1.so.0 so:libc.musl-armhf.so.1 so:libsvn_delta-1.so.0 so:libsvn_fs-1.so.0 so:libsvn_repos-1.so.0 so:libsvn_subr-1.so.0
 
+C:Q11B4WLYfrha8l38xwyhjYRmLGUZY=
+P:lua5.2-sql-mysql
+V:2.6.0-r3
+A:armhf
+S:9146
+I:114688
+T:Lua 5.2 SQL driver for mysql
+U:http://lunarmodules.github.io/luasql/
+L:MIT
+o:lua-sql
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685931441
+c:40030ca7d4e49d417533bb3419dac6f78b54044b
+D:lua5.2 so:libc.musl-armhf.so.1 so:libmariadb.so.3
+i:lua-sql-mysql=2.6.0-r3 lua5.2
+
 C:Q198DP8Smxcjj1dLFXAa2XipSqKXI=
 P:lua-discount
 V:1.2.10.1-r7
@@ -33615,22 +33573,6 @@ o:lua-discount
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1666710549
 c:23a8ea10db6b3216097e284e0756e09c41fd3532
-
-C:Q1SXKAbZmaLyScd/gMHQh7EvDXNGU=
-P:postfix-sqlite
-V:3.7.4-r0
-A:armhf
-S:5551
-I:102400
-T:sqlite map support for postfix
-U:https://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1674439793
-c:137798230ca4204283aa92bf650826eb22c72b3f
-D:so:libc.musl-armhf.so.1 so:libsqlite3.so.0
-p:so:postfix-sqlite.so=0
 
 C:Q1y8myn387K76UTBVLEvur4eTtJWM=
 P:cyrus-sasl-sql
@@ -33923,6 +33865,20 @@ t:1654671546
 c:aeaca9e2f8033c2cd692381ad9cad1ba6787a305
 D:so:libc.musl-armhf.so.1
 
+C:Q1rrlsQT++zIfO+/nv7w3tY4glGxo=
+P:lua-sql
+V:2.6.0-r3
+A:armhf
+S:1459
+I:4096
+T:Lua SQL drivers
+U:http://lunarmodules.github.io/luasql/
+L:MIT
+o:lua-sql
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685931441
+c:40030ca7d4e49d417533bb3419dac6f78b54044b
+
 C:Q1gCHxUh7XJkeR5r1V1TeocwnY65Q=
 P:irssi
 V:1.4.4-r0
@@ -34078,21 +34034,35 @@ c:1bc2b687a72930b8bc64c81bfeb230a0aa7da6d7
 D:gpsd=3.24-r0 pkgconfig
 p:pc:libgps=3.24
 
-C:Q1U8AaOd1rjswNs3Vi25Fo5z2rMkc=
-P:lua5.3-sql-postgres
-V:2.6.0-r2
+C:Q1xny8oWRer3V3vBGlIoneYBRPa5U=
+P:mariadb-embedded
+V:10.6.14-r0
 A:armhf
-S:7758
-I:114688
-T:Lua 5.3 SQL driver for postgres
+S:5308327
+I:15273984
+T:MariaDB as an embeddable library
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686095916
+c:fb8a980c8f396c8b5e83da21e25930edb3aae7c9
+D:mariadb-common=10.6.14-r0 so:libaio.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libgcc_s.so.1 so:liblzma.so.5 so:libpcre2-8.so.0 so:libssl.so.3 so:libstdc++.so.6 so:libz.so.1
+p:so:libmariadbd.so.19=19
+
+C:Q1J1g7gzQhNrfSK04Cgx8dP7dfZSs=
+P:lua-sql-sqlite3
+V:2.6.0-r3
+A:armhf
+S:1466
+I:4096
+T:Lua SQL drivers for sqlite3
 U:http://lunarmodules.github.io/luasql/
 L:MIT
 o:lua-sql
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1668176703
-c:d484333151e53f5aeca39546e7d70500fa4a08aa
-D:lua5.3 so:libc.musl-armhf.so.1 so:libpq.so.5
-i:lua-sql-postgres=2.6.0-r2 lua5.3
+t:1685931441
+c:40030ca7d4e49d417533bb3419dac6f78b54044b
 
 C:Q1ZyF5BddcUBeWcDahGhMSj+kg7XE=
 P:iaxmodem-dbg
@@ -35131,22 +35101,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
 
-C:Q1/jvZlO+bCXSnMW+5Z3DMMLZZK+c=
-P:curl
-V:8.1.1-r1
-A:armhf
-S:143135
-I:278528
-T:URL retrival utility and library
-U:https://curl.se/
-L:curl
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1685002935
-c:d1bf7847e46b66685c1ef6baa0c4abe3b37a7d42
-D:ca-certificates so:libc.musl-armhf.so.1 so:libcurl.so.4 so:libz.so.1
-p:cmd:curl=8.1.1-r1
-
 C:Q1Yu302q43trfCpDnX1/QdzypNtu4=
 P:kea-hook-flex-option
 V:2.2.0-r3
@@ -35267,21 +35221,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1665238927
 c:972423e8914dcd61be62a33feaf6b5b1a9515326
 D:encodings font-alias mkfontscale fontconfig
-
-C:Q1O6qfgXE1wdBBArk4DIp4G1bf3lo=
-P:python3-doc
-V:3.10.11-r0
-A:armhf
-S:14187
-I:53248
-T:A high-level scripting language (documentation)
-U:https://www.python.org/
-L:PSF-2.0
-o:python3
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1680743814
-c:61566be9fc68afb56980ba1f0b0dac863136ccf9
-i:docs python3=3.10.11-r0
 
 C:Q1y7hEIJeZYN+siSZmWoJW0ngNbEk=
 P:setup-box
@@ -36340,6 +36279,22 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-authen-sasl=2.16-r3
 
+C:Q1sTfSM9iJ74hsR0krNVqfKkGyCk4=
+P:fping
+V:5.1-r2
+A:armhf
+S:23128
+I:81920
+T:A utility to ping multiple hosts at once
+U:https://fping.org/
+L:MIT
+o:fping
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685663315
+c:34b5c076e643a8c2aae3c58bae561a508cb47f67
+D:so:libc.musl-armhf.so.1
+p:cmd:fping=5.1-r2
+
 C:Q1xde6woUlJuq0a745ceUh+XR/jLI=
 P:bubblewrap-bash-completion
 V:0.7.0-r0
@@ -36512,6 +36467,21 @@ c:530dc33325186b93bee950307082848454a6ff16
 D:rsync python3
 p:cmd:rrsync=3.2.7-r0
 
+C:Q1GEiE/SB+ZB1bEFTu4P/1eI7GfMU=
+P:postfix-openrc
+V:3.7.6-r0
+A:armhf
+S:2517
+I:16384
+T:Secure and fast drop-in replacement for Sendmail (MTA) (OpenRC init scripts)
+U:https://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686104668
+c:98d6bfa6c4ce40b68b7ff4e59e694c6ff7b05893
+i:openrc postfix=3.7.6-r0
+
 C:Q1HBmgEXxDnVfPTwRWeGDOt48RR6k=
 P:libcap-ng
 V:0.8.3-r1
@@ -36650,22 +36620,6 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1667984906
 c:ce6f81df0382091a7b4dbf3c974b61f133e1291b
 D:nagios-plugins fping so:libc.musl-armhf.so.1 so:libcrypto.so.3
-
-C:Q1F6Wl36EgwaPH7jgtHlDL414qIB8=
-P:mariadb-mytop
-V:10.6.13-r0
-A:armhf
-S:22877
-I:86016
-T:Command line tool used for monitoring MariaDB performance
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1683861708
-c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
-D:perl perl-dbd-mysql perl-dbi perl-getopt-long perl-socket perl-term-readkey
-p:cmd:mytop=10.6.13-r0
 
 C:Q1aIB4adVU6c5ootnYdKUAM6/FrR0=
 P:u-boot-sunxi
@@ -37515,6 +37469,21 @@ m:Sören Tempel <soeren+alpine@soeren-tempel.net>
 t:1665753996
 c:84d02e8c3abb163d4ca89e62e831c4116b9ea195
 i:docs terminus-font=4.49.1-r3
+
+C:Q1IFMziE6zbP7+AdW1sA60/Nljjq0=
+P:openssl-doc
+V:3.0.9-r1
+A:armhf
+S:4739278
+I:12156928
+T:Toolkit for Transport Layer Security (TLS) (documentation)
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl
+m:Ariadne Conill <ariadne@dereferenced.org>
+t:1685468917
+c:eb1a1f718c8b12adac569592961a345af7139a0d
+i:docs openssl=3.0.9-r1
 
 C:Q1MjMOY2HAx9eZRZ9j74QdrS0Nwb0=
 P:librtlsdr
@@ -38421,21 +38390,6 @@ c:2c6c06129dee0f51d5a5b77f0a23c7a319ba781c
 D:cairo-dev glib-dev pc:cairo>=1.10.0 pc:glib-2.0>=2.56 pc:gobject-2.0>=2.56 pkgconfig poppler-glib=22.11.0-r0 poppler=22.11.0-r0
 p:pc:poppler-cpp=22.11.0 pc:poppler-glib=22.11.0 pc:poppler=22.11.0
 
-C:Q1AvtoRl21hD29owOsvPQXkzfxEUo=
-P:dbus-doc
-V:1.14.4-r0
-A:armhf
-S:245593
-I:761856
-T:Freedesktop.org message bus system (documentation)
-U:https://www.freedesktop.org/Software/dbus
-L:AFL-2.1 OR GPL-2.0-or-later
-o:dbus
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1665231702
-c:16436564a2c16883ee30eae843097f77c699c222
-i:docs dbus=1.14.4-r0
-
 C:Q18oWQgOJcBS1ViJG1gTfJljnK32c=
 P:clang14
 V:14.0.6-r1
@@ -38512,6 +38466,22 @@ t:1624218306
 c:831108208be8b9b447a320386ef31d17d947e660
 D:so:libc.musl-armhf.so.1
 p:so:libconfig.so.11=11.1.0
+
+C:Q1PrOMJmS359NGy8X9DO3whtVLyqo=
+P:python3-dev
+V:3.10.12-r0
+A:armhf
+S:26455152
+I:42274816
+T:A high-level scripting language (development files)
+U:https://www.python.org/
+L:PSF-2.0
+o:python3
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686277783
+c:c9d0d11c5c668797831752f8c01eaf1f89d10990
+D:pkgconfig python3=3.10.12-r0
+p:pc:python-3.10-embed=3.10 pc:python-3.10=3.10 pc:python3-embed=3.10 pc:python3=3.10 cmd:python-config=3.10.12-r0 cmd:python3-config=3.10.12-r0 cmd:python3.10-config=3.10.12-r0
 
 C:Q1Th/eIe+SSDwjCcT40wvigIoZjzk=
 P:man-pages-posix
@@ -38663,22 +38633,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
 
-C:Q1AONQh5EUIu4Llx227i9MenBitcE=
-P:libcrypto3
-V:3.0.8-r4
-A:armhf
-S:1420124
-I:3407872
-T:Crypto library from openssl
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl
-m:Ariadne Conill <ariadne@dereferenced.org>
-t:1682007832
-c:d62c0613776b85229a8b2433673dae4ed231a18a
-D:so:libc.musl-armhf.so.1
-p:so:libcrypto.so.3=3
-
 C:Q18MSESsUgq6YYL+usakH5tjY+nvE=
 P:inih
 V:56-r0
@@ -38757,22 +38711,6 @@ t:1673689036
 c:90a9c950027e44610292c63dc1d97ff92c485b74
 D:so:libLLVM-15.so so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:clang-libs=15.0.7-r0 so:libclang-cpp.so.15=15
-
-C:Q1+GBuiC4lC7iWETDi+x9Y555tbpA=
-P:postfix-redis
-V:3.7.4-r0
-A:armhf
-S:4303
-I:102400
-T:redis map support for postfix
-U:https://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1674439793
-c:137798230ca4204283aa92bf650826eb22c72b3f
-D:so:libhiredis.so.1.0.0
-p:so:postfix-redis.so=0
 
 C:Q1OPCLh5xhTBGKf7GuFqllf3vjz3M=
 P:perl-class-returnvalue-doc
@@ -38989,6 +38927,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1667587898
 c:ca4b4645fa6b8afa25b07f8de46ff05596c605bf
 i:shared-mime-info=2.2-r2 lang
+
+C:Q1+TRNIjrHOVAnS7kXcVTHAEJfnBU=
+P:mariadb-server-utils
+V:10.6.14-r0
+A:armhf
+S:2448007
+I:10502144
+T:Non-essential server utilities for MariaDB/MySQL applications
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686095916
+c:fb8a980c8f396c8b5e83da21e25930edb3aae7c9
+D:perl mariadb-common=10.6.14-r0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:cmd:mariadb-convert-table-format=10.6.14-r0 cmd:mariadb-hotcopy=10.6.14-r0 cmd:mariadb-setpermission=10.6.14-r0 cmd:mariadb-upgrade=10.6.14-r0 cmd:mariadbd-multi=10.6.14-r0 cmd:mariadbd-safe-helper=10.6.14-r0 cmd:mysql_convert_table_format=10.6.14-r0 cmd:mysql_setpermission=10.6.14-r0 cmd:mysql_upgrade=10.6.14-r0 cmd:mysqld_multi=10.6.14-r0 cmd:mysqld_safe_helper=10.6.14-r0 cmd:mysqlhotcopy=10.6.14-r0 cmd:perror=10.6.14-r0
 
 C:Q126cwHmlROew5OsFvkNbDqe32dCc=
 P:py3-sphinxcontrib-qthelp
@@ -39711,22 +39665,6 @@ t:1658682415
 c:6162eaf6a68ccbd0706a7ed26e2e4b09200f5a02
 i:openrc rdnssd=1.0.6-r0
 
-C:Q1inDMwwUVZmACic1ndYZEAOYfZAM=
-P:cups-dev
-V:2.4.2-r1
-A:armhf
-S:44194
-I:262144
-T:The CUPS Printing System (development files)
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667923137
-c:b5984eacd3d0519caed9c4df4eb805d33f3f1593
-D:libgcrypt-dev gnutls-dev zlib-dev cups-libs=2.4.2-r1 pc:avahi-client pc:gnutls pkgconfig
-p:pc:cups=2.4.2 cmd:cups-config=2.4.2-r1
-
 C:Q1vdzJZrWRoI1ZFU9YNcWqTrwjdIE=
 P:perl-http-cookies-doc
 V:6.10-r0
@@ -39772,36 +39710,6 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1665753996
 c:84d02e8c3abb163d4ca89e62e831c4116b9ea195
 i:docs xmlindent=0.2.17-r2
-
-C:Q1A+F2AgNtOaXFwyzzvQU9OGwQSeA=
-P:lua-sql-postgres
-V:2.6.0-r2
-A:armhf
-S:1480
-I:4096
-T:Lua SQL drivers for postgres
-U:http://lunarmodules.github.io/luasql/
-L:MIT
-o:lua-sql
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1668176703
-c:d484333151e53f5aeca39546e7d70500fa4a08aa
-
-C:Q1wzruEUAn/X27oejlUnT+KHdwA4o=
-P:lua5.2-sql-mysql
-V:2.6.0-r2
-A:armhf
-S:9153
-I:114688
-T:Lua 5.2 SQL driver for mysql
-U:http://lunarmodules.github.io/luasql/
-L:MIT
-o:lua-sql
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1668176703
-c:d484333151e53f5aeca39546e7d70500fa4a08aa
-D:lua5.2 so:libc.musl-armhf.so.1 so:libmariadb.so.3
-i:lua-sql-mysql=2.6.0-r2 lua5.2
 
 C:Q1VgprK6OMplZxZ5M56tBw5EH9W1Q=
 P:git-fast-import
@@ -39955,6 +39863,21 @@ m:Bart Ribbers <bribbers@disroot.org>
 t:1659676082
 c:08e731db1414339b2e07c9949591476dfef0c40d
 D:fish python3 cmd:man
+
+C:Q1/i0Quc+TjPop3525YvTQGlENHLU=
+P:fping-doc
+V:5.1-r2
+A:armhf
+S:7554
+I:28672
+T:A utility to ping multiple hosts at once (documentation)
+U:https://fping.org/
+L:MIT
+o:fping
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685663315
+c:34b5c076e643a8c2aae3c58bae561a508cb47f67
+i:docs fping=5.1-r2
 
 C:Q1Xy3myVzZvFpVjQwYwufNP7kH+z8=
 P:libidn2-doc
@@ -40462,21 +40385,6 @@ c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:so:libc.musl-armhf.so.1
 p:so:libburn.so.4=4.107.0 cmd:cdrskin=1.5.4-r2
 
-C:Q1q25HSmP5G6LqZvP6V0IaYzre74s=
-P:postfix-doc
-V:3.7.4-r0
-A:armhf
-S:760376
-I:2015232
-T:Secure and fast drop-in replacement for Sendmail (MTA) (documentation)
-U:https://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1674439793
-c:137798230ca4204283aa92bf650826eb22c72b3f
-i:docs postfix=3.7.4-r0
-
 C:Q1vEiqTe2/exbc60T8fFzC79FtbUs=
 P:perl-universal-can
 V:1.20140328-r1
@@ -40967,22 +40875,6 @@ t:1621087673
 c:ec4e35bcdcf38829d2a36ff4d7cd4351ebb67d1c
 D:acf-core gross
 
-C:Q1F7tkq+Ql2Bijmt3yrK4GQHEN3ys=
-P:dbus-libs
-V:1.14.4-r0
-A:armhf
-S:115175
-I:278528
-T:D-BUS access libraries
-U:https://www.freedesktop.org/Software/dbus
-L:AFL-2.1 OR GPL-2.0-or-later
-o:dbus
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1665231702
-c:16436564a2c16883ee30eae843097f77c699c222
-D:so:libc.musl-armhf.so.1
-p:so:libdbus-1.so.3=3.32.1
-
 C:Q1TMBTquXTsmJgfGOYjKBMVvVH3sA=
 P:perl-class-inspector-doc
 V:1.36-r2
@@ -41308,22 +41200,6 @@ t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:so:libaspell.so.15 so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libintl.so.8 so:libncursesw.so.6 so:libstdc++.so.6
 p:cmd:aspell=0.60.8-r2
-
-C:Q1ROyVnsVEGIeRDrf32brMDtWEtkA=
-P:postfix-pgsql
-V:3.7.4-r0
-A:armhf
-S:7489
-I:102400
-T:pgsql map support for postfix
-U:https://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1674439793
-c:137798230ca4204283aa92bf650826eb22c72b3f
-D:so:libc.musl-armhf.so.1 so:libpq.so.5
-p:so:postfix-pgsql.so=0
 
 C:Q1Ranqqi7sCDvtq8MZpn+5IcD9tnA=
 P:umix
@@ -41891,22 +41767,6 @@ t:1641717230
 c:522c5a72903b868815ef445f8f768b5066d97867
 D:so:libc.musl-armhf.so.1
 p:cmd:rpcgen=1.4.3-r0
-
-C:Q16CA4E8QxOjGBdwCz+EMsT+K//x8=
-P:python3
-V:3.10.11-r0
-A:armhf
-S:14713303
-I:51945472
-T:A high-level scripting language
-U:https://www.python.org/
-L:PSF-2.0
-o:python3
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1680743814
-c:61566be9fc68afb56980ba1f0b0dac863136ccf9
-D:so:libbz2.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libexpat.so.1 so:libffi.so.8 so:libgdbm_compat.so.4 so:liblzma.so.5 so:libmpdec.so.3 so:libncursesw.so.6 so:libpanelw.so.6 so:libreadline.so.8 so:libsqlite3.so.0 so:libssl.so.3 so:libz.so.1
-p:pythonispython3=3.10.11-r0 so:libpython3.10.so.1.0=1.0 so:libpython3.so=0 cmd:2to3-3.10=3.10.11-r0 cmd:2to3=3.10.11-r0 cmd:pydoc3.10=3.10.11-r0 cmd:pydoc3=3.10.11-r0 cmd:python3.10=3.10.11-r0 cmd:python3=3.10.11-r0 cmd:python=3.10.11-r0
 
 C:Q1uASf6PiNVyy/KE5zPK4GVX6dNhc=
 P:perl-list-someutils-doc
@@ -42932,6 +42792,22 @@ k:1
 D:openssh-keygen=9.1_p1-r3 openssh-client-common=9.1_p1-r3 !openssh-client-krb5 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libz.so.1
 p:openssh-client=9.1_p1-r3 cmd:ssh=9.1_p1-r3
 
+C:Q1v7n0n025dfZwZTON4VvUddvv2M4=
+P:dbus-x11
+V:1.14.8-r0
+A:armhf
+S:10816
+I:81920
+T:X11 add-ons for D-BUS
+U:https://www.freedesktop.org/Software/dbus
+L:AFL-2.1 OR GPL-2.0-or-later
+o:dbus
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686095257
+c:c56515705c4104cf1745618cc64b41445b278a56
+D:dbus=1.14.8-r0 so:libX11.so.6 so:libc.musl-armhf.so.1 so:libdbus-1.so.3
+p:cmd:dbus-launch=1.14.8-r0
+
 C:Q1D38FwD+OBYaQL3u/NNgWz9Im+n4=
 P:llvm15
 V:15.0.7-r0
@@ -42963,21 +42839,6 @@ t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:perl
 p:cmd:start_server=0.35-r2
-
-C:Q1c8NkHElqBrEH4k49vecYFEJibm0=
-P:mysql-bench
-V:10.6.13-r0
-A:armhf
-S:1487
-I:4096
-T:Dummy package for mysql-bench migration
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1683861708
-c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
-D:mariadb-client
 
 C:Q11jaqt2+3lOYqGiei0b6z6cgQZpM=
 P:lua5.1-struct
@@ -43396,22 +43257,6 @@ t:1659786478
 c:8d331702107e939005e72f1855416041d21826d1
 k:200
 
-C:Q1p4MJWdATJTKVq/vTec8S9caS+Nw=
-P:mariadb-test
-V:10.6.13-r0
-A:armhf
-S:42799296
-I:296341504
-T:The test suite distributed with MariaDB
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1683861708
-c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
-D:mariadb-common so:libaio.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libgcc_s.so.1 so:liblzma.so.5 so:libpam.so.0 so:libpcre2-8.so.0 so:libpcre2-posix.so.3 so:libssl.so.3 so:libstdc++.so.6 so:libz.so.1
-p:cmd:mariadb-client-test-embedded=10.6.13-r0 cmd:mariadb-client-test=10.6.13-r0 cmd:mariadb-test-embedded=10.6.13-r0 cmd:mariadb-test=10.6.13-r0 cmd:my_safe_process=10.6.13-r0 cmd:mysql_client_test=10.6.13-r0 cmd:mysql_client_test_embedded=10.6.13-r0 cmd:mysqltest=10.6.13-r0 cmd:mysqltest_embedded=10.6.13-r0
-
 C:Q1+CQWUTxPALcQXLwEqOk7k3Sy/Tw=
 P:u-boot-raspberrypi
 V:2022.10-r0
@@ -43785,6 +43630,21 @@ t:1667998723
 c:40ae2e500da1eedc4aa2de12ae5082c33eb4fdc5
 D:so:libc.musl-armhf.so.1 so:libfreeswitch.so.1 so:libsngtc_node.so
 
+C:Q1/7TnpdhwIAHUD4dESOtsU7HGluE=
+P:cups-doc
+V:2.4.2-r2
+A:armhf
+S:90025
+I:237568
+T:The CUPS Printing System (documentation)
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685617426
+c:b6dc9ce24c58c8e6c830925e85b575cd1e0ac660
+i:docs cups=2.4.2-r2
+
 C:Q1IgUyafI5DlbE0X6Vo0z8l0WC1Bw=
 P:source-highlight-doc
 V:3.1.9-r7
@@ -43799,22 +43659,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1666714224
 c:65f2810e909596e19ff13ddda1ec42523e1cac73
 i:docs source-highlight=3.1.9-r7
-
-C:Q1Um6DRxcc6uqjMAII0IAX74U4TCg=
-P:lua5.2-sql-postgres
-V:2.6.0-r2
-A:armhf
-S:7755
-I:114688
-T:Lua 5.2 SQL driver for postgres
-U:http://lunarmodules.github.io/luasql/
-L:MIT
-o:lua-sql
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1668176703
-c:d484333151e53f5aeca39546e7d70500fa4a08aa
-D:lua5.2 so:libc.musl-armhf.so.1 so:libpq.so.5
-i:lua-sql-postgres=2.6.0-r2 lua5.2
 
 C:Q1FqQ0eLh9k2a41zI0zk5XKwassGg=
 P:xfsprogs-libs
@@ -43863,22 +43707,6 @@ t:1649878552
 c:b9e3c35e9fe2b964bcc5e147ab9e11b2dd1886d6
 D:so:libc.musl-armhf.so.1 so:libe2p.so.2 so:libglib-2.0.so.0 so:libgpm.so.2 so:libintl.so.8 so:libslang.so.2 so:libssh2.so.1
 p:cmd:mc=4.8.28-r0 cmd:mcdiff=4.8.28-r0 cmd:mcedit=4.8.28-r0 cmd:mcview=4.8.28-r0
-
-C:Q1YvEIheYr78RNrsvwVE44YdjTxTM=
-P:libssl3
-V:3.0.8-r4
-A:armhf
-S:234201
-I:557056
-T:SSL shared libraries
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl
-m:Ariadne Conill <ariadne@dereferenced.org>
-t:1682007832
-c:d62c0613776b85229a8b2433673dae4ed231a18a
-D:so:libc.musl-armhf.so.1 so:libcrypto.so.3
-p:so:libssl.so.3=3
 
 C:Q1s/djxKvmOy2fKYWfD4dabdBml+E=
 P:samba-winbind-krb5-locator
@@ -44066,22 +43894,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-devel-globaldestruction=0.14-r2
 
-C:Q1JKc/dSQbLLvi8QYcycadju9JT2E=
-P:lua5.1-sql-postgres
-V:2.6.0-r2
-A:armhf
-S:7945
-I:114688
-T:Lua 5.1 SQL driver for postgres
-U:http://lunarmodules.github.io/luasql/
-L:MIT
-o:lua-sql
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1668176703
-c:d484333151e53f5aeca39546e7d70500fa4a08aa
-D:lua5.1 so:libc.musl-armhf.so.1 so:libpq.so.5
-i:lua-sql-postgres=2.6.0-r2 lua5.1
-
 C:Q11vLC5uy8u75qVsgfNzy2OjVCvD4=
 P:ldb-dev
 V:2.5.3-r0
@@ -44113,22 +43925,6 @@ t:1654344675
 c:9a2c82cbc945664414644dc051fd55b847d07123
 D:so:libc.musl-armhf.so.1 so:libefisec.so.1 so:libefivar.so.1
 p:cmd:efisecdb=38-r1 cmd:efivar=38-r1
-
-C:Q1t9a7TQ0R+QNTKe5w5Kn7gZU7lks=
-P:cups-libs
-V:2.4.2-r1
-A:armhf
-S:224337
-I:610304
-T:CUPS libraries
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667923137
-c:b5984eacd3d0519caed9c4df4eb805d33f3f1593
-D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-armhf.so.1 so:libgnutls.so.30 so:libz.so.1
-p:so:libcups.so.2=2 so:libcupsimage.so.2=2
 
 C:Q1DcGhRq1LCiN/W7/wZZw7MHADwa4=
 P:dav1d-dev
@@ -44579,21 +44375,6 @@ t:1663099216
 c:e7f8617050e6b005ab4ead655da6bdeb7c31ad9f
 i:docs pcsc-lite=1.9.9-r0
 
-C:Q1SOX6GLTMPcym4VqMMWw6RPjfgPQ=
-P:cups-openrc
-V:2.4.2-r1
-A:armhf
-S:2034
-I:16384
-T:The CUPS Printing System (OpenRC init scripts)
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667923137
-c:b5984eacd3d0519caed9c4df4eb805d33f3f1593
-i:openrc cups=2.4.2-r1
-
 C:Q1DHCcMbjLgpkSiwkQ2l1K8Z/1Rng=
 P:openldap-overlay-otp
 V:2.6.3-r6
@@ -44944,6 +44725,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1672591081
 c:af42d45cd558323043f855dd09fc1c7381a17803
 p:linux-firmware-any
+
+C:Q1PbcI3UTOfHz+GC0M0YWhYHwZYbs=
+P:python3
+V:3.10.12-r0
+A:armhf
+S:14728141
+I:51970048
+T:A high-level scripting language
+U:https://www.python.org/
+L:PSF-2.0
+o:python3
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686277783
+c:c9d0d11c5c668797831752f8c01eaf1f89d10990
+D:so:libbz2.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libexpat.so.1 so:libffi.so.8 so:libgdbm_compat.so.4 so:liblzma.so.5 so:libmpdec.so.3 so:libncursesw.so.6 so:libpanelw.so.6 so:libreadline.so.8 so:libsqlite3.so.0 so:libssl.so.3 so:libz.so.1
+p:pythonispython3=3.10.12-r0 so:libpython3.10.so.1.0=1.0 so:libpython3.so=0 cmd:2to3-3.10=3.10.12-r0 cmd:2to3=3.10.12-r0 cmd:pydoc3.10=3.10.12-r0 cmd:pydoc3=3.10.12-r0 cmd:python3.10=3.10.12-r0 cmd:python3=3.10.12-r0 cmd:python=3.10.12-r0
 
 C:Q17vNtT2q8iwIZ9xic+LfEyU42o78=
 P:boost1.80-thread
@@ -46387,6 +46184,22 @@ c:4b691a5e2edd752563a57961359f97ba5090aa9b
 D:tar
 p:cmd:alpine-make-rootfs=0.6.1-r0
 
+C:Q1UTPpKhd4DN64BqtdwMiMuPihXT4=
+P:mariadb-test
+V:10.6.14-r0
+A:armhf
+S:42800437
+I:296361984
+T:The test suite distributed with MariaDB
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686095916
+c:fb8a980c8f396c8b5e83da21e25930edb3aae7c9
+D:mariadb-common so:libaio.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libgcc_s.so.1 so:liblzma.so.5 so:libpam.so.0 so:libpcre2-8.so.0 so:libpcre2-posix.so.3 so:libssl.so.3 so:libstdc++.so.6 so:libz.so.1
+p:cmd:mariadb-client-test-embedded=10.6.14-r0 cmd:mariadb-client-test=10.6.14-r0 cmd:mariadb-test-embedded=10.6.14-r0 cmd:mariadb-test=10.6.14-r0 cmd:my_safe_process=10.6.14-r0 cmd:mysql_client_test=10.6.14-r0 cmd:mysql_client_test_embedded=10.6.14-r0 cmd:mysqltest=10.6.14-r0 cmd:mysqltest_embedded=10.6.14-r0
+
 C:Q1g1ygW/QLLGZ2DiLk49UghPcdPYk=
 P:perl-params-classify-doc
 V:0.015-r6
@@ -46417,22 +46230,6 @@ t:1653908067
 c:6cb1cea145714394a2ea7e30c4e60885c5f70dc8
 D:m4 so:libc.musl-armhf.so.1
 p:cmd:flex++=2.6.4-r3 cmd:flex=2.6.4-r3 cmd:lex=2.6.4-r3
-
-C:Q1B5MpdoHTEDY2gWH9yTN1Vt/hBgI=
-P:mariadb-dev
-V:10.6.13-r0
-A:armhf
-S:1403251
-I:7008256
-T:A fast SQL database server (development files)
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1683861708
-c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
-D:mariadb-connector-c-dev openssl-dev zlib-dev mariadb-embedded=10.6.13-r0 pkgconfig
-p:mysql-dev=10.6.13-r0 pc:mariadb=10.6.13
 
 C:Q1iAg1B4MvmItC6IWJhkKMahyFewY=
 P:unifont
@@ -46540,21 +46337,6 @@ t:1667472781
 c:5f006bcb6276c6e1619e10459b7588f378916123
 D:so:libc.musl-armhf.so.1
 p:so:libdrm.so.2=2.4.0 so:libdrm_amdgpu.so.1=1.0.0 so:libdrm_etnaviv.so.1=1.0.0 so:libdrm_exynos.so.1=1.0.0 so:libdrm_freedreno.so.1=1.0.0 so:libdrm_nouveau.so.2=2.0.0 so:libdrm_omap.so.1=1.0.0 so:libdrm_radeon.so.1=1.0.1 so:libdrm_tegra.so.0=0.0.0
-
-C:Q1kfxwJ7Zt4vboFIQ4tJY05ug8pwA=
-P:cups-dbg
-V:2.4.2-r1
-A:armhf
-S:2932542
-I:6807552
-T:The CUPS Printing System (debug symbols)
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667923137
-c:b5984eacd3d0519caed9c4df4eb805d33f3f1593
-D:cups-client poppler-utils openssl dbus
 
 C:Q18+A57Iq+h9WNJcH9MLml0tcXzbA=
 P:bubblewrap-doc
@@ -46769,6 +46551,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1659429320
 c:39cde24fb54a667a6730bdaec3233184227131f6
 i:docs tinc=1.0.36-r4
+
+C:Q1xe32pHg06X9uu95xrMP3aOpWlAY=
+P:mariadb-client
+V:10.6.14-r0
+A:armhf
+S:7015909
+I:28020736
+T:Client for the MariaDB database
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686095916
+c:fb8a980c8f396c8b5e83da21e25930edb3aae7c9
+D:mariadb-common=10.6.14-r0 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libgcc_s.so.1 so:libncursesw.so.6 so:libssl.so.3 so:libstdc++.so.6 so:libz.so.1
+p:cmd:mariadb-access=10.6.14-r0 cmd:mariadb-admin=10.6.14-r0 cmd:mariadb-check=10.6.14-r0 cmd:mariadb-dump=10.6.14-r0 cmd:mariadb-dumpslow=10.6.14-r0 cmd:mariadb-find-rows=10.6.14-r0 cmd:mariadb-fix-extensions=10.6.14-r0 cmd:mariadb-import=10.6.14-r0 cmd:mariadb-show=10.6.14-r0 cmd:mariadb-waitpid=10.6.14-r0 cmd:mariadb=10.6.14-r0 cmd:myisam_ftdump=10.6.14-r0 cmd:mysql=10.6.14-r0 cmd:mysql_find_rows=10.6.14-r0 cmd:mysql_fix_extensions=10.6.14-r0 cmd:mysql_waitpid=10.6.14-r0 cmd:mysqlaccess=10.6.14-r0 cmd:mysqladmin=10.6.14-r0 cmd:mysqlcheck=10.6.14-r0 cmd:mysqldump=10.6.14-r0 cmd:mysqldumpslow=10.6.14-r0 cmd:mysqlimport=10.6.14-r0 cmd:mysqlshow=10.6.14-r0
 
 C:Q1+uSzDNRtnWZjMXU2Dx3MUaVje5g=
 P:git-doc
@@ -47859,21 +47657,6 @@ t:1678035306
 c:d794bc89a8786a9d97a7ce341fd2158b77aaf398
 i:docs opusfile=0.12-r4
 
-C:Q1XPNRrg6iQjvaupUAW47Ks26o5sw=
-P:mariadb-common
-V:10.6.13-r0
-A:armhf
-S:623042
-I:2314240
-T:MariaDB common files for both server and client
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1683861708
-c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
-D:/bin/sh
-
 C:Q1XXb4KtAFtMOt8qEZTUdUFQxLD0g=
 P:chrony-doc
 V:4.3-r0
@@ -48056,6 +47839,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1680054912
 c:742ab8b6a3ae7ffb844978546d0d2890e4421448
 i:docs dnsmasq=2.87-r2
+
+C:Q1COrvtidXX5+R+GsFb57rHkwoTyI=
+P:libcrypto3
+V:3.0.9-r1
+A:armhf
+S:1419902
+I:3407872
+T:Crypto library from openssl
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl
+m:Ariadne Conill <ariadne@dereferenced.org>
+t:1685468917
+c:eb1a1f718c8b12adac569592961a345af7139a0d
+D:so:libc.musl-armhf.so.1
+p:so:libcrypto.so.3=3
 
 C:Q1acpKy/hrIjtWPe8YCDX5y7KHrag=
 P:perl-html-mason-doc
@@ -48270,6 +48069,21 @@ t:1659429320
 c:39cde24fb54a667a6730bdaec3233184227131f6
 i:docs perl-crypt-ssleay=0.72-r18
 
+C:Q1GvE7MxZprYm4Rf5LrNkqcMGel7U=
+P:python3-gdbm
+V:3.10.12-r0
+A:armhf
+S:9319
+I:90112
+T:Python backend for GNU gdbm
+U:https://www.python.org/
+L:PSF-2.0
+o:python3
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686277783
+c:c9d0d11c5c668797831752f8c01eaf1f89d10990
+D:so:libc.musl-armhf.so.1 so:libgdbm.so.6
+
 C:Q1XDvFVrdGpsBlM7AgACCtokUtAbI=
 P:grub-doc
 V:2.06-r8
@@ -48330,6 +48144,22 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
+
+C:Q19OCeOLRkNv8SQMprHETvBtTQSaE=
+P:openssl
+V:3.0.9-r1
+A:armhf
+S:321748
+I:765952
+T:Toolkit for Transport Layer Security (TLS)
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl
+m:Ariadne Conill <ariadne@dereferenced.org>
+t:1685468917
+c:eb1a1f718c8b12adac569592961a345af7139a0d
+D:libssl3=3.0.9-r1 libcrypto3=3.0.9-r1 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libssl.so.3
+p:openssl3=3.0.9-r1 cmd:openssl=3.0.9-r1
 
 C:Q1qAG+6OSlfCsk1HT+Ivkhh5gnPhk=
 P:hwdata-pci
@@ -49644,22 +49474,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1610928542
 c:211932f6e55643cd5b8be06197876727615eea78
 
-C:Q1v39arnXGM07HhWZK8lZ2YP5hHlY=
-P:lua5.3-sql-mysql
-V:2.6.0-r2
-A:armhf
-S:9153
-I:114688
-T:Lua 5.3 SQL driver for mysql
-U:http://lunarmodules.github.io/luasql/
-L:MIT
-o:lua-sql
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1668176703
-c:d484333151e53f5aeca39546e7d70500fa4a08aa
-D:lua5.3 so:libc.musl-armhf.so.1 so:libmariadb.so.3
-i:lua-sql-mysql=2.6.0-r2 lua5.3
-
 C:Q1IkmSSOrbCrqm+XPFUkhuZ6fr2aI=
 P:dkimproxy
 V:1.4.1-r7
@@ -50330,22 +50144,6 @@ c:c8107e390eae0c264a95d1b39e938ab6ea3a9a42
 D:logrotate
 i:squid=5.7-r0 lang-az
 
-C:Q1LqSbzncUm6+ERmhRwBQANcqpV50=
-P:openssl-dev
-V:3.0.8-r4
-A:armhf
-S:350597
-I:2281472
-T:Toolkit for Transport Layer Security (TLS) (development files)
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl
-m:Ariadne Conill <ariadne@dereferenced.org>
-t:1682007832
-c:d62c0613776b85229a8b2433673dae4ed231a18a
-D:libcrypto3=3.0.8-r4 libssl3=3.0.8-r4 pkgconfig
-p:openssl3-dev=3.0.8-r4 pc:libcrypto=3.0.8 pc:libssl=3.0.8 pc:openssl=3.0.8
-
 C:Q1sISG4tSgkDe8FlYvWAGSLC12DaQ=
 P:libsmartcols
 V:2.38.1-r1
@@ -50640,6 +50438,22 @@ D:/bin/sh so:libblkid.so.1 so:libc.musl-armhf.so.1 so:libfdisk.so.1 so:libmount.
 p:cmd:addpart=2.38.1-r1 cmd:blkdiscard=2.38.1-r1 cmd:blkzone=2.38.1-r1 cmd:blockdev=2.38.1-r1 cmd:cal=2.38.1-r1 cmd:chcpu=2.38.1-r1 cmd:chmem=2.38.1-r1 cmd:choom=2.38.1-r1 cmd:chrt=2.38.1-r1 cmd:col=2.38.1-r1 cmd:colcrt=2.38.1-r1 cmd:colrm=2.38.1-r1 cmd:column=2.38.1-r1 cmd:ctrlaltdel=2.38.1-r1 cmd:delpart=2.38.1-r1 cmd:dmesg=2.38.1-r1 cmd:eject=2.38.1-r1 cmd:fallocate=2.38.1-r1 cmd:fdisk=2.38.1-r1 cmd:fincore=2.38.1-r1 cmd:findfs=2.38.1-r1 cmd:fsck.cramfs=2.38.1-r1 cmd:fsck.minix=2.38.1-r1 cmd:fsck=2.38.1-r1 cmd:fsfreeze=2.38.1-r1 cmd:getopt=2.38.1-r1 cmd:hardlink=2.38.1-r1 cmd:hwclock=2.38.1-r1 cmd:ionice=2.38.1-r1 cmd:ipcmk=2.38.1-r1 cmd:ipcrm=2.38.1-r1 cmd:ipcs=2.38.1-r1 cmd:irqtop=2.38.1-r1 cmd:isosize=2.38.1-r1 cmd:ldattach=2.38.1-r1 cmd:linux32=2.38.1-r1 cmd:linux64=2.38.1-r1 cmd:look=2.38.1-r1 cmd:lscpu=2.38.1-r1 cmd:lsfd=2.38.1-r1 cmd:lsipc=2.38.1-r1 cmd:lsirq=2.38.1-r1 cmd:lslocks=2.38.1-r1 cmd:lsmem=2.38.1-r1 cmd:lsns=2.38.1-r1 cmd:mesg=2.38.1-r1 cmd:mkfs.bfs=2.38.1-r1 cmd:mkfs.cramfs=2.38.1-r1 cmd:mkfs.minix=2.38.1-r1 cmd:mkfs=2.38.1-r1 cmd:mkswap=2.38.1-r1 cmd:more=2.38.1-r1 cmd:mountpoint=2.38.1-r1 cmd:namei=2.38.1-r1 cmd:nsenter=2.38.1-r1 cmd:pivot_root=2.38.1-r1 cmd:prlimit=2.38.1-r1 cmd:readprofile=2.38.1-r1 cmd:rename=2.38.1-r1 cmd:renice=2.38.1-r1 cmd:resizepart=2.38.1-r1 cmd:rev=2.38.1-r1 cmd:rfkill=2.38.1-r1 cmd:rtcwake=2.38.1-r1 cmd:script=2.38.1-r1 cmd:scriptlive=2.38.1-r1 cmd:scriptreplay=2.38.1-r1 cmd:setarch=2.38.1-r1 cmd:setsid=2.38.1-r1 cmd:setterm=2.38.1-r1 cmd:swaplabel=2.38.1-r1 cmd:swapoff=2.38.1-r1 cmd:swapon=2.38.1-r1 cmd:switch_root=2.38.1-r1 cmd:taskset=2.38.1-r1 cmd:uclampset=2.38.1-r1 cmd:ul=2.38.1-r1 cmd:uname26=2.38.1-r1 cmd:unshare=2.38.1-r1 cmd:utmpdump=2.38.1-r1 cmd:uuidparse=2.38.1-r1 cmd:wall=2.38.1-r1 cmd:wdctl=2.38.1-r1 cmd:whereis=2.38.1-r1 cmd:zramctl=2.38.1-r1
 i:util-linux=2.38.1-r1
 
+C:Q185EKq87qEx4MfHT7WKYjrgI1k9M=
+P:openssl-dev
+V:3.0.9-r1
+A:armhf
+S:350711
+I:2281472
+T:Toolkit for Transport Layer Security (TLS) (development files)
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl
+m:Ariadne Conill <ariadne@dereferenced.org>
+t:1685468917
+c:eb1a1f718c8b12adac569592961a345af7139a0d
+D:libcrypto3=3.0.9-r1 libssl3=3.0.9-r1 pkgconfig
+p:openssl3-dev=3.0.9-r1 pc:libcrypto=3.0.9 pc:libssl=3.0.9 pc:openssl=3.0.9
+
 C:Q19FXmiEJqQ/Hu9Ae/eoDUNUF8QMk=
 P:ltrace
 V:0.7.3-r5
@@ -50765,6 +50579,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1672882917
 c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
 i:docs util-linux=2.38.1-r1
+
+C:Q1bNohgvnMa8N46suMwxAWIGxHPWc=
+P:cups-libs
+V:2.4.2-r2
+A:armhf
+S:224334
+I:610304
+T:CUPS libraries
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685617426
+c:b6dc9ce24c58c8e6c830925e85b575cd1e0ac660
+D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-armhf.so.1 so:libgnutls.so.30 so:libz.so.1
+p:so:libcups.so.2=2 so:libcupsimage.so.2=2
 
 C:Q1fZCi/nNHXUl2FvWZumY/Lnj1joU=
 P:perl-yaml-libyaml-doc
@@ -51109,6 +50939,21 @@ m:Ted Trask <ttrask01@yahoo.com>
 t:1621087673
 c:ec4e35bcdcf38829d2a36ff4d7cd4351ebb67d1c
 D:acf-core freeswitch lua-luaxml
+
+C:Q1Gb303C2wl1J7MTmZ9qWHRElPSow=
+P:mariadb-plugin-rocksdb
+V:10.6.14-r0
+A:armhf
+S:1552946
+I:3899392
+T:MariaDB plugin for RocksDB (MyRocks)
+U:https://mariadb.com/kb/en/library/myrocks/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686095916
+c:fb8a980c8f396c8b5e83da21e25930edb3aae7c9
+D:mariadb=10.6.14-r0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1
 
 C:Q12rvtDBkjLadv08arLkFnLxkFvJ0=
 P:clang14-dev
@@ -51463,6 +51308,22 @@ c:13c7f6500189062c3e0b56487b19df2a7fd4812d
 D:boost1.80-atomic boost1.80-chrono boost1.80-container boost1.80-context boost1.80-contract boost1.80-coroutine boost1.80-date_time boost1.80-fiber boost1.80-filesystem boost1.80-graph boost1.80-iostreams boost1.80-locale boost1.80-log_setup boost1.80-log boost1.80-math boost1.80-prg_exec_monitor boost1.80-program_options boost1.80-python3 boost1.80-random boost1.80-regex boost1.80-serialization boost1.80-stacktrace_basic boost1.80-stacktrace_noop boost1.80-system boost1.80-thread boost1.80-timer boost1.80-type_erasure boost1.80-unit_test_framework boost1.80-wave boost1.80-wserialization boost1.80-json boost1.80-nowide
 p:boost-libs=1.80.0-r3
 
+C:Q1Avkkz/FzaxfEIdOMuK4RsmaQpns=
+P:postfix-sqlite
+V:3.7.6-r0
+A:armhf
+S:5556
+I:102400
+T:sqlite map support for postfix
+U:https://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686104668
+c:98d6bfa6c4ce40b68b7ff4e59e694c6ff7b05893
+D:so:libc.musl-armhf.so.1 so:libsqlite3.so.0
+p:so:postfix-sqlite.so=0
+
 C:Q1czwMy/eL96Vf3TJBuchgt3fnBDc=
 P:libatk-bridge-2.0
 V:2.46.0-r0
@@ -51799,6 +51660,22 @@ m:Allan Garret <allan.garret@gmail.com>
 t:1667859568
 c:7340d7b3375c24573c0eda8dfa4b8def076bdb4a
 i:openrc apparmor=3.1.2-r0
+
+C:Q1f9Fr4jQx+6b20wpndK+Ujp7fvRs=
+P:mariadb-mytop
+V:10.6.14-r0
+A:armhf
+S:22874
+I:86016
+T:Command line tool used for monitoring MariaDB performance
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686095916
+c:fb8a980c8f396c8b5e83da21e25930edb3aae7c9
+D:perl perl-dbd-mysql perl-dbi perl-getopt-long perl-socket perl-term-readkey
+p:cmd:mytop=10.6.14-r0
 
 C:Q1crBXAETvESYfZoY1RBrYwL44yM4=
 P:liblognorm
@@ -52678,20 +52555,6 @@ c:3f38b90cf57f3f4059b7c26d043f441c2e69f4a7
 D:so:libc.musl-armhf.so.1 so:libpng16.so.16 so:libz.so.1
 p:cmd:png-fix-itxt=1.6.38-r0 cmd:pngfix=1.6.38-r0
 
-C:Q1bdVRXEcwYu6GWdRaCm0HWBa5Iqg=
-P:lua-sql-odbc
-V:2.6.0-r2
-A:armhf
-S:1476
-I:4096
-T:Lua SQL drivers for odbc
-U:http://lunarmodules.github.io/luasql/
-L:MIT
-o:lua-sql
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1668176703
-c:d484333151e53f5aeca39546e7d70500fa4a08aa
-
 C:Q1fl8vqA8Wg0d3v3NNLhriCVagVfk=
 P:asterisk-alsa
 V:18.15.1-r0
@@ -52904,6 +52767,22 @@ t:1670045894
 c:8a914f04d1d17efa31741148b6216b3c6030011d
 D:ifupdown-any /bin/sh so:libc.musl-armhf.so.1 so:libcap.so.2
 p:so:libeinfo.so.1=1 so:librc.so.1=1 cmd:mkmntdirs=0.45.2-r7 cmd:openrc-run=0.45.2-r7 cmd:openrc=0.45.2-r7 cmd:rc-service=0.45.2-r7 cmd:rc-sstat=0.45.2-r7 cmd:rc-status=0.45.2-r7 cmd:rc-update=0.45.2-r7 cmd:rc=0.45.2-r7 cmd:service=0.45.2-r7 cmd:start-stop-daemon=0.45.2-r7 cmd:supervise-daemon=0.45.2-r7
+
+C:Q15W4WSeefLqGtU13JCCbgonsUmGw=
+P:mariadb
+V:10.6.14-r0
+A:armhf
+S:38382155
+I:127438848
+T:A fast SQL database server
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686095916
+c:fb8a980c8f396c8b5e83da21e25930edb3aae7c9
+D:mariadb-common /bin/sh so:libaio.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libcurl.so.4 so:libgcc_s.so.1 so:liblzma.so.5 so:libncursesw.so.6 so:libpam.so.0 so:libpcre2-8.so.0 so:libssl.so.3 so:libstdc++.so.6 so:libxml2.so.2 so:libz.so.1
+p:cmd:aria_chk=10.6.14-r0 cmd:aria_dump_log=10.6.14-r0 cmd:aria_ftdump=10.6.14-r0 cmd:aria_pack=10.6.14-r0 cmd:aria_read_log=10.6.14-r0 cmd:aria_s3_copy=10.6.14-r0 cmd:innochecksum=10.6.14-r0 cmd:mariadb-binlog=10.6.14-r0 cmd:mariadb-conv=10.6.14-r0 cmd:mariadb-embedded=10.6.14-r0 cmd:mariadb-install-db=10.6.14-r0 cmd:mariadb-ldb=10.6.14-r0 cmd:mariadb-plugin=10.6.14-r0 cmd:mariadb-secure-installation=10.6.14-r0 cmd:mariadb-slap=10.6.14-r0 cmd:mariadb-tzinfo-to-sql=10.6.14-r0 cmd:mariadbd-safe=10.6.14-r0 cmd:mariadbd=10.6.14-r0 cmd:msql2mysql=10.6.14-r0 cmd:my_print_defaults=10.6.14-r0 cmd:myisamchk=10.6.14-r0 cmd:myisamlog=10.6.14-r0 cmd:myisampack=10.6.14-r0 cmd:myrocks_hotbackup=10.6.14-r0 cmd:mysql_embedded=10.6.14-r0 cmd:mysql_install_db=10.6.14-r0 cmd:mysql_ldb=10.6.14-r0 cmd:mysql_plugin=10.6.14-r0 cmd:mysql_secure_installation=10.6.14-r0 cmd:mysql_tzinfo_to_sql=10.6.14-r0 cmd:mysqlbinlog=10.6.14-r0 cmd:mysqld=10.6.14-r0 cmd:mysqld_safe=10.6.14-r0 cmd:mysqlslap=10.6.14-r0 cmd:replace=10.6.14-r0 cmd:resolve_stack_dump=10.6.14-r0 cmd:resolveip=10.6.14-r0 cmd:sst_dump=10.6.14-r0 cmd:test-connect-t=10.6.14-r0 cmd:wsrep_sst_backup=10.6.14-r0 cmd:wsrep_sst_mariabackup=10.6.14-r0 cmd:wsrep_sst_mysqldump=10.6.14-r0 cmd:wsrep_sst_rsync=10.6.14-r0 cmd:wsrep_sst_rsync_wan=10.6.14-r0
 
 C:Q11jmAkrwoimscazBmYlw1oDrMw8w=
 P:perl-authen-sasl
@@ -53520,21 +53399,6 @@ k:100
 D:lua5.1 lua5.1-libs=5.1.5-r11 pkgconfig
 p:lua-dev pc:lua5.1=5.1.5 pc:lua=5.1.5
 
-C:Q1UXAIStuOiyPD+7iTpkhtEBfM3u8=
-P:fping-doc
-V:5.1-r1
-A:armhf
-S:7557
-I:28672
-T:A utility to ping multiple hosts at once (documentation)
-U:https://fping.org/
-L:MIT
-o:fping
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1646868262
-c:d9636a1539774bcac45dc0341b8970e38b667ad6
-i:docs fping=5.1-r1
-
 C:Q1ZK3XlprVCmLkaidVYymtDQ+OW1o=
 P:yajl
 V:2.1.0-r5
@@ -53920,22 +53784,6 @@ t:1647260222
 c:c07e3505fd70f1d5fa7d86f1320d30529cc5faf1
 D:lua5.1
 i:lua-optarg=0.3-r0 lua5.1
-
-C:Q1fjbfiWtp5X249sPrqx7o432nDFM=
-P:fping
-V:5.1-r1
-A:armhf
-S:23102
-I:81920
-T:A utility to ping multiple hosts at once
-U:https://fping.org/
-L:MIT
-o:fping
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1646868262
-c:d9636a1539774bcac45dc0341b8970e38b667ad6
-D:so:libc.musl-armhf.so.1
-p:cmd:fping=5.1-r1
 
 C:Q17+hedBaJ/WNZNH5gxLH179M8ulc=
 P:postgresql15-plpython3
@@ -55123,6 +54971,22 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.2 so:libc.musl-armhf.so.1
 i:lua-b64=0.1-r4 lua5.2
 
+C:Q1KIqRL01A7xNXxMJnDgcw3/h2Fbg=
+P:postfix-mysql
+V:3.7.6-r0
+A:armhf
+S:8003
+I:102400
+T:mysql map support for postfix
+U:https://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686104668
+c:98d6bfa6c4ce40b68b7ff4e59e694c6ff7b05893
+D:so:libc.musl-armhf.so.1 so:libmariadb.so.3
+p:so:postfix-mysql.so=0
+
 C:Q1OFu72HdmFQPF1efgrVF8cYJhlc4=
 P:libapparmor
 V:3.1.2-r0
@@ -55449,6 +55313,22 @@ t:1665372241
 c:49ee8ca363cff833eeb93a4d5b2140a0e02df157
 D:so:libLLVM-14.so so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libclang.so.13=14.0.6
+
+C:Q1Hm5OUJuFMKH9O6329Uy26NIm3F4=
+P:mariadb-backup
+V:10.6.14-r0
+A:armhf
+S:6871419
+I:20004864
+T:The mariabackup tool for physical online backups
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686095916
+c:fb8a980c8f396c8b5e83da21e25930edb3aae7c9
+D:mariadb-common so:libaio.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libgcc_s.so.1 so:liblzma.so.5 so:libpcre2-8.so.0 so:libssl.so.3 so:libstdc++.so.6 so:libz.so.1
+p:cmd:mariabackup=10.6.14-r0 cmd:mariadb-backup=10.6.14-r0 cmd:mbstream=10.6.14-r0
 
 C:Q178zmFaQqEur/K+mGsGwKryoLmfk=
 P:liblockfile-doc
@@ -55890,6 +55770,22 @@ t:1659792088
 c:0714a84b7f79009ae8b96aef50216ed72f54b885
 i:docs dejagnu=1.6.2-r1
 
+C:Q1CFgddRHD80ZCh1oSWJgfpSlEyek=
+P:dbus-libs
+V:1.14.8-r0
+A:armhf
+S:115626
+I:278528
+T:D-BUS access libraries
+U:https://www.freedesktop.org/Software/dbus
+L:AFL-2.1 OR GPL-2.0-or-later
+o:dbus
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686095257
+c:c56515705c4104cf1745618cc64b41445b278a56
+D:so:libc.musl-armhf.so.1
+p:so:libdbus-1.so.3=3.32.3
+
 C:Q1qGv8LQiB8WfQ/6BamJpiN5f2CQc=
 P:lame-doc
 V:3.100-r2
@@ -55935,6 +55831,20 @@ t:1666843580
 c:25a7ab00249d112833f916b3b1376811c1e50cbf
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libprotobuf.so.32 so:libstdc++.so.6
 p:so:libprotoc.so.32=32.0.9
+
+C:Q1TkW2zPXos3I9rklTnT1VDCU47A8=
+P:openssl-libs-static
+V:3.0.9-r1
+A:armhf
+S:9409313
+I:23212032
+T:Toolkit for Transport Layer Security (TLS) (static library)
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl
+m:Ariadne Conill <ariadne@dereferenced.org>
+t:1685468917
+c:eb1a1f718c8b12adac569592961a345af7139a0d
 
 C:Q1oJReU2TfYaTt+QxCWpqoUhxKaOU=
 P:kamailio-doc
@@ -55998,21 +55908,6 @@ t:1664241803
 c:b18912c2a9e61939c5412dba4522cb7342ab8b6a
 D:so:libX11.so.6 so:libXext.so.6 so:libc.musl-armhf.so.1
 p:so:libXtst.so.6=6.1.0
-
-C:Q1FzbdTxuRvZvYyP9p5MHwxI1wYMg=
-P:mariadb-embedded-dev
-V:10.6.13-r0
-A:armhf
-S:1553
-I:12288
-T:MariaDB as an embeddable library - development files
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1683861708
-c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
-D:mariadb-common mariadb-embedded=10.6.13-r0
 
 C:Q1mFVOgFobojQUaSsa8UvdK3fX4DQ=
 P:ipset
@@ -56246,6 +56141,21 @@ t:1639595861
 c:76a633826dcdb5ad9efd870de55f13914779c4be
 D:python3
 p:py-funcsigs=1.0.2-r6 py3.10:funcsigs=1.0.2-r6
+
+C:Q1f3UCQu8LTVopPdVGvjXEhcX2+l0=
+P:mysql-bench
+V:10.6.14-r0
+A:armhf
+S:1488
+I:4096
+T:Dummy package for mysql-bench migration
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686095916
+c:fb8a980c8f396c8b5e83da21e25930edb3aae7c9
+D:mariadb-client
 
 C:Q1oJvpac9B/9gCJZOyM9K0Zcxr7Ac=
 P:nginx-mod-http-perl
@@ -57541,6 +57451,21 @@ t:1678882451
 c:533db63eeb333d975c0c1edef33d0e42008ccb57
 D:libc++=15.0.7-r1
 
+C:Q1u8t4XYyHP5EpD73vElUDgcizNQQ=
+P:mariadb-common
+V:10.6.14-r0
+A:armhf
+S:623023
+I:2314240
+T:MariaDB common files for both server and client
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686095916
+c:fb8a980c8f396c8b5e83da21e25930edb3aae7c9
+D:/bin/sh
+
 C:Q1zAbXrp7P3DJa0dvclp8Fncen0Pk=
 P:newt-dev
 V:0.52.23-r0
@@ -58804,6 +58729,22 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl perl-test-requires
 
+C:Q1chgnrn6u9F5sxGegZDAx/RQDGO4=
+P:dbus
+V:1.14.8-r0
+A:armhf
+S:132878
+I:872448
+T:Freedesktop.org message bus system
+U:https://www.freedesktop.org/Software/dbus
+L:AFL-2.1 OR GPL-2.0-or-later
+o:dbus
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686095257
+c:c56515705c4104cf1745618cc64b41445b278a56
+D:/bin/sh so:libc.musl-armhf.so.1 so:libdbus-1.so.3 so:libexpat.so.1
+p:cmd:dbus-cleanup-sockets=1.14.8-r0 cmd:dbus-daemon=1.14.8-r0 cmd:dbus-monitor=1.14.8-r0 cmd:dbus-run-session=1.14.8-r0 cmd:dbus-send=1.14.8-r0 cmd:dbus-test-tool=1.14.8-r0 cmd:dbus-update-activation-environment=1.14.8-r0 cmd:dbus-uuidgen=1.14.8-r0
+
 C:Q1cwVwkWkZXky1pNKvXlrWyNGfRJY=
 P:perl-test-metrics-any-doc
 V:0.01-r1
@@ -58971,22 +58912,6 @@ t:1655960483
 c:a301d75912f033382463618caf998f1606ec3d57
 D:perl
 p:cmd:podselect=1.65-r0
-
-C:Q15GtiGlskT4Dd3YBPV3lEbj2jtqs=
-P:lua5.4-sql-sqlite3
-V:2.6.0-r2
-A:armhf
-S:8574
-I:114688
-T:Lua 5.4 SQL driver for sqlite3
-U:http://lunarmodules.github.io/luasql/
-L:MIT
-o:lua-sql
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1668176703
-c:d484333151e53f5aeca39546e7d70500fa4a08aa
-D:lua5.4 so:libc.musl-armhf.so.1 so:libsqlite3.so.0
-i:lua-sql-sqlite3=2.6.0-r2 lua5.4
 
 C:Q1lfPgIglj53G10HbruNMetBtO0OY=
 P:esh
@@ -59236,6 +59161,21 @@ c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
 D:so:libblkid.so.1 so:libc.musl-armhf.so.1 so:libsmartcols.so.1
 p:cmd:wipefs=2.38.1-r1
 i:util-linux=2.38.1-r1
+
+C:Q1xKZ3kbNhAp5k5qwFIeo0IPbzza8=
+P:mariadb-static
+V:10.6.14-r0
+A:armhf
+S:10768575
+I:40980480
+T:Static libraries for MariaDB
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686095916
+c:fb8a980c8f396c8b5e83da21e25930edb3aae7c9
+D:mariadb-common
 
 C:Q1di3L904ycmwqLXMECGVXIhYLXQM=
 P:perl-list-utilsby
@@ -61355,22 +61295,6 @@ t:1665481057
 c:fc4ca4d8057726ccee63b0a3dcd5873f4fd6af83
 i:docs libdnet=1.16.1-r0
 
-C:Q120SQZ+G/HK9b/fjbTOmaZZuR6aI=
-P:dbus
-V:1.14.4-r0
-A:armhf
-S:132740
-I:872448
-T:Freedesktop.org message bus system
-U:https://www.freedesktop.org/Software/dbus
-L:AFL-2.1 OR GPL-2.0-or-later
-o:dbus
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1665231702
-c:16436564a2c16883ee30eae843097f77c699c222
-D:/bin/sh so:libc.musl-armhf.so.1 so:libdbus-1.so.3 so:libexpat.so.1
-p:cmd:dbus-cleanup-sockets=1.14.4-r0 cmd:dbus-daemon=1.14.4-r0 cmd:dbus-monitor=1.14.4-r0 cmd:dbus-run-session=1.14.4-r0 cmd:dbus-send=1.14.4-r0 cmd:dbus-test-tool=1.14.4-r0 cmd:dbus-update-activation-environment=1.14.4-r0 cmd:dbus-uuidgen=1.14.4-r0
-
 C:Q1bQ1GEyAhLb6jLyMyQ4iH2q3Ihsg=
 P:blkid
 V:2.38.1-r1
@@ -61508,22 +61432,6 @@ t:1671030397
 c:4a7646626b60b24267a4dd509994d1e76dcc04cb
 D:so:libc.musl-armhf.so.1
 p:so:libattr.so.1=1.1.2501
-
-C:Q1gP1OiCSRpazzFUPQmPxkx2bjbts=
-P:lua5.3-sql-odbc
-V:2.6.0-r2
-A:armhf
-S:9993
-I:114688
-T:Lua 5.3 SQL driver for odbc
-U:http://lunarmodules.github.io/luasql/
-L:MIT
-o:lua-sql
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1668176703
-c:d484333151e53f5aeca39546e7d70500fa4a08aa
-D:lua5.3 so:libc.musl-armhf.so.1 so:libodbc.so.2
-i:lua-sql-odbc=2.6.0-r2 lua5.3
 
 C:Q1k88N7By3sHjGkgRTvAv8UpGqZK8=
 P:perl-encode
@@ -62615,22 +62523,6 @@ c:4ee551e37a724c54f7036dc4a1e5c819ce890ecc
 D:/bin/sh so:libc.musl-armhf.so.1
 p:cmd:tinyproxy=1.11.1-r2
 
-C:Q1bW7YJqZ+LdMSd2Ve3SYSd1Uhueg=
-P:lua5.4-sql-mysql
-V:2.6.0-r2
-A:armhf
-S:9152
-I:114688
-T:Lua 5.4 SQL driver for mysql
-U:http://lunarmodules.github.io/luasql/
-L:MIT
-o:lua-sql
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1668176703
-c:d484333151e53f5aeca39546e7d70500fa4a08aa
-D:lua5.4 so:libc.musl-armhf.so.1 so:libmariadb.so.3
-i:lua-sql-mysql=2.6.0-r2 lua5.4
-
 C:Q1bwfc/P6vubiiBmmbYLEyqLlfWG4=
 P:acct-doc
 V:6.6.4-r1
@@ -62771,6 +62663,22 @@ t:1681229229
 c:7aa70d5c0d20ae98b4ee8d41de95390cb0ce27bc
 D:lynx
 p:cmd:apachectl=2.4.57-r0
+
+C:Q1nWymdtHVxuihSscaaQ5I9CisQ4k=
+P:lua5.4-sql-postgres
+V:2.6.0-r3
+A:armhf
+S:7775
+I:114688
+T:Lua 5.4 SQL driver for postgres
+U:http://lunarmodules.github.io/luasql/
+L:MIT
+o:lua-sql
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685931441
+c:40030ca7d4e49d417533bb3419dac6f78b54044b
+D:lua5.4 so:libc.musl-armhf.so.1 so:libpq.so.5
+i:lua-sql-postgres=2.6.0-r3 lua5.4
 
 C:Q1DQ5af7yLo/ziTlJ3z4K+ZlJOHIA=
 P:pinentry
@@ -63609,6 +63517,22 @@ c:63371ce3229c08c499d5de92595ad910654dac9d
 D:so:libc.musl-armhf.so.1
 p:so:libzstd.so.1=1.5.5
 
+C:Q1uPo62t0h1jEnc+QsUdYmHiwY92c=
+P:postfix-redis
+V:3.7.6-r0
+A:armhf
+S:4305
+I:102400
+T:redis map support for postfix
+U:https://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686104668
+c:98d6bfa6c4ce40b68b7ff4e59e694c6ff7b05893
+D:so:libhiredis.so.1.0.0
+p:so:postfix-redis.so=0
+
 C:Q1KIiL+vfardDe4qxZYOnfvPD0s8Q=
 P:perl-extutils-cchecker-doc
 V:0.11-r0
@@ -63730,6 +63654,21 @@ m:Timo Teras <timo.teras@iki.fi>
 t:1678953665
 c:da941c1dde4f9f4be677f4bb28ec2058b8b04238
 D:so:libbluetooth.so.3 so:libc.musl-armhf.so.1
+
+C:Q1u6fqsDeIXTseN/vT82a0Z+XlTcw=
+P:dbus-openrc
+V:1.14.8-r0
+A:armhf
+S:2266
+I:24576
+T:Freedesktop.org message bus system (OpenRC init scripts)
+U:https://www.freedesktop.org/Software/dbus
+L:AFL-2.1 OR GPL-2.0-or-later
+o:dbus
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686095257
+c:c56515705c4104cf1745618cc64b41445b278a56
+i:openrc dbus=1.14.8-r0
 
 C:Q165hR4pypwNB+2+bJsUpHvaN5vXw=
 P:perl-test-failwarnings
@@ -63946,6 +63885,21 @@ c:0714a84b7f79009ae8b96aef50216ed72f54b885
 D:ca-certificates git lua5.1 lua5.1-cjson lua5.1-mosquitto
 p:cmd:git-mirror-syncd=0.3.1-r1
 
+C:Q1XCTWY5T5M0GlRVfl3Zx1R5fJZPE=
+P:mariadb-openrc
+V:10.6.14-r0
+A:armhf
+S:2053
+I:16384
+T:A fast SQL database server (OpenRC init scripts)
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686095916
+c:fb8a980c8f396c8b5e83da21e25930edb3aae7c9
+i:openrc mariadb=10.6.14-r0
+
 C:Q1T5UCkNzd/M4gPqyXPgWu9XurhMA=
 P:meson
 V:0.64.0-r0
@@ -63961,6 +63915,22 @@ t:1667830111
 c:e44cdbcec15ece4f48e91f47de1e9d41fadb7174
 D:samurai python3
 p:cmd:abuild-meson=0.64.0-r0 cmd:meson=0.64.0-r0 py3.10:mesonbuild=0.64.0-r0
+
+C:Q1IK9ZgX/NKIgN4r4/zUEpzxKPj00=
+P:lua5.1-sql-sqlite3
+V:2.6.0-r3
+A:armhf
+S:8699
+I:114688
+T:Lua 5.1 SQL driver for sqlite3
+U:http://lunarmodules.github.io/luasql/
+L:MIT
+o:lua-sql
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685931441
+c:40030ca7d4e49d417533bb3419dac6f78b54044b
+D:lua5.1 so:libc.musl-armhf.so.1 so:libsqlite3.so.0
+i:lua-sql-sqlite3=2.6.0-r3 lua5.1
 
 C:Q1kKkWyCSAbReS/p6P9rD+kkaYa4A=
 P:libusb-dev
@@ -64067,6 +64037,22 @@ t:1659793771
 c:3ddc00292735b35127b9ee5a98112c9278eb5c81
 D:libsodium=1.0.18-r2 pkgconfig
 p:pc:libsodium=1.0.18
+
+C:Q1Zxgn8mElXRPrtj/WmhgaO1LbXAk=
+P:curl-dev
+V:8.1.2-r0
+A:armhf
+S:60574
+I:315392
+T:URL retrival utility and library (development files)
+U:https://curl.se/
+L:curl
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685465053
+c:9e0e2d1b4bedd8bf32af1393fe459f6c8bee4ebd
+D:openssl-dev>3 nghttp2-dev zlib-dev brotli-dev libcurl=8.1.2-r0 pkgconfig
+p:pc:libcurl=8.1.2 cmd:curl-config=8.1.2-r0
 
 C:Q1y6hZhE+JJBsZRzIWb9nm7LaGi50=
 P:icu-doc
@@ -64930,6 +64916,20 @@ t:1678953665
 c:da941c1dde4f9f4be677f4bb28ec2058b8b04238
 D:so:libc.musl-armhf.so.1 so:libpq.so.5
 
+C:Q1Dhb5suT/ZcrzULKl1LQ0xHIIAJU=
+P:lua-sql-odbc
+V:2.6.0-r3
+A:armhf
+S:1468
+I:4096
+T:Lua SQL drivers for odbc
+U:http://lunarmodules.github.io/luasql/
+L:MIT
+o:lua-sql
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685931441
+c:40030ca7d4e49d417533bb3419dac6f78b54044b
+
 C:Q1AJtj4v2d05S+LVtYCAdLOoUz+Hg=
 P:pcre2-doc
 V:10.42-r0
@@ -64989,21 +64989,6 @@ t:1664908323
 c:511484e0cb37eec41f2078695e729a66c204b458
 D:libkcapi=1.4.0-r0 pkgconfig
 p:pc:libkcapi=1.4.0
-
-C:Q1tnf3t9orjr7mp0iFWA2MGvMTiGM=
-P:openssl-doc
-V:3.0.8-r4
-A:armhf
-S:4723778
-I:12111872
-T:Toolkit for Transport Layer Security (TLS) (documentation)
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl
-m:Ariadne Conill <ariadne@dereferenced.org>
-t:1682007832
-c:d62c0613776b85229a8b2433673dae4ed231a18a
-i:docs openssl=3.0.8-r4
 
 C:Q15u9gnK8ZMrYvm/R3Wgmq6LXBrNU=
 P:rrdcollect-doc
@@ -65114,6 +65099,21 @@ t:1670273518
 c:a431243d90eebad8810179803347c9af38745151
 D:xxd so:libc.musl-armhf.so.1 so:libncursesw.so.6
 p:cmd:ex=9.0.0999-r0 cmd:rview=9.0.0999-r0 cmd:rvim=9.0.0999-r0 cmd:view=9.0.0999-r0 cmd:vim=9.0.0999-r0
+
+C:Q1pRt5AzhsoWMmg/LqbTxighmSIKQ=
+P:mysql-client
+V:10.6.14-r0
+A:armhf
+S:1487
+I:4096
+T:Dummy package for mysql-client migration
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686095916
+c:fb8a980c8f396c8b5e83da21e25930edb3aae7c9
+D:mariadb-client
 
 C:Q1V/PTcJZ08XyoHivW6HCnqNnb/D0=
 P:libssh2-static
@@ -65624,21 +65624,6 @@ c:0714a84b7f79009ae8b96aef50216ed72f54b885
 D:so:libc.musl-armhf.so.1
 p:cmd:su-exec=0.2-r2
 
-C:Q1qBQ4VejbBaudP/R14BDc0/iYgz0=
-P:curl-fish-completion
-V:8.1.1-r1
-A:armhf
-S:6762
-I:49152
-T:Fish completions for curl
-U:https://curl.se/
-L:curl
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1685002935
-c:d1bf7847e46b66685c1ef6baa0c4abe3b37a7d42
-i:curl=8.1.1-r1 fish
-
 C:Q1aSfD8VThp003kfloNAjl4nmEh8E=
 P:hostapd-openrc
 V:2.10-r5
@@ -66119,6 +66104,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1680054912
 c:742ab8b6a3ae7ffb844978546d0d2890e4421448
 
+C:Q1i9LPBF47ujwmsuTFGnh9RYHv8N8=
+P:mysql
+V:10.6.14-r0
+A:armhf
+S:1478
+I:4096
+T:Dummy package for mysql migration
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686095916
+c:fb8a980c8f396c8b5e83da21e25930edb3aae7c9
+D:mariadb
+
 C:Q1cJ7cjD4QlbXXHMnTooFvsK8lM4k=
 P:freeswitch-timezones
 V:1.10.8-r0
@@ -66576,22 +66576,6 @@ m:Laurent Bercot <ska-devel@skarnet.org>
 t:1666042195
 c:609b0c2b543a2ff1047099462641ba57a31852c8
 i:docs skalibs=2.12.0.1-r0
-
-C:Q1VafvTvRd3PllJmJwo8M8+0GjtJ0=
-P:ipptool
-V:2.4.2-r1
-A:armhf
-S:4016658
-I:4784128
-T:Perform internet printing protocol requests
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667923137
-c:b5984eacd3d0519caed9c4df4eb805d33f3f1593
-D:so:libc.musl-armhf.so.1 so:libcups.so.2
-p:cmd:ipptool=2.4.2-r1
 
 C:Q1dvBvYE/33VMpApxZODdCej7GAK0=
 P:libgpg-error-dev
@@ -67135,6 +67119,22 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-io-captureoutput=1.1105-r1
 
+C:Q1mzeS4AGn9RywDBd2ueZfCsnsaL0=
+P:lua5.3-sql-postgres
+V:2.6.0-r3
+A:armhf
+S:7788
+I:114688
+T:Lua 5.3 SQL driver for postgres
+U:http://lunarmodules.github.io/luasql/
+L:MIT
+o:lua-sql
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685931441
+c:40030ca7d4e49d417533bb3419dac6f78b54044b
+D:lua5.3 so:libc.musl-armhf.so.1 so:libpq.so.5
+i:lua-sql-postgres=2.6.0-r3 lua5.3
+
 C:Q1e3NAWK+4z6NX4k+1iSx27Ko9U7k=
 P:perl-net-snmp
 V:6.0.1-r6
@@ -67331,6 +67331,21 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 i:docs byobu=5.133-r2
+
+C:Q1xNL0h3dSTr+0DzuEpl0m771+Irs=
+P:dbus-doc
+V:1.14.8-r0
+A:armhf
+S:245581
+I:761856
+T:Freedesktop.org message bus system (documentation)
+U:https://www.freedesktop.org/Software/dbus
+L:AFL-2.1 OR GPL-2.0-or-later
+o:dbus
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686095257
+c:c56515705c4104cf1745618cc64b41445b278a56
+i:docs dbus=1.14.8-r0
 
 C:Q1Znnab73IpOPiaunpgncyTGjSczs=
 P:lua5.1-dbi-postgresql
@@ -68010,6 +68025,21 @@ t:1660340325
 c:d892a057c104412af454cdead8c08a853b72cf72
 i:docs eggdrop=1.9.3-r0
 
+C:Q1PJ/1j85kALxfFghLhwzV/bGD69o=
+P:cups-openrc
+V:2.4.2-r2
+A:armhf
+S:2023
+I:16384
+T:The CUPS Printing System (OpenRC init scripts)
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685617426
+c:b6dc9ce24c58c8e6c830925e85b575cd1e0ac660
+i:openrc cups=2.4.2-r2
+
 C:Q1XaQjeSnbFgDIVPxHx5EV3kxlOZQ=
 P:uwsgi-transformation_tofile
 V:2.0.21-r0
@@ -68055,22 +68085,6 @@ t:1622914361
 c:988c4057d60ade6a214b14741f3e0950b3105c3a
 D:libxcb-dev util-macros pkgconfig xcb-util=0.4.0-r3
 p:pc:xcb-atom=0.4.0 pc:xcb-aux=0.4.0 pc:xcb-event=0.4.0 pc:xcb-util=0.4.0
-
-C:Q1hL0zIY+y+k44jFlVFi3os/rG9xg=
-P:mariadb-client
-V:10.6.13-r0
-A:armhf
-S:7015886
-I:28020736
-T:Client for the MariaDB database
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1683861708
-c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
-D:mariadb-common=10.6.13-r0 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libgcc_s.so.1 so:libncursesw.so.6 so:libssl.so.3 so:libstdc++.so.6 so:libz.so.1
-p:cmd:mariadb-access=10.6.13-r0 cmd:mariadb-admin=10.6.13-r0 cmd:mariadb-check=10.6.13-r0 cmd:mariadb-dump=10.6.13-r0 cmd:mariadb-dumpslow=10.6.13-r0 cmd:mariadb-find-rows=10.6.13-r0 cmd:mariadb-fix-extensions=10.6.13-r0 cmd:mariadb-import=10.6.13-r0 cmd:mariadb-show=10.6.13-r0 cmd:mariadb-waitpid=10.6.13-r0 cmd:mariadb=10.6.13-r0 cmd:myisam_ftdump=10.6.13-r0 cmd:mysql=10.6.13-r0 cmd:mysql_find_rows=10.6.13-r0 cmd:mysql_fix_extensions=10.6.13-r0 cmd:mysql_waitpid=10.6.13-r0 cmd:mysqlaccess=10.6.13-r0 cmd:mysqladmin=10.6.13-r0 cmd:mysqlcheck=10.6.13-r0 cmd:mysqldump=10.6.13-r0 cmd:mysqldumpslow=10.6.13-r0 cmd:mysqlimport=10.6.13-r0 cmd:mysqlshow=10.6.13-r0
 
 C:Q1VKwBbKw3AoOMfOUNMJuBEhRtRhQ=
 P:libevent
@@ -68442,22 +68456,6 @@ c:1dbf7a793afae640ea643a055b6dd4f430ac116b
 D:busybox so:libc.musl-armhf.so.1
 p:cmd:bbsuid=1.35.0-r29
 
-C:Q1XyPp/4hov3wiDd8DUy6P06P2d2c=
-P:libcurl
-V:8.1.1-r1
-A:armhf
-S:264950
-I:548864
-T:The multiprotocol file transfer library
-U:https://curl.se/
-L:curl
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1685002935
-c:d1bf7847e46b66685c1ef6baa0c4abe3b37a7d42
-D:ca-certificates so:libbrotlidec.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libnghttp2.so.14 so:libssl.so.3 so:libz.so.1
-p:so:libcurl.so.4=4.8.0
-
 C:Q1Mo2S784LKH9oVWA9oO27wot174Q=
 P:linux-rpi
 V:5.15.105-r0
@@ -68684,22 +68682,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-lwp-useragent-determined=1.07-r2
-
-C:Q1hvlFGFDb4X1f+MT9c08IYm39hpo=
-P:dbus-dev
-V:1.14.4-r0
-A:armhf
-S:1709679
-I:2236416
-T:Freedesktop.org message bus system (development files)
-U:https://www.freedesktop.org/Software/dbus
-L:AFL-2.1 OR GPL-2.0-or-later
-o:dbus
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1665231702
-c:16436564a2c16883ee30eae843097f77c699c222
-D:util-linux-dev dbus-libs=1.14.4-r0 pkgconfig
-p:pc:dbus-1=1.14.4
 
 C:Q1Z9JRSXeGCdM/DYT7j0EK/1v24co=
 P:perl-data-guid
@@ -69177,21 +69159,6 @@ t:1672591081
 c:af42d45cd558323043f855dd09fc1c7381a17803
 p:linux-firmware-any
 
-C:Q1jl2SN+kG2NQQR/0H+EXtnRWkW20=
-P:dbus-openrc
-V:1.14.4-r0
-A:armhf
-S:2263
-I:24576
-T:Freedesktop.org message bus system (OpenRC init scripts)
-U:https://www.freedesktop.org/Software/dbus
-L:AFL-2.1 OR GPL-2.0-or-later
-o:dbus
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1665231702
-c:16436564a2c16883ee30eae843097f77c699c222
-i:openrc dbus=1.14.4-r0
-
 C:Q135dJBWb34zokn5jL57Zd99mx6h8=
 P:open-lldp-doc
 V:0.9.46-r6
@@ -69660,6 +69627,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 i:aspell=0.60.8-r2 lang
+
+C:Q1HfupHfJT2Echkc3QLQAbEsxZDtU=
+P:curl-zsh-completion
+V:8.1.2-r0
+A:armhf
+S:7276
+I:36864
+T:Zsh completions for curl
+U:https://curl.se/
+L:curl
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685465053
+c:9e0e2d1b4bedd8bf32af1393fe459f6c8bee4ebd
+i:curl=8.1.2-r0 zsh
 
 C:Q1I4SnMq83YuU5BsAvTxSlv7xmF0w=
 P:perl-dbi
@@ -70396,22 +70378,6 @@ c:0714a84b7f79009ae8b96aef50216ed72f54b885
 D:so:libc.musl-armhf.so.1 so:libspf2.so.2
 p:cmd:policyd-spf-fs=23-r4
 
-C:Q1lTXzKz0uhMwdmAnOTaqOk/h1QIE=
-P:cups-client
-V:2.4.2-r1
-A:armhf
-S:352774
-I:1871872
-T:CUPS command-line client programs
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667923137
-c:b5984eacd3d0519caed9c4df4eb805d33f3f1593
-D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-armhf.so.1 so:libcups.so.2 so:libgcc_s.so.1 so:libstdc++.so.6
-p:cmd:cancel=2.4.2-r1 cmd:cupsaccept=2.4.2-r1 cmd:cupsctl=2.4.2-r1 cmd:cupsdisable=2.4.2-r1 cmd:cupsenable=2.4.2-r1 cmd:cupstestppd=2.4.2-r1 cmd:ippeveprinter=2.4.2-r1 cmd:ippfind=2.4.2-r1 cmd:lp=2.4.2-r1 cmd:lpadmin=2.4.2-r1 cmd:lpc=2.4.2-r1 cmd:lpinfo=2.4.2-r1 cmd:lpmove=2.4.2-r1 cmd:lpoptions=2.4.2-r1 cmd:lpq=2.4.2-r1 cmd:lpr=2.4.2-r1 cmd:lprm=2.4.2-r1 cmd:lpstat=2.4.2-r1 cmd:ppdc=2.4.2-r1 cmd:ppdhtml=2.4.2-r1 cmd:ppdi=2.4.2-r1 cmd:ppdmerge=2.4.2-r1 cmd:ppdpo=2.4.2-r1
-
 C:Q19uvRQFB5T1hDtiwfXcJ9h3mjUWs=
 P:mandoc-dev
 V:1.14.6-r6
@@ -70964,20 +70930,6 @@ k:30
 D:openrc>=0.24.1-r6 mdev-conf
 p:dev-openrc
 
-C:Q1uTuhYARTZ3l1XzwrvABxs3vePOk=
-P:lua-sql-sqlite3
-V:2.6.0-r2
-A:armhf
-S:1476
-I:4096
-T:Lua SQL drivers for sqlite3
-U:http://lunarmodules.github.io/luasql/
-L:MIT
-o:lua-sql
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1668176703
-c:d484333151e53f5aeca39546e7d70500fa4a08aa
-
 C:Q1Ok+x3450rNDCFk4FaR2kpgWoGfw=
 P:boost1.80-nowide
 V:1.80.0-r3
@@ -71130,6 +71082,21 @@ m:Cameron Banta <cbanta@gmail.com>
 t:1670415694
 c:cba4a112ee7ae57c3cded33e742f63930b546859
 D:rsyslog=8.2212.0-r0 so:libc.musl-armhf.so.1
+
+C:Q1X7QY28xvu+SaX4QwfdowKtykSQs=
+P:mariadb-bench
+V:10.6.14-r0
+A:armhf
+S:489049
+I:2891776
+T:MariaDB benchmark scripts and data
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686095916
+c:fb8a980c8f396c8b5e83da21e25930edb3aae7c9
+D:mariadb-common
 
 C:Q1UITZhw3/U+w9d9f0p/Q3A0DlirI=
 P:goaccess-doc
@@ -72043,6 +72010,20 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1668740514
 c:a6c2dd51608d0fe98518b7ee42bc02da31cdab8a
 i:openrc lsyncd=2.3.1-r0
+
+C:Q1EsnmLR9+HbRyy3Rce/ww/OL4RSI=
+P:openssl-dbg
+V:3.0.9-r1
+A:armhf
+S:5712902
+I:13422592
+T:Toolkit for Transport Layer Security (TLS) (debug symbols)
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl
+m:Ariadne Conill <ariadne@dereferenced.org>
+t:1685468917
+c:eb1a1f718c8b12adac569592961a345af7139a0d
 
 C:Q1duDJzZJgbkqkke9v3fM9ZLProPY=
 P:irssi-doc
@@ -73060,22 +73041,6 @@ c:7216ef5a04528a867f606e2b84f1d28ebee0754e
 D:so:libc.musl-armhf.so.1
 p:so:libcbor.so.0.9=0.9.0
 
-C:Q1Fbm063ZoLabPrCDPoSckAdI/XrI=
-P:dbus-x11
-V:1.14.4-r0
-A:armhf
-S:10825
-I:81920
-T:X11 add-ons for D-BUS
-U:https://www.freedesktop.org/Software/dbus
-L:AFL-2.1 OR GPL-2.0-or-later
-o:dbus
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1665231702
-c:16436564a2c16883ee30eae843097f77c699c222
-D:dbus=1.14.4-r0 so:libX11.so.6 so:libc.musl-armhf.so.1 so:libdbus-1.so.3
-p:cmd:dbus-launch=1.14.4-r0
-
 C:Q1ZrJ7i9yO1H3FUtgWWrY08QORShk=
 P:lua5.1-stringy
 V:0.5.1-r2
@@ -74014,21 +73979,6 @@ t:1665692669
 c:a08166e2019068e3bb87e7c0edb4a2bc42e9b1ac
 i:docs perl-json=4.10-r0
 
-C:Q1xO/EBirqqytb/WzwFiplAqxMs2Y=
-P:mariadb-static
-V:10.6.13-r0
-A:armhf
-S:10768292
-I:40980480
-T:Static libraries for MariaDB
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1683861708
-c:6b57c115fe5043d5bd5f56bb7493bee494e5f40a
-D:mariadb-common
-
 C:Q11JYUGY15iovImhDE3IfXEPt7jvM=
 P:libxvmc
 V:1.0.13-r0
@@ -74338,6 +74288,22 @@ t:1658971088
 c:00b10bdf34c6383c272665d2ac4804fafb0bf2e3
 D:flite=2.2-r1 pkgconfig
 p:pc:flite=2.2
+
+C:Q1zKmYG9K8ueQucRClpzj9cxw4E/s=
+P:cups-client
+V:2.4.2-r2
+A:armhf
+S:352748
+I:1871872
+T:CUPS command-line client programs
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685617426
+c:b6dc9ce24c58c8e6c830925e85b575cd1e0ac660
+D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-armhf.so.1 so:libcups.so.2 so:libgcc_s.so.1 so:libstdc++.so.6
+p:cmd:cancel=2.4.2-r2 cmd:cupsaccept=2.4.2-r2 cmd:cupsctl=2.4.2-r2 cmd:cupsdisable=2.4.2-r2 cmd:cupsenable=2.4.2-r2 cmd:cupstestppd=2.4.2-r2 cmd:ippeveprinter=2.4.2-r2 cmd:ippfind=2.4.2-r2 cmd:lp=2.4.2-r2 cmd:lpadmin=2.4.2-r2 cmd:lpc=2.4.2-r2 cmd:lpinfo=2.4.2-r2 cmd:lpmove=2.4.2-r2 cmd:lpoptions=2.4.2-r2 cmd:lpq=2.4.2-r2 cmd:lpr=2.4.2-r2 cmd:lprm=2.4.2-r2 cmd:lpstat=2.4.2-r2 cmd:ppdc=2.4.2-r2 cmd:ppdhtml=2.4.2-r2 cmd:ppdi=2.4.2-r2 cmd:ppdmerge=2.4.2-r2 cmd:ppdpo=2.4.2-r2
 
 C:Q1Tc03YGLjHIildF2hy7zupVqmvNs=
 P:ruby-debug-doc
@@ -75580,6 +75546,22 @@ t:1670273518
 c:a431243d90eebad8810179803347c9af38745151
 D:vim
 
+C:Q18zmLriwplf3oOSlRr3Y5V6scb2M=
+P:dbus-dev
+V:1.14.8-r0
+A:armhf
+S:1711145
+I:2236416
+T:Freedesktop.org message bus system (development files)
+U:https://www.freedesktop.org/Software/dbus
+L:AFL-2.1 OR GPL-2.0-or-later
+o:dbus
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686095257
+c:c56515705c4104cf1745618cc64b41445b278a56
+D:util-linux-dev dbus-libs=1.14.8-r0 pkgconfig
+p:pc:dbus-1=1.14.8
+
 C:Q1VXYPDHTRRkNfxfy+Wwr78Ck1BRE=
 P:openssh-server-pam
 V:9.1_p1-r3
@@ -75883,6 +75865,22 @@ m:Leo <thinkabit.ukim@gmail.com>
 t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 
+C:Q1mappWOWJxA+xJz+aloAdhjjknz8=
+P:lua5.4-sql-mysql
+V:2.6.0-r3
+A:armhf
+S:9281
+I:114688
+T:Lua 5.4 SQL driver for mysql
+U:http://lunarmodules.github.io/luasql/
+L:MIT
+o:lua-sql
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1685931441
+c:40030ca7d4e49d417533bb3419dac6f78b54044b
+D:lua5.4 so:libc.musl-armhf.so.1 so:libmariadb.so.3
+i:lua-sql-mysql=2.6.0-r3 lua5.4
+
 C:Q1rYP7qlWPkjoDd94kl8eYXXLyrTE=
 P:perl-mro-compat
 V:0.15-r0
@@ -75897,20 +75895,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1641498092
 c:ec01e4424ca5ab696e64e83bc88933865783a378
 D:perl
-
-C:Q1f2Zt22RJXnr7/zD9ffjgQ7hsrs8=
-P:openssl-libs-static
-V:3.0.8-r4
-A:armhf
-S:9417623
-I:23228416
-T:Toolkit for Transport Layer Security (TLS) (static library)
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl
-m:Ariadne Conill <ariadne@dereferenced.org>
-t:1682007832
-c:d62c0613776b85229a8b2433673dae4ed231a18a
 
 C:Q1z6OycpCNhzLzPuvuZk+jD4lM2cg=
 P:fribidi-dev
@@ -76065,6 +76049,22 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1646468023
 c:568a9e2becdad30985934b7db7debd4d7339548e
 i:docs perl-test2-suite=0.000145-r0
+
+C:Q1Kkz6zqzx5No0u+JRsD7gtCmktKM=
+P:postfix-pcre
+V:3.7.6-r0
+A:armhf
+S:7330
+I:102400
+T:pcre map support for postfix
+U:https://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1686104668
+c:98d6bfa6c4ce40b68b7ff4e59e694c6ff7b05893
+D:so:libc.musl-armhf.so.1 so:libpcre2-8.so.0
+p:so:postfix-pcre.so=0
 
 C:Q13AIQRGwJ69gdz8+7ZY7alaVwHX8=
 P:arpon-doc
