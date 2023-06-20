@@ -57731,14 +57731,37 @@
       "origin": "spice",
       "versions": {
         "0.15.1-r1": 1681228881,
-        "0.15.2-r0": 1684018034
-      }
+        "0.15.2-r0": 1684018034,
+        "0.15.2-r1": 1687273865
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1",
+        "so:libcrypto.so.3",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libgstapp-1.0.so.0",
+        "so:libgstreamer-1.0.so.0",
+        "so:libjpeg.so.8",
+        "so:liblz4.so.1",
+        "so:libopus.so.0",
+        "so:liborc-0.4.so.0",
+        "so:libpixman-1.so.0",
+        "so:libsasl2.so.3",
+        "so:libssl.so.3",
+        "so:libstdc++.so.6",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "spice-server=0.15.2-r1",
+        "so:libspice-server.so.1=1.14.3"
+      ]
     },
     "spice-dev": {
       "origin": "spice",
       "versions": {
         "0.15.1-r1": 1681228881,
-        "0.15.2-r0": 1684018034
+        "0.15.2-r0": 1684018034,
+        "0.15.2-r1": 1687273865
       },
       "dependencies": [
         "pc:glib-2.0>=2.38",
@@ -57756,7 +57779,7 @@
         "pc:spice-protocol>=0.14.3",
         "pc:zlib",
         "pkgconfig",
-        "spice-server=0.15.2-r0"
+        "spice=0.15.2-r1"
       ],
       "provides": [
         "pc:spice-server=0.15.2"
@@ -66000,6 +66023,10 @@
       "sudo-virt": {
         "package": "doas-sudo-shim",
         "version": 0
+      },
+      "spice-server": {
+        "package": "spice",
+        "version": "0.15.2-r1"
       }
     },
     "so": {
@@ -70736,7 +70763,7 @@
         "version": "1.5.2"
       },
       "libspice-server.so.1": {
-        "package": "spice-server",
+        "package": "spice",
         "version": "1.14.3"
       },
       "libSPIRV-Tools-diff.so": {
