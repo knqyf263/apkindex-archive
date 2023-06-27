@@ -106,22 +106,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1665912996
 c:f71267930a9d6b88eda37c178a68d34ac6450098
 
-C:Q1ObA1dtJqN0FBgnyFgVGiUzyFlhg=
-P:ipptool
-V:2.4.2-r2
-A:armhf
-S:4016658
-I:4784128
-T:Perform internet printing protocol requests
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1685617426
-c:b6dc9ce24c58c8e6c830925e85b575cd1e0ac660
-D:so:libc.musl-armhf.so.1 so:libcups.so.2
-p:cmd:ipptool=2.4.2-r2
-
 C:Q1nPdpIusrvMxMdjFwKK3bKiWt1X4=
 P:perl-date-format-doc
 V:2.33-r0
@@ -2085,6 +2069,22 @@ t:1673787192
 c:329e3fac5271a173df1545f43f86f20f5f183e44
 D:ppp-daemon so:libc.musl-armhf.so.1
 
+C:Q1PQ50Ar2sLAbpRE3Y0ilss8ukkL0=
+P:lua5.2-mosquitto
+V:0.4.1-r2
+A:armhf
+S:8641
+I:110592
+T:Bindings to libmosquitto for Lua 5.2
+U:https://github.com/flukso/lua-mosquitto
+L:MIT
+o:lua-mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1687404275
+c:f65e84d469ff8668c076cd6908ef8ee1b1ef872a
+D:lua5.2 so:libc.musl-armhf.so.1 so:libmosquitto.so.1
+i:lua-mosquitto=0.4.1-r2 lua5.2
+
 C:Q134ceu5p2yMnPaWZCrc/6ujrmEyU=
 P:lua5.3-sql-odbc
 V:2.6.0-r3
@@ -3405,22 +3405,6 @@ t:1665751132
 c:3ab6eeb2c72485ac8cc61d083bd0aa03dae49006
 D:lua5.2 lua5.2-lub so:libc.musl-armhf.so.1
 i:lua-yaml=1.1.2-r5 lua5.2
-
-C:Q13USGbxErgivZS8qULF9tNGu0dTE=
-P:cups-dev
-V:2.4.2-r2
-A:armhf
-S:44188
-I:262144
-T:The CUPS Printing System (development files)
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1685617426
-c:b6dc9ce24c58c8e6c830925e85b575cd1e0ac660
-D:libgcrypt-dev gnutls-dev zlib-dev cups-libs=2.4.2-r2 pc:avahi-client pc:gnutls pkgconfig
-p:pc:cups=2.4.2 cmd:cups-config=2.4.2-r2
 
 C:Q1spKQnCNqYt6jGY3locR8mfVjNow=
 P:libgfortran
@@ -5459,6 +5443,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1661743169
 c:0b5d40bec9dc78aa642abe0cda32214080561eeb
 i:docs memcached=1.6.17-r0
+
+C:Q1s6ZjYbqPSUQTTSYaHT95KSE7GQQ=
+P:lua5.4-mqtt-publish
+V:0.5-r0
+A:armhf
+S:2399
+I:28672
+T:Lua module for simple MQTT connect, publish and disconnect for Lua 5.4
+U:https://github.com/ncopa/lua-mqtt-publish
+L:MIT
+o:lua-mqtt-publish
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1687404279
+c:5e92ef2d951e16c0726d40f3c4f073e5894d6208
+D:lua5.4-mosquitto
+i:lua5.4 lua-mqtt-publish=0.5-r0
 
 C:Q1JAcr4taImnDWggz2Fye46h0u4iw=
 P:libgccjit-dev
@@ -7598,20 +7598,6 @@ t:1649878514
 c:9abd2a3af4f352c804f06f9584a57794c5519c52
 i:docs librsync=2.3.2-r2
 
-C:Q1KEqcrdfkH9elOEC3icRRDQ7LAKk=
-P:lua-mqtt-publish
-V:0.4-r0
-A:armhf
-S:1447
-I:16384
-T:Lua module for simple MQTT connect, publish and disconnect
-U:https://github.com/ncopa/lua-mqtt-publish
-L:MIT
-o:lua-mqtt-publish
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1666359747
-c:67ab8204e8ceaa4243a19549dc03bcdcd5668680
-
 C:Q1eDh5W8FcTqchYvxA5ihKBBZERvU=
 P:zeromq-dev
 V:4.3.4-r1
@@ -9575,21 +9561,6 @@ t:1672591081
 c:af42d45cd558323043f855dd09fc1c7381a17803
 p:linux-firmware-any
 
-C:Q1+j9CqQfHKixCFJFQ1qtNk1BxkyM=
-P:bind
-V:9.18.13-r0
-A:armhf
-S:219438
-I:749568
-T:The ISC DNS server
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1680778545
-c:8f562ebba80b05efdc67401fe4bc359be298aa11
-D:dns-root-hints bind-tools /bin/sh bind-dnssec-root=9.18.13-r0 so:libbind9-9.18.13.so so:libc.musl-armhf.so.1 so:libcap.so.2 so:libcrypto.so.3 so:libdns-9.18.13.so so:libfstrm.so.0 so:libisc-9.18.13.so so:libisccc-9.18.13.so so:libisccfg-9.18.13.so so:libnghttp2.so.14 so:libns-9.18.13.so so:libprotobuf-c.so.1 so:libuv.so.1 so:libxml2.so.2 so:libz.so.1
-p:cmd:named-checkconf=9.18.13-r0 cmd:named=9.18.13-r0 cmd:rndc=9.18.13-r0
-
 C:Q1Hu67p8joEGk165gPRj5XlLo8o+Y=
 P:openjade
 V:1.3.2-r7
@@ -10564,6 +10535,21 @@ c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:perl perl-cache-cache perl-log-any perl-html-parser perl-class-container perl-params-validate perl-exception-class perl-cgi
 p:cmd:convert0.6.README=1.59-r2 cmd:convert0.6.pl=1.59-r2 cmd:convert0.8.README=1.59-r2 cmd:convert0.8.pl=1.59-r2 cmd:mason.pl=1.59-r2
 
+C:Q175C9lOtJKwjRbXYkE+6wbVf6PIg=
+P:bind-libs
+V:9.18.16-r0
+A:armhf
+S:1286616
+I:5763072
+T:The ISC DNS server (libraries)
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1687383835
+c:8706d13524f90cd3dcb7ba7ad3dc7e7d5e9024db
+D:so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libfstrm.so.0 so:libgssapi_krb5.so.2 so:libkrb5.so.3 so:libnghttp2.so.14 so:libprotobuf-c.so.1 so:libssl.so.3 so:libuv.so.1 so:libxml2.so.2 so:libz.so.1
+p:so:libbind9-9.18.16.so=0 so:libdns-9.18.16.so=0 so:libirs-9.18.16.so=0 so:libisc-9.18.16.so=0 so:libisccc-9.18.16.so=0 so:libisccfg-9.18.16.so=0 so:libns-9.18.16.so=0
+
 C:Q1oVgSQUFNKD20TSuAu4/oPXbvUkI=
 P:pcre2-tools
 V:10.42-r0
@@ -11415,22 +11401,6 @@ t:1667668946
 c:ce33b0aff0f3c82549fb19456467e56202a780e6
 i:docs kbd=2.5.1-r3
 
-C:Q10shpZamg93hGifEITvcpKnJ7bmg=
-P:lua5.4-mqtt-publish
-V:0.4-r0
-A:armhf
-S:2391
-I:28672
-T:Lua module for simple MQTT connect, publish and disconnect for Lua 5.4
-U:https://github.com/ncopa/lua-mqtt-publish
-L:MIT
-o:lua-mqtt-publish
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1666359747
-c:67ab8204e8ceaa4243a19549dc03bcdcd5668680
-D:lua5.4-mosquitto
-i:lua5.4 lua-mqtt-publish=0.4-r0
-
 C:Q1xo093PcTleAwaM2G3oAkIMmnyp8=
 P:ruby-net-pop-doc
 V:0.1.1-r0
@@ -11556,6 +11526,20 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1665451564
 c:38225eaef0a1070e3665c23e47b72c77058f3cc2
 i:docs perl-net-dns=1.35-r0
+
+C:Q11Jug2QmamIJfQAWSiYc7Emkhjgs=
+P:bind-plugins
+V:9.18.16-r0
+A:armhf
+S:13982
+I:163840
+T:The ISC DNS server plugins
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1687383835
+c:8706d13524f90cd3dcb7ba7ad3dc7e7d5e9024db
+D:bind so:libc.musl-armhf.so.1
 
 C:Q1paFkbeMPl5SXPIrGO6ZzrTyiTOk=
 P:perl-net-smtp-ssl
@@ -15769,6 +15753,22 @@ c:e7f8617050e6b005ab4ead655da6bdeb7c31ad9f
 D:so:libc.musl-armhf.so.1
 p:so:libpcsclite.so.1=1.0.0
 
+C:Q1z8uwriT5XJB41XHcMfYUTu/1Hy4=
+P:lua5.3-mqtt-publish
+V:0.5-r0
+A:armhf
+S:2399
+I:28672
+T:Lua module for simple MQTT connect, publish and disconnect for Lua 5.3
+U:https://github.com/ncopa/lua-mqtt-publish
+L:MIT
+o:lua-mqtt-publish
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1687404279
+c:5e92ef2d951e16c0726d40f3c4f073e5894d6208
+D:lua5.3-mosquitto
+i:lua5.3 lua-mqtt-publish=0.5-r0
+
 C:Q1krucaF5pHSW9wyGJJ2a924Fv7Xc=
 P:lua5.1-sql-mysql
 V:2.6.0-r3
@@ -16604,21 +16604,6 @@ c:6682661e761162ba480d790588ef42f5d27e4b5a
 D:pciutils-libs=3.9.0-r0 pkgconfig
 p:pc:libpci=3.9.0
 
-C:Q1dnPaihtBsUlS11+pNtFoAZ2JLF0=
-P:bind-dnssec-tools
-V:9.18.13-r0
-A:armhf
-S:138801
-I:774144
-T:Utilities for DNSSEC keys and DNS zone files management
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1680778545
-c:8f562ebba80b05efdc67401fe4bc359be298aa11
-D:dns-root-hints bind-tools so:libc.musl-armhf.so.1 so:libdns-9.18.13.so so:libisc-9.18.13.so so:libisccfg-9.18.13.so
-p:cmd:dnssec-cds=9.18.13-r0 cmd:dnssec-dsfromkey=9.18.13-r0 cmd:dnssec-importkey=9.18.13-r0 cmd:dnssec-keyfromlabel=9.18.13-r0 cmd:dnssec-keygen=9.18.13-r0 cmd:dnssec-revoke=9.18.13-r0 cmd:dnssec-settime=9.18.13-r0 cmd:dnssec-signzone=9.18.13-r0 cmd:dnssec-verify=9.18.13-r0 cmd:nsec3hash=9.18.13-r0
-
 C:Q1iA2hjfUalaw/ieXxx6mcwNhHgxg=
 P:freeswitch-sounds-ru-RU-elena-32000
 V:1.0.12-r2
@@ -16860,22 +16845,6 @@ L:MPL-2.0
 o:dhcp
 t:1667166435
 c:3ce9ec2c4d426262d5e70e56ef965e19a444769c
-
-C:Q1mIDGyLOBYwKThg86Tw7hHaEIl5k=
-P:cups
-V:2.4.2-r2
-A:armhf
-S:1192225
-I:6983680
-T:The CUPS Printing System
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1685617426
-c:b6dc9ce24c58c8e6c830925e85b575cd1e0ac660
-D:cups-client poppler-utils openssl dbus /bin/sh cups-client=2.4.2-r2 so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-armhf.so.1 so:libcups.so.2 so:libdbus-1.so.3 so:libgcc_s.so.1 so:libpaper.so.2 so:libstdc++.so.6 so:libusb-1.0.so.0
-p:cmd:cupsd=2.4.2-r2 cmd:cupsfilter=2.4.2-r2
 
 C:Q1naQk4vcRRNe5CbYxu0i/y3XcJHQ=
 P:lua5.3-filesize
@@ -17554,20 +17523,6 @@ c:98d63044b3ac15071eac41669ebedffb788f2af7
 D:ilbc=0.0.1-r1 pkgconfig
 p:pc:ilbc=0.0.1
 
-C:Q1TP8dfy6XQ3peDGtmQY6YFnD1FVM=
-P:lua-mosquitto
-V:0.4.1-r1
-A:armhf
-S:1467
-I:4096
-T:Bindings to libmosquitto for Lua
-U:https://github.com/flukso/lua-mosquitto
-L:MIT
-o:lua-mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649062565
-c:1579acf67a30ecd20f63e588baab94a931b28efd
-
 C:Q1LUTvocWF1UhxVuaR3G3zjGYMYfo=
 P:ferm
 V:2.7-r0
@@ -17599,6 +17554,22 @@ t:1668607008
 c:3e16db39083a627392784154ee98222a404ca38d
 D:lvm2-libs=2.03.17-r1 so:libc.musl-armhf.so.1 so:libdevmapper.so.1.02
 p:cmd:dmsetup=2.03.17-r1 cmd:dmstats=2.03.17-r1
+
+C:Q1z8ejZXLPYKgaeuxeMWurLSTCkQQ=
+P:lua5.1-mqtt-publish
+V:0.5-r0
+A:armhf
+S:2397
+I:28672
+T:Lua module for simple MQTT connect, publish and disconnect for Lua 5.1
+U:https://github.com/ncopa/lua-mqtt-publish
+L:MIT
+o:lua-mqtt-publish
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1687404279
+c:5e92ef2d951e16c0726d40f3c4f073e5894d6208
+D:lua5.1-mosquitto
+i:lua5.1 lua-mqtt-publish=0.5-r0
 
 C:Q1Y4hiamQIx7xXeMihcvwmUKWtMug=
 P:libobjc
@@ -20149,21 +20120,6 @@ c:9466b6a53411ddfd4a9d8a785e29feb1bce1f824
 D:so:libbz2.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libevent-2.1.so.7 so:libssl.so.3 so:libz.so.1 so:libzstd.so.1
 p:cmd:links=2.28-r0
 
-C:Q1S//uhbkbt5abAwnlMb0kbUCa0rI=
-P:cups-dbg
-V:2.4.2-r2
-A:armhf
-S:2932566
-I:6807552
-T:The CUPS Printing System (debug symbols)
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1685617426
-c:b6dc9ce24c58c8e6c830925e85b575cd1e0ac660
-D:cups-client poppler-utils openssl dbus
-
 C:Q1T32otzrWdQoLzczi7as6GAvqm/E=
 P:autoconf-doc
 V:2.71-r1
@@ -20727,6 +20683,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1658971088
 c:37af0c5ea713fb5b174bfdbc34c97df50908f60b
 i:openrc knock=0.8.2-r1
+
+C:Q1dCCurMETOVLyqp3Ncia7M1Rmtc8=
+P:nodejs-dev
+V:18.16.1-r0
+A:armhf
+S:214491
+I:1138688
+T:JavaScript runtime built on V8 engine - LTS version (development files)
+U:https://nodejs.org/
+L:MIT
+o:nodejs
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1687294119
+c:df6fafaf429a30556f419a5a1f0b8bfee16ecfc5
+k:100
+p:nodejs-lts-dev=18.16.1
 
 C:Q1JHcHQzB0Eqa6y9GRbA6sDzlmgi8=
 P:asterisk-sounds-en
@@ -24114,6 +24086,22 @@ t:1665750969
 c:98d904f475c6a5d8bf513f59c41733c6f6fe1ae2
 i:docs openobex=1.7.2-r4
 
+C:Q11dWiZHvwuNIrPqlANKKxGckAggA=
+P:nodejs-doc
+V:18.16.1-r0
+A:armhf
+S:14708
+I:53248
+T:JavaScript runtime built on V8 engine - LTS version (documentation)
+U:https://nodejs.org/
+L:MIT
+o:nodejs
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1687294119
+c:df6fafaf429a30556f419a5a1f0b8bfee16ecfc5
+k:100
+i:docs nodejs=18.16.1-r0
+
 C:Q11byTvhKPnnAn1rt7IZtWmZTKwug=
 P:gettext
 V:0.21.1-r1
@@ -24312,6 +24300,20 @@ t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:so:libc.musl-armhf.so.1
 p:so:libsysfs.so.2=2.0.1 cmd:systool=2.1.1-r1
+
+C:Q1F6NGq3HoqI23JcZ4i/L/4NPkuv0=
+P:lua-mqtt-publish
+V:0.5-r0
+A:armhf
+S:1441
+I:16384
+T:Lua module for simple MQTT connect, publish and disconnect
+U:https://github.com/ncopa/lua-mqtt-publish
+L:MIT
+o:lua-mqtt-publish
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1687404279
+c:5e92ef2d951e16c0726d40f3c4f073e5894d6208
 
 C:Q1DPp+s4/B8ZU/Z16IpbXtfVVNfkc=
 P:lua5.2-sircbot
@@ -24621,6 +24623,21 @@ t:1658962797
 c:6fb2c75bf32b3ac3f1fc338ad2365a04d1f06041
 D:doc-provider man-pages
 
+C:Q1wd1Drlf5R6XdBK7d4XFgxDJ5+Rs=
+P:cups-openrc
+V:2.4.2-r3
+A:armhf
+S:2024
+I:16384
+T:The CUPS Printing System (OpenRC init scripts)
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1687432306
+c:2ae254083c3f05790391c68ac01e211df4c7d11e
+i:openrc cups=2.4.2-r3
+
 C:Q1c+lbhSw4fsZp19VWXNmjz6j7EZk=
 P:xkeyboard-config-lang
 V:2.37-r0
@@ -24913,6 +24930,20 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1649093063
 c:e5747fdca4a369513e73acf202d48b45264d9f40
 D:ruby
+
+C:Q1PaervUu8or65x7HV7Ot3tacK4TM=
+P:bind-dbg
+V:9.18.16-r0
+A:armhf
+S:5096842
+I:11325440
+T:The ISC DNS server (debug symbols)
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1687383835
+c:8706d13524f90cd3dcb7ba7ad3dc7e7d5e9024db
+D:dns-root-hints bind-tools
 
 C:Q1X3WGJ0mu7QT5+A0Ik4aPTk7CFDk=
 P:py3-parsing
@@ -25851,22 +25882,6 @@ t:1666634065
 c:797244d81c28bfefdc7eb77bd7d46477ee114ea5
 i:docs rtpproxy=2.1.1-r1
 
-C:Q1bF81rjgDwQaNREpJClkgfwaml9A=
-P:nodejs-doc
-V:18.16.0-r0
-A:armhf
-S:14718
-I:53248
-T:JavaScript runtime built on V8 engine - LTS version (documentation)
-U:https://nodejs.org/
-L:MIT
-o:nodejs
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1683803972
-c:31256f878fc2f70e2b3eaeb6bca6fde59766e1ba
-k:100
-i:docs nodejs=18.16.0-r0
-
 C:Q17HW85ZiddwP3JRfIBp2cOSaiDgM=
 P:socat
 V:1.7.4.4-r0
@@ -26765,6 +26780,20 @@ c:f3683f3c40482ee5612da84e8c7f770ff1facc7f
 D:so:libc.musl-armhf.so.1
 p:so:libxshmfence.so.1=1.0.0
 
+C:Q1HA/ua6J56mimVNfBbbc5CyVOZR8=
+P:bind-doc
+V:9.18.16-r0
+A:armhf
+S:103024
+I:200704
+T:The ISC DNS server (documentation)
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1687383835
+c:8706d13524f90cd3dcb7ba7ad3dc7e7d5e9024db
+i:docs bind=9.18.16-r0
+
 C:Q1PSuzFfNEqOYZhzsr7ytYqMC0CgA=
 P:perl-convert-asn1-doc
 V:0.33-r0
@@ -27451,22 +27480,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1665627224
 c:de2fcb8a348240ed779da741770a2d45635d6b6d
 
-C:Q1fANxYpu+GMAt+6Rhtiix/9BWb08=
-P:cups-lang
-V:2.4.2-r2
-A:armhf
-S:683387
-I:4325376
-T:Languages for package cups
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1685617426
-c:b6dc9ce24c58c8e6c830925e85b575cd1e0ac660
-D:cups-client poppler-utils openssl dbus
-i:cups=2.4.2-r2 lang
-
 C:Q1YUe0tFI8sy44BO8LelM/rn2HNd4=
 P:perl-test-needs-doc
 V:0.002009-r0
@@ -27481,6 +27494,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1629905362
 c:8018cdc529f052cd64be0a22446dc31aef53e28d
 i:docs perl-test-needs=0.002009-r0
+
+C:Q1xUr5Zou6Qqgb9C5C57CMisE1amw=
+P:cups
+V:2.4.2-r3
+A:armhf
+S:1192213
+I:6983680
+T:The CUPS Printing System
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1687432306
+c:2ae254083c3f05790391c68ac01e211df4c7d11e
+D:cups-client poppler-utils openssl dbus /bin/sh cups-client=2.4.2-r3 so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-armhf.so.1 so:libcups.so.2 so:libdbus-1.so.3 so:libgcc_s.so.1 so:libpaper.so.2 so:libstdc++.so.6 so:libusb-1.0.so.0
+p:cmd:cupsd=2.4.2-r3 cmd:cupsfilter=2.4.2-r3
 
 C:Q1XDfs7LjJEvUMAqgZDB9ffEgXuvI=
 P:gstreamer
@@ -27817,22 +27846,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1673496470
 c:398aec6128074fe35070248b4303d5517f7899fe
 D:mesa=22.2.5-r1 libvdpau so:libLLVM-15.so so:libX11-xcb.so.1 so:libc.musl-armhf.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libdrm_nouveau.so.2 so:libdrm_radeon.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libxcb-dri2.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1 so:libzstd.so.1
-
-C:Q1/Qojw3RPOYRYjenftduPsD3KtNo=
-P:lua5.3-mqtt-publish
-V:0.4-r0
-A:armhf
-S:2390
-I:28672
-T:Lua module for simple MQTT connect, publish and disconnect for Lua 5.3
-U:https://github.com/ncopa/lua-mqtt-publish
-L:MIT
-o:lua-mqtt-publish
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1666359747
-c:67ab8204e8ceaa4243a19549dc03bcdcd5668680
-D:lua5.3-mosquitto
-i:lua5.3 lua-mqtt-publish=0.4-r0
 
 C:Q1Dc+WK8EwqGyRnZn3ytRRMWD/k38=
 P:rsync-zsh-completion
@@ -29985,22 +29998,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-test-requiresinternet=0.05-r3
-
-C:Q1SAEpWz4HsNTkSvX9A152wobXWuk=
-P:lua5.1-mosquitto
-V:0.4.1-r1
-A:armhf
-S:8652
-I:110592
-T:Bindings to libmosquitto for Lua 5.1
-U:https://github.com/flukso/lua-mosquitto
-L:MIT
-o:lua-mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649062565
-c:1579acf67a30ecd20f63e588baab94a931b28efd
-D:lua5.1 so:libc.musl-armhf.so.1 so:libmosquitto.so.1
-i:lua-mosquitto=0.4.1-r1 lua5.1
 
 C:Q1acjMtoAzABk/NWNOS0mrqmYOLPk=
 P:freeswitch-python3
@@ -34421,22 +34418,6 @@ t:1670235759
 c:f92664d224b5855046c5e64a17b3092072ede148
 D:so:libc.musl-armhf.so.1 so:libintl.so.8 so:libnvpair.so.3 so:libz.so.1 so:libzfs.so.4 so:libzfs_core.so.3 so:libzpool.so.5
 
-C:Q191AbxGpuHEnYSQzGYVBMGMQ69BI=
-P:lua5.4-mosquitto
-V:0.4.1-r1
-A:armhf
-S:8758
-I:106496
-T:Bindings to libmosquitto for Lua 5.4
-U:https://github.com/flukso/lua-mosquitto
-L:MIT
-o:lua-mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649062565
-c:1579acf67a30ecd20f63e588baab94a931b28efd
-D:lua5.4 so:libc.musl-armhf.so.1 so:libmosquitto.so.1
-i:lua-mosquitto=0.4.1-r1 lua5.4
-
 C:Q1+Oq9glmtgwmGNjPEoXSnPXRecsA=
 P:postgresql15-dev
 V:15.3-r0
@@ -35057,6 +35038,22 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
 
+C:Q1SXCVDve8180a2ovBcOx4zbO59tE=
+P:cups-client
+V:2.4.2-r3
+A:armhf
+S:352753
+I:1871872
+T:CUPS command-line client programs
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1687432306
+c:2ae254083c3f05790391c68ac01e211df4c7d11e
+D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-armhf.so.1 so:libcups.so.2 so:libgcc_s.so.1 so:libstdc++.so.6
+p:cmd:cancel=2.4.2-r3 cmd:cupsaccept=2.4.2-r3 cmd:cupsctl=2.4.2-r3 cmd:cupsdisable=2.4.2-r3 cmd:cupsenable=2.4.2-r3 cmd:cupstestppd=2.4.2-r3 cmd:ippeveprinter=2.4.2-r3 cmd:ippfind=2.4.2-r3 cmd:lp=2.4.2-r3 cmd:lpadmin=2.4.2-r3 cmd:lpc=2.4.2-r3 cmd:lpinfo=2.4.2-r3 cmd:lpmove=2.4.2-r3 cmd:lpoptions=2.4.2-r3 cmd:lpq=2.4.2-r3 cmd:lpr=2.4.2-r3 cmd:lprm=2.4.2-r3 cmd:lpstat=2.4.2-r3 cmd:ppdc=2.4.2-r3 cmd:ppdhtml=2.4.2-r3 cmd:ppdi=2.4.2-r3 cmd:ppdmerge=2.4.2-r3 cmd:ppdpo=2.4.2-r3
+
 C:Q1Yu302q43trfCpDnX1/QdzypNtu4=
 P:kea-hook-flex-option
 V:2.2.0-r3
@@ -35617,6 +35614,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1668740317
 c:760efce02a7a68c7a14184b1ba28b2a908f74401
 i:docs perl-getopt-long=2.54-r0
+
+C:Q1oSfTziL5tjUkLVMwpCRv3UWLIxw=
+P:ipptool
+V:2.4.2-r3
+A:armhf
+S:4016641
+I:4784128
+T:Perform internet printing protocol requests
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1687432306
+c:2ae254083c3f05790391c68ac01e211df4c7d11e
+D:so:libc.musl-armhf.so.1 so:libcups.so.2
+p:cmd:ipptool=2.4.2-r3
 
 C:Q1Q3RiNRqvORRAgfRFtwxtWUCSffg=
 P:vulkan-tools
@@ -37288,19 +37301,6 @@ c:cf002e6229c4d233f33fa15541a9ea38b932f06b
 D:sysfsutils /bin/sh so:libc.musl-armhf.so.1 so:libsensors.so.5
 p:lm_sensors=3.6.0-r4 cmd:sensors=3.6.0-r4
 
-C:Q1/jBZhZNxvE+sAwLjWnGzEF/nbvE=
-P:bind-dnssec-root
-V:9.18.13-r0
-A:armhf
-S:3012
-I:20480
-T:ISC BIND DNSSEC Root Keys
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1680778545
-c:8f562ebba80b05efdc67401fe4bc359be298aa11
-
 C:Q1wD99WyPTlOyfrZ04zOgZDxd4+oE=
 P:libmaxminddb
 V:1.7.1-r0
@@ -37840,37 +37840,6 @@ t:1665442793
 c:ff195916ea432e02fde69e1e8174ca68465e32d6
 i:docs gsm=1.0.22-r1
 
-C:Q18q5dcc0Eu6J7fmfDaCGIDFwkq/Q=
-P:lua5.3-mosquitto
-V:0.4.1-r1
-A:armhf
-S:8766
-I:110592
-T:Bindings to libmosquitto for Lua 5.3
-U:https://github.com/flukso/lua-mosquitto
-L:MIT
-o:lua-mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649062565
-c:1579acf67a30ecd20f63e588baab94a931b28efd
-D:lua5.3 so:libc.musl-armhf.so.1 so:libmosquitto.so.1
-i:lua-mosquitto=0.4.1-r1 lua5.3
-
-C:Q1p+uYZ3eteSDo53c8jGz//UgNba0=
-P:bind-tools
-V:9.18.13-r0
-A:armhf
-S:243398
-I:1118208
-T:The ISC DNS tools
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1680778545
-c:8f562ebba80b05efdc67401fe4bc359be298aa11
-D:so:libbind9-9.18.13.so so:libc.musl-armhf.so.1 so:libdns-9.18.13.so so:libirs-9.18.13.so so:libisc-9.18.13.so so:libisccfg-9.18.13.so so:libkrb5.so.3 so:libns-9.18.13.so so:libprotobuf-c.so.1
-p:cmd:arpaname=9.18.13-r0 cmd:ddns-confgen=9.18.13-r0 cmd:delv=9.18.13-r0 cmd:dig=9.18.13-r0 cmd:dnstap-read=9.18.13-r0 cmd:host=9.18.13-r0 cmd:mdig=9.18.13-r0 cmd:named-checkzone=9.18.13-r0 cmd:named-compilezone=9.18.13-r0 cmd:named-journalprint=9.18.13-r0 cmd:named-rrchecker=9.18.13-r0 cmd:nslookup=9.18.13-r0 cmd:nsupdate=9.18.13-r0 cmd:rndc-confgen=9.18.13-r0 cmd:tsig-keygen=9.18.13-r0
-
 C:Q1x6e6lhbBBeVAh/W2Fzer5l5UWW4=
 P:kea-hook-lease-cmds
 V:2.2.0-r3
@@ -38219,6 +38188,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1672591081
 c:af42d45cd558323043f855dd09fc1c7381a17803
 p:linux-firmware-any
+
+C:Q1sAk30XGfhRNFl86TD9eE/a3ZPLo=
+P:cups-lang
+V:2.4.2-r3
+A:armhf
+S:683369
+I:4325376
+T:Languages for package cups
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1687432306
+c:2ae254083c3f05790391c68ac01e211df4c7d11e
+D:cups-client poppler-utils openssl dbus
+i:cups=2.4.2-r3 lang
 
 C:Q18QlVfQmTkxFONhdBXkow37rgsKc=
 P:util-linux-login
@@ -38651,22 +38636,6 @@ t:1678035869
 c:b8e2be09535658d719873d57f01d9ab8bc30162f
 D:so:libc.musl-armhf.so.1
 p:so:libcom_err.so.2=2.1
-
-C:Q1lk+h867etOpUGciEhn5G3NCa1QI=
-P:lua5.2-mqtt-publish
-V:0.4-r0
-A:armhf
-S:2387
-I:28672
-T:Lua module for simple MQTT connect, publish and disconnect for Lua 5.2
-U:https://github.com/ncopa/lua-mqtt-publish
-L:MIT
-o:lua-mqtt-publish
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1666359747
-c:67ab8204e8ceaa4243a19549dc03bcdcd5668680
-D:lua5.2-mosquitto
-i:lua5.2 lua-mqtt-publish=0.4-r0
 
 C:Q1JwvqN7d0rhor/ob+AnfxfP5T4A8=
 P:clang15-libs
@@ -39865,20 +39834,6 @@ m:Drew DeVault <sir@cmpwn.com>
 t:1666619912
 c:5486cbe86fb9ef78960c3c3b3275dd60a159504a
 i:docs libidn2=2.3.4-r0
-
-C:Q18HEL5EGjXc4/0JdpSkbKWLJalVw=
-P:bind-doc
-V:9.18.13-r0
-A:armhf
-S:102736
-I:200704
-T:The ISC DNS server (documentation)
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1680778545
-c:8f562ebba80b05efdc67401fe4bc359be298aa11
-i:docs bind=9.18.13-r0
 
 C:Q1wfMFNHWsD0E4vFr5Rr7AGUHl4ZE=
 P:perl-module-install-doc
@@ -43603,21 +43558,6 @@ t:1667998723
 c:40ae2e500da1eedc4aa2de12ae5082c33eb4fdc5
 D:so:libc.musl-armhf.so.1 so:libfreeswitch.so.1 so:libsngtc_node.so
 
-C:Q1/7TnpdhwIAHUD4dESOtsU7HGluE=
-P:cups-doc
-V:2.4.2-r2
-A:armhf
-S:90025
-I:237568
-T:The CUPS Printing System (documentation)
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1685617426
-c:b6dc9ce24c58c8e6c830925e85b575cd1e0ac660
-i:docs cups=2.4.2-r2
-
 C:Q1IgUyafI5DlbE0X6Vo0z8l0WC1Bw=
 P:source-highlight-doc
 V:3.1.9-r7
@@ -46495,6 +46435,22 @@ c:2cf3fe063b1b9e308372af7e2c2348e9e494a135
 D:lua5.4 so:libc.musl-armhf.so.1 so:libpq.so.5
 i:lua-dbi=0.7.2-r1 lua5.4
 
+C:Q1vzC5qfbsTDeDfEvl9aKJMZ2Qvo8=
+P:lua5.1-mosquitto
+V:0.4.1-r2
+A:armhf
+S:8638
+I:110592
+T:Bindings to libmosquitto for Lua 5.1
+U:https://github.com/flukso/lua-mosquitto
+L:MIT
+o:lua-mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1687404275
+c:f65e84d469ff8668c076cd6908ef8ee1b1ef872a
+D:lua5.1 so:libc.musl-armhf.so.1 so:libmosquitto.so.1
+i:lua-mosquitto=0.4.1-r2 lua5.1
+
 C:Q1gHbnJeJL0i+Tf8FemA/Nzdf/BfY=
 P:gnupg-scdaemon
 V:2.2.40-r0
@@ -46883,23 +46839,6 @@ c:ad9f866c25935c5b46670706bd6477ac46673ea0
 D:libxext-dev libxrandr=1.5.3-r0 pc:randrproto>=1.5 pc:x11 pc:xext pc:xproto pc:xrender pkgconfig
 p:pc:xrandr=1.5.3
 
-C:Q1T8gab+/LPRyZrd4gdYN6hxM63zc=
-P:nodejs
-V:18.16.0-r0
-A:armhf
-S:12425882
-I:34881536
-T:JavaScript runtime built on V8 engine - LTS version
-U:https://nodejs.org/
-L:MIT
-o:nodejs
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1683803972
-c:31256f878fc2f70e2b3eaeb6bca6fde59766e1ba
-k:100
-D:ca-certificates /bin/sh so:libbrotlidec.so.1 so:libbrotlienc.so.1 so:libc.musl-armhf.so.1 so:libcares.so.2 so:libcrypto.so.3 so:libgcc_s.so.1 so:libicui18n.so.72 so:libicuuc.so.72 so:libnghttp2.so.14 so:libssl.so.3 so:libstdc++.so.6 so:libz.so.1
-p:nodejs-lts=18.16.0-r0 cmd:node=18.16.0-r0
-
 C:Q15IdEuY+aUNdcV1/3aiyu7ya62HA=
 P:perl-convert-uulib-doc
 V:1.8-r0
@@ -46945,6 +46884,21 @@ t:1659676082
 c:08e731db1414339b2e07c9949591476dfef0c40d
 D:fish-tools pkgconfig
 p:pc:fish=3.5.1
+
+C:Q1nfgprkYw/bh1357QXPDQZtnu8yo=
+P:bind-dnssec-tools
+V:9.18.16-r0
+A:armhf
+S:138767
+I:774144
+T:Utilities for DNSSEC keys and DNS zone files management
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1687383835
+c:8706d13524f90cd3dcb7ba7ad3dc7e7d5e9024db
+D:dns-root-hints bind-tools so:libc.musl-armhf.so.1 so:libdns-9.18.16.so so:libisc-9.18.16.so so:libisccfg-9.18.16.so
+p:cmd:dnssec-cds=9.18.16-r0 cmd:dnssec-dsfromkey=9.18.16-r0 cmd:dnssec-importkey=9.18.16-r0 cmd:dnssec-keyfromlabel=9.18.16-r0 cmd:dnssec-keygen=9.18.16-r0 cmd:dnssec-revoke=9.18.16-r0 cmd:dnssec-settime=9.18.16-r0 cmd:dnssec-signzone=9.18.16-r0 cmd:dnssec-verify=9.18.16-r0 cmd:nsec3hash=9.18.16-r0
 
 C:Q1z/qkOO7n9n6EaoOFRs+KsTyCnLo=
 P:rabbitmq-c-utils
@@ -49093,6 +49047,21 @@ c:63762e696e82268f6981807d032e2de9f7ad832a
 D:liburing=2.3-r0 pkgconfig
 p:pc:liburing=2.3
 
+C:Q1ZWHXOTweJIzgT7kWP4EYd67oku4=
+P:bind-tools
+V:9.18.16-r0
+A:armhf
+S:243476
+I:1118208
+T:The ISC DNS tools
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1687383835
+c:8706d13524f90cd3dcb7ba7ad3dc7e7d5e9024db
+D:so:libbind9-9.18.16.so so:libc.musl-armhf.so.1 so:libdns-9.18.16.so so:libirs-9.18.16.so so:libisc-9.18.16.so so:libisccfg-9.18.16.so so:libkrb5.so.3 so:libns-9.18.16.so so:libprotobuf-c.so.1
+p:cmd:arpaname=9.18.16-r0 cmd:ddns-confgen=9.18.16-r0 cmd:delv=9.18.16-r0 cmd:dig=9.18.16-r0 cmd:dnstap-read=9.18.16-r0 cmd:host=9.18.16-r0 cmd:mdig=9.18.16-r0 cmd:named-checkzone=9.18.16-r0 cmd:named-compilezone=9.18.16-r0 cmd:named-journalprint=9.18.16-r0 cmd:named-rrchecker=9.18.16-r0 cmd:nslookup=9.18.16-r0 cmd:nsupdate=9.18.16-r0 cmd:rndc-confgen=9.18.16-r0 cmd:tsig-keygen=9.18.16-r0
+
 C:Q163Ixitib76FEOJd2DqQ98pah45k=
 P:syslog-ng
 V:3.38.1-r0
@@ -49279,6 +49248,20 @@ t:1661972888
 c:42a68fd864b162c0ade28194c3c22297975e06e9
 D:pc:libcrypto pc:libssl pkgconfig serf=1.3.9-r10
 p:pc:serf-1=1.3.9
+
+C:Q1dAo4vR9rOWxqphb0WHsR5T+18dA=
+P:lua-mosquitto
+V:0.4.1-r2
+A:armhf
+S:1466
+I:4096
+T:Bindings to libmosquitto for Lua
+U:https://github.com/flukso/lua-mosquitto
+L:MIT
+o:lua-mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1687404275
+c:f65e84d469ff8668c076cd6908ef8ee1b1ef872a
 
 C:Q1dRjOcxlmur68l7zfRSf5+GG7hdQ=
 P:linux-firmware-ath6k
@@ -49773,6 +49756,22 @@ c:d1238ce46fbe0afefff2c8f2aac1aa21ebddd006
 D:so:libc.musl-armhf.so.1
 p:so:libmbedcrypto.so.7=2.28.3 so:libmbedtls.so.14=2.28.3 so:libmbedx509.so.1=2.28.3
 
+C:Q1NNHK3evCuERaZxIuZVNl39wIUlo=
+P:lua5.3-mosquitto
+V:0.4.1-r2
+A:armhf
+S:8774
+I:110592
+T:Bindings to libmosquitto for Lua 5.3
+U:https://github.com/flukso/lua-mosquitto
+L:MIT
+o:lua-mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1687404275
+c:f65e84d469ff8668c076cd6908ef8ee1b1ef872a
+D:lua5.3 so:libc.musl-armhf.so.1 so:libmosquitto.so.1
+i:lua-mosquitto=0.4.1-r2 lua5.3
+
 C:Q15gREBObh2Mu2B3+//I859MImdX8=
 P:ncftp-doc
 V:3.2.6-r5
@@ -50148,20 +50147,6 @@ c:d240e31adfe0116f50ea6bc454e55ede381bca13
 D:libgcrypt-dev libotr=4.1.1-r3 pkgconfig
 p:pc:libotr=4.1.1
 
-C:Q1TlP3RWM28GsdSlxyD2fH7XU8/cg=
-P:bind-openrc
-V:9.18.13-r0
-A:armhf
-S:2579
-I:24576
-T:The ISC DNS server (OpenRC init scripts)
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1680778545
-c:8f562ebba80b05efdc67401fe4bc359be298aa11
-i:openrc bind=9.18.13-r0
-
 C:Q1PsGKGCSGo+r6dSHFqCTV4l6vOUs=
 P:perl-text-soundex
 V:3.05-r6
@@ -50316,21 +50301,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1659429320
 c:39cde24fb54a667a6730bdaec3233184227131f6
 i:openrc kmod=30-r1
-
-C:Q1IoGtKX587jsmj3zEBvDrFLwXi+I=
-P:bind-libs
-V:9.18.13-r0
-A:armhf
-S:1283380
-I:5763072
-T:The ISC DNS server (libraries)
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1680778545
-c:8f562ebba80b05efdc67401fe4bc359be298aa11
-D:so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libfstrm.so.0 so:libgssapi_krb5.so.2 so:libkrb5.so.3 so:libnghttp2.so.14 so:libprotobuf-c.so.1 so:libssl.so.3 so:libuv.so.1 so:libxml2.so.2 so:libz.so.1
-p:so:libbind9-9.18.13.so=0 so:libdns-9.18.13.so=0 so:libirs-9.18.13.so=0 so:libisc-9.18.13.so=0 so:libisccc-9.18.13.so=0 so:libisccfg-9.18.13.so=0 so:libns-9.18.13.so=0
 
 C:Q1Bq4SNWLYY91uNb5WMxgEZ8P9KUo=
 P:kea-ctrl-agent
@@ -50537,22 +50507,6 @@ t:1672882917
 c:c7bfb812c1ddf0c7ea5633b7d426aaf0374d4c62
 i:docs util-linux=2.38.1-r1
 
-C:Q1bNohgvnMa8N46suMwxAWIGxHPWc=
-P:cups-libs
-V:2.4.2-r2
-A:armhf
-S:224334
-I:610304
-T:CUPS libraries
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1685617426
-c:b6dc9ce24c58c8e6c830925e85b575cd1e0ac660
-D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-armhf.so.1 so:libgnutls.so.30 so:libz.so.1
-p:so:libcups.so.2=2 so:libcupsimage.so.2=2
-
 C:Q1fZCi/nNHXUl2FvWZumY/Lnj1joU=
 P:perl-yaml-libyaml-doc
 V:0.85-r0
@@ -50722,22 +50676,6 @@ m:Sheila Aman <sheila@vulpine.house>
 t:1668435679
 c:20e3b1d46e5a93b71e71c0647890358530e151df
 i:docs perl-mozilla-ca=20221114-r0
-
-C:Q1zj31oIfoVV45zPxUvfINrJeZh/0=
-P:lua5.1-mqtt-publish
-V:0.4-r0
-A:armhf
-S:2391
-I:28672
-T:Lua module for simple MQTT connect, publish and disconnect for Lua 5.1
-U:https://github.com/ncopa/lua-mqtt-publish
-L:MIT
-o:lua-mqtt-publish
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1666359747
-c:67ab8204e8ceaa4243a19549dc03bcdcd5668680
-D:lua5.1-mosquitto
-i:lua5.1 lua-mqtt-publish=0.4-r0
 
 C:Q1nqqdXFXV7IZdmACc4J8NuEbOgxg=
 P:fontconfig-dev
@@ -51157,6 +51095,20 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 
+C:Q1M0lnVyaTYDSEUt0GfFziLFMqRa0=
+P:bind-dev
+V:9.18.16-r0
+A:armhf
+S:354421
+I:2002944
+T:The ISC DNS server (development files)
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1687383835
+c:8706d13524f90cd3dcb7ba7ad3dc7e7d5e9024db
+D:bind bind-plugins bind-tools bind-libs=9.18.16-r0
+
 C:Q1pshCAIJUCZihVpKDd2Qf5ZyySfc=
 P:perl-module-refresh-doc
 V:0.18-r0
@@ -51448,6 +51400,19 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1669871120
 c:4dc1c9480c8a749ce86495c9fb13be99ce48ddcc
 i:docs xz=5.2.9-r0
+
+C:Q1jwNtNb4WrxloQs4CAsvE3WuutIE=
+P:bind-dnssec-root
+V:9.18.16-r0
+A:armhf
+S:3009
+I:20480
+T:ISC BIND DNSSEC Root Keys
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1687383835
+c:8706d13524f90cd3dcb7ba7ad3dc7e7d5e9024db
 
 C:Q1QhuzBMzXOo5nDKWgjUH9JgB/3LI=
 P:gettext-asprintf
@@ -55178,6 +55143,22 @@ c:54a39ace82a9e8d1785ca0ba2d3c5d24b2def24c
 D:ncurses-libs=6.3_p20221119-r1 pkgconfig
 p:pc:form=6.3.20221119 pc:formw=6.3.20221119 pc:menu=6.3.20221119 pc:menuw=6.3.20221119 pc:ncurses=6.3.20221119 pc:ncursesw=6.3.20221119 pc:panel=6.3.20221119 pc:panelw=6.3.20221119 cmd:ncursesw6-config=6.3_p20221119-r1
 
+C:Q1k/XnrrnObXb9dtpfisPKTAadBhI=
+P:cups-dev
+V:2.4.2-r3
+A:armhf
+S:44183
+I:262144
+T:The CUPS Printing System (development files)
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1687432306
+c:2ae254083c3f05790391c68ac01e211df4c7d11e
+D:libgcrypt-dev gnutls-dev zlib-dev cups-libs=2.4.2-r3 pc:avahi-client pc:gnutls pkgconfig
+p:pc:cups=2.4.2 cmd:cups-config=2.4.2-r3
+
 C:Q1Rg0gqmm/eOUD/oNvsQ4u1jnGzHQ=
 P:glslang-libs
 V:11.12.0-r0
@@ -55545,20 +55526,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1655284976
 c:9c42c5af87c7285585bf01db34a9abb934e1c15f
 i:docs perl-file-remove=1.61-r0
-
-C:Q1++8IZFBPKQwRBETDtC+O+OYUwAg=
-P:bind-dbg
-V:9.18.13-r0
-A:armhf
-S:5091959
-I:11448320
-T:The ISC DNS server (debug symbols)
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1680778545
-c:8f562ebba80b05efdc67401fe4bc359be298aa11
-D:dns-root-hints bind-tools
 
 C:Q1kdatjqww6iTIC6weGX3f0u5N68M=
 P:spice-protocol
@@ -59100,22 +59067,6 @@ c:988c4057d60ade6a214b14741f3e0950b3105c3a
 D:so:libc.musl-armhf.so.1 so:libxcb.so.1
 p:so:libxcb-util.so.1=1.0.0
 
-C:Q1TXUq5JL5qvnLIlLzYrCAFzdob3A=
-P:lua5.2-mosquitto
-V:0.4.1-r1
-A:armhf
-S:8638
-I:110592
-T:Bindings to libmosquitto for Lua 5.2
-U:https://github.com/flukso/lua-mosquitto
-L:MIT
-o:lua-mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649062565
-c:1579acf67a30ecd20f63e588baab94a931b28efd
-D:lua5.2 so:libc.musl-armhf.so.1 so:libmosquitto.so.1
-i:lua-mosquitto=0.4.1-r1 lua5.2
-
 C:Q1YLUUpQkxDitQWpWR5mY3800ePE0=
 P:iaxmodem
 V:1.3.3-r1
@@ -61140,6 +61091,21 @@ o:perl-test-fork
 t:1630780508
 c:a3739a07d478bc4f1f6e0c17612a1c83dffa9ecd
 D:perl
+
+C:Q17USWAHEc/aUJ3Ch4OHSz9okd0tE=
+P:bind
+V:9.18.16-r0
+A:armhf
+S:219735
+I:749568
+T:The ISC DNS server
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1687383835
+c:8706d13524f90cd3dcb7ba7ad3dc7e7d5e9024db
+D:dns-root-hints bind-tools /bin/sh bind-dnssec-root=9.18.16-r0 so:libbind9-9.18.16.so so:libc.musl-armhf.so.1 so:libcap.so.2 so:libcrypto.so.3 so:libdns-9.18.16.so so:libfstrm.so.0 so:libisc-9.18.16.so so:libisccc-9.18.16.so so:libisccfg-9.18.16.so so:libnghttp2.so.14 so:libns-9.18.16.so so:libprotobuf-c.so.1 so:libuv.so.1 so:libxml2.so.2 so:libz.so.1
+p:cmd:named-checkconf=9.18.16-r0 cmd:named=9.18.16-r0 cmd:rndc=9.18.16-r0
 
 C:Q1D4AmajbXNXFF1W/oMsM0boRirZk=
 P:perl-dbd-mysql-doc
@@ -63196,22 +63162,6 @@ t:1662215060
 c:72f38ece22272cb7bb278329c1ff67125cbefc77
 i:docs libxkbcommon=1.4.1-r0
 
-C:Q19ch4Iyn+qhLvGBZAdOLpJ5cpvR0=
-P:nodejs-dev
-V:18.16.0-r0
-A:armhf
-S:214499
-I:1138688
-T:JavaScript runtime built on V8 engine - LTS version (development files)
-U:https://nodejs.org/
-L:MIT
-o:nodejs
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1683803972
-c:31256f878fc2f70e2b3eaeb6bca6fde59766e1ba
-k:100
-p:nodejs-lts-dev=18.16.0
-
 C:Q1xy+f2eY37rK1N8x0VEPSySHrnzM=
 P:liblogging-dev
 V:1.0.6-r2
@@ -64118,20 +64068,6 @@ c:39cde24fb54a667a6730bdaec3233184227131f6
 D:so:libc.musl-armhf.so.1
 p:cmd:flash_erase=2.1.4-r1 cmd:flash_eraseall=2.1.4-r1 cmd:flash_lock=2.1.4-r1 cmd:flash_otp_dump=2.1.4-r1 cmd:flash_otp_erase=2.1.4-r1 cmd:flash_otp_info=2.1.4-r1 cmd:flash_otp_lock=2.1.4-r1 cmd:flash_otp_write=2.1.4-r1 cmd:flash_unlock=2.1.4-r1 cmd:flashcp=2.1.4-r1
 
-C:Q1sYeM2BY4U8s9sX0YzPiih2W6ST4=
-P:bind-dev
-V:9.18.13-r0
-A:armhf
-S:356666
-I:2007040
-T:The ISC DNS server (development files)
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1680778545
-c:8f562ebba80b05efdc67401fe4bc359be298aa11
-D:bind bind-plugins bind-tools bind-libs=9.18.13-r0
-
 C:Q1POifxqBVlVzVobE5GH8YhYJhr0Q=
 P:lua5.3-pty
 V:1.2.2-r1
@@ -64273,6 +64209,22 @@ m:Sören Tempel <soeren+alpine@soeren-tempel.net>
 t:1614323720
 c:71a8ac443e012f0f4681d01097aeef1cf0f2c6a5
 D:gnupg
+
+C:Q1ykjtVwydbNY2RzaNfZ60otHnMsw=
+P:lua5.2-mqtt-publish
+V:0.5-r0
+A:armhf
+S:2398
+I:28672
+T:Lua module for simple MQTT connect, publish and disconnect for Lua 5.2
+U:https://github.com/ncopa/lua-mqtt-publish
+L:MIT
+o:lua-mqtt-publish
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1687404279
+c:5e92ef2d951e16c0726d40f3c4f073e5894d6208
+D:lua5.2-mosquitto
+i:lua5.2 lua-mqtt-publish=0.5-r0
 
 C:Q1LfKg9MW2rvdceL1mplm0UHzNESs=
 P:squid-lang-hy
@@ -64609,6 +64561,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1667998048
 c:0184fab176769150408a920c29f8dfe4f22bf483
 D:uwsgi uwsgi-corerouter so:libc.musl-armhf.so.1
+
+C:Q1Wg9nY7fTBb7C2WcyIvMMG0CqXlE=
+P:cups-libs
+V:2.4.2-r3
+A:armhf
+S:224319
+I:610304
+T:CUPS libraries
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1687432306
+c:2ae254083c3f05790391c68ac01e211df4c7d11e
+D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-armhf.so.1 so:libgnutls.so.30 so:libz.so.1
+p:so:libcups.so.2=2 so:libcupsimage.so.2=2
 
 C:Q1q/DH5HxpdRwKM+c/GcNcPV9ggiw=
 P:netcf
@@ -68026,21 +67994,6 @@ t:1660340325
 c:d892a057c104412af454cdead8c08a853b72cf72
 i:docs eggdrop=1.9.3-r0
 
-C:Q1PJ/1j85kALxfFghLhwzV/bGD69o=
-P:cups-openrc
-V:2.4.2-r2
-A:armhf
-S:2023
-I:16384
-T:The CUPS Printing System (OpenRC init scripts)
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1685617426
-c:b6dc9ce24c58c8e6c830925e85b575cd1e0ac660
-i:openrc cups=2.4.2-r2
-
 C:Q1XaQjeSnbFgDIVPxHx5EV3kxlOZQ=
 P:uwsgi-transformation_tofile
 V:2.0.21-r0
@@ -70594,6 +70547,21 @@ t:1642139088
 c:26d81109be7269bd10e423ef2c117e2f16a4fc3a
 i:docs distcc=3.4-r2
 
+C:Q13xVbwiMgvwvL4JUemsWfiJhoN8c=
+P:cups-doc
+V:2.4.2-r3
+A:armhf
+S:90019
+I:237568
+T:The CUPS Printing System (documentation)
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1687432306
+c:2ae254083c3f05790391c68ac01e211df4c7d11e
+i:docs cups=2.4.2-r3
+
 C:Q1YqClfBHveFEQStS8/fmGmwtw8mc=
 P:sysklogd-doc
 V:1.5.1-r3
@@ -71443,20 +71411,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1662571816
 c:1d1beff03112e66380044d1ae1df768c08c98d79
 
-C:Q1QZCEUme1kdDZg/1H63bX+Bemm4Q=
-P:bind-plugins
-V:9.18.13-r0
-A:armhf
-S:13977
-I:163840
-T:The ISC DNS server plugins
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1680778545
-c:8f562ebba80b05efdc67401fe4bc359be298aa11
-D:bind so:libc.musl-armhf.so.1
-
 C:Q1RdKqsvdvqvledzw5fMWLiXWYOHQ=
 P:libkcapi
 V:1.4.0-r0
@@ -72209,6 +72163,23 @@ c:c5a56d9a0db850192573dc042cb7524167d79fd1
 D:python3
 p:py-ptyprocess=0.7.0-r3 py3.10:ptyprocess=0.7.0-r3
 
+C:Q1v+MaUKuoE4uR3qUqOLtlnJKpTFA=
+P:nodejs
+V:18.16.1-r0
+A:armhf
+S:12426109
+I:34877440
+T:JavaScript runtime built on V8 engine - LTS version
+U:https://nodejs.org/
+L:MIT
+o:nodejs
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1687294119
+c:df6fafaf429a30556f419a5a1f0b8bfee16ecfc5
+k:100
+D:ca-certificates /bin/sh so:libbrotlidec.so.1 so:libbrotlienc.so.1 so:libc.musl-armhf.so.1 so:libcares.so.2 so:libcrypto.so.3 so:libgcc_s.so.1 so:libicui18n.so.72 so:libicuuc.so.72 so:libnghttp2.so.14 so:libssl.so.3 so:libstdc++.so.6 so:libz.so.1
+p:nodejs-lts=18.16.1-r0 cmd:node=18.16.1-r0
+
 C:Q1X564euwZGBvkYZH2VBLBFas6wVk=
 P:rrdtool-doc
 V:1.7.2-r6
@@ -72745,6 +72716,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1639247770
 c:4ed988aa2dfb2d788a9ecdc56c4a76e97f32673a
 i:docs privoxy=3.0.33-r0
+
+C:Q1e88rTHBuJOgD4a+LaWPUK0hPijM=
+P:lua5.4-mosquitto
+V:0.4.1-r2
+A:armhf
+S:8778
+I:110592
+T:Bindings to libmosquitto for Lua 5.4
+U:https://github.com/flukso/lua-mosquitto
+L:MIT
+o:lua-mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1687404275
+c:f65e84d469ff8668c076cd6908ef8ee1b1ef872a
+D:lua5.4 so:libc.musl-armhf.so.1 so:libmosquitto.so.1
+i:lua-mosquitto=0.4.1-r2 lua5.4
 
 C:Q1zHg15Jvi4rnF1TjrMv1Cen0vfYE=
 P:hdparm
@@ -73455,6 +73442,21 @@ t:1680143286
 c:6100af561b367999ae7fec7863aa4db03e7a14a2
 D:python3 pkgconfig tdb-libs=1.4.6-r0
 p:pc:tdb=1.4.6
+
+C:Q11tcK8X434u8WNj7UlGBuQuryKfk=
+P:cups-dbg
+V:2.4.2-r3
+A:armhf
+S:2932516
+I:6807552
+T:The CUPS Printing System (debug symbols)
+U:https://github.com/OpenPrinting/cups/
+L:GPL-2.0-only
+o:cups
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1687432306
+c:2ae254083c3f05790391c68ac01e211df4c7d11e
+D:cups-client poppler-utils openssl dbus
 
 C:Q1V2hX6RsbgenC+f8GcAQCkH4nOj0=
 P:ruby-debug
@@ -74289,22 +74291,6 @@ c:00b10bdf34c6383c272665d2ac4804fafb0bf2e3
 D:flite=2.2-r1 pkgconfig
 p:pc:flite=2.2
 
-C:Q1zKmYG9K8ueQucRClpzj9cxw4E/s=
-P:cups-client
-V:2.4.2-r2
-A:armhf
-S:352748
-I:1871872
-T:CUPS command-line client programs
-U:https://github.com/OpenPrinting/cups/
-L:GPL-2.0-only
-o:cups
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1685617426
-c:b6dc9ce24c58c8e6c830925e85b575cd1e0ac660
-D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-armhf.so.1 so:libcups.so.2 so:libgcc_s.so.1 so:libstdc++.so.6
-p:cmd:cancel=2.4.2-r2 cmd:cupsaccept=2.4.2-r2 cmd:cupsctl=2.4.2-r2 cmd:cupsdisable=2.4.2-r2 cmd:cupsenable=2.4.2-r2 cmd:cupstestppd=2.4.2-r2 cmd:ippeveprinter=2.4.2-r2 cmd:ippfind=2.4.2-r2 cmd:lp=2.4.2-r2 cmd:lpadmin=2.4.2-r2 cmd:lpc=2.4.2-r2 cmd:lpinfo=2.4.2-r2 cmd:lpmove=2.4.2-r2 cmd:lpoptions=2.4.2-r2 cmd:lpq=2.4.2-r2 cmd:lpr=2.4.2-r2 cmd:lprm=2.4.2-r2 cmd:lpstat=2.4.2-r2 cmd:ppdc=2.4.2-r2 cmd:ppdhtml=2.4.2-r2 cmd:ppdi=2.4.2-r2 cmd:ppdmerge=2.4.2-r2 cmd:ppdpo=2.4.2-r2
-
 C:Q1Tc03YGLjHIildF2hy7zupVqmvNs=
 P:ruby-debug-doc
 V:1.6.3-r0
@@ -74647,6 +74633,20 @@ t:1664171476
 c:f161ebad0ff97b2328a8083c646bcd5126664f5c
 D:python3 py3-markupsafe
 p:py-mako=1.2.3-r0 cmd:mako-render=1.2.3-r0 py3.10:mako=1.2.3-r0
+
+C:Q1SZ2hD1Lprjq8ujm8YXivgy+rqPU=
+P:bind-openrc
+V:9.18.16-r0
+A:armhf
+S:2575
+I:24576
+T:The ISC DNS server (OpenRC init scripts)
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1687383835
+c:8706d13524f90cd3dcb7ba7ad3dc7e7d5e9024db
+i:openrc bind=9.18.16-r0
 
 C:Q12ptmNIcnJ8nGiRzttghU7gWFzEA=
 P:freetds-static
