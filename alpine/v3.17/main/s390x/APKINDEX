@@ -779,21 +779,6 @@ c:5f006bcb6276c6e1619e10459b7588f378916123
 D:linux-headers libdrm=2.4.114-r0 pkgconfig
 p:pc:libdrm=2.4.114 pc:libdrm_amdgpu=2.4.114 pc:libdrm_etnaviv=2.4.114 pc:libdrm_exynos=0.7 pc:libdrm_freedreno=2.4.114 pc:libdrm_nouveau=2.4.114 pc:libdrm_omap=0.6 pc:libdrm_radeon=2.4.114 pc:libdrm_tegra=2.4.114 pc:libdrm_vc4=2.4.114
 
-C:Q1QfHdasVtikxl2iNrzYv6oSrnIYE=
-P:linux-firmware-none
-V:20221214-r1
-A:s390x
-S:1528
-I:4096
-T:Empty linux firwmare package for those who does not need any firmware
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1dpcPXhATloIvqfLIYGtHrtg9Htc=
 P:powertop
 V:2.15-r0
@@ -1069,6 +1054,21 @@ o:lua-struct
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
+
+C:Q1GTU6wIX7zad2SSLcwORbZ0lXB+I=
+P:linux-firmware-dpaa2
+V:20221214-r3
+A:s390x
+S:6485070
+I:15478784
+T:firmware files for linux (dpaa2 folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1jPFdQ70j+jRGKTba9RNPBxsZ1cc=
 P:perl-doc
@@ -1845,6 +1845,21 @@ c:0714a84b7f79009ae8b96aef50216ed72f54b885
 D:so:libc.musl-s390x.so.1
 p:so:libdb-5.3.so=0
 
+C:Q18JlCwP3sR0k2UctGNwvcyZSjNpg=
+P:linux-firmware-bnx2
+V:20221214-r3
+A:s390x
+S:106921
+I:241664
+T:firmware files for linux (bnx2 folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q14f9GsXH3RpF/Dv2me7wzLl1rLWc=
 P:skalibs
 V:2.12.0.1-r0
@@ -1875,21 +1890,6 @@ m:Johannes Matheis <jomat+alpinebuild@jmt.gr>
 t:1666625766
 c:af2c37ae851b3611e829441ac12d18ccfa8cc8c0
 i:docs jq=1.6-r2
-
-C:Q1RP1WbBim7HdizEPtgDaLT/z5Tws=
-P:linux-firmware-nxp
-V:20221214-r1
-A:s390x
-S:213643
-I:229376
-T:firmware files for linux (nxp folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1VN/giwZ7TMrjf7C7dqn6SvUfiGM=
 P:pmacct
@@ -2309,6 +2309,23 @@ t:1689713885
 c:ca6f6958c03e3b25f1e9c99a1ad70a2978edfc28
 k:100
 i:docs nodejs=18.17.0-r0
+
+C:Q1hgIcjrruYtVFNMDSSRDhwoTP0wg=
+P:linux-firmware
+V:20221214-r3
+A:s390x
+S:2004
+I:4096
+T:firmware files for linux
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+k:1
+D:linux-firmware-yamaha=20221214-r3 linux-firmware-yam=20221214-r3 linux-firmware-wfx=20221214-r3 linux-firmware-vxge=20221214-r3 linux-firmware-vicam=20221214-r3 linux-firmware-ueagle-atm=20221214-r3 linux-firmware-ttusb-budget=20221214-r3 linux-firmware-tigon=20221214-r3 linux-firmware-ti-keystone=20221214-r3 linux-firmware-ti-connectivity=20221214-r3 linux-firmware-ti=20221214-r3 linux-firmware-tehuti=20221214-r3 linux-firmware-sxg=20221214-r3 linux-firmware-sun=20221214-r3 linux-firmware-slicoss=20221214-r3 linux-firmware-sb16=20221214-r3 linux-firmware-rtw89=20221214-r3 linux-firmware-rtw88=20221214-r3 linux-firmware-rtlwifi=20221214-r3 linux-firmware-rtl_nic=20221214-r3 linux-firmware-rtl_bt=20221214-r3 linux-firmware-rtl8192e=20221214-r3 linux-firmware-rsi=20221214-r3 linux-firmware-rockchip=20221214-r3 linux-firmware-radeon=20221214-r3 linux-firmware-r128=20221214-r3 linux-firmware-qlogic=20221214-r3 linux-firmware-qed=20221214-r3 linux-firmware-qcom=20221214-r3 linux-firmware-qca=20221214-r3 linux-firmware-ositech=20221214-r3 linux-firmware-nxp=20221214-r3 linux-firmware-nvidia=20221214-r3 linux-firmware-netronome=20221214-r3 linux-firmware-myricom=20221214-r3 linux-firmware-mwlwifi=20221214-r3 linux-firmware-mwl8k=20221214-r3 linux-firmware-mrvl=20221214-r3 linux-firmware-moxa=20221214-r3 linux-firmware-microchip=20221214-r3 linux-firmware-meson=20221214-r3 linux-firmware-mellanox=20221214-r3 linux-firmware-mediatek=20221214-r3 linux-firmware-matrox=20221214-r3 linux-firmware-liquidio=20221214-r3 linux-firmware-libertas=20221214-r3 linux-firmware-korg=20221214-r3 linux-firmware-keyspan_pda=20221214-r3 linux-firmware-keyspan=20221214-r3 linux-firmware-kaweth=20221214-r3 linux-firmware-isci=20221214-r3 linux-firmware-intel=20221214-r3 linux-firmware-inside-secure=20221214-r3 linux-firmware-imx=20221214-r3 linux-firmware-i915=20221214-r3 linux-firmware-go7007=20221214-r3 linux-firmware-ess=20221214-r3 linux-firmware-ene-ub6250=20221214-r3 linux-firmware-emi62=20221214-r3 linux-firmware-emi26=20221214-r3 linux-firmware-edgeport=20221214-r3 linux-firmware-e100=20221214-r3 linux-firmware-dsp56k=20221214-r3 linux-firmware-dpaa2=20221214-r3 linux-firmware-dabusb=20221214-r3 linux-firmware-cypress=20221214-r3 linux-firmware-cxgb4=20221214-r3 linux-firmware-cxgb3=20221214-r3 linux-firmware-cpia2=20221214-r3 linux-firmware-cnm=20221214-r3 linux-firmware-cis=20221214-r3 linux-firmware-cirrus=20221214-r3 linux-firmware-cavium=20221214-r3 linux-firmware-cadence=20221214-r3 linux-firmware-brcm=20221214-r3 linux-firmware-bnx2x=20221214-r3 linux-firmware-bnx2=20221214-r3 linux-firmware-av7110=20221214-r3 linux-firmware-atusb=20221214-r3 linux-firmware-atmel=20221214-r3 linux-firmware-ath9k_htc=20221214-r3 linux-firmware-ath6k=20221214-r3 linux-firmware-ath11k=20221214-r3 linux-firmware-ath10k=20221214-r3 linux-firmware-ar3k=20221214-r3 linux-firmware-amphion=20221214-r3 linux-firmware-amdgpu=20221214-r3 linux-firmware-amd-ucode=20221214-r3 linux-firmware-amd=20221214-r3 linux-firmware-advansys=20221214-r3 linux-firmware-adaptec=20221214-r3 linux-firmware-acenic=20221214-r3 linux-firmware-3com=20221214-r3 linux-firmware-other=20221214-r3
+p:linux-firmware-any
 
 C:Q1KOoGYq3ciP8/Cq2X3A/HMOMkMZs=
 P:uwsgi-zergpool
@@ -2972,6 +2989,21 @@ t:1670942927
 c:ac25ec36eafde0f761ef821946aecf1c266f3843
 i:openrc knot=3.2.4-r0
 
+C:Q1wt7RMB1/UNKBQtB+UTy7+jFwQts=
+P:linux-firmware-amd-ucode
+V:20221214-r3
+A:s390x
+S:39610
+I:86016
+T:firmware files for linux (amd-ucode folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1c/ERUZ7CePXKj8Fk+kqkEHL/fZc=
 P:mtd-utils-nand
 V:2.1.4-r1
@@ -3422,6 +3454,21 @@ m:Fabio Ribeiro <fabiorphp@gmail.com>
 t:1659429320
 c:39cde24fb54a667a6730bdaec3233184227131f6
 
+C:Q1BzGwMTnJYDnPO/118+9SgXx3VnE=
+P:linux-firmware-cis
+V:20221214-r3
+A:s390x
+S:4163
+I:81920
+T:firmware files for linux (cis folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1qCXsxM2JncCcikZwNPec+5UM0ug=
 P:findutils-locate-doc
 V:4.9.0-r3
@@ -3700,21 +3747,6 @@ c:2c89299bdbcfb1aa1690460d109d1f5e0cbbf434
 D:net-snmp-perl perl-tk
 p:cmd:tkmib=5.9.3-r2
 
-C:Q1gPIZsNrwEg1aLpxzKnvFkmTbeg8=
-P:linux-firmware-radeon
-V:20221214-r1
-A:s390x
-S:3597918
-I:7761920
-T:firmware files for linux (radeon folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q18F2JMyI28Nu8dNzFd7wTFm09/Zo=
 P:apache2-ssl
 V:2.4.57-r0
@@ -3870,6 +3902,36 @@ c:8f940e4f2308f6f432a8680a79156a6f5040857d
 k:15
 D:postgresql15=15.3-r0 so:libLLVM-14.so so:libc.musl-s390x.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:postgresql-jit
+
+C:Q13SmI5y4nll0DhpH8CO2j2+tFLIc=
+P:linux-firmware-ar3k
+V:20221214-r3
+A:s390x
+S:285301
+I:618496
+T:firmware files for linux (ar3k folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
+C:Q1z3ePcAgZMDQnx4+6xjTjwmvfRV8=
+P:linux-firmware-e100
+V:20221214-r3
+A:s390x
+S:2447
+I:28672
+T:firmware files for linux (e100 folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1gGwnmOfaQzed0hcMLrnYobkAY4U=
 P:gtk-update-icon-cache
@@ -4331,21 +4393,6 @@ c:304817ef522b1cf47839939d74ea715c821f65b9
 D:libucontext=1.2-r0 pkgconfig
 p:pc:libucontext=1.2
 
-C:Q15xvAtxfuJj95V+2dVX5YdFGl6G4=
-P:linux-firmware-edgeport
-V:20221214-r1
-A:s390x
-S:29145
-I:90112
-T:firmware files for linux (edgeport folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1NxPVztg3AFKpBke7d5sWHtcnGEk=
 P:perl-yaml-tiny
 V:1.73-r2
@@ -4531,6 +4578,21 @@ t:1630247205
 c:1db86a6e236a9479c0d72f8f5596d752a8a4ddf8
 i:docs perl-sub-exporter=0.988-r0
 
+C:Q1sI2dlcW5OxBBdt/MzCsgKu8q7lA=
+P:linux-firmware-slicoss
+V:20221214-r3
+A:s390x
+S:81639
+I:299008
+T:firmware files for linux (slicoss folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1UvL4/VN+DVlG73CpJ48IlZD4N1U=
 P:rrdcollect
 V:0.2.10-r3
@@ -4590,21 +4652,6 @@ o:lua-sql
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1685931441
 c:40030ca7d4e49d417533bb3419dac6f78b54044b
-
-C:Q13MqzuExoA210GuEtsOJMLISpQYs=
-P:linux-firmware-cxgb4
-V:20221214-r1
-A:s390x
-S:3004026
-I:4788224
-T:firmware files for linux (cxgb4 folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1TNWFhc/8kuh6KPqWvqxfzuytBLg=
 P:libnetfilter_cthelper-dev
@@ -5085,22 +5132,6 @@ c:6d24f31f28eb76627002d9e9584ce00bb0fec4f6
 D:so:libc.musl-s390x.so.1 so:libldns.so.3
 p:cmd:drill=1.8.3-r0
 
-C:Q114PIhTs+9izVsfhQ4BCC+MZSUvg=
-P:linux-firmware-brcm
-V:20221214-r1
-A:s390x
-S:10932583
-I:17285120
-T:firmware files for linux (brcm folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-D:linux-firmware-cypress=20221214-r1
-p:linux-firmware-any
-
 C:Q1WoiXc5k2Y8er1R7S8Iy9zf7VwMg=
 P:libotr-doc
 V:4.1.1-r3
@@ -5259,6 +5290,21 @@ c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:so:libc.musl-s390x.so.1
 p:so:liblockfile.so.1=1.0 cmd:dotlockfile=1.17-r1
 
+C:Q1UcrYefA964MTdO8DTHFDqjQzvOw=
+P:linux-firmware-yam
+V:20221214-r3
+A:s390x
+S:7377
+I:32768
+T:firmware files for linux (yam folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1RvsqXNk2uDgBpulocncvGbcPci0=
 P:acct
 V:6.6.4-r1
@@ -5398,21 +5444,6 @@ t:1648631365
 c:2cf47a8f695fd160a3c3572f0ee46cf8f6ab746b
 D:gpm so:libc.musl-s390x.so.1 so:libgpm.so.2
 p:cmd:disable-paste=1.20.7-r2 cmd:display-buttons=1.20.7-r2 cmd:display-coords=1.20.7-r2 cmd:get-versions=1.20.7-r2 cmd:gpm-root=1.20.7-r2 cmd:hltest=1.20.7-r2 cmd:mev=1.20.7-r2 cmd:mouse-test=1.20.7-r2
-
-C:Q17tGArdH49lHXd91dJj6QN/CgnwE=
-P:linux-firmware-emi26
-V:20221214-r1
-A:s390x
-S:71337
-I:155648
-T:firmware files for linux (emi26 folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q14F0bAYq3F3BqA4VZITDazsaLRHw=
 P:nload
@@ -6488,6 +6519,21 @@ t:1667743833
 c:76988828c18a4ab5d9aa4aee13a4fe7501a6efec
 D:so:libc.musl-s390x.so.1 so:liblber.so.2
 
+C:Q10LDEt9v4knizO/IXMuodq34wry8=
+P:linux-firmware-rtw89
+V:20221214-r3
+A:s390x
+S:2003022
+I:3997696
+T:firmware files for linux (rtw89 folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1dP2KfXiOxslGG5HuB0+MpRxqdeE=
 P:dropbear
 V:2022.83-r0
@@ -6533,6 +6579,21 @@ t:1660599964
 c:b0898a260a5646d18cccb9ac07bbdcf1037219cf
 k:100
 i:docs p7zip=17.04-r3
+
+C:Q1GffF1XOl7FS5p/2J+4aLfh3FRmI=
+P:linux-firmware-ath10k
+V:20221214-r3
+A:s390x
+S:7882806
+I:15818752
+T:firmware files for linux (ath10k folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1G9dlW/mLLbthAdisHlk9dRhu3NY=
 P:dovecot-pop3d
@@ -6969,6 +7030,21 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:so:libc.musl-s390x.so.1 so:libz.so.1
 i:lua5.3 lua-lzlib=0.4.3-r1
 
+C:Q1T1kic6tnppjIklZVq6mTXz2MwsQ=
+P:linux-firmware-rtl_bt
+V:20221214-r3
+A:s390x
+S:558169
+I:1028096
+T:firmware files for linux (rtl_bt folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1sICXHDa9zVjNbMc5eROY/NZ2TNM=
 P:guile-libs
 V:3.0.8-r3
@@ -7185,6 +7261,21 @@ m:Natanael Copa <ncopa@alpinlinux.org>
 t:1610956956
 c:77f03f7d86e67dd0e79cec523edf11eb38082b9c
 i:lua5.2 lua-alt-getopt=0.8.0-r0
+
+C:Q1fmIm0vrObA+cIuNn9Wz1NxWkOvQ=
+P:linux-firmware-cirrus
+V:20221214-r3
+A:s390x
+S:148952
+I:733184
+T:firmware files for linux (cirrus folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1DzoEq3e3FmuSN1pAx4Qbb3fCLuk=
 P:nginx-mod-http-upload-progress
@@ -7540,22 +7631,6 @@ m:Ben Pye <ben@curlybracket.co.uk>
 t:1642828443
 c:3f587f98a7ee1b6e849db5f4bbc57b7c67e2d286
 i:docs libunwind=1.6.2-r0
-
-C:Q1BuopOMUeOaS3iXT0SvBlPTv+GWo=
-P:linux-firmware-libertas
-V:20221214-r1
-A:s390x
-S:1360228
-I:1957888
-T:firmware files for linux (libertas folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-D:linux-firmware-mrvl=20221214-r1
-p:linux-firmware-any
 
 C:Q1R0moum6Ts+kQdTEDx9n8ZlkRHJA=
 P:tmux-zsh-completion
@@ -8420,21 +8495,6 @@ t:1667923741
 c:faacca451468903872ba8be74c0d2a96313fa643
 D:gcc libc-dev libgcc
 
-C:Q1kNK36C7ltRy3Ck2RmuKmBq9Pw5o=
-P:linux-firmware-ar3k
-V:20221214-r1
-A:s390x
-S:285283
-I:618496
-T:firmware files for linux (ar3k folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1gxMfUck7K1tCs/EiahTNpw/eCgE=
 P:libecpg-dev
 V:15.3-r0
@@ -8986,6 +9046,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1675354443
 c:2db3c30721ee066a186fc539258e6e17a409daa9
 D:so:libc.musl-s390x.so.1 so:libmariadb.so.3
+
+C:Q15DO12Wk2+5JBW97bmWshWLag4As=
+P:linux-firmware-bnx2x
+V:20221214-r3
+A:s390x
+S:2425294
+I:2719744
+T:firmware files for linux (bnx2x folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1dZIR+GaYulhe2yRz4yoqXf7OfnA=
 P:mysql
@@ -9986,6 +10061,21 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:so:libc.musl-s390x.so.1
 i:lua5.2 lua-struct=0.2-r3
 
+C:Q1R02CQNh5pseWD+VlxQuz9g10+CU=
+P:linux-firmware-imx
+V:20221214-r3
+A:s390x
+S:3976
+I:28672
+T:firmware files for linux (imx folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1KcWET2DTLaIu0GD9x0LoMlsHVjk=
 P:xcb-proto
 V:1.15.2-r0
@@ -10483,21 +10573,6 @@ c:fb67213c4818ffea6399861a68b58b55bf93b03d
 D:so:libc.musl-s390x.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:cmd:lzip=1.23-r0
 
-C:Q1RU56eDwDzZxZbd5NOzRxbaA7GuQ=
-P:linux-firmware-go7007
-V:20221214-r1
-A:s390x
-S:58584
-I:225280
-T:firmware files for linux (go7007 folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1pfTsWUg37GI45IbIs81ssUCmRQw=
 P:lua-yaml
 V:1.1.2-r5
@@ -10543,21 +10618,6 @@ t:1659429320
 c:39cde24fb54a667a6730bdaec3233184227131f6
 D:/bin/sh so:libc.musl-s390x.so.1 so:libcrypto.so.3 so:libpam.so.0 so:libssl.so.3 so:libz.so.1
 p:cmd:ngircd=26.1-r3
-
-C:Q1/LLQmdF+Bs7EYBZ8OWtPeG1W4x4=
-P:linux-firmware-ath9k_htc
-V:20221214-r1
-A:s390x
-S:63663
-I:143360
-T:firmware files for linux (ath9k_htc folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1LEBd/1sTZ6qAI7hWjoFdokE3anM=
 P:cifs-utils-dev
@@ -10878,6 +10938,21 @@ o:ncurses
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1685173709
 c:54a39ace82a9e8d1785ca0ba2d3c5d24b2def24c
+
+C:Q1ulVGLuI97yF8tUBUq2Y+NcorgTA=
+P:linux-firmware-none
+V:20221214-r3
+A:s390x
+S:1534
+I:4096
+T:Empty linux firwmare package for those who does not need any firmware
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1XoySAc4if4eeJ2m9ppU8ClzUm9w=
 P:pciutils-libs
@@ -11404,6 +11479,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1667235598
 c:dfb827fab2f783983bce4f4ab53d67078047032c
 D:giflib=5.2.1-r2
+
+C:Q1Rmh3x2yAkcdp4VT2SVeQl8IhyhA=
+P:linux-firmware-nvidia
+V:20221214-r3
+A:s390x
+S:1785517
+I:4800512
+T:firmware files for linux (nvidia folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1RzPs8CACOSnNLAspehJR+MNZWcs=
 P:apr
@@ -12294,19 +12384,19 @@ t:1666625766
 c:af2c37ae851b3611e829441ac12d18ccfa8cc8c0
 D:jq=1.6-r2
 
-C:Q1IeaXqisI1aZqJINn6y6cPWtDt9M=
-P:linux-firmware-av7110
-V:20221214-r1
+C:Q1AKI/6U/8mQDeWPzhK7yexlKYA70=
+P:linux-firmware-cavium
+V:20221214-r3
 A:s390x
-S:1832
-I:20480
-T:firmware files for linux (av7110 folder)
+S:37187
+I:69632
+T:firmware files for linux (cavium folder)
 U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
 L:custom:multiple
 o:linux-firmware
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
 p:linux-firmware-any
 
 C:Q1R737MUB5mxKbd6mblkI5kfRb+BE=
@@ -12323,21 +12413,6 @@ m:Mika Havela <mika.havela@gmail.com>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-carp-clan=6.08-r1
-
-C:Q1iepllv0W6y+OmNigFH1qMpu2fhc=
-P:linux-firmware-tigon
-V:20221214-r1
-A:s390x
-S:8194
-I:36864
-T:firmware files for linux (tigon folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q12zNKKBtPf5ra6m1vT64VBibnk2s=
 P:perl-config-autoconf-doc
@@ -12400,6 +12475,21 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1649093062
 c:deb1ebd97898fa01e091a4e2d98f7d4a591afb53
 D:ruby
+
+C:Q1yiexFZE2DFTmjEi5glBrDFLYO0I=
+P:linux-firmware-amphion
+V:20221214-r3
+A:s390x
+S:350477
+I:528384
+T:firmware files for linux (amphion folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1zrKuIzpjD66fhzqvXbcLHOR6NAA=
 P:libseccomp-doc
@@ -13149,21 +13239,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-html-tagset=3.20-r3
 
-C:Q1tLSjKrEUYJYf9B4RA8KO9UyH0cY=
-P:linux-firmware-sxg
-V:20221214-r1
-A:s390x
-S:40480
-I:139264
-T:firmware files for linux (sxg folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q11KV+Ui93rWi5JeM8q4Sqh+LU6m8=
 P:py3-gpep517
 V:11-r0
@@ -13224,6 +13299,21 @@ o:dhcp
 t:1667166435
 c:3ce9ec2c4d426262d5e70e56ef965e19a444769c
 D:dhcp-dev=4.4.3_p1-r1
+
+C:Q1Kmx+Hgtd9LL/ghMjVlc7cwh19vw=
+P:linux-firmware-qed
+V:20221214-r3
+A:s390x
+S:11458993
+I:21438464
+T:firmware files for linux (qed folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1QVWTtfIik4hbTbUpoSEs+kudv0w=
 P:perl-mime-types
@@ -13380,6 +13470,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1680211753
 c:98fa1f428e93986053cd4cf5d9fc847d23ed2ac8
 i:docs irssi=1.4.4-r0
+
+C:Q1mWfOfMAH01CsAXSlyhRuQAmdNj4=
+P:linux-firmware-libertas
+V:20221214-r3
+A:s390x
+S:1360259
+I:1957888
+T:firmware files for linux (libertas folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+D:linux-firmware-mrvl=20221214-r3
+p:linux-firmware-any
 
 C:Q1zBZgAvVBuKisDmwrrMoO9GQ3P18=
 P:perl-mail-dkim-doc
@@ -14064,6 +14170,21 @@ t:1681461364
 c:62f9529517f32b59704fdd60819420373b6dd4c5
 D:kamailio so:libc.musl-s390x.so.1 so:libevent-2.1.so.7 so:libhiredis.so.1.0.0 so:libsrdb1.so.1
 
+C:Q1IeM9x/qRVoZasy9f1ijVwr/RKkg=
+P:linux-firmware-qlogic
+V:20221214-r3
+A:s390x
+S:69816
+I:143360
+T:firmware files for linux (qlogic folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1lCZBa+vHN/t3J5tqzye2jXwJWAQ=
 P:libsmartcols
 V:2.38.1-r1
@@ -14510,21 +14631,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1659792088
 c:0714a84b7f79009ae8b96aef50216ed72f54b885
 i:docs udns=0.4-r2
-
-C:Q1QYGaQjzPI1DAHvA2fnffKGKNcuU=
-P:linux-firmware-korg
-V:20221214-r1
-A:s390x
-S:5063
-I:32768
-T:firmware files for linux (korg folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1Y2d7UTXPrpGZqQ1nHMe2p4KxvFQ=
 P:bind
@@ -15087,21 +15193,6 @@ t:1654671545
 c:13f2471b0e78b03d7c835d16066b7e635d25b55b
 D:so:libc.musl-s390x.so.1 so:liblua.so.5 so:librrd.so.8
 
-C:Q1lYSBXBlJO/ugWo5ryY3FoAqX/Jw=
-P:linux-firmware-ath6k
-V:20221214-r1
-A:s390x
-S:721031
-I:978944
-T:firmware files for linux (ath6k folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1t/gP5KotStzRNAQGZly0UhfYAlQ=
 P:ferm
 V:2.7-r0
@@ -15256,21 +15347,6 @@ m:Ted Trask <ttrask01@yahoo.com>
 t:1621087673
 c:ec4e35bcdcf38829d2a36ff4d7cd4351ebb67d1c
 D:acf-core ppp
-
-C:Q1buZLV8Nc1rTY/2R4Bx+6udczPk8=
-P:linux-firmware-intel
-V:20221214-r1
-A:s390x
-S:19873432
-I:35635200
-T:firmware files for linux (intel folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q17s2YVzKh6ZGMVDeFBUwh6blxt4c=
 P:nginx-mod-http-geoip
@@ -15443,6 +15519,21 @@ t:1642281104
 c:826d2dc6226e6d6b3befd4549d896066e26320f5
 D:cjson=1.7.15-r3 pkgconfig
 p:pc:libcjson=1.7.15
+
+C:Q1iuri4ob9h8dRkS6krwe2F7osvZ8=
+P:linux-firmware-amd
+V:20221214-r3
+A:s390x
+S:111069
+I:188416
+T:firmware files for linux (amd folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q123ZdqghR3Q+IdMpJGxV1H+6Z9Cc=
 P:indent-lang
@@ -16011,6 +16102,21 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1654671544
 c:3f5512b2e40c5fcf766155040d20952c492d8262
 D:perl so:libc.musl-s390x.so.1
+
+C:Q1dur91/YNwqTP20Z0a3NCq9IjQVU=
+P:linux-firmware-mrvl
+V:20221214-r3
+A:s390x
+S:81668032
+I:84951040
+T:firmware files for linux (mrvl folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1nCXbT/tmV3v/vB3qOIZxwKj7d0g=
 P:bluez
@@ -16673,21 +16779,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1655737558
 c:68bc4ef9383259e4be1fbb5f562a7eba4897244d
 
-C:Q1b6KtTrcNtGFP5cA0Gi3zh7/MLbY=
-P:linux-firmware-ti-keystone
-V:20221214-r1
-A:s390x
-S:2901
-I:20480
-T:firmware files for linux (ti-keystone folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1ALXuv0RBHrbmQ/M3SdQ0zis6of4=
 P:jq
 V:1.6-r2
@@ -16950,21 +17041,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-crypt-x509=0.54-r0
 
-C:Q1hO8V79IjJJG2AAF934Xqp79H/G0=
-P:linux-firmware-mwlwifi
-V:20221214-r1
-A:s390x
-S:423716
-I:626688
-T:firmware files for linux (mwlwifi folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1+U0oMor6X0t7uju6erYtuzLcqZE=
 P:python3-tests
 V:3.10.12-r0
@@ -17040,21 +17116,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1667393100
 c:bfa73807f65ddcdeb4234fe81a92e3d7cfce2294
 i:docs lcms2=2.14-r0
-
-C:Q1ICeuU+OlHLf7urgE3BAJDRn0FPU=
-P:linux-firmware-cypress
-V:20221214-r1
-A:s390x
-S:4073090
-I:6393856
-T:firmware files for linux (cypress folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1RHsF7BF8C5LwFXvzkhxJmftMXt0=
 P:perl-net-telnet-doc
@@ -17608,21 +17669,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 i:openrc quagga=1.2.4-r6
-
-C:Q10TxFLbpqlc0V9+REc1w3xJGKEdM=
-P:linux-firmware-netronome
-V:20221214-r1
-A:s390x
-S:17204995
-I:147038208
-T:firmware files for linux (netronome folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1dUq+iEU9MGourxblNH+IqG4okGk=
 P:ruby-rr
@@ -18705,6 +18751,21 @@ c:bff7737d909b2a3f59d322c652d26b7885642271
 D:bash /bin/sh so:libc.musl-s390x.so.1 so:libcrypto.so.3 so:libcryptsetup.so.12 so:libcurl.so.4 so:libfuse3.so.3 so:libgcc_s.so.1 so:libjson-c.so.5 so:liblockfile.so.1 so:libncursesw.so.6 so:libnetsnmp.so.40 so:libnetsnmpagent.so.40 so:libssl.so.3 so:libstdc++.so.6 so:libxml2.so.2 so:libz.so.1
 p:so:libekmfweb.so.1=1.0 so:libkmipclient.so.1=1.0 cmd:chccwdev=2.23.0-r0 cmd:chchp=2.23.0-r0 cmd:chcpumf=2.23.0-r0 cmd:chiucvallow=2.23.0-r0 cmd:chreipl=2.23.0-r0 cmd:chshut=2.23.0-r0 cmd:chzcrypt=2.23.0-r0 cmd:chzdev=2.23.0-r0 cmd:cio_ignore=2.23.0-r0 cmd:cmsfs-fuse=2.23.0-r0 cmd:dasdfmt=2.23.0-r0 cmd:dasdinfo=2.23.0-r0 cmd:dasdstat=2.23.0-r0 cmd:dasdview=2.23.0-r0 cmd:dbginfo.sh=2.23.0-r0 cmd:dump2tar=2.23.0-r0 cmd:fdasd=2.23.0-r0 cmd:hmcdrvfs=2.23.0-r0 cmd:hsavmcore=2.23.0-r0 cmd:hsci=2.23.0-r0 cmd:hyptop=2.23.0-r0 cmd:ip_watcher.pl=2.23.0-r0 cmd:iucvconn=2.23.0-r0 cmd:iucvtty=2.23.0-r0 cmd:lschp=2.23.0-r0 cmd:lscpumf=2.23.0-r0 cmd:lscss=2.23.0-r0 cmd:lsdasd=2.23.0-r0 cmd:lshmc=2.23.0-r0 cmd:lshwc=2.23.0-r0 cmd:lsiucvallow=2.23.0-r0 cmd:lsluns=2.23.0-r0 cmd:lsqeth=2.23.0-r0 cmd:lsreipl=2.23.0-r0 cmd:lsscm=2.23.0-r0 cmd:lsshut=2.23.0-r0 cmd:lsstp=2.23.0-r0 cmd:lstape=2.23.0-r0 cmd:lszcrypt=2.23.0-r0 cmd:lszdev=2.23.0-r0 cmd:lszfcp=2.23.0-r0 cmd:mk-s390-cdboot=2.23.0-r0 cmd:mon_fsstatd=2.23.0-r0 cmd:mon_procd=2.23.0-r0 cmd:osasnmpd=2.23.0-r0 cmd:pai=2.23.0-r0 cmd:pvextract-hdr=2.23.0-r0 cmd:qetharp=2.23.0-r0 cmd:qethconf=2.23.0-r0 cmd:qethqoat=2.23.0-r0 cmd:sclpdbf=2.23.0-r0 cmd:scsi_logging_level=2.23.0-r0 cmd:start_hsnc.sh=2.23.0-r0 cmd:tape390_crypt=2.23.0-r0 cmd:tape390_display=2.23.0-r0 cmd:ts-shell=2.23.0-r0 cmd:ttyrun=2.23.0-r0 cmd:tunedasd=2.23.0-r0 cmd:vmconvert=2.23.0-r0 cmd:vmcp=2.23.0-r0 cmd:vmur=2.23.0-r0 cmd:xcec-bridge=2.23.0-r0 cmd:zcryptctl=2.23.0-r0 cmd:zcryptstats=2.23.0-r0 cmd:zdsfs=2.23.0-r0 cmd:zfcpdbf=2.23.0-r0 cmd:zgetdump=2.23.0-r0 cmd:ziomon=2.23.0-r0 cmd:ziomon_fcpconf=2.23.0-r0 cmd:ziomon_mgr=2.23.0-r0 cmd:ziomon_util=2.23.0-r0 cmd:ziomon_zfcpdd=2.23.0-r0 cmd:ziorep_config=2.23.0-r0 cmd:ziorep_traffic=2.23.0-r0 cmd:ziorep_utilization=2.23.0-r0 cmd:zipl-editenv=2.23.0-r0 cmd:zipl-switch-to-blscfg=2.23.0-r0 cmd:zipl=2.23.0-r0 cmd:zkey-cryptsetup=2.23.0-r0 cmd:zkey=2.23.0-r0 cmd:znetconf=2.23.0-r0 cmd:zpcictl=2.23.0-r0
 
+C:Q1x8Vb42d7sDFbZMAhLSPuC08F76M=
+P:linux-firmware-edgeport
+V:20221214-r3
+A:s390x
+S:29149
+I:90112
+T:firmware files for linux (edgeport folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1SVd09cvX8wKqIoMtpF5cuQ2VaOU=
 P:yajl-tools
 V:2.1.0-r5
@@ -19310,6 +19371,21 @@ t:1673786776
 c:2c89299bdbcfb1aa1690460d109d1f5e0cbbf434
 D:so:libc.musl-s390x.so.1 so:libcrypto.so.3 so:libnetsnmp.so.40 so:libnetsnmpagent.so.40
 p:cmd:agentxtrap=5.9.3-r2 cmd:checkbandwidth=5.9.3-r2 cmd:encode_keychange=5.9.3-r2 cmd:net-snmp-create-v3-user=5.9.3-r2 cmd:snmpbulkget=5.9.3-r2 cmd:snmpbulkwalk=5.9.3-r2 cmd:snmpconf=5.9.3-r2 cmd:snmpdelta=5.9.3-r2 cmd:snmpdf=5.9.3-r2 cmd:snmpget=5.9.3-r2 cmd:snmpgetnext=5.9.3-r2 cmd:snmpinform=5.9.3-r2 cmd:snmpnetstat=5.9.3-r2 cmd:snmpping=5.9.3-r2 cmd:snmpset=5.9.3-r2 cmd:snmpstatus=5.9.3-r2 cmd:snmptable=5.9.3-r2 cmd:snmptest=5.9.3-r2 cmd:snmptranslate=5.9.3-r2 cmd:snmptrap=5.9.3-r2 cmd:snmpusm=5.9.3-r2 cmd:snmpvacm=5.9.3-r2 cmd:snmpwalk=5.9.3-r2
+
+C:Q1K0a9v4lrMM5VHyPVFhG0O/UKUXA=
+P:linux-firmware-amdgpu
+V:20221214-r3
+A:s390x
+S:23650007
+I:70438912
+T:firmware files for linux (amdgpu folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1wKOlYiEQ4+kfHTAOlUQkw7WCePM=
 P:ifupdown
@@ -20893,21 +20969,6 @@ c:84d02e8c3abb163d4ca89e62e831c4116b9ea195
 D:ghostscript bash tiff-tools findutils !hylafax
 i:hylafaxplus=7.0.6-r1 lang
 
-C:Q1k0hZ13bUVYePlwi5IF/Zqv0+Fug=
-P:linux-firmware-acenic
-V:20221214-r1
-A:s390x
-S:52243
-I:167936
-T:firmware files for linux (acenic folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1IyKx6O6nvjRTbB6KUxxGUEg6QOQ=
 P:libusb
 V:1.0.26-r0
@@ -21359,6 +21420,21 @@ t:1665912996
 c:f71267930a9d6b88eda37c178a68d34ac6450098
 D:freeradius=3.0.26-r0 perl so:libc.musl-s390x.so.1 so:libperl.so
 p:freeradius3-perl=3.0.26-r0 so:rlm_perl.so=0
+
+C:Q1iPbEP8GKwlCFaMsFmBZxI/enCrE=
+P:linux-firmware-rtlwifi
+V:20221214-r3
+A:s390x
+S:509262
+I:1081344
+T:firmware files for linux (rtlwifi folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1+dqdewiw0+4mNwbqekwUiDJdCUE=
 P:iproute2-dev
@@ -22263,21 +22339,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1665753996
 c:84d02e8c3abb163d4ca89e62e831c4116b9ea195
 i:docs sfic=0.1.7-r8
-
-C:Q1XHasydkxX4YgC/yLdzrlwvueAfo=
-P:linux-firmware-vicam
-V:20221214-r1
-A:s390x
-S:2910
-I:20480
-T:firmware files for linux (vicam folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1799tCqFWSek96lwoeW517XndR9M=
 P:apr-util-dbd_pgsql
@@ -23306,6 +23367,21 @@ t:1680044278
 c:f0fc0d47fb725b98cc2cdbe8894f6df648aa32c5
 i:docs tzdata=2023c-r0
 
+C:Q16cImry3pafDx92dLUmrWsRBiRW4=
+P:linux-firmware-rtw88
+V:20221214-r3
+A:s390x
+S:322229
+I:700416
+T:firmware files for linux (rtw88 folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1yiX4aHbI9FVizeTciCPHTlVg6t0=
 P:ulogd-pgsql
 V:2.0.8-r0
@@ -23457,21 +23533,6 @@ c:511484e0cb37eec41f2078695e729a66c204b458
 D:libkcapi=1.4.0-r0 pkgconfig
 p:pc:libkcapi=1.4.0
 
-C:Q1DfqeY9hyrS+gf/15f7hiBkNnjp4=
-P:linux-firmware-cadence
-V:20221214-r1
-A:s390x
-S:25222
-I:147456
-T:firmware files for linux (cadence folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1rpQ2BWConEFB1tetLjUmUanFiaI=
 P:glib-dbg
 V:2.74.7-r0
@@ -23590,21 +23651,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
-
-C:Q1/e7tEkmRIWOaCnMmIrJiiAGWI8g=
-P:linux-firmware-moxa
-V:20221214-r1
-A:s390x
-S:160708
-I:430080
-T:firmware files for linux (moxa folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1rU6T32XaDfE375jVPViD/D3AAp8=
 P:nginx-mod-stream-js
@@ -24617,6 +24663,21 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
 
+C:Q1ZmimLF+zA1cLdGOtUiYyKoBN6Jo=
+P:linux-firmware-dsp56k
+V:20221214-r3
+A:s390x
+S:1802
+I:20480
+T:firmware files for linux (dsp56k folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1qDJ2JWd3lqBKDz1WdL81LgzaMxE=
 P:gpsd-clients
 V:3.24-r0
@@ -24694,6 +24755,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1673787192
 c:329e3fac5271a173df1545f43f86f20f5f183e44
 i:openrc ppp=2.4.9-r6
+
+C:Q1TBOi18BAqOWbzicUro3Z7YAvRNQ=
+P:linux-firmware-myricom
+V:20221214-r3
+A:s390x
+S:27400
+I:94208
+T:firmware files for linux (myricom folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1DShlvclhD8OykD/An7VgQp6MXOQ=
 P:openldap-back-ldap
@@ -24850,6 +24926,21 @@ c:a6d9294693dbc42d4f19bcb827637bf643bbc937
 D:perl iptables
 i:openrc ferm=2.7-r0
 
+C:Q1rQ9BC524LWNrG6/FfOYfuQL+Bm8=
+P:linux-firmware-advansys
+V:20221214-r3
+A:s390x
+S:15531
+I:45056
+T:firmware files for linux (advansys folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1/zpFVJIbItbh2deYTm9F5mjyNYE=
 P:perl-html-tree-doc
 V:5.07-r3
@@ -24911,6 +25002,21 @@ t:1656806331
 c:5e45686dd4e544d3a6b163b0eedc6af355e25811
 D:zsh
 i:zsh=5.9-r0 subversion
+
+C:Q1qFlAx51pochugDsT2HNlzXJ/MyY=
+P:linux-firmware-cxgb3
+V:20221214-r3
+A:s390x
+S:102424
+I:200704
+T:firmware files for linux (cxgb3 folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q12pxmTPKhYCBXrv5FNp0+8aYf758=
 P:gengetopt
@@ -24987,21 +25093,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1659504022
 c:a9e7073c01cfd978aa9d08cbd0fb28bdbf1f7729
 i:docs checkbashisms=2.22.2-r0
-
-C:Q1Ais4WRLtnPDMmG7YPWwlG4hXN9w=
-P:linux-firmware-mwl8k
-V:20221214-r1
-A:s390x
-S:422344
-I:630784
-T:firmware files for linux (mwl8k folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1pQDE41JArSZh5U+heVjQr0YHBMs=
 P:libsrtp-static
@@ -25385,6 +25476,21 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl perl-list-moreutils perl-io-stringy
+
+C:Q1Tw6JSw6w48MaEVLe4NHhaNDwj28=
+P:linux-firmware-mwlwifi
+V:20221214-r3
+A:s390x
+S:423731
+I:626688
+T:firmware files for linux (mwlwifi folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1MtSDbugjxnoy2ZEEeqBMhR9Zk0A=
 P:ckbcomp-doc
@@ -25807,21 +25913,6 @@ t:1661893370
 c:e8e5d0b39d8b14d4030287504081be33b497f39a
 D:so:libc.musl-s390x.so.1 so:librabbitmq.so.4 so:libsyslog-ng-3.38.so.0
 
-C:Q1iyPx/wRoqOLVQeH6oLf/Jlxanhs=
-P:linux-firmware-ath11k
-V:20221214-r1
-A:s390x
-S:14881248
-I:44331008
-T:firmware files for linux (ath11k folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1jIDIZwTxXBC3mtxZBZo8nA58Dco=
 P:eudev-doc
 V:3.2.11-r4
@@ -26170,6 +26261,21 @@ t:1662008452
 c:039309cc887bcefd5e3d09fb2b79e4cfb55926b0
 D:perl perl-net-dns
 
+C:Q1bG6yhd+loYrOBgCj/XeDPiBTD0M=
+P:linux-firmware-ath11k
+V:20221214-r3
+A:s390x
+S:14881295
+I:44331008
+T:firmware files for linux (ath11k folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1LReU0T6d/igkxJCO+RxTK664Kl0=
 P:boost1.80-math
 V:1.80.0-r3
@@ -26369,6 +26475,21 @@ c:72f38ece22272cb7bb278329c1ff67125cbefc77
 D:graphene=1.10.8-r1 pc:gobject-2.0 pc:gobject-2.0>=2.30.0 pkgconfig
 p:pc:graphene-1.0=1.10.8 pc:graphene-gobject-1.0=1.10.8
 
+C:Q1uG7Zbtr58YE5Guf5Qbj9kxEdH0o=
+P:linux-firmware-mwl8k
+V:20221214-r3
+A:s390x
+S:422365
+I:630784
+T:firmware files for linux (mwl8k folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1fIA1wz2tDl47/R3NufD5y+KFzmw=
 P:jpeg-dev
 V:9e-r0
@@ -26383,6 +26504,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1654638378
 c:02e97d24084a7c04f383e04637b57673e2c0d66e
 D:libjpeg-turbo-dev
+
+C:Q1PI2Q/4zohBT1rXA3o0glXz5PY1o=
+P:linux-firmware-cypress
+V:20221214-r3
+A:s390x
+S:4073111
+I:6393856
+T:firmware files for linux (cypress folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1DUswm/L+Cews+fc8tlUPSzgbVdk=
 P:kamailio-cpl
@@ -26477,21 +26613,6 @@ t:1668607008
 c:3e16db39083a627392784154ee98222a404ca38d
 D:so:libaio.so.1 so:libblkid.so.1 so:libc.musl-s390x.so.1 so:libdevmapper-event.so.1.02 so:libdevmapper.so.1.02
 p:so:libdevmapper-event-lvm2.so.2.03=2.03 so:liblvm2cmd.so.2.03=2.03
-
-C:Q1Qh2HiSbQPpM45v1GQ6F0e3Fbf3M=
-P:linux-firmware-inside-secure
-V:20221214-r1
-A:s390x
-S:1977
-I:28672
-T:firmware files for linux (inside-secure folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1pdXtqtm7gehGliz1miGKc9XlKHY=
 P:fribidi-dev
@@ -28233,6 +28354,21 @@ t:1689897750
 c:0c3815dc9f1db1a6fd4fa7e28c44f8e8c187e625
 i:docs curl=8.2.0-r1
 
+C:Q1WWysH/jH8Px4FSSh3fN3tQDBoKo=
+P:linux-firmware-rtl_nic
+V:20221214-r3
+A:s390x
+S:37590
+I:167936
+T:firmware files for linux (rtl_nic folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q12jbjndeA/JcPLKBgI3SkdjHHcVw=
 P:libsodium-dev
 V:1.0.18-r2
@@ -28539,6 +28675,21 @@ t:1659429320
 c:39cde24fb54a667a6730bdaec3233184227131f6
 i:openrc kmod=30-r1
 
+C:Q1YbJZg4z4EI/OJnIU2eFCpz2ZCCQ=
+P:linux-firmware-sun
+V:20221214-r3
+A:s390x
+S:3209
+I:20480
+T:firmware files for linux (sun folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1AsKyif1aAwEM3qZac9eRpEvDV3M=
 P:perl-font-afm
 V:1.20-r2
@@ -28722,21 +28873,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl perl-list-moreutils perl-module-runtime
 
-C:Q1evusw5TjKRF9VQotkHNmGWEptIs=
-P:linux-firmware-myricom
-V:20221214-r1
-A:s390x
-S:27393
-I:94208
-T:firmware files for linux (myricom folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1v0ikYmmz2s1CH6WaytfJK4r13us=
 P:gnutls-dbg
 V:3.7.8-r3
@@ -28796,6 +28932,22 @@ t:1658430359
 c:c00f8ff35db92d0bbbfcb1a510f8feffefe22c22
 D:so:libc.musl-s390x.so.1
 p:so:libseccomp.so.2=2.5.4 cmd:scmp_sys_resolver=2.5.4-r0
+
+C:Q1ZRBmy+P8LUfMZyaQLH6Meak98TQ=
+P:linux-firmware-brcm
+V:20221214-r3
+A:s390x
+S:10932645
+I:17285120
+T:firmware files for linux (brcm folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+D:linux-firmware-cypress=20221214-r3
+p:linux-firmware-any
 
 C:Q1t+BeirTLZRbuVV01QIhJc10/rkM=
 P:acf-lib-lua5.2
@@ -28889,6 +29041,21 @@ t:1659676082
 c:08e731db1414339b2e07c9949591476dfef0c40d
 D:util-linux-misc
 i:docs fish=3.5.1-r1
+
+C:Q1829MxN/FBpflV5mo/bSArIXidxM=
+P:linux-firmware-vxge
+V:20221214-r3
+A:s390x
+S:841583
+I:860160
+T:firmware files for linux (vxge folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1RYPLkf0ZYa8IOnFasK9ZeP4rquk=
 P:cyrus-sasl-dev
@@ -29198,6 +29365,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1665239716
 c:60b406bcb8d24da6a837711df21665c79fd03e34
 i:docs font-freefont=20120503-r3
+
+C:Q1K1trgtoET9OP2oF1kPqkvutd7qY=
+P:linux-firmware-cpia2
+V:20221214-r3
+A:s390x
+S:2386
+I:20480
+T:firmware files for linux (cpia2 folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1LA7AsffsQxRj6Ovu1DdqG+zY8Xs=
 P:perl-dbd-odbc
@@ -29835,21 +30017,6 @@ c:65b29cf342f58c6eeda20902ab0e7ef52b4bcdb3
 D:so:libc.musl-s390x.so.1 so:libcap.so.2 so:libcom-err-samba4.so so:libgenrand-samba4.so so:libgnutls.so.30 so:libiov-buf-samba4.so so:libjansson.so.4 so:liblber.so.2 so:libldap.so.2 so:libldb.so.2 so:libpam.so.0 so:libpopt.so.0 so:libreplace-samba4.so so:libsamba-debug-samba4.so so:libsamba-util.so.0 so:libsocket-blocking-samba4.so so:libsys-rw-samba4.so so:libtalloc.so.2 so:libtdb.so.1 so:libtevent.so.0 so:libtime-basic-samba4.so so:libwbclient.so.0 so:libz.so.1
 p:so:libCHARSET3-samba4.so=0 so:libMESSAGING-SEND-samba4.so=0 so:libMESSAGING-samba4.so=0 so:libaddns-samba4.so=0 so:libads-samba4.so=0 so:libasn1-samba4.so=0 so:libasn1util-samba4.so=0 so:libauth-samba4.so=0 so:libauthkrb5-samba4.so=0 so:libcli-cldap-samba4.so=0 so:libcli-ldap-common-samba4.so=0 so:libcli-nbt-samba4.so=0 so:libcli-smb-common-samba4.so=0 so:libcli-spoolss-samba4.so=0 so:libcliauth-samba4.so=0 so:libclidns-samba4.so=0 so:libcluster-samba4.so=0 so:libcmdline-samba4.so=0 so:libcmocka-samba4.so=0 so:libcommon-auth-samba4.so=0 so:libdbwrap-samba4.so=0 so:libdcerpc-binding.so.0=0.0.1 so:libdcerpc-pkt-auth-samba4.so=0 so:libdcerpc-samba-samba4.so=0 so:libevents-samba4.so=0 so:libflag-mapping-samba4.so=0 so:libgensec-samba4.so=0 so:libgse-samba4.so=0 so:libgssapi-samba4.so=0 so:libhcrypto-samba4.so=0 so:libheimbase-samba4.so=0 so:libheimntlm-samba4.so=0 so:libhx509-samba4.so=0 so:libinterfaces-samba4.so=0 so:libkrb5-samba4.so=0 so:libkrb5samba-samba4.so=0 so:libldbsamba-samba4.so=0 so:liblibcli-lsa3-samba4.so=0 so:liblibcli-netlogon3-samba4.so=0 so:liblibsmb-samba4.so=0 so:libmessages-dgm-samba4.so=0 so:libmessages-util-samba4.so=0 so:libmsghdr-samba4.so=0 so:libmsrpc3-samba4.so=0 so:libndr-krb5pac.so.0=0.0.1 so:libndr-nbt.so.0=0.0.1 so:libndr-samba-samba4.so=0 so:libndr-samba4.so=0 so:libndr-standard.so.0=0.0.1 so:libndr.so.2=2.0.0 so:libnpa-tstream-samba4.so=0 so:libroken-samba4.so=0 so:libsamba-cluster-support-samba4.so=0 so:libsamba-credentials.so.1=1.0.0 so:libsamba-errors.so.1=1 so:libsamba-hostconfig.so.0=0.0.1 so:libsamba-modules-samba4.so=0 so:libsamba-passdb.so.0=0.28.0 so:libsamba-security-samba4.so=0 so:libsamba-sockets-samba4.so=0 so:libsamba3-util-samba4.so=0 so:libsamdb-common-samba4.so=0 so:libsamdb.so.0=0.0.1 so:libsecrets3-samba4.so=0 so:libserver-id-db-samba4.so=0 so:libserver-role-samba4.so=0 so:libsmb-transport-samba4.so=0 so:libsmbconf.so.0=0.0.1 so:libsmbd-shim-samba4.so=0 so:libsmbldap.so.2=2.1.0 so:libtalloc-report-printf-samba4.so=0 so:libtalloc-report-samba4.so=0 so:libtdb-wrap-samba4.so=0 so:libtevent-util.so.0=0.0.1 so:libtrusts-util-samba4.so=0 so:libutil-reg-samba4.so=0 so:libutil-setid-samba4.so=0 so:libutil-tdb-samba4.so=0 so:libwind-samba4.so=0
 
-C:Q1u453OvZRcwKD888+5QgPAmVPFxQ=
-P:linux-firmware-ti
-V:20221214-r1
-A:s390x
-S:3631
-I:20480
-T:firmware files for linux (ti folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1jOj7fFmDMi69u+7rbWfQcNDtwUc=
 P:pspg
 V:5.5.9-r0
@@ -29866,21 +30033,6 @@ c:cbba2b8a44f460dd0b598d2996f1477e2170c646
 D:so:libc.musl-s390x.so.1 so:libncursesw.so.6 so:libpanelw.so.6 so:libpq.so.5 so:libreadline.so.8
 p:cmd:pspg=5.5.9-r0
 
-C:Q1D9x7DPVbxhKrIZ2wj/CWzhlPtwg=
-P:linux-firmware-nvidia
-V:20221214-r1
-A:s390x
-S:1785452
-I:4800512
-T:firmware files for linux (nvidia folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q18HAy0dNL2FT34k6uWwD/uha4m+s=
 P:highlight-fish-completion
 V:4.4-r0
@@ -29895,6 +30047,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1668354290
 c:1530dbb3b458f36a71a3bb39076f3f8d5d7ca572
 i:highlight=4.4-r0 fish
+
+C:Q1QubjD5o0sw4XsEyMh0rpaoJVxGc=
+P:linux-firmware-acenic
+V:20221214-r3
+A:s390x
+S:52251
+I:167936
+T:firmware files for linux (acenic folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1tWgcHDU8gyoGrlgmqjlC3pZMP/U=
 P:unbound
@@ -30186,21 +30353,6 @@ t:1685173709
 c:54a39ace82a9e8d1785ca0ba2d3c5d24b2def24c
 D:ncurses-terminfo-base=6.3_p20221119-r1 so:libc.musl-s390x.so.1
 p:ncurses-widec-libs=6.3_p20221119-r1 so:libformw.so.6=6.3 so:libmenuw.so.6=6.3 so:libncursesw.so.6=6.3 so:libpanelw.so.6=6.3
-
-C:Q1Yqxpm49JF4b/pI6GpRyjeOkCENc=
-P:linux-firmware-emi62
-V:20221214-r1
-A:s390x
-S:103625
-I:229376
-T:firmware files for linux (emi62 folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1k62Ed+ULGgYU6O6/3Vh19WsKskk=
 P:libpthread-stubs
@@ -30665,21 +30817,6 @@ k:14
 D:postgresql14=14.8-r0 pgtcl so:libc.musl-s390x.so.1 so:libtcl8.6.so
 p:postgresql-pltcl
 
-C:Q150pO7DcXHMOt5gaYYrgw/MItsWo=
-P:linux-firmware-e100
-V:20221214-r1
-A:s390x
-S:2436
-I:28672
-T:firmware files for linux (e100 folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1SFyO1jaolMmBIJwZLgjl2TutTAs=
 P:perl-fcgi
 V:0.82-r1
@@ -31036,6 +31173,21 @@ t:1664908323
 c:511484e0cb37eec41f2078695e729a66c204b458
 D:so:libc.musl-s390x.so.1 so:libkcapi.so.1
 p:cmd:kcapi-convenience=1.4.0-r0 cmd:kcapi-dgst=1.4.0-r0 cmd:kcapi-enc-test-large=1.4.0-r0 cmd:kcapi-enc=1.4.0-r0 cmd:kcapi-md5sum=1.4.0-r0 cmd:kcapi-rng=1.4.0-r0 cmd:kcapi-sha1hmac=1.4.0-r0 cmd:kcapi-sha1sum=1.4.0-r0 cmd:kcapi-sha224hmac=1.4.0-r0 cmd:kcapi-sha224sum=1.4.0-r0 cmd:kcapi-sha256hmac=1.4.0-r0 cmd:kcapi-sha256sum=1.4.0-r0 cmd:kcapi-sha384hmac=1.4.0-r0 cmd:kcapi-sha384sum=1.4.0-r0 cmd:kcapi-sha512hmac=1.4.0-r0 cmd:kcapi-sha512sum=1.4.0-r0 cmd:kcapi-sm3hmac=1.4.0-r0 cmd:kcapi-sm3sum=1.4.0-r0 cmd:kcapi-speed=1.4.0-r0 cmd:kcapi=1.4.0-r0
+
+C:Q1zqmuUJEOP4kDSzE70W06FDvEgJ8=
+P:linux-firmware-korg
+V:20221214-r3
+A:s390x
+S:5072
+I:32768
+T:firmware files for linux (korg folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1471O4R2KsRwe9q5ad+ifWcuVSfg=
 P:perl-datetime-format-mail
@@ -31400,6 +31552,21 @@ t:1665594897
 c:1fdcc7121e207cc41fc068a3582cba3be1deefc2
 D:so:libc.musl-s390x.so.1
 p:so:libdav1d.so.6=6.6.0
+
+C:Q1iXtFaLcpkAbaQ2LUajwG461DBn0=
+P:linux-firmware-yamaha
+V:20221214-r3
+A:s390x
+S:9581
+I:61440
+T:firmware files for linux (yamaha folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1ymQmRUsNsmTLAKBxh1Jjci83Q90=
 P:build-base
@@ -31833,6 +32000,21 @@ t:1667984906
 c:ce6f81df0382091a7b4dbf3c974b61f133e1291b
 D:nagios-plugins perl
 
+C:Q1llV+joBRWmF+cf8+92eCcEFuiTE=
+P:linux-firmware-ath9k_htc
+V:20221214-r3
+A:s390x
+S:63669
+I:143360
+T:firmware files for linux (ath9k_htc folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q19xzdZ8Zyf60Y6jsPU5dvA3Oq9e4=
 P:openldap-overlay-mqtt
 V:2.6.3-r6
@@ -31909,21 +32091,6 @@ t:1661087213
 c:30dc535ffcb310210b361ae7fc9118499b502c88
 D:so:libc.musl-s390x.so.1 so:libzmq.so.5
 p:cmd:curve_keygen=4.3.4-r1
-
-C:Q1bDID7y/37PpJgi8sxPaU0e8TQM4=
-P:linux-firmware-yam
-V:20221214-r1
-A:s390x
-S:7374
-I:32768
-T:firmware files for linux (yam folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1XijY44pDvGSjY8QLU9PeQzZouow=
 P:xcb-util
@@ -32203,6 +32370,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1686277783
 c:c9d0d11c5c668797831752f8c01eaf1f89d10990
 i:docs python3=3.10.12-r0
+
+C:Q18TOG8fzdl917jmjErbVzxkQ3Fuc=
+P:linux-firmware-kaweth
+V:20221214-r3
+A:s390x
+S:4789
+I:32768
+T:firmware files for linux (kaweth folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1UrAQaAj/EM0cQUqKUp2p5LQluis=
 P:c-ares-doc
@@ -32822,21 +33004,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1685931441
 c:40030ca7d4e49d417533bb3419dac6f78b54044b
 
-C:Q1gDjOC7IE/gY/2TyxNQzOln6kvIE=
-P:linux-firmware-isci
-V:20221214-r1
-A:s390x
-S:1688
-I:20480
-T:firmware files for linux (isci folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q10TIUt8DZG08GIO4ypLMIfCTQkxI=
 P:py3-subversion
 V:1.14.2-r4
@@ -32852,21 +33019,6 @@ t:1660225613
 c:1daee00317a10316c3ab678755f0bbd676165b9c
 D:so:libapr-1.so.0 so:libc.musl-s390x.so.1 so:libsvn_client-1.so.0 so:libsvn_delta-1.so.0 so:libsvn_diff-1.so.0 so:libsvn_fs-1.so.0 so:libsvn_ra-1.so.0 so:libsvn_repos-1.so.0 so:libsvn_subr-1.so.0 so:libsvn_wc-1.so.0
 p:so:libsvn_swig_py-1.so.0=0.0.0
-
-C:Q14uz86j4HSa0MhhLXcpdSUnfT6SQ=
-P:linux-firmware-ositech
-V:20221214-r1
-A:s390x
-S:3012
-I:20480
-T:firmware files for linux (ositech folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1kr+zdflzBtAJzgm6c4HDb4b1NKM=
 P:cmake
@@ -33487,21 +33639,6 @@ m:Sheila Aman <sheila@vulpine.house>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-devel-stacktrace=2.04-r3
-
-C:Q16siu5m8gq6O0QBvjkm8Sok/W7os=
-P:linux-firmware-cxgb3
-V:20221214-r1
-A:s390x
-S:102423
-I:200704
-T:firmware files for linux (cxgb3 folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1ijEZBh/sNimRgfa+tM9+xGy+utE=
 P:squid-lang-ca
@@ -34257,21 +34394,6 @@ c:84d02e8c3abb163d4ca89e62e831c4116b9ea195
 D:so:libc.musl-s390x.so.1
 p:cmd:dtach=0.9-r3
 
-C:Q1kfDUHbnasdzpM2EczcBLi50W29s=
-P:linux-firmware-keyspan
-V:20221214-r1
-A:s390x
-S:27234
-I:114688
-T:firmware files for linux (keyspan folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q19DDePA8f1/9JLMx/bw+mbTTASdc=
 P:lua5.1-lyaml
 V:6.2.8-r0
@@ -34858,6 +34980,21 @@ t:1680673858
 c:63371ce3229c08c499d5de92595ad910654dac9d
 i:docs zstd=1.5.5-r0
 
+C:Q13b9kQGxkJJsnMIlL6/kR/6ak7Wo=
+P:linux-firmware-netronome
+V:20221214-r3
+A:s390x
+S:17205014
+I:147038208
+T:firmware files for linux (netronome folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1Ao+VKozamchBGjzLgWpJz7Kom70=
 P:rp-pppoe-openrc
 V:3.15-r0
@@ -34949,6 +35086,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1668487651
 c:d6acdab45f2a00494f7de0083f68cf1e1e6649fe
 i:docs dropbear=2022.83-r0
+
+C:Q1iSwItD2Xem0dbSTbidO7106nceE=
+P:linux-firmware-dabusb
+V:20221214-r3
+A:s390x
+S:15180
+I:40960
+T:firmware files for linux (dabusb folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1cTy2xZjfkaGrWMMUpkSiytnO1DA=
 P:sqlite-libs
@@ -35103,21 +35255,6 @@ m:Allan Garret <allan.garret@gmail.com>
 t:1667859568
 c:7340d7b3375c24573c0eda8dfa4b8def076bdb4a
 D:apparmor
-
-C:Q1lmArQNE4VTnK9tuKj4NtJPXYKuw=
-P:linux-firmware-r128
-V:20221214-r1
-A:s390x
-S:2292
-I:20480
-T:firmware files for linux (r128 folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1PZ2ODyZI5Ah7TGvHvZHWyfMSk7c=
 P:heimdal
@@ -35346,21 +35483,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1613662791
 c:bc8eebfe9c4508dd77d938a43e9c57957ca8e1f7
 
-C:Q1Odz6dVuauiPdVXrVkorbe08l/0I=
-P:linux-firmware-bnx2x
-V:20221214-r1
-A:s390x
-S:2425265
-I:2719744
-T:firmware files for linux (bnx2x folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1mQB4PS3JgywneDx4C+uYLZbEweI=
 P:nagios-plugins-load
 V:2.4.2-r0
@@ -35585,6 +35707,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1669374852
 c:7fbad19a1fe42ce80b247d7dff42bee6fdb7ec0f
 i:openrc strongswan=5.9.8-r1
+
+C:Q18feDx9/urIrKEPjKy2vItRd44wI=
+P:linux-firmware-qcom
+V:20221214-r3
+A:s390x
+S:39618655
+I:91017216
+T:firmware files for linux (qcom folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+D:linux-firmware-ath10k=20221214-r3
+p:linux-firmware-any
 
 C:Q1pMXF89CXzk4mpieWND1BPoZSzPk=
 P:libarchive-doc
@@ -36352,6 +36490,20 @@ o:augeas
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1659792088
 c:0714a84b7f79009ae8b96aef50216ed72f54b885
+
+C:Q1bW/tJnw3CrLIGp2DnFvBBN+iWNY=
+P:amd-ucode
+V:20221214-r3
+A:s390x
+S:38373
+I:69632
+T:Microcode update files for AMD CPUs
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
 
 C:Q1bqHQ3jbSAOQigehYYkJEl9r7KZ0=
 P:libarchive-static
@@ -37341,6 +37493,21 @@ c:832945db22c9ab719436b6552f28c48447201c32
 D:/bin/sh so:libc.musl-s390x.so.1 so:libcrypto.so.3 so:libpq.so.5 so:libssl.so.3
 p:so:libpcp.so.2=2.0.0 cmd:pcp_attach_node=4.3.3-r0 cmd:pcp_detach_node=4.3.3-r0 cmd:pcp_health_check_stats=4.3.3-r0 cmd:pcp_node_count=4.3.3-r0 cmd:pcp_node_info=4.3.3-r0 cmd:pcp_pool_status=4.3.3-r0 cmd:pcp_proc_count=4.3.3-r0 cmd:pcp_proc_info=4.3.3-r0 cmd:pcp_promote_node=4.3.3-r0 cmd:pcp_recovery_node=4.3.3-r0 cmd:pcp_reload_config=4.3.3-r0 cmd:pcp_stop_pgpool=4.3.3-r0 cmd:pcp_watchdog_info=4.3.3-r0 cmd:pg_enc=4.3.3-r0 cmd:pg_md5=4.3.3-r0 cmd:pgpool=4.3.3-r0 cmd:pgpool_setup=4.3.3-r0 cmd:pgproto=4.3.3-r0 cmd:watchdog_setup=4.3.3-r0 cmd:wd_cli=4.3.3-r0
 
+C:Q1QZVXp3bF57ewQBKtKz99Xd/KQ+4=
+P:linux-firmware-matrox
+V:20221214-r3
+A:s390x
+S:5606
+I:49152
+T:firmware files for linux (matrox folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1FF9e7drD93t7UempXw4dWJjnMOI=
 P:git-yash-completion
 V:2.53-r2
@@ -37757,6 +37924,21 @@ t:1667743833
 c:76988828c18a4ab5d9aa4aee13a4fe7501a6efec
 D:so:libc.musl-s390x.so.1 so:liblber.so.2 so:libldap.so.2
 
+C:Q1eu1iAxaR555fM+0EvfT50RkkYF0=
+P:linux-firmware-ti
+V:20221214-r3
+A:s390x
+S:3635
+I:20480
+T:firmware files for linux (ti folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1LLD9HXrdTyUEvGUynjV7PvdUMME=
 P:ca-certificates
 V:20230506-r0
@@ -38034,21 +38216,6 @@ c:daffefce35d0c2e624cc295b8135ce09b30e4777
 D:krb5-conf so:libc.musl-s390x.so.1 so:libcom_err.so.2 so:libcrypto.so.3 so:libkeyutils.so.1 so:libssl.so.3 so:libverto.so.1
 p:so:libgssapi_krb5.so.2=2.2 so:libgssrpc.so.4=4.2 so:libk5crypto.so.3=3.1 so:libkadm5clnt_mit.so.12=12.0 so:libkadm5srv_mit.so.12=12.0 so:libkdb5.so.10=10.0 so:libkrad.so.0=0.0 so:libkrb5.so.3=3.3 so:libkrb5support.so.0=0.1
 
-C:Q1MFyMMCiLvKXXjxDs6nIkzVH8NIc=
-P:linux-firmware-cnm
-V:20221214-r1
-A:s390x
-S:181954
-I:1015808
-T:firmware files for linux (cnm folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1IrQmOlEuQF1HSStjOhoqY0yYigA=
 P:perl-xml-sax-base
 V:1.09-r3
@@ -38094,21 +38261,6 @@ t:1652178842
 c:4e7a73e02f55e0033e27a8500337b5cefa2efd81
 D:so:libX11.so.6 so:libXext.so.6 so:libc.musl-s390x.so.1
 p:so:libXvMC.so.1=1.0.0 so:libXvMCW.so.1=1.0.0
-
-C:Q1KuKkfiJEp6vbkQp02WXAcaJQmuo=
-P:linux-firmware-keyspan_pda
-V:20221214-r1
-A:s390x
-S:3682
-I:24576
-T:firmware files for linux (keyspan_pda folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1fRsqwGTEa7PFNLP/vadRJUhFFNs=
 P:lua-discount
@@ -38272,21 +38424,6 @@ m:psykose <alice@ayaya.dev>
 t:1676921448
 c:5f6c7ca6204941d142ecfc8db9e7cc8d1ef2afec
 
-C:Q1mnVk6X2cBKAcku5bCkMzDLJgkQs=
-P:linux-firmware-vxge
-V:20221214-r1
-A:s390x
-S:841578
-I:860160
-T:firmware files for linux (vxge folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1CpWPNLnWhJZWFMEf+7kHRi57Q7o=
 P:libxinerama-doc
 V:1.1.5-r0
@@ -38363,21 +38500,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1654515816
 c:7916e5f74b46cffbf24f85d30c0c05d005ceda65
 i:docs perl-test-deep=1.130-r3
-
-C:Q19pyZpt/DC1oT06N+fX/EtVdWMFA=
-P:linux-firmware-bnx2
-V:20221214-r1
-A:s390x
-S:106920
-I:241664
-T:firmware files for linux (bnx2 folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1KkcMGXQjH+CXPPN0NAQG160IHhI=
 P:hwdata-usb
@@ -38484,6 +38606,21 @@ t:1674042958
 c:24a1fb849a4a9779755db450bb220e59b85cf1f3
 D:perl
 
+C:Q1R5M4nzMOb5qkbh0tpIsZBu85tLU=
+P:linux-firmware-ess
+V:20221214-r3
+A:s390x
+S:3607
+I:24576
+T:firmware files for linux (ess folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1SAN/rHudVuwVpL3YJbdRubSst/g=
 P:py3-distlib
 V:0.3.6-r0
@@ -38499,21 +38636,6 @@ t:1667809586
 c:b88a98849268b58b9ee0939b016d919165767948
 D:python3
 p:py3.10:distlib=0.3.6-r0
-
-C:Q1SXH4ebpZrze6PSHyROS4wRzfOv4=
-P:linux-firmware-cpia2
-V:20221214-r1
-A:s390x
-S:2381
-I:20480
-T:firmware files for linux (cpia2 folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1iSwFxx/8cQafmist6OXI9rgNYR4=
 P:alsa-utils
@@ -39831,6 +39953,21 @@ c:348d23204053291f9275632480ebb8a4c969d282
 D:/bin/sh so:libc.musl-s390x.so.1
 p:cmd:dash=0.5.11.5-r2
 
+C:Q17aql43oyjuymasxia3GhasYQPBk=
+P:linux-firmware-ttusb-budget
+V:20221214-r3
+A:s390x
+S:8286
+I:32768
+T:firmware files for linux (ttusb-budget folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1n2nNtqtkVNP6KSSOSwz5mB9ogv0=
 P:aaudit
 V:0.7.2-r3
@@ -40458,21 +40595,6 @@ t:1647903481
 c:61a3ee7c790f6523fc948cc80946acf4c8bc2d69
 D:lua
 p:lua5.1-inspect=3.1.3-r0 lua5.2-inspect=3.1.3-r0 lua5.3-inspect=3.1.3-r0 lua5.4-inspect=3.1.3-r0
-
-C:Q1/JsT7UaL3o6Zp8dEBvYdHpYqbvg=
-P:linux-firmware-liquidio
-V:20221214-r1
-A:s390x
-S:17854732
-I:25485312
-T:firmware files for linux (liquidio folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1LGSvgYpXpsc2l59zo9fNKWh2qxI=
 P:icecast-doc
@@ -41271,21 +41393,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1659792088
 c:0714a84b7f79009ae8b96aef50216ed72f54b885
 
-C:Q1SDL2RK4fyMKumdwdmc5hgwtOgQc=
-P:linux-firmware-kaweth
-V:20221214-r1
-A:s390x
-S:4781
-I:32768
-T:firmware files for linux (kaweth folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1uP9cpQp+MRbXokflkU+dWXoRX5s=
 P:lksctp-tools-static
 V:1.0.19-r1
@@ -41470,21 +41577,6 @@ c:3350de555ecedc9801dee8b8c75760faa9263c27
 k:100
 D:lua5.1 lua5.1-libs=5.1.5-r11 pkgconfig
 p:lua-dev pc:lua5.1=5.1.5 pc:lua=5.1.5
-
-C:Q1zv3SRT9TkY0rkMR3g6xxYFSkP40=
-P:linux-firmware-atmel
-V:20221214-r1
-A:s390x
-S:401633
-I:684032
-T:firmware files for linux (atmel folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1tMOINT51jMqwN4WqOE7dwvcQQ+U=
 P:libutempter-doc
@@ -41824,6 +41916,21 @@ t:1645440846
 c:345b5254f9246acce48c58b84e164b2eb815bf5a
 i:docs perl-b-hooks-endofscope=0.26-r0
 
+C:Q1QL6ktKf4fqXH9XhzIIvB+nRnpN8=
+P:linux-firmware-cnm
+V:20221214-r3
+A:s390x
+S:181963
+I:1015808
+T:firmware files for linux (cnm folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1wiKYRsvBGNtA/VrVTplzc8aUbho=
 P:cups-doc
 V:2.4.2-r3
@@ -42073,21 +42180,6 @@ t:1680009456
 c:ec095ca4ce7bdcaff8bcee0d20f5b0b9941b4928
 i:docs patch=2.7.6-r9
 
-C:Q1lvF3ajus7V5ZgfR8SbjqqLGSKog=
-P:linux-firmware-3com
-V:20221214-r1
-A:s390x
-S:32163
-I:61440
-T:firmware files for linux (3com folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1FivP6kpln2K+BVCqiRxgh6/xLyU=
 P:xkbcomp-doc
 V:1.4.5-r1
@@ -42148,21 +42240,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1603204172
 c:573e07da91784d4d27c4bc8b9e9122495c7356d3
 i:docs libvorbis=1.3.7-r0
-
-C:Q1+RaAvhudw4X3zzWCjFZBIJKZilg=
-P:linux-firmware-microchip
-V:20221214-r1
-A:s390x
-S:3169
-I:24576
-T:firmware files for linux (microchip folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1iXO3/tkdGwIx8SWEdDPeJ0/jtMk=
 P:libgcrypt-static
@@ -42490,6 +42567,21 @@ c:be63fdad310184cf1ec11b67da315c68149275e3
 D:so:libc.musl-s390x.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:liblog4cplusU-2.0.so.3=3.4.7
 
+C:Q1bFiFW88zSJ+j/IxambD5WFsh0x8=
+P:linux-firmware-emi62
+V:20221214-r3
+A:s390x
+S:103630
+I:229376
+T:firmware files for linux (emi62 folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1IvkbR5IbioJYWZT72bSnPszfh+M=
 P:hunspell-en
 V:2020.12.07-r0
@@ -42563,21 +42655,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1654671545
 c:7f5b1fa3803b5e95952b572e63bcd72c777cba81
 i:docs perl-params-util=1.102-r2
-
-C:Q1LfEm86LtfDspDuiLst4i3Ny2+LM=
-P:linux-firmware-cirrus
-V:20221214-r1
-A:s390x
-S:148948
-I:733184
-T:firmware files for linux (cirrus folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1U33yDVMlSqJ4b3OwXab+bvvXU/A=
 P:bcache-tools-dbg
@@ -43004,21 +43081,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
 
-C:Q1GaKr3M8EaUH3hKaC13gCH8fennY=
-P:linux-firmware-rtw88
-V:20221214-r1
-A:s390x
-S:322216
-I:700416
-T:firmware files for linux (rtw88 folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1KXanIM9KnOZfxoud68MUNteHyrk=
 P:libxslt-static
 V:1.1.37-r1
@@ -43185,6 +43247,21 @@ m:Ted Trask <ttrask01@yahoo.com>
 t:1621087673
 c:ec4e35bcdcf38829d2a36ff4d7cd4351ebb67d1c
 D:acf-core openntpd
+
+C:Q1xTZwA4eV9tYGBQI+wfS+Q2uMGfs=
+P:linux-firmware-tehuti
+V:20221214-r3
+A:s390x
+S:9456
+I:61440
+T:firmware files for linux (tehuti folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1eKu4GGLkNEUKe4tCJxJ0Y2snJVM=
 P:libunistring-doc
@@ -43658,21 +43735,6 @@ t:1678035869
 c:b8e2be09535658d719873d57f01d9ab8bc30162f
 i:docs e2fsprogs=1.46.6-r0
 
-C:Q1+rkfbcdjhv0w6F/PVT4mHZpkauc=
-P:linux-firmware-sun
-V:20221214-r1
-A:s390x
-S:3203
-I:20480
-T:firmware files for linux (sun folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1CsLZfBQqTpVhgmVsdBpPWMOM9Sw=
 P:nfs-utils-doc
 V:2.6.2-r0
@@ -43826,6 +43888,21 @@ t:1634355110
 c:0d60399ded1fb16dc2adcabb0d4d07f517903203
 D:libisofs=1.5.4-r2 pkgconfig
 p:pc:libisofs-1=1.5.4
+
+C:Q1LesjQEi91hnHWhI8JAJnAMvKL1Y=
+P:linux-firmware-go7007
+V:20221214-r3
+A:s390x
+S:58590
+I:225280
+T:firmware files for linux (go7007 folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1D8lllXKiPiMvnrilUvwQP62SiaU=
 P:harfbuzz-doc
@@ -45262,21 +45339,6 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.1 so:libc.musl-s390x.so.1
 i:lua-pty=1.2.2-r1 lua5.1
 
-C:Q1LrWZ0yYKOabIpJ1uutbSvZ7/MDs=
-P:linux-firmware-matrox
-V:20221214-r1
-A:s390x
-S:5596
-I:49152
-T:firmware files for linux (matrox folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1/ipM1lHVn0srIqrsIaaGqRFZ48g=
 P:ldns-doc
 V:1.8.3-r0
@@ -45972,6 +46034,21 @@ t:1630780508
 c:a3739a07d478bc4f1f6e0c17612a1c83dffa9ecd
 i:docs perl-text-wikiformat=0.81-r2
 
+C:Q1S87wPzpzUaRkeHTaX0DiA++LVbw=
+P:linux-firmware-cxgb4
+V:20221214-r3
+A:s390x
+S:3004037
+I:4788224
+T:firmware files for linux (cxgb4 folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1rIhuayJoRQkQRrMS7KOYA7QtZgE=
 P:mtools-dbg
 V:4.0.42-r0
@@ -46173,21 +46250,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-file-slurp-tiny=0.004-r2
-
-C:Q10Hrl5y+oCd259+xewfxx4xe2XOM=
-P:linux-firmware-rtw89
-V:20221214-r1
-A:s390x
-S:2003016
-I:3997696
-T:firmware files for linux (rtw89 folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1kCyfsuYQNgj0TpqCWQ6ssqLoF44=
 P:cifs-utils
@@ -46421,21 +46483,6 @@ t:1677189438
 c:3f5d57c514667b9a13948486b60ce1fae29e7c95
 D:kea-common=2.2.0-r3 so:libc.musl-s390x.so.1 so:libgcc_s.so.1 so:libkea-asiolink.so.40 so:libkea-cc.so.39 so:libkea-cfgclient.so.36 so:libkea-cryptolink.so.28 so:libkea-dhcp_ddns.so.29 so:libkea-dns++.so.30 so:libkea-exceptions.so.13 so:libkea-hooks.so.57 so:libkea-log.so.35 so:libkea-process.so.40 so:libkea-stats.so.18 so:libkea-util.so.52 so:libstdc++.so.6
 p:so:libkea-asiodns.so.24=24.0.0 so:libkea-d2srv.so.16=16.0.0 cmd:kea-dhcp-ddns=2.2.0-r3
-
-C:Q1Rb3otuukW81cfqW5fHdXimvP6As=
-P:linux-firmware-rtl8192e
-V:20221214-r1
-A:s390x
-S:25185
-I:69632
-T:firmware files for linux (rtl8192e folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1uCg6P1LgIb3aa8jTJgTLOw0B9u0=
 P:py3-sphinxcontrib-qthelp
@@ -47547,6 +47594,21 @@ c:522c5a72903b868815ef445f8f768b5066d97867
 D:so:libc.musl-s390x.so.1
 p:cmd:rpcgen=1.4.3-r0
 
+C:Q1ddCBxvyNR/1X+j9lVIXKuZA4GwQ=
+P:linux-firmware-adaptec
+V:20221214-r3
+A:s390x
+S:2111
+I:24576
+T:firmware files for linux (adaptec folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1pjAcZXsHvpr6vKegJ2rcc1W6vZY=
 P:perl-http-message-doc
 V:6.44-r0
@@ -47656,21 +47718,6 @@ c:ca4b4645fa6b8afa25b07f8de46ff05596c605bf
 D:/bin/sh pkgconfig so:libc.musl-s390x.so.1 so:libglib-2.0.so.0 so:libxml2.so.2
 p:pc:shared-mime-info=2.2 cmd:update-mime-database=2.2-r2
 
-C:Q1IIgjafhQp5hXafyZCGoDw/Z6464=
-P:linux-firmware-dsp56k
-V:20221214-r1
-A:s390x
-S:1794
-I:20480
-T:firmware files for linux (dsp56k folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1QILWD4y+buUZNQM2eIu6myJcH6U=
 P:openssl-dbg
 V:3.0.9-r3
@@ -47684,6 +47731,21 @@ o:openssl
 m:Ariadne Conill <ariadne@dereferenced.org>
 t:1689795407
 c:4b3d9e431a551a136cd7af219f63886af7f6eeff
+
+C:Q1M4JDHAbMnu8eLk4NppsAZ6gxswY=
+P:linux-firmware-mediatek
+V:20221214-r3
+A:s390x
+S:8939446
+I:25493504
+T:firmware files for linux (mediatek folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1ODhGY7MzIayzsmm+ygpX3TwjIuE=
 P:perl-http-cookies-doc
@@ -48354,6 +48416,21 @@ c:39cde24fb54a667a6730bdaec3233184227131f6
 D:so:libc.musl-s390x.so.1 so:libcrypto.so.3 so:libssl.so.3
 p:cmd:sendmail=2.64-r18 cmd:ssmtp=2.64-r18
 
+C:Q1N0d4DeceaB82GoS1IAi0GFFwsik=
+P:linux-firmware-nxp
+V:20221214-r3
+A:s390x
+S:213652
+I:229376
+T:firmware files for linux (nxp folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q16U+YArveqBZGEhhGoPpWGuLiA/c=
 P:mesa-dbg
 V:22.2.5-r1
@@ -48800,21 +48877,6 @@ c:285d397a23f1467e4e0266a1a41728d1133c6aa4
 k:100
 D:so:libbz2.so.1 so:libc.musl-s390x.so.1 so:libgcrypt.so.20 so:libgpg-error.so.0 so:libksba.so.8 so:libz.so.1
 p:cmd:addgnupghome=2.2.40-r0 cmd:applygnupgdefaults=2.2.40-r0 cmd:gpg-zip=2.2.40-r0 cmd:gpgparsemail=2.2.40-r0 cmd:gpgsplit=2.2.40-r0 cmd:gpgtar=2.2.40-r0 cmd:kbxutil=2.2.40-r0 cmd:watchgnupg=2.2.40-r0
-
-C:Q1QsYcpbBLxy7nsUp2b1im6Egp3hk=
-P:linux-firmware-ene-ub6250
-V:20221214-r1
-A:s390x
-S:6159
-I:40960
-T:firmware files for linux (ene-ub6250 folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1k7gE1Uu5zVXfvaCnC+zuXmFaqJI=
 P:smartmontools-doc
@@ -49457,6 +49519,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1652215775
 c:51257081bf8587be5922645587a5b4b6d315c739
 i:docs perl-http-daemon=6.14-r0
+
+C:Q1bOqg9PwRpBvkxHvhDYTJS8gtaT0=
+P:linux-firmware-ti-connectivity
+V:20221214-r3
+A:s390x
+S:5019378
+I:9101312
+T:firmware files for linux (ti-connectivity folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1zZKU+CODn3oYTnu4582sig3a+hc=
 P:ppp-atm
@@ -50297,6 +50374,21 @@ t:1667393505
 c:5363d749185948616b2ded0a8ba96cbd41308022
 D:perl perl-html-tagset perl-http-message perl-uri so:libc.musl-s390x.so.1
 
+C:Q194Bgaz+jPe+OYl6k5pUHcpbr8rI=
+P:linux-firmware-ath6k
+V:20221214-r3
+A:s390x
+S:721057
+I:978944
+T:firmware files for linux (ath6k folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1uDu1zbPC91qHgKaRaiREk4b99Tk=
 P:lua5.3-evdev
 V:2.2.1-r2
@@ -50510,21 +50602,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1668643736
 c:07f2e40acd84523e5a7cf98d0f626e2510ff349a
 i:openrc drbd-utils=9.22.0-r1
-
-C:Q1WB3yu7rlJ/WbSyXUEzw1CB+e7uE=
-P:linux-firmware-mediatek
-V:20221214-r1
-A:s390x
-S:8939382
-I:25493504
-T:firmware files for linux (mediatek folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1PCfahZTNfglH54bHBl4jE5RHnrc=
 P:cyrus-sasl-digestmd5
@@ -52021,6 +52098,21 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
 
+C:Q1caC5ZK1MTzSTtiVpVGFwoqoDG+Q=
+P:linux-firmware-microchip
+V:20221214-r3
+A:s390x
+S:3179
+I:24576
+T:firmware files for linux (microchip folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q11oNay/RdmRCpXMpH6Mp3qY1Dvtw=
 P:lynx-zsh-completion
 V:5.9-r0
@@ -52473,36 +52565,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-scope-guard=0.21-r2
 
-C:Q1BqBkR9YiOh+akHjVsAUea/Vad58=
-P:linux-firmware-cavium
-V:20221214-r1
-A:s390x
-S:37181
-I:69632
-T:firmware files for linux (cavium folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
-C:Q15uT03Jfj0QkgAZJMAOqo+AychK0=
-P:linux-firmware-atusb
-V:20221214-r1
-A:s390x
-S:8049
-I:40960
-T:firmware files for linux (atusb folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1iDOdoBR7NYdTVwtCj+gD+7TRu6M=
 P:lua5.2-optarg
 V:0.3-r0
@@ -52780,21 +52842,6 @@ c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:so:libc.musl-s390x.so.1 so:libncursesw.so.6
 p:cmd:bwm-ng=0.6.3-r1
 
-C:Q13XIRpJkBBmjGX3DJO+41fPn16fQ=
-P:linux-firmware-rtl_bt
-V:20221214-r1
-A:s390x
-S:558143
-I:1028096
-T:firmware files for linux (rtl_bt folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1n2G0wOya58kG9LzQ8JzssYm4hiw=
 P:libsrtp-dev
 V:2.4.2-r3
@@ -52872,6 +52919,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1680920501
 c:b3e182d1e6a127220e29f0014213072f8578a53e
 i:docs tcpdump=4.99.4-r0
+
+C:Q12JGPlIZLNYygPcgwOstVVSumGXQ=
+P:linux-firmware-radeon
+V:20221214-r3
+A:s390x
+S:3597992
+I:7761920
+T:firmware files for linux (radeon folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1mkgcVZ5l8q+JpkoSUpC34Jhtzms=
 P:perl-role-basic-doc
@@ -53072,21 +53134,6 @@ c:24faa21f4f41ffe5876af3fde056770dd8cb5676
 D:libuv=1.44.2-r0 pkgconfig
 p:pc:libuv=1.44.2
 
-C:Q1dwjYQaWRHZ72Tu7LQC2k028FjSc=
-P:linux-firmware-meson
-V:20221214-r1
-A:s390x
-S:115225
-I:348160
-T:firmware files for linux (meson folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1dzVFOSG3jE6WNuF4neasVszAFNI=
 P:asciidoc
 V:10.2.0-r0
@@ -53102,21 +53149,6 @@ t:1660646550
 c:e34f9542f75fe3083aa7a40516e86ef79f48af51
 D:python3 libxml2-utils docbook-xsl
 p:cmd:a2x=10.2.0-r0 cmd:asciidoc=10.2.0-r0 py3.10:asciidoc=10.2.0-r0
-
-C:Q1CAElj5KtGikVbKFtjfYUMnmTBtw=
-P:linux-firmware-mrvl
-V:20221214-r1
-A:s390x
-S:81667987
-I:84951040
-T:firmware files for linux (mrvl folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1erGNbwu40Ua9PKfMa/OMvJyiTDo=
 P:lua5.4-sql-mysql
@@ -54041,21 +54073,6 @@ c:299ddac10d5c53688c0f07c8008ba2bc9dcc3a2d
 D:pkgconfig unixodbc=2.3.11-r0
 p:pc:odbc=2.3.11 pc:odbccr=2.3.11 pc:odbcinst=2.3.11
 
-C:Q1zfg1AOe+BY3HlJ/WN820I667enE=
-P:linux-firmware-imx
-V:20221214-r1
-A:s390x
-S:3972
-I:28672
-T:firmware files for linux (imx folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1DccE+t/vX5oyd9QsYzusxiIxjwo=
 P:spamassassin-client
 V:3.4.6-r4
@@ -54208,21 +54225,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1668842151
 c:2d0d534bf6bd815706b365f0f6d908acae64d99e
 i:docs libxdmcp=1.1.4-r0
-
-C:Q1XfYFMPDPHfjUFWa15hCDp0/cLpk=
-P:linux-firmware-ath10k
-V:20221214-r1
-A:s390x
-S:7882767
-I:15818752
-T:firmware files for linux (ath10k folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1olK/ifnt2XyOALf1C+HXT6uVt3U=
 P:lua5.2-mosquitto
@@ -54542,6 +54544,21 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-net-cidr-lite=0.22-r0
 
+C:Q12p+8wPKd/2ie5e42OrscSo5YkxU=
+P:linux-firmware-ositech
+V:20221214-r3
+A:s390x
+S:3017
+I:20480
+T:firmware files for linux (ositech folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q17UQTxG7sOpQxkLTjmHPF5iWV8XE=
 P:glslang-static
 V:11.12.0-r0
@@ -54710,6 +54727,21 @@ t:1661233430
 c:f7bcb93a6e06ae667840c49bfb053c53153b51e2
 D:so:libc.musl-s390x.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libhunspell-1.7.so.0=0.0.1
+
+C:Q1PLcIx/rYIFzULkwqGUfBosSWOa8=
+P:linux-firmware-ti-keystone
+V:20221214-r3
+A:s390x
+S:2907
+I:20480
+T:firmware files for linux (ti-keystone folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1UA6ab4oMkqpFwVf5Pj/SJn0rUWc=
 P:krb5-conf
@@ -54982,22 +55014,6 @@ m:Fabian Affolter <fabian@affolter-engineering.ch>
 t:1599640357
 c:ce844c54c1c9491a68ad49987c87aebc1f73c1bd
 
-C:Q1bWSN0O3jNXm8MgZpSyoFa/u1CBc=
-P:linux-firmware-qcom
-V:20221214-r1
-A:s390x
-S:39618606
-I:91017216
-T:firmware files for linux (qcom folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-D:linux-firmware-ath10k=20221214-r1
-p:linux-firmware-any
-
 C:Q1nalSc5PBXa31ZmNroh3R+eHZsWM=
 P:boost1.80-wserialization
 V:1.80.0-r3
@@ -55246,21 +55262,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1686095916
 c:fb8a980c8f396c8b5e83da21e25930edb3aae7c9
 D:/bin/sh
-
-C:Q1ZhE++CyH6s7dYtJ5jOYzsu1J1XE=
-P:linux-firmware-cis
-V:20221214-r1
-A:s390x
-S:4154
-I:81920
-T:firmware files for linux (cis folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1FutYwqyRtX7BJohzTIO3DFO+olE=
 P:vim
@@ -56134,21 +56135,6 @@ t:1658245472
 c:b159c24eea5551c541208b71f7e2553450808a1b
 i:docs perl-list-utilsby=0.12-r0
 
-C:Q1hjFNTGJiDDGamup8XpcOv94JfKM=
-P:linux-firmware-rtlwifi
-V:20221214-r1
-A:s390x
-S:509254
-I:1081344
-T:firmware files for linux (rtlwifi folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1qDu1/xI/pnrZdjfjDzjXsuHZiWQ=
 P:bwm-ng-doc
 V:0.6.3-r1
@@ -56369,21 +56355,6 @@ t:1639595019
 c:6358d93b8017f5d20ee41d1d1a532f181364bdfd
 D:libusb-compat=0.1.7-r1 pc:libusb-1.0 pkgconfig
 p:pc:libusb=0.1.12 cmd:libusb-config=0.1.7-r1
-
-C:Q1jVXBdOt/UP7no9LJZLaUO294jF4=
-P:linux-firmware-ttusb-budget
-V:20221214-r1
-A:s390x
-S:8280
-I:32768
-T:firmware files for linux (ttusb-budget folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1DvCAn57s0YAsO/DnQAo5ZjZHSy4=
 P:aom-dev
@@ -56663,6 +56634,21 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:so:libc.musl-s390x.so.1 so:libpcre.so.1
 i:lua5.3 lua-rex-pcre=2.9.1-r1
 
+C:Q1WzUO8sofdKc9i3dD8WRzcP7y6Nw=
+P:linux-firmware-keyspan_pda
+V:20221214-r3
+A:s390x
+S:3685
+I:24576
+T:firmware files for linux (keyspan_pda folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1TrruuuBh9UdeXYdkzlWQuLtTNyc=
 P:librelp-dev
 V:1.10.0-r1
@@ -56788,21 +56774,6 @@ c:567f26ca3d26b215bd3fd6c499c5f7a890fcceeb
 D:so:libc.musl-s390x.so.1 so:libxcb.so.1
 p:so:libX11-xcb.so.1=1.0.0 so:libX11.so.6=6.4.0
 
-C:Q11OO6WiPZ2YDPbq13QEgZXw96s28=
-P:linux-firmware-ueagle-atm
-V:20221214-r1
-A:s390x
-S:1054803
-I:2269184
-T:firmware files for linux (ueagle-atm folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1tDLmSx/twOoOGoqpcNcRkcCLt70=
 P:font-daewoo-misc
 V:1.0.3-r2
@@ -56893,6 +56864,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1624218306
 c:831108208be8b9b447a320386ef31d17d947e660
 i:docs libconfig=1.7.3-r0
+
+C:Q1/OwUBYQCwpzPyU/cqUVYcAmmiAY=
+P:linux-firmware-ueagle-atm
+V:20221214-r3
+A:s390x
+S:1054798
+I:2269184
+T:firmware files for linux (ueagle-atm folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1r+YJiXk13XWN4KhNQY8qq/sIzww=
 P:dosfstools
@@ -57021,21 +57007,6 @@ c:9e00048de95c04894440a2173c31767a6d9bc07b
 D:so:libc.musl-s390x.so.1
 p:so:libgomp.so.1=1.0.0
 
-C:Q1HFQmrspVj5mGymHpV8jjXPvb920=
-P:linux-firmware-sb16
-V:20221214-r1
-A:s390x
-S:5237
-I:36864
-T:firmware files for linux (sb16 folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1s5pwplKvspJmWlYGZfuCxAkklpw=
 P:perl-test-requires-doc
 V:0.11-r1
@@ -57066,6 +57037,21 @@ t:1651220051
 c:b60d787f9447709996cffdb69bb3ac9178f8186f
 D:perl-test-harness perl
 p:cmd:prove=3.44-r0
+
+C:Q11XdzPVIRQtJEF1fKhouI/sXL/+U=
+P:linux-firmware-meson
+V:20221214-r3
+A:s390x
+S:115244
+I:348160
+T:firmware files for linux (meson folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1Fn7WBwuMKBEF5DqBbUZHRHMiTjc=
 P:libwebp-tools
@@ -57235,21 +57221,6 @@ c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:so:libc.musl-s390x.so.1 so:libcares.so.2
 p:cmd:opennhrp=0.14.1-r8 cmd:opennhrpctl=0.14.1-r8
 
-C:Q1yTzXUh7VOzHlP2j0p6YOza0TZgM=
-P:linux-firmware-wfx
-V:20221214-r1
-A:s390x
-S:311798
-I:339968
-T:firmware files for linux (wfx folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1yUXtGjCanDZ0p1QyDn7zxw5fgQY=
 P:py3-tappy
 V:3.1-r0
@@ -57265,21 +57236,6 @@ t:1662148196
 c:ed3bc775432315915b6c40c73574893c16eef2d5
 D:python3
 p:py-tappy=3.1-r0 cmd:tap=3.1-r0 cmd:tappy=3.1-r0 py3.10:tap=3.1-r0
-
-C:Q1beMWLCHeu2sEy3u99GvoVPK8+3o=
-P:linux-firmware-qca
-V:20221214-r1
-A:s390x
-S:1315534
-I:2080768
-T:firmware files for linux (qca folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1SNJQ4nKDAjrJywolbIRI1kVWhFg=
 P:apparmor-utils
@@ -57652,6 +57608,21 @@ t:1670985476
 c:a286bb720c7825575bc7cfa107dc4b5961a2d248
 D:pkgconfig
 p:pc:bash=5.2.15 cmd:bashbug=5.2.15-r0
+
+C:Q1o96SR7yXKljpBRZo5ugb0tMnhfk=
+P:linux-firmware-inside-secure
+V:20221214-r3
+A:s390x
+S:1985
+I:28672
+T:firmware files for linux (inside-secure folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1hGbFk9ktYLMn6odGkGNGSnv1Kzw=
 P:libgnat-static
@@ -58094,21 +58065,6 @@ t:1665753996
 c:84d02e8c3abb163d4ca89e62e831c4116b9ea195
 i:docs ngrep=1.47-r2
 
-C:Q1guFvcV0wu2gYbsDD3ZHetWUeYPA=
-P:linux-firmware-rsi
-V:20221214-r1
-A:s390x
-S:675076
-I:1327104
-T:firmware files for linux (rsi folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1k9PrhBZIowkBRzRr11zCBkBY/2M=
 P:util-linux-doc
 V:2.38.1-r1
@@ -58308,6 +58264,21 @@ t:1674309248
 c:71caa93e1e0acecba951c52353e84fcba59165ce
 D:dnssec-root
 
+C:Q1vWL2tzW3xSKkGgRQCWsTiIJ6aKk=
+P:linux-firmware-r128
+V:20221214-r3
+A:s390x
+S:2298
+I:20480
+T:firmware files for linux (r128 folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q17vrErQ1KqLpTxpNOxUz7Pf/7uLY=
 P:openntpd-openrc
 V:6.8_p1-r7
@@ -58490,21 +58461,6 @@ o:pgpool
 m:Jakub Jirutka <jakub@jirutka.cz>
 t:1662577568
 c:832945db22c9ab719436b6552f28c48447201c32
-
-C:Q1pmomsPdWS9r2L4iwR+3AiHZ+e5U=
-P:linux-firmware-dpaa2
-V:20221214-r1
-A:s390x
-S:6485050
-I:15478784
-T:firmware files for linux (dpaa2 folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1NnIUCGZFaG4U6tn1Coji4SV5qX0=
 P:bash-dbg
@@ -58979,6 +58935,21 @@ t:1667147299
 c:e32e0ec5e86d77eff1338d22011ec3f3314b25be
 D:dialog alsa-ucm-conf
 
+C:Q1F9fy7BiDhUzL00LUFaZW9V8IamA=
+P:linux-firmware-sxg
+V:20221214-r3
+A:s390x
+S:40479
+I:139264
+T:firmware files for linux (sxg folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1uat3WAekb6a/wMPVgbKzicmLEsk=
 P:fftw-long-double-libs
 V:3.3.10-r1
@@ -59188,21 +59159,6 @@ m:psykose <alice@ayaya.dev>
 t:1668032422
 c:ae4888db815968e879d4f8a24e5bb252c911ed3f
 i:docs py3-wheel=0.38.4-r0
-
-C:Q1lL/2N4i51+LPZMUBXwH9odg+dRI=
-P:linux-firmware-dabusb
-V:20221214-r1
-A:s390x
-S:15172
-I:40960
-T:firmware files for linux (dabusb folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1BdZiaMhc7KOkbYPfBqnb6EMcVlU=
 P:dtc
@@ -59487,21 +59443,6 @@ m:Timothy Legge <timlegge@gmail.com>
 t:1630780508
 c:a3739a07d478bc4f1f6e0c17612a1c83dffa9ecd
 D:perl perl-metrics-any
-
-C:Q1bjCdQgU26zIYWBoM6/ttYRBVFCw=
-P:linux-firmware-advansys
-V:20221214-r1
-A:s390x
-S:15522
-I:45056
-T:firmware files for linux (advansys folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1oBcJLvaqAQG5I9TtRrwds+Wbh18=
 P:glslang-dev
@@ -60583,21 +60524,6 @@ c:13c7f6500189062c3e0b56487b19df2a7fd4812d
 D:so:libc.musl-s390x.so.1 so:libgcc_s.so.1
 p:boost-locale=1.80.0-r3 so:libboost_locale.so.1.80.0=1.80.0
 
-C:Q1NBe7+YTjFtgI/VBfoKndy3rTMKg=
-P:linux-firmware-i915
-V:20221214-r1
-A:s390x
-S:10120157
-I:25874432
-T:firmware files for linux (i915 folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1t7PE5+dKsY6LcUAxne5d+10NUyE=
 P:libsrtp
 V:2.4.2-r3
@@ -60645,6 +60571,21 @@ t:1667859568
 c:7340d7b3375c24573c0eda8dfa4b8def076bdb4a
 D:bash
 i:apparmor-utils=3.1.2-r0 lang
+
+C:Q1Yl3uzj85AV09ojnMnryJSQrxJ+s=
+P:linux-firmware-rockchip
+V:20221214-r3
+A:s390x
+S:35414
+I:118784
+T:firmware files for linux (rockchip folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1w8dYNvFSStbIhBmAXBS/GhxgJ1A=
 P:ghostscript
@@ -60802,6 +60743,21 @@ c:a0e6ec6f96db5c251fa34de19e023d8c87ac67f4
 D:so:libblkid.so.1 so:libc.musl-s390x.so.1 so:libsmartcols.so.1 so:libuuid.so.1
 p:cmd:bcache-super-show=1.1-r1 cmd:bcache=1.1-r1 cmd:make-bcache=1.1-r1
 
+C:Q1dM8NnUg+EvW7PS1EWNY4WGv9zLc=
+P:linux-firmware-tigon
+V:20221214-r3
+A:s390x
+S:8198
+I:36864
+T:firmware files for linux (tigon folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1xprpm7mJFoFMIMssL+7Zidf3NRQ=
 P:samba-winbind-clients
 V:4.16.11-r0
@@ -60862,23 +60818,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1610489771
 c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
 D:perl
-
-C:Q1bigvjQBbe00vk2aPdS7xRp9b9mQ=
-P:linux-firmware
-V:20221214-r1
-A:s390x
-S:2001
-I:4096
-T:firmware files for linux
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-k:1
-D:linux-firmware-yamaha=20221214-r1 linux-firmware-yam=20221214-r1 linux-firmware-wfx=20221214-r1 linux-firmware-vxge=20221214-r1 linux-firmware-vicam=20221214-r1 linux-firmware-ueagle-atm=20221214-r1 linux-firmware-ttusb-budget=20221214-r1 linux-firmware-tigon=20221214-r1 linux-firmware-ti-keystone=20221214-r1 linux-firmware-ti-connectivity=20221214-r1 linux-firmware-ti=20221214-r1 linux-firmware-tehuti=20221214-r1 linux-firmware-sxg=20221214-r1 linux-firmware-sun=20221214-r1 linux-firmware-slicoss=20221214-r1 linux-firmware-sb16=20221214-r1 linux-firmware-rtw89=20221214-r1 linux-firmware-rtw88=20221214-r1 linux-firmware-rtlwifi=20221214-r1 linux-firmware-rtl_nic=20221214-r1 linux-firmware-rtl_bt=20221214-r1 linux-firmware-rtl8192e=20221214-r1 linux-firmware-rsi=20221214-r1 linux-firmware-rockchip=20221214-r1 linux-firmware-radeon=20221214-r1 linux-firmware-r128=20221214-r1 linux-firmware-qlogic=20221214-r1 linux-firmware-qed=20221214-r1 linux-firmware-qcom=20221214-r1 linux-firmware-qca=20221214-r1 linux-firmware-ositech=20221214-r1 linux-firmware-nxp=20221214-r1 linux-firmware-nvidia=20221214-r1 linux-firmware-netronome=20221214-r1 linux-firmware-myricom=20221214-r1 linux-firmware-mwlwifi=20221214-r1 linux-firmware-mwl8k=20221214-r1 linux-firmware-mrvl=20221214-r1 linux-firmware-moxa=20221214-r1 linux-firmware-microchip=20221214-r1 linux-firmware-meson=20221214-r1 linux-firmware-mellanox=20221214-r1 linux-firmware-mediatek=20221214-r1 linux-firmware-matrox=20221214-r1 linux-firmware-liquidio=20221214-r1 linux-firmware-libertas=20221214-r1 linux-firmware-korg=20221214-r1 linux-firmware-keyspan_pda=20221214-r1 linux-firmware-keyspan=20221214-r1 linux-firmware-kaweth=20221214-r1 linux-firmware-isci=20221214-r1 linux-firmware-intel=20221214-r1 linux-firmware-inside-secure=20221214-r1 linux-firmware-imx=20221214-r1 linux-firmware-i915=20221214-r1 linux-firmware-go7007=20221214-r1 linux-firmware-ess=20221214-r1 linux-firmware-ene-ub6250=20221214-r1 linux-firmware-emi62=20221214-r1 linux-firmware-emi26=20221214-r1 linux-firmware-edgeport=20221214-r1 linux-firmware-e100=20221214-r1 linux-firmware-dsp56k=20221214-r1 linux-firmware-dpaa2=20221214-r1 linux-firmware-dabusb=20221214-r1 linux-firmware-cypress=20221214-r1 linux-firmware-cxgb4=20221214-r1 linux-firmware-cxgb3=20221214-r1 linux-firmware-cpia2=20221214-r1 linux-firmware-cnm=20221214-r1 linux-firmware-cis=20221214-r1 linux-firmware-cirrus=20221214-r1 linux-firmware-cavium=20221214-r1 linux-firmware-cadence=20221214-r1 linux-firmware-brcm=20221214-r1 linux-firmware-bnx2x=20221214-r1 linux-firmware-bnx2=20221214-r1 linux-firmware-av7110=20221214-r1 linux-firmware-atusb=20221214-r1 linux-firmware-atmel=20221214-r1 linux-firmware-ath9k_htc=20221214-r1 linux-firmware-ath6k=20221214-r1 linux-firmware-ath11k=20221214-r1 linux-firmware-ath10k=20221214-r1 linux-firmware-ar3k=20221214-r1 linux-firmware-amphion=20221214-r1 linux-firmware-amdgpu=20221214-r1 linux-firmware-amd-ucode=20221214-r1 linux-firmware-amd=20221214-r1 linux-firmware-advansys=20221214-r1 linux-firmware-adaptec=20221214-r1 linux-firmware-acenic=20221214-r1 linux-firmware-3com=20221214-r1 linux-firmware-other=20221214-r1
-p:linux-firmware-any
 
 C:Q1kqGDJ7VSBok4Ysw/ToWpYcSUkYo=
 P:lua-resty-lrucache
@@ -60955,6 +60894,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1659429320
 c:39cde24fb54a667a6730bdaec3233184227131f6
 i:docs perl-net-ssleay=1.92-r2
+
+C:Q12JAxNsXwv/luuGbyX4s6gu7FlAQ=
+P:linux-firmware-sb16
+V:20221214-r3
+A:s390x
+S:5238
+I:36864
+T:firmware files for linux (sb16 folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1+rR0qWUJhUJbrnhVa34/tr3I7Wk=
 P:libxext
@@ -61262,6 +61216,21 @@ c:f982ff4b66c6e55b1009accaf711cde71473e4cd
 D:rpcbind python3 so:libc.musl-s390x.so.1
 p:so:libnfsidmap.so.1=1.0.0
 
+C:Q1RtYccOFNRRwIqWIkLYgb1jyAPuw=
+P:linux-firmware-qca
+V:20221214-r3
+A:s390x
+S:1315568
+I:2080768
+T:firmware files for linux (qca folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1miyjdVas1oXuuaWi5KTdDiyVHmY=
 P:libwebsockets
 V:4.3.2-r1
@@ -61430,21 +61399,6 @@ m:Carlo Landmeter <clandmeter@alpinelinux.org>
 t:1652354016
 c:299ddac10d5c53688c0f07c8008ba2bc9dcc3a2d
 i:docs unixodbc=2.3.11-r0
-
-C:Q1TrNj6PhxGJitJKLnUp6iwuQPGD8=
-P:linux-firmware-rtl_nic
-V:20221214-r1
-A:s390x
-S:37580
-I:167936
-T:firmware files for linux (rtl_nic folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1r1bOwHPDdqzMRHeCLZ1n1YNC2eE=
 P:perl-net-rblclient-doc
@@ -61966,6 +61920,21 @@ t:1665753996
 c:84d02e8c3abb163d4ca89e62e831c4116b9ea195
 i:docs haserl=0.9.36-r2
 
+C:Q1DR//OtPGcpA69ALyV5hTulUOVy0=
+P:linux-firmware-wfx
+V:20221214-r3
+A:s390x
+S:311805
+I:339968
+T:firmware files for linux (wfx folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1QPR19Sqe//yJkynt7IwCQfTcpsA=
 P:jitterentropy-library-dev
 V:3.3.1-r0
@@ -61980,6 +61949,36 @@ m:Dermot Bradley <dermot_bradley@yahoo.com>
 t:1646686261
 c:986ce5f7f1135c75c2728d80d0749ac6388153f8
 D:jitterentropy-library=3.3.1-r0
+
+C:Q1oOD8ruSDaoMYYz0RtAjD+5oyfMM=
+P:linux-firmware-rsi
+V:20221214-r3
+A:s390x
+S:675088
+I:1327104
+T:firmware files for linux (rsi folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
+C:Q1sYvCTMtD5Zo0DtBxPawuT3S3Nks=
+P:linux-firmware-isci
+V:20221214-r3
+A:s390x
+S:1691
+I:20480
+T:firmware files for linux (isci folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1MjcEj10OxBT/cKzCjqw/WBp6v+E=
 P:uwsgi-ugreen
@@ -62601,6 +62600,21 @@ c:13c6708dffbc91893a73fc03b5a0eb95fa08dbf2
 D:btrfs-progs so:libblkid.so.1 so:libc.musl-s390x.so.1 so:libcom_err.so.2 so:libext2fs.so.2 so:libudev.so.1 so:libuuid.so.1 so:libz.so.1
 p:cmd:btrfs-convert=6.0.2-r0 cmd:btrfs-find-root=6.0.2-r0 cmd:btrfs-image=6.0.2-r0 cmd:btrfs-map-logical=6.0.2-r0 cmd:btrfs-select-super=6.0.2-r0 cmd:btrfstune=6.0.2-r0
 
+C:Q1Qh8Y7utgFhVe+7CIsdCNMW56wzc=
+P:linux-firmware-intel
+V:20221214-r3
+A:s390x
+S:19873540
+I:35635200
+T:firmware files for linux (intel folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1w7IFG5TEA/FP5jElGSe0W5HaVZI=
 P:squid-lang-az
 V:5.7-r0
@@ -62647,20 +62661,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1669116738
 c:348d23204053291f9275632480ebb8a4c969d282
 i:docs dash=0.5.11.5-r2
-
-C:Q1dliIYOEnrjxODdogW0akGdOVhjY=
-P:amd-ucode
-V:20221214-r1
-A:s390x
-S:34496
-I:61440
-T:Microcode update files for AMD CPUs
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
 
 C:Q1VxKWGPwYktKUjprZyo9ooeF2IcQ=
 P:lua5.4-mosquitto
@@ -63324,21 +63324,6 @@ t:1656492625
 c:622a11e971b665b95010407b081946479dfa9aeb
 i:docs iw=5.19-r0
 
-C:Q1JqSU1aL++XRqXCy9klUd3lky9RI=
-P:linux-firmware-qlogic
-V:20221214-r1
-A:s390x
-S:69808
-I:143360
-T:firmware files for linux (qlogic folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1Njfgh4fOJNYwImQNyiZa2FyzS4g=
 P:openresolv-doc
 V:3.12.0-r1
@@ -63448,6 +63433,21 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1662061567
 c:459ffafae7089a47338de1275f8b03e740b76c24
 D:perl perl-sub-uplevel
+
+C:Q1BWhd52qAn/3/ArSwC/r5D5qDBko=
+P:linux-firmware-ene-ub6250
+V:20221214-r3
+A:s390x
+S:6167
+I:40960
+T:firmware files for linux (ene-ub6250 folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1tkvpkKLt4BcV6j+grbf4sYYd0Rg=
 P:gdbm-tools
@@ -63758,6 +63758,21 @@ o:bind
 t:1687383835
 c:8706d13524f90cd3dcb7ba7ad3dc7e7d5e9024db
 D:bind so:libc.musl-s390x.so.1
+
+C:Q1BLdDpaw7odO2g4dxHSxrDeWrPo0=
+P:linux-firmware-emi26
+V:20221214-r3
+A:s390x
+S:71338
+I:155648
+T:firmware files for linux (emi26 folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1pyF0Gh21pqi1epzIGjQ9OVyEL4o=
 P:amavis-openrc
@@ -64395,21 +64410,6 @@ t:1667441773
 c:ba7a7138cbdac09eeaa1c6902b152df78a3dcea5
 i:docs ulogd=2.0.8-r0
 
-C:Q1k8pMeA/EW+pcGS7r57bmCYI+nX4=
-P:linux-firmware-yamaha
-V:20221214-r1
-A:s390x
-S:9572
-I:61440
-T:firmware files for linux (yamaha folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1g0UtZIv8Fi5grE1IEL76UJcT4RA=
 P:py3-gpsd
 V:3.24-r0
@@ -65006,21 +65006,6 @@ c:1d1beff03112e66380044d1ae1df768c08c98d79
 D:so:libc.musl-s390x.so.1 so:libnfdump-1.6.24.so
 p:cmd:sfcapd=1.6.24-r0
 
-C:Q1H1ySSewkX0dvqhDh4Jpa1hvP/gc=
-P:linux-firmware-amd
-V:20221214-r1
-A:s390x
-S:111058
-I:188416
-T:firmware files for linux (amd folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1otrup/1+yUO8L0+yHHJY1YsIBkM=
 P:mrtg-doc
 V:2.17.10-r0
@@ -65407,6 +65392,21 @@ t:1667235598
 c:dfb827fab2f783983bce4f4ab53d67078047032c
 i:docs giflib=5.2.1-r2
 
+C:Q1Crlb3EN6vXL7v3wc8mpdU09suJ4=
+P:linux-firmware-atmel
+V:20221214-r3
+A:s390x
+S:401637
+I:684032
+T:firmware files for linux (atmel folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1zIrpZyjql0/5OwnTLt2OdiprCVM=
 P:perl-json-maybexs-doc
 V:1.004004-r0
@@ -65683,6 +65683,21 @@ t:1630780508
 c:a3739a07d478bc4f1f6e0c17612a1c83dffa9ecd
 i:docs perl-class-mix=0.006-r2
 
+C:Q1xGJKbgw6GpNHi3UrtIo1DkyIPn0=
+P:linux-firmware-rtl8192e
+V:20221214-r3
+A:s390x
+S:25200
+I:69632
+T:firmware files for linux (rtl8192e folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1qf5sTY2DcxyOBq9EDYv9dfLonW8=
 P:inotify-tools-libs
 V:3.22.6.0-r0
@@ -65775,21 +65790,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1675914789
 c:5975311fd3516fc7892cf032c60de2bb7afe66d4
 i:openrc heimdal=7.8.0-r1
-
-C:Q1KJDrgYQSyAGTGoQ1WXqsFxmx2ew=
-P:linux-firmware-slicoss
-V:20221214-r1
-A:s390x
-S:81621
-I:299008
-T:firmware files for linux (slicoss folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1CH2yOZLg1jLkUIwPScxb1WklLLU=
 P:libtirpc
@@ -66040,21 +66040,6 @@ t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.2 so:libc.musl-s390x.so.1
 i:lua-hashids=1.0.6-r3 lua5.2
-
-C:Q1YhpDXYc50a8IJOZbU5cfzZSf4XA=
-P:linux-firmware-mellanox
-V:20221214-r1
-A:s390x
-S:68306345
-I:73015296
-T:firmware files for linux (mellanox folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1wg+T0I+KfeJjIi7So3mPdK024w0=
 P:perl-http-body-doc
@@ -66686,22 +66671,6 @@ t:1684141238
 c:261bd945aa72f97c1a4205ea74624aa33cb823e4
 i:docs irqbalance=1.9.2-r1
 
-C:Q1H8B+a+Xi08OKkiB8q90xn6ayMz4=
-P:linux-firmware-other
-V:20221214-r1
-A:s390x
-S:111435203
-I:274952192
-T:firmware files for linux (uncategorized)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-D:linux-firmware-go7007=20221214-r1 linux-firmware-mediatek=20221214-r1 linux-firmware-qcom=20221214-r1
-p:linux-firmware-any
-
 C:Q1EKncyo/UK9q2wdIw0JX2j2nfExQ=
 P:font-sony-misc
 V:1.0.3-r3
@@ -66747,21 +66716,6 @@ t:1666276616
 c:13c7f6500189062c3e0b56487b19df2a7fd4812d
 D:so:libc.musl-s390x.so.1 so:libgcc_s.so.1
 p:boost-container=1.80.0-r3 so:libboost_container.so.1.80.0=1.80.0
-
-C:Q1MpUqIeL7rcs52KLIiC8Y/gAyJuI=
-P:linux-firmware-amd-ucode
-V:20221214-r1
-A:s390x
-S:35693
-I:81920
-T:firmware files for linux (amd-ucode folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1svqvKQlGHY5PkeW/BM/GwZoz33Q=
 P:libatk-1.0
@@ -67153,19 +67107,19 @@ c:a63ae573acc6f9d78d7d001d5becc726a9581473
 D:py3-cparser so:libc.musl-s390x.so.1 so:libffi.so.8
 p:py-cffi=1.15.1-r0 py3.10:cffi=1.15.1-r0
 
-C:Q1X7y+ZcKxrHIaESdgwlAH+aXjAC4=
-P:linux-firmware-ess
-V:20221214-r1
+C:Q1LruH4faxAT+OXafEwG4j+XH4K80=
+P:linux-firmware-liquidio
+V:20221214-r3
 A:s390x
-S:3607
-I:24576
-T:firmware files for linux (ess folder)
+S:17854745
+I:25485312
+T:firmware files for linux (liquidio folder)
 U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
 L:custom:multiple
 o:linux-firmware
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
 p:linux-firmware-any
 
 C:Q1summ/4/pRivuGhvXkUNzt4W0hpE=
@@ -67394,21 +67348,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1689794465
 c:b9241af2df782ebde62d9081dccdd84fb4da9c9e
 
-C:Q1QxSglGv3ggaUr63wKmuEK3JPjDA=
-P:linux-firmware-amdgpu
-V:20221214-r1
-A:s390x
-S:23649409
-I:70438912
-T:firmware files for linux (amdgpu folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1Rr+a7m6Yg72yAk1J5nO7OwxB9Wg=
 P:openldap-overlay-translucent
 V:2.6.3-r6
@@ -67607,21 +67546,6 @@ t:1667235598
 c:dfb827fab2f783983bce4f4ab53d67078047032c
 D:so:libc.musl-s390x.so.1
 p:cmd:gif2rgb=5.2.1-r2 cmd:gifbuild=5.2.1-r2 cmd:gifclrmp=5.2.1-r2 cmd:giffix=5.2.1-r2 cmd:giftext=5.2.1-r2 cmd:giftool=5.2.1-r2
-
-C:Q1Rim8GicJmh9M3ca0qrCxdU5sWn0=
-P:linux-firmware-amphion
-V:20221214-r1
-A:s390x
-S:350473
-I:528384
-T:firmware files for linux (amphion folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1Nr8G+Rvm5lgKg8QczTtDDFcSP20=
 P:fail2ban-tests
@@ -68855,6 +68779,21 @@ t:1668487651
 c:d6acdab45f2a00494f7de0083f68cf1e1e6649fe
 D:dropbear-dbclient !openssh-client dropbear-dbclient=2022.83-r0
 
+C:Q1FTzh0bu0CgjJPlzq9FbrLI7kfNo=
+P:linux-firmware-av7110
+V:20221214-r3
+A:s390x
+S:1839
+I:20480
+T:firmware files for linux (av7110 folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1CN7r6W/F0e/wuYkGTkLhbIFkStQ=
 P:spirv-tools-dbg
 V:1.3.231.1-r0
@@ -68977,6 +68916,21 @@ t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:so:libc.musl-s390x.so.1 so:libgmp.so.10 so:libgnutls.so.30 so:libhogweed.so.6 so:libnettle.so.8 so:libz.so.1
 p:so:librtmp.so.1=1
+
+C:Q1NuJd4Gr9MW0/CvmCyBy1IZBuVrA=
+P:linux-firmware-mellanox
+V:20221214-r3
+A:s390x
+S:68306449
+I:73015296
+T:firmware files for linux (mellanox folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1x7qwJU00B+k5zW6NrFFfhxrskjE=
 P:lua5.4-dev
@@ -69395,21 +69349,6 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:so:libc.musl-s390x.so.1 so:libmaxminddb.so.0
 i:lua5.4 lua-maxminddb=0.1-r3
 
-C:Q15cYUe/ikKlG2VijVcY8T4kPBk3M=
-P:linux-firmware-qed
-V:20221214-r1
-A:s390x
-S:11458988
-I:21438464
-T:firmware files for linux (qed folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
-
 C:Q1W62BRKYYVHzYIyxCXlC7tNkhHhc=
 P:perl-dbix-searchbuilder
 V:1.71-r0
@@ -69674,6 +69613,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1671862180
 c:2104b16d70e81dad1e5412a13ff991336651b7eb
 i:docs graphviz=7.0.5-r0
+
+C:Q1v4uM/Cb4UI3GUeH/8psgM2c2Qv4=
+P:linux-firmware-vicam
+V:20221214-r3
+A:s390x
+S:2921
+I:20480
+T:firmware files for linux (vicam folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1cRaAasKGD2BbCxVH4SJNQinM04I=
 P:apr-dev
@@ -70320,6 +70274,22 @@ t:1658971088
 c:37af0c5ea713fb5b174bfdbc34c97df50908f60b
 i:openrc knock=0.8.2-r1
 
+C:Q1E81YNgYyp5TYUqNEDXqBqFlLp44=
+P:linux-firmware-other
+V:20221214-r3
+A:s390x
+S:111435787
+I:274956288
+T:firmware files for linux (uncategorized)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+D:linux-firmware-go7007=20221214-r3 linux-firmware-mediatek=20221214-r3 linux-firmware-qcom=20221214-r3
+p:linux-firmware-any
+
 C:Q1loP3v3NW2AczWlxeDAPldeJBYl4=
 P:ferm-doc
 V:2.7-r0
@@ -70458,21 +70428,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1665442793
 c:ff195916ea432e02fde69e1e8174ca68465e32d6
 i:docs gsm=1.0.22-r1
-
-C:Q1gj5Vr6GMWpQWmp5IdzbdGgJgbzo=
-P:linux-firmware-ti-connectivity
-V:20221214-r1
-A:s390x
-S:5019326
-I:9101312
-T:firmware files for linux (ti-connectivity folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1dEM3GtWD4bTmtR+kak7Zl1ToNv4=
 P:subunit
@@ -71053,6 +71008,21 @@ c:79fd52e542111ab7a845cef14ac5a80a397249ad
 D:so:libc.musl-s390x.so.1
 p:so:libtalloc.so.2=2.3.4
 
+C:Q1qNZ5P1Wgp8+6IJBxz4Z+dQ7TmBY=
+P:linux-firmware-i915
+V:20221214-r3
+A:s390x
+S:10120335
+I:25874432
+T:firmware files for linux (i915 folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1Cq9/FerierLLgG7jGdomRxJITl8=
 P:mkinitfs-doc
 V:3.7.0-r1
@@ -71270,21 +71240,6 @@ t:1659793299
 c:cb0ddbaab205ef016bd91d64dc2c2323b16506fc
 D:lua5.3 so:libc.musl-s390x.so.1 so:libdbus-1.so.3
 i:lua5.3 lua-ldbus=20150430-r3
-
-C:Q1GfThiIReenm7rCsmHvnItVvZonw=
-P:linux-firmware-rockchip
-V:20221214-r1
-A:s390x
-S:35407
-I:118784
-T:firmware files for linux (rockchip folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1e8mHtxNbiqou4MhexCJL3p6ihUQ=
 P:ruby-bundler-doc
@@ -72881,6 +72836,21 @@ c:a0757d7dbdb40e77c21db54864f59f8422dab407
 D:so:libc.musl-s390x.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:librlog.so.5=5.0.0
 
+C:Q1DK5dKxHod9R58zK3IprXDYf/1/c=
+P:linux-firmware-keyspan
+V:20221214-r3
+A:s390x
+S:27248
+I:114688
+T:firmware files for linux (keyspan folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q13ePNHnyjCwhOwzopPfbyJQKVXRc=
 P:ifupdown-ng-wifi
 V:0.12.1-r1
@@ -73097,6 +73067,21 @@ t:1639853954
 c:09ba389608f576098e4f4ac1421396a5fd0c20a8
 D:bearssl=0.6-r2 pkgconfig
 p:pc:libbearssl=0.6
+
+C:Q1dDThRIoYo7TTof47ZeodVT4Jk7U=
+P:linux-firmware-moxa
+V:20221214-r3
+A:s390x
+S:160735
+I:430080
+T:firmware files for linux (moxa folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1ZqiPub8Bq+z0FpCS5M2wz08BjJk=
 P:py3-six
@@ -73449,21 +73434,6 @@ t:1678035306
 c:d794bc89a8786a9d97a7ce341fd2158b77aaf398
 D:openssl-dev>3 opusfile=0.12-r4 pc:ogg>=1.3 pc:opus>=1.0.1 pkgconfig
 p:pc:opusfile=0.12 pc:opusurl=0.12
-
-C:Q1Tm86PUjNkCIVhtskFEYoRfsmSYE=
-P:linux-firmware-tehuti
-V:20221214-r1
-A:s390x
-S:9449
-I:61440
-T:firmware files for linux (tehuti folder)
-U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
-L:custom:multiple
-o:linux-firmware
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
-p:linux-firmware-any
 
 C:Q1sdj+0bxirFGnWOnnP4I4UP9r0Ug=
 P:mariadb-backup
@@ -73922,6 +73892,21 @@ t:1668756200
 c:a9bcb5213ddeab929deb9cd509ce291927565d33
 D:so:libc.musl-s390x.so.1 so:libcjson.so.1 so:libmosquitto.so.1
 p:cmd:mosquitto_pub=2.0.15-r1 cmd:mosquitto_sub=2.0.15-r1
+
+C:Q1sleU49wYM509Pnq9kyBbPez/F4c=
+P:linux-firmware-3com
+V:20221214-r3
+A:s390x
+S:32173
+I:61440
+T:firmware files for linux (3com folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
 
 C:Q1g+nFWsDlHPtk5jFQlCJOQ7bZ4EA=
 P:dhcpcd-openrc
@@ -74707,6 +74692,21 @@ c:9c15e0596ae3254d1b3f011c63d8d8a966ddc385
 D:so:libc.musl-s390x.so.1 so:libmnl.so.0 so:libnfnetlink.so.0
 p:so:libnetfilter_queue.so.1=1.5.0
 
+C:Q1tI1FA2pCwtK9RK/9qMFWVKKKwYw=
+P:linux-firmware-cadence
+V:20221214-r3
+A:s390x
+S:25235
+I:147456
+T:firmware files for linux (cadence folder)
+U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
+L:custom:multiple
+o:linux-firmware
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
+p:linux-firmware-any
+
 C:Q1xfk5yaEX6WBbqfdxJE+p/WgCsnQ=
 P:libnl3-dev
 V:3.7.0-r0
@@ -75030,19 +75030,19 @@ c:13f2471b0e78b03d7c835d16066b7e635d25b55b
 D:so:libc.musl-s390x.so.1 so:libglib-2.0.so.0
 p:cmd:rrdcreate=1.7.2-r6 cmd:rrdinfo=1.7.2-r6 cmd:rrdupdate=1.7.2-r6
 
-C:Q1yY+OdISdIFx4D3Gq41yQRvtkvxU=
-P:linux-firmware-adaptec
-V:20221214-r1
+C:Q1xd9vcDeiVFOhDdWQ/XG9XDCuPsw=
+P:linux-firmware-atusb
+V:20221214-r3
 A:s390x
-S:2105
-I:24576
-T:firmware files for linux (adaptec folder)
+S:8054
+I:40960
+T:firmware files for linux (atusb folder)
 U:https://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git;a=summary
 L:custom:multiple
 o:linux-firmware
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1672591081
-c:af42d45cd558323043f855dd09fc1c7381a17803
+t:1690253961
+c:ae1732c35dc8ec480eb3d8c98f7ce25497eb0869
 p:linux-firmware-any
 
 C:Q1qd+19DRU647TCzn4aWBz1B61GMs=
