@@ -28559,11 +28559,13 @@
     "libzmq": {
       "origin": "zeromq",
       "versions": {
-        "4.3.5-r1": 1697936235
+        "4.3.5-r1": 1697936235,
+        "4.3.5-r2": 1698036252
       },
       "dependencies": [
         "so:libc.musl-armv7.so.1",
         "so:libgcc_s.so.1",
+        "so:libsodium.so.26",
         "so:libstdc++.so.6"
       ],
       "provides": [
@@ -28573,7 +28575,8 @@
     "libzmq-static": {
       "origin": "zeromq",
       "versions": {
-        "4.3.5-r1": 1697936235
+        "4.3.5-r1": 1697936235,
+        "4.3.5-r2": 1698036252
       }
     },
     "lighttpd": {
@@ -64363,7 +64366,8 @@
     "zeromq": {
       "origin": "zeromq",
       "versions": {
-        "4.3.5-r1": 1697936235
+        "4.3.5-r1": 1697936235,
+        "4.3.5-r2": 1698036252
       },
       "dependencies": [
         "so:libc.musl-armv7.so.1",
@@ -64371,22 +64375,24 @@
         "so:libzmq.so.5"
       ],
       "provides": [
-        "cmd:inproc_lat=4.3.5-r1",
-        "cmd:inproc_thr=4.3.5-r1",
-        "cmd:local_lat=4.3.5-r1",
-        "cmd:local_thr=4.3.5-r1",
-        "cmd:proxy_thr=4.3.5-r1",
-        "cmd:remote_lat=4.3.5-r1",
-        "cmd:remote_thr=4.3.5-r1"
+        "cmd:inproc_lat=4.3.5-r2",
+        "cmd:inproc_thr=4.3.5-r2",
+        "cmd:local_lat=4.3.5-r2",
+        "cmd:local_thr=4.3.5-r2",
+        "cmd:proxy_thr=4.3.5-r2",
+        "cmd:remote_lat=4.3.5-r2",
+        "cmd:remote_thr=4.3.5-r2"
       ]
     },
     "zeromq-dev": {
       "origin": "zeromq",
       "versions": {
-        "4.3.5-r1": 1697936235
+        "4.3.5-r1": 1697936235,
+        "4.3.5-r2": 1698036252
       },
       "dependencies": [
-        "libzmq=4.3.5-r1",
+        "libzmq=4.3.5-r2",
+        "pc:libsodium",
         "pkgconfig"
       ],
       "provides": [
