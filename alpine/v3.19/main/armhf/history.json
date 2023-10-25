@@ -23208,10 +23208,12 @@
       "origin": "libdrm",
       "versions": {
         "2.4.116-r0": 1692795010,
-        "2.4.117-r0": 1698243562
+        "2.4.117-r0": 1698243562,
+        "2.4.117-r1": 1698261171
       },
       "dependencies": [
-        "so:libc.musl-armhf.so.1"
+        "so:libc.musl-armhf.so.1",
+        "so:libpciaccess.so.0"
       ],
       "provides": [
         "so:libdrm.so.2=2.4.0",
@@ -23219,6 +23221,7 @@
         "so:libdrm_etnaviv.so.1=1.0.0",
         "so:libdrm_exynos.so.1=1.0.0",
         "so:libdrm_freedreno.so.1=1.0.0",
+        "so:libdrm_intel.so.1=1.0.0",
         "so:libdrm_nouveau.so.2=2.0.0",
         "so:libdrm_omap.so.1=1.0.0",
         "so:libdrm_radeon.so.1=1.0.1",
@@ -23229,11 +23232,13 @@
       "origin": "libdrm",
       "versions": {
         "2.4.116-r0": 1692795010,
-        "2.4.117-r0": 1698243562
+        "2.4.117-r0": 1698243562,
+        "2.4.117-r1": 1698261171
       },
       "dependencies": [
         "linux-headers",
-        "libdrm=2.4.117-r0",
+        "libdrm=2.4.117-r1",
+        "pc:pciaccess>=0.10",
         "pkgconfig"
       ],
       "provides": [
@@ -23242,6 +23247,7 @@
         "pc:libdrm_etnaviv=2.4.117",
         "pc:libdrm_exynos=0.7",
         "pc:libdrm_freedreno=2.4.117",
+        "pc:libdrm_intel=2.4.117",
         "pc:libdrm_nouveau=2.4.117",
         "pc:libdrm_omap=0.6",
         "pc:libdrm_radeon=2.4.117",
@@ -23253,7 +23259,8 @@
       "origin": "libdrm",
       "versions": {
         "2.4.116-r0": 1692795010,
-        "2.4.117-r0": 1698243562
+        "2.4.117-r0": 1698243562,
+        "2.4.117-r1": 1698261171
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -23264,25 +23271,25 @@
         "so:libdrm_tegra.so.0"
       ],
       "provides": [
-        "cmd:amdgpu_stress=2.4.117-r0",
-        "cmd:drmdevice=2.4.117-r0",
-        "cmd:etnaviv_2d_test=2.4.117-r0",
-        "cmd:etnaviv_bo_cache_test=2.4.117-r0",
-        "cmd:etnaviv_cmd_stream_test=2.4.117-r0",
-        "cmd:exynos_fimg2d_event=2.4.117-r0",
-        "cmd:exynos_fimg2d_perf=2.4.117-r0",
-        "cmd:exynos_fimg2d_test=2.4.117-r0",
-        "cmd:modeprint=2.4.117-r0",
-        "cmd:modetest=2.4.117-r0",
-        "cmd:proptest=2.4.117-r0",
-        "cmd:tegra-gr2d-fill=2.4.117-r0",
-        "cmd:tegra-openclose=2.4.117-r0",
-        "cmd:tegra-syncpt-timeout=2.4.117-r0",
-        "cmd:tegra-syncpt-wait=2.4.117-r0",
-        "cmd:tegra-vic-blit=2.4.117-r0",
-        "cmd:tegra-vic-clear=2.4.117-r0",
-        "cmd:tegra-vic-flip=2.4.117-r0",
-        "cmd:vbltest=2.4.117-r0"
+        "cmd:amdgpu_stress=2.4.117-r1",
+        "cmd:drmdevice=2.4.117-r1",
+        "cmd:etnaviv_2d_test=2.4.117-r1",
+        "cmd:etnaviv_bo_cache_test=2.4.117-r1",
+        "cmd:etnaviv_cmd_stream_test=2.4.117-r1",
+        "cmd:exynos_fimg2d_event=2.4.117-r1",
+        "cmd:exynos_fimg2d_perf=2.4.117-r1",
+        "cmd:exynos_fimg2d_test=2.4.117-r1",
+        "cmd:modeprint=2.4.117-r1",
+        "cmd:modetest=2.4.117-r1",
+        "cmd:proptest=2.4.117-r1",
+        "cmd:tegra-gr2d-fill=2.4.117-r1",
+        "cmd:tegra-openclose=2.4.117-r1",
+        "cmd:tegra-syncpt-timeout=2.4.117-r1",
+        "cmd:tegra-syncpt-wait=2.4.117-r1",
+        "cmd:tegra-vic-blit=2.4.117-r1",
+        "cmd:tegra-vic-clear=2.4.117-r1",
+        "cmd:tegra-vic-flip=2.4.117-r1",
+        "cmd:vbltest=2.4.117-r1"
       ]
     },
     "libdwarf": {
@@ -29725,7 +29732,8 @@
     "linux-rpi": {
       "origin": "linux-rpi",
       "versions": {
-        "6.1.56-r0": 1696937395
+        "6.1.56-r0": 1696937395,
+        "6.1.60-r0": 1698250436
       },
       "dependencies": [
         "initramfs-generator",
@@ -29736,7 +29744,8 @@
     "linux-rpi-dev": {
       "origin": "linux-rpi",
       "versions": {
-        "6.1.56-r0": 1696937395
+        "6.1.56-r0": 1696937395,
+        "6.1.60-r0": 1698250436
       },
       "dependencies": [
         "perl",
@@ -29751,7 +29760,8 @@
     "linux-rpi2": {
       "origin": "linux-rpi",
       "versions": {
-        "6.1.56-r0": 1696937395
+        "6.1.56-r0": 1696937395,
+        "6.1.60-r0": 1698250436
       },
       "dependencies": [
         "initramfs-generator",
@@ -29762,7 +29772,8 @@
     "linux-rpi2-dev": {
       "origin": "linux-rpi",
       "versions": {
-        "6.1.56-r0": 1696937395
+        "6.1.56-r0": 1696937395,
+        "6.1.60-r0": 1698250436
       },
       "dependencies": [
         "perl",
@@ -64052,32 +64063,35 @@
     "zfs-rpi": {
       "origin": "zfs-rpi",
       "versions": {
-        "6.1.56-r2": 1696937396
+        "6.1.56-r2": 1696937396,
+        "6.1.60-r2": 1698250436
       },
       "dependencies": [
-        "linux-rpi=6.1.56-r0"
+        "linux-rpi=6.1.60-r0"
       ]
     },
     "zfs-rpi-dev": {
       "origin": "zfs-rpi",
       "versions": {
-        "6.1.56-r2": 1696937396
+        "6.1.56-r2": 1696937396,
+        "6.1.60-r2": 1698250436
       },
       "dependencies": [
         "glib-dev",
         "e2fsprogs-dev",
         "util-linux-dev",
         "libtirpc-dev",
-        "linux-rpi-dev=6.1.56-r0"
+        "linux-rpi-dev=6.1.60-r0"
       ]
     },
     "zfs-rpi2": {
       "origin": "zfs-rpi",
       "versions": {
-        "6.1.56-r2": 1696937396
+        "6.1.56-r2": 1696937396,
+        "6.1.60-r2": 1698250436
       },
       "dependencies": [
-        "linux-rpi2=6.1.56-r0"
+        "linux-rpi2=6.1.60-r0"
       ]
     },
     "zfs-scripts": {
@@ -71632,6 +71646,10 @@
       "libzstd.so.1": {
         "package": "zstd-libs",
         "version": "1.5.5"
+      },
+      "libdrm_intel.so.1": {
+        "package": "libdrm",
+        "version": "1.0.0"
       }
     }
   }
