@@ -30211,58 +30211,63 @@
     "lld": {
       "origin": "lld",
       "versions": {
-        "16.0.6-r3": 1691144503
+        "16.0.6-r3": 1691144503,
+        "17.0.3-r0": 1698701277
       },
       "dependencies": [
-        "so:libLLVM-16.so",
+        "so:libLLVM-17.so",
         "so:libc.musl-x86.so.1",
         "so:libgcc_s.so.1",
-        "so:liblldCOFF.so.16",
-        "so:liblldCommon.so.16",
-        "so:liblldELF.so.16",
-        "so:liblldMachO.so.16",
-        "so:liblldMinGW.so.16",
-        "so:liblldWasm.so.16",
+        "so:liblldCOFF.so.17",
+        "so:liblldCommon.so.17",
+        "so:liblldELF.so.17",
+        "so:liblldMachO.so.17",
+        "so:liblldMinGW.so.17",
+        "so:liblldWasm.so.17",
         "so:libscudo.so",
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:ld.lld=16.0.6-r3",
-        "cmd:ld64.lld=16.0.6-r3",
-        "cmd:lld-link=16.0.6-r3",
-        "cmd:lld=16.0.6-r3",
-        "cmd:wasm-ld=16.0.6-r3"
+        "cmd:ld.lld=17.0.3-r0",
+        "cmd:ld64.lld=17.0.3-r0",
+        "cmd:lld-link=17.0.3-r0",
+        "cmd:lld=17.0.3-r0",
+        "cmd:wasm-ld=17.0.3-r0"
       ]
     },
     "lld-dbg": {
       "origin": "lld",
       "versions": {
-        "16.0.6-r3": 1691144503
+        "16.0.6-r3": 1691144503,
+        "17.0.3-r0": 1698701277
       }
     },
     "lld-dev": {
       "origin": "lld",
       "versions": {
-        "16.0.6-r3": 1691144503
+        "16.0.6-r3": 1691144503,
+        "17.0.3-r0": 1698701277
       },
       "dependencies": [
-        "lld=16.0.6-r3",
-        "lld-libs=16.0.6-r3"
+        "lld=17.0.3-r0",
+        "lld-libs=17.0.3-r0"
       ]
     },
     "lld-doc": {
       "origin": "lld",
       "versions": {
-        "16.0.6-r3": 1691144503
+        "16.0.6-r3": 1691144503,
+        "17.0.3-r0": 1698701277
       }
     },
     "lld-libs": {
       "origin": "lld",
       "versions": {
-        "16.0.6-r3": 1691144503
+        "16.0.6-r3": 1691144503,
+        "17.0.3-r0": 1698701277
       },
       "dependencies": [
-        "so:libLLVM-16.so",
+        "so:libLLVM-17.so",
         "so:libc.musl-x86.so.1",
         "so:libgcc_s.so.1",
         "so:libstdc++.so.6",
@@ -30270,12 +30275,12 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "so:liblldCOFF.so.16=16",
-        "so:liblldCommon.so.16=16",
-        "so:liblldELF.so.16=16",
-        "so:liblldMachO.so.16=16",
-        "so:liblldMinGW.so.16=16",
-        "so:liblldWasm.so.16=16"
+        "so:liblldCOFF.so.17=17",
+        "so:liblldCommon.so.17=17",
+        "so:liblldELF.so.17=17",
+        "so:liblldMachO.so.17=17",
+        "so:liblldMinGW.so.17=17",
+        "so:liblldWasm.so.17=17"
       ]
     },
     "llvm-libunwind": {
@@ -60782,7 +60787,8 @@
       "versions": {
         "3.0.2-r0": 1695667526,
         "3.0.3-r0": 1698619432,
-        "3.0.3-r1": 1698687529
+        "3.0.3-r1": 1698687529,
+        "3.0.3-r2": 1698694907
       },
       "dependencies": [
         "e2fsprogs-extra",
@@ -60793,8 +60799,8 @@
         "/bin/sh"
       ],
       "provides": [
-        "cmd:imds=3.0.3-r1",
-        "cmd:tiny-cloud=3.0.3-r1"
+        "cmd:imds=3.0.3-r2",
+        "cmd:tiny-cloud=3.0.3-r2"
       ]
     },
     "tiny-cloud-alpine": {
@@ -60802,13 +60808,14 @@
       "versions": {
         "3.0.2-r0": 1695667526,
         "3.0.3-r0": 1698619432,
-        "3.0.3-r1": 1698687529
+        "3.0.3-r1": 1698687529,
+        "3.0.3-r2": 1698694907
       },
       "dependencies": [
         "ifupdown-ng",
-        "tiny-cloud-nocloud=3.0.3-r1",
+        "tiny-cloud-nocloud=3.0.3-r2",
         "/bin/sh",
-        "tiny-cloud-nocloud=3.0.3-r1"
+        "tiny-cloud-nocloud=3.0.3-r2"
       ]
     },
     "tiny-cloud-aws": {
@@ -60816,11 +60823,14 @@
       "versions": {
         "3.0.2-r0": 1695667526,
         "3.0.3-r0": 1698619432,
-        "3.0.3-r1": 1698687529
+        "3.0.3-r1": 1698687529,
+        "3.0.3-r2": 1698694907
       },
       "dependencies": [
         "nvme-cli",
-        "tiny-cloud-network=3.0.3-r1",
+        "ifupdown-ng",
+        "iproute2-minimal",
+        "tiny-cloud=3.0.3-r2",
         "/bin/sh"
       ],
       "provides": [
@@ -60832,10 +60842,11 @@
       "versions": {
         "3.0.2-r0": 1695667526,
         "3.0.3-r0": 1698619432,
-        "3.0.3-r1": 1698687529
+        "3.0.3-r1": 1698687529,
+        "3.0.3-r2": 1698694907
       },
       "dependencies": [
-        "tiny-cloud-network=3.0.3-r1",
+        "tiny-cloud=3.0.3-r2",
         "/bin/sh"
       ]
     },
@@ -60844,10 +60855,11 @@
       "versions": {
         "3.0.2-r0": 1695667526,
         "3.0.3-r0": 1698619432,
-        "3.0.3-r1": 1698687529
+        "3.0.3-r1": 1698687529,
+        "3.0.3-r2": 1698694907
       },
       "dependencies": [
-        "tiny-cloud-network=3.0.3-r1",
+        "tiny-cloud=3.0.3-r2",
         "/bin/sh"
       ]
     },
@@ -60873,10 +60885,11 @@
       "versions": {
         "3.0.2-r0": 1695667526,
         "3.0.3-r0": 1698619432,
-        "3.0.3-r1": 1698687529
+        "3.0.3-r1": 1698687529,
+        "3.0.3-r2": 1698694907
       },
       "dependencies": [
-        "tiny-cloud=3.0.3-r1",
+        "tiny-cloud=3.0.3-r2",
         "/bin/sh"
       ]
     },
@@ -60885,10 +60898,11 @@
       "versions": {
         "3.0.2-r0": 1695667526,
         "3.0.3-r0": 1698619432,
-        "3.0.3-r1": 1698687529
+        "3.0.3-r1": 1698687529,
+        "3.0.3-r2": 1698694907
       },
       "dependencies": [
-        "tiny-cloud-network=3.0.3-r1",
+        "tiny-cloud=3.0.3-r2",
         "/bin/sh"
       ]
     },
@@ -60897,7 +60911,8 @@
       "versions": {
         "3.0.2-r0": 1695667526,
         "3.0.3-r0": 1698619432,
-        "3.0.3-r1": 1698687529
+        "3.0.3-r1": 1698687529,
+        "3.0.3-r2": 1698694907
       },
       "dependencies": [
         "/bin/sh"
@@ -72594,6 +72609,30 @@
       },
       "libclang-cpp.so.17": {
         "package": "clang17-libs",
+        "version": "17"
+      },
+      "liblldCOFF.so.17": {
+        "package": "lld-libs",
+        "version": "17"
+      },
+      "liblldCommon.so.17": {
+        "package": "lld-libs",
+        "version": "17"
+      },
+      "liblldELF.so.17": {
+        "package": "lld-libs",
+        "version": "17"
+      },
+      "liblldMachO.so.17": {
+        "package": "lld-libs",
+        "version": "17"
+      },
+      "liblldMinGW.so.17": {
+        "package": "lld-libs",
+        "version": "17"
+      },
+      "liblldWasm.so.17": {
+        "package": "lld-libs",
         "version": "17"
       }
     }
