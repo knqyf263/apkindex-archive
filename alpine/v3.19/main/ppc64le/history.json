@@ -10586,7 +10586,8 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
         "openssl>3",
@@ -10601,6 +10602,7 @@
         "so:liblzma.so.5",
         "so:libsodium.so.26",
         "so:libssl.so.3",
+        "so:libstemmer.so.2",
         "so:libz.so.1",
         "so:libzstd.so.1"
       ],
@@ -10647,40 +10649,44 @@
         "so:libold_stats_mail.so=0",
         "so:libssl_iostream_openssl.so=0",
         "so:libstats_auth.so=0",
-        "cmd:doveadm=2.3.21-r15",
-        "cmd:doveconf=2.3.21-r15",
-        "cmd:dovecot-sysreport=2.3.21-r15",
-        "cmd:dovecot=2.3.21-r15",
-        "cmd:dsync=2.3.21-r15"
+        "cmd:doveadm=2.3.21-r16",
+        "cmd:doveconf=2.3.21-r16",
+        "cmd:dovecot-sysreport=2.3.21-r16",
+        "cmd:dovecot=2.3.21-r16",
+        "cmd:dsync=2.3.21-r16"
       ]
     },
     "dovecot-dev": {
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       }
     },
     "dovecot-doc": {
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       }
     },
     "dovecot-fts-lucene": {
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot=2.3.21-r15",
+        "dovecot=2.3.21-r16",
         "so:libc.musl-ppc64le.so.1",
         "so:libclucene-core.so.1",
         "so:libclucene-shared.so.1",
         "so:libgcc_s.so.1",
-        "so:libstdc++.so.6"
+        "so:libstdc++.so.6",
+        "so:libstemmer.so.2"
       ],
       "provides": [
         "so:lib21_fts_lucene_plugin.so=0"
@@ -10690,10 +10696,11 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot=2.3.21-r15",
+        "dovecot=2.3.21-r16",
         "so:lib20_fts_plugin.so",
         "so:libc.musl-ppc64le.so.1",
         "so:libexpat.so.1"
@@ -10706,10 +10713,11 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot=2.3.21-r15",
+        "dovecot=2.3.21-r16",
         "so:libc.musl-ppc64le.so.1",
         "so:libgssapi.so.3",
         "so:libkrb5.so.26"
@@ -10719,10 +10727,11 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot=2.3.21-r15",
+        "dovecot=2.3.21-r16",
         "so:libc.musl-ppc64le.so.1",
         "so:libdovecot.so.0",
         "so:liblber.so.2",
@@ -10736,10 +10745,11 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot=2.3.21-r15",
+        "dovecot=2.3.21-r16",
         "so:libc.musl-ppc64le.so.1",
         "so:libdovecot-lda.so.0",
         "so:libdovecot-storage.so.0",
@@ -10750,10 +10760,11 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot=2.3.21-r15",
+        "dovecot=2.3.21-r16",
         "so:libc.musl-ppc64le.so.1",
         "so:libdovecot-storage.so.0",
         "so:libdovecot.so.0",
@@ -10770,10 +10781,11 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot-sql=2.3.21-r15",
+        "dovecot-sql=2.3.21-r16",
         "so:libc.musl-ppc64le.so.1",
         "so:libmariadb.so.3"
       ],
@@ -10785,17 +10797,19 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       }
     },
     "dovecot-pgsql": {
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot-sql=2.3.21-r15",
+        "dovecot-sql=2.3.21-r16",
         "so:libc.musl-ppc64le.so.1",
         "so:libpq.so.5"
       ],
@@ -10807,10 +10821,11 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot=2.3.21-r15",
+        "dovecot=2.3.21-r16",
         "so:libc.musl-ppc64le.so.1",
         "so:libdovecot-login.so.0",
         "so:libdovecot-storage.so.0",
@@ -10821,21 +10836,22 @@
         "so:lib95_imap_filter_sieve_plugin.so=0",
         "so:lib95_imap_sieve_plugin.so=0",
         "so:libdovecot-sieve.so.0=0.0.0",
-        "cmd:sieve-dump=2.3.21-r15",
-        "cmd:sieve-filter=2.3.21-r15",
-        "cmd:sieve-test=2.3.21-r15",
-        "cmd:sievec=2.3.21-r15"
+        "cmd:sieve-dump=2.3.21-r16",
+        "cmd:sieve-filter=2.3.21-r16",
+        "cmd:sieve-test=2.3.21-r16",
+        "cmd:sievec=2.3.21-r16"
       ]
     },
     "dovecot-pigeonhole-plugin-ldap": {
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot-pigeonhole-plugin=2.3.21-r15",
-        "dovecot-ldap=2.3.21-r15",
+        "dovecot-pigeonhole-plugin=2.3.21-r16",
+        "dovecot-ldap=2.3.21-r16",
         "so:libc.musl-ppc64le.so.1",
         "so:liblber.so.2",
         "so:libldap.so.2"
@@ -10845,10 +10861,11 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot=2.3.21-r15",
+        "dovecot=2.3.21-r16",
         "so:libc.musl-ppc64le.so.1",
         "so:libdovecot-storage.so.0",
         "so:libdovecot.so.0"
@@ -10858,10 +10875,11 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot=2.3.21-r15",
+        "dovecot=2.3.21-r16",
         "so:libc.musl-ppc64le.so.1",
         "so:libdovecot.so.0"
       ],
@@ -10873,10 +10891,11 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot-sql=2.3.21-r15",
+        "dovecot-sql=2.3.21-r16",
         "so:libc.musl-ppc64le.so.1",
         "so:libsqlite3.so.0"
       ],
@@ -10888,10 +10907,11 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot=2.3.21-r15",
+        "dovecot=2.3.21-r16",
         "so:libc.musl-ppc64le.so.1",
         "so:libdovecot-storage.so.0",
         "so:libdovecot.so.0"
@@ -59108,21 +59128,23 @@
     "strace": {
       "origin": "strace",
       "versions": {
-        "6.5-r0": 1693809425
+        "6.5-r0": 1693809425,
+        "6.6-r0": 1698757985
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
         "so:libdw.so.1"
       ],
       "provides": [
-        "cmd:strace-log-merge=6.5-r0",
-        "cmd:strace=6.5-r0"
+        "cmd:strace-log-merge=6.6-r0",
+        "cmd:strace=6.6-r0"
       ]
     },
     "strace-doc": {
       "origin": "strace",
       "versions": {
-        "6.5-r0": 1693809425
+        "6.5-r0": 1693809425,
+        "6.6-r0": 1698757985
       }
     },
     "strongswan": {
@@ -64635,6 +64657,46 @@
       "provides": [
         "linux-firmware-any"
       ]
+    },
+    "libstemmer": {
+      "origin": "snowball",
+      "versions": {
+        "2.2.0-r0": 1698757571
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1"
+      ],
+      "provides": [
+        "so:libstemmer.so.2=2"
+      ]
+    },
+    "libstemmer-dev": {
+      "origin": "snowball",
+      "versions": {
+        "2.2.0-r0": 1698757571
+      },
+      "dependencies": [
+        "libstemmer=2.2.0-r0"
+      ]
+    },
+    "snowball": {
+      "origin": "snowball",
+      "versions": {
+        "2.2.0-r0": 1698757571
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1"
+      ],
+      "provides": [
+        "cmd:snowball=2.2.0-r0",
+        "cmd:stemwords=2.2.0-r0"
+      ]
+    },
+    "snowball-doc": {
+      "origin": "snowball",
+      "versions": {
+        "2.2.0-r0": 1698757571
+      }
     }
   },
   "provide": {
@@ -71852,6 +71914,10 @@
       "libLLVMSPIRVLib.so.17": {
         "package": "spirv-llvm-translator-libs",
         "version": "17"
+      },
+      "libstemmer.so.2": {
+        "package": "libstemmer",
+        "version": "2"
       }
     }
   }
