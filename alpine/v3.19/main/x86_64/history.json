@@ -10604,7 +10604,8 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
         "openssl>3",
@@ -10619,6 +10620,7 @@
         "so:liblzma.so.5",
         "so:libsodium.so.26",
         "so:libssl.so.3",
+        "so:libstemmer.so.2",
         "so:libz.so.1",
         "so:libzstd.so.1"
       ],
@@ -10665,40 +10667,44 @@
         "so:libold_stats_mail.so=0",
         "so:libssl_iostream_openssl.so=0",
         "so:libstats_auth.so=0",
-        "cmd:doveadm=2.3.21-r15",
-        "cmd:doveconf=2.3.21-r15",
-        "cmd:dovecot-sysreport=2.3.21-r15",
-        "cmd:dovecot=2.3.21-r15",
-        "cmd:dsync=2.3.21-r15"
+        "cmd:doveadm=2.3.21-r16",
+        "cmd:doveconf=2.3.21-r16",
+        "cmd:dovecot-sysreport=2.3.21-r16",
+        "cmd:dovecot=2.3.21-r16",
+        "cmd:dsync=2.3.21-r16"
       ]
     },
     "dovecot-dev": {
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       }
     },
     "dovecot-doc": {
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       }
     },
     "dovecot-fts-lucene": {
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot=2.3.21-r15",
+        "dovecot=2.3.21-r16",
         "so:libc.musl-x86_64.so.1",
         "so:libclucene-core.so.1",
         "so:libclucene-shared.so.1",
         "so:libgcc_s.so.1",
-        "so:libstdc++.so.6"
+        "so:libstdc++.so.6",
+        "so:libstemmer.so.2"
       ],
       "provides": [
         "so:lib21_fts_lucene_plugin.so=0"
@@ -10708,10 +10714,11 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot=2.3.21-r15",
+        "dovecot=2.3.21-r16",
         "so:lib20_fts_plugin.so",
         "so:libc.musl-x86_64.so.1",
         "so:libexpat.so.1"
@@ -10724,10 +10731,11 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot=2.3.21-r15",
+        "dovecot=2.3.21-r16",
         "so:libc.musl-x86_64.so.1",
         "so:libgssapi.so.3",
         "so:libkrb5.so.26"
@@ -10737,10 +10745,11 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot=2.3.21-r15",
+        "dovecot=2.3.21-r16",
         "so:libc.musl-x86_64.so.1",
         "so:libdovecot.so.0",
         "so:liblber.so.2",
@@ -10754,10 +10763,11 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot=2.3.21-r15",
+        "dovecot=2.3.21-r16",
         "so:libc.musl-x86_64.so.1",
         "so:libdovecot-lda.so.0",
         "so:libdovecot-storage.so.0",
@@ -10768,10 +10778,11 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot=2.3.21-r15",
+        "dovecot=2.3.21-r16",
         "so:libc.musl-x86_64.so.1",
         "so:libdovecot-storage.so.0",
         "so:libdovecot.so.0",
@@ -10788,10 +10799,11 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot-sql=2.3.21-r15",
+        "dovecot-sql=2.3.21-r16",
         "so:libc.musl-x86_64.so.1",
         "so:libmariadb.so.3"
       ],
@@ -10803,17 +10815,19 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       }
     },
     "dovecot-pgsql": {
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot-sql=2.3.21-r15",
+        "dovecot-sql=2.3.21-r16",
         "so:libc.musl-x86_64.so.1",
         "so:libpq.so.5"
       ],
@@ -10825,10 +10839,11 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot=2.3.21-r15",
+        "dovecot=2.3.21-r16",
         "so:libc.musl-x86_64.so.1",
         "so:libdovecot-login.so.0",
         "so:libdovecot-storage.so.0",
@@ -10839,21 +10854,22 @@
         "so:lib95_imap_filter_sieve_plugin.so=0",
         "so:lib95_imap_sieve_plugin.so=0",
         "so:libdovecot-sieve.so.0=0.0.0",
-        "cmd:sieve-dump=2.3.21-r15",
-        "cmd:sieve-filter=2.3.21-r15",
-        "cmd:sieve-test=2.3.21-r15",
-        "cmd:sievec=2.3.21-r15"
+        "cmd:sieve-dump=2.3.21-r16",
+        "cmd:sieve-filter=2.3.21-r16",
+        "cmd:sieve-test=2.3.21-r16",
+        "cmd:sievec=2.3.21-r16"
       ]
     },
     "dovecot-pigeonhole-plugin-ldap": {
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot-pigeonhole-plugin=2.3.21-r15",
-        "dovecot-ldap=2.3.21-r15",
+        "dovecot-pigeonhole-plugin=2.3.21-r16",
+        "dovecot-ldap=2.3.21-r16",
         "so:libc.musl-x86_64.so.1",
         "so:liblber.so.2",
         "so:libldap.so.2"
@@ -10863,10 +10879,11 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot=2.3.21-r15",
+        "dovecot=2.3.21-r16",
         "so:libc.musl-x86_64.so.1",
         "so:libdovecot-storage.so.0",
         "so:libdovecot.so.0"
@@ -10876,10 +10893,11 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot=2.3.21-r15",
+        "dovecot=2.3.21-r16",
         "so:libc.musl-x86_64.so.1",
         "so:libdovecot.so.0"
       ],
@@ -10891,10 +10909,11 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot-sql=2.3.21-r15",
+        "dovecot-sql=2.3.21-r16",
         "so:libc.musl-x86_64.so.1",
         "so:libsqlite3.so.0"
       ],
@@ -10906,10 +10925,11 @@
       "origin": "dovecot",
       "versions": {
         "2.3.21-r14": 1697936234,
-        "2.3.21-r15": 1698128105
+        "2.3.21-r15": 1698128105,
+        "2.3.21-r16": 1698757571
       },
       "dependencies": [
-        "dovecot=2.3.21-r15",
+        "dovecot=2.3.21-r16",
         "so:libc.musl-x86_64.so.1",
         "so:libdovecot-storage.so.0",
         "so:libdovecot.so.0"
@@ -17841,7 +17861,8 @@
     "gyp": {
       "origin": "gyp",
       "versions": {
-        "20230301-r1": 1694445692
+        "20230301-r1": 1694445692,
+        "20230301-r2": 1698731136
       },
       "dependencies": [
         "python3",
@@ -17850,14 +17871,15 @@
         "python3~3.11"
       ],
       "provides": [
-        "cmd:gyp=20230301-r1",
-        "py3.11:gyp=20230301-r1"
+        "cmd:gyp=20230301-r2",
+        "py3.11:gyp=20230301-r2"
       ]
     },
     "gyp-pyc": {
       "origin": "gyp",
       "versions": {
-        "20230301-r1": 1694445692
+        "20230301-r1": 1694445692,
+        "20230301-r2": 1698731136
       },
       "dependencies": [
         "python3",
@@ -23098,16 +23120,18 @@
     "libclc": {
       "origin": "libclc",
       "versions": {
-        "15.0.7-r2": 1693048341
+        "15.0.7-r2": 1693048341,
+        "17.0.3-r0": 1698737255
       }
     },
     "libclc-dev": {
       "origin": "libclc",
       "versions": {
-        "15.0.7-r2": 1693048341
+        "15.0.7-r2": 1693048341,
+        "17.0.3-r0": 1698737255
       },
       "dependencies": [
-        "libclc=15.0.7-r2",
+        "libclc=17.0.3-r0",
         "pkgconfig"
       ],
       "provides": [
@@ -28774,7 +28798,8 @@
     "lighttpd": {
       "origin": "lighttpd",
       "versions": {
-        "1.4.72-r0": 1696771468
+        "1.4.72-r0": 1696771468,
+        "1.4.73-r0": 1698736996
       },
       "dependencies": [
         "/bin/sh",
@@ -28791,26 +28816,29 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:lighttpd-angel=1.4.72-r0",
-        "cmd:lighttpd=1.4.72-r0"
+        "cmd:lighttpd-angel=1.4.73-r0",
+        "cmd:lighttpd=1.4.73-r0"
       ]
     },
     "lighttpd-dbg": {
       "origin": "lighttpd",
       "versions": {
-        "1.4.72-r0": 1696771468
+        "1.4.72-r0": 1696771468,
+        "1.4.73-r0": 1698736996
       }
     },
     "lighttpd-doc": {
       "origin": "lighttpd",
       "versions": {
-        "1.4.72-r0": 1696771468
+        "1.4.72-r0": 1696771468,
+        "1.4.73-r0": 1698736996
       }
     },
     "lighttpd-mod_auth": {
       "origin": "lighttpd",
       "versions": {
-        "1.4.72-r0": 1696771468
+        "1.4.72-r0": 1696771468,
+        "1.4.73-r0": 1698736996
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
@@ -28820,7 +28848,8 @@
     "lighttpd-mod_webdav": {
       "origin": "lighttpd",
       "versions": {
-        "1.4.72-r0": 1696771468
+        "1.4.72-r0": 1696771468,
+        "1.4.73-r0": 1698736996
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
@@ -28831,7 +28860,8 @@
     "lighttpd-openrc": {
       "origin": "lighttpd",
       "versions": {
-        "1.4.72-r0": 1696771468
+        "1.4.72-r0": 1696771468,
+        "1.4.73-r0": 1698736996
       }
     },
     "linenoise": {
@@ -36322,19 +36352,22 @@
     "mesa": {
       "origin": "mesa",
       "versions": {
-        "23.1.9-r0": 1697212216
+        "23.1.9-r0": 1697212216,
+        "23.1.9-r1": 1698737255
       }
     },
     "mesa-dbg": {
       "origin": "mesa",
       "versions": {
-        "23.1.9-r0": 1697212216
+        "23.1.9-r0": 1697212216,
+        "23.1.9-r1": 1698737255
       }
     },
     "mesa-dev": {
       "origin": "mesa",
       "versions": {
-        "23.1.9-r0": 1697212216
+        "23.1.9-r0": 1697212216,
+        "23.1.9-r1": 1698737255
       },
       "dependencies": [
         "libdrm-dev",
@@ -36342,16 +36375,16 @@
         "libxdamage-dev",
         "libxcb-dev",
         "libxshmfence-dev",
-        "mesa-egl=23.1.9-r0",
-        "mesa-gbm=23.1.9-r0",
-        "mesa-gl=23.1.9-r0",
-        "mesa-glapi=23.1.9-r0",
-        "mesa-gles=23.1.9-r0",
-        "mesa-osmesa=23.1.9-r0",
-        "mesa-rusticl=23.1.9-r0",
-        "mesa-xatracker=23.1.9-r0",
+        "mesa-egl=23.1.9-r1",
+        "mesa-gbm=23.1.9-r1",
+        "mesa-gl=23.1.9-r1",
+        "mesa-glapi=23.1.9-r1",
+        "mesa-gles=23.1.9-r1",
+        "mesa-osmesa=23.1.9-r1",
+        "mesa-rusticl=23.1.9-r1",
+        "mesa-xatracker=23.1.9-r1",
         "pc:libdrm>=2.4.110",
-        "pc:libdrm>=2.4.116",
+        "pc:libdrm>=2.4.117",
         "pc:libdrm>=2.4.75",
         "pc:x11",
         "pc:x11-xcb",
@@ -36378,11 +36411,12 @@
     "mesa-dri-gallium": {
       "origin": "mesa",
       "versions": {
-        "23.1.9-r0": 1697212216
+        "23.1.9-r0": 1697212216,
+        "23.1.9-r1": 1698737255
       },
       "dependencies": [
-        "mesa=23.1.9-r0",
-        "so:libLLVM-15.so",
+        "mesa=23.1.9-r1",
+        "so:libLLVM-17.so",
         "so:libc.musl-x86_64.so.1",
         "so:libdrm.so.2",
         "so:libdrm_amdgpu.so.1",
@@ -36402,10 +36436,11 @@
     "mesa-egl": {
       "origin": "mesa",
       "versions": {
-        "23.1.9-r0": 1697212216
+        "23.1.9-r0": 1697212216,
+        "23.1.9-r1": 1698737255
       },
       "dependencies": [
-        "mesa=23.1.9-r0",
+        "mesa=23.1.9-r1",
         "so:libX11-xcb.so.1",
         "so:libc.musl-x86_64.so.1",
         "so:libdrm.so.2",
@@ -36431,10 +36466,11 @@
     "mesa-gbm": {
       "origin": "mesa",
       "versions": {
-        "23.1.9-r0": 1697212216
+        "23.1.9-r0": 1697212216,
+        "23.1.9-r1": 1698737255
       },
       "dependencies": [
-        "mesa=23.1.9-r0",
+        "mesa=23.1.9-r1",
         "so:libc.musl-x86_64.so.1",
         "so:libdrm.so.2",
         "so:libexpat.so.1",
@@ -36448,10 +36484,11 @@
     "mesa-gl": {
       "origin": "mesa",
       "versions": {
-        "23.1.9-r0": 1697212216
+        "23.1.9-r0": 1697212216,
+        "23.1.9-r1": 1698737255
       },
       "dependencies": [
-        "mesa=23.1.9-r0",
+        "mesa=23.1.9-r1",
         "so:libX11-xcb.so.1",
         "so:libX11.so.6",
         "so:libXext.so.6",
@@ -36479,7 +36516,8 @@
     "mesa-glapi": {
       "origin": "mesa",
       "versions": {
-        "23.1.9-r0": 1697212216
+        "23.1.9-r0": 1697212216,
+        "23.1.9-r1": 1698737255
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1"
@@ -36491,10 +36529,11 @@
     "mesa-gles": {
       "origin": "mesa",
       "versions": {
-        "23.1.9-r0": 1697212216
+        "23.1.9-r0": 1697212216,
+        "23.1.9-r1": 1698737255
       },
       "dependencies": [
-        "mesa=23.1.9-r0",
+        "mesa=23.1.9-r1",
         "so:libglapi.so.0"
       ],
       "provides": [
@@ -36505,11 +36544,12 @@
     "mesa-libd3dadapter9": {
       "origin": "mesa",
       "versions": {
-        "23.1.9-r0": 1697212216
+        "23.1.9-r0": 1697212216,
+        "23.1.9-r1": 1698737255
       },
       "dependencies": [
-        "mesa=23.1.9-r0",
-        "so:libLLVM-15.so",
+        "mesa=23.1.9-r1",
+        "so:libLLVM-17.so",
         "so:libc.musl-x86_64.so.1",
         "so:libdrm.so.2",
         "so:libdrm_amdgpu.so.1",
@@ -36527,11 +36567,12 @@
     "mesa-osmesa": {
       "origin": "mesa",
       "versions": {
-        "23.1.9-r0": 1697212216
+        "23.1.9-r0": 1697212216,
+        "23.1.9-r1": 1698737255
       },
       "dependencies": [
-        "mesa=23.1.9-r0",
-        "so:libLLVM-15.so",
+        "mesa=23.1.9-r1",
+        "so:libLLVM-17.so",
         "so:libc.musl-x86_64.so.1",
         "so:libdrm.so.2",
         "so:libgcc_s.so.1",
@@ -36547,19 +36588,20 @@
     "mesa-rusticl": {
       "origin": "mesa",
       "versions": {
-        "23.1.9-r0": 1697212216
+        "23.1.9-r0": 1697212216,
+        "23.1.9-r1": 1698737255
       },
       "dependencies": [
-        "mesa=23.1.9-r0",
-        "clang15-headers",
-        "libclc~15",
-        "so:libLLVM-15.so",
-        "so:libLLVMSPIRVLib.so.15",
+        "mesa=23.1.9-r1",
+        "clang17-headers",
+        "libclc~17",
+        "so:libLLVM-17.so",
+        "so:libLLVMSPIRVLib.so.17",
         "so:libSPIRV-Tools-link.so",
         "so:libSPIRV-Tools-opt.so",
         "so:libSPIRV-Tools.so",
         "so:libc.musl-x86_64.so.1",
-        "so:libclang-cpp.so.15",
+        "so:libclang-cpp.so.17",
         "so:libdrm.so.2",
         "so:libdrm_amdgpu.so.1",
         "so:libdrm_nouveau.so.2",
@@ -36578,12 +36620,13 @@
     "mesa-va-gallium": {
       "origin": "mesa",
       "versions": {
-        "23.1.9-r0": 1697212216
+        "23.1.9-r0": 1697212216,
+        "23.1.9-r1": 1698737255
       },
       "dependencies": [
-        "mesa=23.1.9-r0",
+        "mesa=23.1.9-r1",
         "libva",
-        "so:libLLVM-15.so",
+        "so:libLLVM-17.so",
         "so:libX11-xcb.so.1",
         "so:libc.musl-x86_64.so.1",
         "so:libdrm.so.2",
@@ -36608,12 +36651,13 @@
     "mesa-vdpau-gallium": {
       "origin": "mesa",
       "versions": {
-        "23.1.9-r0": 1697212216
+        "23.1.9-r0": 1697212216,
+        "23.1.9-r1": 1698737255
       },
       "dependencies": [
-        "mesa=23.1.9-r0",
+        "mesa=23.1.9-r1",
         "libvdpau",
-        "so:libLLVM-15.so",
+        "so:libLLVM-17.so",
         "so:libX11-xcb.so.1",
         "so:libc.musl-x86_64.so.1",
         "so:libdrm.so.2",
@@ -36638,11 +36682,12 @@
     "mesa-vulkan-ati": {
       "origin": "mesa",
       "versions": {
-        "23.1.9-r0": 1697212216
+        "23.1.9-r0": 1697212216,
+        "23.1.9-r1": 1698737255
       },
       "dependencies": [
-        "mesa=23.1.9-r0",
-        "so:libLLVM-15.so",
+        "mesa=23.1.9-r1",
+        "so:libLLVM-17.so",
         "so:libX11-xcb.so.1",
         "so:libc.musl-x86_64.so.1",
         "so:libdrm.so.2",
@@ -36671,10 +36716,11 @@
     "mesa-vulkan-intel": {
       "origin": "mesa",
       "versions": {
-        "23.1.9-r0": 1697212216
+        "23.1.9-r0": 1697212216,
+        "23.1.9-r1": 1698737255
       },
       "dependencies": [
-        "mesa=23.1.9-r0",
+        "mesa=23.1.9-r1",
         "so:libX11-xcb.so.1",
         "so:libc.musl-x86_64.so.1",
         "so:libdrm.so.2",
@@ -36702,7 +36748,8 @@
     "mesa-vulkan-layers": {
       "origin": "mesa",
       "versions": {
-        "23.1.9-r0": 1697212216
+        "23.1.9-r0": 1697212216,
+        "23.1.9-r1": 1698737255
       },
       "dependencies": [
         "python3",
@@ -36715,21 +36762,22 @@
         "so:libxcb.so.1"
       ],
       "provides": [
-        "mesa-vulkan-layer=23.1.9-r0",
+        "mesa-vulkan-layer=23.1.9-r1",
         "so:libVkLayer_INTEL_nullhw.so=0",
         "so:libVkLayer_MESA_device_select.so=0",
         "so:libVkLayer_MESA_overlay.so=0",
-        "cmd:mesa-overlay-control.py=23.1.9-r0"
+        "cmd:mesa-overlay-control.py=23.1.9-r1"
       ]
     },
     "mesa-vulkan-swrast": {
       "origin": "mesa",
       "versions": {
-        "23.1.9-r0": 1697212216
+        "23.1.9-r0": 1697212216,
+        "23.1.9-r1": 1698737255
       },
       "dependencies": [
-        "mesa=23.1.9-r0",
-        "so:libLLVM-15.so",
+        "mesa=23.1.9-r1",
+        "so:libLLVM-17.so",
         "so:libX11-xcb.so.1",
         "so:libc.musl-x86_64.so.1",
         "so:libdrm.so.2",
@@ -36756,11 +36804,12 @@
     "mesa-xatracker": {
       "origin": "mesa",
       "versions": {
-        "23.1.9-r0": 1697212216
+        "23.1.9-r0": 1697212216,
+        "23.1.9-r1": 1698737255
       },
       "dependencies": [
-        "mesa=23.1.9-r0",
-        "so:libLLVM-15.so",
+        "mesa=23.1.9-r1",
+        "so:libLLVM-17.so",
         "so:libc.musl-x86_64.so.1",
         "so:libdrm.so.2",
         "so:libdrm_intel.so.1",
@@ -57381,7 +57430,8 @@
     "scudo-malloc": {
       "origin": "scudo-malloc",
       "versions": {
-        "16.0.6-r3": 1692801565
+        "16.0.6-r3": 1692801565,
+        "17.0.3-r0": 1698737196
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1"
@@ -57393,16 +57443,18 @@
     "scudo-malloc-dev": {
       "origin": "scudo-malloc",
       "versions": {
-        "16.0.6-r3": 1692801565
+        "16.0.6-r3": 1692801565,
+        "17.0.3-r0": 1698737196
       },
       "dependencies": [
-        "scudo-malloc=16.0.6-r3"
+        "scudo-malloc=17.0.3-r0"
       ]
     },
     "scudo-malloc-static": {
       "origin": "scudo-malloc",
       "versions": {
-        "16.0.6-r3": 1692801565
+        "16.0.6-r3": 1692801565,
+        "17.0.3-r0": 1698737196
       }
     },
     "seabios": {
@@ -58691,49 +58743,52 @@
     "spirv-llvm-translator": {
       "origin": "spirv-llvm-translator",
       "versions": {
-        "15.0.0-r4": 1690835288
+        "15.0.0-r4": 1690835288,
+        "17.0.0-r0": 1698737255
       },
       "dependencies": [
-        "so:libLLVM-15.so",
-        "so:libLLVMSPIRVLib.so.15",
+        "so:libLLVM-17.so",
+        "so:libLLVMSPIRVLib.so.17",
         "so:libSPIRV-Tools.so",
         "so:libc.musl-x86_64.so.1",
         "so:libgcc_s.so.1",
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:llvm-spirv=15.0.0-r4"
+        "cmd:llvm-spirv=17.0.0-r0"
       ]
     },
     "spirv-llvm-translator-dev": {
       "origin": "spirv-llvm-translator",
       "versions": {
-        "15.0.0-r4": 1690835288
+        "15.0.0-r4": 1690835288,
+        "17.0.0-r0": 1698737255
       },
       "dependencies": [
-        "spirv-llvm-translator=15.0.0-r4",
-        "llvm15-dev",
+        "spirv-llvm-translator=17.0.0-r0",
+        "llvm17-dev",
         "spirv-tools-dev",
         "pkgconfig",
-        "spirv-llvm-translator-libs=15.0.0-r4"
+        "spirv-llvm-translator-libs=17.0.0-r0"
       ],
       "provides": [
-        "pc:LLVMSPIRVLib=15.0.0.0"
+        "pc:LLVMSPIRVLib=17.0.0.0"
       ]
     },
     "spirv-llvm-translator-libs": {
       "origin": "spirv-llvm-translator",
       "versions": {
-        "15.0.0-r4": 1690835288
+        "15.0.0-r4": 1690835288,
+        "17.0.0-r0": 1698737255
       },
       "dependencies": [
-        "so:libLLVM-15.so",
+        "so:libLLVM-17.so",
         "so:libc.musl-x86_64.so.1",
         "so:libgcc_s.so.1",
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libLLVMSPIRVLib.so.15=15"
+        "so:libLLVMSPIRVLib.so.17=17"
       ]
     },
     "spirv-tools": {
@@ -59496,21 +59551,23 @@
     "strace": {
       "origin": "strace",
       "versions": {
-        "6.5-r0": 1693809425
+        "6.5-r0": 1693809425,
+        "6.6-r0": 1698757985
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
         "so:libdw.so.1"
       ],
       "provides": [
-        "cmd:strace-log-merge=6.5-r0",
-        "cmd:strace=6.5-r0"
+        "cmd:strace-log-merge=6.6-r0",
+        "cmd:strace=6.6-r0"
       ]
     },
     "strace-doc": {
       "origin": "strace",
       "versions": {
-        "6.5-r0": 1693809425
+        "6.5-r0": 1693809425,
+        "6.6-r0": 1698757985
       }
     },
     "strongswan": {
@@ -61712,7 +61769,8 @@
     "usbutils": {
       "origin": "usbutils",
       "versions": {
-        "016-r0": 1698041144
+        "016-r0": 1698041144,
+        "017-r0": 1698736946
       },
       "dependencies": [
         "hwdata-usb",
@@ -61724,17 +61782,18 @@
         "so:libusb-1.0.so.0"
       ],
       "provides": [
-        "pc:usbutils=016",
-        "cmd:lsusb.py=016-r0",
-        "cmd:lsusb=016-r0",
-        "cmd:usb-devices=016-r0",
-        "cmd:usbhid-dump=016-r0"
+        "pc:usbutils=017",
+        "cmd:lsusb.py=017-r0",
+        "cmd:lsusb=017-r0",
+        "cmd:usb-devices=017-r0",
+        "cmd:usbhid-dump=017-r0"
       ]
     },
     "usbutils-doc": {
       "origin": "usbutils",
       "versions": {
-        "016-r0": 1698041144
+        "016-r0": 1698041144,
+        "017-r0": 1698736946
       }
     },
     "userspace-rcu": {
@@ -65438,6 +65497,46 @@
       "provides": [
         "linux-firmware-any"
       ]
+    },
+    "libstemmer": {
+      "origin": "snowball",
+      "versions": {
+        "2.2.0-r0": 1698757571
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1"
+      ],
+      "provides": [
+        "so:libstemmer.so.2=2.2.0"
+      ]
+    },
+    "libstemmer-dev": {
+      "origin": "snowball",
+      "versions": {
+        "2.2.0-r0": 1698757571
+      },
+      "dependencies": [
+        "libstemmer=2.2.0-r0"
+      ]
+    },
+    "snowball": {
+      "origin": "snowball",
+      "versions": {
+        "2.2.0-r0": 1698757571
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1"
+      ],
+      "provides": [
+        "cmd:snowball=2.2.0-r0",
+        "cmd:stemwords=2.2.0-r0"
+      ]
+    },
+    "snowball-doc": {
+      "origin": "snowball",
+      "versions": {
+        "2.2.0-r0": 1698757571
+      }
     }
   },
   "provide": {
@@ -66140,7 +66239,7 @@
       },
       "mesa-vulkan-layer": {
         "package": "mesa-vulkan-layers",
-        "version": "23.1.9-r0"
+        "version": "23.1.9-r1"
       },
       "mkfontdir": {
         "package": "mkfontscale",
@@ -73002,6 +73101,14 @@
       },
       "liblldWasm.so.17": {
         "package": "lld-libs",
+        "version": "17"
+      },
+      "libstemmer.so.2": {
+        "package": "libstemmer",
+        "version": "2.2.0"
+      },
+      "libLLVMSPIRVLib.so.17": {
+        "package": "spirv-llvm-translator-libs",
         "version": "17"
       }
     }
