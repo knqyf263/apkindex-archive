@@ -59300,7 +59300,8 @@
     "socat": {
       "origin": "socat",
       "versions": {
-        "1.7.4.4-r1": 1681228881
+        "1.7.4.4-r1": 1681228881,
+        "1.8.0.0-r0": 1700139824
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
@@ -59309,15 +59310,17 @@
         "so:libssl.so.3"
       ],
       "provides": [
-        "cmd:filan=1.7.4.4-r1",
-        "cmd:procan=1.7.4.4-r1",
-        "cmd:socat=1.7.4.4-r1"
+        "cmd:filan=1.8.0.0-r0",
+        "cmd:procan=1.8.0.0-r0",
+        "cmd:socat1=1.8.0.0-r0",
+        "cmd:socat=1.8.0.0-r0"
       ]
     },
     "socat-doc": {
       "origin": "socat",
       "versions": {
-        "1.7.4.4-r1": 1681228881
+        "1.7.4.4-r1": 1681228881,
+        "1.8.0.0-r0": 1700139824
       }
     },
     "sofia-sip": {
@@ -66828,6 +66831,21 @@
       "versions": {
         "1.14.0-r1": 1699967292
       }
+    },
+    "socat-scripts": {
+      "origin": "socat",
+      "versions": {
+        "1.8.0.0-r0": 1700139824
+      },
+      "dependencies": [
+        "socat=1.8.0.0-r0",
+        "bash"
+      ],
+      "provides": [
+        "cmd:socat-broker.sh=1.8.0.0-r0",
+        "cmd:socat-chain.sh=1.8.0.0-r0",
+        "cmd:socat-mux.sh=1.8.0.0-r0"
+      ]
     }
   },
   "provide": {
