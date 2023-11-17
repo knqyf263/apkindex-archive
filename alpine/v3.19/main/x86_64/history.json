@@ -22035,7 +22035,8 @@
       "origin": "knot",
       "versions": {
         "3.3.1-r0": 1694534710,
-        "3.3.2-r0": 1698268309
+        "3.3.2-r0": 1698268309,
+        "3.3.2-r1": 1700241379
       },
       "dependencies": [
         "/bin/sh",
@@ -22043,27 +22044,29 @@
         "so:libcap-ng.so.0",
         "so:libdnssec.so.9",
         "so:libedit.so.0",
+        "so:libgnutls.so.30",
         "so:libknot.so.14",
         "so:liblmdb.so.0",
         "so:liburcu.so.8",
         "so:libzscanner.so.4"
       ],
       "provides": [
-        "cmd:knotc=3.3.2-r0",
-        "cmd:knotd=3.3.2-r0"
+        "cmd:knotc=3.3.2-r1",
+        "cmd:knotd=3.3.2-r1"
       ]
     },
     "knot-dev": {
       "origin": "knot",
       "versions": {
         "3.3.1-r0": 1694534710,
-        "3.3.2-r0": 1698268309
+        "3.3.2-r0": 1698268309,
+        "3.3.2-r1": 1700241379
       },
       "dependencies": [
-        "knot=3.3.2-r0",
-        "knot-libs-static=3.3.2-r0",
-        "knot-utils=3.3.2-r0",
-        "knot-libs=3.3.2-r0",
+        "knot=3.3.2-r1",
+        "knot-libs-static=3.3.2-r1",
+        "knot-utils=3.3.2-r1",
+        "knot-libs=3.3.2-r1",
         "pc:gnutls>=3.3",
         "pkgconfig"
       ],
@@ -22078,19 +22081,23 @@
       "origin": "knot",
       "versions": {
         "3.3.1-r0": 1694534710,
-        "3.3.2-r0": 1698268309
+        "3.3.2-r0": 1698268309,
+        "3.3.2-r1": 1700241379
       }
     },
     "knot-libs": {
       "origin": "knot",
       "versions": {
         "3.3.1-r0": 1694534710,
-        "3.3.2-r0": 1698268309
+        "3.3.2-r0": 1698268309,
+        "3.3.2-r1": 1700241379
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
         "so:libgnutls.so.30",
-        "so:liblmdb.so.0"
+        "so:liblmdb.so.0",
+        "so:libngtcp2.so.16",
+        "so:libngtcp2_crypto_gnutls.so.8"
       ],
       "provides": [
         "so:libdnssec.so.9=9.0.0",
@@ -22102,17 +22109,19 @@
       "origin": "knot",
       "versions": {
         "3.3.1-r0": 1694534710,
-        "3.3.2-r0": 1698268309
+        "3.3.2-r0": 1698268309,
+        "3.3.2-r1": 1700241379
       }
     },
     "knot-mod-dnstap": {
       "origin": "knot",
       "versions": {
         "3.3.1-r0": 1694534710,
-        "3.3.2-r0": 1698268309
+        "3.3.2-r0": 1698268309,
+        "3.3.2-r1": 1700241379
       },
       "dependencies": [
-        "knot=3.3.2-r0",
+        "knot=3.3.2-r1",
         "so:libc.musl-x86_64.so.1",
         "so:libfstrm.so.0",
         "so:libprotobuf-c.so.1"
@@ -22122,10 +22131,11 @@
       "origin": "knot",
       "versions": {
         "3.3.1-r0": 1694534710,
-        "3.3.2-r0": 1698268309
+        "3.3.2-r0": 1698268309,
+        "3.3.2-r1": 1700241379
       },
       "dependencies": [
-        "knot=3.3.2-r0",
+        "knot=3.3.2-r1",
         "so:libc.musl-x86_64.so.1",
         "so:libmaxminddb.so.0"
       ]
@@ -22134,14 +22144,16 @@
       "origin": "knot",
       "versions": {
         "3.3.1-r0": 1694534710,
-        "3.3.2-r0": 1698268309
+        "3.3.2-r0": 1698268309,
+        "3.3.2-r1": 1700241379
       }
     },
     "knot-utils": {
       "origin": "knot",
       "versions": {
         "3.3.1-r0": 1694534710,
-        "3.3.2-r0": 1698268309
+        "3.3.2-r0": 1698268309,
+        "3.3.2-r1": 1700241379
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
@@ -22152,19 +22164,21 @@
         "so:libknot.so.14",
         "so:liblmdb.so.0",
         "so:libnghttp2.so.14",
+        "so:libngtcp2.so.16",
+        "so:libngtcp2_crypto_gnutls.so.8",
         "so:liburcu.so.8",
         "so:libzscanner.so.4"
       ],
       "provides": [
-        "cmd:kcatalogprint=3.3.2-r0",
-        "cmd:kdig=3.3.2-r0",
-        "cmd:keymgr=3.3.2-r0",
-        "cmd:khost=3.3.2-r0",
-        "cmd:kjournalprint=3.3.2-r0",
-        "cmd:knsec3hash=3.3.2-r0",
-        "cmd:knsupdate=3.3.2-r0",
-        "cmd:kzonecheck=3.3.2-r0",
-        "cmd:kzonesign=3.3.2-r0"
+        "cmd:kcatalogprint=3.3.2-r1",
+        "cmd:kdig=3.3.2-r1",
+        "cmd:keymgr=3.3.2-r1",
+        "cmd:khost=3.3.2-r1",
+        "cmd:kjournalprint=3.3.2-r1",
+        "cmd:knsec3hash=3.3.2-r1",
+        "cmd:knsupdate=3.3.2-r1",
+        "cmd:kzonecheck=3.3.2-r1",
+        "cmd:kzonesign=3.3.2-r1"
       ]
     },
     "krb5": {
@@ -66569,6 +66583,48 @@
         "cmd:socat-chain.sh=1.8.0.0-r0",
         "cmd:socat-mux.sh=1.8.0.0-r0"
       ]
+    },
+    "ngtcp2": {
+      "origin": "ngtcp2",
+      "versions": {
+        "1.0.1-r2": 1700241354
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1"
+      ],
+      "provides": [
+        "so:libngtcp2.so.16=16.0.0"
+      ]
+    },
+    "ngtcp2-dev": {
+      "origin": "ngtcp2",
+      "versions": {
+        "1.0.1-r2": 1700241354
+      },
+      "dependencies": [
+        "ngtcp2-gnutls=1.0.1-r2",
+        "ngtcp2=1.0.1-r2",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libngtcp2=1.0.1",
+        "pc:libngtcp2_crypto_gnutls=1.0.1"
+      ]
+    },
+    "ngtcp2-gnutls": {
+      "origin": "ngtcp2",
+      "versions": {
+        "1.0.1-r2": 1700241354
+      },
+      "dependencies": [
+        "ngtcp2=1.0.1-r2",
+        "so:libc.musl-x86_64.so.1",
+        "so:libgnutls.so.30",
+        "so:libngtcp2.so.16"
+      ],
+      "provides": [
+        "so:libngtcp2_crypto_gnutls.so.8=8.0.1"
+      ]
     }
   },
   "provide": {
@@ -74290,6 +74346,14 @@
       "libkea-d2srv.so.30": {
         "package": "kea-dhcp-ddns",
         "version": "30.0.0"
+      },
+      "libngtcp2.so.16": {
+        "package": "ngtcp2",
+        "version": "16.0.0"
+      },
+      "libngtcp2_crypto_gnutls.so.8": {
+        "package": "ngtcp2-gnutls",
+        "version": "8.0.1"
       }
     }
   }
