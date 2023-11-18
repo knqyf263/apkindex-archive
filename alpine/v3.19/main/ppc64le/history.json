@@ -9913,22 +9913,24 @@
     "device-mapper": {
       "origin": "lvm2",
       "versions": {
-        "2.03.21-r10": 1687233251
+        "2.03.21-r10": 1687233251,
+        "2.03.22-r0": 1700267124
       },
       "dependencies": [
-        "lvm2-libs=2.03.21-r10",
+        "lvm2-libs=2.03.22-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libdevmapper.so.1.02"
       ],
       "provides": [
-        "cmd:dmsetup=2.03.21-r10",
-        "cmd:dmstats=2.03.21-r10"
+        "cmd:dmsetup=2.03.22-r0",
+        "cmd:dmstats=2.03.22-r0"
       ]
     },
     "device-mapper-event-libs": {
       "origin": "lvm2",
       "versions": {
-        "2.03.21-r10": 1687233251
+        "2.03.21-r10": 1687233251,
+        "2.03.22-r0": 1700267124
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -9941,7 +9943,8 @@
     "device-mapper-libs": {
       "origin": "lvm2",
       "versions": {
-        "2.03.21-r10": 1687233251
+        "2.03.21-r10": 1687233251,
+        "2.03.22-r0": 1700267124
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1"
@@ -9953,25 +9956,27 @@
     "device-mapper-static": {
       "origin": "lvm2",
       "versions": {
-        "2.03.21-r10": 1687233251
+        "2.03.21-r10": 1687233251,
+        "2.03.22-r0": 1700267124
       },
       "dependencies": [
-        "lvm2-libs=2.03.21-r10"
+        "lvm2-libs=2.03.22-r0"
       ],
       "provides": [
-        "device-mapper-event-static=2.03.21-r10",
-        "cmd:dmeventd.static=2.03.21-r10",
-        "cmd:dmsetup.static=2.03.21-r10",
-        "cmd:dmstats.static=2.03.21-r10"
+        "device-mapper-event-static=2.03.22-r0",
+        "cmd:dmeventd.static=2.03.22-r0",
+        "cmd:dmsetup.static=2.03.22-r0",
+        "cmd:dmstats.static=2.03.22-r0"
       ]
     },
     "device-mapper-udev": {
       "origin": "lvm2",
       "versions": {
-        "2.03.21-r10": 1687233251
+        "2.03.21-r10": 1687233251,
+        "2.03.22-r0": 1700267124
       },
       "dependencies": [
-        "lvm2-libs=2.03.21-r10",
+        "lvm2-libs=2.03.22-r0",
         "/bin/sh"
       ]
     },
@@ -24835,35 +24840,38 @@
     "libksba": {
       "origin": "libksba",
       "versions": {
-        "1.6.4-r0": 1687226715
+        "1.6.4-r0": 1687226715,
+        "1.6.5-r0": 1700266048
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
         "so:libgpg-error.so.0"
       ],
       "provides": [
-        "so:libksba.so.8=8.14.4"
+        "so:libksba.so.8=8.14.5"
       ]
     },
     "libksba-dev": {
       "origin": "libksba",
       "versions": {
-        "1.6.4-r0": 1687226715
+        "1.6.4-r0": 1687226715,
+        "1.6.5-r0": 1700266048
       },
       "dependencies": [
-        "libksba=1.6.4-r0",
+        "libksba=1.6.5-r0",
         "pc:gpg-error",
         "pkgconfig"
       ],
       "provides": [
-        "pc:ksba=1.6.4",
-        "cmd:ksba-config=1.6.4-r0"
+        "pc:ksba=1.6.5",
+        "cmd:ksba-config=1.6.5-r0"
       ]
     },
     "libksba-doc": {
       "origin": "libksba",
       "versions": {
-        "1.6.4-r0": 1687226715
+        "1.6.4-r0": 1687226715,
+        "1.6.5-r0": 1700266048
       }
     },
     "libldap": {
@@ -28441,7 +28449,8 @@
     "libxml2": {
       "origin": "libxml2",
       "versions": {
-        "2.11.5-r0": 1691645236
+        "2.11.5-r0": 1691645236,
+        "2.11.6-r0": 1700266770
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -28449,42 +28458,46 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "so:libxml2.so.2=2.11.5"
+        "so:libxml2.so.2=2.11.6"
       ]
     },
     "libxml2-dbg": {
       "origin": "libxml2",
       "versions": {
-        "2.11.5-r0": 1691645236
+        "2.11.5-r0": 1691645236,
+        "2.11.6-r0": 1700266770
       }
     },
     "libxml2-dev": {
       "origin": "libxml2",
       "versions": {
-        "2.11.5-r0": 1691645236
+        "2.11.5-r0": 1691645236,
+        "2.11.6-r0": 1700266770
       },
       "dependencies": [
         "zlib-dev",
         "xz-dev",
-        "libxml2-utils=2.11.5-r0",
-        "libxml2=2.11.5-r0",
+        "libxml2-utils=2.11.6-r0",
+        "libxml2=2.11.6-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libxml-2.0=2.11.5",
-        "cmd:xml2-config=2.11.5-r0"
+        "pc:libxml-2.0=2.11.6",
+        "cmd:xml2-config=2.11.6-r0"
       ]
     },
     "libxml2-doc": {
       "origin": "libxml2",
       "versions": {
-        "2.11.5-r0": 1691645236
+        "2.11.5-r0": 1691645236,
+        "2.11.6-r0": 1700266770
       }
     },
     "libxml2-static": {
       "origin": "libxml2",
       "versions": {
-        "2.11.5-r0": 1691645236
+        "2.11.5-r0": 1691645236,
+        "2.11.6-r0": 1700266770
       },
       "dependencies": [
         "python3~3.11"
@@ -28493,15 +28506,16 @@
     "libxml2-utils": {
       "origin": "libxml2",
       "versions": {
-        "2.11.5-r0": 1691645236
+        "2.11.5-r0": 1691645236,
+        "2.11.6-r0": 1700266770
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
         "so:libxml2.so.2"
       ],
       "provides": [
-        "cmd:xmlcatalog=2.11.5-r0",
-        "cmd:xmllint=2.11.5-r0"
+        "cmd:xmlcatalog=2.11.6-r0",
+        "cmd:xmllint=2.11.6-r0"
       ]
     },
     "libxmu": {
@@ -28686,7 +28700,8 @@
     "libxslt": {
       "origin": "libxslt",
       "versions": {
-        "1.1.38-r1": 1684120357
+        "1.1.38-r1": 1684120357,
+        "1.1.39-r0": 1700267030
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -28695,36 +28710,39 @@
       ],
       "provides": [
         "so:libexslt.so.0=0.8.21",
-        "so:libxslt.so.1=1.1.38",
-        "cmd:xsltproc=1.1.38-r1"
+        "so:libxslt.so.1=1.1.39",
+        "cmd:xsltproc=1.1.39-r0"
       ]
     },
     "libxslt-dev": {
       "origin": "libxslt",
       "versions": {
-        "1.1.38-r1": 1684120357
+        "1.1.38-r1": 1684120357,
+        "1.1.39-r0": 1700267030
       },
       "dependencies": [
-        "libxslt=1.1.38-r1",
+        "libxslt=1.1.39-r0",
         "pc:libxml-2.0",
         "pkgconfig"
       ],
       "provides": [
         "pc:libexslt=0.8.21",
-        "pc:libxslt=1.1.38",
-        "cmd:xslt-config=1.1.38-r1"
+        "pc:libxslt=1.1.39",
+        "cmd:xslt-config=1.1.39-r0"
       ]
     },
     "libxslt-doc": {
       "origin": "libxslt",
       "versions": {
-        "1.1.38-r1": 1684120357
+        "1.1.38-r1": 1684120357,
+        "1.1.39-r0": 1700267030
       }
     },
     "libxslt-static": {
       "origin": "libxslt",
       "versions": {
-        "1.1.38-r1": 1684120357
+        "1.1.38-r1": 1684120357,
+        "1.1.39-r0": 1700267030
       }
     },
     "libxt": {
@@ -35178,131 +35196,138 @@
     "lvm2": {
       "origin": "lvm2",
       "versions": {
-        "2.03.21-r10": 1687233251
+        "2.03.21-r10": 1687233251,
+        "2.03.22-r0": 1700267124
       },
       "dependencies": [
-        "lvm2-libs=2.03.21-r10",
+        "lvm2-libs=2.03.22-r0",
         "so:libaio.so.1",
         "so:libblkid.so.1",
         "so:libc.musl-ppc64le.so.1",
         "so:libdevmapper-event.so.1.02"
       ],
       "provides": [
-        "cmd:lvchange=2.03.21-r10",
-        "cmd:lvconvert=2.03.21-r10",
-        "cmd:lvcreate=2.03.21-r10",
-        "cmd:lvdisplay=2.03.21-r10",
-        "cmd:lvextend=2.03.21-r10",
-        "cmd:lvm=2.03.21-r10",
-        "cmd:lvmconfig=2.03.21-r10",
-        "cmd:lvmdevices=2.03.21-r10",
-        "cmd:lvmdiskscan=2.03.21-r10",
-        "cmd:lvmsadc=2.03.21-r10",
-        "cmd:lvmsar=2.03.21-r10",
-        "cmd:lvreduce=2.03.21-r10",
-        "cmd:lvremove=2.03.21-r10",
-        "cmd:lvrename=2.03.21-r10",
-        "cmd:lvresize=2.03.21-r10",
-        "cmd:lvs=2.03.21-r10",
-        "cmd:lvscan=2.03.21-r10",
-        "cmd:pvchange=2.03.21-r10",
-        "cmd:pvck=2.03.21-r10",
-        "cmd:pvcreate=2.03.21-r10",
-        "cmd:pvdisplay=2.03.21-r10",
-        "cmd:pvmove=2.03.21-r10",
-        "cmd:pvremove=2.03.21-r10",
-        "cmd:pvresize=2.03.21-r10",
-        "cmd:pvs=2.03.21-r10",
-        "cmd:pvscan=2.03.21-r10",
-        "cmd:vgcfgbackup=2.03.21-r10",
-        "cmd:vgcfgrestore=2.03.21-r10",
-        "cmd:vgchange=2.03.21-r10",
-        "cmd:vgck=2.03.21-r10",
-        "cmd:vgconvert=2.03.21-r10",
-        "cmd:vgcreate=2.03.21-r10",
-        "cmd:vgdisplay=2.03.21-r10",
-        "cmd:vgexport=2.03.21-r10",
-        "cmd:vgextend=2.03.21-r10",
-        "cmd:vgimport=2.03.21-r10",
-        "cmd:vgimportclone=2.03.21-r10",
-        "cmd:vgimportdevices=2.03.21-r10",
-        "cmd:vgmerge=2.03.21-r10",
-        "cmd:vgmknodes=2.03.21-r10",
-        "cmd:vgreduce=2.03.21-r10",
-        "cmd:vgremove=2.03.21-r10",
-        "cmd:vgrename=2.03.21-r10",
-        "cmd:vgs=2.03.21-r10",
-        "cmd:vgscan=2.03.21-r10",
-        "cmd:vgsplit=2.03.21-r10"
+        "cmd:lvchange=2.03.22-r0",
+        "cmd:lvconvert=2.03.22-r0",
+        "cmd:lvcreate=2.03.22-r0",
+        "cmd:lvdisplay=2.03.22-r0",
+        "cmd:lvextend=2.03.22-r0",
+        "cmd:lvm=2.03.22-r0",
+        "cmd:lvmconfig=2.03.22-r0",
+        "cmd:lvmdevices=2.03.22-r0",
+        "cmd:lvmdiskscan=2.03.22-r0",
+        "cmd:lvmsadc=2.03.22-r0",
+        "cmd:lvmsar=2.03.22-r0",
+        "cmd:lvreduce=2.03.22-r0",
+        "cmd:lvremove=2.03.22-r0",
+        "cmd:lvrename=2.03.22-r0",
+        "cmd:lvresize=2.03.22-r0",
+        "cmd:lvs=2.03.22-r0",
+        "cmd:lvscan=2.03.22-r0",
+        "cmd:pvchange=2.03.22-r0",
+        "cmd:pvck=2.03.22-r0",
+        "cmd:pvcreate=2.03.22-r0",
+        "cmd:pvdisplay=2.03.22-r0",
+        "cmd:pvmove=2.03.22-r0",
+        "cmd:pvremove=2.03.22-r0",
+        "cmd:pvresize=2.03.22-r0",
+        "cmd:pvs=2.03.22-r0",
+        "cmd:pvscan=2.03.22-r0",
+        "cmd:vgcfgbackup=2.03.22-r0",
+        "cmd:vgcfgrestore=2.03.22-r0",
+        "cmd:vgchange=2.03.22-r0",
+        "cmd:vgck=2.03.22-r0",
+        "cmd:vgconvert=2.03.22-r0",
+        "cmd:vgcreate=2.03.22-r0",
+        "cmd:vgdisplay=2.03.22-r0",
+        "cmd:vgexport=2.03.22-r0",
+        "cmd:vgextend=2.03.22-r0",
+        "cmd:vgimport=2.03.22-r0",
+        "cmd:vgimportclone=2.03.22-r0",
+        "cmd:vgimportdevices=2.03.22-r0",
+        "cmd:vgmerge=2.03.22-r0",
+        "cmd:vgmknodes=2.03.22-r0",
+        "cmd:vgreduce=2.03.22-r0",
+        "cmd:vgremove=2.03.22-r0",
+        "cmd:vgrename=2.03.22-r0",
+        "cmd:vgs=2.03.22-r0",
+        "cmd:vgscan=2.03.22-r0",
+        "cmd:vgsplit=2.03.22-r0"
       ]
     },
     "lvm2-dev": {
       "origin": "lvm2",
       "versions": {
-        "2.03.21-r10": 1687233251
+        "2.03.21-r10": 1687233251,
+        "2.03.22-r0": 1700267124
       },
       "dependencies": [
         "linux-headers",
-        "device-mapper-event-libs=2.03.21-r10",
-        "device-mapper-libs=2.03.21-r10",
-        "lvm2-libs=2.03.21-r10",
+        "device-mapper-event-libs=2.03.22-r0",
+        "device-mapper-libs=2.03.22-r0",
+        "lvm2-libs=2.03.22-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:devmapper-event=1.02.195",
-        "pc:devmapper=1.02.195"
+        "pc:devmapper-event=1.02.196",
+        "pc:devmapper=1.02.196"
       ]
     },
     "lvm2-dmeventd": {
       "origin": "lvm2",
       "versions": {
-        "2.03.21-r10": 1687233251
+        "2.03.21-r10": 1687233251,
+        "2.03.22-r0": 1700267124
       },
       "dependencies": [
-        "lvm2-libs=2.03.21-r10",
+        "lvm2-libs=2.03.22-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libdevmapper-event.so.1.02",
         "so:libdevmapper.so.1.02"
       ],
       "provides": [
-        "cmd:dmeventd=2.03.21-r10"
+        "cmd:dmeventd=2.03.22-r0"
       ]
     },
     "lvm2-dmeventd-openrc": {
       "origin": "lvm2",
       "versions": {
-        "2.03.21-r10": 1687233251
+        "2.03.21-r10": 1687233251,
+        "2.03.22-r0": 1700267124
       },
       "dependencies": [
-        "lvm2-libs=2.03.21-r10"
+        "lvm2-libs=2.03.22-r0"
       ]
     },
     "lvm2-doc": {
       "origin": "lvm2",
       "versions": {
-        "2.03.21-r10": 1687233251
+        "2.03.21-r10": 1687233251,
+        "2.03.22-r0": 1700267124
       }
     },
     "lvm2-extra": {
       "origin": "lvm2",
       "versions": {
-        "2.03.21-r10": 1687233251
+        "2.03.21-r10": 1687233251,
+        "2.03.22-r0": 1700267124
       },
       "dependencies": [
         "bash",
         "coreutils"
       ],
       "provides": [
-        "cmd:blkdeactivate=2.03.21-r10",
-        "cmd:fsadm=2.03.21-r10",
-        "cmd:lvm_import_vdo=2.03.21-r10",
-        "cmd:lvmdump=2.03.21-r10"
+        "cmd:blkdeactivate=2.03.22-r0",
+        "cmd:fsadm=2.03.22-r0",
+        "cmd:lvm_import_vdo=2.03.22-r0",
+        "cmd:lvmdump=2.03.22-r0"
       ]
     },
     "lvm2-libs": {
       "origin": "lvm2",
       "versions": {
-        "2.03.21-r10": 1687233251
+        "2.03.21-r10": 1687233251,
+        "2.03.22-r0": 1700267124
       },
       "dependencies": [
         "so:libaio.so.1",
@@ -35319,7 +35344,8 @@
     "lvm2-lockd": {
       "origin": "lvm2",
       "versions": {
-        "2.03.21-r10": 1687233251
+        "2.03.21-r10": 1687233251,
+        "2.03.22-r0": 1700267124
       },
       "dependencies": [
         "sanlock",
@@ -35327,36 +35353,39 @@
         "so:libsanlock_client.so.1"
       ],
       "provides": [
-        "cmd:lvmlockctl=2.03.21-r10",
-        "cmd:lvmlockd=2.03.21-r10",
-        "cmd:lvmpolld=2.03.21-r10"
+        "cmd:lvmlockctl=2.03.22-r0",
+        "cmd:lvmlockd=2.03.22-r0",
+        "cmd:lvmpolld=2.03.22-r0"
       ]
     },
     "lvm2-lockd-openrc": {
       "origin": "lvm2",
       "versions": {
-        "2.03.21-r10": 1687233251
+        "2.03.21-r10": 1687233251,
+        "2.03.22-r0": 1700267124
       },
       "dependencies": [
-        "lvm2-libs=2.03.21-r10"
+        "lvm2-libs=2.03.22-r0"
       ]
     },
     "lvm2-openrc": {
       "origin": "lvm2",
       "versions": {
-        "2.03.21-r10": 1687233251
+        "2.03.21-r10": 1687233251,
+        "2.03.22-r0": 1700267124
       }
     },
     "lvm2-static": {
       "origin": "lvm2",
       "versions": {
-        "2.03.21-r10": 1687233251
+        "2.03.21-r10": 1687233251,
+        "2.03.22-r0": 1700267124
       },
       "dependencies": [
-        "lvm2-libs=2.03.21-r10"
+        "lvm2-libs=2.03.22-r0"
       ],
       "provides": [
-        "cmd:lvm.static=2.03.21-r10"
+        "cmd:lvm.static=2.03.22-r0"
       ]
     },
     "lxc": {
@@ -52291,7 +52320,8 @@
     "py3-libxml2": {
       "origin": "libxml2",
       "versions": {
-        "2.11.5-r0": 1691645236
+        "2.11.5-r0": 1691645236,
+        "2.11.6-r0": 1700266770
       },
       "dependencies": [
         "python3",
@@ -52303,7 +52333,8 @@
     "py3-libxml2-pyc": {
       "origin": "libxml2",
       "versions": {
-        "2.11.5-r0": 1691645236
+        "2.11.5-r0": 1691645236,
+        "2.11.6-r0": 1700266770
       },
       "dependencies": [
         "python3~3.11"
@@ -65977,7 +66008,7 @@
       },
       "device-mapper-event-static": {
         "package": "device-mapper-static",
-        "version": "2.03.21-r10"
+        "version": "2.03.22-r0"
       },
       "dhcp-server": {
         "package": "dhcp-server-vanilla",
@@ -70023,7 +70054,7 @@
       },
       "libksba.so.8": {
         "package": "libksba",
-        "version": "8.14.4"
+        "version": "8.14.5"
       },
       "liblber.so.2": {
         "package": "libldap",
@@ -70691,7 +70722,7 @@
       },
       "libxml2.so.2": {
         "package": "libxml2",
-        "version": "2.11.5"
+        "version": "2.11.6"
       },
       "libXmu.so.6": {
         "package": "libxmu",
@@ -70723,7 +70754,7 @@
       },
       "libxslt.so.1": {
         "package": "libxslt",
-        "version": "1.1.38"
+        "version": "1.1.39"
       },
       "libXt.so.6": {
         "package": "libxt",
