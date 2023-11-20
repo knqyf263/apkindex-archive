@@ -40195,11 +40195,14 @@
       "origin": "nodejs",
       "versions": {
         "18.18.2-r0": 1697331911,
-        "18.18.2-r1": 1699474395
+        "18.18.2-r1": 1699474395,
+        "20.9.0-r0": 1700437189
       },
       "dependencies": [
         "ca-certificates",
         "/bin/sh",
+        "so:libada.so.2",
+        "so:libbase64.so.0",
         "so:libbrotlidec.so.1",
         "so:libbrotlienc.so.1",
         "so:libc.musl-s390x.so.1",
@@ -40213,25 +40216,32 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "nodejs-lts=18.18.2-r1",
-        "cmd:node=18.18.2-r1"
+        "nodejs-lts=20.9.0-r0",
+        "cmd:node=20.9.0-r0"
       ]
     },
     "nodejs-dev": {
       "origin": "nodejs",
       "versions": {
         "18.18.2-r0": 1697331911,
-        "18.18.2-r1": 1699474395
+        "18.18.2-r1": 1699474395,
+        "20.9.0-r0": 1700437189
       },
       "provides": [
-        "nodejs-lts-dev=18.18.2"
+        "nodejs-lts-dev=20.9.0",
+        "pc:nodejs=20.9.0"
+      ],
+      "dependencies": [
+        "nodejs-libs=20.9.0-r0",
+        "pkgconfig"
       ]
     },
     "nodejs-doc": {
       "origin": "nodejs",
       "versions": {
         "18.18.2-r0": 1697331911,
-        "18.18.2-r1": 1699474395
+        "18.18.2-r1": 1699474395,
+        "20.9.0-r0": 1700437189
       }
     },
     "npth": {
@@ -65249,6 +65259,161 @@
       "provides": [
         "so:libngtcp2_crypto_gnutls.so.8=8.0.1"
       ]
+    },
+    "ada": {
+      "origin": "ada",
+      "versions": {
+        "2.6.0-r1": 1700437189
+      },
+      "dependencies": [
+        "so:libada.so.2",
+        "so:libc.musl-s390x.so.1",
+        "so:libfmt.so.10",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "cmd:adaparse=2.6.0-r1"
+      ]
+    },
+    "ada-dev": {
+      "origin": "ada",
+      "versions": {
+        "2.6.0-r1": 1700437189
+      },
+      "dependencies": [
+        "ada=2.6.0-r1",
+        "ada-libs=2.6.0-r1"
+      ]
+    },
+    "ada-libs": {
+      "origin": "ada",
+      "versions": {
+        "2.6.0-r1": 1700437189
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libada.so.2=2.6.0"
+      ]
+    },
+    "ada-static": {
+      "origin": "ada",
+      "versions": {
+        "2.6.0-r1": 1700437189
+      }
+    },
+    "base64": {
+      "origin": "base64",
+      "versions": {
+        "0.5.0-r0": 1700437189
+      },
+      "dependencies": [
+        "so:libbase64.so.0",
+        "so:libc.musl-s390x.so.1"
+      ],
+      "provides": [
+        "cmd:base64=0.5.0-r0"
+      ]
+    },
+    "base64-dev": {
+      "origin": "base64",
+      "versions": {
+        "0.5.0-r0": 1700437189
+      },
+      "dependencies": [
+        "libbase64=0.5.0-r0"
+      ]
+    },
+    "cxxopts": {
+      "origin": "cxxopts",
+      "versions": {
+        "3.1.1-r0": 1700437189
+      }
+    },
+    "cxxopts-dev": {
+      "origin": "cxxopts",
+      "versions": {
+        "3.1.1-r0": 1700437189
+      },
+      "dependencies": [
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:cxxopts=3.1.1"
+      ]
+    },
+    "libbase64": {
+      "origin": "base64",
+      "versions": {
+        "0.5.0-r0": 1700437189
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1"
+      ],
+      "provides": [
+        "so:libbase64.so.0=0.5.0"
+      ]
+    },
+    "nodejs-libs": {
+      "origin": "nodejs",
+      "versions": {
+        "20.9.0-r0": 1700437189
+      },
+      "dependencies": [
+        "so:libada.so.2",
+        "so:libbase64.so.0",
+        "so:libbrotlidec.so.1",
+        "so:libbrotlienc.so.1",
+        "so:libc.musl-s390x.so.1",
+        "so:libcares.so.2",
+        "so:libcrypto.so.3",
+        "so:libicui18n.so.74",
+        "so:libicuuc.so.74",
+        "so:libnghttp2.so.14",
+        "so:libssl.so.3",
+        "so:libstdc++.so.6",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "so:libnode.so.115=115"
+      ]
+    },
+    "simdjson": {
+      "origin": "simdjson",
+      "versions": {
+        "3.2.1-r2": 1700437189
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libsimdjson.so.16=16.0.0"
+      ]
+    },
+    "simdjson-dev": {
+      "origin": "simdjson",
+      "versions": {
+        "3.2.1-r2": 1700437189
+      },
+      "dependencies": [
+        "pkgconfig",
+        "simdjson=3.2.1-r2"
+      ],
+      "provides": [
+        "pc:simdjson=3.2.1"
+      ]
+    },
+    "simdjson-static": {
+      "origin": "simdjson",
+      "versions": {
+        "3.2.1-r2": 1700437189
+      }
     }
   },
   "provide": {
@@ -65991,11 +66156,11 @@
       },
       "nodejs-lts": {
         "package": "nodejs",
-        "version": "18.18.2-r1"
+        "version": "20.9.0-r0"
       },
       "nodejs-lts-dev": {
         "package": "nodejs-dev",
-        "version": "18.18.2"
+        "version": "20.9.0"
       },
       "openldap-back-monitor": {
         "package": "openldap",
@@ -72514,6 +72679,22 @@
       "libngtcp2_crypto_gnutls.so.8": {
         "package": "ngtcp2-gnutls",
         "version": "8.0.1"
+      },
+      "libada.so.2": {
+        "package": "ada-libs",
+        "version": "2.6.0"
+      },
+      "libbase64.so.0": {
+        "package": "libbase64",
+        "version": "0.5.0"
+      },
+      "libnode.so.115": {
+        "package": "nodejs-libs",
+        "version": "115"
+      },
+      "libsimdjson.so.16": {
+        "package": "simdjson",
+        "version": "16.0.0"
       }
     }
   }
