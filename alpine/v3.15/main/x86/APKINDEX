@@ -792,6 +792,21 @@ c:bcd823d50d39596bc5fa4031218e675738cbaa5e
 D:gcc libc-dev libgcc /bin/sh so:libc.musl-x86.so.1 so:libedit.so.0 so:libncursesw.so.6 so:libpcre2-8.so.0 so:libunwind.so.8 so:libvarnishapi.so.3
 p:cmd:varnishadm=7.0.3-r0 cmd:varnishd=7.0.3-r0 cmd:varnishhist=7.0.3-r0 cmd:varnishlog=7.0.3-r0 cmd:varnishncsa=7.0.3-r0 cmd:varnishreload=7.0.3-r0 cmd:varnishstat=7.0.3-r0 cmd:varnishstat_help_gen=7.0.3-r0 cmd:varnishtest=7.0.3-r0 cmd:varnishtop=7.0.3-r0
 
+C:Q1hj2PYJ+W9s8LenDwoY/v8/ypG+c=
+P:openssl-libs-static
+V:1.1.1w-r1
+A:x86
+S:6256057
+I:10993664
+T:toolkit for transport layer security (TLS) - version 1.1 (static library)
+U:https://www.openssl.org/
+L:OpenSSL
+o:openssl
+m:Timo Teras <timo.teras@iki.fi>
+t:1700569703
+c:afb7a0b731d6486b1dd51c531f7783dae3f1f9a3
+p:openssl1.1-compat-libs-static=1.1.1w-r1
+
 C:Q1F04MzwQDjCmlNgf3NT9JGuUvKts=
 P:py3-gpsd
 V:3.23-r0
@@ -4351,22 +4366,6 @@ t:1610489771
 c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
 D:so:libc.musl-x86.so.1 so:libefivar.so.1
 p:cmd:efivar=37-r2
-
-C:Q1H/9JrAPd4Xvq3a/TuSEx4Lp0zH8=
-P:openssl-dev
-V:1.1.1w-r0
-A:x86
-S:267737
-I:1634304
-T:toolkit for transport layer security (TLS) - version 1.1 (development files)
-U:https://www.openssl.org/
-L:OpenSSL
-o:openssl
-m:Timo Teras <timo.teras@iki.fi>
-t:1695258112
-c:7efc9c0fefaeff523742482c019551d8530ee140
-D:libcrypto1.1=1.1.1w-r0 libssl1.1=1.1.1w-r0 pkgconfig
-p:openssl1.1-compat-dev=1.1.1w-r0 pc:libcrypto=1.1.1w pc:libssl=1.1.1w pc:openssl=1.1.1w
 
 C:Q19P8FPgExQGi8DRXg41NcgVgu774=
 P:perl-net-ip-doc
@@ -20217,6 +20216,22 @@ c:84374ba294609cef048910f3a828dee19636034e
 D:librrd=1.7.2-r5 pkgconfig
 p:pc:librrd=1.7.2
 
+C:Q1hw2TEPCwwpSzS8/Mqz0AxUQR/uU=
+P:libssl1.1
+V:1.1.1w-r1
+A:x86
+S:231575
+I:573440
+T:SSL shared libraries
+U:https://www.openssl.org/
+L:OpenSSL
+o:openssl
+m:Timo Teras <timo.teras@iki.fi>
+t:1700569703
+c:afb7a0b731d6486b1dd51c531f7783dae3f1f9a3
+D:so:libc.musl-x86.so.1 so:libcrypto.so.1.1
+p:so:libssl.so.1.1=1.1
+
 C:Q16vo8kawthJ7AwEKVf4wziGLcw5A=
 P:perl-convert-uulib
 V:1.71-r0
@@ -31854,22 +31869,6 @@ c:761da6d3283f9d453e1988106e73c89e85970561
 D:libgpg-error=1.42-r1 pkgconfig so:libc.musl-x86.so.1
 p:pc:gpg-error=1.42 cmd:gpg-error-config=1.42-r1 cmd:gpgrt-config=1.42-r1 cmd:yat2m=1.42-r1
 
-C:Q17NFSW/srnZI6+jvvACJ9XGlqvHs=
-P:openssl
-V:1.1.1w-r0
-A:x86
-S:276381
-I:679936
-T:toolkit for transport layer security (TLS) - version 1.1
-U:https://www.openssl.org/
-L:OpenSSL
-o:openssl
-m:Timo Teras <timo.teras@iki.fi>
-t:1695258112
-c:7efc9c0fefaeff523742482c019551d8530ee140
-D:libssl1.1=1.1.1w-r0 libcrypto1.1=1.1.1w-r0 so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
-p:cmd:openssl=1.1.1w-r0
-
 C:Q1TY3kF1sAItgq9rDG6ZjAI6H7lVc=
 P:giflib-utils
 V:5.2.1-r0
@@ -35616,22 +35615,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1560772742
 c:1000d2d06ca6d54f8c9a9602637864c9c2b9b796
 D:gengetopt
-
-C:Q1m2gmuPjX9bTMv//nIvFkWFxTWC0=
-P:libcrypto1.1
-V:1.1.1w-r0
-A:x86
-S:1193546
-I:2621440
-T:Crypto library from openssl
-U:https://www.openssl.org/
-L:OpenSSL
-o:openssl
-m:Timo Teras <timo.teras@iki.fi>
-t:1695258112
-c:7efc9c0fefaeff523742482c019551d8530ee140
-D:so:libc.musl-x86.so.1
-p:so:libcrypto.so.1.1=1.1
 
 C:Q1676RBlQPGvElJEZd2XkWtr755EU=
 P:openldap-overlay-constraint
@@ -40959,22 +40942,6 @@ c:6ae9ecc4b963083aea4d574bea1848be8bd19d7f
 D:libusb-dev librtlsdr=0.6.0-r1 pkgconfig
 p:pc:librtlsdr=0.6.0
 
-C:Q12nS1gFN9456Fz5jsNveSR13My50=
-P:libssl1.1
-V:1.1.1w-r0
-A:x86
-S:231560
-I:573440
-T:SSL shared libraries
-U:https://www.openssl.org/
-L:OpenSSL
-o:openssl
-m:Timo Teras <timo.teras@iki.fi>
-t:1695258112
-c:7efc9c0fefaeff523742482c019551d8530ee140
-D:so:libc.musl-x86.so.1 so:libcrypto.so.1.1
-p:so:libssl.so.1.1=1.1
-
 C:Q1mjcowlAxtK+v/wU4RS8yBEz2zCw=
 P:numactl
 V:2.0.14-r0
@@ -41699,6 +41666,22 @@ m:Cameron Banta <cbanta@gmail.com>
 t:1651985332
 c:e94e0a3d62602f3460ea6bc2f97f676203d7cc49
 i:docs rsyslog=8.2108.0-r2
+
+C:Q1YhpAPzW25P37Srrq/IhTfspV8K8=
+P:openssl-dev
+V:1.1.1w-r1
+A:x86
+S:267858
+I:1638400
+T:toolkit for transport layer security (TLS) - version 1.1 (development files)
+U:https://www.openssl.org/
+L:OpenSSL
+o:openssl
+m:Timo Teras <timo.teras@iki.fi>
+t:1700569703
+c:afb7a0b731d6486b1dd51c531f7783dae3f1f9a3
+D:libcrypto1.1=1.1.1w-r1 libssl1.1=1.1.1w-r1 pkgconfig
+p:openssl1.1-compat-dev=1.1.1w-r1 pc:libcrypto=1.1.1w pc:libssl=1.1.1w pc:openssl=1.1.1w
 
 C:Q1NoH18k1EpbuG6jqE9Cd11AJmyMo=
 P:flac-dev
@@ -45708,6 +45691,22 @@ c:8eaeb7242269343ef8bb13db787d83326fa2a174
 D:openssh-client fuse3 so:libc.musl-x86.so.1 so:libfuse3.so.3 so:libglib-2.0.so.0
 p:cmd:mount.fuse.sshfs=3.7.2-r0 cmd:mount.sshfs=3.7.2-r0 cmd:sshfs=3.7.2-r0
 
+C:Q18UJA3VE2cbiOC/FwyoIBuN2qTkE=
+P:libcrypto1.1
+V:1.1.1w-r1
+A:x86
+S:1193792
+I:2621440
+T:Crypto library from openssl
+U:https://www.openssl.org/
+L:OpenSSL
+o:openssl
+m:Timo Teras <timo.teras@iki.fi>
+t:1700569703
+c:afb7a0b731d6486b1dd51c531f7783dae3f1f9a3
+D:so:libc.musl-x86.so.1
+p:so:libcrypto.so.1.1=1.1
+
 C:Q1AtWqt9p0T2QbCxdlK4N7Waq4azY=
 P:libpq
 V:14.10-r0
@@ -48956,20 +48955,6 @@ c:1a26dc12a31da944c32d7d2076d1211e45b2155e
 D:so:libc.musl-x86.so.1 so:libgmp.so.10 so:libhogweed.so.6 so:libnettle.so.8 so:libp11-kit.so.0 so:libtasn1.so.6 so:libunistring.so.2
 p:so:libgnutls.so.30=30.29.1
 
-C:Q1EBC7UN9Ig7Y6sSmfcY+1CrT8iGQ=
-P:openssl-dbg
-V:1.1.1w-r0
-A:x86
-S:3150812
-I:8806400
-T:toolkit for transport layer security (TLS) - version 1.1 (debug symbols)
-U:https://www.openssl.org/
-L:OpenSSL
-o:openssl
-m:Timo Teras <timo.teras@iki.fi>
-t:1695258112
-c:7efc9c0fefaeff523742482c019551d8530ee140
-
 C:Q1+O69L4VUw9dDgI9Rua3dLxYzJDk=
 P:freeswitch-sangoma
 V:1.10.7-r0
@@ -51402,6 +51387,22 @@ c:566e5709d74e405d283592ae442a949e28511421
 D:so:libc.musl-x86.so.1 so:liblua-5.2.so.0
 p:lua cmd:lua5.2=5.2.4-r7 cmd:luac5.2=5.2.4-r7
 
+C:Q1RJA3rgSDHklvGXq4bSBrcUyzjSk=
+P:openssl
+V:1.1.1w-r1
+A:x86
+S:276394
+I:679936
+T:toolkit for transport layer security (TLS) - version 1.1
+U:https://www.openssl.org/
+L:OpenSSL
+o:openssl
+m:Timo Teras <timo.teras@iki.fi>
+t:1700569703
+c:afb7a0b731d6486b1dd51c531f7783dae3f1f9a3
+D:libssl1.1=1.1.1w-r1 libcrypto1.1=1.1.1w-r1 so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
+p:cmd:openssl=1.1.1w-r1
+
 C:Q1pd6vS/hejeThUvHFjQEFpud4vT4=
 P:supervisor
 V:4.2.2-r2
@@ -52496,21 +52497,6 @@ t:1689699894
 c:88ba400f832ae9d339b8f87877a7931965d85b34
 D:ghostscript=9.55.0-r2 pkgconfig
 p:pc:ijs=0.35
-
-C:Q1ywPV1f+wsLoK9j+ugcE7fPxKjFc=
-P:openssl-libs-static
-V:1.1.1w-r0
-A:x86
-S:6256337
-I:10993664
-T:toolkit for transport layer security (TLS) - version 1.1 (static library)
-U:https://www.openssl.org/
-L:OpenSSL
-o:openssl
-m:Timo Teras <timo.teras@iki.fi>
-t:1695258112
-c:7efc9c0fefaeff523742482c019551d8530ee140
-p:openssl1.1-compat-libs-static=1.1.1w-r0
 
 C:Q1zuBXlK0l4qEM9lGdSYDrSlL3z4Q=
 P:krb5-pkinit
@@ -72828,6 +72814,20 @@ t:1634209377
 c:7630cb212f6511ad391fb7fc094581665b05627d
 D:python3 py3-setuptools so:libc.musl-x86.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:lit=0.10.1-r4 cmd:lit=10.0.1-r4 py3.9:lit=10.0.1-r4
+
+C:Q1AOAxmnobAFDZ3A/kEqYPfPxEjhA=
+P:openssl-dbg
+V:1.1.1w-r1
+A:x86
+S:3151034
+I:8806400
+T:toolkit for transport layer security (TLS) - version 1.1 (debug symbols)
+U:https://www.openssl.org/
+L:OpenSSL
+o:openssl
+m:Timo Teras <timo.teras@iki.fi>
+t:1700569703
+c:afb7a0b731d6486b1dd51c531f7783dae3f1f9a3
 
 C:Q1Y9Ezq8mP0WLikomPI4/OY4ZPJCY=
 P:gst-plugins-base-dev
