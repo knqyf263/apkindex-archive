@@ -23830,10 +23830,12 @@
       "versions": {
         "2.4.116-r0": 1692795010,
         "2.4.117-r0": 1698243562,
-        "2.4.117-r1": 1698259186
+        "2.4.117-r1": 1698259186,
+        "2.4.118-r0": 1701024756
       },
       "dependencies": [
-        "so:libc.musl-aarch64.so.1"
+        "so:libc.musl-aarch64.so.1",
+        "so:libpciaccess.so.0"
       ],
       "provides": [
         "so:libdrm.so.2=2.4.0",
@@ -23841,6 +23843,7 @@
         "so:libdrm_etnaviv.so.1=1.0.0",
         "so:libdrm_exynos.so.1=1.0.0",
         "so:libdrm_freedreno.so.1=1.0.0",
+        "so:libdrm_intel.so.1=1.0.0",
         "so:libdrm_nouveau.so.2=2.0.0",
         "so:libdrm_omap.so.1=1.0.0",
         "so:libdrm_radeon.so.1=1.0.1",
@@ -23852,24 +23855,27 @@
       "versions": {
         "2.4.116-r0": 1692795010,
         "2.4.117-r0": 1698243562,
-        "2.4.117-r1": 1698259186
+        "2.4.117-r1": 1698259186,
+        "2.4.118-r0": 1701024756
       },
       "dependencies": [
         "linux-headers",
-        "libdrm=2.4.117-r1",
+        "libdrm=2.4.118-r0",
+        "pc:pciaccess>=0.10",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libdrm=2.4.117",
-        "pc:libdrm_amdgpu=2.4.117",
-        "pc:libdrm_etnaviv=2.4.117",
+        "pc:libdrm=2.4.118",
+        "pc:libdrm_amdgpu=2.4.118",
+        "pc:libdrm_etnaviv=2.4.118",
         "pc:libdrm_exynos=0.7",
-        "pc:libdrm_freedreno=2.4.117",
-        "pc:libdrm_nouveau=2.4.117",
+        "pc:libdrm_freedreno=2.4.118",
+        "pc:libdrm_intel=2.4.118",
+        "pc:libdrm_nouveau=2.4.118",
         "pc:libdrm_omap=0.6",
-        "pc:libdrm_radeon=2.4.117",
-        "pc:libdrm_tegra=2.4.117",
-        "pc:libdrm_vc4=2.4.117"
+        "pc:libdrm_radeon=2.4.118",
+        "pc:libdrm_tegra=2.4.118",
+        "pc:libdrm_vc4=2.4.118"
       ]
     },
     "libdrm-tests": {
@@ -23877,7 +23883,8 @@
       "versions": {
         "2.4.116-r0": 1692795010,
         "2.4.117-r0": 1698243562,
-        "2.4.117-r1": 1698259186
+        "2.4.117-r1": 1698259186,
+        "2.4.118-r0": 1701024756
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
@@ -23888,25 +23895,25 @@
         "so:libdrm_tegra.so.0"
       ],
       "provides": [
-        "cmd:amdgpu_stress=2.4.117-r1",
-        "cmd:drmdevice=2.4.117-r1",
-        "cmd:etnaviv_2d_test=2.4.117-r1",
-        "cmd:etnaviv_bo_cache_test=2.4.117-r1",
-        "cmd:etnaviv_cmd_stream_test=2.4.117-r1",
-        "cmd:exynos_fimg2d_event=2.4.117-r1",
-        "cmd:exynos_fimg2d_perf=2.4.117-r1",
-        "cmd:exynos_fimg2d_test=2.4.117-r1",
-        "cmd:modeprint=2.4.117-r1",
-        "cmd:modetest=2.4.117-r1",
-        "cmd:proptest=2.4.117-r1",
-        "cmd:tegra-gr2d-fill=2.4.117-r1",
-        "cmd:tegra-openclose=2.4.117-r1",
-        "cmd:tegra-syncpt-timeout=2.4.117-r1",
-        "cmd:tegra-syncpt-wait=2.4.117-r1",
-        "cmd:tegra-vic-blit=2.4.117-r1",
-        "cmd:tegra-vic-clear=2.4.117-r1",
-        "cmd:tegra-vic-flip=2.4.117-r1",
-        "cmd:vbltest=2.4.117-r1"
+        "cmd:amdgpu_stress=2.4.118-r0",
+        "cmd:drmdevice=2.4.118-r0",
+        "cmd:etnaviv_2d_test=2.4.118-r0",
+        "cmd:etnaviv_bo_cache_test=2.4.118-r0",
+        "cmd:etnaviv_cmd_stream_test=2.4.118-r0",
+        "cmd:exynos_fimg2d_event=2.4.118-r0",
+        "cmd:exynos_fimg2d_perf=2.4.118-r0",
+        "cmd:exynos_fimg2d_test=2.4.118-r0",
+        "cmd:modeprint=2.4.118-r0",
+        "cmd:modetest=2.4.118-r0",
+        "cmd:proptest=2.4.118-r0",
+        "cmd:tegra-gr2d-fill=2.4.118-r0",
+        "cmd:tegra-openclose=2.4.118-r0",
+        "cmd:tegra-syncpt-timeout=2.4.118-r0",
+        "cmd:tegra-syncpt-wait=2.4.118-r0",
+        "cmd:tegra-vic-blit=2.4.118-r0",
+        "cmd:tegra-vic-clear=2.4.118-r0",
+        "cmd:tegra-vic-flip=2.4.118-r0",
+        "cmd:vbltest=2.4.118-r0"
       ]
     },
     "libdwarf": {
@@ -75016,6 +75023,10 @@
       "libsimdjson.so.19": {
         "package": "simdjson",
         "version": "19.0.0"
+      },
+      "libdrm_intel.so.1": {
+        "package": "libdrm",
+        "version": "1.0.0"
       }
     }
   }
