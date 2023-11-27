@@ -5167,7 +5167,8 @@
     "bash": {
       "origin": "bash",
       "versions": {
-        "5.2.15-r6": 1695795276
+        "5.2.15-r6": 1695795276,
+        "5.2.21-r0": 1701073495
       },
       "dependencies": [
         "/bin/sh",
@@ -5175,7 +5176,7 @@
         "so:libreadline.so.8"
       ],
       "provides": [
-        "cmd:bash=5.2.15-r6"
+        "cmd:bash=5.2.21-r0"
       ]
     },
     "bash-completion": {
@@ -5208,26 +5209,29 @@
     "bash-dbg": {
       "origin": "bash",
       "versions": {
-        "5.2.15-r6": 1695795276
+        "5.2.15-r6": 1695795276,
+        "5.2.21-r0": 1701073495
       }
     },
     "bash-dev": {
       "origin": "bash",
       "versions": {
-        "5.2.15-r6": 1695795276
+        "5.2.15-r6": 1695795276,
+        "5.2.21-r0": 1701073495
       },
       "dependencies": [
         "pkgconfig"
       ],
       "provides": [
-        "pc:bash=5.2.15",
-        "cmd:bashbug=5.2.15-r6"
+        "pc:bash=5.2.21",
+        "cmd:bashbug=5.2.21-r0"
       ]
     },
     "bash-doc": {
       "origin": "bash",
       "versions": {
-        "5.2.15-r6": 1695795276
+        "5.2.15-r6": 1695795276,
+        "5.2.21-r0": 1701073495
       }
     },
     "batctl": {
@@ -11754,9 +11758,13 @@
       "origin": "elfutils",
       "versions": {
         "0.189-r3": 1684427240,
-        "0.190-r0": 1699256080
+        "0.190-r0": 1699256080,
+        "0.190-r1": 1701073132
       },
       "dependencies": [
+        "libasm=0.190-r1",
+        "libdw=0.190-r1",
+        "libelf=0.190-r1",
         "so:libasm.so.1",
         "so:libc.musl-armv7.so.1",
         "so:libdw.so.1",
@@ -11766,40 +11774,44 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:eu-addr2line=0.190-r0",
-        "cmd:eu-ar=0.190-r0",
-        "cmd:eu-elfclassify=0.190-r0",
-        "cmd:eu-elfcmp=0.190-r0",
-        "cmd:eu-elfcompress=0.190-r0",
-        "cmd:eu-elflint=0.190-r0",
-        "cmd:eu-findtextrel=0.190-r0",
-        "cmd:eu-make-debug-archive=0.190-r0",
-        "cmd:eu-nm=0.190-r0",
-        "cmd:eu-objdump=0.190-r0",
-        "cmd:eu-ranlib=0.190-r0",
-        "cmd:eu-readelf=0.190-r0",
-        "cmd:eu-size=0.190-r0",
-        "cmd:eu-srcfiles=0.190-r0",
-        "cmd:eu-stack=0.190-r0",
-        "cmd:eu-strings=0.190-r0",
-        "cmd:eu-strip=0.190-r0",
-        "cmd:eu-unstrip=0.190-r0"
+        "cmd:eu-addr2line=0.190-r1",
+        "cmd:eu-ar=0.190-r1",
+        "cmd:eu-elfclassify=0.190-r1",
+        "cmd:eu-elfcmp=0.190-r1",
+        "cmd:eu-elfcompress=0.190-r1",
+        "cmd:eu-elflint=0.190-r1",
+        "cmd:eu-findtextrel=0.190-r1",
+        "cmd:eu-make-debug-archive=0.190-r1",
+        "cmd:eu-nm=0.190-r1",
+        "cmd:eu-objdump=0.190-r1",
+        "cmd:eu-ranlib=0.190-r1",
+        "cmd:eu-readelf=0.190-r1",
+        "cmd:eu-size=0.190-r1",
+        "cmd:eu-srcfiles=0.190-r1",
+        "cmd:eu-stack=0.190-r1",
+        "cmd:eu-strings=0.190-r1",
+        "cmd:eu-strip=0.190-r1",
+        "cmd:eu-unstrip=0.190-r1"
       ]
     },
     "elfutils-dev": {
       "origin": "elfutils",
       "versions": {
         "0.189-r3": 1684427240,
-        "0.190-r0": 1699256080
+        "0.190-r0": 1699256080,
+        "0.190-r1": 1701073132
       },
       "dependencies": [
-        "libelf=0.190-r0",
+        "libasm=0.190-r1",
+        "libdw=0.190-r1",
+        "libelf=0.190-r1",
         "pc:liblzma",
         "pc:libzstd",
         "pc:zlib",
         "pkgconfig"
       ],
       "provides": [
+        "libelf-static=0.190-r1",
         "pc:libdw=0.190",
         "pc:libelf=0.190"
       ]
@@ -11808,7 +11820,8 @@
       "origin": "elfutils",
       "versions": {
         "0.189-r3": 1684427240,
-        "0.190-r0": 1699256080
+        "0.190-r0": 1699256080,
+        "0.190-r1": 1701073132
       }
     },
     "elinks": {
@@ -24017,20 +24030,16 @@
       "origin": "elfutils",
       "versions": {
         "0.189-r3": 1684427240,
-        "0.190-r0": 1699256080
+        "0.190-r0": 1699256080,
+        "0.190-r1": 1701073132
       },
       "dependencies": [
-        "so:libbz2.so.1",
         "so:libc.musl-armv7.so.1",
-        "so:libfts.so.0",
-        "so:liblzma.so.5",
         "so:libz.so.1",
         "so:libzstd.so.1"
       ],
       "provides": [
-        "elfutils-libelf=0.190-r0",
-        "so:libasm.so.1=0",
-        "so:libdw.so.1=0",
+        "elfutils-libelf=0.190-r1",
         "so:libelf.so.1=0"
       ]
     },
@@ -32073,19 +32082,21 @@
     "lsof": {
       "origin": "lsof",
       "versions": {
-        "4.98.0-r2": 1681228881
+        "4.98.0-r2": 1681228881,
+        "4.99.0-r0": 1701073413
       },
       "dependencies": [
         "so:libc.musl-armv7.so.1"
       ],
       "provides": [
-        "cmd:lsof=4.98.0-r2"
+        "cmd:lsof=4.99.0-r0"
       ]
     },
     "lsof-doc": {
       "origin": "lsof",
       "versions": {
-        "4.98.0-r2": 1681228881
+        "4.98.0-r2": 1681228881,
+        "4.99.0-r0": 1701073413
       }
     },
     "lsyncd": {
@@ -36958,7 +36969,8 @@
     "mdev-conf": {
       "origin": "mdev-conf",
       "versions": {
-        "4.5-r0": 1683640200
+        "4.5-r0": 1683640200,
+        "4.6-r0": 1701072737
       }
     },
     "mdevd": {
@@ -45461,22 +45473,24 @@
     "perl-encode": {
       "origin": "perl-encode",
       "versions": {
-        "3.19-r2": 1688403118
+        "3.19-r2": 1688403118,
+        "3.20-r0": 1701072207
       },
       "dependencies": [
         "perl",
         "so:libc.musl-armv7.so.1"
       ],
       "provides": [
-        "cmd:enc2xs=3.19-r2",
-        "cmd:encguess=3.19-r2",
-        "cmd:piconv=3.19-r2"
+        "cmd:enc2xs=3.20-r0",
+        "cmd:encguess=3.20-r0",
+        "cmd:piconv=3.20-r0"
       ]
     },
     "perl-encode-doc": {
       "origin": "perl-encode",
       "versions": {
-        "3.19-r2": 1688403118
+        "3.19-r2": 1688403118,
+        "3.20-r0": 1701072207
       }
     },
     "perl-encode-hanextra": {
@@ -65940,7 +65954,8 @@
     "xtables-addons": {
       "origin": "xtables-addons",
       "versions": {
-        "3.24-r0": 1683202251
+        "3.24-r0": 1683202251,
+        "3.25-r0": 1701072985
       },
       "dependencies": [
         "so:libc.musl-armv7.so.1",
@@ -65948,15 +65963,16 @@
       ],
       "provides": [
         "so:libxt_ACCOUNT_cl.so.1=1.0.0",
-        "cmd:iptaccount=3.24-r0",
-        "cmd:pknlusr=3.24-r0",
-        "cmd:xt_geoip_query=3.24-r0"
+        "cmd:iptaccount=3.25-r0",
+        "cmd:pknlusr=3.25-r0",
+        "cmd:xt_geoip_query=3.25-r0"
       ]
     },
     "xtables-addons-doc": {
       "origin": "xtables-addons",
       "versions": {
-        "3.24-r0": 1683202251
+        "3.24-r0": 1683202251,
+        "3.25-r0": 1701072985
       }
     },
     "xtables-addons-lts": {
@@ -65965,7 +65981,8 @@
         "6.1.59-r0": 1697783087,
         "6.1.60-r0": 1698248731,
         "6.1.61-r0": 1698922928,
-        "6.1.62-r0": 1699514256
+        "6.1.62-r0": 1699514256,
+        "6.1.62-r1": 1701072985
       },
       "dependencies": [
         "linux-lts=6.1.62-r0"
@@ -67332,6 +67349,41 @@
       "versions": {
         "2.4.58-r1": 1700840474
       }
+    },
+    "libasm": {
+      "origin": "elfutils",
+      "versions": {
+        "0.190-r1": 1701073132
+      },
+      "dependencies": [
+        "libdw=0.190-r1",
+        "libelf=0.190-r1",
+        "so:libc.musl-armv7.so.1",
+        "so:libdw.so.1",
+        "so:libelf.so.1"
+      ],
+      "provides": [
+        "so:libasm.so.1=0"
+      ]
+    },
+    "libdw": {
+      "origin": "elfutils",
+      "versions": {
+        "0.190-r1": 1701073132
+      },
+      "dependencies": [
+        "libelf=0.190-r1",
+        "so:libbz2.so.1",
+        "so:libc.musl-armv7.so.1",
+        "so:libelf.so.1",
+        "so:libfts.so.0",
+        "so:liblzma.so.5",
+        "so:libz.so.1",
+        "so:libzstd.so.1"
+      ],
+      "provides": [
+        "so:libdw.so.1=0"
+      ]
     }
   },
   "provide": {
@@ -67778,7 +67830,7 @@
       },
       "elfutils-libelf": {
         "package": "libelf",
-        "version": "0.190-r0"
+        "version": "0.190-r1"
       },
       "libnftnl-libs": {
         "package": "libnftnl",
@@ -68679,6 +68731,10 @@
       "llvm-gtest": {
         "package": "llvm17-gtest",
         "version": "17.0.5-r0"
+      },
+      "libelf-static": {
+        "package": "elfutils-dev",
+        "version": "0.190-r1"
       }
     },
     "so": {
@@ -71415,11 +71471,11 @@
         "version": "0.0.72"
       },
       "libasm.so.1": {
-        "package": "libelf",
+        "package": "libasm",
         "version": "0"
       },
       "libdw.so.1": {
-        "package": "libelf",
+        "package": "libdw",
         "version": "0"
       },
       "libelf.so.1": {
