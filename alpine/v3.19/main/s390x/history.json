@@ -30434,7 +30434,8 @@
         "6.1.60-r0": 1698248731,
         "6.1.61-r0": 1698922928,
         "6.1.62-r0": 1699514255,
-        "6.1.63-r0": 1701074413
+        "6.1.63-r0": 1701074413,
+        "6.6.3-r0": 1701291417
       },
       "dependencies": [
         "initramfs-generator",
@@ -30448,7 +30449,8 @@
         "6.1.60-r0": 1698248731,
         "6.1.61-r0": 1698922928,
         "6.1.62-r0": 1699514255,
-        "6.1.63-r0": 1701074413
+        "6.1.63-r0": 1701074413,
+        "6.6.3-r0": 1701291417
       },
       "dependencies": [
         "perl",
@@ -30474,7 +30476,8 @@
         "6.1.60-r0": 1698248731,
         "6.1.61-r0": 1698922928,
         "6.1.62-r0": 1699514255,
-        "6.1.63-r0": 1701074413
+        "6.1.63-r0": 1701074413,
+        "6.6.3-r0": 1701291417
       }
     },
     "linux-pam": {
@@ -37213,7 +37216,8 @@
       "origin": "mkinitfs",
       "versions": {
         "3.8.1-r0": 1686798190,
-        "3.8.1-r1": 1700496584
+        "3.8.1-r1": 1700496584,
+        "3.8.1-r2": 1701291417
       },
       "dependencies": [
         "apk-tools>=2.9.1",
@@ -37229,16 +37233,17 @@
       ],
       "provides": [
         "initramfs-generator",
-        "cmd:bootchartd=3.8.1-r1",
-        "cmd:mkinitfs=3.8.1-r1",
-        "cmd:nlplug-findfs=3.8.1-r1"
+        "cmd:bootchartd=3.8.1-r2",
+        "cmd:mkinitfs=3.8.1-r2",
+        "cmd:nlplug-findfs=3.8.1-r2"
       ]
     },
     "mkinitfs-doc": {
       "origin": "mkinitfs",
       "versions": {
         "3.8.1-r0": 1686798190,
-        "3.8.1-r1": 1700496584
+        "3.8.1-r1": 1700496584,
+        "3.8.1-r2": 1701291417
       }
     },
     "mksh": {
@@ -53130,7 +53135,8 @@
       "origin": "zfs",
       "versions": {
         "2.1.13-r0": 1696230164,
-        "2.1.13-r1": 1698660888
+        "2.1.13-r1": 1698660888,
+        "2.2.1-r0": 1701291417
       },
       "dependencies": [
         "python3",
@@ -53138,14 +53144,15 @@
         "python3~3.11"
       ],
       "provides": [
-        "py3.11:libzfs_core=2.1.13-r1"
+        "py3.11:libzfs_core=2.2.1-r0"
       ]
     },
     "py3-pyzfs-pyc": {
       "origin": "zfs",
       "versions": {
         "2.1.13-r0": 1696230164,
-        "2.1.13-r1": 1698660888
+        "2.1.13-r1": 1698660888,
+        "2.2.1-r0": 1701291417
       },
       "dependencies": [
         "python3~3.11"
@@ -64520,10 +64527,11 @@
         "6.1.61-r0": 1698922928,
         "6.1.62-r0": 1699514256,
         "6.1.62-r1": 1701072985,
-        "6.1.63-r1": 1701074413
+        "6.1.63-r1": 1701074413,
+        "6.6.3-r0": 1701291418
       },
       "dependencies": [
-        "linux-lts=6.1.63-r0"
+        "linux-lts=6.6.3-r0"
       ]
     },
     "xtrans": {
@@ -64836,11 +64844,13 @@
       "origin": "zfs",
       "versions": {
         "2.1.13-r0": 1696230164,
-        "2.1.13-r1": 1698660888
+        "2.1.13-r1": 1698660888,
+        "2.2.1-r0": 1701291417
       },
       "dependencies": [
         "so:libblkid.so.1",
         "so:libc.musl-s390x.so.1",
+        "so:libcrypto.so.3",
         "so:libintl.so.8",
         "so:libnvpair.so.3",
         "so:libuuid.so.1",
@@ -64850,29 +64860,31 @@
         "so:libzpool.so.5"
       ],
       "provides": [
-        "spl=2.1.13-r1",
-        "cmd:fsck.zfs=2.1.13-r1",
-        "cmd:mount.zfs=2.1.13-r1",
-        "cmd:raidz_test=2.1.13-r1",
-        "cmd:zdb=2.1.13-r1",
-        "cmd:zed=2.1.13-r1",
-        "cmd:zfs=2.1.13-r1",
-        "cmd:zfs_ids_to_path=2.1.13-r1",
-        "cmd:zgenhostid=2.1.13-r1",
-        "cmd:zhack=2.1.13-r1",
-        "cmd:zinject=2.1.13-r1",
-        "cmd:zpool=2.1.13-r1",
-        "cmd:zstream=2.1.13-r1",
-        "cmd:zstreamdump=2.1.13-r1",
-        "cmd:ztest=2.1.13-r1",
-        "cmd:zvol_wait=2.1.13-r1"
+        "spl=2.2.1-r0",
+        "cmd:fsck.zfs=2.2.1-r0",
+        "cmd:mount.zfs=2.2.1-r0",
+        "cmd:raidz_test=2.2.1-r0",
+        "cmd:zdb=2.2.1-r0",
+        "cmd:zed=2.2.1-r0",
+        "cmd:zfs=2.2.1-r0",
+        "cmd:zfs_ids_to_path=2.2.1-r0",
+        "cmd:zgenhostid=2.2.1-r0",
+        "cmd:zhack=2.2.1-r0",
+        "cmd:zilstat=2.2.1-r0",
+        "cmd:zinject=2.2.1-r0",
+        "cmd:zpool=2.2.1-r0",
+        "cmd:zstream=2.2.1-r0",
+        "cmd:zstreamdump=2.2.1-r0",
+        "cmd:ztest=2.2.1-r0",
+        "cmd:zvol_wait=2.2.1-r0"
       ]
     },
     "zfs-dev": {
       "origin": "zfs",
       "versions": {
         "2.1.13-r0": 1696230164,
-        "2.1.13-r1": 1698660888
+        "2.1.13-r1": 1698660888,
+        "2.2.1-r0": 1701291417
       },
       "dependencies": [
         "attr-dev",
@@ -64886,33 +64898,36 @@
         "pc:uuid",
         "pc:zlib",
         "pkgconfig",
-        "zfs-libs=2.1.13-r1"
+        "zfs-libs=2.2.1-r0"
       ],
       "provides": [
-        "pc:libzfs=2.1.13",
-        "pc:libzfs_core=2.1.13",
-        "pc:libzfsbootenv=2.1.13"
+        "pc:libzfs=2.2.1",
+        "pc:libzfs_core=2.2.1",
+        "pc:libzfsbootenv=2.2.1"
       ]
     },
     "zfs-doc": {
       "origin": "zfs",
       "versions": {
         "2.1.13-r0": 1696230164,
-        "2.1.13-r1": 1698660888
+        "2.1.13-r1": 1698660888,
+        "2.2.1-r0": 1701291417
       }
     },
     "zfs-dracut": {
       "origin": "zfs",
       "versions": {
         "2.1.13-r0": 1696230164,
-        "2.1.13-r1": 1698660888
+        "2.1.13-r1": 1698660888,
+        "2.2.1-r0": 1701291417
       }
     },
     "zfs-libs": {
       "origin": "zfs",
       "versions": {
         "2.1.13-r0": 1696230164,
-        "2.1.13-r1": 1698660888
+        "2.1.13-r1": 1698660888,
+        "2.2.1-r0": 1701291417
       },
       "dependencies": [
         "so:libblkid.so.1",
@@ -64939,13 +64954,14 @@
         "6.1.60-r1": 1698248965,
         "6.1.61-r1": 1698922928,
         "6.1.62-r1": 1699514256,
-        "6.1.63-r1": 1701074413
+        "6.1.63-r1": 1701074413,
+        "6.6.3-r0": 1701291418
       },
       "dependencies": [
-        "linux-lts=6.1.63-r0"
+        "linux-lts=6.6.3-r0"
       ],
       "provides": [
-        "spl-vanilla=6.1.63-r1"
+        "spl-vanilla=6.6.3-r0"
       ]
     },
     "zfs-lts-dev": {
@@ -64955,28 +64971,31 @@
         "6.1.60-r1": 1698248965,
         "6.1.61-r1": 1698922928,
         "6.1.62-r1": 1699514256,
-        "6.1.63-r1": 1701074413
+        "6.1.63-r1": 1701074413,
+        "6.6.3-r0": 1701291418
       },
       "dependencies": [
         "glib-dev",
         "e2fsprogs-dev",
         "util-linux-dev",
         "libtirpc-dev",
-        "linux-lts-dev=6.1.63-r0"
+        "linux-lts-dev=6.6.3-r0"
       ]
     },
     "zfs-openrc": {
       "origin": "zfs",
       "versions": {
         "2.1.13-r0": 1696230164,
-        "2.1.13-r1": 1698660888
+        "2.1.13-r1": 1698660888,
+        "2.2.1-r0": 1701291417
       }
     },
     "zfs-scripts": {
       "origin": "zfs",
       "versions": {
         "2.1.13-r0": 1696230164,
-        "2.1.13-r1": 1698660888
+        "2.1.13-r1": 1698660888,
+        "2.2.1-r0": 1701291417
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1",
@@ -64992,7 +65011,8 @@
       "origin": "zfs",
       "versions": {
         "2.1.13-r0": 1696230164,
-        "2.1.13-r1": 1698660888
+        "2.1.13-r1": 1698660888,
+        "2.2.1-r0": 1701291417
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1"
@@ -65002,15 +65022,16 @@
       "origin": "zfs",
       "versions": {
         "2.1.13-r0": 1696230164,
-        "2.1.13-r1": 1698660888
+        "2.1.13-r1": 1698660888,
+        "2.2.1-r0": 1701291417
       },
       "dependencies": [
         "python3"
       ],
       "provides": [
-        "cmd:arc_summary=2.1.13-r1",
-        "cmd:arcstat=2.1.13-r1",
-        "cmd:dbufstat=2.1.13-r1"
+        "cmd:arc_summary=2.2.1-r0",
+        "cmd:arcstat=2.2.1-r0",
+        "cmd:dbufstat=2.2.1-r0"
       ]
     },
     "zfs-zsh-completion": {
@@ -66002,6 +66023,12 @@
       "origin": "rdfind",
       "versions": {
         "1.6.0-r0": 1701076856
+      }
+    },
+    "zfs-bash-completion": {
+      "origin": "zfs",
+      "versions": {
+        "2.2.1-r0": 1701291417
       }
     }
   },
@@ -67233,11 +67260,11 @@
       },
       "spl": {
         "package": "zfs",
-        "version": "2.1.13-r1"
+        "version": "2.2.1-r0"
       },
       "spl-vanilla": {
         "package": "zfs-lts",
-        "version": "6.1.63-r1"
+        "version": "6.6.3-r0"
       },
       "llvm-gtest": {
         "package": "llvm17-gtest",
