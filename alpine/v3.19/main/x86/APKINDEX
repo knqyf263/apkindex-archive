@@ -3024,21 +3024,36 @@ c:20df781b1ae6f2842d44201cbfa8a87aa4a36e7a
 D:openrc>=0.24.1-r6 busybox>=1.26.1-r3 so:libc.musl-x86.so.1
 p:cmd:copy-modloop=3.16.2-r1 cmd:lbu=3.16.2-r1 cmd:lbu_commit=3.16.2-r1 cmd:lbu_exclude=3.16.2-r1 cmd:lbu_include=3.16.2-r1 cmd:lbu_status=3.16.2-r1 cmd:lbu_update=3.16.2-r1 cmd:setup-acf=3.16.2-r1 cmd:setup-alpine=3.16.2-r1 cmd:setup-apkcache=3.16.2-r1 cmd:setup-apkrepos=3.16.2-r1 cmd:setup-bootable=3.16.2-r1 cmd:setup-desktop=3.16.2-r1 cmd:setup-devd=3.16.2-r1 cmd:setup-disk=3.16.2-r1 cmd:setup-dns=3.16.2-r1 cmd:setup-hostname=3.16.2-r1 cmd:setup-interfaces=3.16.2-r1 cmd:setup-keymap=3.16.2-r1 cmd:setup-lbu=3.16.2-r1 cmd:setup-mta=3.16.2-r1 cmd:setup-ntp=3.16.2-r1 cmd:setup-proxy=3.16.2-r1 cmd:setup-sshd=3.16.2-r1 cmd:setup-timezone=3.16.2-r1 cmd:setup-user=3.16.2-r1 cmd:setup-xen-dom0=3.16.2-r1 cmd:setup-xorg-base=3.16.2-r1 cmd:uniso=3.16.2-r1 cmd:update-conf=3.16.2-r1 cmd:update-kernel=3.16.2-r1
 
-C:Q1z/Y9EBKZOJJT+z+sMZroq9gdqZs=
+C:Q1ALO02AW9xlDQrdsAbldDkbT1fU0=
 P:alpine-git-mirror-syncd
-V:0.3.1-r1
+V:0.3.1-r2
 A:x86
-S:4683
-I:49152
+S:3940
+I:32768
 T:Lua script that listens on MQTT and synchronizes Git mirrors when notified about changes
 U:https://github.com/jirutka/alpine-git-mirror-syncd
 L:MIT
 o:alpine-git-mirror-syncd
 m:Jakub Jirutka <jakub@jirutka.cz>
-t:1670958890
-c:c960c7e3824196cccf1d440e3e909e6eeb8d1df7
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:ca-certificates git lua5.1 lua5.1-cjson lua5.1-mosquitto
-p:cmd:git-mirror-syncd=0.3.1-r1
+p:cmd:git-mirror-syncd=0.3.1-r2
+
+C:Q13bpcWJk4Qp/cdsrZ19p9tjbtrnE=
+P:alpine-git-mirror-syncd-openrc
+V:0.3.1-r2
+A:x86
+S:2274
+I:24576
+T:Lua script that listens on MQTT and synchronizes Git mirrors when notified about changes (OpenRC init scripts)
+U:https://github.com/jirutka/alpine-git-mirror-syncd
+L:MIT
+o:alpine-git-mirror-syncd
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc alpine-git-mirror-syncd=0.3.1-r2
 
 C:Q10VySqDEBwVXOAo21m1YBZDYw49U=
 P:alpine-ipxe
@@ -4123,21 +4138,36 @@ c:66ddce4cb7b153cb05a65eabeac7de6f803e96e1
 D:perl perl-libwww perl-json perl-module-build-tiny perl-lwp-protocol-https perl-ipc-system-simple
 p:cmd:apkbuild-pypi=3.12.0-r0
 
-C:Q14WenUvmqlgIQz1lJTAR6L+3bmgs=
+C:Q1O5trnmcSIfYcNA3sfldym+AAoSM=
 P:aports-build
-V:1.5.5-r2
+V:1.5.5-r3
 A:x86
-S:5965
-I:61440
+S:5525
+I:49152
 T:MQTT based build-on-git-push scripts for Alpine Linux
 U:https://alpinelinux.org
 L:GPL-2.0
 o:aports-build
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1684329198
-c:d86562c62a740b1b7ac477b34385d8aaf6684f83
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:abuild>2.20.0 build-base mosquitto-clients openssh-client mqtt-exec rsync lua-aports>1.0.0 lua5.2-cjson lua5.2-mqtt-publish pigz git /bin/sh
-p:cmd:aports-build=1.5.5-r2
+p:cmd:aports-build=1.5.5-r3
+
+C:Q1IUUbZHq0e/cykujaQptnkO8ZGEk=
+P:aports-build-openrc
+V:1.5.5-r3
+A:x86
+S:1936
+I:20480
+T:MQTT based build-on-git-push scripts for Alpine Linux (OpenRC init scripts)
+U:https://alpinelinux.org
+L:GPL-2.0
+o:aports-build
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc aports-build=1.5.5-r3
 
 C:Q1OlXgToqq8NCFtGtTV4spt+se8+Q=
 P:apparmor
@@ -5519,36 +5549,51 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1684120357
 c:33283848034c9885d984c8e8697c645c57324938
 
-C:Q13BD1YrwdkgMpfhJ4Pjh5TKvhPiw=
+C:Q1KcRDjgO+p9B/5ik7Vu00ngqHFes=
 P:aumix
-V:2.9.1-r9
+V:2.9.1-r10
 A:x86
-S:21287
-I:102400
+S:20507
+I:94208
 T:color text mode sound mixer
 U:https://sourceforge.net/projects/aumix/
 L:GPL-2.0-or-later
 o:aumix
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1681228881
-c:84a227baf001b6e0208e3352b294e4d7a40e93de
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:so:libc.musl-x86.so.1 so:libncursesw.so.6
-p:cmd:aumix=2.9.1-r9 cmd:mute=2.9.1-r9 cmd:xaumix=2.9.1-r9
+p:cmd:aumix=2.9.1-r10 cmd:mute=2.9.1-r10 cmd:xaumix=2.9.1-r10
 
-C:Q1SR7Q0t/JGAltuduRlW9nZaXVrvg=
+C:Q1Y5Q54ApVc3vphcW4BLSSsF8MMN8=
 P:aumix-doc
-V:2.9.1-r9
+V:2.9.1-r10
 A:x86
-S:7030
+S:7024
 I:32768
 T:color text mode sound mixer (documentation)
 U:https://sourceforge.net/projects/aumix/
 L:GPL-2.0-or-later
 o:aumix
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1681228881
-c:84a227baf001b6e0208e3352b294e4d7a40e93de
-i:docs aumix=2.9.1-r9
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:docs aumix=2.9.1-r10
+
+C:Q1QV5MXYwltZVyO7UMdFoRYaOrpaA=
+P:aumix-openrc
+V:2.9.1-r10
+A:x86
+S:2175
+I:16384
+T:color text mode sound mixer (OpenRC init scripts)
+U:https://sourceforge.net/projects/aumix/
+L:GPL-2.0-or-later
+o:aumix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc aumix=2.9.1-r10
 
 C:Q1RV1ZVIQU4ggZwYiVnG1Yw7bbUMA=
 P:autoconf
@@ -7113,21 +7158,36 @@ t:1696230058
 c:c7f2fe51efce262db89d5e9aea089e9df7771586
 i:bluez=5.70-r0 zsh
 
-C:Q17aoDcEgu0ULvSTl+x4vFN8EcijY=
+C:Q1W7jHEYxNb0KSFxJhL5PCFtxnBDQ=
 P:bmd-tools
-V:1.0.2-r4
+V:1.0.2-r5
 A:x86
-S:19267
-I:90112
+S:18652
+I:73728
 T:Tools for Blackmagic USB video encoders
 U:https://github.com/fabled/bmd-tools
 L:MIT
 o:bmd-tools
 m:Timo Teräs <timo.teras@iki.fi>
-t:1681228881
-c:84a227baf001b6e0208e3352b294e4d7a40e93de
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:so:libc.musl-x86.so.1 so:libusb-1.0.so.0
-p:cmd:bmd-extractfw=1.0.2-r4 cmd:bmd-streamer=1.0.2-r4
+p:cmd:bmd-extractfw=1.0.2-r5 cmd:bmd-streamer=1.0.2-r5
+
+C:Q1anOD72TQSNZ5F1JFxbXDezHFlcs=
+P:bmd-tools-openrc
+V:1.0.2-r5
+A:x86
+S:1953
+I:24576
+T:Tools for Blackmagic USB video encoders (OpenRC init scripts)
+U:https://github.com/fabled/bmd-tools
+L:MIT
+o:bmd-tools
+m:Timo Teräs <timo.teras@iki.fi>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc bmd-tools=1.0.2-r5
 
 C:Q1PMv9uzyl3NP1CS60sfUo4Tcb4js=
 P:bonding
@@ -12431,25 +12491,25 @@ t:1684677551
 c:b8c005ef4294a35f3fafb68a1424c47c17fc8381
 i:docs diffutils=3.10-r0
 
-C:Q1eQsrVBYBHYJ9lkswMqYkJVdCLwA=
+C:Q1GrLJl4Zp4ivLLXy2x3Ht/YRzOsk=
 P:distcc
-V:3.4-r7
+V:3.4-r8
 A:x86
-S:142000
-I:376832
+S:140595
+I:360448
 T:Ddistributed C, C++, Obj C compiler
 U:https://github.com/distcc/distcc
 L:GPL-2.0-or-later
 o:distcc
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1693810066
-c:fab17808a15817482443a23fda4e00e58934ffd8
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:/bin/sh so:libc.musl-x86.so.1 so:libpopt.so.0
-p:cmd:distcc=3.4-r7 cmd:distccd=3.4-r7 cmd:distccmon-text=3.4-r7 cmd:lsdistcc=3.4-r7 cmd:update-distcc-symlinks=3.4-r7
+p:cmd:distcc=3.4-r8 cmd:distccd=3.4-r8 cmd:distccmon-text=3.4-r8 cmd:lsdistcc=3.4-r8 cmd:update-distcc-symlinks=3.4-r8
 
-C:Q13AJMNCE/fFYu3Tsu33tvuYJp2CU=
+C:Q17MrseRQzG+WUx0kDfK65Xt7ZOf0=
 P:distcc-doc
-V:3.4-r7
+V:3.4-r8
 A:x86
 S:96402
 I:307200
@@ -12458,108 +12518,123 @@ U:https://github.com/distcc/distcc
 L:GPL-2.0-or-later
 o:distcc
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1693810066
-c:fab17808a15817482443a23fda4e00e58934ffd8
-i:docs distcc=3.4-r7
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:docs distcc=3.4-r8
 
-C:Q19qvVvnFt6Fo/8ejXxe4pUFfBNCA=
-P:distcc-pump
-V:3.4-r7
+C:Q1V3gtZoAAFJCbtNCAxPLx+n0wxgw=
+P:distcc-openrc
+V:3.4-r8
 A:x86
-S:121980
+S:2809
+I:24576
+T:Ddistributed C, C++, Obj C compiler (OpenRC init scripts)
+U:https://github.com/distcc/distcc
+L:GPL-2.0-or-later
+o:distcc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc distcc=3.4-r8
+
+C:Q1YM+OuSulMXXVVeyI02GbA2k1u78=
+P:distcc-pump
+V:3.4-r8
+A:x86
+S:121961
 I:462848
 T:pump mode for distcc a distributed compiler client and server
 U:https://github.com/distcc/distcc
 L:GPL-2.0-or-later
 o:distcc
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1693810066
-c:fab17808a15817482443a23fda4e00e58934ffd8
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:python3~3.11 so:libc.musl-x86.so.1
-p:cmd:pump=3.4-r7
+p:cmd:pump=3.4-r8
 
-C:Q1tcTtbmv/K/ePDeHZSeDgmCM4JpA=
+C:Q1N9FMusESepxR13TodnuuMBa9qoY=
 P:distcc-pump-pyc
-V:3.4-r7
+V:3.4-r8
 A:x86
-S:125565
+S:125571
 I:393216
 T:Precompiled Python bytecode for distcc-pump
 U:https://github.com/distcc/distcc
 L:GPL-2.0-or-later
 o:distcc
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1693810066
-c:fab17808a15817482443a23fda4e00e58934ffd8
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:python3~3.11
-i:distcc-pump=3.4-r7 pyc
+i:distcc-pump=3.4-r8 pyc
 
-C:Q1Os+2Ai6W4bF6usqZpGTkhr0DN8o=
+C:Q1YTh0LZHLGJxhX8Cc7Eermmgg194=
 P:djbdns
-V:1.05-r51
+V:1.05-r53
 A:x86
-S:183139
+S:182999
 I:622592
 T:Excellent high-performance DNS services
 U:http://cr.yp.to/djbdns.html
 L:Public-Domain
 o:djbdns
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1681931881
-c:3d574dea81f713c2c10cfff526153b6310b5b1c0
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:so:libc.musl-x86.so.1
-p:cmd:axfr-get=1.05-r51 cmd:axfrdns-conf=1.05-r51 cmd:axfrdns=1.05-r51 cmd:dnsfilter=1.05-r51 cmd:dnsipq=1.05-r51 cmd:dnsmx=1.05-r51 cmd:dnsname=1.05-r51 cmd:dnsq=1.05-r51 cmd:dnstrace=1.05-r51 cmd:dnstracesort=1.05-r51 cmd:dnstxt=1.05-r51 cmd:pickdns-conf=1.05-r51 cmd:pickdns-data=1.05-r51 cmd:pickdns=1.05-r51 cmd:random-ip=1.05-r51 cmd:rbldns-conf=1.05-r51 cmd:rbldns-data=1.05-r51 cmd:rbldns=1.05-r51 cmd:walldns-conf=1.05-r51 cmd:walldns=1.05-r51
+p:cmd:axfr-get=1.05-r53 cmd:axfrdns-conf=1.05-r53 cmd:axfrdns=1.05-r53 cmd:dnsfilter=1.05-r53 cmd:dnsipq=1.05-r53 cmd:dnsmx=1.05-r53 cmd:dnsname=1.05-r53 cmd:dnsq=1.05-r53 cmd:dnstrace=1.05-r53 cmd:dnstracesort=1.05-r53 cmd:dnstxt=1.05-r53 cmd:pickdns-conf=1.05-r53 cmd:pickdns-data=1.05-r53 cmd:pickdns=1.05-r53 cmd:random-ip=1.05-r53 cmd:rbldns-conf=1.05-r53 cmd:rbldns-data=1.05-r53 cmd:rbldns=1.05-r53 cmd:walldns-conf=1.05-r53 cmd:walldns=1.05-r53
 
-C:Q1g/WsKSMNrxhS7afMZ/G4UE47EJA=
+C:Q1vPmGs6WrqT72mi6tlCjHfU078iI=
 P:djbdns-common
-V:1.05-r51
+V:1.05-r53
 A:x86
-S:29412
+S:29391
 I:86016
 T:Base utilities of djbdns
 U:http://cr.yp.to/djbdns.html
 L:Public-Domain
 o:djbdns
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1681931881
-c:3d574dea81f713c2c10cfff526153b6310b5b1c0
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:so:libc.musl-x86.so.1
-p:cmd:dnsip=1.05-r51 cmd:dnsqr=1.05-r51
+p:cmd:dnsip=1.05-r53 cmd:dnsqr=1.05-r53
 
-C:Q14AGT6GUBdgTqsUH4l9129CynC6U=
+C:Q1vq3UsOw5WhYSMUl1h863KLQ+c4Y=
 P:djbdns-doc
-V:1.05-r51
+V:1.05-r53
 A:x86
-S:1503
+S:1502
 I:20480
 T:Excellent high-performance DNS services (documentation)
 U:http://cr.yp.to/djbdns.html
 L:Public-Domain
 o:djbdns
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1681931881
-c:3d574dea81f713c2c10cfff526153b6310b5b1c0
-i:docs djbdns=1.05-r51
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:docs djbdns=1.05-r53
 
-C:Q1UaEdEcaql8WxfsPqi+KqSWbYG7A=
+C:Q12MekVDJB4pbNHmVAcg1+BAiAnq8=
 P:dkimproxy
-V:1.4.1-r8
+V:1.4.1-r9
 A:x86
-S:22727
-I:159744
+S:21766
+I:135168
 T:SMTP-proxy that signs and/or verifies emails, using the Mail::DKIM module
 U:https://dkimproxy.sourceforge.net/
 L:GPL-2.0-or-later
 o:dkimproxy
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1683505951
-c:96f869314d604c97655fc150114d1424927e1eb5
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:perl-mail-dkim perl-net-server perl-error /bin/sh
-p:cmd:dkim_responder=1.4.1-r8 cmd:dkimproxy.in=1.4.1-r8 cmd:dkimproxy.out=1.4.1-r8
+p:cmd:dkim_responder=1.4.1-r9 cmd:dkimproxy.in=1.4.1-r9 cmd:dkimproxy.out=1.4.1-r9
 
-C:Q1fruMLK4mm+byC+HRV0aaNZYa3Vs=
+C:Q1WzMFIumU/WTUiTNS3ypLx1QaosA=
 P:dkimproxy-doc
-V:1.4.1-r8
+V:1.4.1-r9
 A:x86
 S:10919
 I:32768
@@ -12568,9 +12643,24 @@ U:https://dkimproxy.sourceforge.net/
 L:GPL-2.0-or-later
 o:dkimproxy
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1683505951
-c:96f869314d604c97655fc150114d1424927e1eb5
-i:docs dkimproxy=1.4.1-r8
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:docs dkimproxy=1.4.1-r9
+
+C:Q1+hHjLKyN32iegio7hT+7o9F8iO8=
+P:dkimproxy-openrc
+V:1.4.1-r9
+A:x86
+S:2541
+I:32768
+T:SMTP-proxy that signs and/or verifies emails, using the Mail::DKIM module (OpenRC init scripts)
+U:https://dkimproxy.sourceforge.net/
+L:GPL-2.0-or-later
+o:dkimproxy
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc dkimproxy=1.4.1-r9
 
 C:Q1MlQcWbT9YazodJ8MAr3BPfONRbI=
 P:dmidecode
@@ -12663,53 +12753,68 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1694433278
 c:17fa137f995ca01aa177dbf38a421d8962a55e52
 
-C:Q1qOq3NdPHCn74d+k/EuQduFv9OfA=
+C:Q1W8wHQPnqMMNVCLDjDVHyaFGKwa4=
 P:dmvpn
-V:1.4.0-r2
+V:1.4.0-r3
 A:x86
-S:9474
-I:90112
+S:9173
+I:81920
 T:Dynamic Multipoint VPN
 U:https://git.alpinelinux.org/cgit/dmvpn-tools/
 L:MIT
 o:dmvpn
 m:Kaarle Ritvanen <kunkku@alpinelinux.org>
-t:1697930804
-c:e321cb88d1b9addd6ba0300ff5ecedd7fe4e4486
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:augeas bind-tools lua5.2 lua5.2-cqueues lua5.2-lyaml lua5.2-ossl lua5.2-posix lua5.2-struct lua-dmvpn quagga strongswan tunnel
-p:cmd:nhrp-events=1.4.0-r2 cmd:setup-dmvpn=1.4.0-r2
+p:cmd:nhrp-events=1.4.0-r3 cmd:setup-dmvpn=1.4.0-r3
 
-C:Q1irGZrKILcAAdUfqp3SK5oKfWHlQ=
+C:Q1pSscH+a5FBsWe/EB8NjVj2NCi+g=
 P:dmvpn-ca
-V:1.4.0-r2
+V:1.4.0-r3
 A:x86
-S:11159
+S:11167
 I:61440
 T:Dynamic Multipoint VPN
 U:https://git.alpinelinux.org/cgit/dmvpn-tools/
 L:MIT
 o:dmvpn
 m:Kaarle Ritvanen <kunkku@alpinelinux.org>
-t:1697930804
-c:e321cb88d1b9addd6ba0300ff5ecedd7fe4e4486
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:lua5.2 lua5.2-lyaml lua5.2-ossl lua5.2-posix lua5.2-sql-sqlite3 lua5.2-stringy lua-asn1 lua-dmvpn
-p:cmd:dmvpn-ca=1.4.0-r2
+p:cmd:dmvpn-ca=1.4.0-r3
 
-C:Q1YiuK6SSepqU8xrBwRak36UKxZk0=
+C:Q1xmj2nB31k25ws4byf4k2ahzDsZM=
 P:dmvpn-crl-dp
-V:1.4.0-r2
+V:1.4.0-r3
 A:x86
-S:2119
+S:2123
 I:28672
 T:Dynamic Multipoint VPN
 U:https://git.alpinelinux.org/cgit/dmvpn-tools/
 L:MIT
 o:dmvpn
 m:Kaarle Ritvanen <kunkku@alpinelinux.org>
-t:1697930804
-c:e321cb88d1b9addd6ba0300ff5ecedd7fe4e4486
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:lighttpd
-p:cmd:dmvpn-crl-update=1.4.0-r2
+p:cmd:dmvpn-crl-update=1.4.0-r3
+
+C:Q1oxRgj8dcte6VvsG9MV4MovqkQac=
+P:dmvpn-openrc
+V:1.4.0-r3
+A:x86
+S:1808
+I:16384
+T:Dynamic Multipoint VPN (OpenRC init scripts)
+U:https://git.alpinelinux.org/cgit/dmvpn-tools/
+L:MIT
+o:dmvpn
+m:Kaarle Ritvanen <kunkku@alpinelinux.org>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc dmvpn=1.4.0-r3
 
 C:Q1qwK0wmb6gDA2y/A4CppGA9k3bSc=
 P:dns-root-hints
@@ -12727,21 +12832,36 @@ c:c6db9601e6582e62a16df054b65e5ba114abd66a
 D:curl gpgv
 p:cmd:update-dns-root-hints=2022062901-r0
 
-C:Q1eWUlHVlOdFeo+iHSr1/qoeFODS4=
+C:Q1i+FdGexMaSBIjCtwvA6x6bFHJnM=
 P:dnscache
-V:1.05-r51
+V:1.05-r53
 A:x86
-S:39247
-I:151552
+S:38042
+I:135168
 T:A recursive resolver
 U:http://cr.yp.to/djbdns.html
 L:Public-Domain
 o:djbdns
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1681931881
-c:3d574dea81f713c2c10cfff526153b6310b5b1c0
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:djbdns-common /bin/sh so:libc.musl-x86.so.1
-p:cmd:dnscache-conf=1.05-r51 cmd:dnscache=1.05-r51
+p:cmd:dnscache-conf=1.05-r53 cmd:dnscache=1.05-r53
+
+C:Q1/7plkDny2753hu6vvlQweGp1oF8=
+P:dnscache-openrc
+V:1.05-r53
+A:x86
+S:2580
+I:24576
+T:A recursive resolver (OpenRC init scripts)
+U:http://cr.yp.to/djbdns.html
+L:Public-Domain
+o:djbdns
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc dnscache=1.05-r53
 
 C:Q1J+Z1CDgGb1qQrv7UNzEX4M8ofQM=
 P:dnsmasq
@@ -16741,99 +16861,129 @@ t:1697823258
 c:6baf0508dc9ee4fb7175f0685737fd79d28cca3c
 i:docs fping=5.1-r5
 
-C:Q1IN+Jz7BqKvEuMOwa1mt1HjI27kU=
+C:Q14g/TcrPYhs2u35mrF6c+i7HEv/U=
 P:fprobe
-V:1.1-r12
+V:1.1-r13
 A:x86
-S:16670
-I:61440
+S:14825
+I:45056
 T:libpcap-based tool that collect network traffic
 U:https://fprobe.sourceforge.net/
 L:GPL-2.0-or-later
 o:fprobe
 m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1681228881
-c:84a227baf001b6e0208e3352b294e4d7a40e93de
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:so:libc.musl-x86.so.1 so:libpcap.so.1
-p:cmd:fprobe=1.1-r12
+p:cmd:fprobe=1.1-r13
 
-C:Q1fOfSq1WQQsrSx/y170E5CUzDtfw=
+C:Q1sNzNpKqZAn98qmxxQxMotY9gSHg=
 P:fprobe-doc
-V:1.1-r12
+V:1.1-r13
 A:x86
-S:5003
+S:4995
 I:24576
 T:libpcap-based tool that collect network traffic (documentation)
 U:https://fprobe.sourceforge.net/
 L:GPL-2.0-or-later
 o:fprobe
 m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1681228881
-c:84a227baf001b6e0208e3352b294e4d7a40e93de
-i:docs fprobe=1.1-r12
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:docs fprobe=1.1-r13
 
-C:Q1E1fshjHr1lg3Zko04tTY1ngS3A4=
-P:fprobe-ulog
-V:1.2-r7
+C:Q1Qr3cDXJ0PzHGFborpcydbUJ/TsM=
+P:fprobe-openrc
+V:1.1-r13
 A:x86
-S:15959
-I:61440
+S:3292
+I:24576
+T:libpcap-based tool that collect network traffic (OpenRC init scripts)
+U:https://fprobe.sourceforge.net/
+L:GPL-2.0-or-later
+o:fprobe
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc fprobe=1.1-r13
+
+C:Q1NyKQQudEgr3MlWYfqTDQB7Bz7RA=
+P:fprobe-ulog
+V:1.2-r8
+A:x86
+S:14150
+I:45056
 T:netfilter-based tool that collect network traffic
 U:https://github.com/opoplawski/fprobe-ulog
 L:GPL-2.0-or-later
 o:fprobe-ulog
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1681228881
-c:84a227baf001b6e0208e3352b294e4d7a40e93de
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:so:libc.musl-x86.so.1 so:libnetfilter_log_libipulog.so.1
-p:cmd:fprobe-ulog=1.2-r7
+p:cmd:fprobe-ulog=1.2-r8
 
-C:Q1x8uHsJyUgw1dahIPdzugq5Al/KI=
+C:Q1X4cVYhKvKjZj1A266WxD0GDXTck=
 P:fprobe-ulog-doc
-V:1.2-r7
+V:1.2-r8
 A:x86
-S:4339
+S:4335
 I:24576
 T:netfilter-based tool that collect network traffic (documentation)
 U:https://github.com/opoplawski/fprobe-ulog
 L:GPL-2.0-or-later
 o:fprobe-ulog
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1681228881
-c:84a227baf001b6e0208e3352b294e4d7a40e93de
-i:docs fprobe-ulog=1.2-r7
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:docs fprobe-ulog=1.2-r8
 
-C:Q1mg7+B24n7QX+/PzxeznKQwbGURI=
-P:freeradius
-V:3.0.26-r4
+C:Q1FA9V/vkhF7JVufqIqVzj7UEbazQ=
+P:fprobe-ulog-openrc
+V:1.2-r8
 A:x86
-S:518776
-I:2183168
+S:3270
+I:24576
+T:netfilter-based tool that collect network traffic (OpenRC init scripts)
+U:https://github.com/opoplawski/fprobe-ulog
+L:GPL-2.0-or-later
+o:fprobe-ulog
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc fprobe-ulog=1.2-r8
+
+C:Q11ts6STx7O36q7pLapYig5X3ZQrg=
+P:freeradius
+V:3.0.26-r6
+A:x86
+S:517434
+I:2166784
 T:RADIUS (Remote Authentication Dial-In User Service) server
 U:https://freeradius.org/
 L:GPL-2.0-or-later
 o:freeradius
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1691252335
-c:dfbed31234224e319d44baa1ddc164460491e1bf
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:/bin/sh so:libc.musl-x86.so.1 so:libcrypto.so.3 so:libfreeradius-radius.so so:libfreeradius-server.so so:libgdbm.so.6 so:libreadline.so.8 so:libssl.so.3 so:libtalloc.so.2
-p:freeradius3=3.0.26-r4 so:proto_vmps.so=0 so:rlm_always.so=0 so:rlm_attr_filter.so=0 so:rlm_cache.so=0 so:rlm_cache_rbtree.so=0 so:rlm_chap.so=0 so:rlm_counter.so=0 so:rlm_cram.so=0 so:rlm_date.so=0 so:rlm_detail.so=0 so:rlm_digest.so=0 so:rlm_dynamic_clients.so=0 so:rlm_exec.so=0 so:rlm_expiration.so=0 so:rlm_expr.so=0 so:rlm_files.so=0 so:rlm_ippool.so=0 so:rlm_linelog.so=0 so:rlm_logintime.so=0 so:rlm_mschap.so=0 so:rlm_otp.so=0 so:rlm_pap.so=0 so:rlm_passwd.so=0 so:rlm_preprocess.so=0 so:rlm_radutmp.so=0 so:rlm_realm.so=0 so:rlm_replicate.so=0 so:rlm_soh.so=0 so:rlm_sometimes.so=0 so:rlm_sql_map.so=0 so:rlm_totp.so=0 so:rlm_unix.so=0 so:rlm_unpack.so=0 so:rlm_utf8.so=0 so:rlm_wimax.so=0 cmd:radacct-rotate=3.0.26-r4 cmd:raddebug=3.0.26-r4 cmd:radiusd=3.0.26-r4 cmd:radmin=3.0.26-r4 cmd:setup-freeradius=3.0.26-r4
+p:freeradius3=3.0.26-r6 so:proto_vmps.so=0 so:rlm_always.so=0 so:rlm_attr_filter.so=0 so:rlm_cache.so=0 so:rlm_cache_rbtree.so=0 so:rlm_chap.so=0 so:rlm_counter.so=0 so:rlm_cram.so=0 so:rlm_date.so=0 so:rlm_detail.so=0 so:rlm_digest.so=0 so:rlm_dynamic_clients.so=0 so:rlm_exec.so=0 so:rlm_expiration.so=0 so:rlm_expr.so=0 so:rlm_files.so=0 so:rlm_ippool.so=0 so:rlm_linelog.so=0 so:rlm_logintime.so=0 so:rlm_mschap.so=0 so:rlm_otp.so=0 so:rlm_pap.so=0 so:rlm_passwd.so=0 so:rlm_preprocess.so=0 so:rlm_radutmp.so=0 so:rlm_realm.so=0 so:rlm_replicate.so=0 so:rlm_soh.so=0 so:rlm_sometimes.so=0 so:rlm_sql_map.so=0 so:rlm_totp.so=0 so:rlm_unix.so=0 so:rlm_unpack.so=0 so:rlm_utf8.so=0 so:rlm_wimax.so=0 cmd:radacct-rotate=3.0.26-r6 cmd:raddebug=3.0.26-r6 cmd:radiusd=3.0.26-r6 cmd:radmin=3.0.26-r6 cmd:setup-freeradius=3.0.26-r6
 
-C:Q14K11xEWRLhBVbqFHGS0Cmj+cbwk=
+C:Q1v9iF6RFyvc5FxKO6cIxJezMvUVk=
 P:freeradius-checkrad
-V:3.0.26-r4
+V:3.0.26-r6
 A:x86
-S:13784
+S:13781
 I:53248
 T:Check if a user is (still) logged in on a certain port
 U:https://freeradius.org/
 L:GPL-2.0-or-later
 o:freeradius
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1691252335
-c:dfbed31234224e319d44baa1ddc164460491e1bf
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:perl perl-net-telnet perl-snmp-session net-snmp-tools
-p:cmd:checkrad=3.0.26-r4
+p:cmd:checkrad=3.0.26-r6
 
 C:Q15ipSHovASPWr9Zp3cB7kOZhzSew=
 P:freeradius-client
@@ -16866,334 +17016,349 @@ t:1681228881
 c:84a227baf001b6e0208e3352b294e4d7a40e93de
 D:freeradius-client=1.1.7-r7
 
-C:Q1CkPSBWLeSsVNpmzRnUDEMEIBbWg=
+C:Q1WjKpsnhqn7zSSId6sy49vi1mi7I=
 P:freeradius-dbg
-V:3.0.26-r4
+V:3.0.26-r6
 A:x86
-S:2569331
-I:5529600
+S:2568081
+I:5521408
 T:RADIUS (Remote Authentication Dial-In User Service) server (debug symbols)
 U:https://freeradius.org/
 L:GPL-2.0-or-later
 o:freeradius
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1691252335
-c:dfbed31234224e319d44baa1ddc164460491e1bf
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 
-C:Q13Ez+8ukeoTIuyNBWL6vHARfhR9M=
+C:Q1aYK2T152Q7UlPVrUH5mKO9j03T4=
 P:freeradius-dev
-V:3.0.26-r4
+V:3.0.26-r6
 A:x86
-S:68703
+S:68699
 I:446464
 T:RADIUS (Remote Authentication Dial-In User Service) server (development files)
 U:https://freeradius.org/
 L:GPL-2.0-or-later
 o:freeradius
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1691252335
-c:dfbed31234224e319d44baa1ddc164460491e1bf
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 
-C:Q1cCpd2lEkAFefdCHEb0JPhS/GUBY=
+C:Q13dc0eNNnR46DDQpIPiEGPQZ2DRQ=
 P:freeradius-dhcp
-V:3.0.26-r4
+V:3.0.26-r6
 A:x86
-S:29046
+S:29048
 I:131072
 T:DHCP module for FreeRADIUS server
 U:https://freeradius.org/
 L:GPL-2.0-or-later
 o:freeradius
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1691252335
-c:dfbed31234224e319d44baa1ddc164460491e1bf
-D:freeradius=3.0.26-r4 so:libc.musl-x86.so.1
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+D:freeradius=3.0.26-r6 so:libc.musl-x86.so.1
 p:so:libfreeradius-dhcp.so=0 so:proto_dhcp.so=0 so:rlm_dhcp.so=0
 
-C:Q115wAT+YIijzWKstUryVlrt3pZwI=
+C:Q1dIuEkL6sEDBX1o8WyF1PYE4FTCM=
 P:freeradius-doc
-V:3.0.26-r4
+V:3.0.26-r6
 A:x86
-S:1297707
+S:1297708
 I:5844992
 T:RADIUS (Remote Authentication Dial-In User Service) server (documentation)
 U:https://freeradius.org/
 L:GPL-2.0-or-later
 o:freeradius
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1691252335
-c:dfbed31234224e319d44baa1ddc164460491e1bf
-i:docs freeradius=3.0.26-r4
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:docs freeradius=3.0.26-r6
 
-C:Q1HKQ7LBU3rzY5f+bqSw5qAqIYyX4=
+C:Q12OGTEtOXFbYYjfXTdRcJfhTInyw=
 P:freeradius-eap
-V:3.0.26-r4
+V:3.0.26-r6
 A:x86
-S:177254
+S:177252
 I:569344
 T:EAP module for FreeRADIUS server
 U:https://freeradius.org/
 L:GPL-2.0-or-later
 o:freeradius
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1691252335
-c:dfbed31234224e319d44baa1ddc164460491e1bf
-D:freeradius=3.0.26-r4 so:libc.musl-x86.so.1 so:libcrypto.so.3 so:libfreeradius-radius.so so:libfreeradius-server.so so:libssl.so.3 so:libtalloc.so.2
-p:freeradius3-eap=3.0.26-r4 so:libfreeradius-eap.so=0 so:rlm_eap.so=0 so:rlm_eap_fast.so=0 so:rlm_eap_gtc.so=0 so:rlm_eap_md5.so=0 so:rlm_eap_mschapv2.so=0 so:rlm_eap_peap.so=0 so:rlm_eap_pwd.so=0 so:rlm_eap_sim.so=0 so:rlm_eap_tls.so=0 so:rlm_eap_ttls.so=0 cmd:radeapclient=3.0.26-r4
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+D:freeradius=3.0.26-r6 so:libc.musl-x86.so.1 so:libcrypto.so.3 so:libfreeradius-radius.so so:libfreeradius-server.so so:libssl.so.3 so:libtalloc.so.2
+p:freeradius3-eap=3.0.26-r6 so:libfreeradius-eap.so=0 so:rlm_eap.so=0 so:rlm_eap_fast.so=0 so:rlm_eap_gtc.so=0 so:rlm_eap_md5.so=0 so:rlm_eap_mschapv2.so=0 so:rlm_eap_peap.so=0 so:rlm_eap_pwd.so=0 so:rlm_eap_sim.so=0 so:rlm_eap_tls.so=0 so:rlm_eap_ttls.so=0 cmd:radeapclient=3.0.26-r6
 
-C:Q1CjztrL4DEYAwQ0YszRs0pz8ra4E=
+C:Q1RrrpGYLPvnmeXjC3ZFGOplB+1Xg=
 P:freeradius-krb5
-V:3.0.26-r4
+V:3.0.26-r6
 A:x86
-S:8816
+S:8823
 I:61440
 T:Kerberos module for FreeRADIUS server
 U:https://freeradius.org/
 L:GPL-2.0-or-later
 o:freeradius
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1691252335
-c:dfbed31234224e319d44baa1ddc164460491e1bf
-D:freeradius=3.0.26-r4 so:libc.musl-x86.so.1 so:libcom_err.so.2 so:libkrb5.so.3
-p:freeradius3-krb5=3.0.26-r4 so:rlm_krb5.so=0
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+D:freeradius=3.0.26-r6 so:libc.musl-x86.so.1 so:libcom_err.so.2 so:libkrb5.so.3
+p:freeradius3-krb5=3.0.26-r6 so:rlm_krb5.so=0
 
-C:Q1ChaK5h5gvS6afL6+yYhWXFnGzEw=
+C:Q1KZo4xuBCYOsX8fpE8Cvg6fn3jsE=
 P:freeradius-ldap
-V:3.0.26-r4
+V:3.0.26-r6
 A:x86
-S:41254
+S:41250
 I:143360
 T:LDAP module for FreeRADIUS server
 U:https://freeradius.org/
 L:GPL-2.0-or-later
 o:freeradius
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1691252335
-c:dfbed31234224e319d44baa1ddc164460491e1bf
-D:freeradius=3.0.26-r4 so:libc.musl-x86.so.1 so:libldap.so.2
-p:freeradius3-ldap=3.0.26-r4 so:rlm_ldap.so=0
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+D:freeradius=3.0.26-r6 so:libc.musl-x86.so.1 so:libldap.so.2
+p:freeradius3-ldap=3.0.26-r6 so:rlm_ldap.so=0
 
-C:Q15cI0wlKk6hOhRcTPjbxmb/3XVlY=
+C:Q1Yf6zXvBMQP3YMqZZev2bZ0s4sCY=
 P:freeradius-lib
-V:3.0.26-r4
+V:3.0.26-r6
 A:x86
-S:415908
+S:415873
 I:2134016
 T:Freeradius shared libraries
 U:https://freeradius.org/
 L:GPL-2.0-or-later
 o:freeradius
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1691252335
-c:dfbed31234224e319d44baa1ddc164460491e1bf
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:so:libc.musl-x86.so.1 so:libcrypto.so.3 so:libpcap.so.1 so:libtalloc.so.2
 p:so:libfreeradius-radius.so=0 so:libfreeradius-server.so=0
 
-C:Q1HnvyQLLprkXwq/P0ilW9auu0r9A=
+C:Q1jxKx5WE1XpXM7ojUeGiiG41Kk3g=
 P:freeradius-mssql
-V:3.0.26-r4
+V:3.0.26-r6
 A:x86
-S:9247
+S:9244
 I:73728
 T:MSSQL module for FreeRADIUS server
 U:https://freeradius.org/
 L:GPL-2.0-or-later
 o:freeradius
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1691252335
-c:dfbed31234224e319d44baa1ddc164460491e1bf
-D:freeradius-sql=3.0.26-r4
-p:freeradius3-mssql=3.0.26-r4
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+D:freeradius-sql=3.0.26-r6
+p:freeradius3-mssql=3.0.26-r6
 
-C:Q17uIBSzx85rKGHRIfgbREPMoT0y4=
+C:Q1deWg54+Av6d31cLw8H3VCG8ySfc=
 P:freeradius-mysql
-V:3.0.26-r4
+V:3.0.26-r6
 A:x86
-S:30195
+S:30198
 I:303104
 T:MySQL module for FreeRADIUS server
 U:https://freeradius.org/
 L:GPL-2.0-or-later
 o:freeradius
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1691252335
-c:dfbed31234224e319d44baa1ddc164460491e1bf
-D:freeradius-sql=3.0.26-r4 so:libc.musl-x86.so.1 so:libmariadb.so.3
-p:freeradius3-mysql=3.0.26-r4 so:rlm_sql_mysql.so=0
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+D:freeradius-sql=3.0.26-r6 so:libc.musl-x86.so.1 so:libmariadb.so.3
+p:freeradius3-mysql=3.0.26-r6 so:rlm_sql_mysql.so=0
 
-C:Q1ABw4JnM4bMRB+M7Ia7R+1OR1L24=
-P:freeradius-pam
-V:3.0.26-r4
+C:Q100NOC2t0lxePbCZ3ozOXjq4cB6s=
+P:freeradius-openrc
+V:3.0.26-r6
 A:x86
-S:5996
+S:2380
+I:24576
+T:RADIUS (Remote Authentication Dial-In User Service) server (OpenRC init scripts)
+U:https://freeradius.org/
+L:GPL-2.0-or-later
+o:freeradius
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc freeradius=3.0.26-r6
+
+C:Q1+cfZrOZJPdftKCciuKz1HrGCrjc=
+P:freeradius-pam
+V:3.0.26-r6
+A:x86
+S:5995
 I:57344
 T:PAM module for FreeRADIUS server
 U:https://freeradius.org/
 L:GPL-2.0-or-later
 o:freeradius
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1691252335
-c:dfbed31234224e319d44baa1ddc164460491e1bf
-D:freeradius=3.0.26-r4 so:libc.musl-x86.so.1 so:libpam.so.0
-p:freeradius3-pam=3.0.26-r4 so:rlm_pam.so=0
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+D:freeradius=3.0.26-r6 so:libc.musl-x86.so.1 so:libpam.so.0
+p:freeradius3-pam=3.0.26-r6 so:rlm_pam.so=0
 
-C:Q1AS36RdrkRRFLQm1/34UZ44k8YVI=
+C:Q1pXkpMjP0vh6iCooBUZiOrn4lJJQ=
 P:freeradius-perl
-V:3.0.26-r4
+V:3.0.26-r6
 A:x86
-S:17989
+S:17983
 I:90112
 T:Perl module for FreeRADIUS server
 U:https://freeradius.org/
 L:GPL-2.0-or-later
 o:freeradius
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1691252335
-c:dfbed31234224e319d44baa1ddc164460491e1bf
-D:freeradius=3.0.26-r4 perl so:libc.musl-x86.so.1 so:libperl.so
-p:freeradius3-perl=3.0.26-r4 so:rlm_perl.so=0
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+D:freeradius=3.0.26-r6 perl so:libc.musl-x86.so.1 so:libperl.so
+p:freeradius3-perl=3.0.26-r6 so:rlm_perl.so=0
 
-C:Q12loFSNIvIwhfRsEyIcrpJnj903w=
+C:Q1TepuVVe5LRRBUVBgpO3eCuKPZPk=
 P:freeradius-postgresql
-V:3.0.26-r4
+V:3.0.26-r6
 A:x86
-S:35953
+S:35951
 I:282624
 T:PostgreSQL module for FreeRADIUS server
 U:https://freeradius.org/
 L:GPL-2.0-or-later
 o:freeradius
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1691252335
-c:dfbed31234224e319d44baa1ddc164460491e1bf
-D:freeradius-sql=3.0.26-r4 so:libc.musl-x86.so.1 so:libpq.so.5
-p:freeradius3-postgresql=3.0.26-r4 so:rlm_sql_postgresql.so=0
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+D:freeradius-sql=3.0.26-r6 so:libc.musl-x86.so.1 so:libpq.so.5
+p:freeradius3-postgresql=3.0.26-r6 so:rlm_sql_postgresql.so=0
 
-C:Q1hZfY9UOJ/MH20RraN2lZLR0Mu0o=
+C:Q1ek5mUOe4qpJy/dMBjmPkHNq1jro=
 P:freeradius-python3
-V:3.0.26-r4
+V:3.0.26-r6
 A:x86
-S:16197
+S:16196
 I:90112
 T:Python 3 module for FreeRADIUS server
 U:https://freeradius.org/
 L:GPL-2.0-or-later
 o:freeradius
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1691252335
-c:dfbed31234224e319d44baa1ddc164460491e1bf
-D:freeradius=3.0.26-r4 so:libc.musl-x86.so.1
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+D:freeradius=3.0.26-r6 so:libc.musl-x86.so.1
 p:so:rlm_python3.so=0
 
-C:Q1DqDWJNbKKcQw2gvneiCy7Xv+sHI=
+C:Q1ikBDWr8hbrl5iPEnU8oWWDmbs7s=
 P:freeradius-redis
-V:3.0.26-r4
+V:3.0.26-r6
 A:x86
-S:11100
+S:11093
 I:81920
 T:Redis modules for FreeRADIUS server
 U:https://freeradius.org/
 L:GPL-2.0-or-later
 o:freeradius
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1691252335
-c:dfbed31234224e319d44baa1ddc164460491e1bf
-D:freeradius=3.0.26-r4 so:libc.musl-x86.so.1 so:libhiredis.so.1.1.0
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+D:freeradius=3.0.26-r6 so:libc.musl-x86.so.1 so:libhiredis.so.1.1.0
 p:so:rlm_redis.so=0 so:rlm_rediswho.so=0
 
-C:Q19QwrQjB8+qcSU9dWZtnXSW5VsrQ=
+C:Q10OssAajXVCX4MwnnIuALFixa/Ys=
 P:freeradius-rest
-V:3.0.26-r4
+V:3.0.26-r6
 A:x86
-S:24837
+S:24832
 I:98304
 T:REST module for FreeRADIUS server
 U:https://freeradius.org/
 L:GPL-2.0-or-later
 o:freeradius
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1691252335
-c:dfbed31234224e319d44baa1ddc164460491e1bf
-D:freeradius=3.0.26-r4 so:libc.musl-x86.so.1 so:libcurl.so.4 so:libjson-c.so.5
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+D:freeradius=3.0.26-r6 so:libc.musl-x86.so.1 so:libcurl.so.4 so:libjson-c.so.5
 p:so:rlm_rest.so=0
 
-C:Q1SKIdPZFZcVFrzgewTzXsG5YjCnA=
+C:Q1OuTamlX+6dklhIQwGbhTW6LChw8=
 P:freeradius-sql
-V:3.0.26-r4
+V:3.0.26-r6
 A:x86
-S:41037
+S:41038
 I:200704
 T:SQL module for FreeRADIUS server
 U:https://freeradius.org/
 L:GPL-2.0-or-later
 o:freeradius
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1691252335
-c:dfbed31234224e319d44baa1ddc164460491e1bf
-D:freeradius=3.0.26-r4 so:libc.musl-x86.so.1
-p:freeradius3-sql=3.0.26-r4 so:rlm_sql.so=0 so:rlm_sql_null.so=0 so:rlm_sqlcounter.so=0 so:rlm_sqlippool.so=0
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+D:freeradius=3.0.26-r6 so:libc.musl-x86.so.1
+p:freeradius3-sql=3.0.26-r6 so:rlm_sql.so=0 so:rlm_sql_null.so=0 so:rlm_sqlcounter.so=0 so:rlm_sqlippool.so=0
 
-C:Q1p4qQLADj4kUO88tHARkagkB1c9c=
+C:Q1GCkixmvppJfjGYa8t7TcYT/ULiI=
 P:freeradius-sqlite
-V:3.0.26-r4
+V:3.0.26-r6
 A:x86
-S:24453
+S:24460
 I:225280
 T:SQLite module for FreeRADIUS server
 U:https://freeradius.org/
 L:GPL-2.0-or-later
 o:freeradius
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1691252335
-c:dfbed31234224e319d44baa1ddc164460491e1bf
-D:freeradius-sql=3.0.26-r4 so:libc.musl-x86.so.1 so:libsqlite3.so.0
-p:freeradius3-sqlite=3.0.26-r4 so:rlm_sql_sqlite.so=0
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+D:freeradius-sql=3.0.26-r6 so:libc.musl-x86.so.1 so:libsqlite3.so.0
+p:freeradius3-sqlite=3.0.26-r6 so:rlm_sql_sqlite.so=0
 
-C:Q1Qm3W8KMmn2+ZzZAF8Chopq2Kt1Y=
+C:Q1hjSbMvpdDvYtX30GRJBHQ2Irgwk=
 P:freeradius-static
-V:3.0.26-r4
+V:3.0.26-r6
 A:x86
-S:3244379
+S:3244381
 I:5373952
 T:RADIUS (Remote Authentication Dial-In User Service) server (static library)
 U:https://freeradius.org/
 L:GPL-2.0-or-later
 o:freeradius
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1691252335
-c:dfbed31234224e319d44baa1ddc164460491e1bf
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 
-C:Q1swLBUeFzmEtefavhRiVODnZ9RBY=
+C:Q1HZ3iSCFOVNdwfq+lsf3Ehg6iGLA=
 P:freeradius-unixodbc
-V:3.0.26-r4
+V:3.0.26-r6
 A:x86
-S:6549
+S:6544
 I:32768
 T:ODBC module for FreeRADIUS server
 U:https://freeradius.org/
 L:GPL-2.0-or-later
 o:freeradius
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1691252335
-c:dfbed31234224e319d44baa1ddc164460491e1bf
-D:freeradius=3.0.26-r4 so:libc.musl-x86.so.1 so:libodbc.so.2
-p:freeradius3-unixodbc=3.0.26-r4 so:rlm_sql_unixodbc.so=0
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+D:freeradius=3.0.26-r6 so:libc.musl-x86.so.1 so:libodbc.so.2
+p:freeradius3-unixodbc=3.0.26-r6 so:rlm_sql_unixodbc.so=0
 
-C:Q1AmXtlVKvEqtm9tgHk81319I7nW0=
+C:Q1LsOhFNE5NXa1Q0OFPYfMC0JG3OY=
 P:freeradius-utils
-V:3.0.26-r4
+V:3.0.26-r6
 A:x86
-S:72182
+S:72159
 I:229376
 T:FreeRADIUS utilities
 U:https://freeradius.org/
 L:GPL-2.0-or-later
 o:freeradius
 m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1691252335
-c:dfbed31234224e319d44baa1ddc164460491e1bf
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:so:libc.musl-x86.so.1 so:libcrypto.so.3 so:libfreeradius-radius.so so:libfreeradius-server.so so:libgdbm.so.6 so:libpcap.so.1 so:libtalloc.so.2
-p:freeradius-radclient=3.0.26-r4 freeradius3-radclient=3.0.26-r4 cmd:rad_counter=3.0.26-r4 cmd:radclient=3.0.26-r4 cmd:radcrypt=3.0.26-r4 cmd:radlast=3.0.26-r4 cmd:radsniff=3.0.26-r4 cmd:radsqlrelay=3.0.26-r4 cmd:radtest=3.0.26-r4 cmd:radwho=3.0.26-r4 cmd:radzap=3.0.26-r4 cmd:rlm_ippool_tool=3.0.26-r4 cmd:rlm_sqlippool_tool=3.0.26-r4 cmd:smbencrypt=3.0.26-r4
+p:freeradius-radclient=3.0.26-r6 freeradius3-radclient=3.0.26-r6 cmd:rad_counter=3.0.26-r6 cmd:radclient=3.0.26-r6 cmd:radcrypt=3.0.26-r6 cmd:radlast=3.0.26-r6 cmd:radsniff=3.0.26-r6 cmd:radsqlrelay=3.0.26-r6 cmd:radtest=3.0.26-r6 cmd:radwho=3.0.26-r6 cmd:radzap=3.0.26-r6 cmd:rlm_ippool_tool=3.0.26-r6 cmd:rlm_sqlippool_tool=3.0.26-r6 cmd:smbencrypt=3.0.26-r6
 
 C:Q1/BEjGhvsfkOdIA1A4QEmTietmO8=
 P:freeswitch
@@ -20652,50 +20817,65 @@ t:1699256758
 c:544861defc073485bc64d16a748affc788755420
 i:docs groff=1.23.0-r2
 
-C:Q1jr7HwQAZYvJe8i2fOl9Grfw4DMk=
+C:Q1jveWkkVZBl+KmM71MfmrwtImFj0=
 P:gross
-V:1.0.3-r2
+V:1.0.3-r3
 A:x86
-S:54840
-I:192512
+S:54053
+I:176128
 T:Greylisting of suspicious sources
 U:https://codeberg.org/bizdelnick/gross
 L:BSD-3-Clause
 o:gross
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1683200466
-c:1410d2029302f2dc0970bb4e5bb8d4b66f0401a0
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:/bin/sh so:libc.musl-x86.so.1 so:libcares.so.2
-p:so:grosscheck.so=0 cmd:gclient=1.0.3-r2 cmd:grossd=1.0.3-r2
+p:so:grosscheck.so=0 cmd:gclient=1.0.3-r3 cmd:grossd=1.0.3-r3
 
-C:Q15bUh3NPPRMf4udJcfvLTlse+HfI=
+C:Q1qwCY1Rnk/HsI1wSfhrPtOsym5BU=
 P:gross-dev
-V:1.0.3-r2
+V:1.0.3-r3
 A:x86
-S:5006
+S:5008
 I:24576
 T:Greylisting of suspicious sources (development files)
 U:https://codeberg.org/bizdelnick/gross
 L:BSD-3-Clause
 o:gross
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1683200466
-c:1410d2029302f2dc0970bb4e5bb8d4b66f0401a0
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 
-C:Q10vKrSTTO3HXDtuzN57xVMa2mmg0=
+C:Q1z9MTZHpIyf6/7ST2Xcp9kL40Rsk=
 P:gross-doc
-V:1.0.3-r2
+V:1.0.3-r3
 A:x86
-S:8492
+S:8494
 I:36864
 T:Greylisting of suspicious sources (documentation)
 U:https://codeberg.org/bizdelnick/gross
 L:BSD-3-Clause
 o:gross
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1683200466
-c:1410d2029302f2dc0970bb4e5bb8d4b66f0401a0
-i:docs gross=1.0.3-r2
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:docs gross=1.0.3-r3
+
+C:Q1zYG6BPzYsIpuEA0tfV92GAyseYg=
+P:gross-openrc
+V:1.0.3-r3
+A:x86
+S:2142
+I:24576
+T:Greylisting of suspicious sources (OpenRC init scripts)
+U:https://codeberg.org/bizdelnick/gross
+L:BSD-3-Clause
+o:gross
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc gross=1.0.3-r3
 
 C:Q1Tm5FW4WopvaN81mMVMti5mVPiHE=
 P:grub
@@ -21332,25 +21512,25 @@ k:1
 D:vim-common=9.0.2127-r0 xxd=9.0.2127-r0 so:libICE.so.6 so:libSM.so.6 so:libX11.so.6 so:libXt.so.6 so:libc.musl-x86.so.1 so:libcairo.so.2 so:libgdk-3.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-3.so.0 so:libncursesw.so.6 so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0
 p:vim=9.0.2127-r0 cmd:eview=9.0.2127-r0 cmd:evim=9.0.2127-r0 cmd:ex=9.0.2127-r0 cmd:gview=9.0.2127-r0 cmd:gvim=9.0.2127-r0 cmd:gvimdiff=9.0.2127-r0 cmd:gvimtutor=9.0.2127-r0 cmd:rgview=9.0.2127-r0 cmd:rgvim=9.0.2127-r0 cmd:rview=9.0.2127-r0 cmd:rvim=9.0.2127-r0 cmd:view=9.0.2127-r0 cmd:vim=9.0.2127-r0
 
-C:Q1seN7uV8tHpgg8A2JHjRdeYLraRY=
+C:Q10m2BsS0UljsVTXfkyLu0jwqlYls=
 P:gvpe
-V:3.1-r5
+V:3.1-r6
 A:x86
-S:97493
-I:245760
+S:96688
+I:229376
 T:GNU Virtual Private Ethernet
 U:http://software.schmorp.de/pkg/gvpe.html
 L:GPL-2.0-or-later
 o:gvpe
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1681228881
-c:84a227baf001b6e0208e3352b294e4d7a40e93de
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:so:libc.musl-x86.so.1 so:libcrypto.so.3 so:libgcc_s.so.1 so:libgmp.so.10 so:libstdc++.so.6
-p:cmd:gvpe=3.1-r5 cmd:gvpectrl=3.1-r5
+p:cmd:gvpe=3.1-r6 cmd:gvpectrl=3.1-r6
 
-C:Q1RyBuiIhVW5zlxe9WrHtELAmdBCo=
+C:Q18SYr6h65yVv94g+urvWPKrzwjp8=
 P:gvpe-doc
-V:3.1-r5
+V:3.1-r6
 A:x86
 S:68782
 I:167936
@@ -21359,9 +21539,24 @@ U:http://software.schmorp.de/pkg/gvpe.html
 L:GPL-2.0-or-later
 o:gvpe
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1681228881
-c:84a227baf001b6e0208e3352b294e4d7a40e93de
-i:docs gvpe=3.1-r5
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:docs gvpe=3.1-r6
+
+C:Q13jikqqqpmw/L/0PriBcpsBFLcio=
+P:gvpe-openrc
+V:3.1-r6
+A:x86
+S:2089
+I:24576
+T:GNU Virtual Private Ethernet (OpenRC init scripts)
+U:http://software.schmorp.de/pkg/gvpe.html
+L:GPL-2.0-or-later
+o:gvpe
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc gvpe=3.1-r6
 
 C:Q1WSf44UAFgk0FagAOlTgl2dC69VE=
 P:gyp
@@ -22616,21 +22811,36 @@ t:1610659049
 c:5849715bb49e2fe72fedfe9b7e91121b13104afe
 i:docs hunspell-pt=20201212-r1
 
-C:Q1WUqbcXxliElcOpZdUD8AWMTnj1s=
+C:Q1fo+e4Tc8GXT9P11zn4e9Cmpt5cc=
 P:hvtools
-V:4.11.9-r3
+V:4.11.9-r4
 A:x86
-S:17075
-I:94208
+S:16501
+I:77824
 T:Hyper-v tools
 U:https://www.kernel.org/
 L:GPL-2.0-only
 o:hvtools
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1681228881
-c:84a227baf001b6e0208e3352b294e4d7a40e93de
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:so:libc.musl-x86.so.1
-p:cmd:hv_fcopy_daemon=4.11.9-r3 cmd:hv_kvp_daemon=4.11.9-r3 cmd:hv_vss_daemon=4.11.9-r3
+p:cmd:hv_fcopy_daemon=4.11.9-r4 cmd:hv_kvp_daemon=4.11.9-r4 cmd:hv_vss_daemon=4.11.9-r4
+
+C:Q1R1BWAauQM0YMoeaLq3FVC1I9ig8=
+P:hvtools-openrc
+V:4.11.9-r4
+A:x86
+S:1954
+I:24576
+T:Hyper-v tools (OpenRC init scripts)
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:hvtools
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc hvtools=4.11.9-r4
 
 C:Q1TFOY+Ovf+8m77n2pr/HU0bcmPAA=
 P:hwdata
@@ -23112,43 +23322,43 @@ t:1681930539
 c:c31e5ad87ae6a3b0bb4d9a996d8887f1b5d89659
 i:docs iftop=0.17-r11
 
-C:Q18d28XlHhlccsF7X+/0MjlMlAzd0=
+C:Q1nte6aqtfRJUTvt8eYDmNhRI8Nx8=
 P:ifupdown-ng
-V:0.12.1-r2
+V:0.12.1-r3
 A:x86
-S:30464
+S:30461
 I:122880
 T:tools for managing network configuration
 U:https://github.com/ifupdown-ng/ifupdown-ng
 L:ISC
 o:ifupdown-ng
 m:Ariadne Conill <ariadne@dereferenced.org>
-t:1688324082
-c:75a42157eee297c14726eb622d5ce50d99fc27ba
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 k:900
 D:!vlan so:libc.musl-x86.so.1
-p:ifupdown-any cmd:ifctrstat=0.12.1-r2 cmd:ifdown=0.12.1-r2 cmd:ifparse=0.12.1-r2 cmd:ifquery=0.12.1-r2 cmd:ifup=0.12.1-r2 cmd:ifupdown=0.12.1-r2
+p:ifupdown-any cmd:ifctrstat=0.12.1-r3 cmd:ifdown=0.12.1-r3 cmd:ifparse=0.12.1-r3 cmd:ifquery=0.12.1-r3 cmd:ifup=0.12.1-r3 cmd:ifupdown=0.12.1-r3
 
-C:Q1o0/2qd6fx+a7DEC69Qc2kySIpyE=
+C:Q1REu1ti/4ORv/+KX4EcPZM+vsQiE=
 P:ifupdown-ng-batman
-V:0.12.1-r2
+V:0.12.1-r3
 A:x86
-S:3015
+S:3017
 I:20480
 T:ifupdown-ng integration for B.A.T.M.A.N. advanced
 U:https://github.com/ifupdown-ng/ifupdown-ng
 L:ISC
 o:ifupdown-ng
 m:Ariadne Conill <ariadne@dereferenced.org>
-t:1688324082
-c:75a42157eee297c14726eb622d5ce50d99fc27ba
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 k:900
 D:batctl
 i:ifupdown-ng batctl
 
-C:Q1t9nsmJiRv1M9YTUOfC3JBuUfBbk=
+C:Q1QsFozyLBXhvrO1meGBKqN+0LPR0=
 P:ifupdown-ng-doc
-V:0.12.1-r2
+V:0.12.1-r3
 A:x86
 S:29455
 I:110592
@@ -23157,14 +23367,14 @@ U:https://github.com/ifupdown-ng/ifupdown-ng
 L:ISC
 o:ifupdown-ng
 m:Ariadne Conill <ariadne@dereferenced.org>
-t:1688324082
-c:75a42157eee297c14726eb622d5ce50d99fc27ba
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 k:900
-i:docs ifupdown-ng=0.12.1-r2
+i:docs ifupdown-ng=0.12.1-r3
 
-C:Q1APAF3M2tJYPKbfSPhOa92ejwEkQ=
+C:Q1G0wnw2kaknIp6qqyKI63r45AZW4=
 P:ifupdown-ng-ethtool
-V:0.12.1-r2
+V:0.12.1-r3
 A:x86
 S:2371
 I:20480
@@ -23173,49 +23383,66 @@ U:https://github.com/ifupdown-ng/ifupdown-ng
 L:ISC
 o:ifupdown-ng
 m:Ariadne Conill <ariadne@dereferenced.org>
-t:1688324082
-c:75a42157eee297c14726eb622d5ce50d99fc27ba
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 k:900
 D:ethtool
 i:ifupdown-ng ethtool
 
-C:Q1JZO48lXjbhKob42RnGSMmaaW69U=
+C:Q1s/9uXogZMSHO0WshX96w1sLx4W8=
 P:ifupdown-ng-iproute2
-V:0.12.1-r2
+V:0.12.1-r3
 A:x86
-S:3990
+S:3991
 I:32768
 T:ifupdown-ng integration for iproute2
 U:https://github.com/ifupdown-ng/ifupdown-ng
 L:ISC
 o:ifupdown-ng
 m:Ariadne Conill <ariadne@dereferenced.org>
-t:1688324082
-c:75a42157eee297c14726eb622d5ce50d99fc27ba
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 k:900
 D:iproute2-minimal
 i:ifupdown-ng iproute2-minimal
 
-C:Q1zXFUa5NPGu6bs0YHaAOjDLSsWCk=
-P:ifupdown-ng-ppp
-V:0.12.1-r2
+C:Q1kU/UkwQO1ufXmq5x9O1pNUp9JWg=
+P:ifupdown-ng-openrc
+V:0.12.1-r3
 A:x86
-S:1752
+S:2470
+I:24576
+T:ifupdown-ng openrc init scripts
+U:https://github.com/ifupdown-ng/ifupdown-ng
+L:ISC
+o:ifupdown-ng
+m:Ariadne Conill <ariadne@dereferenced.org>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+k:900
+D:!vlan
+i:ifupdown-ng openrc
+
+C:Q1aE2IbdeLlpBQ3biC4u3OkuwT/WQ=
+P:ifupdown-ng-ppp
+V:0.12.1-r3
+A:x86
+S:1750
 I:20480
 T:ifupdown-ng integration for ppp
 U:https://github.com/ifupdown-ng/ifupdown-ng
 L:ISC
 o:ifupdown-ng
 m:Ariadne Conill <ariadne@dereferenced.org>
-t:1688324082
-c:75a42157eee297c14726eb622d5ce50d99fc27ba
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 k:900
 D:ppp-daemon
 i:ifupdown-ng ppp-daemon
 
-C:Q1OEAABXrgGcNfcTWkapAt7DOUNCw=
+C:Q14TP3caAGkl7+c9vhUrDle5SFe8w=
 P:ifupdown-ng-wifi
-V:0.12.1-r2
+V:0.12.1-r3
 A:x86
 S:3105
 I:20480
@@ -23224,42 +23451,42 @@ U:https://github.com/ifupdown-ng/ifupdown-ng
 L:ISC
 o:ifupdown-ng
 m:Ariadne Conill <ariadne@dereferenced.org>
-t:1688324082
-c:75a42157eee297c14726eb622d5ce50d99fc27ba
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 k:900
 D:wpa_supplicant
 i:ifupdown-ng wpa_supplicant
 
-C:Q1sou2T17AC7hZr8ZWcJWAPTkUZbs=
+C:Q15v4KJXiA2rXb8rZ4hjFFvtegnXE=
 P:ifupdown-ng-wireguard
-V:0.12.1-r2
+V:0.12.1-r3
 A:x86
-S:1834
+S:1831
 I:20480
 T:ifupdown-ng integration for wireguard
 U:https://github.com/ifupdown-ng/ifupdown-ng
 L:ISC
 o:ifupdown-ng
 m:Ariadne Conill <ariadne@dereferenced.org>
-t:1688324082
-c:75a42157eee297c14726eb622d5ce50d99fc27ba
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 k:900
 D:wireguard-tools-wg
 i:ifupdown-ng wireguard-tools-wg
 
-C:Q1HOJiBE7F507/Y7oddFfWpJJyPXM=
+C:Q1Q5Mon1r7ITkTw6dkCm0gggVGS6U=
 P:ifupdown-ng-wireguard-quick
-V:0.12.1-r2
+V:0.12.1-r3
 A:x86
-S:1766
+S:1765
 I:20480
 T:ifupdown-ng integration for wireguard wg-quick
 U:https://github.com/ifupdown-ng/ifupdown-ng
 L:ISC
 o:ifupdown-ng
 m:Ariadne Conill <ariadne@dereferenced.org>
-t:1688324082
-c:75a42157eee297c14726eb622d5ce50d99fc27ba
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 k:900
 D:wireguard-tools-wg-quick
 i:ifupdown-ng wireguard-tools-wg-quick
@@ -23821,21 +24048,36 @@ c:72769b55ca5844bd1eff5cefd2636861831f95dd
 D:so:libc.musl-x86.so.1 so:libcap.so.2 so:libelf.so.1 so:libmnl.so.0
 p:cmd:ip=6.6.0-r0
 
-C:Q1zJrtcToSfBYW2GpdGOulYyFvRJw=
+C:Q1lbAi7/Snk8d9XvdxST6sldnSh1w=
 P:iproute2-qos
-V:0.5-r4
+V:0.5-r5
 A:x86
-S:7632
-I:61440
+S:2419
+I:20480
 T:Scripts to set up quality of service with iproute2
 U:https://git.alpinelinux.org/cgit/aports
 L:GPL-2.0-only
 o:iproute2-qos
 m:Iilluzion <iilluzion@gmail.com>
-t:1676079940
-c:1fd1cf2f332c953856842d3f358f9aea915ec720
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:iproute2
-p:cmd:setup-qos=0.5-r4
+p:cmd:setup-qos=0.5-r5
+
+C:Q1fwFf9wrS9XAFsoazD+Cp7Yr0Rks=
+P:iproute2-qos-openrc
+V:0.5-r5
+A:x86
+S:6730
+I:49152
+T:Scripts to set up quality of service with iproute2 (OpenRC init scripts)
+U:https://git.alpinelinux.org/cgit/aports
+L:GPL-2.0-only
+o:iproute2-qos
+m:Iilluzion <iilluzion@gmail.com>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc iproute2-qos=0.5-r5
 
 C:Q1zsSRqOndwZZKT3/QJWLamfHapWs=
 P:iproute2-rdma
@@ -24105,36 +24347,51 @@ c:84a227baf001b6e0208e3352b294e4d7a40e93de
 D:so:libc.musl-x86.so.1
 p:cmd:tracepath6=20221126-r2 cmd:tracepath=20221126-r2
 
-C:Q1qgLxQxzVYMUoxu2ehHzBZV923ww=
+C:Q1Vodohv/vIZqB9Pl7FGFdhsGHA1M=
 P:ipvsadm
-V:1.31-r2
+V:1.31-r3
 A:x86
-S:29913
-I:106496
+S:29262
+I:98304
 T:The IP Virtual Server administration utility
 U:http://www.linuxvirtualserver.org/software/ipvs.html
 L:GPL-2.0-or-later
 o:ipvsadm
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1681228881
-c:84a227baf001b6e0208e3352b294e4d7a40e93de
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:so:libc.musl-x86.so.1 so:libnl-3.so.200 so:libnl-genl-3.so.200 so:libpopt.so.0
-p:cmd:ipvsadm-restore=1.31-r2 cmd:ipvsadm-save=1.31-r2 cmd:ipvsadm=1.31-r2
+p:cmd:ipvsadm-restore=1.31-r3 cmd:ipvsadm-save=1.31-r3 cmd:ipvsadm=1.31-r3
 
-C:Q1gtUsfPlCmWYPuQXHlO9Rb4zPyCc=
+C:Q1hvP+KBSi2anPXc2WYjY3VHGibD0=
 P:ipvsadm-doc
-V:1.31-r2
+V:1.31-r3
 A:x86
-S:11660
+S:11652
 I:40960
 T:The IP Virtual Server administration utility (documentation)
 U:http://www.linuxvirtualserver.org/software/ipvs.html
 L:GPL-2.0-or-later
 o:ipvsadm
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1681228881
-c:84a227baf001b6e0208e3352b294e4d7a40e93de
-i:docs ipvsadm=1.31-r2
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:docs ipvsadm=1.31-r3
+
+C:Q1mvfl4o8hM7PD61jBYJeQI0LirpM=
+P:ipvsadm-openrc
+V:1.31-r3
+A:x86
+S:2047
+I:16384
+T:The IP Virtual Server administration utility (OpenRC init scripts)
+U:http://www.linuxvirtualserver.org/software/ipvs.html
+L:GPL-2.0-or-later
+o:ipvsadm
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc ipvsadm=1.31-r3
 
 C:Q1RwdbE8IsUvx6g9doZpDX4LKu4zA=
 P:irqbalance
@@ -24182,21 +24439,36 @@ t:1699788682
 c:b3152ca223b6d9e2ec2734b754e0712b69787943
 i:openrc irqbalance=1.9.3-r0
 
-C:Q1vUPqdpN1vElcGJJLNVE5jEGDukg=
+C:Q1oFTuumfZcIjsBR79SPH+DUiaG3A=
 P:iscsi-scst
-V:2.2.1-r5
+V:2.2.1-r6
 A:x86
-S:72396
-I:200704
+S:71614
+I:184320
 T:ISCSI target for SCST - userspace tools
 U:https://scst.sourceforge.net/
 L:GPL-2.0-only
 o:iscsi-scst
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1681228881
-c:84a227baf001b6e0208e3352b294e4d7a40e93de
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:so:libc.musl-x86.so.1
-p:cmd:iscsi-scst-adm=2.2.1-r5 cmd:iscsi-scstd=2.2.1-r5
+p:cmd:iscsi-scst-adm=2.2.1-r6 cmd:iscsi-scstd=2.2.1-r6
+
+C:Q1CH+RjepLRCi0WPTR5sIjehIXPOw=
+P:iscsi-scst-openrc
+V:2.2.1-r6
+A:x86
+S:2266
+I:24576
+T:ISCSI target for SCST - userspace tools (OpenRC init scripts)
+U:https://scst.sourceforge.net/
+L:GPL-2.0-only
+o:iscsi-scst
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc iscsi-scst=2.2.1-r6
 
 C:Q1k8HDXGGcBqObM4MS7189vbN5fKc=
 P:isl-dev
@@ -31691,19 +31963,19 @@ m:Ariadne Conill <ariadne@dereferenced.org>
 t:1684120357
 c:33283848034c9885d984c8e8697c645c57324938
 
-C:Q1i7frfSceBXCHUTgCTZmoZWD7ESo=
+C:Q1BvAI3WBZXdgySCuF5bPR5cIDSo4=
 P:librrd
-V:1.8.0-r3
+V:1.8.0-r4
 A:x86
-S:147667
+S:147653
 I:323584
 T:Data logging and graphing application (libraries)
 U:http://www.rrdtool.org
 L:GPL-2.0-or-later
 o:rrdtool
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1688403118
-c:4ece6fc07c96d6859dde2ecc31b323fb3b355638
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:so:libc.musl-x86.so.1 so:libcairo.so.2 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0 so:libpng16.so.16 so:libxml2.so.2
 p:so:librrd.so.8=8.3.0
 
@@ -38326,19 +38598,19 @@ t:1681228881
 c:84a227baf001b6e0208e3352b294e4d7a40e93de
 i:docs lua-discount=1.2.10.1-r8
 
-C:Q1fehoklzQA+hgomb0kfcE30W+bek=
+C:Q1UDVlT3GkK3FniV4YV6Fm+domh40=
 P:lua-dmvpn
-V:1.4.0-r2
+V:1.4.0-r3
 A:x86
-S:2383
+S:2379
 I:24576
 T:Dynamic Multipoint VPN
 U:https://git.alpinelinux.org/cgit/dmvpn-tools/
 L:MIT
 o:dmvpn
 m:Kaarle Ritvanen <kunkku@alpinelinux.org>
-t:1697930804
-c:e321cb88d1b9addd6ba0300ff5ecedd7fe4e4486
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:lua-asn1
 
 C:Q1s+lWd596P1ZIgZYTICZmGPf+nPo=
@@ -38981,19 +39253,19 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1681228881
 c:84a227baf001b6e0208e3352b294e4d7a40e93de
 
-C:Q1eOvAovfc3CaSxBSm05WPaNyuv4E=
+C:Q1+jzgQqnqgIdwlYEhNBYbLJOv7t0=
 P:lua-rrd
-V:1.8.0-r3
+V:1.8.0-r4
 A:x86
-S:6181
+S:6166
 I:40960
 T:Lua interface for rrdtool
 U:http://www.rrdtool.org
 L:GPL-2.0-or-later
 o:rrdtool
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1688403118
-c:4ece6fc07c96d6859dde2ecc31b323fb3b355638
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:so:libc.musl-x86.so.1 so:liblua.so.5 so:librrd.so.8
 
 C:Q1hRqPCJyMKQRYVZlvtQkumLommjs=
@@ -45014,68 +45286,83 @@ D:so:libc.musl-x86.so.1
 p:cmd:mcookie=2.39.2-r1
 i:util-linux=2.39.2-r1
 
-C:Q1OAKqaLj0/CauAcX8A0r3udJKx8g=
+C:Q1jc/zykAP51psYZB6qntFn2QQMQI=
 P:mdadm
-V:4.2-r3
+V:4.2-r4
 A:x86
-S:442242
-I:929792
+S:440531
+I:909312
 T:a tool for managing Linux Software RAID arrays
 U:https://raid.wiki.kernel.org/index.php/A_guide_to_mdadm
 L:GPL-2.0-only
 o:mdadm
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1681268303
-c:890d6c6473d8229da06ee39efa6ecc595ee417f0
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:lsblk so:libc.musl-x86.so.1
-p:cmd:mdadm=4.2-r3 cmd:mdmon=4.2-r3 cmd:raid6check=4.2-r3
+p:cmd:mdadm=4.2-r4 cmd:mdmon=4.2-r4 cmd:raid6check=4.2-r4
 
-C:Q1yVTxwgnn1a9DgZR3dChvvPVSXwo=
+C:Q1os5dX5Vqq6AGdu2CcSjqzBGWpbQ=
 P:mdadm-doc
-V:4.2-r3
+V:4.2-r4
 A:x86
-S:64107
+S:64105
 I:98304
 T:a tool for managing Linux Software RAID arrays (documentation)
 U:https://raid.wiki.kernel.org/index.php/A_guide_to_mdadm
 L:GPL-2.0-only
 o:mdadm
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1681268303
-c:890d6c6473d8229da06ee39efa6ecc595ee417f0
-i:docs mdadm=4.2-r3
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:docs mdadm=4.2-r4
 
-C:Q12XjrfwmlX4/ssc+q+sykSCBfUQQ=
+C:Q1rxknlDVQgUZRgLhAEbmH83bMgK8=
 P:mdadm-misc
-V:4.2-r3
+V:4.2-r4
 A:x86
-S:3916
+S:3919
 I:20480
 T:a tool for managing Linux Software RAID arrays (misc scripts)
 U:https://raid.wiki.kernel.org/index.php/A_guide_to_mdadm
 L:GPL-2.0-only
 o:mdadm
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1681268303
-c:890d6c6473d8229da06ee39efa6ecc595ee417f0
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:mdadm bash
-p:cmd:handle-mdadm-events=4.2-r3 cmd:mdcheck=4.2-r3
+p:cmd:handle-mdadm-events=4.2-r4 cmd:mdcheck=4.2-r4
 
-C:Q1Af9vVsVvOtvD1pbXHaDgL6NlIDQ=
-P:mdadm-udev
-V:4.2-r3
+C:Q1c/8TKjqz3x7n37oTRmb20/Aox5M=
+P:mdadm-openrc
+V:4.2-r4
 A:x86
-S:3789
+S:2606
+I:28672
+T:a tool for managing Linux Software RAID arrays (OpenRC init scripts)
+U:https://raid.wiki.kernel.org/index.php/A_guide_to_mdadm
+L:GPL-2.0-only
+o:mdadm
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc mdadm=4.2-r4
+
+C:Q1f/Z8PYV3zavzam/cOek5aFGI37Q=
+P:mdadm-udev
+V:4.2-r4
+A:x86
+S:3785
 I:32768
 T:a tool for managing Linux Software RAID arrays (udev rules)
 U:https://raid.wiki.kernel.org/index.php/A_guide_to_mdadm
 L:GPL-2.0-only
 o:mdadm
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1681268303
-c:890d6c6473d8229da06ee39efa6ecc595ee417f0
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:lsblk
-i:udev mdadm=4.2-r3
+i:udev mdadm=4.2-r4
 
 C:Q1/uBi2ga/IuCnfPilArMtHTo2LF0=
 P:mdev-conf
@@ -51731,36 +52018,51 @@ t:1697936235
 c:2c638a62f804f75b14d60f5c3136a0a8edb5ba3c
 D:openldap so:libc.musl-x86.so.1 so:liblber.so.2
 
-C:Q1kuKc3V7NP1WFWdhF+1bvEmtasuw=
+C:Q1tgdPbEpQwVyn8xJnVFjW9BG7pis=
 P:opennhrp
-V:0.14.1-r10
+V:0.14.1-r11
 A:x86
-S:54439
-I:172032
+S:53641
+I:155648
 T:NBMA Next Hop Resolution Protocol daemon
 U:https://sourceforge.net/projects/opennhrp/
 L:GPL-2.0
 o:opennhrp
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1681228881
-c:84a227baf001b6e0208e3352b294e4d7a40e93de
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:so:libc.musl-x86.so.1 so:libcares.so.2
-p:cmd:opennhrp=0.14.1-r10 cmd:opennhrpctl=0.14.1-r10
+p:cmd:opennhrp=0.14.1-r11 cmd:opennhrpctl=0.14.1-r11
 
-C:Q12Ca+LxSr74uc9cILecbN0dAyvLU=
+C:Q1D/Q8YkNYhX9/DNJbl2n/vWhbRM4=
 P:opennhrp-doc
-V:0.14.1-r10
+V:0.14.1-r11
 A:x86
-S:11907
+S:11902
 I:53248
 T:NBMA Next Hop Resolution Protocol daemon (documentation)
 U:https://sourceforge.net/projects/opennhrp/
 L:GPL-2.0
 o:opennhrp
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1681228881
-c:84a227baf001b6e0208e3352b294e4d7a40e93de
-i:docs opennhrp=0.14.1-r10
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:docs opennhrp=0.14.1-r11
+
+C:Q139KOTohJiSjW+k7TlgNOblyadB4=
+P:opennhrp-openrc
+V:0.14.1-r11
+A:x86
+S:2224
+I:24576
+T:NBMA Next Hop Resolution Protocol daemon (OpenRC init scripts)
+U:https://sourceforge.net/projects/opennhrp/
+L:GPL-2.0
+o:opennhrp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc opennhrp=0.14.1-r11
 
 C:Q1vpcbA0NF9uNmQ9SuxxiuDsk5XF8=
 P:openntpd
@@ -61200,19 +61502,19 @@ t:1688403118
 c:4ece6fc07c96d6859dde2ecc31b323fb3b355638
 i:docs perl-role-tiny=2.002004-r2
 
-C:Q1VBIdOIOrK7z7d2XhXK2l4iZCzxM=
+C:Q1I08Ors6NkDvjsQNU8+QDqCZjyrY=
 P:perl-rrd
-V:1.8.0-r3
+V:1.8.0-r4
 A:x86
-S:20740
+S:20733
 I:106496
 T:Perl interface for rrdtool
 U:http://www.rrdtool.org
 L:GPL-2.0-or-later
 o:rrdtool
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1688403118
-c:4ece6fc07c96d6859dde2ecc31b323fb3b355638
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:so:libc.musl-x86.so.1 so:librrd.so.8
 
 C:Q1TXpl/MExchj29J1IbbjAe3fZgoQ=
@@ -70429,131 +70731,161 @@ t:1684939079
 c:96b906dd9a8d8d5c7d0555396f3aabb5713d9231
 i:docs rpcsvc-proto=1.4.4-r0
 
-C:Q1CPIJxaCjkKQCVyiCmTuaU/E0h+w=
+C:Q1hwaURb9J1gumwsAdeP5kVrKD9vQ=
 P:rrdcollect
-V:0.2.10-r4
+V:0.2.10-r5
 A:x86
-S:12928
-I:73728
+S:12691
+I:65536
 T:Read system statistical data and feed it to RRDtool
 U:https://rrdcollect.sourceforge.net/
 L:GPL-2.0-or-later
 o:rrdcollect
 m:Michael Mason <ms13sp@gmail.com>
-t:1681228881
-c:84a227baf001b6e0208e3352b294e4d7a40e93de
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:rrdtool so:libc.musl-x86.so.1
-p:cmd:rrdcollect=0.2.10-r4
+p:cmd:rrdcollect=0.2.10-r5
 
-C:Q1MB3E5AYxnw+OyTamDm6Xfyhv1Iw=
+C:Q1LHRdGL/ekOCWW+HGJeN/OUkhOBk=
 P:rrdcollect-doc
-V:0.2.10-r4
+V:0.2.10-r5
 A:x86
-S:3962
+S:3966
 I:32768
 T:Read system statistical data and feed it to RRDtool (documentation)
 U:https://rrdcollect.sourceforge.net/
 L:GPL-2.0-or-later
 o:rrdcollect
 m:Michael Mason <ms13sp@gmail.com>
-t:1681228881
-c:84a227baf001b6e0208e3352b294e4d7a40e93de
-i:docs rrdcollect=0.2.10-r4
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:docs rrdcollect=0.2.10-r5
 
-C:Q1Vzc/Jx1WK6sH5BT7PtoglEUjlfw=
-P:rrdtool
-V:1.8.0-r3
+C:Q1V77HBySHlBttwhAx8oY5/PE2v/A=
+P:rrdcollect-openrc
+V:0.2.10-r5
 A:x86
-S:10182
+S:1713
+I:16384
+T:Read system statistical data and feed it to RRDtool (OpenRC init scripts)
+U:https://rrdcollect.sourceforge.net/
+L:GPL-2.0-or-later
+o:rrdcollect
+m:Michael Mason <ms13sp@gmail.com>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc rrdcollect=0.2.10-r5
+
+C:Q15fNOtAzXA9dkghSyUfbLwnE8pQY=
+P:rrdtool
+V:1.8.0-r4
+A:x86
+S:10167
 I:49152
 T:Data logging and graphing application
 U:http://www.rrdtool.org
 L:GPL-2.0-or-later
 o:rrdtool
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1688403118
-c:4ece6fc07c96d6859dde2ecc31b323fb3b355638
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:font-sony-misc so:libc.musl-x86.so.1 so:librrd.so.8
-p:cmd:rrdtool=1.8.0-r3
+p:cmd:rrdtool=1.8.0-r4
 
-C:Q1y0q22sJ0HmK0WIyNozSjtBcRbA0=
+C:Q1Uq0GWZpZUSINBVsqGJ8PPlg6OCI=
 P:rrdtool-cached
-V:1.8.0-r3
+V:1.8.0-r4
 A:x86
-S:35213
-I:122880
+S:34656
+I:110592
 T:RRDtool data caching daemon
 U:http://www.rrdtool.org
 L:GPL-2.0-or-later
 o:rrdtool
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1688403118
-c:4ece6fc07c96d6859dde2ecc31b323fb3b355638
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:so:libc.musl-x86.so.1 so:libglib-2.0.so.0 so:librrd.so.8
-p:cmd:rrdcached=1.8.0-r3
+p:cmd:rrdcached=1.8.0-r4
 
-C:Q1svQU9xVAI6lZ8D/Ts3B8xickv1g=
-P:rrdtool-cgi
-V:1.8.0-r3
+C:Q1GlydXR1L08xIySE/NO773HiJwqY=
+P:rrdtool-cached-openrc
+V:1.8.0-r4
 A:x86
-S:12659
+S:1851
+I:16384
+T:RRDtool data caching daemon (OpenRC init scripts)
+U:http://www.rrdtool.org
+L:GPL-2.0-or-later
+o:rrdtool
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc rrdtool-cached=1.8.0-r4
+
+C:Q1lqbV/i072mmckyHHECmEoWXWevI=
+P:rrdtool-cgi
+V:1.8.0-r4
+A:x86
+S:12641
 I:40960
 T:create web pages containing RRD graphs based on templates
 U:http://www.rrdtool.org
 L:GPL-2.0-or-later
 o:rrdtool
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1688403118
-c:4ece6fc07c96d6859dde2ecc31b323fb3b355638
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:so:libc.musl-x86.so.1 so:librrd.so.8
-p:cmd:rrdcgi=1.8.0-r3
+p:cmd:rrdcgi=1.8.0-r4
 
-C:Q1yDm7c6BVJQCwP0aqmd3GAPE+QEQ=
+C:Q1ZxuLZ0zNowdzOOQnzdltWom4yGM=
 P:rrdtool-dev
-V:1.8.0-r3
+V:1.8.0-r4
 A:x86
-S:218735
+S:218733
 I:655360
 T:Data logging and graphing application (development files)
 U:http://www.rrdtool.org
 L:GPL-2.0-or-later
 o:rrdtool
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1688403118
-c:4ece6fc07c96d6859dde2ecc31b323fb3b355638
-D:librrd=1.8.0-r3 pkgconfig
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+D:librrd=1.8.0-r4 pkgconfig
 p:pc:librrd=1.8.0
 
-C:Q1nzAsmHSiCEqkXzgSsHN4j5fuIlg=
+C:Q1aSuc5iXx+cuLIQnK/kXzW4o6BF4=
 P:rrdtool-doc
-V:1.8.0-r3
+V:1.8.0-r4
 A:x86
-S:580789
+S:580845
 I:1785856
 T:Data logging and graphing application (documentation)
 U:http://www.rrdtool.org
 L:GPL-2.0-or-later
 o:rrdtool
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1688403118
-c:4ece6fc07c96d6859dde2ecc31b323fb3b355638
-i:docs rrdtool=1.8.0-r3
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:docs rrdtool=1.8.0-r4
 
-C:Q1xQ1Bbnytm5JYyA5/Gwv/c1fCNe4=
+C:Q1MZjVYnrMUKXsmyS7fjrXdRAKO10=
 P:rrdtool-utils
-V:1.8.0-r3
+V:1.8.0-r4
 A:x86
-S:68957
+S:68938
 I:155648
 T:RRDtool standalone create,update,info utilities
 U:http://www.rrdtool.org
 L:GPL-2.0-or-later
 o:rrdtool
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1688403118
-c:4ece6fc07c96d6859dde2ecc31b323fb3b355638
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:so:libc.musl-x86.so.1 so:libglib-2.0.so.0
-p:cmd:rrdcreate=1.8.0-r3 cmd:rrdinfo=1.8.0-r3 cmd:rrdupdate=1.8.0-r3
+p:cmd:rrdcreate=1.8.0-r4 cmd:rrdinfo=1.8.0-r4 cmd:rrdupdate=1.8.0-r4
 
 C:Q1dfPU/PXuA2PutV1LLDokNkdaZIs=
 P:rrsync
@@ -71282,36 +71614,51 @@ c:9643fc993e78c043de30362fedef5b71f6d4f643
 D:rsyslog=8.2310.0-r0 so:libc.musl-x86.so.1 so:libczmq.so.4
 p:rsyslog-imczmq=8.2310.0-r0 rsyslog-omczmq=8.2310.0-r0
 
-C:Q17pTEeHhfmBiLBvMGKopBEjiLYJI=
+C:Q1tSY2L1XrKn7QCnR1FJn2NxDgH00=
 P:rtapd
-V:1.7-r8
+V:1.7-r9
 A:x86
-S:51084
-I:155648
+S:50511
+I:139264
 T:daemon for routing packets to rtnppd
 U:https://sourceforge.net/projects/rtnppd/
 L:GPL
 o:rtapd
 m:Michael Mason <ms13sp@gmail.com>
-t:1681228881
-c:84a227baf001b6e0208e3352b294e4d7a40e93de
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:rtnppd so:libc.musl-x86.so.1 so:libpq.so.5
-p:cmd:rtapd=1.7-r8 cmd:vsnppd=1.7-r8
+p:cmd:rtapd=1.7-r9 cmd:vsnppd=1.7-r9
 
-C:Q1apX1EmI+lQuLfn6gUlDkhV33UmU=
+C:Q1uN0QEjwZPVJbMgLM+16VbFiXaQg=
 P:rtapd-dbg
-V:1.7-r8
+V:1.7-r9
 A:x86
-S:75364
+S:75324
 I:176128
 T:daemon for routing packets to rtnppd (debug symbols)
 U:https://sourceforge.net/projects/rtnppd/
 L:GPL
 o:rtapd
 m:Michael Mason <ms13sp@gmail.com>
-t:1681228881
-c:84a227baf001b6e0208e3352b294e4d7a40e93de
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:rtnppd
+
+C:Q1+qf70gyqo86DbU5FY0zh5SlBkAQ=
+P:rtapd-openrc
+V:1.7-r9
+A:x86
+S:1999
+I:24576
+T:daemon for routing packets to rtnppd (OpenRC init scripts)
+U:https://sourceforge.net/projects/rtnppd/
+L:GPL
+o:rtapd
+m:Michael Mason <ms13sp@gmail.com>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc rtapd=1.7-r9
 
 C:Q1mPS/ufnFZAumjV2iqnb0X07vZFQ=
 P:rtl-sdr
@@ -71390,35 +71737,50 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1684120357
 c:33283848034c9885d984c8e8697c645c57324938
 
-C:Q1QpaNBf+6zaO+JieMi4ht6uOQh6E=
+C:Q1ul6tNk+xIh56X5IDl4AGaEt3GDk=
 P:rtnppd
-V:1.7b-r10
+V:1.7b-r11
 A:x86
-S:49154
-I:159744
+S:48591
+I:143360
 T:A program route TNPP 3.8 (Telocator Network Paging Protocol) packets between serial and other links
 U:https://sourceforge.net/projects/rtnppd/
 L:GPL
 o:rtnppd
 m:Michael Mason <ms13sp@gmail.com>
-t:1681228881
-c:84a227baf001b6e0208e3352b294e4d7a40e93de
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:/bin/sh so:libc.musl-x86.so.1
-p:cmd:rtnppd=1.7b-r10 cmd:testq=1.7b-r10 cmd:tnpppage=1.7b-r10
+p:cmd:rtnppd=1.7b-r11 cmd:testq=1.7b-r11 cmd:tnpppage=1.7b-r11
 
-C:Q1ddwoXcjWMIah5M+lX4SQDDnJZj8=
+C:Q1yVUQxF0GaUnAgg9/ABAIaJtL/n8=
 P:rtnppd-dbg
-V:1.7b-r10
+V:1.7b-r11
 A:x86
-S:65297
+S:65243
 I:172032
 T:A program route TNPP 3.8 (Telocator Network Paging Protocol) packets between serial and other links (debug symbols)
 U:https://sourceforge.net/projects/rtnppd/
 L:GPL
 o:rtnppd
 m:Michael Mason <ms13sp@gmail.com>
-t:1681228881
-c:84a227baf001b6e0208e3352b294e4d7a40e93de
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+
+C:Q1lYT3ynP9d8cJdcthqdPtPlic828=
+P:rtnppd-openrc
+V:1.7b-r11
+A:x86
+S:2025
+I:24576
+T:A program route TNPP 3.8 (Telocator Network Paging Protocol) packets between serial and other links (OpenRC init scripts)
+U:https://sourceforge.net/projects/rtnppd/
+L:GPL
+o:rtnppd
+m:Michael Mason <ms13sp@gmail.com>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc rtnppd=1.7b-r11
 
 C:Q1VVFAHmbj1oNQQltgA6NoyE+Tn5k=
 P:rtpproxy
@@ -75127,36 +75489,51 @@ c:84a227baf001b6e0208e3352b294e4d7a40e93de
 D:pkgconfig spandsp3=0_git20201102-r3
 p:pc:spandsp=3.0.0
 
-C:Q1t2mWBnbhezc4fes5s8qYaqCsaSc=
+C:Q1WP3LnEKClxQ/WV75eZqBs+cF2rk=
 P:spawn-fcgi
-V:1.6.5-r3
+V:1.6.5-r4
 A:x86
-S:11220
-I:57344
+S:8714
+I:40960
 T:Spawn FastCGI applications
 U:https://redmine.lighttpd.net/projects/spawn-fcgi/
 L:BSD-3-Clause
 o:spawn-fcgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1690902552
-c:608eb776beb5c6e817a373b7834e3e4e3f4ee722
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:so:libc.musl-x86.so.1
-p:cmd:spawn-fcgi=1.6.5-r3
+p:cmd:spawn-fcgi=1.6.5-r4
 
-C:Q1w0S7NlN5pNmZ/DOiQRcxAbjrodg=
+C:Q11Qlz8hf/JadvjbjyXMH0+LfLzq0=
 P:spawn-fcgi-doc
-V:1.6.5-r3
+V:1.6.5-r4
 A:x86
-S:3392
+S:3393
 I:24576
 T:Spawn FastCGI applications (documentation)
 U:https://redmine.lighttpd.net/projects/spawn-fcgi/
 L:BSD-3-Clause
 o:spawn-fcgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1690902552
-c:608eb776beb5c6e817a373b7834e3e4e3f4ee722
-i:docs spawn-fcgi=1.6.5-r3
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:docs spawn-fcgi=1.6.5-r4
+
+C:Q1C1riQGSyQdS9jFucTS8kJgaCFGU=
+P:spawn-fcgi-openrc
+V:1.6.5-r4
+A:x86
+S:3942
+I:24576
+T:Spawn FastCGI applications (OpenRC init scripts)
+U:https://redmine.lighttpd.net/projects/spawn-fcgi/
+L:BSD-3-Clause
+o:spawn-fcgi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc spawn-fcgi=1.6.5-r4
 
 C:Q1w1JRZX/oahvx06OBfGptg6qPv/A=
 P:speedtest-cli
@@ -78060,36 +78437,51 @@ t:1681228881
 c:84a227baf001b6e0208e3352b294e4d7a40e93de
 i:docs tig=2.5.8-r2
 
-C:Q1reU9pWDDkREoA/yT42VGViNRNFU=
+C:Q1dnWBa9XXkVKeUSAv5r6DKbUeMSw=
 P:tinc
-V:1.0.36-r5
+V:1.0.36-r6
 A:x86
-S:68420
-I:180224
+S:66943
+I:159744
 T:Virtual Private Network (VPN) daemon
 U:https://www.tinc-vpn.org
 L:GPL-2.0-or-later WITH OpenSSL-Exception
 o:tinc
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1681228881
-c:84a227baf001b6e0208e3352b294e4d7a40e93de
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:so:libc.musl-x86.so.1 so:libcrypto.so.3 so:liblzo2.so.2 so:libz.so.1
-p:cmd:tincd=1.0.36-r5
+p:cmd:tincd=1.0.36-r6
 
-C:Q1abo0C7HlrJkD3AdWdG4lnsGeYQ8=
+C:Q1xoyUZQ+WLhB4IW1UcN0k9fLzwv4=
 P:tinc-doc
-V:1.0.36-r5
+V:1.0.36-r6
 A:x86
-S:47339
+S:47345
 I:163840
 T:Virtual Private Network (VPN) daemon (documentation)
 U:https://www.tinc-vpn.org
 L:GPL-2.0-or-later WITH OpenSSL-Exception
 o:tinc
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1681228881
-c:84a227baf001b6e0208e3352b294e4d7a40e93de
-i:docs tinc=1.0.36-r5
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:docs tinc=1.0.36-r6
+
+C:Q1/MoNOboqOfDP7oiFKZYbLMC0Yak=
+P:tinc-openrc
+V:1.0.36-r6
+A:x86
+S:2888
+I:28672
+T:Virtual Private Network (VPN) daemon (OpenRC init scripts)
+U:https://www.tinc-vpn.org
+L:GPL-2.0-or-later WITH OpenSSL-Exception
+o:tinc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc tinc=1.0.36-r6
 
 C:Q1TpaHTqpg2JW6dGgN9iG/U5pceNM=
 P:tiny-cloud
@@ -78214,21 +78606,36 @@ c:b5a649002f71f05dc7a95fdae281116f768a2378
 D:/bin/sh
 i:openrc tiny-cloud=3.0.3-r2
 
-C:Q11wtAjiaiajKVetE+Y4+LoZXs4hk=
+C:Q1KS+s/hHAVDQFCSQ/XJuScGODRXo=
 P:tinydns
-V:1.05-r51
+V:1.05-r53
 A:x86
-S:54019
-I:208896
+S:52572
+I:192512
 T:A small and secure DNS server
 U:http://cr.yp.to/djbdns.html
 L:Public-Domain
 o:djbdns
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1681931881
-c:3d574dea81f713c2c10cfff526153b6310b5b1c0
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:/bin/sh so:libc.musl-x86.so.1
-p:cmd:tinydns-conf=1.05-r51 cmd:tinydns-data=1.05-r51 cmd:tinydns-edit=1.05-r51 cmd:tinydns-get=1.05-r51 cmd:tinydns=1.05-r51
+p:cmd:tinydns-conf=1.05-r53 cmd:tinydns-data=1.05-r53 cmd:tinydns-edit=1.05-r53 cmd:tinydns-get=1.05-r53 cmd:tinydns=1.05-r53
+
+C:Q1rXYvje+cT6XZiTsfaT3i/nVBEYU=
+P:tinydns-openrc
+V:1.05-r53
+A:x86
+S:2739
+I:24576
+T:A small and secure DNS server (OpenRC init scripts)
+U:http://cr.yp.to/djbdns.html
+L:Public-Domain
+o:djbdns
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc tinydns=1.05-r53
 
 C:Q1Js/MsesRSHC+eRut2R5JcyAPBy8=
 P:tinyproxy
@@ -79619,145 +80026,159 @@ D:so:libc.musl-x86.so.1 so:libuuid.so.1
 p:cmd:uuidgen=2.39.2-r1
 i:util-linux=2.39.2-r1
 
-C:Q1IXQuW9kjrdAJs3qMNt2bG7yY7A0=
+C:Q1q/zRUF7KvKSb27dX9UUYp2lzC1w=
 P:uvncrepeater
-V:014-r10
+V:014-r11
 A:x86
-S:22543
-I:86016
+S:21939
+I:69632
 T:VNC repeater based on ultravnc repeater
 U:http://koti.mbnet.fi/jtko/
 L:GPL-2.0-or-later
 o:uvncrepeater
-t:1681228881
-c:84a227baf001b6e0208e3352b294e4d7a40e93de
-D:openrc>=0.6 /bin/sh so:libc.musl-x86.so.1
-p:cmd:repeater=014-r10
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+D:/bin/sh so:libc.musl-x86.so.1
+p:cmd:repeater=014-r11
 
-C:Q1OQeZhFsEq/aKWPX2qDFNj3gDm6Y=
-P:uwsgi
-V:2.0.23-r0
+C:Q1cxNAP0Xq6qRzztPo6LD6FhbMjPg=
+P:uvncrepeater-openrc
+V:014-r11
 A:x86
-S:368465
-I:856064
+S:2032
+I:24576
+T:VNC repeater based on ultravnc repeater (OpenRC init scripts)
+U:http://koti.mbnet.fi/jtko/
+L:GPL-2.0-or-later
+o:uvncrepeater
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc uvncrepeater=014-r11
+
+C:Q18k6HR6x4JiTTQ2PT67FeYmQCCFM=
+P:uwsgi
+V:2.0.23-r1
+A:x86
+S:367368
+I:847872
 T:uWSGI application container server
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:mailcap /bin/sh so:libc.musl-x86.so.1 so:libcap.so.2 so:libcrypto.so.3 so:libjansson.so.4 so:libpcre.so.1 so:libssl.so.3 so:libxml2.so.2 so:libz.so.1
-p:cmd:uwsgi=2.0.23-r0
+p:cmd:uwsgi=2.0.23-r1
 
-C:Q1k5X7GWbb2QLII9Jl9JuiaEVdRfY=
+C:Q1h1yMJLy6E3PQ4vDxEnsV4tQIKIo=
 P:uwsgi-alarm_curl
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:5947
+S:5941
 I:32768
 T:uWSGI plugin alarm_curl
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1 so:libcurl.so.4
 
-C:Q19lkMEP8Bc1LapTBwecBUXDuXwC8=
+C:Q1SJ9M7JterbgxNcyCAwbN5OLg3Cs=
 P:uwsgi-cache
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:5207
+S:5190
 I:32768
 T:uWSGI plugin cache
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1IPnXuW2C23uyb1E3ba4ME75nAWs=
+C:Q1k7DGk259h42MGzmbU7ZBcyfcqC8=
 P:uwsgi-carbon
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:7684
+S:7668
 I:36864
 T:uWSGI plugin carbon
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1gSF+aESEqEKKoi5oOz5MKEJcAxw=
+C:Q1HHTvVQ1Zroep7lgPlSzpW2CKOfA=
 P:uwsgi-cgi
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:10947
+S:10936
 I:40960
 T:uWSGI plugin cgi
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1jYua95UGnpBmZFJ2ZSslSQPc28g=
+C:Q1xMKSL40puU/NYmeJ1Cj8ff9cMqo=
 P:uwsgi-cheaper_backlog2
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:3386
+S:3393
 I:32768
 T:uWSGI plugin cheaper_backlog2
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi
 
-C:Q1i5bQc0qnTLnoOaLa6rMpcxA6wjA=
+C:Q12hCqCGpBqHQoOH3yboLN7j3ra2I=
 P:uwsgi-cheaper_busyness
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:7611
+S:7603
 I:36864
 T:uWSGI plugin cheaper_busyness
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q13vbzcKAM+DKqt+3z4ORkpZ9OPvM=
+C:Q1dFM6OYBw5pVN2vJ3iKqDlU1u0oU=
 P:uwsgi-corerouter
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:16155
+S:16141
 I:57344
 T:uWSGI plugin corerouter
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q15Vxudqq9t5iZN2u+zxVTr2ftHdY=
+C:Q1oeHx+DD4tHP1XeeuklsKAvBr0Uc=
 P:uwsgi-curl_cron
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
 S:3927
 I:32768
@@ -79766,955 +80187,970 @@ U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1 so:libcurl.so.4
 
-C:Q1zhcyR56Lu1qBNQYvyUAwWloP4ZI=
+C:Q15xRVbiTvXel062Si8FmTsqutROw=
 P:uwsgi-dumbloop
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:3789
+S:3792
 I:32768
 T:uWSGI plugin dumbloop
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1Fy1eVVofuO7HAuo0Tz4J/Cb9ZxE=
+C:Q1QIgaBaM65MkFg/RBh9neZio5vnI=
 P:uwsgi-dummy
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:3104
+S:3102
 I:32768
 T:uWSGI plugin dummy
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi
 
-C:Q1/u2hAMd1ChBigym9DPvH7nVqpsI=
+C:Q1/9rYPxpAUpBK6HGp1U4tliUdGIo=
 P:uwsgi-echo
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:3134
+S:3133
 I:32768
 T:uWSGI plugin echo
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi
 
-C:Q1F96bbMZd0v7O7wfMUoEhiJMc+Ec=
+C:Q1RztPP0Ycnnk7XkjKoPEONW5zV2Q=
 P:uwsgi-emperor_amqp
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:8919
+S:8914
 I:40960
 T:uWSGI plugin emperor_amqp
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q16mMOr4GVz14qKKB6nL84BHP8rW0=
+C:Q1BghA/G0MpCawF6sHZqLnAXKAmeE=
 P:uwsgi-emperor_pg
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:4449
+S:4453
 I:32768
 T:uWSGI plugin emperor_pg
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1 so:libpq.so.5
 
-C:Q1OppSAtQ4WMIw5Yayo3J6ecUwg5E=
+C:Q1GLdH3rxHDBTUO/9b/FBDWcP0ZIw=
 P:uwsgi-emperor_zeromq
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:5056
+S:5043
 I:32768
 T:uWSGI plugin emperor_zeromq
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1 so:libzmq.so.5
 
-C:Q19Bz55gzWkcL/jr4moEhbJdGGf3A=
+C:Q12jGhnbV1BENvEv3RYXf4vVNnAYM=
 P:uwsgi-fastrouter
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:8676
+S:8662
 I:36864
 T:uWSGI plugin fastrouter
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi uwsgi-corerouter so:libc.musl-x86.so.1
 
-C:Q1FzHzaWW/ErhsUwtgYOf4d1hitbE=
+C:Q1kR/yGO1EtZppiHgcqE8QIl0qgB0=
 P:uwsgi-forkptyrouter
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:6433
+S:6424
 I:32768
 T:uWSGI plugin forkptyrouter
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi uwsgi-corerouter so:libc.musl-x86.so.1
 
-C:Q1M5HbSFhpMawvLTKqdfD5iRH8MZY=
+C:Q1/wdkQe6LrIK+xxSqFBpKxIzZPnw=
 P:uwsgi-geoip
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:4710
+S:4695
 I:32768
 T:uWSGI plugin geoip
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libGeoIP.so.1 so:libc.musl-x86.so.1
 
-C:Q1XzwuK7vXBq/N8b7y61ywcXK8/vw=
+C:Q12ZKW7SnV6o3wr8e5TNvA2J7YZ+c=
 P:uwsgi-gevent3
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:9850
+S:9839
 I:40960
 T:uWSGI plugin for gevent (Python 3)
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
-p:uwsgi-gevent=2.0.23-r0
+p:uwsgi-gevent=2.0.23-r1
 
-C:Q1rNl4G1FfokJID873BhpWTtO2wls=
+C:Q1SmKk/qZlXwAxtPP1eJ1Xv2hgOYI=
 P:uwsgi-graylog2
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:4513
+S:4494
 I:32768
 T:uWSGI plugin graylog2
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1 so:libz.so.1
 
-C:Q1OYZcq7xZy4G458in64ZUmrIHcbE=
+C:Q1egTDqoVRidxi7WUvkFt/ZDCiUko=
 P:uwsgi-http
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:24814
+S:24809
 I:73728
 T:uWSGI plugin http
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi uwsgi-corerouter so:libc.musl-x86.so.1
 
-C:Q1mtgTbsePr1YWb+uAXsErQ/AfxWs=
+C:Q1pEPtwCuUXqjeh8GYz1U1cUs5ATM=
 P:uwsgi-legion_cache_fetch
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:3902
+S:3886
 I:32768
 T:uWSGI plugin legion_cache_fetch
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1fvR7DsKi+tf/DrlAQppybKyM1wM=
+C:Q1/0RFDV3mdGCMFEThGHIbcMRyVFI=
 P:uwsgi-logcrypto
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:5100
+S:5092
 I:32768
 T:uWSGI plugin logcrypto
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1wnNN5CPjFjfB6eKYx56ENnGUDAg=
+C:Q1jm1IdNHvMo6CHPo4c/jH1CxH0eg=
 P:uwsgi-logfile
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:4221
+S:4204
 I:32768
 T:uWSGI plugin logfile
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1VtD8P0icwh8xn9hlf/yU57wraOY=
+C:Q1W0O2kZZeg3ipMTV4hHp4fUIv1Y0=
 P:uwsgi-logpipe
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:3832
+S:3825
 I:32768
 T:uWSGI plugin logpipe
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q19irG1h5BDWl2C+ZpJBlYiZK2YO8=
+C:Q1A7aMGshcQCW2bbpUluanKBKCsq8=
 P:uwsgi-logsocket
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:3922
+S:3917
 I:32768
 T:uWSGI plugin logsocket
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1rLozCyGj4txcz2wFpnC5IsUDwgs=
+C:Q1/Y48SWnwsKeqcY/GbUr4v0LXkkM=
 P:uwsgi-logzmq
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:4068
+S:4060
 I:32768
 T:uWSGI plugin logzmq
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1 so:libzmq.so.5
 
-C:Q1tzQf8/Ml132g3kTqOuHMPZZ08VA=
+C:Q15zVRbW3ih2LC5jsMMjqCRf3HKAM=
 P:uwsgi-lua
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:11586
+S:11572
 I:49152
 T:uWSGI plugin lua
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1 so:liblua-5.3.so.0
 
-C:Q1oJPHm4tj7SeL16Mq/Ni5J/ne3cI=
+C:Q10W3VWTqwvXGAcggEnXRtSLmdPrk=
 P:uwsgi-msgpack
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:5997
+S:5989
 I:32768
 T:uWSGI plugin msgpack
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q12ENNPtUB14gmsyyussBkjNO6gMM=
+C:Q1uZlz+6rz4SH7cvSKYRcseOLXVzk=
 P:uwsgi-nagios
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:4122
+S:4107
 I:32768
 T:uWSGI plugin nagios
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1UzAwtpxmbVzN+wH1EW7ctjRkoWY=
+C:Q1MIbl65fLFbMoPzMrFM2GYcwyyPQ=
 P:uwsgi-notfound
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:3322
+S:3331
 I:32768
 T:uWSGI plugin notfound
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi
 
-C:Q1DTQhVAbpzke1YZPxDJkWV/eP2Gc=
-P:uwsgi-pam
-V:2.0.23-r0
+C:Q1RjCGst0/AiovVRdBIIkAr1ntO1Y=
+P:uwsgi-openrc
+V:2.0.23-r1
 A:x86
-S:4057
+S:2583
+I:16384
+T:uWSGI application container server (OpenRC init scripts)
+U:https://projects.unbit.it/uwsgi/
+L:custom
+o:uwsgi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
+i:openrc uwsgi=2.0.23-r1
+
+C:Q1QjQeTsfuSFeVRIWgBFN6ZWFl2Mc=
+P:uwsgi-pam
+V:2.0.23-r1
+A:x86
+S:4051
 I:32768
 T:uWSGI plugin pam
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1 so:libpam.so.0
 
-C:Q1WgriFWCwAXN4+CXNXi0i2ij/iak=
+C:Q1KybbSBiSQVG2owzTAuzv9Yorkms=
 P:uwsgi-ping
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:4114
+S:4101
 I:32768
 T:uWSGI plugin ping
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1jBgbmYlEgcgoHHs8dHAoD7RbkXQ=
+C:Q1/dq60c8w+2feXp8FgU9VXU+1/Q0=
 P:uwsgi-pty
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:6213
+S:6197
 I:32768
 T:uWSGI plugin pty
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1cRoH8bcBEqm1P345m29cArVzzes=
+C:Q1RVFY+2j4Zs8JWqngg97XenDyB6g=
 P:uwsgi-python3
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:63301
+S:63277
 I:172032
 T:uWSGI plugin for Python 3
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1 so:libpython3.11.so.1.0
-p:uwsgi-python=2.0.23-r0
+p:uwsgi-python=2.0.23-r1
 
-C:Q1xKhgaHyWasb1OD85vOYHmsE5jlo=
+C:Q13ztViq20rG4LsqtuR//mZF7BreE=
 P:uwsgi-rawrouter
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:7137
+S:7124
 I:36864
 T:uWSGI plugin rawrouter
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi uwsgi-corerouter so:libc.musl-x86.so.1
 
-C:Q1TYA00ElPT/FfzpEkw87ToM/Fw/8=
+C:Q1IqgkVcF4XLd9GxOJC/5ez5JFOs8=
 P:uwsgi-redislog
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:4632
+S:4621
 I:32768
 T:uWSGI plugin redislog
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1BxS+F5xQEqjyNShoR8ZudvS99Ts=
+C:Q1gcZu4f/wxxo74Ar3YSuB8LodhBc=
 P:uwsgi-router_basicauth
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:5003
+S:4997
 I:32768
 T:uWSGI plugin router_basicauth
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1s6yFW+haAlq6HUQNixhQK5dcI2c=
+C:Q1GW45klUvHaLbWXGxiOpHWLc0hUA=
 P:uwsgi-router_cache
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:7123
+S:7107
 I:36864
 T:uWSGI plugin router_cache
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1Cz+0nxQrQyNSnLxFMI4zEAAFJCs=
+C:Q1dM8hXqfeQ8q2tQcgFyYwN1rXKys=
 P:uwsgi-router_expires
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:4272
+S:4267
 I:32768
 T:uWSGI plugin router_expires
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q18nEfypk3t3cGl1W6rz0USeFjgbA=
+C:Q1g7+kw22jXxLD44RXxn9l1tMtpcc=
 P:uwsgi-router_hash
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:4130
+S:4133
 I:32768
 T:uWSGI plugin router_hash
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1L0svtsrFlFbQxiwxnxT7HmYafCA=
+C:Q1lMmFcPgXBXrWg3RtHl2Lh8FnYNk=
 P:uwsgi-router_http
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:4415
+S:4419
 I:32768
 T:uWSGI plugin router_http
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1B7A4V9isAHkgEWOGkfhpwcNT5Uo=
+C:Q1Sg+fp+R9T/i0ATmvVujH17fsWVU=
 P:uwsgi-router_memcached
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:5992
+S:5985
 I:32768
 T:uWSGI plugin router_memcached
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1ko1ZJABUTkGtnLf+URoLsiUNsCs=
+C:Q1Vrhei710Qie8sxxmh05pbbzrNmg=
 P:uwsgi-router_metrics
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:4126
+S:4132
 I:32768
 T:uWSGI plugin router_metrics
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1qOPSby+dRn0q+8oLb0AQC7GmpBI=
+C:Q1qzj3i9mIcwOa7L2z6HIr5s05hRI=
 P:uwsgi-router_radius
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:5745
+S:5732
 I:32768
 T:uWSGI plugin router_radius
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1qBjOPhFfb8/tzUeltaXG1LNx3EU=
+C:Q12OrqVlcBfxsYErws3fxNa0C8yyk=
 P:uwsgi-router_redirect
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:3749
+S:3748
 I:32768
 T:uWSGI plugin router_redirect
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1shIE/ydsF862inX7ODfT4bBMozg=
+C:Q1W75jcUd5v3qDiC3t3BDUAAqABek=
 P:uwsgi-router_redis
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:6031
+S:6022
 I:32768
 T:uWSGI plugin router_redis
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1jRf/+FqJYm+749b8kwyd6Rd+3cg=
+C:Q1ZfK6+rAq+sdwyw8rZC0nIzsaaMw=
 P:uwsgi-router_rewrite
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:4122
+S:4106
 I:32768
 T:uWSGI plugin router_rewrite
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1aWLZAr0UWqZrn59C/4CwvHrdLf4=
+C:Q1uczmFegdpVQzVILp6XPZWhLdVgo=
 P:uwsgi-router_static
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:5697
+S:5691
 I:32768
 T:uWSGI plugin router_static
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1bzuH17vXaWZqKrxeij+D4rI+yLA=
+C:Q1xEsRPtUoUwclfPv9ufzqlbaWJIU=
 P:uwsgi-router_uwsgi
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:4537
+S:4540
 I:32768
 T:uWSGI plugin router_uwsgi
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1RIYArCInZUOnxxXoTJODU7ZLbI0=
+C:Q13TbeuvDiklcj8XC1H47w0UDKrQY=
 P:uwsgi-rpc
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:7796
+S:7786
 I:36864
 T:uWSGI plugin rpc
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1cS646h8hjL56e1CfkuP0w+wMfe8=
+C:Q1F90iLsKc6HCf3BuZ1frVdQicYmA=
 P:uwsgi-rrdtool
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:5079
+S:5061
 I:32768
 T:uWSGI plugin rrdtool
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1F9TpaFpNHFRRPTN1tDp0l5DCX2k=
+C:Q1MsVdKr6ilcfUfmk9jwB0eBQWAtA=
 P:uwsgi-rsyslog
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:4682
+S:4673
 I:32768
 T:uWSGI plugin rsyslog
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1bguQ451yQE4uVgZO5uNT0FRmP/c=
+C:Q1KFi96Ox2YBYwDO0WNUV2Y4Ei2gw=
 P:uwsgi-signal
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:3391
+S:3376
 I:32768
 T:uWSGI plugin signal
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1q1LP//u1FjiTMLUgU9EaXeeh+S0=
+C:Q14PtYjqMchKnpbK2j4Ib+UX+VHz0=
 P:uwsgi-spooler
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:3850
+S:3835
 I:32768
 T:uWSGI plugin spooler
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q122oXWJfhfSR+XbXgYrUh7tfuK/0=
+C:Q1HYF3cHUvnWxlOU2uV6duV8n2UDs=
 P:uwsgi-sslrouter
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:8039
+S:8028
 I:36864
 T:uWSGI plugin sslrouter
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi uwsgi-corerouter so:libc.musl-x86.so.1
 
-C:Q1dDqhRJHWnptnQ4RSJxwsIldjybc=
+C:Q1ZBu0agnYLJujPhcifj6auAIkkXY=
 P:uwsgi-stats_pusher_file
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:3877
+S:3879
 I:32768
 T:uWSGI plugin stats_pusher_file
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1+c/aWlt7I/9U2xhe1v6INVkTAi8=
+C:Q1w2dXV2afdgSIDR2VUsN29DuoOys=
 P:uwsgi-stats_pusher_socket
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:4184
+S:4186
 I:32768
 T:uWSGI plugin stats_pusher_socket
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1P6Pq98X8UmKqnRE5F2LoJS3IdbI=
+C:Q1UNMGywxu/Zd6M5Ohlwry2npr6ro=
 P:uwsgi-stats_pusher_statsd
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:4247
+S:4251
 I:32768
 T:uWSGI plugin stats_pusher_statsd
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1MBpplgQoxrQ4+JYoLRBoMwz+I0M=
+C:Q1Its4D8MY7MkM6M7URRPCU3i0E4U=
 P:uwsgi-symcall
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:5182
+S:5190
 I:32768
 T:uWSGI plugin symcall
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1FcygZS07wXyLWtrDEN5tXEBk5Bw=
+C:Q17VVcu2uvu0kIWhao8/juGRh5z2k=
 P:uwsgi-syslog
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:3815
+S:3822
 I:32768
 T:uWSGI plugin syslog
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1TXeHFKgMsosJ5v2zjcHlJ84NEXU=
+C:Q1suYaVJ0XhQRW+v4GwXw+/OLr6Pc=
 P:uwsgi-transformation_chunked
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:3565
+S:3570
 I:32768
 T:uWSGI plugin transformation_chunked
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi
 
-C:Q12Psns8lAH8EDKHwrVMPS2JwIx+g=
+C:Q1tXlFWFKufIqshWaP0s0Gz9HGq7s=
 P:uwsgi-transformation_gzip
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:3939
+S:3925
 I:32768
 T:uWSGI plugin transformation_gzip
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1W4BdL/6G4boE4ZiT8pMdf3Usxyc=
+C:Q1EQFdDr0iNLifdABhuB5vcs22Fzg=
 P:uwsgi-transformation_offload
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:4385
+S:4388
 I:32768
 T:uWSGI plugin transformation_offload
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1uPQz7/kRrvWX3DT67yMhR6GMFE4=
+C:Q138INrzapP4aoC6QtDcRhwlw2l6E=
 P:uwsgi-transformation_template
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:3481
+S:3479
 I:32768
 T:uWSGI plugin transformation_template
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi
 
-C:Q1gJ8V6oZPlZ0xrnLINvum1QyHr/0=
+C:Q1lZX/qfqGbwnSNKNgdyxfFUumsUM=
 P:uwsgi-transformation_tofile
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:4441
+S:4449
 I:32768
 T:uWSGI plugin transformation_tofile
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q145HIY/9ZEyUnVN395O4vzQxD790=
+C:Q1s4gi2CN9ZzFdGNjFM+QWuIA8OJw=
 P:uwsgi-tuntap
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:13316
+S:13307
 I:49152
 T:uWSGI plugin tuntap
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q137h6+VDdER9vWYCjSv8SQqyuioo=
+C:Q1DqaaQN1nyuSWBFCE+M8SsXhWuH0=
 P:uwsgi-ugreen
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:4355
+S:4352
 I:32768
 T:uWSGI plugin ugreen
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1 so:libucontext.so.1
 
-C:Q13MtvuJaTnGXbHx096brw6fg07IU=
+C:Q1sG3r7ZqtKbM1vATgsowpG7fSxzI=
 P:uwsgi-webdav
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:14108
+S:14091
 I:53248
 T:uWSGI plugin webdav
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1 so:libxml2.so.2
 
-C:Q1TFMOoYgfr0fLEMzufXpzXpF8gkA=
+C:Q1za2ZJHpoa5jToHh1Dol03uMXLGk=
 P:uwsgi-xslt
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:7327
+S:7313
 I:36864
 T:uWSGI plugin xslt
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1 so:libxml2.so.2 so:libxslt.so.1
 
-C:Q1XpFm1xICZuwoMrPH3knt0dIUx+g=
+C:Q1KGk45GiPlrq/fA5v23Qs2nS6G/k=
 P:uwsgi-zabbix
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:5356
+S:5352
 I:32768
 T:uWSGI plugin zabbix
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
-C:Q1PWgnx9vRHncCwB22rqOQcTsk944=
+C:Q1/kIhWNMJa8Ae6sBwlWeLAUEV3mk=
 P:uwsgi-zergpool
-V:2.0.23-r0
+V:2.0.23-r1
 A:x86
-S:4752
+S:4747
 I:32768
 T:uWSGI plugin zergpool
 U:https://projects.unbit.it/uwsgi/
 L:custom
 o:uwsgi
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1698958761
-c:187969e2fc015abc991b25108bd282ce5fe3040e
+t:1701354873
+c:db35d97d39a35b439ee2c455f78a8530c0a7a8dc
 D:uwsgi so:libc.musl-x86.so.1
 
 C:Q1AZYbuzZYOK1U0CDSKAQb+YOWiso=
