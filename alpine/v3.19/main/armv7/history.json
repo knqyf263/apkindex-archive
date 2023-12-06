@@ -2749,7 +2749,8 @@
       "origin": "alpine-conf",
       "versions": {
         "3.16.2-r1": 1693205524,
-        "3.17.0_rc1-r0": 1701444694
+        "3.17.0_rc1-r0": 1701444694,
+        "3.17.0_rc2-r0": 1701807951
       },
       "dependencies": [
         "openrc>=0.24.1-r6",
@@ -2757,37 +2758,37 @@
         "so:libc.musl-armv7.so.1"
       ],
       "provides": [
-        "cmd:copy-modloop=3.17.0_rc1-r0",
-        "cmd:lbu=3.17.0_rc1-r0",
-        "cmd:lbu_commit=3.17.0_rc1-r0",
-        "cmd:lbu_exclude=3.17.0_rc1-r0",
-        "cmd:lbu_include=3.17.0_rc1-r0",
-        "cmd:lbu_status=3.17.0_rc1-r0",
-        "cmd:lbu_update=3.17.0_rc1-r0",
-        "cmd:setup-acf=3.17.0_rc1-r0",
-        "cmd:setup-alpine=3.17.0_rc1-r0",
-        "cmd:setup-apkcache=3.17.0_rc1-r0",
-        "cmd:setup-apkrepos=3.17.0_rc1-r0",
-        "cmd:setup-bootable=3.17.0_rc1-r0",
-        "cmd:setup-desktop=3.17.0_rc1-r0",
-        "cmd:setup-devd=3.17.0_rc1-r0",
-        "cmd:setup-disk=3.17.0_rc1-r0",
-        "cmd:setup-dns=3.17.0_rc1-r0",
-        "cmd:setup-hostname=3.17.0_rc1-r0",
-        "cmd:setup-interfaces=3.17.0_rc1-r0",
-        "cmd:setup-keymap=3.17.0_rc1-r0",
-        "cmd:setup-lbu=3.17.0_rc1-r0",
-        "cmd:setup-mta=3.17.0_rc1-r0",
-        "cmd:setup-ntp=3.17.0_rc1-r0",
-        "cmd:setup-proxy=3.17.0_rc1-r0",
-        "cmd:setup-sshd=3.17.0_rc1-r0",
-        "cmd:setup-timezone=3.17.0_rc1-r0",
-        "cmd:setup-user=3.17.0_rc1-r0",
-        "cmd:setup-xen-dom0=3.17.0_rc1-r0",
-        "cmd:setup-xorg-base=3.17.0_rc1-r0",
-        "cmd:uniso=3.17.0_rc1-r0",
-        "cmd:update-conf=3.17.0_rc1-r0",
-        "cmd:update-kernel=3.17.0_rc1-r0"
+        "cmd:copy-modloop=3.17.0_rc2-r0",
+        "cmd:lbu=3.17.0_rc2-r0",
+        "cmd:lbu_commit=3.17.0_rc2-r0",
+        "cmd:lbu_exclude=3.17.0_rc2-r0",
+        "cmd:lbu_include=3.17.0_rc2-r0",
+        "cmd:lbu_status=3.17.0_rc2-r0",
+        "cmd:lbu_update=3.17.0_rc2-r0",
+        "cmd:setup-acf=3.17.0_rc2-r0",
+        "cmd:setup-alpine=3.17.0_rc2-r0",
+        "cmd:setup-apkcache=3.17.0_rc2-r0",
+        "cmd:setup-apkrepos=3.17.0_rc2-r0",
+        "cmd:setup-bootable=3.17.0_rc2-r0",
+        "cmd:setup-desktop=3.17.0_rc2-r0",
+        "cmd:setup-devd=3.17.0_rc2-r0",
+        "cmd:setup-disk=3.17.0_rc2-r0",
+        "cmd:setup-dns=3.17.0_rc2-r0",
+        "cmd:setup-hostname=3.17.0_rc2-r0",
+        "cmd:setup-interfaces=3.17.0_rc2-r0",
+        "cmd:setup-keymap=3.17.0_rc2-r0",
+        "cmd:setup-lbu=3.17.0_rc2-r0",
+        "cmd:setup-mta=3.17.0_rc2-r0",
+        "cmd:setup-ntp=3.17.0_rc2-r0",
+        "cmd:setup-proxy=3.17.0_rc2-r0",
+        "cmd:setup-sshd=3.17.0_rc2-r0",
+        "cmd:setup-timezone=3.17.0_rc2-r0",
+        "cmd:setup-user=3.17.0_rc2-r0",
+        "cmd:setup-xen-dom0=3.17.0_rc2-r0",
+        "cmd:setup-xorg-base=3.17.0_rc2-r0",
+        "cmd:uniso=3.17.0_rc2-r0",
+        "cmd:update-conf=3.17.0_rc2-r0",
+        "cmd:update-kernel=3.17.0_rc2-r0"
       ]
     },
     "alpine-git-mirror-syncd": {
@@ -15359,7 +15360,8 @@
     "gdb": {
       "origin": "gdb",
       "versions": {
-        "13.2-r3": 1687384376
+        "13.2-r3": 1687384376,
+        "14.1-r0": 1701803571
       },
       "dependencies": [
         "musl-dbg",
@@ -15367,6 +15369,7 @@
         "so:libexpat.so.1",
         "so:libgcc_s.so.1",
         "so:libgmp.so.10",
+        "so:libmpfr.so.6",
         "so:libncursesw.so.6",
         "so:libpython3.11.so.1.0",
         "so:libreadline.so.8",
@@ -15375,29 +15378,32 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:gcore=13.2-r3",
-        "cmd:gdb-add-index=13.2-r3",
-        "cmd:gdb=13.2-r3",
-        "cmd:gdbserver=13.2-r3",
-        "cmd:run=13.2-r3"
+        "cmd:gcore=14.1-r0",
+        "cmd:gdb-add-index=14.1-r0",
+        "cmd:gdb=14.1-r0",
+        "cmd:gdbserver=14.1-r0",
+        "cmd:run=14.1-r0"
       ]
     },
     "gdb-dbg": {
       "origin": "gdb",
       "versions": {
-        "13.2-r3": 1687384376
+        "13.2-r3": 1687384376,
+        "14.1-r0": 1701803571
       }
     },
     "gdb-doc": {
       "origin": "gdb",
       "versions": {
-        "13.2-r3": 1687384376
+        "13.2-r3": 1687384376,
+        "14.1-r0": 1701803571
       }
     },
     "gdb-multiarch": {
       "origin": "gdb",
       "versions": {
-        "13.2-r3": 1687384376
+        "13.2-r3": 1687384376,
+        "14.1-r0": 1701803571
       },
       "dependencies": [
         "gdb",
@@ -15405,6 +15411,7 @@
         "so:libexpat.so.1",
         "so:libgcc_s.so.1",
         "so:libgmp.so.10",
+        "so:libmpfr.so.6",
         "so:libncursesw.so.6",
         "so:libpython3.11.so.1.0",
         "so:libreadline.so.8",
@@ -15413,7 +15420,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:gdb-multiarch=13.2-r3"
+        "cmd:gdb-multiarch=14.1-r0"
       ]
     },
     "gdbm": {
@@ -17437,7 +17444,8 @@
     "grub": {
       "origin": "grub",
       "versions": {
-        "2.06-r14": 1695655881
+        "2.06-r14": 1695655881,
+        "2.06-r17": 1701788981
       },
       "dependencies": [
         "initramfs-generator",
@@ -17447,55 +17455,60 @@
         "so:liblzma.so.5"
       ],
       "provides": [
-        "cmd:grub-bios-setup=2.06-r14",
-        "cmd:grub-editenv=2.06-r14",
-        "cmd:grub-file=2.06-r14",
-        "cmd:grub-fstest=2.06-r14",
-        "cmd:grub-glue-efi=2.06-r14",
-        "cmd:grub-install=2.06-r14",
-        "cmd:grub-kbdcomp=2.06-r14",
-        "cmd:grub-macbless=2.06-r14",
-        "cmd:grub-menulst2cfg=2.06-r14",
-        "cmd:grub-mkconfig=2.06-r14",
-        "cmd:grub-mkimage=2.06-r14",
-        "cmd:grub-mklayout=2.06-r14",
-        "cmd:grub-mknetdir=2.06-r14",
-        "cmd:grub-mkpasswd-pbkdf2=2.06-r14",
-        "cmd:grub-mkrelpath=2.06-r14",
-        "cmd:grub-mkrescue=2.06-r14",
-        "cmd:grub-mkstandalone=2.06-r14",
-        "cmd:grub-ofpathname=2.06-r14",
-        "cmd:grub-probe=2.06-r14",
-        "cmd:grub-reboot=2.06-r14",
-        "cmd:grub-render-label=2.06-r14",
-        "cmd:grub-script-check=2.06-r14",
-        "cmd:grub-set-default=2.06-r14",
-        "cmd:grub-sparc64-setup=2.06-r14",
-        "cmd:grub-syslinux2cfg=2.06-r14"
+        "cmd:grub-bios-setup=2.06-r17",
+        "cmd:grub-editenv=2.06-r17",
+        "cmd:grub-file=2.06-r17",
+        "cmd:grub-fstest=2.06-r17",
+        "cmd:grub-glue-efi=2.06-r17",
+        "cmd:grub-install=2.06-r17",
+        "cmd:grub-kbdcomp=2.06-r17",
+        "cmd:grub-macbless=2.06-r17",
+        "cmd:grub-menulst2cfg=2.06-r17",
+        "cmd:grub-mkconfig=2.06-r17",
+        "cmd:grub-mkimage=2.06-r17",
+        "cmd:grub-mklayout=2.06-r17",
+        "cmd:grub-mknetdir=2.06-r17",
+        "cmd:grub-mkpasswd-pbkdf2=2.06-r17",
+        "cmd:grub-mkrelpath=2.06-r17",
+        "cmd:grub-mkrescue=2.06-r17",
+        "cmd:grub-mkstandalone=2.06-r17",
+        "cmd:grub-ofpathname=2.06-r17",
+        "cmd:grub-probe=2.06-r17",
+        "cmd:grub-reboot=2.06-r17",
+        "cmd:grub-render-label=2.06-r17",
+        "cmd:grub-script-check=2.06-r17",
+        "cmd:grub-set-default=2.06-r17",
+        "cmd:grub-sparc64-setup=2.06-r17",
+        "cmd:grub-syslinux2cfg=2.06-r17",
+        "cmd:update-grub=2.06-r17"
       ]
     },
     "grub-bash-completion": {
       "origin": "grub",
       "versions": {
-        "2.06-r14": 1695655881
+        "2.06-r14": 1695655881,
+        "2.06-r17": 1701788981
       }
     },
     "grub-dev": {
       "origin": "grub",
       "versions": {
-        "2.06-r14": 1695655881
+        "2.06-r14": 1695655881,
+        "2.06-r17": 1701788981
       }
     },
     "grub-doc": {
       "origin": "grub",
       "versions": {
-        "2.06-r14": 1695655881
+        "2.06-r14": 1695655881,
+        "2.06-r17": 1701788981
       }
     },
     "grub-efi": {
       "origin": "grub",
       "versions": {
-        "2.06-r14": 1695655881
+        "2.06-r14": 1695655881,
+        "2.06-r17": 1701788981
       },
       "dependencies": [
         "grub"
@@ -17504,7 +17517,8 @@
     "grub-mkfont": {
       "origin": "grub",
       "versions": {
-        "2.06-r14": 1695655881
+        "2.06-r14": 1695655881,
+        "2.06-r17": 1701788981
       },
       "dependencies": [
         "grub",
@@ -17513,13 +17527,14 @@
         "so:libfreetype.so.6"
       ],
       "provides": [
-        "cmd:grub-mkfont=2.06-r14"
+        "cmd:grub-mkfont=2.06-r17"
       ]
     },
     "grub-mount": {
       "origin": "grub",
       "versions": {
-        "2.06-r14": 1695655881
+        "2.06-r14": 1695655881,
+        "2.06-r17": 1701788981
       },
       "dependencies": [
         "so:libc.musl-armv7.so.1",
@@ -17527,7 +17542,7 @@
         "so:libfuse.so.2"
       ],
       "provides": [
-        "cmd:grub-mount=2.06-r14"
+        "cmd:grub-mount=2.06-r17"
       ]
     },
     "gsm": {
@@ -19296,7 +19311,8 @@
     "hwloc": {
       "origin": "hwloc",
       "versions": {
-        "2.9.3-r0": 1694591223
+        "2.9.3-r0": 1694591223,
+        "2.10.0-r0": 1701786986
       },
       "dependencies": [
         "so:libc.musl-armv7.so.1",
@@ -19304,39 +19320,43 @@
         "so:libxml2.so.2"
       ],
       "provides": [
-        "so:libhwloc.so.15=15.6.4"
+        "so:libhwloc.so.15=15.7.0"
       ]
     },
     "hwloc-bash-completion": {
       "origin": "hwloc",
       "versions": {
-        "2.9.3-r0": 1694591223
+        "2.9.3-r0": 1694591223,
+        "2.10.0-r0": 1701786986
       }
     },
     "hwloc-dev": {
       "origin": "hwloc",
       "versions": {
-        "2.9.3-r0": 1694591223
+        "2.9.3-r0": 1694591223,
+        "2.10.0-r0": 1701786986
       },
       "dependencies": [
-        "hwloc=2.9.3-r0",
+        "hwloc=2.10.0-r0",
         "pc:libxml-2.0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:hwloc=2.9.3"
+        "pc:hwloc=2.10.0"
       ]
     },
     "hwloc-doc": {
       "origin": "hwloc",
       "versions": {
-        "2.9.3-r0": 1694591223
+        "2.9.3-r0": 1694591223,
+        "2.10.0-r0": 1701786986
       }
     },
     "hwloc-tools": {
       "origin": "hwloc",
       "versions": {
-        "2.9.3-r0": 1694591223
+        "2.9.3-r0": 1694591223,
+        "2.10.0-r0": 1701786986
       },
       "dependencies": [
         "so:libX11.so.6",
@@ -19346,19 +19366,19 @@
         "so:libncursesw.so.6"
       ],
       "provides": [
-        "cmd:hwloc-annotate=2.9.3-r0",
-        "cmd:hwloc-bind=2.9.3-r0",
-        "cmd:hwloc-calc=2.9.3-r0",
-        "cmd:hwloc-compress-dir=2.9.3-r0",
-        "cmd:hwloc-diff=2.9.3-r0",
-        "cmd:hwloc-distrib=2.9.3-r0",
-        "cmd:hwloc-gather-topology=2.9.3-r0",
-        "cmd:hwloc-info=2.9.3-r0",
-        "cmd:hwloc-ls=2.9.3-r0",
-        "cmd:hwloc-patch=2.9.3-r0",
-        "cmd:hwloc-ps=2.9.3-r0",
-        "cmd:lstopo-no-graphics=2.9.3-r0",
-        "cmd:lstopo=2.9.3-r0"
+        "cmd:hwloc-annotate=2.10.0-r0",
+        "cmd:hwloc-bind=2.10.0-r0",
+        "cmd:hwloc-calc=2.10.0-r0",
+        "cmd:hwloc-compress-dir=2.10.0-r0",
+        "cmd:hwloc-diff=2.10.0-r0",
+        "cmd:hwloc-distrib=2.10.0-r0",
+        "cmd:hwloc-gather-topology=2.10.0-r0",
+        "cmd:hwloc-info=2.10.0-r0",
+        "cmd:hwloc-ls=2.10.0-r0",
+        "cmd:hwloc-patch=2.10.0-r0",
+        "cmd:hwloc-ps=2.10.0-r0",
+        "cmd:lstopo-no-graphics=2.10.0-r0",
+        "cmd:lstopo=2.10.0-r0"
       ]
     },
     "hypermail": {
@@ -31139,7 +31159,8 @@
         "6.1.62-r0": 1699514255,
         "6.1.63-r0": 1701074413,
         "6.6.3-r0": 1701291417,
-        "6.6.4-r0": 1701611505
+        "6.6.4-r0": 1701611505,
+        "6.6.4-r1": 1701807950
       },
       "dependencies": [
         "initramfs-generator",
@@ -31155,7 +31176,8 @@
         "6.1.62-r0": 1699514255,
         "6.1.63-r0": 1701074413,
         "6.6.3-r0": 1701291417,
-        "6.6.4-r0": 1701611505
+        "6.6.4-r0": 1701611505,
+        "6.6.4-r1": 1701807950
       },
       "dependencies": [
         "perl",
@@ -31182,7 +31204,8 @@
         "6.1.62-r0": 1699514255,
         "6.1.63-r0": 1701074413,
         "6.6.3-r0": 1701291417,
-        "6.6.4-r0": 1701611505
+        "6.6.4-r0": 1701611505,
+        "6.6.4-r1": 1701807950
       }
     },
     "linux-pam": {
@@ -31331,7 +31354,8 @@
         "6.1.62-r0": 1699514255,
         "6.1.63-r0": 1701074413,
         "6.6.3-r0": 1701291417,
-        "6.6.4-r0": 1701611505
+        "6.6.4-r0": 1701611505,
+        "6.6.4-r1": 1701807950
       },
       "dependencies": [
         "initramfs-generator"
@@ -31346,7 +31370,8 @@
         "6.1.62-r0": 1699514255,
         "6.1.63-r0": 1701074413,
         "6.6.3-r0": 1701291417,
-        "6.6.4-r0": 1701611505
+        "6.6.4-r0": 1701611505,
+        "6.6.4-r1": 1701807950
       },
       "dependencies": [
         "perl",
@@ -50396,7 +50421,8 @@
     "perl-xs-parse-keyword": {
       "origin": "perl-xs-parse-keyword",
       "versions": {
-        "0.38-r0": 1692780040
+        "0.38-r0": 1692780040,
+        "0.39-r0": 1701805058
       },
       "dependencies": [
         "perl",
@@ -50406,7 +50432,8 @@
     "perl-xs-parse-keyword-doc": {
       "origin": "perl-xs-parse-keyword",
       "versions": {
-        "0.38-r0": 1692780040
+        "0.38-r0": 1692780040,
+        "0.39-r0": 1701805058
       }
     },
     "perl-yaml": {
@@ -66803,10 +66830,11 @@
         "6.1.62-r1": 1701072985,
         "6.1.63-r1": 1701074413,
         "6.6.3-r0": 1701291418,
-        "6.6.4-r0": 1701611505
+        "6.6.4-r0": 1701611505,
+        "6.6.4-r1": 1701807951
       },
       "dependencies": [
-        "linux-lts=6.6.4-r0"
+        "linux-lts=6.6.4-r1"
       ]
     },
     "xtrans": {
@@ -67244,13 +67272,14 @@
         "6.6.3-r0": 1701291418,
         "6.6.3-r1": 1701354625,
         "6.6.3-r2": 1701446271,
-        "6.6.4-r2": 1701611505
+        "6.6.4-r2": 1701611505,
+        "6.6.4-r3": 1701807951
       },
       "dependencies": [
-        "linux-lts=6.6.4-r0"
+        "linux-lts=6.6.4-r1"
       ],
       "provides": [
-        "spl-vanilla=6.6.4-r2"
+        "spl-vanilla=6.6.4-r3"
       ]
     },
     "zfs-lts-dev": {
@@ -67264,14 +67293,15 @@
         "6.6.3-r0": 1701291418,
         "6.6.3-r1": 1701354625,
         "6.6.3-r2": 1701446271,
-        "6.6.4-r2": 1701611505
+        "6.6.4-r2": 1701611505,
+        "6.6.4-r3": 1701807951
       },
       "dependencies": [
         "glib-dev",
         "e2fsprogs-dev",
         "util-linux-dev",
         "libtirpc-dev",
-        "linux-lts-dev=6.6.4-r0"
+        "linux-lts-dev=6.6.4-r1"
       ]
     },
     "zfs-openrc": {
@@ -69851,7 +69881,7 @@
       },
       "spl-vanilla": {
         "package": "zfs-lts",
-        "version": "6.6.4-r2"
+        "version": "6.6.4-r3"
       },
       "llvm-gtest": {
         "package": "llvm17-gtest",
@@ -72053,7 +72083,7 @@
       },
       "libhwloc.so.15": {
         "package": "hwloc",
-        "version": "15.6.4"
+        "version": "15.7.0"
       },
       "libicutu.so.73": {
         "package": "icu",
