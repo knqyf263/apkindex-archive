@@ -44,21 +44,6 @@ t:1690260709
 c:761d6f799529d381175be591dde5430d12e12ef2
 p:linux-firmware-any
 
-C:Q1BkyuUL5kot1aWiFFv+fONiHBRK0=
-P:freeswitch-perl
-V:1.10.8-r0
-A:ppc64le
-S:69158
-I:356352
-T:Freeswitch Perl module
-U:https://www.freeswitch.org/
-L:MPL-1.1
-o:freeswitch
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667998723
-c:40ae2e500da1eedc4aa2de12ae5082c33eb4fdc5
-D:so:libc.musl-ppc64le.so.1 so:libfreeswitch.so.1 so:libgcc_s.so.1 so:libperl.so so:libstdc++.so.6
-
 C:Q1x+im18UhOrTDk15caXWFh8kOQD8=
 P:dpkg-dev
 V:1.21.9-r0
@@ -2104,6 +2089,21 @@ t:1654671545
 c:d5974ffc9ae69ce0b312382d3032d4ff2387ab80
 i:docs perl-params-classify=0.015-r6
 
+C:Q1cc52Jp8zR6lLcq8tzvjCb6pIF8E=
+P:freeswitch-sangoma
+V:1.10.10-r0
+A:ppc64le
+S:14797
+I:90112
+T:Freeswitch Sangoma Media Transcode Codec Module
+U:https://www.freeswitch.org/
+L:MPL-1.1
+o:freeswitch
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1703156078
+c:1434f78ba68faf170f580bba61e3af5f9f4084cc
+D:so:libc.musl-ppc64le.so.1 so:libfreeswitch.so.1 so:libsngtc_node.so
+
 C:Q1GPjKOgmLGkB0GBOVmHcuQq+tq/I=
 P:newt-doc
 V:0.52.23-r0
@@ -2486,22 +2486,6 @@ t:1658971088
 c:37af0c5ea713fb5b174bfdbc34c97df50908f60b
 D:iptables so:libc.musl-ppc64le.so.1 so:libpcap.so.1
 p:cmd:knock=0.8.2-r1 cmd:knock_helper_ipt.sh=0.8.2-r1 cmd:knockd=0.8.2-r1
-
-C:Q1kfIq65/wwt0RWXZtXt4pKxE7YBI=
-P:libks
-V:1.8.0-r0
-A:ppc64le
-S:104989
-I:278528
-T:Foundational support for signalwire C products
-U:https://github.com/signalwire/libks
-L:MIT
-o:libks
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1667551154
-c:1cc62a50bb8550f4499087aa2209153006aed104
-D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.3 so:libssl.so.3 so:libuuid.so.1
-p:so:libks.so.1=1
 
 C:Q1UrOnYT4ph5ueIShxgLdblkNsjOY=
 P:linux-firmware-e100
@@ -3394,6 +3378,22 @@ t:1689819690
 c:65b29cf342f58c6eeda20902ab0e7ef52b4bcdb3
 D:so:libc.musl-ppc64le.so.1
 p:so:libnss_winbind.so.2=2 so:libnss_wins.so.2=2
+
+C:Q1eRwbz2uS0tsUju8geykasNuckhA=
+P:libks
+V:1.8.3-r0
+A:ppc64le
+S:105111
+I:278528
+T:Foundational support for signalwire C products
+U:https://github.com/signalwire/libks
+L:MIT
+o:libks
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1703154073
+c:920894c82e95de4e7334bd21ab2e1d946aa2023b
+D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.3 so:libssl.so.3 so:libuuid.so.1
+p:so:libks.so.1=1
 
 C:Q17SjY1ob6Dno17udmqMs+0xw+nrA=
 P:nginx-mod-http-dav-ext
@@ -6610,21 +6610,6 @@ c:39cde24fb54a667a6730bdaec3233184227131f6
 D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.3 so:libgcc_s.so.1 so:libgmp.so.10 so:libstdc++.so.6
 p:cmd:gvpe=3.1-r3 cmd:gvpectrl=3.1-r3
 
-C:Q1MqWO5cxtaBe+Oz4ddgd48C1UfRc=
-P:freeswitch-openrc
-V:1.10.8-r0
-A:ppc64le
-S:2325
-I:24576
-T:A communications platform written in C from the ground up (OpenRC init scripts)
-U:https://www.freeswitch.org/
-L:MPL-1.1
-o:freeswitch
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667998723
-c:40ae2e500da1eedc4aa2de12ae5082c33eb4fdc5
-i:openrc freeswitch=1.10.8-r0
-
 C:Q1Y+x/UKH/CDPx2WiFz3tiL0Y9Qz4=
 P:tcl-tls
 V:1.7.22-r3
@@ -6805,20 +6790,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1664342901
 c:0acf11e38705ec6f22901e28c2dae9cfe24f35d2
 i:docs mpc1=1.2.1-r1
-
-C:Q1XpL5uXhv3HwRX3rNABq5g8HLNF0=
-P:freeswitch-dbg
-V:1.10.8-r0
-A:ppc64le
-S:9480925
-I:22327296
-T:A communications platform written in C from the ground up (debug symbols)
-U:https://www.freeswitch.org/
-L:MPL-1.1
-o:freeswitch
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667998723
-c:40ae2e500da1eedc4aa2de12ae5082c33eb4fdc5
 
 C:Q1f8TCvK9mwWTYHk+igLpjr46VBlM=
 P:patchutils
@@ -9863,6 +9834,21 @@ c:65b29cf342f58c6eeda20902ab0e7ef52b4bcdb3
 D:so:libc.musl-ppc64le.so.1 so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libldap.so.2 so:libndr-samba4.so so:libndr.so.2 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-modules-samba4.so so:libsamba-passdb.so.0 so:libsamba-security-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsecrets3-samba4.so so:libsmbconf.so.0 so:libsmbldap.so.2 so:libsmbldaphelper-samba4.so so:libtalloc.so.2 so:libtevent-util.so.0 so:libtevent.so.0 so:libutil-tdb-samba4.so
 p:so:libdcerpc-samba4.so=0 so:libidmap-samba4.so=0 so:libnss-info-samba4.so=0
 
+C:Q1tZkjcEGJPgR7OVuZqRkvaCFiT6U=
+P:freeswitch-perl
+V:1.10.10-r0
+A:ppc64le
+S:69159
+I:356352
+T:Freeswitch Perl module
+U:https://www.freeswitch.org/
+L:MPL-1.1
+o:freeswitch
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1703156078
+c:1434f78ba68faf170f580bba61e3af5f9f4084cc
+D:so:libc.musl-ppc64le.so.1 so:libfreeswitch.so.1 so:libgcc_s.so.1 so:libperl.so so:libstdc++.so.6
+
 C:Q11x1R5D4pqkJ/BZJPrgv19vwCXJQ=
 P:skalibs-doc
 V:2.12.0.1-r0
@@ -11723,6 +11709,21 @@ c:af2dcf3d47cad3d37ad76c85726533f88c130480
 k:100
 i:openrc eudev=3.2.11-r4
 
+C:Q1VGqIJ+8+UzTI+l82z0i5n43/8Rs=
+P:libks-doc
+V:1.8.3-r0
+A:ppc64le
+S:5258
+I:32768
+T:Foundational support for signalwire C products (documentation)
+U:https://github.com/signalwire/libks
+L:MIT
+o:libks
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1703154073
+c:920894c82e95de4e7334bd21ab2e1d946aa2023b
+i:docs libks=1.8.3-r0
+
 C:Q1l3mI3GdavtINB+YPpJYxbEeKTHQ=
 P:procps-dev
 V:3.3.17-r3
@@ -13476,6 +13477,21 @@ t:1652523970
 c:d61bd809846cf0d5e3e1b90bea467fd863083484
 i:docs itstool=2.0.7-r1
 
+C:Q1krQxdcrFioIMvJ+RIaMQSblKqlI=
+P:freeswitch-python3
+V:1.10.10-r0
+A:ppc64le
+S:54164
+I:233472
+T:Freeswitch Python3 module
+U:https://www.freeswitch.org/
+L:MPL-1.1
+o:freeswitch
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1703156078
+c:1434f78ba68faf170f580bba61e3af5f9f4084cc
+D:so:libc.musl-ppc64le.so.1 so:libfreeswitch.so.1 so:libgcc_s.so.1 so:libpython3.10.so.1.0 so:libstdc++.so.6
+
 C:Q1g41UB/kMVAe85m+rLEyrQk0EeR4=
 P:libwebp-dev
 V:1.2.4-r3
@@ -14855,21 +14871,6 @@ c:d71d571f06c7f1283bb33da41b37327d862d1e92
 D:so:libc.musl-ppc64le.so.1
 i:lua5.2 lua-posix=35.1-r0
 
-C:Q1e70OePsfhKnyITOwIv26aixd9bQ=
-P:freeswitch-sample-config
-V:1.10.8-r0
-A:ppc64le
-S:139382
-I:1503232
-T:Freeswitch sample configuration
-U:https://www.freeswitch.org/
-L:MPL-1.1
-o:freeswitch
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667998723
-c:40ae2e500da1eedc4aa2de12ae5082c33eb4fdc5
-D:freeswitch-timezones
-
 C:Q1bKbkw9zHVj2pHlatsE4uVedERLQ=
 P:ip6tables
 V:1.8.8-r2
@@ -15127,22 +15128,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
-
-C:Q1DsAllLQEumo60RH7NrQsS/S/SkI=
-P:sofia-sip-dev
-V:1.13.14-r2
-A:ppc64le
-S:261950
-I:2506752
-T:RFC3261 compliant SIP User-Agent library (development files)
-U:https://github.com/freeswitch/sofia-sip
-L:LGPL-2.1-only
-o:sofia-sip
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1693246315
-c:1e294e95342200e2ebf5909e7b32fc69f43f00e2
-D:pc:glib-2.0 pkgconfig sofia-sip=1.13.14-r2
-p:pc:sofia-sip-ua-glib=1.13.14 pc:sofia-sip-ua=1.13.14
 
 C:Q17t6D5qN4R+xW9NB7rY1b7AZ3LT4=
 P:luajit-doc
@@ -16516,21 +16501,6 @@ t:1660225613
 c:1daee00317a10316c3ab678755f0bbd676165b9c
 i:docs subversion=1.14.2-r4
 
-C:Q19aAbdllUBHWQg9CvnR8LXT0BJN4=
-P:libks-doc
-V:1.8.0-r0
-A:ppc64le
-S:5262
-I:32768
-T:Foundational support for signalwire C products (documentation)
-U:https://github.com/signalwire/libks
-L:MIT
-o:libks
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1667551154
-c:1cc62a50bb8550f4499087aa2209153006aed104
-i:docs libks=1.8.0-r0
-
 C:Q16PbcvsHWhMnWbztom3PiSDWsjh0=
 P:pango-dbg
 V:1.50.13-r0
@@ -16867,6 +16837,21 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1649093063
 c:e9c9b48b87de71ab6f3a9cc177457c44a32f4b7a
 D:ruby ruby-rr
+
+C:Q1NRksuse804FuZsQ5bNeYDqhrIcY=
+P:freeswitch-perlesl
+V:1.10.10-r0
+A:ppc64le
+S:53560
+I:241664
+T:Freeswitch Perl ESL module
+U:https://www.freeswitch.org/
+L:MPL-1.1
+o:freeswitch
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1703156078
+c:1434f78ba68faf170f580bba61e3af5f9f4084cc
+D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libperl.so so:libstdc++.so.6
 
 C:Q1eBFaqbFqS90W6Eznqb/TKpgilw4=
 P:hunspell-pt-br
@@ -22021,6 +22006,22 @@ t:1630802239
 c:a009963d0a02042154ebc0fa1b983ab8fd2808d5
 i:openrc shorewall=5.2.8-r1
 
+C:Q1UinWezGesgaKFA7JSsuxc6K/sK8=
+P:sofia-sip-dev
+V:1.13.17-r0
+A:ppc64le
+S:261945
+I:2506752
+T:RFC3261 compliant SIP User-Agent library (development files)
+U:https://github.com/freeswitch/sofia-sip
+L:LGPL-2.1-only
+o:sofia-sip
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1703153710
+c:f118d5d0afa004d0583a6efb1fe33cf3d7145c54
+D:pc:glib-2.0 pkgconfig sofia-sip=1.13.17-r0
+p:pc:sofia-sip-ua-glib=1.13.17 pc:sofia-sip-ua=1.13.17
+
 C:Q1YhdCdgHdMODEhv/1GE/b+S82ac4=
 P:lua5.3-posixtz
 V:0.5-r3
@@ -23127,6 +23128,20 @@ c:7340d7b3375c24573c0eda8dfa4b8def076bdb4a
 D:libapparmor=3.1.2-r0 pkgconfig
 p:pc:libapparmor=3.1.2
 
+C:Q1vuVtk6yHxEyRpmgoFr6C+6PlbYQ=
+P:freeswitch-timezones
+V:1.10.10-r0
+A:ppc64le
+S:16457
+I:118784
+T:Freeswitch timezone configuration
+U:https://www.freeswitch.org/
+L:MPL-1.1
+o:freeswitch
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1703156078
+c:1434f78ba68faf170f580bba61e3af5f9f4084cc
+
 C:Q10lRUQkdllx2Rntj0q8tcyHOdwVA=
 P:hunspell-doc
 V:1.7.1-r0
@@ -23655,6 +23670,21 @@ o:py3-mimeparse
 t:1658810585
 c:2b8e5c3e83711eb800c40bf2df72b2d3b2bc633b
 p:py-mimeparse=1.6.0-r5
+
+C:Q1Uk3FwVbgPv4vSdebqi1jps+lNDc=
+P:freeswitch-flite
+V:1.10.10-r0
+A:ppc64le
+S:4685
+I:90112
+T:Freeswitch Text To Speech Module
+U:https://www.freeswitch.org/
+L:MPL-1.1
+o:freeswitch
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1703156078
+c:1434f78ba68faf170f580bba61e3af5f9f4084cc
+D:so:libc.musl-ppc64le.so.1 so:libflite.so.1 so:libflite_cmu_us_awb.so.1 so:libflite_cmu_us_kal.so.1 so:libflite_cmu_us_kal16.so.1 so:libflite_cmu_us_rms.so.1 so:libflite_cmu_us_slt.so.1 so:libfreeswitch.so.1
 
 C:Q1g7zj0WfdKFo/bU/gVrXe9nK0STo=
 P:ivykis-doc
@@ -24328,6 +24358,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1667743833
 c:76988828c18a4ab5d9aa4aee13a4fe7501a6efec
 D:so:libc.musl-ppc64le.so.1 so:liblber.so.2 so:libldap.so.2
+
+C:Q1XSa43S4H0C1vyLBafYufIWqLJK0=
+P:freeswitch-sample-config
+V:1.10.10-r0
+A:ppc64le
+S:139025
+I:1503232
+T:Freeswitch sample configuration
+U:https://www.freeswitch.org/
+L:MPL-1.1
+o:freeswitch
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1703156078
+c:1434f78ba68faf170f580bba61e3af5f9f4084cc
+D:freeswitch-timezones
 
 C:Q1rrHntHzSTn9fGoaVeuzt8R5P/wo=
 P:gnutls
@@ -30620,6 +30665,22 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1649523092
 c:76638e2644a1132f8b1c402e0ceee236c85009b4
 
+C:Q1N1B3jvr/NtzxQCrxIBw3haHubgk=
+P:libks-dev
+V:1.8.3-r0
+A:ppc64le
+S:51727
+I:339968
+T:Foundational support for signalwire C products (development files)
+U:https://github.com/signalwire/libks
+L:MIT
+o:libks
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1703154073
+c:920894c82e95de4e7334bd21ab2e1d946aa2023b
+D:libks=1.8.3-r0 pkgconfig
+p:pc:libks=1.8.3
+
 C:Q1CnhK4SUotv2VwG6n1W2+JI7p4Kg=
 P:lua-ldap
 V:1.2.6-r3
@@ -36625,6 +36686,21 @@ c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:curl
 p:cmd:tpaste=0.7-r2
 
+C:Q1avFXiKqIFv54ty/Hb6mITsTpQXY=
+P:freeswitch-openrc
+V:1.10.10-r0
+A:ppc64le
+S:2316
+I:24576
+T:A communications platform written in C from the ground up (OpenRC init scripts)
+U:https://www.freeswitch.org/
+L:MPL-1.1
+o:freeswitch
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1703156078
+c:1434f78ba68faf170f580bba61e3af5f9f4084cc
+i:openrc freeswitch=1.10.10-r0
+
 C:Q1nXL+bCVKSfisPzC6csMw0As0Fk0=
 P:mpg123
 V:1.31.1-r0
@@ -40423,22 +40499,6 @@ t:1666536164
 c:e369fdfd3983380ba9f3052483930cfdea5d7cf6
 i:docs perl-email-date-format=1.006-r0
 
-C:Q1ocpTqyqmYrKbaPYMe3K/kzjkvis=
-P:freeswitch-dev
-V:1.10.8-r0
-A:ppc64le
-S:215630
-I:1126400
-T:A communications platform written in C from the ground up (development files)
-U:https://www.freeswitch.org/
-L:MPL-1.1
-o:freeswitch
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667998723
-c:40ae2e500da1eedc4aa2de12ae5082c33eb4fdc5
-D:freeswitch=1.10.8-r0 pkgconfig
-p:pc:freeswitch=1.10.8
-
 C:Q1ZgAF3MVDOf8NYFBUujGaMhvInJw=
 P:poppler-glib
 V:22.11.0-r0
@@ -40854,20 +40914,6 @@ t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:util-linux so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libusb-0.1.so.4
 p:cmd:apcaccess=3.14.14-r3 cmd:apctest=3.14.14-r3 cmd:apcupsd=3.14.14-r3 cmd:smtp=3.14.14-r3
-
-C:Q16XlTjuuqcO1izEqvPNCVj3j7SSg=
-P:freeswitch-static
-V:1.10.8-r0
-A:ppc64le
-S:5762586
-I:18366464
-T:A communications platform written in C from the ground up (static library)
-U:https://www.freeswitch.org/
-L:MPL-1.1
-o:freeswitch
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667998723
-c:40ae2e500da1eedc4aa2de12ae5082c33eb4fdc5
 
 C:Q1q7iuG2eoeleoQ6F/aC7nM1r/vVg=
 P:inih-inireader-dev
@@ -43948,22 +43994,6 @@ c:5486cbe86fb9ef78960c3c3b3275dd60a159504a
 D:so:libc.musl-ppc64le.so.1 so:libunistring.so.5
 p:so:libidn2.so.0=0.3.8
 
-C:Q1ygz9j2jdl52jDzN03gjEWdDS3m0=
-P:sofia-sip
-V:1.13.14-r2
-A:ppc64le
-S:749150
-I:2445312
-T:RFC3261 compliant SIP User-Agent library
-U:https://github.com/freeswitch/sofia-sip
-L:LGPL-2.1-only
-o:sofia-sip
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1693246315
-c:1e294e95342200e2ebf5909e7b32fc69f43f00e2
-D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.3 so:libglib-2.0.so.0 so:libssl.so.3 so:libz.so.1
-p:so:libsofia-sip-ua-glib.so.3=3.0.0 so:libsofia-sip-ua.so.0=0.6.0 cmd:addrinfo=1.13.14-r2 cmd:localinfo=1.13.14-r2 cmd:sip-date=1.13.14-r2 cmd:sip-dig=1.13.14-r2 cmd:sip-options=1.13.14-r2 cmd:stunc=1.13.14-r2
-
 C:Q1CpLQ52OFwQvFBGOMbN+Ic5NH62c=
 P:musl
 V:1.2.3-r5
@@ -44896,21 +44926,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1670045894
 c:8a914f04d1d17efa31741148b6216b3c6030011d
 i:openrc=0.45.2-r7 bash-completion
-
-C:Q1GaOlREAB7DkzULQJRhsyrBcuscg=
-P:freeswitch-snmp
-V:1.10.8-r0
-A:ppc64le
-S:7670
-I:90112
-T:Freeswitch SNMP module
-U:https://www.freeswitch.org/
-L:MPL-1.1
-o:freeswitch
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667998723
-c:40ae2e500da1eedc4aa2de12ae5082c33eb4fdc5
-D:so:libc.musl-ppc64le.so.1 so:libfreeswitch.so.1 so:libnetsnmp.so.40 so:libnetsnmpagent.so.40
 
 C:Q1eu/aCBooW5yDi37lDlSHV5uHNgE=
 P:linux-firmware-atmel
@@ -47534,6 +47549,20 @@ t:1666263967
 c:7ef5759924d035db4893befd7a383d647009f5d6
 D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libprotobuf.so.32 so:libprotoc.so.32 so:libstdc++.so.6
 p:cmd:protoc-c=1.4.1-r1 cmd:protoc-gen-c=1.4.1-r1
+
+C:Q1mlIyv3aiWk5H3fVWB+RFbnXm2NY=
+P:freeswitch-static
+V:1.10.10-r0
+A:ppc64le
+S:5771931
+I:18391040
+T:A communications platform written in C from the ground up (static library)
+U:https://www.freeswitch.org/
+L:MPL-1.1
+o:freeswitch
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1703156078
+c:1434f78ba68faf170f580bba61e3af5f9f4084cc
 
 C:Q1LWtF+ZdcmWppWXxWoCWsY79lE+E=
 P:ntfs-3g-doc
@@ -51385,20 +51414,6 @@ t:1666634065
 c:797244d81c28bfefdc7eb77bd7d46477ee114ea5
 i:openrc rtpproxy=2.1.1-r1
 
-C:Q1d3WoDHUYoJCbSI36xSVF/JvS/Qg=
-P:freeswitch-timezones
-V:1.10.8-r0
-A:ppc64le
-S:16463
-I:118784
-T:Freeswitch timezone configuration
-U:https://www.freeswitch.org/
-L:MPL-1.1
-o:freeswitch
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667998723
-c:40ae2e500da1eedc4aa2de12ae5082c33eb4fdc5
-
 C:Q1StWozK/zfENJxr6jxDP8A6BL7Qw=
 P:hwdata
 V:0.364-r0
@@ -53567,20 +53582,20 @@ c:23c7feb856fb03f96610a374bcb83740ec2a2a6b
 D:/bin/sh so:libc.musl-ppc64le.so.1 so:libcap.so.2 so:libgnutls.so.30 so:libnettle.so.8
 p:cmd:chronyc=4.3-r0 cmd:chronyd=4.3-r0
 
-C:Q1eaYeXvF7B6VgK+fjRWijVHOxPKM=
-P:freeswitch-python3
-V:1.10.8-r0
+C:Q1bWyxC0uqOaoxT+T9o/YY8a4Iwuk=
+P:freeswitch-snmp
+V:1.10.10-r0
 A:ppc64le
-S:54003
-I:233472
-T:Freeswitch Python3 module
+S:7669
+I:90112
+T:Freeswitch SNMP module
 U:https://www.freeswitch.org/
 L:MPL-1.1
 o:freeswitch
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667998723
-c:40ae2e500da1eedc4aa2de12ae5082c33eb4fdc5
-D:so:libc.musl-ppc64le.so.1 so:libfreeswitch.so.1 so:libgcc_s.so.1 so:libpython3.10.so.1.0 so:libstdc++.so.6
+t:1703156078
+c:1434f78ba68faf170f580bba61e3af5f9f4084cc
+D:so:libc.musl-ppc64le.so.1 so:libfreeswitch.so.1 so:libnetsnmp.so.40 so:libnetsnmpagent.so.40
 
 C:Q17yYUkbmDnuTEh9r55k9yPUt4IRU=
 P:libxext-dev
@@ -56551,21 +56566,6 @@ t:1681461364
 c:62f9529517f32b59704fdd60819420373b6dd4c5
 D:kamailio so:libc.musl-ppc64le.so.1 so:libcurl.so.4 so:libsrdb1.so.1 so:libxml2.so.2
 
-C:Q1doOJgyyJvc+ni9I0mA9df8sM5y4=
-P:freeswitch-sangoma
-V:1.10.8-r0
-A:ppc64le
-S:14797
-I:90112
-T:Freeswitch Sangoma Media Transcode Codec Module
-U:https://www.freeswitch.org/
-L:MPL-1.1
-o:freeswitch
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667998723
-c:40ae2e500da1eedc4aa2de12ae5082c33eb4fdc5
-D:so:libc.musl-ppc64le.so.1 so:libfreeswitch.so.1 so:libsngtc_node.so
-
 C:Q1RvV+dBzTPfOkB7dpbQ0VrjtL/gw=
 P:bluez-zsh-completion
 V:5.66-r1
@@ -57753,6 +57753,22 @@ t:1667998048
 c:0184fab176769150408a920c29f8dfe4f22bf483
 D:uwsgi so:libc.musl-ppc64le.so.1
 
+C:Q1zeEz7oGBv8CekwyHxrO3sIp7G08=
+P:freeswitch-dev
+V:1.10.10-r0
+A:ppc64le
+S:215995
+I:1130496
+T:A communications platform written in C from the ground up (development files)
+U:https://www.freeswitch.org/
+L:MPL-1.1
+o:freeswitch
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1703156078
+c:1434f78ba68faf170f580bba61e3af5f9f4084cc
+D:freeswitch=1.10.10-r0 pkgconfig
+p:pc:freeswitch=1.10.10
+
 C:Q1Przs/sOEEO/N5oBv3rYz9cPnZvs=
 P:py3-chardet
 V:5.0.0-r0
@@ -58311,21 +58327,6 @@ k:900
 D:!vlan so:libc.musl-ppc64le.so.1
 p:ifupdown-any cmd:ifctrstat=0.12.1-r1 cmd:ifdown=0.12.1-r1 cmd:ifparse=0.12.1-r1 cmd:ifquery=0.12.1-r1 cmd:ifup=0.12.1-r1 cmd:ifupdown=0.12.1-r1
 
-C:Q1uX8rN3JqE8xzsDlySdqxdm9j+cg=
-P:freeswitch-pgsql
-V:1.10.8-r0
-A:ppc64le
-S:8717
-I:90112
-T:Freeswitch PostgreSQL Module
-U:https://www.freeswitch.org/
-L:MPL-1.1
-o:freeswitch
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667998723
-c:40ae2e500da1eedc4aa2de12ae5082c33eb4fdc5
-D:so:libc.musl-ppc64le.so.1 so:libfreeswitch.so.1 so:libpq.so.5
-
 C:Q1mxAaWtff11hFG10kwtYm6Ot7BN0=
 P:fftw
 V:3.3.10-r1
@@ -58646,6 +58647,22 @@ t:1620818889
 c:d32e0b04b9e2cb99ad18a198ba8e625df15cbc44
 D:so:libX11.so.6 so:libc.musl-ppc64le.so.1
 p:so:libXfixes.so.3=3.1.0
+
+C:Q1Ayh+EjX0cYvAwvdN6IPD1s0pqIM=
+P:freeswitch
+V:1.10.10-r0
+A:ppc64le
+S:10800304
+I:28639232
+T:A communications platform written in C from the ground up
+U:https://www.freeswitch.org/
+L:MPL-1.1
+o:freeswitch
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1703156078
+c:1434f78ba68faf170f580bba61e3af5f9f4084cc
+D:/bin/sh so:libc.musl-ppc64le.so.1 so:libcrypto.so.3 so:libcurl.so.4 so:libedit.so.0 so:libgcc_s.so.1 so:libilbc.so.0 so:libks.so.1 so:libldns.so.3 so:liblua-5.3.so.0 so:libmp3lame.so.0 so:libmpg123.so.0 so:libncursesw.so.6 so:libodbc.so.2 so:libopus.so.0 so:libpcre.so.1 so:libportaudio.so.2 so:libpq.so.5 so:libshout.so.3 so:libsndfile.so.1 so:libsofia-sip-ua.so.0 so:libspandsp.so.3 so:libspeex.so.1 so:libspeexdsp.so.1 so:libsqlite3.so.0 so:libssl.so.3 so:libstdc++.so.6 so:libuuid.so.1
+p:so:libfreeswitch.so.1=1.0.0 cmd:freeswitch=1.10.10-r0 cmd:fs_cli=1.10.10-r0 cmd:fs_encode=1.10.10-r0 cmd:fs_ivrd=1.10.10-r0 cmd:fs_tts=1.10.10-r0 cmd:fsxs=1.10.10-r0 cmd:gentls_cert=1.10.10-r0 cmd:switch_eavesdrop=1.10.10-r0 cmd:tone2wav=1.10.10-r0
 
 C:Q1Jtf4NtjbssYv/cYfb7RLgMzBoWY=
 P:uwsgi-pam
@@ -60865,6 +60882,21 @@ c:86524d229093d13f08adfce73cb67be6c5e80a87
 D:so:libgc.so.1 so:libstdc++.so.6
 p:so:libgccpp.so.1=1.5.0
 
+C:Q1FA3fT89U5M0nCjwokilI5Zglg64=
+P:freeswitch-pgsql
+V:1.10.10-r0
+A:ppc64le
+S:8717
+I:90112
+T:Freeswitch PostgreSQL Module
+U:https://www.freeswitch.org/
+L:MPL-1.1
+o:freeswitch
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1703156078
+c:1434f78ba68faf170f580bba61e3af5f9f4084cc
+D:so:libc.musl-ppc64le.so.1 so:libfreeswitch.so.1 so:libpq.so.5
+
 C:Q15ZTa7H1rOxF+C/KFHF6a8SkIU2w=
 P:gst-plugins-base-lang
 V:1.20.6-r0
@@ -62646,6 +62678,20 @@ D:so:libblkid.so.1 so:libc.musl-ppc64le.so.1 so:libmount.so.1 so:libsmartcols.so
 p:cmd:findmnt=2.38.1-r1
 i:util-linux=2.38.1-r1
 
+C:Q1LVleCRS7UirptISDEqj8W49KbvE=
+P:freeswitch-dbg
+V:1.10.10-r0
+A:ppc64le
+S:9488072
+I:22347776
+T:A communications platform written in C from the ground up (debug symbols)
+U:https://www.freeswitch.org/
+L:MPL-1.1
+o:freeswitch
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1703156078
+c:1434f78ba68faf170f580bba61e3af5f9f4084cc
+
 C:Q1jx+W5tDhDxMcifdIjsoToohwMXQ=
 P:py3-coverage
 V:6.5.0-r0
@@ -62873,22 +62919,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-file-slurp-tiny=0.004-r2
-
-C:Q1Bcpzc6iSjJO/M5ZXDA0eh24iQDA=
-P:freeswitch
-V:1.10.8-r0
-A:ppc64le
-S:10797565
-I:28639232
-T:A communications platform written in C from the ground up
-U:https://www.freeswitch.org/
-L:MPL-1.1
-o:freeswitch
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667998723
-c:40ae2e500da1eedc4aa2de12ae5082c33eb4fdc5
-D:/bin/sh so:libc.musl-ppc64le.so.1 so:libcrypto.so.3 so:libcurl.so.4 so:libedit.so.0 so:libgcc_s.so.1 so:libilbc.so.0 so:libks.so.1 so:libldns.so.3 so:liblua-5.3.so.0 so:libmp3lame.so.0 so:libmpg123.so.0 so:libncursesw.so.6 so:libodbc.so.2 so:libopus.so.0 so:libpcre.so.1 so:libportaudio.so.2 so:libpq.so.5 so:libshout.so.3 so:libsndfile.so.1 so:libsofia-sip-ua.so.0 so:libspandsp.so.3 so:libspeex.so.1 so:libspeexdsp.so.1 so:libsqlite3.so.0 so:libssl.so.3 so:libstdc++.so.6 so:libuuid.so.1
-p:so:libfreeswitch.so.1=1.0.0 cmd:freeswitch=1.10.8-r0 cmd:fs_cli=1.10.8-r0 cmd:fs_encode=1.10.8-r0 cmd:fs_ivrd=1.10.8-r0 cmd:fs_tts=1.10.8-r0 cmd:fsxs=1.10.8-r0 cmd:gentls_cert=1.10.8-r0 cmd:switch_eavesdrop=1.10.8-r0 cmd:tone2wav=1.10.8-r0
 
 C:Q1q9rUiWoeKg4Cgb15h7PoAG0YGgw=
 P:libnetfilter_acct
@@ -65054,21 +65084,6 @@ o:lua-cjson
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
-
-C:Q1CVU0tFdxSVF+RUWGlXZrT4y4EJI=
-P:freeswitch-perlesl
-V:1.10.8-r0
-A:ppc64le
-S:53575
-I:241664
-T:Freeswitch Perl ESL module
-U:https://www.freeswitch.org/
-L:MPL-1.1
-o:freeswitch
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667998723
-c:40ae2e500da1eedc4aa2de12ae5082c33eb4fdc5
-D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libperl.so so:libstdc++.so.6
 
 C:Q1W1BgznOpPmqnNasjZS+WKhLrBLU=
 P:libaio-dev
@@ -68727,6 +68742,22 @@ t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 i:docs sqsh=2.5.16.1-r5
 
+C:Q1qbGV2MdUuA0kB0K3zQWMS8tf73w=
+P:sofia-sip
+V:1.13.17-r0
+A:ppc64le
+S:749382
+I:2445312
+T:RFC3261 compliant SIP User-Agent library
+U:https://github.com/freeswitch/sofia-sip
+L:LGPL-2.1-only
+o:sofia-sip
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1703153710
+c:f118d5d0afa004d0583a6efb1fe33cf3d7145c54
+D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.3 so:libglib-2.0.so.0 so:libssl.so.3 so:libz.so.1
+p:so:libsofia-sip-ua-glib.so.3=3.0.0 so:libsofia-sip-ua.so.0=0.6.0 cmd:addrinfo=1.13.17-r0 cmd:localinfo=1.13.17-r0 cmd:sip-date=1.13.17-r0 cmd:sip-dig=1.13.17-r0 cmd:sip-options=1.13.17-r0 cmd:stunc=1.13.17-r0
+
 C:Q1mV5fBHsaDM3VSDfhzciRc39W/TM=
 P:talloc-doc
 V:2.3.4-r0
@@ -71334,21 +71365,6 @@ c:83408ccfb366520a863c0a409488b78c7782f40b
 D:libmaxminddb-libs=1.7.1-r0 pkgconfig
 p:pc:libmaxminddb=1.7.1
 
-C:Q1fjyyTFr45+AYzYCNuR4+CtkW1bo=
-P:freeswitch-flite
-V:1.10.8-r0
-A:ppc64le
-S:4691
-I:90112
-T:Freeswitch Text To Speech Module
-U:https://www.freeswitch.org/
-L:MPL-1.1
-o:freeswitch
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667998723
-c:40ae2e500da1eedc4aa2de12ae5082c33eb4fdc5
-D:so:libc.musl-ppc64le.so.1 so:libflite.so.1 so:libflite_cmu_us_awb.so.1 so:libflite_cmu_us_kal.so.1 so:libflite_cmu_us_kal16.so.1 so:libflite_cmu_us_rms.so.1 so:libflite_cmu_us_slt.so.1 so:libfreeswitch.so.1
-
 C:Q1b69BoLnUQF3JvS3Akz2JTuXDGXg=
 P:libshout-dev
 V:2.4.6-r1
@@ -73748,22 +73764,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-cgi-session=4.48-r3
-
-C:Q10V9kxUwZtgtj0OiRZGXOYqCUQOM=
-P:libks-dev
-V:1.8.0-r0
-A:ppc64le
-S:51657
-I:339968
-T:Foundational support for signalwire C products (development files)
-U:https://github.com/signalwire/libks
-L:MIT
-o:libks
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1667551154
-c:1cc62a50bb8550f4499087aa2209153006aed104
-D:libks=1.8.0-r0 pkgconfig
-p:pc:libks=1.8.0
 
 C:Q1kkpa9xprIgdfeWAUwJrZBDB09UY=
 P:lighttpd-openrc
