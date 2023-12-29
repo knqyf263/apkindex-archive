@@ -10729,22 +10729,6 @@ c:98d904f475c6a5d8bf513f59c41733c6f6fe1ae2
 D:so:libc.musl-armhf.so.1 so:libusb-1.0.so.0
 p:so:libopenobex.so.2=1.7.2 cmd:obex-check-device=1.7.2-r4
 
-C:Q1WHr8WPn1an3bdDR6nSafDd/K8l4=
-P:libde265
-V:1.0.12-r0
-A:armhf
-S:169773
-I:409600
-T:Open h.265 video codec implementation
-U:https://github.com/strukturag/libde265
-L:LGPL-3.0-or-later
-o:libde265
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1686684598
-c:020b55f3b10ce5cf43f3ad567d3c6ec47164396e
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-p:so:libde265.so.0=0.1.5
-
 C:Q1W1MlNPjGajSyV5mvPwpA9VXOWPI=
 P:nagios-plugins-uptime
 V:2.4.2-r0
@@ -17442,22 +17426,6 @@ c:1fdcc7121e207cc41fc068a3582cba3be1deefc2
 D:so:libc.musl-armhf.so.1
 p:so:libdav1d.so.6=6.6.0
 
-C:Q1aPcjNFylAILF7ld3kByCqP4Gu18=
-P:libde265-examples
-V:1.0.12-r0
-A:armhf
-S:8254
-I:81920
-T:Open h.265 video codec implementation (examples)
-U:https://github.com/strukturag/libde265
-L:LGPL-3.0-or-later
-o:libde265
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1686684598
-c:020b55f3b10ce5cf43f3ad567d3c6ec47164396e
-D:libde265=1.0.12-r0 so:libc.musl-armhf.so.1 so:libde265.so.0 so:libgcc_s.so.1 so:libstdc++.so.6
-p:cmd:libde265-dec265=1.0.12-r0
-
 C:Q12MhjTspUh+bk8RpwJ61VNa4p+Xw=
 P:sqlite-libs
 V:3.40.1-r0
@@ -17694,6 +17662,22 @@ m:Nathan Angelacos <nangel@alpinelinux.org>
 t:1681461364
 c:62f9529517f32b59704fdd60819420373b6dd4c5
 D:kamailio so:libc.musl-armhf.so.1 so:libcrypto.so.3 so:libcurl.so.4 so:libssl.so.3
+
+C:Q1SlK5w71v/QV36KO2XxNZ1xhDxbo=
+P:libde265-dev
+V:1.0.15-r0
+A:armhf
+S:258482
+I:757760
+T:Open h.265 video codec implementation (development files)
+U:https://github.com/strukturag/libde265
+L:LGPL-3.0-or-later
+o:libde265
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1703846137
+c:c42d0fc848a2f17dae89b33a57bcee8a3c0d79b5
+D:libde265=1.0.15-r0 pkgconfig
+p:pc:libde265=1.0.15
 
 C:Q1fKW+0cWzxBfWa8WKH+Cg7j6WumM=
 P:harfbuzz-doc
@@ -35406,6 +35390,22 @@ m:Sheila Aman <sheila@vulpine.house>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-heap=0.80-r4
+
+C:Q1iXbMWBnyevJ3iTa09sTet5FuQBU=
+P:libde265-examples
+V:1.0.15-r0
+A:armhf
+S:8424
+I:81920
+T:Open h.265 video codec implementation (examples)
+U:https://github.com/strukturag/libde265
+L:LGPL-3.0-or-later
+o:libde265
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1703846137
+c:c42d0fc848a2f17dae89b33a57bcee8a3c0d79b5
+D:libde265=1.0.15-r0 so:libc.musl-armhf.so.1 so:libde265.so.0 so:libgcc_s.so.1 so:libstdc++.so.6
+p:cmd:libde265-dec265=1.0.15-r0
 
 C:Q1Wj0FOY2x+hSkGEUU0hpO2oNII4E=
 P:amavisd-milter
@@ -61993,22 +61993,6 @@ c:306422b59131ff32094459302dbd4d3abb759b91
 D:vulkan-headers pkgconfig vulkan-loader=1.3.231.2-r0
 p:pc:vulkan=1.3.231
 
-C:Q1a3hlD8Iqq2835DSDtvc1R9xRcDw=
-P:libde265-dev
-V:1.0.12-r0
-A:armhf
-S:258170
-I:757760
-T:Open h.265 video codec implementation (development files)
-U:https://github.com/strukturag/libde265
-L:LGPL-3.0-or-later
-o:libde265
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1686684598
-c:020b55f3b10ce5cf43f3ad567d3c6ec47164396e
-D:libde265=1.0.12-r0 pkgconfig
-p:pc:libde265=1.0.12
-
 C:Q1InHDhZBASI4SgVAh8cvOAp3ei/8=
 P:elfutils
 V:0.187-r2
@@ -71536,6 +71520,22 @@ t:1653662541
 c:e5edd26ab63d4dc4ac71d3eeb19cf254e61ce14e
 D:openssh-client fuse3 so:libc.musl-armhf.so.1 so:libfuse3.so.3 so:libglib-2.0.so.0
 p:cmd:mount.fuse.sshfs=3.7.3-r0 cmd:mount.sshfs=3.7.3-r0 cmd:sshfs=3.7.3-r0
+
+C:Q1yPoVotijewOZwzUuXz1Du+OCI5c=
+P:libde265
+V:1.0.15-r0
+A:armhf
+S:170004
+I:409600
+T:Open h.265 video codec implementation
+U:https://github.com/strukturag/libde265
+L:LGPL-3.0-or-later
+o:libde265
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1703846137
+c:c42d0fc848a2f17dae89b33a57bcee8a3c0d79b5
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+p:so:libde265.so.0=0.1.8
 
 C:Q1XBEcAGaj4B+AhZC31+i2EOCMGR4=
 P:squid-lang-lt
