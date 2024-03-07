@@ -304,21 +304,6 @@ c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:perl perl-time-parsedate perl-device-serialport perl-astro-suntime
 p:cmd:x10client=0.04-r5 cmd:x10server=0.04-r5
 
-C:Q1AB7TdVjlxCbr1RzgEZIu3PztU/Y=
-P:py-unbound
-V:1.19.1-r0
-A:x86_64
-S:53411
-I:258048
-T:Python bindings to libunbound
-U:https://nlnetlabs.nl/projects/unbound/about/
-L:BSD-3-Clause
-o:unbound
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1707999799
-c:b7e9dd8a34ff68c72e6561e9ea752af923c3b08b
-D:so:libc.musl-x86_64.so.1 so:libpython3.10.so.1.0 so:libunbound.so.8
-
 C:Q19BPv8KS9JiLm3cYj9xsGfySbxMQ=
 P:perl-file-rsync-doc
 V:0.76-r2
@@ -4364,21 +4349,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-io-multiplex=1.16-r3
 
-C:Q1Q754ex0/xcI5M0IllleezPkOqXs=
-P:unbound-dbg
-V:1.19.1-r0
-A:x86_64
-S:4777138
-I:10780672
-T:Unbound is a validating, recursive, and caching DNS resolver (debug symbols)
-U:https://nlnetlabs.nl/projects/unbound/about/
-L:BSD-3-Clause
-o:unbound
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1707999799
-c:b7e9dd8a34ff68c72e6561e9ea752af923c3b08b
-D:dnssec-root
-
 C:Q1tMx2CXIxdhhZAjkYrN2RHULDlc8=
 P:s6-rc
 V:0.5.3.2-r0
@@ -5600,6 +5570,22 @@ t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:so:libc.musl-x86_64.so.1
 i:lua5.3 lua-struct=0.2-r3
+
+C:Q1QZV4D4x9Na+eEOjxnJWk7HRPkZc=
+P:unbound
+V:1.19.2-r0
+A:x86_64
+S:985030
+I:2211840
+T:Unbound is a validating, recursive, and caching DNS resolver
+U:https://nlnetlabs.nl/projects/unbound/about/
+L:BSD-3-Clause
+o:unbound
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1709838851
+c:122069918135a0e51403a5858fbf97cebb5dbd68
+D:dnssec-root /bin/sh so:libc.musl-x86_64.so.1 so:libcrypto.so.3 so:libevent-2.1.so.7 so:libexpat.so.1 so:libssl.so.3 so:libunbound.so.8
+p:cmd:unbound-anchor=1.19.2-r0 cmd:unbound-checkconf=1.19.2-r0 cmd:unbound-control-setup=1.19.2-r0 cmd:unbound-control=1.19.2-r0 cmd:unbound-host=1.19.2-r0 cmd:unbound=1.19.2-r0
 
 C:Q1MggYihywjE8wqLJ+d8V8QjM5zt8=
 P:openvpn-ad-check
@@ -10188,6 +10174,21 @@ c:bf047c4a9dcacf34fa988cbc777be8adf9591596
 D:so:libaom.so.3 so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:cmd:aomdec=3.5.0-r0 cmd:aomenc=3.5.0-r0
 
+C:Q16v6AjS4TwC3Vmjkd0+HbXdo/nmo=
+P:unbound-openrc
+V:1.19.2-r0
+A:x86_64
+S:2507
+I:24576
+T:Unbound is a validating, recursive, and caching DNS resolver (OpenRC init scripts)
+U:https://nlnetlabs.nl/projects/unbound/about/
+L:BSD-3-Clause
+o:unbound
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1709838851
+c:122069918135a0e51403a5858fbf97cebb5dbd68
+i:openrc unbound=1.19.2-r0
+
 C:Q1XEP9Q9c260dL0XLwUToolCXWrHc=
 P:dhcp-dev
 V:4.4.3_p1-r1
@@ -10554,6 +10555,22 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1627487152
 c:456d8455fbab16246e6bdc32c44410f3e8c43fc9
 i:docs perl-extutils-pkgconfig=1.16-r3
+
+C:Q14TDfFAUaZ5gQPoKM2NeGXlczvXc=
+P:unbound-migrate
+V:1.19.2-r0
+A:x86_64
+S:2980
+I:16384
+T:Simple tool to migrate from dnscache to unbound
+U:https://nlnetlabs.nl/projects/unbound/about/
+L:BSD-3-Clause
+o:unbound
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1709838851
+c:122069918135a0e51403a5858fbf97cebb5dbd68
+D:/bin/sh apk-tools openrc
+p:cmd:migrate-dnscache-to-unbound=1.19.2-r0
 
 C:Q14rgCPNqEJ2kSVGjrnWeYjQthhjo=
 P:perl-crypt-openssl-rsa-doc
@@ -10969,6 +10986,21 @@ t:1673786776
 c:2c89299bdbcfb1aa1690460d109d1f5e0cbbf434
 D:so:libc.musl-x86_64.so.1 so:libnetsnmp.so.40 so:libnetsnmpagent.so.40 so:libnetsnmptrapd.so.40
 p:cmd:mib2c-update=5.9.3-r2 cmd:mib2c=5.9.3-r2 cmd:net-snmp-cert=5.9.3-r2 cmd:snmp-bridge-mib=5.9.3-r2 cmd:traptoemail=5.9.3-r2
+
+C:Q1coNpHnqJvT3ttwbTtOJSvHdja7c=
+P:unbound-doc
+V:1.19.2-r0
+A:x86_64
+S:225916
+I:724992
+T:Unbound is a validating, recursive, and caching DNS resolver (documentation)
+U:https://nlnetlabs.nl/projects/unbound/about/
+L:BSD-3-Clause
+o:unbound
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1709838851
+c:122069918135a0e51403a5858fbf97cebb5dbd68
+i:docs unbound=1.19.2-r0
 
 C:Q1ZqPcs0E/+/66QpT4yWs4HhcApV8=
 P:sqlite-tcl-doc
@@ -24401,21 +24433,6 @@ t:1669087759
 c:766d32aa68a0724395d8a2aabf8d59a35bd2d9b8
 i:docs perl-io-socket-ssl=2.077-r0
 
-C:Q1jP6Ip+xQlanmiIN6Zj0nUhXi1J0=
-P:unbound-doc
-V:1.19.1-r0
-A:x86_64
-S:225935
-I:724992
-T:Unbound is a validating, recursive, and caching DNS resolver (documentation)
-U:https://nlnetlabs.nl/projects/unbound/about/
-L:BSD-3-Clause
-o:unbound
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1707999799
-c:b7e9dd8a34ff68c72e6561e9ea752af923c3b08b
-i:docs unbound=1.19.1-r0
-
 C:Q1QD1afsQMWcNngaHe3moI3C8EUwc=
 P:libblkid
 V:2.38.1-r1
@@ -26390,6 +26407,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1670235759
 c:f92664d224b5855046c5e64a17b3092072ede148
 i:docs zfs=2.1.7-r0
+
+C:Q1weRXeVC8cedlQWlm8PJIxcVXAoM=
+P:unbound-dev
+V:1.19.2-r0
+A:x86_64
+S:13804
+I:69632
+T:Unbound is a validating, recursive, and caching DNS resolver (development files)
+U:https://nlnetlabs.nl/projects/unbound/about/
+L:BSD-3-Clause
+o:unbound
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1709838851
+c:122069918135a0e51403a5858fbf97cebb5dbd68
+D:expat-dev pc:libevent pc:python3 pkgconfig unbound-libs=1.19.2-r0
+p:pc:libunbound=1.19.2
 
 C:Q1e1ZstojznJxU/u1GaeICYKXGAEk=
 P:pwgen-doc
@@ -32254,21 +32287,6 @@ o:readline
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1664273127
 c:b4e918d160824e1d7994b4628758c415050177ef
-
-C:Q1A+RHwdHdQGEJVFNGOS5Vh0/3PKE=
-P:unbound-openrc
-V:1.19.1-r0
-A:x86_64
-S:2506
-I:24576
-T:Unbound is a validating, recursive, and caching DNS resolver (OpenRC init scripts)
-U:https://nlnetlabs.nl/projects/unbound/about/
-L:BSD-3-Clause
-o:unbound
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1707999799
-c:b7e9dd8a34ff68c72e6561e9ea752af923c3b08b
-i:openrc unbound=1.19.1-r0
 
 C:Q1x18wXOp+tsSparfA5hR7/0DviZA=
 P:scstadmin-doc
@@ -44212,22 +44230,6 @@ c:a41be9f7e7d135fc789628db15918f79f0e325ed
 D:musl so:libc.musl-x86_64.so.1 so:libmd.so.0
 p:so:libbsd.so.0=0.11.7
 
-C:Q1CGg0+2IYH8jqB8sN7lFGzgmttoc=
-P:unbound-libs
-V:1.19.1-r0
-A:x86_64
-S:403650
-I:864256
-T:Unbound is a validating, recursive, and caching DNS resolver (libraries)
-U:https://nlnetlabs.nl/projects/unbound/about/
-L:BSD-3-Clause
-o:unbound
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1707999799
-c:b7e9dd8a34ff68c72e6561e9ea752af923c3b08b
-D:so:libc.musl-x86_64.so.1 so:libcrypto.so.3 so:libevent-2.1.so.7 so:libssl.so.3
-p:so:libunbound.so.8=8.1.24
-
 C:Q1eVBFeSXtDb0WZCpT/nMva+XZ99U=
 P:lua5.4-lxc
 V:3.0.2-r1
@@ -47405,6 +47407,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl perl-html-parser
+
+C:Q1Zk3RzVaPspPrQKzu4mpIyRSr+m8=
+P:unbound-dbg
+V:1.19.2-r0
+A:x86_64
+S:4776990
+I:10780672
+T:Unbound is a validating, recursive, and caching DNS resolver (debug symbols)
+U:https://nlnetlabs.nl/projects/unbound/about/
+L:BSD-3-Clause
+o:unbound
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1709838851
+c:122069918135a0e51403a5858fbf97cebb5dbd68
+D:dnssec-root
 
 C:Q1x4tS4Ao4VP3nhBT0FTcmX8clT2o=
 P:byacc
@@ -50877,6 +50894,22 @@ t:1599639506
 c:24e960791e3e6c28efc0a4b7204e679a7d5e08a3
 D:so:libX11.so.6 so:libc.musl-x86_64.so.1
 p:so:libXdamage.so.1=1.1.0
+
+C:Q1JSYD7VFfQrPzMEPGJnQlZoAVlWo=
+P:unbound-libs
+V:1.19.2-r0
+A:x86_64
+S:403646
+I:864256
+T:Unbound is a validating, recursive, and caching DNS resolver (libraries)
+U:https://nlnetlabs.nl/projects/unbound/about/
+L:BSD-3-Clause
+o:unbound
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1709838851
+c:122069918135a0e51403a5858fbf97cebb5dbd68
+D:so:libc.musl-x86_64.so.1 so:libcrypto.so.3 so:libevent-2.1.so.7 so:libssl.so.3
+p:so:libunbound.so.8=8.1.25
 
 C:Q15gREBObh2Mu2B3+//I859MImdX8=
 P:ncftp-doc
@@ -61745,22 +61778,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1648554999
 c:e094209285e5a7df212956e8c9b3991b09aefa39
 
-C:Q197du3jDbfQG18PkgrGWBqI3GzXM=
-P:unbound-dev
-V:1.19.1-r0
-A:x86_64
-S:13794
-I:69632
-T:Unbound is a validating, recursive, and caching DNS resolver (development files)
-U:https://nlnetlabs.nl/projects/unbound/about/
-L:BSD-3-Clause
-o:unbound
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1707999799
-c:b7e9dd8a34ff68c72e6561e9ea752af923c3b08b
-D:expat-dev pc:libevent pc:python3 pkgconfig unbound-libs=1.19.1-r0
-p:pc:libunbound=1.19.1
-
 C:Q1OFpfogUiUGEwc/ogQlGE+KdmjR4=
 P:ndisc6-dnssort
 V:1.0.6-r0
@@ -67674,22 +67691,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1673496470
 c:398aec6128074fe35070248b4303d5517f7899fe
 
-C:Q1vD9Yg/q7N+LwPNynlUqSR8sCuBI=
-P:unbound-migrate
-V:1.19.1-r0
-A:x86_64
-S:2984
-I:16384
-T:Simple tool to migrate from dnscache to unbound
-U:https://nlnetlabs.nl/projects/unbound/about/
-L:BSD-3-Clause
-o:unbound
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1707999799
-c:b7e9dd8a34ff68c72e6561e9ea752af923c3b08b
-D:/bin/sh apk-tools openrc
-p:cmd:migrate-dnscache-to-unbound=1.19.1-r0
-
 C:Q13d006AgVDo7xoToznp2fAJ5kA0k=
 P:ltrace
 V:0.7.3-r5
@@ -72418,6 +72419,21 @@ c:420d875c4d8cf332e8018aadd3f6d281320c2623
 D:so:libc.musl-x86_64.so.1 so:libcrypto.so.3 so:libnl-3.so.200 so:libnl-genl-3.so.200 so:libssl.so.3
 p:cmd:hostapd=2.10-r5 cmd:hostapd_cli=2.10-r5 cmd:nt_password_hash=2.10-r5
 
+C:Q1Ld0LjwPC0FysWh2fwvYuLdk+Vrw=
+P:py-unbound
+V:1.19.2-r0
+A:x86_64
+S:53408
+I:258048
+T:Python bindings to libunbound
+U:https://nlnetlabs.nl/projects/unbound/about/
+L:BSD-3-Clause
+o:unbound
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1709838851
+c:122069918135a0e51403a5858fbf97cebb5dbd68
+D:so:libc.musl-x86_64.so.1 so:libpython3.10.so.1.0 so:libunbound.so.8
+
 C:Q1f2/ZSNqd/JfVvC2Wefz8srbtOIc=
 P:perl-dbd-sqlite
 V:1.72-r0
@@ -73450,22 +73466,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1667998048
 c:0184fab176769150408a920c29f8dfe4f22bf483
 D:uwsgi so:libGeoIP.so.1 so:libc.musl-x86_64.so.1
-
-C:Q1MrzEkUI65O91iB0Apnk11udYd/8=
-P:unbound
-V:1.19.1-r0
-A:x86_64
-S:985026
-I:2211840
-T:Unbound is a validating, recursive, and caching DNS resolver
-U:https://nlnetlabs.nl/projects/unbound/about/
-L:BSD-3-Clause
-o:unbound
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1707999799
-c:b7e9dd8a34ff68c72e6561e9ea752af923c3b08b
-D:dnssec-root /bin/sh so:libc.musl-x86_64.so.1 so:libcrypto.so.3 so:libevent-2.1.so.7 so:libexpat.so.1 so:libssl.so.3 so:libunbound.so.8
-p:cmd:unbound-anchor=1.19.1-r0 cmd:unbound-checkconf=1.19.1-r0 cmd:unbound-control-setup=1.19.1-r0 cmd:unbound-control=1.19.1-r0 cmd:unbound-host=1.19.1-r0 cmd:unbound=1.19.1-r0
 
 C:Q1E5pg2MhQPttUQL/QlrU6Y9ao9w0=
 P:nagios-plugins-ntp
