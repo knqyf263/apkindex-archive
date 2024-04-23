@@ -23024,9 +23024,11 @@
     "libauth-samba": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       },
       "dependencies": [
+        "samba-libs=4.19.5-r2",
         "so:libMESSAGING-samba4.so",
         "so:libc.musl-s390x.so.1",
         "so:libcliauth-samba4.so",
@@ -26961,9 +26963,11 @@
     "libsmbclient": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       },
       "dependencies": [
+        "samba-libs=4.19.5-r2",
         "so:libc.musl-s390x.so.1",
         "so:libcli-smb-common-samba4.so",
         "so:libdcerpc-samba-samba4.so",
@@ -27937,7 +27941,8 @@
     "libwbclient": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1"
@@ -42558,7 +42563,8 @@
     "pam-winbind": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1",
@@ -52737,9 +52743,11 @@
     "py3-samba": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       },
       "dependencies": [
+        "samba-libs=4.19.5-r2",
         "py3-tdb",
         "python3~3.12",
         "so:libMESSAGING-SEND-samba4.so",
@@ -52824,7 +52832,7 @@
         "so:libxattr-tdb-samba4.so"
       ],
       "provides": [
-        "py3.12:samba=4.19.5-r1"
+        "py3.12:samba=4.19.5-r2"
       ]
     },
     "py3-sanlock": {
@@ -55949,21 +55957,24 @@
     "samba": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       },
       "dependencies": [
-        "samba-server=4.19.5-r1",
-        "samba-client=4.19.5-r1",
-        "samba-common-tools=4.19.5-r1"
+        "samba-server=4.19.5-r2",
+        "samba-client=4.19.5-r2",
+        "samba-common-tools=4.19.5-r2"
       ]
     },
     "samba-client": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       },
       "dependencies": [
-        "samba-common=4.19.5-r1",
+        "samba-libs=4.19.5-r2",
+        "samba-common=4.19.5-r2",
         "so:libCHARSET3-samba4.so",
         "so:libaddns-samba4.so",
         "so:libarchive.so.13",
@@ -56027,36 +56038,38 @@
         "so:libutil-tdb-samba4.so"
       ],
       "provides": [
-        "cmd:cifsdd=4.19.5-r1",
-        "cmd:dbwrap_tool=4.19.5-r1",
-        "cmd:dumpmscat=4.19.5-r1",
-        "cmd:mdsearch=4.19.5-r1",
-        "cmd:mvxattr=4.19.5-r1",
-        "cmd:nmblookup=4.19.5-r1",
-        "cmd:oLschema2ldif=4.19.5-r1",
-        "cmd:regdiff=4.19.5-r1",
-        "cmd:regpatch=4.19.5-r1",
-        "cmd:regshell=4.19.5-r1",
-        "cmd:regtree=4.19.5-r1",
-        "cmd:rpcclient=4.19.5-r1",
-        "cmd:samba-regedit=4.19.5-r1",
-        "cmd:sharesec=4.19.5-r1",
-        "cmd:smbcacls=4.19.5-r1",
-        "cmd:smbclient=4.19.5-r1",
-        "cmd:smbcquotas=4.19.5-r1",
-        "cmd:smbget=4.19.5-r1",
-        "cmd:smbprint=4.19.5-r1",
-        "cmd:smbspool=4.19.5-r1",
-        "cmd:smbtar=4.19.5-r1",
-        "cmd:smbtree=4.19.5-r1"
+        "cmd:cifsdd=4.19.5-r2",
+        "cmd:dbwrap_tool=4.19.5-r2",
+        "cmd:dumpmscat=4.19.5-r2",
+        "cmd:mdsearch=4.19.5-r2",
+        "cmd:mvxattr=4.19.5-r2",
+        "cmd:nmblookup=4.19.5-r2",
+        "cmd:oLschema2ldif=4.19.5-r2",
+        "cmd:regdiff=4.19.5-r2",
+        "cmd:regpatch=4.19.5-r2",
+        "cmd:regshell=4.19.5-r2",
+        "cmd:regtree=4.19.5-r2",
+        "cmd:rpcclient=4.19.5-r2",
+        "cmd:samba-regedit=4.19.5-r2",
+        "cmd:sharesec=4.19.5-r2",
+        "cmd:smbcacls=4.19.5-r2",
+        "cmd:smbclient=4.19.5-r2",
+        "cmd:smbcquotas=4.19.5-r2",
+        "cmd:smbget=4.19.5-r2",
+        "cmd:smbprint=4.19.5-r2",
+        "cmd:smbspool=4.19.5-r2",
+        "cmd:smbtar=4.19.5-r2",
+        "cmd:smbtree=4.19.5-r2"
       ]
     },
     "samba-client-libs": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       },
       "dependencies": [
+        "samba-libs=4.19.5-r2",
         "so:libMESSAGING-SEND-samba4.so",
         "so:libMESSAGING-samba4.so",
         "so:libaddns-samba4.so",
@@ -56133,15 +56146,18 @@
     "samba-common": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       }
     },
     "samba-common-server-libs": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       },
       "dependencies": [
+        "samba-libs=4.19.5-r2",
         "so:libCHARSET3-samba4.so",
         "so:libacl.so.1",
         "so:libads-samba4.so",
@@ -56224,9 +56240,11 @@
     "samba-common-tools": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       },
       "dependencies": [
+        "samba-libs=4.19.5-r2",
         "so:libCHARSET3-samba4.so",
         "so:libaddns-samba4.so",
         "so:libads-samba4.so",
@@ -56294,25 +56312,27 @@
       "provides": [
         "so:libgpext-samba4.so=0",
         "so:libnet-keytab-samba4.so=0",
-        "cmd:net=4.19.5-r1",
-        "cmd:pdbedit=4.19.5-r1",
-        "cmd:profiles=4.19.5-r1",
-        "cmd:samba-log-parser=4.19.5-r1",
-        "cmd:smbcontrol=4.19.5-r1",
-        "cmd:smbpasswd=4.19.5-r1",
-        "cmd:testparm=4.19.5-r1"
+        "cmd:net=4.19.5-r2",
+        "cmd:pdbedit=4.19.5-r2",
+        "cmd:profiles=4.19.5-r2",
+        "cmd:samba-log-parser=4.19.5-r2",
+        "cmd:smbcontrol=4.19.5-r2",
+        "cmd:smbpasswd=4.19.5-r2",
+        "cmd:testparm=4.19.5-r2"
       ]
     },
     "samba-dc": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       },
       "dependencies": [
-        "samba-common=4.19.5-r1",
-        "samba-server=4.19.5-r1",
-        "samba-winbind=4.19.5-r1",
-        "py3-samba=4.19.5-r1",
+        "samba-libs=4.19.5-r2",
+        "samba-common=4.19.5-r2",
+        "samba-server=4.19.5-r2",
+        "samba-winbind=4.19.5-r2",
+        "py3-samba=4.19.5-r2",
         "py3-dnspython",
         "py3-markdown",
         "tdb",
@@ -56377,25 +56397,24 @@
       ],
       "provides": [
         "so:libsmbpasswdparser-samba4.so=0",
-        "cmd:samba-gpupdate=4.19.5-r1",
-        "cmd:samba-tool=4.19.5-r1",
-        "cmd:samba=4.19.5-r1",
-        "cmd:samba_dnsupdate=4.19.5-r1",
-        "cmd:samba_downgrade_db=4.19.5-r1",
-        "cmd:samba_kcc=4.19.5-r1",
-        "cmd:samba_spnupdate=4.19.5-r1",
-        "cmd:samba_upgradedns=4.19.5-r1"
+        "cmd:samba-gpupdate=4.19.5-r2",
+        "cmd:samba-tool=4.19.5-r2",
+        "cmd:samba=4.19.5-r2",
+        "cmd:samba_dnsupdate=4.19.5-r2",
+        "cmd:samba_downgrade_db=4.19.5-r2",
+        "cmd:samba_kcc=4.19.5-r2",
+        "cmd:samba_spnupdate=4.19.5-r2",
+        "cmd:samba_upgradedns=4.19.5-r2"
       ]
     },
     "samba-dc-libs": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       },
       "dependencies": [
-        "samba-server=4.19.5-r1",
-        "samba-client=4.19.5-r1",
-        "samba-common-tools=4.19.5-r1",
+        "samba-libs=4.19.5-r2",
         "so:libMESSAGING-SEND-samba4.so",
         "so:libMESSAGING-samba4.so",
         "so:libad-claims-samba4.so",
@@ -56492,20 +56511,21 @@
     "samba-dev": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       },
       "dependencies": [
-        "libsmbclient=4.19.5-r1",
-        "libwbclient=4.19.5-r1",
+        "libsmbclient=4.19.5-r2",
+        "libwbclient=4.19.5-r2",
         "pc:ldb",
         "pc:talloc",
         "pc:tevent",
         "pkgconfig",
-        "samba-client-libs=4.19.5-r1",
-        "samba-common-server-libs=4.19.5-r1",
-        "samba-dc-libs=4.19.5-r1",
-        "samba-libs=4.19.5-r1",
-        "samba-util-libs=4.19.5-r1"
+        "samba-client-libs=4.19.5-r2",
+        "samba-common-server-libs=4.19.5-r2",
+        "samba-dc-libs=4.19.5-r2",
+        "samba-libs=4.19.5-r2",
+        "samba-util-libs=4.19.5-r2"
       ],
       "provides": [
         "pc:dcerpc=0.0.1",
@@ -56528,13 +56548,15 @@
     "samba-doc": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       }
     },
     "samba-libnss-winbind": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1"
@@ -56547,9 +56569,12 @@
     "samba-libs": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       },
       "dependencies": [
+        "samba-util-libs=4.19.5-r2",
+        "libwbclient=4.19.5-r2",
         "so:libc.musl-s390x.so.1",
         "so:libcap.so.2",
         "so:libcom-err-samba4.so",
@@ -56658,9 +56683,11 @@
     "samba-libs-py3": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       },
       "dependencies": [
+        "samba-libs=4.19.5-r2",
         "so:libMESSAGING-samba4.so",
         "so:libc.musl-s390x.so.1",
         "so:libcli-cldap-samba4.so",
@@ -56704,22 +56731,25 @@
     "samba-pidl": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       },
       "dependencies": [
         "perl"
       ],
       "provides": [
-        "cmd:pidl=4.19.5-r1"
+        "cmd:pidl=4.19.5-r2"
       ]
     },
     "samba-server": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       },
       "dependencies": [
-        "samba-common=4.19.5-r1",
+        "samba-libs=4.19.5-r2",
+        "samba-common=4.19.5-r2",
         "so:libCHARSET3-samba4.so",
         "so:libRPC-SERVER-LOOP-samba4.so",
         "so:libads-samba4.so",
@@ -56792,18 +56822,20 @@
         "so:libREG-FULL-samba4.so=0",
         "so:libRPC-WORKER-samba4.so=0",
         "so:libxattr-tdb-samba4.so=0",
-        "cmd:eventlogadm=4.19.5-r1",
-        "cmd:nmbd=4.19.5-r1",
-        "cmd:smbd=4.19.5-r1",
-        "cmd:smbstatus=4.19.5-r1"
+        "cmd:eventlogadm=4.19.5-r2",
+        "cmd:nmbd=4.19.5-r2",
+        "cmd:smbd=4.19.5-r2",
+        "cmd:smbstatus=4.19.5-r2"
       ]
     },
     "samba-server-libs": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       },
       "dependencies": [
+        "samba-libs=4.19.5-r2",
         "so:libc.musl-s390x.so.1",
         "so:libdbwrap-samba4.so",
         "so:libdcerpc-binding.so.0",
@@ -56837,15 +56869,18 @@
     "samba-server-openrc": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       }
     },
     "samba-test": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       },
       "dependencies": [
+        "samba-libs=4.19.5-r2",
         "so:libLIBWBCLIENT-OLD-samba4.so",
         "so:libMESSAGING-SEND-samba4.so",
         "so:libMESSAGING-samba4.so",
@@ -56940,17 +56975,18 @@
       "provides": [
         "so:libdlz-bind9-for-torture-samba4.so=0",
         "so:libtorture-samba4.so=0",
-        "cmd:gentest=4.19.5-r1",
-        "cmd:locktest=4.19.5-r1",
-        "cmd:masktest=4.19.5-r1",
-        "cmd:ndrdump=4.19.5-r1",
-        "cmd:smbtorture=4.19.5-r1"
+        "cmd:gentest=4.19.5-r2",
+        "cmd:locktest=4.19.5-r2",
+        "cmd:masktest=4.19.5-r2",
+        "cmd:ndrdump=4.19.5-r2",
+        "cmd:smbtorture=4.19.5-r2"
       ]
     },
     "samba-util-libs": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1",
@@ -56974,10 +57010,12 @@
     "samba-winbind": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       },
       "dependencies": [
-        "samba-common=4.19.5-r1",
+        "samba-libs=4.19.5-r2",
+        "samba-common=4.19.5-r2",
         "so:libMESSAGING-samba4.so",
         "so:libRPC-SERVER-LOOP-samba4.so",
         "so:libads-samba4.so",
@@ -57041,15 +57079,17 @@
         "so:libutil-tdb-samba4.so"
       ],
       "provides": [
-        "cmd:winbindd=4.19.5-r1"
+        "cmd:winbindd=4.19.5-r2"
       ]
     },
     "samba-winbind-clients": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       },
       "dependencies": [
+        "samba-libs=4.19.5-r2",
         "so:libauthkrb5-samba4.so",
         "so:libc.musl-s390x.so.1",
         "so:libcliauth-samba4.so",
@@ -57075,16 +57115,18 @@
         "so:libwbclient.so.0"
       ],
       "provides": [
-        "cmd:ntlm_auth=4.19.5-r1",
-        "cmd:wbinfo=4.19.5-r1"
+        "cmd:ntlm_auth=4.19.5-r2",
+        "cmd:wbinfo=4.19.5-r2"
       ]
     },
     "samba-winbind-krb5-locator": {
       "origin": "samba",
       "versions": {
-        "4.19.5-r1": 1712915016
+        "4.19.5-r1": 1712915016,
+        "4.19.5-r2": 1713858479
       },
       "dependencies": [
+        "samba-libs=4.19.5-r2",
         "so:libc.musl-s390x.so.1",
         "so:libgse-samba4.so",
         "so:libreplace-samba4.so",
