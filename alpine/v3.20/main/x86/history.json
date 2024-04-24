@@ -24275,7 +24275,8 @@
     "libecpg": {
       "origin": "postgresql16",
       "versions": {
-        "16.2-r3": 1713729596
+        "16.2-r3": 1713729596,
+        "16.2-r4": 1713965034
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
@@ -24290,11 +24291,12 @@
     "libecpg-dev": {
       "origin": "postgresql16",
       "versions": {
-        "16.2-r3": 1713729596
+        "16.2-r3": 1713729596,
+        "16.2-r4": 1713965034
       },
       "dependencies": [
-        "libpq-dev=16.2-r3",
-        "libecpg=16.2-r3",
+        "libpq-dev=16.2-r4",
+        "libecpg=16.2-r4",
         "pc:libpq",
         "pkgconfig",
         "so:libc.musl-x86.so.1"
@@ -24302,7 +24304,7 @@
       "provides": [
         "pc:libecpg=16.2",
         "pc:libpgtypes=16.2",
-        "cmd:ecpg=16.2-r3"
+        "cmd:ecpg=16.2-r4"
       ]
     },
     "libedit": {
@@ -26691,7 +26693,8 @@
     "libpq": {
       "origin": "postgresql16",
       "versions": {
-        "16.2-r3": 1713729596
+        "16.2-r3": 1713729596,
+        "16.2-r4": 1713965034
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
@@ -26705,10 +26708,11 @@
     "libpq-dev": {
       "origin": "postgresql16",
       "versions": {
-        "16.2-r3": 1713729596
+        "16.2-r3": 1713729596,
+        "16.2-r4": 1713965034
       },
       "dependencies": [
-        "libpq=16.2-r3",
+        "libpq=16.2-r4",
         "pc:libcrypto",
         "pc:libssl",
         "pkgconfig",
@@ -26716,7 +26720,7 @@
       ],
       "provides": [
         "pc:libpq=16.2",
-        "cmd:pg_config=16.2-r3"
+        "cmd:pg_config=16.2-r4"
       ]
     },
     "libproc2": {
@@ -27018,24 +27022,26 @@
     "librtlsdr": {
       "origin": "librtlsdr",
       "versions": {
-        "2.0.1-r1": 1705703601
+        "2.0.1-r1": 1705703601,
+        "2.0.2-r0": 1713991363
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
         "so:libusb-1.0.so.0"
       ],
       "provides": [
-        "so:librtlsdr.so.2=2.0.1"
+        "so:librtlsdr.so.0=2.0.1"
       ]
     },
     "librtlsdr-dev": {
       "origin": "librtlsdr",
       "versions": {
-        "2.0.1-r1": 1705703601
+        "2.0.1-r1": 1705703601,
+        "2.0.2-r0": 1713991363
       },
       "dependencies": [
         "libusb-dev",
-        "librtlsdr=2.0.1-r1",
+        "librtlsdr=2.0.2-r0",
         "pkgconfig"
       ],
       "provides": [
@@ -27045,7 +27051,8 @@
     "librtlsdr-doc": {
       "origin": "librtlsdr",
       "versions": {
-        "2.0.1-r1": 1705703601
+        "2.0.1-r1": 1705703601,
+        "2.0.2-r0": 1713991363
       }
     },
     "librtmp": {
@@ -50557,7 +50564,8 @@
     "postgresql16": {
       "origin": "postgresql16",
       "versions": {
-        "16.2-r3": 1713729596
+        "16.2-r3": 1713729596,
+        "16.2-r4": 1713965034
       },
       "dependencies": [
         "postgresql16-client",
@@ -50578,24 +50586,25 @@
       ],
       "provides": [
         "postgresql",
-        "cmd:pg_archivecleanup",
-        "cmd:pg_ctl",
-        "cmd:pg_controldata",
-        "cmd:pg_upgrade",
-        "cmd:pg_test_timing",
-        "cmd:pg_resetwal",
-        "cmd:pg_waldump",
         "cmd:pg_checksums",
+        "cmd:initdb",
         "cmd:pg_test_fsync",
-        "cmd:postgres",
+        "cmd:pg_controldata",
         "cmd:pg_rewind",
-        "cmd:initdb"
+        "cmd:pg_test_timing",
+        "cmd:pg_upgrade",
+        "cmd:pg_ctl",
+        "cmd:pg_waldump",
+        "cmd:postgres",
+        "cmd:pg_resetwal",
+        "cmd:pg_archivecleanup"
       ]
     },
     "postgresql16-client": {
       "origin": "postgresql16",
       "versions": {
-        "16.2-r3": 1713729596
+        "16.2-r3": 1713729596,
+        "16.2-r4": 1713965034
       },
       "dependencies": [
         "postgresql-common",
@@ -50632,10 +50641,11 @@
     "postgresql16-contrib": {
       "origin": "postgresql16",
       "versions": {
-        "16.2-r3": 1713729596
+        "16.2-r3": 1713729596,
+        "16.2-r4": 1713965034
       },
       "dependencies": [
-        "postgresql16=16.2-r3",
+        "postgresql16=16.2-r4",
         "so:libc.musl-x86.so.1",
         "so:libcrypto.so.3",
         "so:libpq.so.5",
@@ -50652,10 +50662,11 @@
     "postgresql16-contrib-jit": {
       "origin": "postgresql16",
       "versions": {
-        "16.2-r3": 1713729596
+        "16.2-r3": 1713729596,
+        "16.2-r4": 1713965034
       },
       "dependencies": [
-        "postgresql16-contrib=16.2-r3"
+        "postgresql16-contrib=16.2-r4"
       ],
       "provides": [
         "postgresql-contrib-jit"
@@ -50664,7 +50675,8 @@
     "postgresql16-dev": {
       "origin": "postgresql16",
       "versions": {
-        "16.2-r3": 1713729596
+        "16.2-r3": 1713729596,
+        "16.2-r4": 1713965034
       },
       "dependencies": [
         "libpq-dev",
@@ -50685,7 +50697,8 @@
     "postgresql16-doc": {
       "origin": "postgresql16",
       "versions": {
-        "16.2-r3": 1713729596
+        "16.2-r3": 1713729596,
+        "16.2-r4": 1713965034
       },
       "provides": [
         "postgresql-doc"
@@ -50694,10 +50707,11 @@
     "postgresql16-jit": {
       "origin": "postgresql16",
       "versions": {
-        "16.2-r3": 1713729596
+        "16.2-r3": 1713729596,
+        "16.2-r4": 1713965034
       },
       "dependencies": [
-        "postgresql16=16.2-r3",
+        "postgresql16=16.2-r4",
         "so:libLLVM-16.so",
         "so:libc.musl-x86.so.1",
         "so:libgcc_s.so.1",
@@ -50710,7 +50724,8 @@
     "postgresql16-openrc": {
       "origin": "postgresql16",
       "versions": {
-        "16.2-r3": 1713729596
+        "16.2-r3": 1713729596,
+        "16.2-r4": 1713965034
       },
       "dependencies": [
         "postgresql-common-openrc"
@@ -50719,10 +50734,11 @@
     "postgresql16-plperl": {
       "origin": "postgresql16",
       "versions": {
-        "16.2-r3": 1713729596
+        "16.2-r3": 1713729596,
+        "16.2-r4": 1713965034
       },
       "dependencies": [
-        "postgresql16=16.2-r3",
+        "postgresql16=16.2-r4",
         "so:libc.musl-x86.so.1",
         "so:libperl.so"
       ],
@@ -50733,10 +50749,11 @@
     "postgresql16-plperl-contrib": {
       "origin": "postgresql16",
       "versions": {
-        "16.2-r3": 1713729596
+        "16.2-r3": 1713729596,
+        "16.2-r4": 1713965034
       },
       "dependencies": [
-        "postgresql16-plperl=16.2-r3",
+        "postgresql16-plperl=16.2-r4",
         "so:libc.musl-x86.so.1",
         "so:libperl.so"
       ],
@@ -50747,10 +50764,11 @@
     "postgresql16-plpython3": {
       "origin": "postgresql16",
       "versions": {
-        "16.2-r3": 1713729596
+        "16.2-r3": 1713729596,
+        "16.2-r4": 1713965034
       },
       "dependencies": [
-        "postgresql16=16.2-r3",
+        "postgresql16=16.2-r4",
         "python3",
         "so:libc.musl-x86.so.1",
         "so:libpython3.12.so.1.0"
@@ -50762,10 +50780,11 @@
     "postgresql16-plpython3-contrib": {
       "origin": "postgresql16",
       "versions": {
-        "16.2-r3": 1713729596
+        "16.2-r3": 1713729596,
+        "16.2-r4": 1713965034
       },
       "dependencies": [
-        "postgresql16-plpython3=16.2-r3",
+        "postgresql16-plpython3=16.2-r4",
         "so:libc.musl-x86.so.1",
         "so:libpython3.12.so.1.0"
       ],
@@ -50776,10 +50795,11 @@
     "postgresql16-pltcl": {
       "origin": "postgresql16",
       "versions": {
-        "16.2-r3": 1713729596
+        "16.2-r3": 1713729596,
+        "16.2-r4": 1713965034
       },
       "dependencies": [
-        "postgresql16=16.2-r3",
+        "postgresql16=16.2-r4",
         "pgtcl",
         "so:libc.musl-x86.so.1",
         "so:libtcl8.6.so"
@@ -54615,7 +54635,8 @@
     "rng-tools": {
       "origin": "rng-tools",
       "versions": {
-        "6.16-r4": 1712125797
+        "6.16-r4": 1712125797,
+        "6.16-r5": 1713991363
       },
       "dependencies": [
         "/bin/sh",
@@ -54625,21 +54646,23 @@
         "so:libjitterentropy.so.3"
       ],
       "provides": [
-        "cmd:randstat=6.16-r4",
-        "cmd:rngd=6.16-r4",
-        "cmd:rngtest=6.16-r4"
+        "cmd:randstat=6.16-r5",
+        "cmd:rngd=6.16-r5",
+        "cmd:rngtest=6.16-r5"
       ]
     },
     "rng-tools-doc": {
       "origin": "rng-tools",
       "versions": {
-        "6.16-r4": 1712125797
+        "6.16-r4": 1712125797,
+        "6.16-r5": 1713991363
       }
     },
     "rng-tools-extra": {
       "origin": "rng-tools",
       "versions": {
-        "6.16-r4": 1712125797
+        "6.16-r4": 1712125797,
+        "6.16-r5": 1713991363
       },
       "dependencies": [
         "/bin/sh",
@@ -54649,24 +54672,26 @@
         "so:libcurl.so.4",
         "so:libjansson.so.4",
         "so:libjitterentropy.so.3",
-        "so:librtlsdr.so.2"
+        "so:librtlsdr.so.0"
       ],
       "provides": [
         "rng-tools",
-        "cmd:rngd=6.16-r4",
-        "cmd:rngtest=6.16-r4"
+        "cmd:rngd=6.16-r5",
+        "cmd:rngtest=6.16-r5"
       ]
     },
     "rng-tools-extra-openrc": {
       "origin": "rng-tools",
       "versions": {
-        "6.16-r4": 1712125797
+        "6.16-r4": 1712125797,
+        "6.16-r5": 1713991363
       }
     },
     "rng-tools-openrc": {
       "origin": "rng-tools",
       "versions": {
-        "6.16-r4": 1712125797
+        "6.16-r4": 1712125797,
+        "6.16-r5": 1713991363
       }
     },
     "rp-pppoe": {
@@ -55450,21 +55475,22 @@
     "rtl-sdr": {
       "origin": "librtlsdr",
       "versions": {
-        "2.0.1-r1": 1705703601
+        "2.0.1-r1": 1705703601,
+        "2.0.2-r0": 1713991363
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
-        "so:librtlsdr.so.2"
+        "so:librtlsdr.so.0"
       ],
       "provides": [
-        "cmd:rtl_adsb=2.0.1-r1",
-        "cmd:rtl_biast=2.0.1-r1",
-        "cmd:rtl_eeprom=2.0.1-r1",
-        "cmd:rtl_fm=2.0.1-r1",
-        "cmd:rtl_power=2.0.1-r1",
-        "cmd:rtl_sdr=2.0.1-r1",
-        "cmd:rtl_tcp=2.0.1-r1",
-        "cmd:rtl_test=2.0.1-r1"
+        "cmd:rtl_adsb=2.0.2-r0",
+        "cmd:rtl_biast=2.0.2-r0",
+        "cmd:rtl_eeprom=2.0.2-r0",
+        "cmd:rtl_fm=2.0.2-r0",
+        "cmd:rtl_power=2.0.2-r0",
+        "cmd:rtl_sdr=2.0.2-r0",
+        "cmd:rtl_tcp=2.0.2-r0",
+        "cmd:rtl_test=2.0.2-r0"
       ]
     },
     "rtmpdump": {
@@ -73445,6 +73471,10 @@
       "libzstd.so.1": {
         "package": "zstd-libs",
         "version": "1.5.6"
+      },
+      "librtlsdr.so.0": {
+        "package": "librtlsdr",
+        "version": "2.0.1"
       }
     }
   }
