@@ -66640,6 +66640,73 @@
         "so:libgcc_s.so.1",
         "so:liblxc.so.1"
       ]
+    },
+    "valkey": {
+      "origin": "valkey",
+      "versions": {
+        "7.2.5-r0": 1714548085
+      },
+      "dependencies": [
+        "/bin/sh",
+        "so:libc.musl-armv7.so.1",
+        "so:libcrypto.so.3",
+        "so:libgcc_s.so.1",
+        "so:libssl.so.3"
+      ],
+      "provides": [
+        "cmd:valkey-check-aof=7.2.5-r0",
+        "cmd:valkey-check-rdb=7.2.5-r0",
+        "cmd:valkey-sentinel=7.2.5-r0",
+        "cmd:valkey-server=7.2.5-r0"
+      ]
+    },
+    "valkey-benchmark": {
+      "origin": "valkey",
+      "versions": {
+        "7.2.5-r0": 1714548085
+      },
+      "dependencies": [
+        "so:libc.musl-armv7.so.1",
+        "so:libcrypto.so.3",
+        "so:libgcc_s.so.1",
+        "so:libssl.so.3"
+      ],
+      "provides": [
+        "cmd:valkey-benchmark=7.2.5-r0"
+      ]
+    },
+    "valkey-cli": {
+      "origin": "valkey",
+      "versions": {
+        "7.2.5-r0": 1714548085
+      },
+      "dependencies": [
+        "so:libc.musl-armv7.so.1",
+        "so:libcrypto.so.3",
+        "so:libgcc_s.so.1",
+        "so:libssl.so.3"
+      ],
+      "provides": [
+        "cmd:valkey-cli=7.2.5-r0"
+      ]
+    },
+    "valkey-compat": {
+      "origin": "valkey",
+      "versions": {
+        "7.2.5-r0": 1714548085
+      },
+      "dependencies": [
+        "!redis",
+        "/bin/sh",
+        "valkey-cli=7.2.5-r0",
+        "valkey=7.2.5-r0"
+      ]
+    },
+    "valkey-openrc": {
+      "origin": "valkey",
+      "versions": {
+        "7.2.5-r0": 1714548085
+      }
     }
   },
   "provide": {
