@@ -11208,7 +11208,7 @@
     "dnsmasq": {
       "origin": "dnsmasq",
       "versions": {
-        "2.90-r2": 1708599787
+        "2.90-r2": 1714982237
       },
       "dependencies": [
         "dnsmasq-common=2.90-r2",
@@ -11222,13 +11222,13 @@
     "dnsmasq-common": {
       "origin": "dnsmasq",
       "versions": {
-        "2.90-r2": 1708599787
+        "2.90-r2": 1714982237
       }
     },
     "dnsmasq-dnssec": {
       "origin": "dnsmasq",
       "versions": {
-        "2.90-r2": 1708599787
+        "2.90-r2": 1714982237
       },
       "dependencies": [
         "dnsmasq-common=2.90-r2",
@@ -11246,7 +11246,7 @@
     "dnsmasq-dnssec-dbus": {
       "origin": "dnsmasq",
       "versions": {
-        "2.90-r2": 1708599787
+        "2.90-r2": 1714982237
       },
       "dependencies": [
         "dnsmasq-common=2.90-r2",
@@ -11267,19 +11267,19 @@
     "dnsmasq-doc": {
       "origin": "dnsmasq",
       "versions": {
-        "2.90-r2": 1708599787
+        "2.90-r2": 1714982237
       }
     },
     "dnsmasq-openrc": {
       "origin": "dnsmasq",
       "versions": {
-        "2.90-r2": 1708599787
+        "2.90-r2": 1714982237
       }
     },
     "dnsmasq-utils": {
       "origin": "dnsmasq",
       "versions": {
-        "2.90-r2": 1708599787
+        "2.90-r2": 1714982237
       },
       "dependencies": [
         "dnsmasq=2.90-r2",
@@ -11294,7 +11294,7 @@
     "dnsmasq-utils-doc": {
       "origin": "dnsmasq",
       "versions": {
-        "2.90-r2": 1708599787
+        "2.90-r2": 1714982237
       },
       "dependencies": [
         "dnsmasq-common=2.90-r2"
@@ -35986,7 +35986,8 @@
     "man-pages": {
       "origin": "man-pages",
       "versions": {
-        "6.06-r0": 1708112371
+        "6.06-r0": 1708112371,
+        "6.7-r0": 1714981740
       }
     },
     "man-pages-posix": {
@@ -65369,6 +65370,26 @@
         "7.2.5-r0": 1714548085,
         "7.2.5-r1": 1714955001
       }
+    },
+    "dnsmasq-dnssec-nftset": {
+      "origin": "dnsmasq",
+      "versions": {
+        "2.90-r2": 1714982237
+      },
+      "dependencies": [
+        "dnsmasq-common=2.90-r2",
+        "/bin/sh",
+        "so:libc.musl-riscv64.so.1",
+        "so:libgmp.so.10",
+        "so:libhogweed.so.6",
+        "so:libnettle.so.8",
+        "so:libnftables.so.1"
+      ],
+      "provides": [
+        "dnsmasq=2.90-r2",
+        "dnsmasq-dnssec=2.90-r2",
+        "cmd:dnsmasq=2.90-r2"
+      ]
     }
   },
   "provide": {
@@ -65610,7 +65631,7 @@
         "version": "4.4.3_p1-r4"
       },
       "dnsmasq": {
-        "package": "dnsmasq-dnssec-dbus",
+        "package": "dnsmasq-dnssec-nftset",
         "version": "2.90-r2"
       },
       "dnsmasq-dbus": {
@@ -65618,7 +65639,7 @@
         "version": "2.90-r2"
       },
       "dnsmasq-dnssec": {
-        "package": "dnsmasq-dnssec-dbus",
+        "package": "dnsmasq-dnssec-nftset",
         "version": "2.90-r2"
       },
       "sudo-virt": {
