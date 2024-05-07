@@ -17913,7 +17913,8 @@
     "gst-plugins-base": {
       "origin": "gst-plugins-base",
       "versions": {
-        "1.22.11-r0": 1711994925
+        "1.22.11-r0": 1711994925,
+        "1.24.3-r0": 1715069619
       },
       "dependencies": [
         "so:libEGL.so.1",
@@ -17928,6 +17929,7 @@
         "so:libcairo.so.2",
         "so:libcdda_interface.so.0",
         "so:libcdda_paranoia.so.0",
+        "so:libdrm.so.2",
         "so:libgio-2.0.so.0",
         "so:libglib-2.0.so.0",
         "so:libgmodule-2.0.so.0",
@@ -17957,41 +17959,43 @@
       ],
       "provides": [
         "so:libgstadder.so=0",
-        "so:libgstallocators-1.0.so.0=0.2211.0",
+        "so:libgstallocators-1.0.so.0=0.2403.0",
         "so:libgstalsa.so=0",
-        "so:libgstapp-1.0.so.0=0.2211.0",
+        "so:libgstapp-1.0.so.0=0.2403.0",
         "so:libgstapp.so=0",
-        "so:libgstaudio-1.0.so.0=0.2211.0",
+        "so:libgstaudio-1.0.so.0=0.2403.0",
         "so:libgstaudioconvert.so=0",
         "so:libgstaudiomixer.so=0",
         "so:libgstaudiorate.so=0",
         "so:libgstaudioresample.so=0",
         "so:libgstaudiotestsrc.so=0",
+        "so:libgstbasedebug.so=0",
         "so:libgstcdparanoia.so=0",
         "so:libgstcompositor.so=0",
+        "so:libgstdsd.so=0",
         "so:libgstencoding.so=0",
-        "so:libgstfft-1.0.so.0=0.2211.0",
+        "so:libgstfft-1.0.so.0=0.2403.0",
         "so:libgstgio.so=0",
-        "so:libgstgl-1.0.so.0=0.2211.0",
+        "so:libgstgl-1.0.so.0=0.2403.0",
         "so:libgstogg.so=0",
         "so:libgstopengl.so=0",
         "so:libgstopus.so=0",
         "so:libgstoverlaycomposition.so=0",
         "so:libgstpango.so=0",
         "so:libgstpbtypes.so=0",
-        "so:libgstpbutils-1.0.so.0=0.2211.0",
+        "so:libgstpbutils-1.0.so.0=0.2403.0",
         "so:libgstplayback.so=0",
         "so:libgstrawparse.so=0",
-        "so:libgstriff-1.0.so.0=0.2211.0",
-        "so:libgstrtp-1.0.so.0=0.2211.0",
-        "so:libgstrtsp-1.0.so.0=0.2211.0",
-        "so:libgstsdp-1.0.so.0=0.2211.0",
+        "so:libgstriff-1.0.so.0=0.2403.0",
+        "so:libgstrtp-1.0.so.0=0.2403.0",
+        "so:libgstrtsp-1.0.so.0=0.2403.0",
+        "so:libgstsdp-1.0.so.0=0.2403.0",
         "so:libgstsubparse.so=0",
-        "so:libgsttag-1.0.so.0=0.2211.0",
+        "so:libgsttag-1.0.so.0=0.2403.0",
         "so:libgsttcp.so=0",
         "so:libgsttheora.so=0",
         "so:libgsttypefindfunctions.so=0",
-        "so:libgstvideo-1.0.so.0=0.2211.0",
+        "so:libgstvideo-1.0.so.0=0.2403.0",
         "so:libgstvideoconvertscale.so=0",
         "so:libgstvideorate.so=0",
         "so:libgstvideotestsrc.so=0",
@@ -17999,26 +18003,28 @@
         "so:libgstvorbis.so=0",
         "so:libgstximagesink.so=0",
         "so:libgstxvimagesink.so=0",
-        "cmd:gst-device-monitor-1.0=1.22.11-r0",
-        "cmd:gst-discoverer-1.0=1.22.11-r0",
-        "cmd:gst-play-1.0=1.22.11-r0"
+        "cmd:gst-device-monitor-1.0=1.24.3-r0",
+        "cmd:gst-discoverer-1.0=1.24.3-r0",
+        "cmd:gst-play-1.0=1.24.3-r0"
       ]
     },
     "gst-plugins-base-dev": {
       "origin": "gst-plugins-base",
       "versions": {
-        "1.22.11-r0": 1711994925
+        "1.22.11-r0": 1711994925,
+        "1.24.3-r0": 1715069619
       },
       "dependencies": [
         "wayland-dev",
-        "gst-plugins-base=1.22.11-r0",
+        "gst-plugins-base=1.24.3-r0",
         "pc:egl",
-        "pc:gio-2.0>=2.62.0",
+        "pc:gio-2.0>=2.64.0",
         "pc:gl",
         "pc:glesv2",
         "pc:gmodule-no-export-2.0",
-        "pc:gstreamer-1.0>=1.22.0",
-        "pc:gstreamer-base-1.0>=1.22.0",
+        "pc:gstreamer-1.0>=1.24.0",
+        "pc:gstreamer-base-1.0>=1.24.0",
+        "pc:libdrm>=2.4.98",
         "pc:orc-0.4>=0.4.24",
         "pc:wayland-client",
         "pc:wayland-client>=1.11",
@@ -18031,41 +18037,44 @@
         "pkgconfig"
       ],
       "provides": [
-        "pc:gstreamer-allocators-1.0=1.22.11",
-        "pc:gstreamer-app-1.0=1.22.11",
-        "pc:gstreamer-audio-1.0=1.22.11",
-        "pc:gstreamer-fft-1.0=1.22.11",
-        "pc:gstreamer-gl-1.0=1.22.11",
-        "pc:gstreamer-gl-egl-1.0=1.22.11",
-        "pc:gstreamer-gl-prototypes-1.0=1.22.11",
-        "pc:gstreamer-gl-wayland-1.0=1.22.11",
-        "pc:gstreamer-gl-x11-1.0=1.22.11",
-        "pc:gstreamer-pbutils-1.0=1.22.11",
-        "pc:gstreamer-plugins-base-1.0=1.22.11",
-        "pc:gstreamer-riff-1.0=1.22.11",
-        "pc:gstreamer-rtp-1.0=1.22.11",
-        "pc:gstreamer-rtsp-1.0=1.22.11",
-        "pc:gstreamer-sdp-1.0=1.22.11",
-        "pc:gstreamer-tag-1.0=1.22.11",
-        "pc:gstreamer-video-1.0=1.22.11"
+        "pc:gstreamer-allocators-1.0=1.24.3",
+        "pc:gstreamer-app-1.0=1.24.3",
+        "pc:gstreamer-audio-1.0=1.24.3",
+        "pc:gstreamer-fft-1.0=1.24.3",
+        "pc:gstreamer-gl-1.0=1.24.3",
+        "pc:gstreamer-gl-egl-1.0=1.24.3",
+        "pc:gstreamer-gl-prototypes-1.0=1.24.3",
+        "pc:gstreamer-gl-wayland-1.0=1.24.3",
+        "pc:gstreamer-gl-x11-1.0=1.24.3",
+        "pc:gstreamer-pbutils-1.0=1.24.3",
+        "pc:gstreamer-plugins-base-1.0=1.24.3",
+        "pc:gstreamer-riff-1.0=1.24.3",
+        "pc:gstreamer-rtp-1.0=1.24.3",
+        "pc:gstreamer-rtsp-1.0=1.24.3",
+        "pc:gstreamer-sdp-1.0=1.24.3",
+        "pc:gstreamer-tag-1.0=1.24.3",
+        "pc:gstreamer-video-1.0=1.24.3"
       ]
     },
     "gst-plugins-base-doc": {
       "origin": "gst-plugins-base",
       "versions": {
-        "1.22.11-r0": 1711994925
+        "1.22.11-r0": 1711994925,
+        "1.24.3-r0": 1715069619
       }
     },
     "gst-plugins-base-lang": {
       "origin": "gst-plugins-base",
       "versions": {
-        "1.22.11-r0": 1711994925
+        "1.22.11-r0": 1711994925,
+        "1.24.3-r0": 1715069619
       }
     },
     "gstreamer": {
       "origin": "gstreamer",
       "versions": {
-        "1.22.11-r0": 1711994925
+        "1.22.11-r0": 1711994925,
+        "1.24.3-r0": 1715069619
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -18076,23 +18085,24 @@
         "so:libintl.so.8"
       ],
       "provides": [
-        "so:libgstbase-1.0.so.0=0.2211.0",
-        "so:libgstcontroller-1.0.so.0=0.2211.0",
-        "so:libgstnet-1.0.so.0=0.2211.0",
-        "so:libgstreamer-1.0.so.0=0.2211.0"
+        "so:libgstbase-1.0.so.0=0.2403.0",
+        "so:libgstcontroller-1.0.so.0=0.2403.0",
+        "so:libgstnet-1.0.so.0=0.2403.0",
+        "so:libgstreamer-1.0.so.0=0.2403.0"
       ]
     },
     "gstreamer-dev": {
       "origin": "gstreamer",
       "versions": {
-        "1.22.11-r0": 1711994925
+        "1.22.11-r0": 1711994925,
+        "1.24.3-r0": 1715069619
       },
       "dependencies": [
         "libxml2-dev",
-        "gstreamer=1.22.11-r0",
+        "gstreamer=1.24.3-r0",
         "pc:gio-2.0",
         "pc:gio-unix-2.0",
-        "pc:glib-2.0>=2.62.0",
+        "pc:glib-2.0>=2.64.0",
         "pc:gmodule-no-export-2.0",
         "pc:gobject-2.0",
         "pkgconfig",
@@ -18103,25 +18113,27 @@
         "so:libgstreamer-1.0.so.0"
       ],
       "provides": [
-        "so:libgstcheck-1.0.so.0=0.2211.0",
-        "pc:gstreamer-1.0=1.22.11",
-        "pc:gstreamer-base-1.0=1.22.11",
-        "pc:gstreamer-check-1.0=1.22.11",
-        "pc:gstreamer-controller-1.0=1.22.11",
-        "pc:gstreamer-net-1.0=1.22.11",
-        "cmd:gst-tester-1.0=1.22.11-r0"
+        "so:libgstcheck-1.0.so.0=0.2403.0",
+        "pc:gstreamer-1.0=1.24.3",
+        "pc:gstreamer-base-1.0=1.24.3",
+        "pc:gstreamer-check-1.0=1.24.3",
+        "pc:gstreamer-controller-1.0=1.24.3",
+        "pc:gstreamer-net-1.0=1.24.3",
+        "cmd:gst-tester-1.0=1.24.3-r0"
       ]
     },
     "gstreamer-doc": {
       "origin": "gstreamer",
       "versions": {
-        "1.22.11-r0": 1711994925
+        "1.22.11-r0": 1711994925,
+        "1.24.3-r0": 1715069619
       }
     },
     "gstreamer-lang": {
       "origin": "gstreamer",
       "versions": {
-        "1.22.11-r0": 1711994925
+        "1.22.11-r0": 1711994925,
+        "1.24.3-r0": 1715069619
       }
     },
     "gstreamer-ptp-helper": {
@@ -18140,7 +18152,8 @@
     "gstreamer-tools": {
       "origin": "gstreamer",
       "versions": {
-        "1.22.11-r0": 1711994925
+        "1.22.11-r0": 1711994925,
+        "1.24.3-r0": 1715069619
       },
       "dependencies": [
         "pkgconfig",
@@ -18151,10 +18164,10 @@
         "so:libintl.so.8"
       ],
       "provides": [
-        "cmd:gst-inspect-1.0=1.22.11-r0",
-        "cmd:gst-launch-1.0=1.22.11-r0",
-        "cmd:gst-stats-1.0=1.22.11-r0",
-        "cmd:gst-typefind-1.0=1.22.11-r0"
+        "cmd:gst-inspect-1.0=1.24.3-r0",
+        "cmd:gst-launch-1.0=1.24.3-r0",
+        "cmd:gst-stats-1.0=1.24.3-r0",
+        "cmd:gst-typefind-1.0=1.24.3-r0"
       ]
     },
     "gtest": {
@@ -53479,7 +53492,8 @@
     "py3-pyzfs": {
       "origin": "zfs",
       "versions": {
-        "2.2.3-r1": 1712915016
+        "2.2.3-r1": 1712915016,
+        "2.2.4-r0": 1715064249
       },
       "dependencies": [
         "python3",
@@ -53487,13 +53501,14 @@
         "python3~3.12"
       ],
       "provides": [
-        "py3.12:libzfs_core=2.2.3-r1"
+        "py3.12:libzfs_core=2.2.4-r0"
       ]
     },
     "py3-pyzfs-pyc": {
       "origin": "zfs",
       "versions": {
-        "2.2.3-r1": 1712915016
+        "2.2.3-r1": 1712915016,
+        "2.2.4-r0": 1715064249
       },
       "dependencies": [
         "python3~3.12"
@@ -65805,7 +65820,8 @@
     "zfs": {
       "origin": "zfs",
       "versions": {
-        "2.2.3-r1": 1712915016
+        "2.2.3-r1": 1712915016,
+        "2.2.4-r0": 1715064249
       },
       "dependencies": [
         "so:libblkid.so.1",
@@ -65820,35 +65836,36 @@
         "so:libzpool.so.5"
       ],
       "provides": [
-        "spl=2.2.3-r1",
-        "cmd:fsck.zfs=2.2.3-r1",
-        "cmd:mount.zfs=2.2.3-r1",
-        "cmd:raidz_test=2.2.3-r1",
-        "cmd:zdb=2.2.3-r1",
-        "cmd:zed=2.2.3-r1",
-        "cmd:zfs=2.2.3-r1",
-        "cmd:zfs_ids_to_path=2.2.3-r1",
-        "cmd:zgenhostid=2.2.3-r1",
-        "cmd:zhack=2.2.3-r1",
-        "cmd:zilstat=2.2.3-r1",
-        "cmd:zinject=2.2.3-r1",
-        "cmd:zpool=2.2.3-r1",
-        "cmd:zstream=2.2.3-r1",
-        "cmd:zstreamdump=2.2.3-r1",
-        "cmd:ztest=2.2.3-r1",
-        "cmd:zvol_wait=2.2.3-r1"
+        "spl=2.2.4-r0",
+        "cmd:fsck.zfs=2.2.4-r0",
+        "cmd:mount.zfs=2.2.4-r0",
+        "cmd:raidz_test=2.2.4-r0",
+        "cmd:zdb=2.2.4-r0",
+        "cmd:zed=2.2.4-r0",
+        "cmd:zfs=2.2.4-r0",
+        "cmd:zfs_ids_to_path=2.2.4-r0",
+        "cmd:zgenhostid=2.2.4-r0",
+        "cmd:zhack=2.2.4-r0",
+        "cmd:zinject=2.2.4-r0",
+        "cmd:zpool=2.2.4-r0",
+        "cmd:zstream=2.2.4-r0",
+        "cmd:zstreamdump=2.2.4-r0",
+        "cmd:ztest=2.2.4-r0",
+        "cmd:zvol_wait=2.2.4-r0"
       ]
     },
     "zfs-bash-completion": {
       "origin": "zfs",
       "versions": {
-        "2.2.3-r1": 1712915016
+        "2.2.3-r1": 1712915016,
+        "2.2.4-r0": 1715064249
       }
     },
     "zfs-dev": {
       "origin": "zfs",
       "versions": {
-        "2.2.3-r1": 1712915016
+        "2.2.3-r1": 1712915016,
+        "2.2.4-r0": 1715064249
       },
       "dependencies": [
         "attr-dev",
@@ -65862,30 +65879,33 @@
         "pc:uuid",
         "pc:zlib",
         "pkgconfig",
-        "zfs-libs=2.2.3-r1"
+        "zfs-libs=2.2.4-r0"
       ],
       "provides": [
-        "pc:libzfs=2.2.3",
-        "pc:libzfs_core=2.2.3",
-        "pc:libzfsbootenv=2.2.3"
+        "pc:libzfs=2.2.4",
+        "pc:libzfs_core=2.2.4",
+        "pc:libzfsbootenv=2.2.4"
       ]
     },
     "zfs-doc": {
       "origin": "zfs",
       "versions": {
-        "2.2.3-r1": 1712915016
+        "2.2.3-r1": 1712915016,
+        "2.2.4-r0": 1715064249
       }
     },
     "zfs-dracut": {
       "origin": "zfs",
       "versions": {
-        "2.2.3-r1": 1712915016
+        "2.2.3-r1": 1712915016,
+        "2.2.4-r0": 1715064249
       }
     },
     "zfs-libs": {
       "origin": "zfs",
       "versions": {
-        "2.2.3-r1": 1712915016
+        "2.2.3-r1": 1712915016,
+        "2.2.4-r0": 1715064249
       },
       "dependencies": [
         "so:libblkid.so.1",
@@ -65908,13 +65928,15 @@
     "zfs-openrc": {
       "origin": "zfs",
       "versions": {
-        "2.2.3-r1": 1712915016
+        "2.2.3-r1": 1712915016,
+        "2.2.4-r0": 1715064249
       }
     },
     "zfs-scripts": {
       "origin": "zfs",
       "versions": {
-        "2.2.3-r1": 1712915016
+        "2.2.3-r1": 1712915016,
+        "2.2.4-r0": 1715064249
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -65929,7 +65951,8 @@
     "zfs-udev": {
       "origin": "zfs",
       "versions": {
-        "2.2.3-r1": 1712915016
+        "2.2.3-r1": 1712915016,
+        "2.2.4-r0": 1715064249
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1"
@@ -65938,15 +65961,17 @@
     "zfs-utils-py": {
       "origin": "zfs",
       "versions": {
-        "2.2.3-r1": 1712915016
+        "2.2.3-r1": 1712915016,
+        "2.2.4-r0": 1715064249
       },
       "dependencies": [
         "python3"
       ],
       "provides": [
-        "cmd:arc_summary=2.2.3-r1",
-        "cmd:arcstat=2.2.3-r1",
-        "cmd:dbufstat=2.2.3-r1"
+        "cmd:arc_summary=2.2.4-r0",
+        "cmd:arcstat=2.2.4-r0",
+        "cmd:dbufstat=2.2.4-r0",
+        "cmd:zilstat=2.2.4-r0"
       ]
     },
     "zfs-zsh-completion": {
@@ -67664,7 +67689,7 @@
       },
       "spl": {
         "package": "zfs",
-        "version": "2.2.3-r1"
+        "version": "2.2.4-r0"
       }
     },
     "so": {
@@ -69682,7 +69707,7 @@
       },
       "libgstallocators-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.2211.0"
+        "version": "0.2403.0"
       },
       "libgstalsa.so": {
         "package": "gst-plugins-base",
@@ -69690,7 +69715,7 @@
       },
       "libgstapp-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.2211.0"
+        "version": "0.2403.0"
       },
       "libgstapp.so": {
         "package": "gst-plugins-base",
@@ -69698,7 +69723,7 @@
       },
       "libgstaudio-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.2211.0"
+        "version": "0.2403.0"
       },
       "libgstaudioconvert.so": {
         "package": "gst-plugins-base",
@@ -69734,7 +69759,7 @@
       },
       "libgstfft-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.2211.0"
+        "version": "0.2403.0"
       },
       "libgstgio.so": {
         "package": "gst-plugins-base",
@@ -69742,7 +69767,7 @@
       },
       "libgstgl-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.2211.0"
+        "version": "0.2403.0"
       },
       "libgstogg.so": {
         "package": "gst-plugins-base",
@@ -69770,7 +69795,7 @@
       },
       "libgstpbutils-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.2211.0"
+        "version": "0.2403.0"
       },
       "libgstplayback.so": {
         "package": "gst-plugins-base",
@@ -69782,19 +69807,19 @@
       },
       "libgstriff-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.2211.0"
+        "version": "0.2403.0"
       },
       "libgstrtp-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.2211.0"
+        "version": "0.2403.0"
       },
       "libgstrtsp-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.2211.0"
+        "version": "0.2403.0"
       },
       "libgstsdp-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.2211.0"
+        "version": "0.2403.0"
       },
       "libgstsubparse.so": {
         "package": "gst-plugins-base",
@@ -69802,7 +69827,7 @@
       },
       "libgsttag-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.2211.0"
+        "version": "0.2403.0"
       },
       "libgsttcp.so": {
         "package": "gst-plugins-base",
@@ -69818,7 +69843,7 @@
       },
       "libgstvideo-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.2211.0"
+        "version": "0.2403.0"
       },
       "libgstvideoconvertscale.so": {
         "package": "gst-plugins-base",
@@ -69850,23 +69875,23 @@
       },
       "libgstbase-1.0.so.0": {
         "package": "gstreamer",
-        "version": "0.2211.0"
+        "version": "0.2403.0"
       },
       "libgstcontroller-1.0.so.0": {
         "package": "gstreamer",
-        "version": "0.2211.0"
+        "version": "0.2403.0"
       },
       "libgstnet-1.0.so.0": {
         "package": "gstreamer",
-        "version": "0.2211.0"
+        "version": "0.2403.0"
       },
       "libgstreamer-1.0.so.0": {
         "package": "gstreamer",
-        "version": "0.2211.0"
+        "version": "0.2403.0"
       },
       "libgstcheck-1.0.so.0": {
         "package": "gstreamer-dev",
-        "version": "0.2211.0"
+        "version": "0.2403.0"
       },
       "libgtest.so.1.14.0": {
         "package": "gtest",
@@ -73894,6 +73919,14 @@
       },
       "libzerovec_derive-cda5d09bfb25d859.so": {
         "package": "rust",
+        "version": "0"
+      },
+      "libgstbasedebug.so": {
+        "package": "gst-plugins-base",
+        "version": "0"
+      },
+      "libgstdsd.so": {
+        "package": "gst-plugins-base",
         "version": "0"
       }
     }
