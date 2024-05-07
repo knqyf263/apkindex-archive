@@ -9155,8 +9155,14 @@
     "compiler-rt": {
       "origin": "llvm-runtimes",
       "versions": {
-        "17.0.6-r0": 1704148022
-      }
+        "17.0.6-r0": 1704148022,
+        "17.0.6-r1": 1715089160
+      },
+      "dependencies": [
+        "so:libc.musl-riscv64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ]
     },
     "composer-zsh-completion": {
       "origin": "zsh",
@@ -23589,7 +23595,8 @@
     "libc++": {
       "origin": "llvm-runtimes",
       "versions": {
-        "17.0.6-r0": 1704148022
+        "17.0.6-r0": 1704148022,
+        "17.0.6-r1": 1715089160
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -23603,16 +23610,18 @@
     "libc++-dev": {
       "origin": "llvm-runtimes",
       "versions": {
-        "17.0.6-r0": 1704148022
+        "17.0.6-r0": 1704148022,
+        "17.0.6-r1": 1715089160
       },
       "dependencies": [
-        "libc++=17.0.6-r0"
+        "libc++=17.0.6-r1"
       ]
     },
     "libc++-static": {
       "origin": "llvm-runtimes",
       "versions": {
-        "17.0.6-r0": 1704148022
+        "17.0.6-r0": 1704148022,
+        "17.0.6-r1": 1715089160
       }
     },
     "libcap": {
@@ -30910,7 +30919,8 @@
     "llvm-libunwind": {
       "origin": "llvm-runtimes",
       "versions": {
-        "17.0.6-r0": 1704148022
+        "17.0.6-r0": 1704148022,
+        "17.0.6-r1": 1715089160
       },
       "dependencies": [
         "!libunwind-dev",
@@ -30923,22 +30933,25 @@
     "llvm-libunwind-dev": {
       "origin": "llvm-runtimes",
       "versions": {
-        "17.0.6-r0": 1704148022
+        "17.0.6-r0": 1704148022,
+        "17.0.6-r1": 1715089160
       },
       "dependencies": [
-        "llvm-libunwind=17.0.6-r0"
+        "llvm-libunwind=17.0.6-r1"
       ]
     },
     "llvm-libunwind-static": {
       "origin": "llvm-runtimes",
       "versions": {
-        "17.0.6-r0": 1704148022
+        "17.0.6-r0": 1704148022,
+        "17.0.6-r1": 1715089160
       }
     },
     "llvm-runtimes": {
       "origin": "llvm-runtimes",
       "versions": {
-        "17.0.6-r0": 1704148022
+        "17.0.6-r0": 1704148022,
+        "17.0.6-r1": 1715089160
       }
     },
     "llvm15": {
@@ -42716,32 +42729,35 @@
     "opus": {
       "origin": "opus",
       "versions": {
-        "1.4-r0": 1682013535
+        "1.4-r0": 1682013535,
+        "1.5.2-r0": 1715092607
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1"
       ],
       "provides": [
-        "so:libopus.so.0=0.9.0"
+        "so:libopus.so.0=0.10.1"
       ]
     },
     "opus-dev": {
       "origin": "opus",
       "versions": {
-        "1.4-r0": 1682013535
+        "1.4-r0": 1682013535,
+        "1.5.2-r0": 1715092607
       },
       "dependencies": [
-        "opus=1.4-r0",
+        "opus=1.5.2-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:opus=1.4"
+        "pc:opus=1.5.2"
       ]
     },
     "opus-doc": {
       "origin": "opus",
       "versions": {
-        "1.4-r0": 1682013535
+        "1.4-r0": 1682013535,
+        "1.5.2-r0": 1715092607
       }
     },
     "opusfile": {
@@ -71286,7 +71302,7 @@
       },
       "libopus.so.0": {
         "package": "opus",
-        "version": "0.9.0"
+        "version": "0.10.1"
       },
       "libopusfile.so.0": {
         "package": "opusfile",
