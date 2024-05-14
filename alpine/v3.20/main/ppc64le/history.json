@@ -66293,6 +66293,106 @@
       "versions": {
         "7.4-r1": 1715159283
       }
+    },
+    "clang18": {
+      "origin": "clang18",
+      "versions": {
+        "18.1.5-r0": 1715716225
+      },
+      "dependencies": [
+        "clang18-headers=18.1.5-r0",
+        "clang18-libs=18.1.5-r0",
+        "fortify-headers>=1.1-r2",
+        "gcc",
+        "libstdc++-dev",
+        "llvm18-linker-tools",
+        "musl-dev",
+        "clang18-headers=18.1.5-r0",
+        "so:libLLVM.so.18.1",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libclang-cpp.so.18.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "cmd:clang++-18=18.1.5-r0",
+        "cmd:clang-18=18.1.5-r0"
+      ]
+    },
+    "clang18-ccache": {
+      "origin": "clang18",
+      "versions": {
+        "18.1.5-r0": 1715716225
+      }
+    },
+    "clang18-dev": {
+      "origin": "clang18",
+      "versions": {
+        "18.1.5-r0": 1715716225
+      },
+      "dependencies": [
+        "clang18=18.1.5-r0",
+        "clang18-libclang=18.1.5-r0",
+        "clang18-libs=18.1.5-r0"
+      ]
+    },
+    "clang18-extra-tools": {
+      "origin": "clang18",
+      "versions": {
+        "18.1.5-r0": 1715716225
+      },
+      "dependencies": [
+        "so:libLLVM.so.18.1",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libclang-cpp.so.18.1",
+        "so:libclang.so.18.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6",
+        "so:libxml2.so.2"
+      ]
+    },
+    "clang18-headers": {
+      "origin": "clang18",
+      "versions": {
+        "18.1.5-r0": 1715716225
+      }
+    },
+    "clang18-libclang": {
+      "origin": "clang18",
+      "versions": {
+        "18.1.5-r0": 1715716225
+      },
+      "dependencies": [
+        "clang18-headers=18.1.5-r0",
+        "so:libLLVM.so.18.1",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libclang.so.18.1=18.1.5"
+      ]
+    },
+    "clang18-libs": {
+      "origin": "clang18",
+      "versions": {
+        "18.1.5-r0": 1715716225
+      },
+      "dependencies": [
+        "so:libLLVM.so.18.1",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libclang-cpp.so.18.1=18.1"
+      ]
+    },
+    "clang18-static": {
+      "origin": "clang18",
+      "versions": {
+        "18.1.5-r0": 1715716225
+      }
     }
   },
   "provide": {
@@ -73785,6 +73885,14 @@
       },
       "libLLVM.so.18.1": {
         "package": "llvm18-libs",
+        "version": "18.1"
+      },
+      "libclang.so.18.1": {
+        "package": "clang18-libclang",
+        "version": "18.1.5"
+      },
+      "libclang-cpp.so.18.1": {
+        "package": "clang18-libs",
         "version": "18.1"
       }
     }
