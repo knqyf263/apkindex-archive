@@ -5895,22 +5895,6 @@ c:b34a6761f4010cf1e79d08cbce7e66e8fc77c934
 D:so:libc.musl-armhf.so.1
 p:cmd:nasm=2.15.05-r0 cmd:ndisasm=2.15.05-r0
 
-C:Q1ArJ8FlpC9z/NFOqMW+/+lSB8hTs=
-P:busybox-suid
-V:1.35.0-r17
-A:armhf
-S:3759
-I:16384
-T:suid binaries of Busybox
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Sören Tempel <soeren+alpine@soeren-tempel.net>
-t:1659366884
-c:2bf6ec48e526113f87216683cd341a78af5f0b3f
-D:busybox so:libc.musl-armhf.so.1
-p:cmd:bbsuid=1.35.0-r17
-
 C:Q1dMZ78aQ0Yr4lTpNE4a0pDJKX7nQ=
 P:pinentry-doc
 V:1.2.0-r0
@@ -6559,6 +6543,21 @@ t:1599883343
 c:af42beac9d1297ab94458920a41c7a9c190eb97d
 D:so:libc.musl-armhf.so.1
 p:so:liborc-0.4.so.0=0.32.0
+
+C:Q1IVrEYIxyYaGySYOJspxKbAjzKWc=
+P:busybox-static
+V:1.35.0-r18
+A:armhf
+S:682578
+I:1208320
+T:Statically linked Busybox
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Sören Tempel <soeren+alpine@soeren-tempel.net>
+t:1715899585
+c:dd27c66598995fc9eb1ad0ace65d9feab7affecc
+p:cmd:busybox.static=1.35.0-r18
 
 C:Q10gKZeUk88ncADXxXYO7cu7m54U8=
 P:nfs-utils-dev
@@ -13489,6 +13488,23 @@ t:1646739217
 c:bdd10339496d9e61bb9d3197c1d8b0e96a29720c
 i:docs skalibs=2.11.2.0-r0
 
+C:Q1SIR1jOH1nj5n9Ghnfiz+oGyyDow=
+P:ssl_client
+V:1.35.0-r18
+A:armhf
+S:4534
+I:24576
+T:EXternal ssl_client for busybox wget
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Sören Tempel <soeren+alpine@soeren-tempel.net>
+t:1715899585
+c:dd27c66598995fc9eb1ad0ace65d9feab7affecc
+D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
+p:cmd:ssl_client=1.35.0-r18
+i:busybox=1.35.0-r18 libssl1.1
+
 C:Q1y9irNjXSl9BJDPUK8X5oDgxK/wI=
 P:mdadm
 V:4.2-r0
@@ -16990,21 +17006,6 @@ t:1631360531
 c:a9426470addbe04adf7f49447c208ce762894783
 D:/bin/sh so:libc.musl-armhf.so.1 so:libcurl.so.4 so:libogg.so.0 so:libssl.so.1.1 so:libtheora.so.0 so:libvorbis.so.0 so:libxml2.so.2 so:libxslt.so.1
 p:cmd:icecast=2.4.4-r7
-
-C:Q1JH33TgThIDg8NptfdRGdMR48Fno=
-P:busybox-static
-V:1.35.0-r17
-A:armhf
-S:682550
-I:1208320
-T:Statically linked Busybox
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Sören Tempel <soeren+alpine@soeren-tempel.net>
-t:1659366884
-c:2bf6ec48e526113f87216683cd341a78af5f0b3f
-p:cmd:busybox.static=1.35.0-r17
 
 C:Q1Nh++NQlNqcJP3WDsIcpxOA1sGDk=
 P:source-highlight-doc
@@ -21917,6 +21918,22 @@ t:1643286710
 c:946e70f04423a9e9ff7ee6722b980052632838ee
 D:so:libc.musl-armhf.so.1 so:liblinenoise.so.0 so:liblua-5.3.so.0
 p:lua cmd:lua5.3=5.3.6-r3 cmd:luac5.3=5.3.6-r3
+
+C:Q1hzSZNaG280kwdnViZsl8gilYkEk=
+P:busybox-ifupdown
+V:1.35.0-r18
+A:armhf
+S:1526
+I:4096
+T:placeholder package for busybox ifupdown
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Sören Tempel <soeren+alpine@soeren-tempel.net>
+t:1715899585
+c:dd27c66598995fc9eb1ad0ace65d9feab7affecc
+k:200
+p:ifupdown-any
 
 C:Q1nurUfif5BODIMQve0/e0H9mMBU0=
 P:diffutils-doc
@@ -43305,6 +43322,22 @@ t:1635117238
 c:2cf3fe063b1b9e308372af7e2c2348e9e494a135
 i:openrc ulogd=2.0.7-r8
 
+C:Q1o8b8c2tC2dm3HMcn5glrceMdqok=
+P:busybox
+V:1.35.0-r18
+A:armhf
+S:563713
+I:1110016
+T:Size optimized toolbox of many common UNIX utilities
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Sören Tempel <soeren+alpine@soeren-tempel.net>
+t:1715899585
+c:dd27c66598995fc9eb1ad0ace65d9feab7affecc
+D:so:libc.musl-armhf.so.1
+p:/bin/sh cmd:busybox=1.35.0-r18 cmd:sh=1.35.0-r18
+
 C:Q15Dx8z0wZweZxqE8VZZSXsfV6pbk=
 P:linux-firmware-slicoss
 V:20220509-r2
@@ -46167,21 +46200,6 @@ t:1667743541
 c:c089bc577f5fae361a6fc94156995e6cd37d7de1
 D:so:libc.musl-armhf.so.1 so:liblber.so.2 so:libldap.so.2
 
-C:Q1VQeHhrn7vAXIB8UwUgFfFgoil1E=
-P:busybox-doc
-V:1.35.0-r17
-A:armhf
-S:44791
-I:65536
-T:Size optimized toolbox of many common UNIX utilities (documentation)
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Sören Tempel <soeren+alpine@soeren-tempel.net>
-t:1659366884
-c:2bf6ec48e526113f87216683cd341a78af5f0b3f
-i:docs busybox=1.35.0-r17
-
 C:Q1BauUKi7CbeWYmsYbzd7FdAZ9zH4=
 P:libde265-dev
 V:1.0.15-r0
@@ -46808,22 +46826,6 @@ m:Nathan Angelacos <nangel@alpinelinux.org>
 t:1652319872
 c:c374f612c2a12fba567f4c4edb5f7f579bbebc12
 D:kamailio so:libc.musl-armhf.so.1 so:libruby.so.3.1
-
-C:Q1aDPOEX066oKGrUHRiZv0piA92QE=
-P:busybox
-V:1.35.0-r17
-A:armhf
-S:563755
-I:1110016
-T:Size optimized toolbox of many common UNIX utilities
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Sören Tempel <soeren+alpine@soeren-tempel.net>
-t:1659366884
-c:2bf6ec48e526113f87216683cd341a78af5f0b3f
-D:so:libc.musl-armhf.so.1
-p:/bin/sh cmd:busybox=1.35.0-r17 cmd:sh=1.35.0-r17
 
 C:Q1SOEZPV1nXEG2XdGX5tABoAHes+A=
 P:multipath-tools-doc
@@ -50325,22 +50327,6 @@ t:1627487158
 c:719ff6ae28aaba12ad5890c11a74a451019f4cb4
 D:perl so:libc.musl-armhf.so.1
 
-C:Q1AT/p9M0fBVQj/r+IZUIUbjlde+U=
-P:busybox-extras
-V:1.35.0-r17
-A:armhf
-S:61304
-I:122880
-T:Additional binaries of Busybox
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Sören Tempel <soeren+alpine@soeren-tempel.net>
-t:1659366884
-c:2bf6ec48e526113f87216683cd341a78af5f0b3f
-D:busybox so:libc.musl-armhf.so.1
-p:cmd:busybox-extras=1.35.0-r17
-
 C:Q1I+7QdWMH1lFur2SDE5ilxJZhEUQ=
 P:lua-curl
 V:0.3.13-r0
@@ -51698,6 +51684,22 @@ c:4185bdc00ef42443f85ff19a5a449a2904bec285
 D:libogg-dev libtheora=1.1.1-r16 pc:ogg>=1.1 pkgconfig
 p:pc:theora=1.1.1 pc:theoradec=1.1.1 pc:theoraenc=1.1.1
 
+C:Q1dW3SkQJvEDYn0khodmlzky0WFec=
+P:busybox-extras
+V:1.35.0-r18
+A:armhf
+S:61309
+I:122880
+T:Additional binaries of Busybox
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Sören Tempel <soeren+alpine@soeren-tempel.net>
+t:1715899585
+c:dd27c66598995fc9eb1ad0ace65d9feab7affecc
+D:busybox so:libc.musl-armhf.so.1
+p:cmd:busybox-extras=1.35.0-r18
+
 C:Q1li40E3Zg+AkN4m50mV16bboS6e0=
 P:asterisk-fax
 V:18.20.2-r0
@@ -52407,23 +52409,6 @@ t:1659350595
 c:8996cd8fe28dd51e6f1e38cd8fef9cc2b4c80750
 D:alsa-utils bash
 p:cmd:alsaconf=1.2.7-r1
-
-C:Q1zALGnilXD60Ix86LkaiaLVHyYm4=
-P:ssl_client
-V:1.35.0-r17
-A:armhf
-S:4531
-I:24576
-T:EXternal ssl_client for busybox wget
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Sören Tempel <soeren+alpine@soeren-tempel.net>
-t:1659366884
-c:2bf6ec48e526113f87216683cd341a78af5f0b3f
-D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
-p:cmd:ssl_client=1.35.0-r17
-i:busybox=1.35.0-r17 libssl1.1
 
 C:Q13ikePVdW4JCHjkuIpuDMnvOVrss=
 P:linux-firmware-cadence
@@ -59911,6 +59896,22 @@ c:88a5f38f160b5015dca8d5a1860f87c6a9f1ebf1
 D:expat=2.6.2-r0 pkgconfig
 p:pc:expat=2.6.2
 
+C:Q1sYl7obFoCymFDEu2kT+shCV51M0=
+P:busybox-suid
+V:1.35.0-r18
+A:armhf
+S:3762
+I:16384
+T:suid binaries of Busybox
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Sören Tempel <soeren+alpine@soeren-tempel.net>
+t:1715899585
+c:dd27c66598995fc9eb1ad0ace65d9feab7affecc
+D:busybox so:libc.musl-armhf.so.1
+p:cmd:bbsuid=1.35.0-r18
+
 C:Q1k5aSrNfFbkeDpH21PxWra2mSob0=
 P:py3-olefile
 V:0.46-r6
@@ -63206,22 +63207,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1610489771
 c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
 i:docs libpng=1.6.37-r1
-
-C:Q1/dzUcMta2tRnKYOHTsv6oBZj1k4=
-P:busybox-ifupdown
-V:1.35.0-r17
-A:armhf
-S:1525
-I:4096
-T:placeholder package for busybox ifupdown
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Sören Tempel <soeren+alpine@soeren-tempel.net>
-t:1659366884
-c:2bf6ec48e526113f87216683cd341a78af5f0b3f
-k:200
-p:ifupdown-any
 
 C:Q1fZP5uigGpqu/H3ZEVWhMaJMRqvI=
 P:perl-email-date-format
@@ -69168,6 +69153,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1667743541
 c:c089bc577f5fae361a6fc94156995e6cd37d7de1
 D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:liblber.so.2 so:libldap.so.2
+
+C:Q1BohNIShraRBjYylmATdyFGZrYgA=
+P:busybox-doc
+V:1.35.0-r18
+A:armhf
+S:44795
+I:65536
+T:Size optimized toolbox of many common UNIX utilities (documentation)
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Sören Tempel <soeren+alpine@soeren-tempel.net>
+t:1715899585
+c:dd27c66598995fc9eb1ad0ace65d9feab7affecc
+i:docs busybox=1.35.0-r18
 
 C:Q1GNLaiTFh6ciC0SkCs+wP5go7SQc=
 P:libwebsockets-doc

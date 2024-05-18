@@ -16451,21 +16451,6 @@ t:1682442827
 c:6ffdd303a8aa77d548aa0ea47b8601bbe46a4b50
 D:perl perl-git=2.36.6-r0 perl-net-smtp-ssl perl-authen-sasl so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libpcre2-8.so.0 so:libssl.so.1.1 so:libz.so.1
 
-C:Q1XBo0e3iP15UX9scsSMhxaz99Olg=
-P:busybox-static
-V:1.35.0-r17
-A:ppc64le
-S:660774
-I:1257472
-T:Statically linked Busybox
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Sören Tempel <soeren+alpine@soeren-tempel.net>
-t:1659366884
-c:2bf6ec48e526113f87216683cd341a78af5f0b3f
-p:cmd:busybox.static=1.35.0-r17
-
 C:Q1wtg+Q6jNNrciN1deRwjsM3jg8WQ=
 P:fuse3-static
 V:3.11.0-r0
@@ -19797,22 +19782,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1703157652
 c:8a893ac72ef138ae4adb22b7ee70aa189a808a4d
 D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libperl.so so:libstdc++.so.6
-
-C:Q15+UEA6P2J7YXwonEQsVWx/lhXuE=
-P:busybox-ifupdown
-V:1.35.0-r17
-A:ppc64le
-S:1523
-I:4096
-T:placeholder package for busybox ifupdown
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Sören Tempel <soeren+alpine@soeren-tempel.net>
-t:1659366884
-c:2bf6ec48e526113f87216683cd341a78af5f0b3f
-k:200
-p:ifupdown-any
 
 C:Q1t81QE5lTYpsRMSoFSmrzFzXZLlw=
 P:asterisk-srtp
@@ -26052,23 +26021,6 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:perl-mailtools perl-net-snpp perl-device-serialport perl-dbi perl-sys-hostname-long perl-test-mockobject
 p:cmd:email2page=1.0.3-r5 cmd:sendmail2snpp=1.0.3-r5 cmd:sendpage-db=1.0.3-r5 cmd:sendpage=1.0.3-r5 cmd:snpp=1.0.3-r5
 
-C:Q198XCZRvW7pCmaFXklkckkU4NMCA=
-P:ssl_client
-V:1.35.0-r17
-A:ppc64le
-S:5266
-I:81920
-T:EXternal ssl_client for busybox wget
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Sören Tempel <soeren+alpine@soeren-tempel.net>
-t:1659366884
-c:2bf6ec48e526113f87216683cd341a78af5f0b3f
-D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
-p:cmd:ssl_client=1.35.0-r17
-i:busybox=1.35.0-r17 libssl1.1
-
 C:Q16aGqIF5+VS9fhnMXnO23rvZ6Gnw=
 P:hunspell-en-doc
 V:2020.12.07-r0
@@ -26392,6 +26344,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1629690762
 c:bca9f0df87512bf1044afe0e35ae45a5e05032b6
 i:docs lmdb=0.9.29-r1
+
+C:Q1MP6OR8kqHycP5WaGcDKrSQBLszg=
+P:busybox
+V:1.35.0-r18
+A:ppc64le
+S:552426
+I:1171456
+T:Size optimized toolbox of many common UNIX utilities
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Sören Tempel <soeren+alpine@soeren-tempel.net>
+t:1715899585
+c:dd27c66598995fc9eb1ad0ace65d9feab7affecc
+D:so:libc.musl-ppc64le.so.1
+p:/bin/sh cmd:busybox=1.35.0-r18 cmd:sh=1.35.0-r18
 
 C:Q1AjjoG14MRboyYiqu3288utRUPq4=
 P:iptables-doc
@@ -43781,6 +43749,22 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 
+C:Q1XJh4cuyjVDmwGgeTRiedY/ujwyY=
+P:busybox-extras
+V:1.35.0-r18
+A:ppc64le
+S:58655
+I:143360
+T:Additional binaries of Busybox
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Sören Tempel <soeren+alpine@soeren-tempel.net>
+t:1715899585
+c:dd27c66598995fc9eb1ad0ace65d9feab7affecc
+D:busybox so:libc.musl-ppc64le.so.1
+p:cmd:busybox-extras=1.35.0-r18
+
 C:Q1IMU2bZd5LsN3LzXqD8uMn7KBzRA=
 P:spamassassin
 V:3.4.6-r3
@@ -45615,21 +45599,6 @@ t:1648038137
 c:03e0bf5ad34d2afb9e4db24a72a0b10119afec8e
 D:rpcbind python3 so:libc.musl-ppc64le.so.1
 p:so:libnfsidmap.so.1=1.0.0
-
-C:Q1VQeHhrn7vAXIB8UwUgFfFgoil1E=
-P:busybox-doc
-V:1.35.0-r17
-A:ppc64le
-S:44791
-I:65536
-T:Size optimized toolbox of many common UNIX utilities (documentation)
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Sören Tempel <soeren+alpine@soeren-tempel.net>
-t:1659366884
-c:2bf6ec48e526113f87216683cd341a78af5f0b3f
-i:docs busybox=1.35.0-r17
 
 C:Q1JlsCoaC4oiELBC6jVnajhRUTirg=
 P:cyrus-sasl-static
@@ -48661,6 +48630,23 @@ t:1657546553
 c:62bf0b8f5ab059ec141a7e13700fbec58476af55
 i:docs perl-lwp-protocol-https=6.10-r2
 
+C:Q1DufUbghsE8NxLuauqRyqLA4P5fc=
+P:ssl_client
+V:1.35.0-r18
+A:ppc64le
+S:4992
+I:81920
+T:EXternal ssl_client for busybox wget
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Sören Tempel <soeren+alpine@soeren-tempel.net>
+t:1715899585
+c:dd27c66598995fc9eb1ad0ace65d9feab7affecc
+D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
+p:cmd:ssl_client=1.35.0-r18
+i:busybox=1.35.0-r18 libssl1.1
+
 C:Q1wMuGIzkqrr0nlMHiH/gYnpOaXAY=
 P:nginx-mod-http-xslt-filter
 V:1.22.1-r1
@@ -49012,6 +48998,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1599162207
 c:76077dfdd8d77220a469c5743b7b7fd3484300a1
 D:lame=3.100-r0
+
+C:Q11MY6P3iCGWk+lkjjeYvDsxTvKcc=
+P:busybox-suid
+V:1.35.0-r18
+A:ppc64le
+S:4255
+I:77824
+T:suid binaries of Busybox
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Sören Tempel <soeren+alpine@soeren-tempel.net>
+t:1715899585
+c:dd27c66598995fc9eb1ad0ace65d9feab7affecc
+D:busybox so:libc.musl-ppc64le.so.1
+p:cmd:bbsuid=1.35.0-r18
 
 C:Q1dla3iACnDaW/Uo5MgXFEYlDJOR4=
 P:perl-test-failwarnings
@@ -54028,22 +54030,6 @@ t:1627487158
 c:a1b4e8ce51b78971dfc8b91fe09cc621f68250ea
 i:docs perl-ipc-sharelite=0.17-r7
 
-C:Q1oqsHoADHPiUKg6m3l4r9X2KXkoQ=
-P:busybox-suid
-V:1.35.0-r17
-A:ppc64le
-S:4516
-I:77824
-T:suid binaries of Busybox
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Sören Tempel <soeren+alpine@soeren-tempel.net>
-t:1659366884
-c:2bf6ec48e526113f87216683cd341a78af5f0b3f
-D:busybox so:libc.musl-ppc64le.so.1
-p:cmd:bbsuid=1.35.0-r17
-
 C:Q1VFyOLMqp2vbq/Vd/95qIWLGc4gM=
 P:rtpproxy-openrc
 V:2.1.1-r0
@@ -56378,6 +56364,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1617746107
 c:6044241d6756393d370fa5337762a6ae79ec8f12
 i:docs sysfsutils=2.1.1-r0
+
+C:Q1Lv8zwrY66AuEGNHwzc5XPfgDjKg=
+P:busybox-doc
+V:1.35.0-r18
+A:ppc64le
+S:44530
+I:65536
+T:Size optimized toolbox of many common UNIX utilities (documentation)
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Sören Tempel <soeren+alpine@soeren-tempel.net>
+t:1715899585
+c:dd27c66598995fc9eb1ad0ace65d9feab7affecc
+i:docs busybox=1.35.0-r18
 
 C:Q1ANbo/DDhfnvWzj1uP9hRM2McIyE=
 P:acf-dnsmasq
@@ -64598,22 +64599,6 @@ t:1610489771
 c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
 D:so:libc.musl-ppc64le.so.1 so:libfcgi.so.0 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libfcgi++.so.0=0.0.0
-
-C:Q1KQmeFVvrMrB05Hr8IYg6uc2Ky/g=
-P:busybox-extras
-V:1.35.0-r17
-A:ppc64le
-S:58945
-I:143360
-T:Additional binaries of Busybox
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Sören Tempel <soeren+alpine@soeren-tempel.net>
-t:1659366884
-c:2bf6ec48e526113f87216683cd341a78af5f0b3f
-D:busybox so:libc.musl-ppc64le.so.1
-p:cmd:busybox-extras=1.35.0-r17
 
 C:Q17DN6EkejlM6HCuzuWW5AxYrXyio=
 P:cairo-gobject
@@ -73152,22 +73137,6 @@ c:750f13cd41a829078c8df6c36c13feae86abe200
 D:so:libICE.so.6 so:libSM.so.6 so:libX11.so.6 so:libc.musl-ppc64le.so.1
 p:so:libXt.so.6=6.0.0
 
-C:Q1x9FH7PXFQ8gaUviDrgCktLYNvmQ=
-P:busybox
-V:1.35.0-r17
-A:ppc64le
-S:552701
-I:1171456
-T:Size optimized toolbox of many common UNIX utilities
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Sören Tempel <soeren+alpine@soeren-tempel.net>
-t:1659366884
-c:2bf6ec48e526113f87216683cd341a78af5f0b3f
-D:so:libc.musl-ppc64le.so.1
-p:/bin/sh cmd:busybox=1.35.0-r17 cmd:sh=1.35.0-r17
-
 C:Q1ChdwDRVqq7/XZI4WH8Bd/uFSlJc=
 P:libxcb
 V:1.15-r0
@@ -73521,6 +73490,21 @@ t:1691496504
 c:3851f628d8ba4ee6a8f55ff6d9314e2d724a3452
 D:so:libc.musl-ppc64le.so.1 so:libcli-smb-common-samba4.so so:libdcerpc-samba-samba4.so so:libgse-samba4.so so:liblibcli-lsa3-samba4.so so:liblibsmb-samba4.so so:libmsrpc3-samba4.so so:libndr-standard.so.0 so:libndr.so.2 so:libreplace-samba4.so so:libsamba-credentials.so.1 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-security-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsecrets3-samba4.so so:libsmbconf.so.0 so:libtalloc.so.2 so:libtevent-util.so.0 so:libtevent.so.0
 p:so:libsmbclient.so.0=0.7.0
+
+C:Q1kRJNxgIvH5fOD0stEpFfvRwZAKc=
+P:busybox-static
+V:1.35.0-r18
+A:ppc64le
+S:660447
+I:1257472
+T:Statically linked Busybox
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Sören Tempel <soeren+alpine@soeren-tempel.net>
+t:1715899585
+c:dd27c66598995fc9eb1ad0ace65d9feab7affecc
+p:cmd:busybox.static=1.35.0-r18
 
 C:Q1kwHSmFOoLI9pdhLbbFKAfcccGK0=
 P:iaxmodem-dbg
@@ -74717,6 +74701,22 @@ t:1518805431
 c:8d4313589065fbc86b808ed96434f1c7c5faf8e6
 D:so:libc.musl-ppc64le.so.1 so:libsndfile.so.1
 p:so:libsamplerate.so.0=0.1.8 cmd:sndfile-resample=0.1.9-r1
+
+C:Q1gGpiPQHUZWiqEsZeV3qRcKMn4yM=
+P:busybox-ifupdown
+V:1.35.0-r18
+A:ppc64le
+S:1260
+I:4096
+T:placeholder package for busybox ifupdown
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Sören Tempel <soeren+alpine@soeren-tempel.net>
+t:1715899585
+c:dd27c66598995fc9eb1ad0ace65d9feab7affecc
+k:200
+p:ifupdown-any
 
 C:Q15DMD/wTFQ+KN6LLlDiOQS0eC33Y=
 P:perl-sys-mmap-doc
