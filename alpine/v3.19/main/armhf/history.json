@@ -14046,9 +14046,11 @@
       "origin": "freeradius",
       "versions": {
         "3.0.26-r4": 1691252335,
-        "3.0.26-r6": 1701354873
+        "3.0.26-r6": 1701354873,
+        "3.0.26-r7": 1716060748
       },
       "dependencies": [
+        "freeradius-lib=3.0.26-r7",
         "/bin/sh",
         "so:libc.musl-armhf.so.1",
         "so:libcrypto.so.3",
@@ -14060,7 +14062,7 @@
         "so:libtalloc.so.2"
       ],
       "provides": [
-        "freeradius3=3.0.26-r6",
+        "freeradius3=3.0.26-r7",
         "so:proto_vmps.so=0",
         "so:rlm_always.so=0",
         "so:rlm_attr_filter.so=0",
@@ -14096,18 +14098,19 @@
         "so:rlm_unpack.so=0",
         "so:rlm_utf8.so=0",
         "so:rlm_wimax.so=0",
-        "cmd:radacct-rotate=3.0.26-r6",
-        "cmd:raddebug=3.0.26-r6",
-        "cmd:radiusd=3.0.26-r6",
-        "cmd:radmin=3.0.26-r6",
-        "cmd:setup-freeradius=3.0.26-r6"
+        "cmd:radacct-rotate=3.0.26-r7",
+        "cmd:raddebug=3.0.26-r7",
+        "cmd:radiusd=3.0.26-r7",
+        "cmd:radmin=3.0.26-r7",
+        "cmd:setup-freeradius=3.0.26-r7"
       ]
     },
     "freeradius-checkrad": {
       "origin": "freeradius",
       "versions": {
         "3.0.26-r4": 1691252335,
-        "3.0.26-r6": 1701354873
+        "3.0.26-r6": 1701354873,
+        "3.0.26-r7": 1716060748
       },
       "dependencies": [
         "perl",
@@ -14116,7 +14119,7 @@
         "net-snmp-tools"
       ],
       "provides": [
-        "cmd:checkrad=3.0.26-r6"
+        "cmd:checkrad=3.0.26-r7"
       ]
     },
     "freeradius-client": {
@@ -14152,24 +14155,30 @@
       "origin": "freeradius",
       "versions": {
         "3.0.26-r4": 1691252335,
-        "3.0.26-r6": 1701354873
-      }
+        "3.0.26-r6": 1701354873,
+        "3.0.26-r7": 1716060748
+      },
+      "dependencies": [
+        "freeradius-lib=3.0.26-r7"
+      ]
     },
     "freeradius-dev": {
       "origin": "freeradius",
       "versions": {
         "3.0.26-r4": 1691252335,
-        "3.0.26-r6": 1701354873
+        "3.0.26-r6": 1701354873,
+        "3.0.26-r7": 1716060748
       }
     },
     "freeradius-dhcp": {
       "origin": "freeradius",
       "versions": {
         "3.0.26-r4": 1691252335,
-        "3.0.26-r6": 1701354873
+        "3.0.26-r6": 1701354873,
+        "3.0.26-r7": 1716060748
       },
       "dependencies": [
-        "freeradius=3.0.26-r6",
+        "freeradius=3.0.26-r7",
         "so:libc.musl-armhf.so.1"
       ],
       "provides": [
@@ -14182,17 +14191,19 @@
       "origin": "freeradius",
       "versions": {
         "3.0.26-r4": 1691252335,
-        "3.0.26-r6": 1701354873
+        "3.0.26-r6": 1701354873,
+        "3.0.26-r7": 1716060748
       }
     },
     "freeradius-eap": {
       "origin": "freeradius",
       "versions": {
         "3.0.26-r4": 1691252335,
-        "3.0.26-r6": 1701354873
+        "3.0.26-r6": 1701354873,
+        "3.0.26-r7": 1716060748
       },
       "dependencies": [
-        "freeradius=3.0.26-r6",
+        "freeradius=3.0.26-r7",
         "so:libc.musl-armhf.so.1",
         "so:libcrypto.so.3",
         "so:libfreeradius-radius.so",
@@ -14201,7 +14212,7 @@
         "so:libtalloc.so.2"
       ],
       "provides": [
-        "freeradius3-eap=3.0.26-r6",
+        "freeradius3-eap=3.0.26-r7",
         "so:libfreeradius-eap.so=0",
         "so:rlm_eap.so=0",
         "so:rlm_eap_fast.so=0",
@@ -14213,23 +14224,24 @@
         "so:rlm_eap_sim.so=0",
         "so:rlm_eap_tls.so=0",
         "so:rlm_eap_ttls.so=0",
-        "cmd:radeapclient=3.0.26-r6"
+        "cmd:radeapclient=3.0.26-r7"
       ]
     },
     "freeradius-krb5": {
       "origin": "freeradius",
       "versions": {
         "3.0.26-r4": 1691252335,
-        "3.0.26-r6": 1701354873
+        "3.0.26-r6": 1701354873,
+        "3.0.26-r7": 1716060748
       },
       "dependencies": [
-        "freeradius=3.0.26-r6",
+        "freeradius=3.0.26-r7",
         "so:libc.musl-armhf.so.1",
         "so:libcom_err.so.2",
         "so:libkrb5.so.3"
       ],
       "provides": [
-        "freeradius3-krb5=3.0.26-r6",
+        "freeradius3-krb5=3.0.26-r7",
         "so:rlm_krb5.so=0"
       ]
     },
@@ -14237,15 +14249,16 @@
       "origin": "freeradius",
       "versions": {
         "3.0.26-r4": 1691252335,
-        "3.0.26-r6": 1701354873
+        "3.0.26-r6": 1701354873,
+        "3.0.26-r7": 1716060748
       },
       "dependencies": [
-        "freeradius=3.0.26-r6",
+        "freeradius=3.0.26-r7",
         "so:libc.musl-armhf.so.1",
         "so:libldap.so.2"
       ],
       "provides": [
-        "freeradius3-ldap=3.0.26-r6",
+        "freeradius3-ldap=3.0.26-r7",
         "so:rlm_ldap.so=0"
       ]
     },
@@ -14253,7 +14266,8 @@
       "origin": "freeradius",
       "versions": {
         "3.0.26-r4": 1691252335,
-        "3.0.26-r6": 1701354873
+        "3.0.26-r6": 1701354873,
+        "3.0.26-r7": 1716060748
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -14270,28 +14284,30 @@
       "origin": "freeradius",
       "versions": {
         "3.0.26-r4": 1691252335,
-        "3.0.26-r6": 1701354873
+        "3.0.26-r6": 1701354873,
+        "3.0.26-r7": 1716060748
       },
       "dependencies": [
-        "freeradius-sql=3.0.26-r6"
+        "freeradius-sql=3.0.26-r7"
       ],
       "provides": [
-        "freeradius3-mssql=3.0.26-r6"
+        "freeradius3-mssql=3.0.26-r7"
       ]
     },
     "freeradius-mysql": {
       "origin": "freeradius",
       "versions": {
         "3.0.26-r4": 1691252335,
-        "3.0.26-r6": 1701354873
+        "3.0.26-r6": 1701354873,
+        "3.0.26-r7": 1716060748
       },
       "dependencies": [
-        "freeradius-sql=3.0.26-r6",
+        "freeradius-sql=3.0.26-r7",
         "so:libc.musl-armhf.so.1",
         "so:libmariadb.so.3"
       ],
       "provides": [
-        "freeradius3-mysql=3.0.26-r6",
+        "freeradius3-mysql=3.0.26-r7",
         "so:rlm_sql_mysql.so=0"
       ]
     },
@@ -14299,15 +14315,16 @@
       "origin": "freeradius",
       "versions": {
         "3.0.26-r4": 1691252335,
-        "3.0.26-r6": 1701354873
+        "3.0.26-r6": 1701354873,
+        "3.0.26-r7": 1716060748
       },
       "dependencies": [
-        "freeradius=3.0.26-r6",
+        "freeradius=3.0.26-r7",
         "so:libc.musl-armhf.so.1",
         "so:libpam.so.0"
       ],
       "provides": [
-        "freeradius3-pam=3.0.26-r6",
+        "freeradius3-pam=3.0.26-r7",
         "so:rlm_pam.so=0"
       ]
     },
@@ -14315,16 +14332,17 @@
       "origin": "freeradius",
       "versions": {
         "3.0.26-r4": 1691252335,
-        "3.0.26-r6": 1701354873
+        "3.0.26-r6": 1701354873,
+        "3.0.26-r7": 1716060748
       },
       "dependencies": [
-        "freeradius=3.0.26-r6",
+        "freeradius=3.0.26-r7",
         "perl",
         "so:libc.musl-armhf.so.1",
         "so:libperl.so"
       ],
       "provides": [
-        "freeradius3-perl=3.0.26-r6",
+        "freeradius3-perl=3.0.26-r7",
         "so:rlm_perl.so=0"
       ]
     },
@@ -14332,15 +14350,16 @@
       "origin": "freeradius",
       "versions": {
         "3.0.26-r4": 1691252335,
-        "3.0.26-r6": 1701354873
+        "3.0.26-r6": 1701354873,
+        "3.0.26-r7": 1716060748
       },
       "dependencies": [
-        "freeradius-sql=3.0.26-r6",
+        "freeradius-sql=3.0.26-r7",
         "so:libc.musl-armhf.so.1",
         "so:libpq.so.5"
       ],
       "provides": [
-        "freeradius3-postgresql=3.0.26-r6",
+        "freeradius3-postgresql=3.0.26-r7",
         "so:rlm_sql_postgresql.so=0"
       ]
     },
@@ -14348,11 +14367,13 @@
       "origin": "freeradius",
       "versions": {
         "3.0.26-r4": 1691252335,
-        "3.0.26-r6": 1701354873
+        "3.0.26-r6": 1701354873,
+        "3.0.26-r7": 1716060748
       },
       "dependencies": [
-        "freeradius=3.0.26-r6",
-        "so:libc.musl-armhf.so.1"
+        "freeradius=3.0.26-r7",
+        "so:libc.musl-armhf.so.1",
+        "so:libpython3.11.so.1.0"
       ],
       "provides": [
         "so:rlm_python3.so=0"
@@ -14362,10 +14383,11 @@
       "origin": "freeradius",
       "versions": {
         "3.0.26-r4": 1691252335,
-        "3.0.26-r6": 1701354873
+        "3.0.26-r6": 1701354873,
+        "3.0.26-r7": 1716060748
       },
       "dependencies": [
-        "freeradius=3.0.26-r6",
+        "freeradius=3.0.26-r7",
         "so:libc.musl-armhf.so.1",
         "so:libhiredis.so.1.1.0"
       ],
@@ -14378,10 +14400,11 @@
       "origin": "freeradius",
       "versions": {
         "3.0.26-r4": 1691252335,
-        "3.0.26-r6": 1701354873
+        "3.0.26-r6": 1701354873,
+        "3.0.26-r7": 1716060748
       },
       "dependencies": [
-        "freeradius=3.0.26-r6",
+        "freeradius=3.0.26-r7",
         "so:libc.musl-armhf.so.1",
         "so:libcurl.so.4",
         "so:libjson-c.so.5"
@@ -14394,14 +14417,15 @@
       "origin": "freeradius",
       "versions": {
         "3.0.26-r4": 1691252335,
-        "3.0.26-r6": 1701354873
+        "3.0.26-r6": 1701354873,
+        "3.0.26-r7": 1716060748
       },
       "dependencies": [
-        "freeradius=3.0.26-r6",
+        "freeradius=3.0.26-r7",
         "so:libc.musl-armhf.so.1"
       ],
       "provides": [
-        "freeradius3-sql=3.0.26-r6",
+        "freeradius3-sql=3.0.26-r7",
         "so:rlm_sql.so=0",
         "so:rlm_sql_null.so=0",
         "so:rlm_sqlcounter.so=0",
@@ -14412,15 +14436,16 @@
       "origin": "freeradius",
       "versions": {
         "3.0.26-r4": 1691252335,
-        "3.0.26-r6": 1701354873
+        "3.0.26-r6": 1701354873,
+        "3.0.26-r7": 1716060748
       },
       "dependencies": [
-        "freeradius-sql=3.0.26-r6",
+        "freeradius-sql=3.0.26-r7",
         "so:libc.musl-armhf.so.1",
         "so:libsqlite3.so.0"
       ],
       "provides": [
-        "freeradius3-sqlite=3.0.26-r6",
+        "freeradius3-sqlite=3.0.26-r7",
         "so:rlm_sql_sqlite.so=0"
       ]
     },
@@ -14428,22 +14453,24 @@
       "origin": "freeradius",
       "versions": {
         "3.0.26-r4": 1691252335,
-        "3.0.26-r6": 1701354873
+        "3.0.26-r6": 1701354873,
+        "3.0.26-r7": 1716060748
       }
     },
     "freeradius-unixodbc": {
       "origin": "freeradius",
       "versions": {
         "3.0.26-r4": 1691252335,
-        "3.0.26-r6": 1701354873
+        "3.0.26-r6": 1701354873,
+        "3.0.26-r7": 1716060748
       },
       "dependencies": [
-        "freeradius=3.0.26-r6",
+        "freeradius=3.0.26-r7",
         "so:libc.musl-armhf.so.1",
         "so:libodbc.so.2"
       ],
       "provides": [
-        "freeradius3-unixodbc=3.0.26-r6",
+        "freeradius3-unixodbc=3.0.26-r7",
         "so:rlm_sql_unixodbc.so=0"
       ]
     },
@@ -14451,9 +14478,11 @@
       "origin": "freeradius",
       "versions": {
         "3.0.26-r4": 1691252335,
-        "3.0.26-r6": 1701354873
+        "3.0.26-r6": 1701354873,
+        "3.0.26-r7": 1716060748
       },
       "dependencies": [
+        "freeradius-lib=3.0.26-r7",
         "so:libc.musl-armhf.so.1",
         "so:libcrypto.so.3",
         "so:libfreeradius-radius.so",
@@ -14463,20 +14492,20 @@
         "so:libtalloc.so.2"
       ],
       "provides": [
-        "freeradius-radclient=3.0.26-r6",
-        "freeradius3-radclient=3.0.26-r6",
-        "cmd:rad_counter=3.0.26-r6",
-        "cmd:radclient=3.0.26-r6",
-        "cmd:radcrypt=3.0.26-r6",
-        "cmd:radlast=3.0.26-r6",
-        "cmd:radsniff=3.0.26-r6",
-        "cmd:radsqlrelay=3.0.26-r6",
-        "cmd:radtest=3.0.26-r6",
-        "cmd:radwho=3.0.26-r6",
-        "cmd:radzap=3.0.26-r6",
-        "cmd:rlm_ippool_tool=3.0.26-r6",
-        "cmd:rlm_sqlippool_tool=3.0.26-r6",
-        "cmd:smbencrypt=3.0.26-r6"
+        "freeradius-radclient=3.0.26-r7",
+        "freeradius3-radclient=3.0.26-r7",
+        "cmd:rad_counter=3.0.26-r7",
+        "cmd:radclient=3.0.26-r7",
+        "cmd:radcrypt=3.0.26-r7",
+        "cmd:radlast=3.0.26-r7",
+        "cmd:radsniff=3.0.26-r7",
+        "cmd:radsqlrelay=3.0.26-r7",
+        "cmd:radtest=3.0.26-r7",
+        "cmd:radwho=3.0.26-r7",
+        "cmd:radzap=3.0.26-r7",
+        "cmd:rlm_ippool_tool=3.0.26-r7",
+        "cmd:rlm_sqlippool_tool=3.0.26-r7",
+        "cmd:smbencrypt=3.0.26-r7"
       ]
     },
     "freeswitch": {
@@ -69221,7 +69250,8 @@
     "freeradius-openrc": {
       "origin": "freeradius",
       "versions": {
-        "3.0.26-r6": 1701354873
+        "3.0.26-r6": 1701354873,
+        "3.0.26-r7": 1716060748
       }
     },
     "gross-openrc": {
@@ -69733,59 +69763,59 @@
       },
       "freeradius3": {
         "package": "freeradius",
-        "version": "3.0.26-r6"
+        "version": "3.0.26-r7"
       },
       "freeradius3-eap": {
         "package": "freeradius-eap",
-        "version": "3.0.26-r6"
+        "version": "3.0.26-r7"
       },
       "freeradius3-krb5": {
         "package": "freeradius-krb5",
-        "version": "3.0.26-r6"
+        "version": "3.0.26-r7"
       },
       "freeradius3-ldap": {
         "package": "freeradius-ldap",
-        "version": "3.0.26-r6"
+        "version": "3.0.26-r7"
       },
       "freeradius3-mssql": {
         "package": "freeradius-mssql",
-        "version": "3.0.26-r6"
+        "version": "3.0.26-r7"
       },
       "freeradius3-mysql": {
         "package": "freeradius-mysql",
-        "version": "3.0.26-r6"
+        "version": "3.0.26-r7"
       },
       "freeradius3-pam": {
         "package": "freeradius-pam",
-        "version": "3.0.26-r6"
+        "version": "3.0.26-r7"
       },
       "freeradius3-perl": {
         "package": "freeradius-perl",
-        "version": "3.0.26-r6"
+        "version": "3.0.26-r7"
       },
       "freeradius3-postgresql": {
         "package": "freeradius-postgresql",
-        "version": "3.0.26-r6"
+        "version": "3.0.26-r7"
       },
       "freeradius3-sql": {
         "package": "freeradius-sql",
-        "version": "3.0.26-r6"
+        "version": "3.0.26-r7"
       },
       "freeradius3-sqlite": {
         "package": "freeradius-sqlite",
-        "version": "3.0.26-r6"
+        "version": "3.0.26-r7"
       },
       "freeradius3-unixodbc": {
         "package": "freeradius-unixodbc",
-        "version": "3.0.26-r6"
+        "version": "3.0.26-r7"
       },
       "freeradius-radclient": {
         "package": "freeradius-utils",
-        "version": "3.0.26-r6"
+        "version": "3.0.26-r7"
       },
       "freeradius3-radclient": {
         "package": "freeradius-utils",
-        "version": "3.0.26-r6"
+        "version": "3.0.26-r7"
       },
       "freeswitch-sounds-pt-BR-karina-8000": {
         "package": "freeswitch-sounds-pt-br-karina-8000",
