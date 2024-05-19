@@ -43948,73 +43948,81 @@
     "pcsc-lite": {
       "origin": "pcsc-lite",
       "versions": {
-        "2.0.1-r0": 1703286570
+        "2.0.1-r0": 1703286570,
+        "2.2.0-r0": 1716160578
       },
       "dependencies": [
         "/bin/sh",
-        "so:libc.musl-s390x.so.1",
-        "so:libudev.so.1"
+        "so:libc.musl-s390x.so.1"
       ],
       "provides": [
-        "cmd:pcsc-spy=2.0.1-r0",
-        "cmd:pcscd=2.0.1-r0"
+        "cmd:pcsc-spy=2.2.0-r0",
+        "cmd:pcscd=2.2.0-r0"
       ]
     },
     "pcsc-lite-dev": {
       "origin": "pcsc-lite",
       "versions": {
-        "2.0.1-r0": 1703286570
+        "2.0.1-r0": 1703286570,
+        "2.2.0-r0": 1716160578
       },
       "dependencies": [
-        "pcsc-lite-libs=2.0.1-r0",
+        "pcsc-lite-libs=2.2.0-r0",
         "eudev-dev",
-        "pcsc-lite-spy-libs=2.0.1-r0",
+        "pcsc-lite-libs=2.2.0-r0",
+        "pcsc-lite-spy-libs=2.2.0-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libpcsclite=2.0.1"
+        "pc:libpcsclite=2.2.0"
       ]
     },
     "pcsc-lite-doc": {
       "origin": "pcsc-lite",
       "versions": {
-        "2.0.1-r0": 1703286570
+        "2.0.1-r0": 1703286570,
+        "2.2.0-r0": 1716160578
       }
     },
     "pcsc-lite-libs": {
       "origin": "pcsc-lite",
       "versions": {
-        "2.0.1-r0": 1703286570
+        "2.0.1-r0": 1703286570,
+        "2.2.0-r0": 1716160578
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1"
       ],
       "provides": [
-        "so:libpcsclite.so.1=1.0.0"
+        "so:libpcsclite.so.1=1",
+        "so:libpcsclite_real.so.1=1"
       ]
     },
     "pcsc-lite-openrc": {
       "origin": "pcsc-lite",
       "versions": {
-        "2.0.1-r0": 1703286570
+        "2.0.1-r0": 1703286570,
+        "2.2.0-r0": 1716160578
       }
     },
     "pcsc-lite-spy-libs": {
       "origin": "pcsc-lite",
       "versions": {
-        "2.0.1-r0": 1703286570
+        "2.0.1-r0": 1703286570,
+        "2.2.0-r0": 1716160578
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1"
       ],
       "provides": [
-        "so:libpcscspy.so.0=0.0.0"
+        "so:libpcscspy.so.0=0"
       ]
     },
     "pcsc-lite-static": {
       "origin": "pcsc-lite",
       "versions": {
-        "2.0.1-r0": 1703286570
+        "2.0.1-r0": 1703286570,
+        "2.2.0-r0": 1716160578
       }
     },
     "perdition": {
@@ -72143,11 +72151,11 @@
       },
       "libpcsclite.so.1": {
         "package": "pcsc-lite-libs",
-        "version": "1.0.0"
+        "version": "1"
       },
       "libpcscspy.so.0": {
         "package": "pcsc-lite-spy-libs",
-        "version": "0.0.0"
+        "version": "0"
       },
       "libperditiondb_gdbm.so.0": {
         "package": "perdition",
@@ -73924,6 +73932,10 @@
       "libns-9.18.27.so": {
         "package": "bind-libs",
         "version": "0"
+      },
+      "libpcsclite_real.so.1": {
+        "package": "pcsc-lite-libs",
+        "version": "1"
       }
     }
   }
