@@ -2785,7 +2785,8 @@
       "origin": "alpine-base",
       "versions": {
         "3.20.0_alpha20240329-r0": 1711699252,
-        "3.20.0_rc1-r0": 1715952105
+        "3.20.0_rc1-r0": 1715952105,
+        "3.20.0_rc2-r0": 1716230006
       },
       "dependencies": [
         "alpine-baselayout",
@@ -2921,7 +2922,8 @@
       "origin": "alpine-base",
       "versions": {
         "3.20.0_alpha20240329-r0": 1711699252,
-        "3.20.0_rc1-r0": 1715952105
+        "3.20.0_rc1-r0": 1715952105,
+        "3.20.0_rc2-r0": 1716230006
       },
       "dependencies": [
         "alpine-keys"
@@ -7798,55 +7800,60 @@
       "origin": "busybox",
       "versions": {
         "1.36.1-r25": 1712229712,
-        "1.36.1-r26": 1714132628
+        "1.36.1-r26": 1714132628,
+        "1.36.1-r27": 1716226657
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1"
       ],
       "provides": [
-        "cmd:busybox=1.36.1-r26"
+        "cmd:busybox=1.36.1-r27"
       ]
     },
     "busybox-binsh": {
       "origin": "busybox",
       "versions": {
         "1.36.1-r25": 1712229712,
-        "1.36.1-r26": 1714132628
+        "1.36.1-r26": 1714132628,
+        "1.36.1-r27": 1716226657
       },
       "dependencies": [
-        "busybox=1.36.1-r26"
+        "busybox=1.36.1-r27"
       ],
       "provides": [
         "/bin/sh",
-        "cmd:sh=1.36.1-r26"
+        "cmd:sh=1.36.1-r27"
       ]
     },
     "busybox-doc": {
       "origin": "busybox",
       "versions": {
         "1.36.1-r25": 1712229712,
-        "1.36.1-r26": 1714132628
+        "1.36.1-r26": 1714132628,
+        "1.36.1-r27": 1716226657
       }
     },
     "busybox-extras": {
       "origin": "busybox",
       "versions": {
         "1.36.1-r25": 1712229712,
-        "1.36.1-r26": 1714132628
+        "1.36.1-r26": 1714132628,
+        "1.36.1-r27": 1716226657
       },
       "dependencies": [
-        "busybox=1.36.1-r26",
+        "busybox=1.36.1-r27",
         "so:libc.musl-aarch64.so.1"
       ],
       "provides": [
-        "cmd:busybox-extras=1.36.1-r26"
+        "cmd:busybox-extras=1.36.1-r27"
       ]
     },
     "busybox-extras-openrc": {
       "origin": "busybox",
       "versions": {
         "1.36.1-r25": 1712229712,
-        "1.36.1-r26": 1714132628
+        "1.36.1-r26": 1714132628,
+        "1.36.1-r27": 1716226657
       },
       "dependencies": [
         "openrc>=0.24.1-r6",
@@ -7857,7 +7864,8 @@
       "origin": "busybox",
       "versions": {
         "1.36.1-r25": 1712229712,
-        "1.36.1-r26": 1714132628
+        "1.36.1-r26": 1714132628,
+        "1.36.1-r27": 1716226657
       },
       "provides": [
         "ifupdown-any"
@@ -7867,7 +7875,8 @@
       "origin": "busybox",
       "versions": {
         "1.36.1-r25": 1712229712,
-        "1.36.1-r26": 1714132628
+        "1.36.1-r26": 1714132628,
+        "1.36.1-r27": 1716226657
       },
       "dependencies": [
         "openrc>=0.24.1-r6",
@@ -7881,7 +7890,8 @@
       "origin": "busybox",
       "versions": {
         "1.36.1-r25": 1712229712,
-        "1.36.1-r26": 1714132628
+        "1.36.1-r26": 1714132628,
+        "1.36.1-r27": 1716226657
       },
       "dependencies": [
         "openrc>=0.24.1-r6"
@@ -7891,24 +7901,26 @@
       "origin": "busybox",
       "versions": {
         "1.36.1-r25": 1712229712,
-        "1.36.1-r26": 1714132628
+        "1.36.1-r26": 1714132628,
+        "1.36.1-r27": 1716226657
       },
       "provides": [
-        "cmd:busybox.static=1.36.1-r26"
+        "cmd:busybox.static=1.36.1-r27"
       ]
     },
     "busybox-suid": {
       "origin": "busybox",
       "versions": {
         "1.36.1-r25": 1712229712,
-        "1.36.1-r26": 1714132628
+        "1.36.1-r26": 1714132628,
+        "1.36.1-r27": 1716226657
       },
       "dependencies": [
-        "busybox=1.36.1-r26",
+        "busybox=1.36.1-r27",
         "so:libc.musl-aarch64.so.1"
       ],
       "provides": [
-        "cmd:bbsuid=1.36.1-r26"
+        "cmd:bbsuid=1.36.1-r27"
       ]
     },
     "bwm-ng": {
@@ -11478,20 +11490,22 @@
     "doas": {
       "origin": "doas",
       "versions": {
-        "6.8.2-r6": 1691160392
+        "6.8.2-r6": 1691160392,
+        "6.8.2-r7": 1716229922
       },
       "dependencies": [
         "/bin/sh",
         "so:libc.musl-aarch64.so.1"
       ],
       "provides": [
-        "cmd:doas=6.8.2-r6"
+        "cmd:doas=6.8.2-r7"
       ]
     },
     "doas-doc": {
       "origin": "doas",
       "versions": {
-        "6.8.2-r6": 1691160392
+        "6.8.2-r6": 1691160392,
+        "6.8.2-r7": 1716229922
       }
     },
     "doas-sudo-shim": {
@@ -37022,7 +37036,8 @@
       "origin": "man-pages",
       "versions": {
         "6.06-r0": 1708112371,
-        "6.7-r0": 1714981740
+        "6.7-r0": 1714981740,
+        "6.8-r0": 1716229541
       }
     },
     "man-pages-posix": {
@@ -61860,7 +61875,8 @@
       "origin": "busybox",
       "versions": {
         "1.36.1-r25": 1712229712,
-        "1.36.1-r26": 1714132628
+        "1.36.1-r26": 1714132628,
+        "1.36.1-r27": 1716226657
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
@@ -61868,7 +61884,7 @@
         "so:libssl.so.3"
       ],
       "provides": [
-        "cmd:ssl_client=1.36.1-r26"
+        "cmd:ssl_client=1.36.1-r27"
       ]
     },
     "ssmtp": {
