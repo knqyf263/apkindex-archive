@@ -37287,48 +37287,53 @@
     "mdadm": {
       "origin": "mdadm",
       "versions": {
-        "4.2-r4": 1701354873
+        "4.2-r4": 1701354873,
+        "4.3-r0": 1716193196
       },
       "dependencies": [
         "lsblk",
         "so:libc.musl-armhf.so.1"
       ],
       "provides": [
-        "cmd:mdadm=4.2-r4",
-        "cmd:mdmon=4.2-r4",
-        "cmd:raid6check=4.2-r4"
+        "cmd:mdadm=4.3-r0",
+        "cmd:mdmon=4.3-r0",
+        "cmd:raid6check=4.3-r0"
       ]
     },
     "mdadm-doc": {
       "origin": "mdadm",
       "versions": {
-        "4.2-r4": 1701354873
+        "4.2-r4": 1701354873,
+        "4.3-r0": 1716193196
       }
     },
     "mdadm-misc": {
       "origin": "mdadm",
       "versions": {
-        "4.2-r4": 1701354873
+        "4.2-r4": 1701354873,
+        "4.3-r0": 1716193196
       },
       "dependencies": [
         "mdadm",
         "bash"
       ],
       "provides": [
-        "cmd:handle-mdadm-events=4.2-r4",
-        "cmd:mdcheck=4.2-r4"
+        "cmd:handle-mdadm-events=4.3-r0",
+        "cmd:mdcheck=4.3-r0"
       ]
     },
     "mdadm-openrc": {
       "origin": "mdadm",
       "versions": {
-        "4.2-r4": 1701354873
+        "4.2-r4": 1701354873,
+        "4.3-r0": 1716193196
       }
     },
     "mdadm-udev": {
       "origin": "mdadm",
       "versions": {
-        "4.2-r4": 1701354873
+        "4.2-r4": 1701354873,
+        "4.3-r0": 1716193196
       },
       "dependencies": [
         "lsblk"
@@ -60680,25 +60685,27 @@
     "sqlite": {
       "origin": "sqlite",
       "versions": {
-        "3.45.3-r0": 1713284101
+        "3.45.3-r0": 1713284101,
+        "3.45.3-r1": 1716193559
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libreadline.so.8"
       ],
       "provides": [
-        "cmd:sqlite3=3.45.3-r0"
+        "cmd:sqlite3=3.45.3-r1"
       ]
     },
     "sqlite-dev": {
       "origin": "sqlite",
       "versions": {
-        "3.45.3-r0": 1713284101
+        "3.45.3-r0": 1713284101,
+        "3.45.3-r1": 1716193559
       },
       "dependencies": [
-        "sqlite=3.45.3-r0",
+        "sqlite=3.45.3-r1",
         "pkgconfig",
-        "sqlite-libs=3.45.3-r0"
+        "sqlite-libs=3.45.3-r1"
       ],
       "provides": [
         "pc:sqlite3=3.45.3"
@@ -60707,13 +60714,15 @@
     "sqlite-doc": {
       "origin": "sqlite",
       "versions": {
-        "3.45.3-r0": 1713284101
+        "3.45.3-r0": 1713284101,
+        "3.45.3-r1": 1716193559
       }
     },
     "sqlite-libs": {
       "origin": "sqlite",
       "versions": {
-        "3.45.3-r0": 1713284101
+        "3.45.3-r0": 1713284101,
+        "3.45.3-r1": 1716193559
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1"
@@ -60725,7 +60734,8 @@
     "sqlite-static": {
       "origin": "sqlite",
       "versions": {
-        "3.45.3-r0": 1713284101
+        "3.45.3-r0": 1713284101,
+        "3.45.3-r1": 1716193559
       }
     },
     "sqlite-tcl": {
@@ -62225,7 +62235,8 @@
     "tcl": {
       "origin": "tcl",
       "versions": {
-        "8.6.14-r0": 1709287628
+        "8.6.14-r0": 1709287628,
+        "8.6.14-r1": 1716193559
       },
       "dependencies": [
         "tzdata",
@@ -62234,17 +62245,18 @@
       ],
       "provides": [
         "so:libtcl8.6.so=0",
-        "cmd:tclsh8.6=8.6.14-r0",
-        "cmd:tclsh=8.6.14-r0"
+        "cmd:tclsh8.6=8.6.14-r1",
+        "cmd:tclsh=8.6.14-r1"
       ]
     },
     "tcl-dev": {
       "origin": "tcl",
       "versions": {
-        "8.6.14-r0": 1709287628
+        "8.6.14-r0": 1709287628,
+        "8.6.14-r1": 1716193559
       },
       "dependencies": [
-        "tcl",
+        "tcl=8.6.14-r1",
         "pc:zlib>=1.2.3",
         "pkgconfig"
       ],
@@ -62255,7 +62267,8 @@
     "tcl-doc": {
       "origin": "tcl",
       "versions": {
-        "8.6.14-r0": 1709287628
+        "8.6.14-r0": 1709287628,
+        "8.6.14-r1": 1716193559
       }
     },
     "tcl-tls": {
