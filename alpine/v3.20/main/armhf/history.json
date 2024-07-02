@@ -43665,7 +43665,8 @@
     "openssh": {
       "origin": "openssh",
       "versions": {
-        "9.7_p1-r3": 1712398755
+        "9.7_p1-r3": 1712398755,
+        "9.7_p1-r4": 1719935566
       },
       "dependencies": [
         "openssh-client",
@@ -43678,7 +43679,8 @@
     "openssh-client-common": {
       "origin": "openssh",
       "versions": {
-        "9.7_p1-r3": 1712398755
+        "9.7_p1-r3": 1712398755,
+        "9.7_p1-r4": 1719935566
       },
       "dependencies": [
         "libcrypto3>=3.1.0",
@@ -43688,42 +43690,44 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:findssl.sh=9.7_p1-r3",
-        "cmd:scp=9.7_p1-r3",
-        "cmd:sftp=9.7_p1-r3",
-        "cmd:ssh-add=9.7_p1-r3",
-        "cmd:ssh-agent=9.7_p1-r3",
-        "cmd:ssh-copy-id=9.7_p1-r3",
-        "cmd:ssh-keyscan=9.7_p1-r3",
-        "cmd:ssh-pkcs11-helper=9.7_p1-r3"
+        "cmd:findssl.sh=9.7_p1-r4",
+        "cmd:scp=9.7_p1-r4",
+        "cmd:sftp=9.7_p1-r4",
+        "cmd:ssh-add=9.7_p1-r4",
+        "cmd:ssh-agent=9.7_p1-r4",
+        "cmd:ssh-copy-id=9.7_p1-r4",
+        "cmd:ssh-keyscan=9.7_p1-r4",
+        "cmd:ssh-pkcs11-helper=9.7_p1-r4"
       ]
     },
     "openssh-client-default": {
       "origin": "openssh",
       "versions": {
-        "9.7_p1-r3": 1712398755
+        "9.7_p1-r3": 1712398755,
+        "9.7_p1-r4": 1719935566
       },
       "dependencies": [
-        "openssh-keygen=9.7_p1-r3",
-        "openssh-client-common=9.7_p1-r3",
+        "openssh-keygen=9.7_p1-r4",
+        "openssh-client-common=9.7_p1-r4",
         "!openssh-client-krb5",
         "so:libc.musl-armhf.so.1",
         "so:libcrypto.so.3",
         "so:libz.so.1"
       ],
       "provides": [
-        "openssh-client=9.7_p1-r3",
-        "cmd:ssh=9.7_p1-r3"
+        "openssh-client=9.7_p1-r4",
+        "cmd:ssh=9.7_p1-r4"
       ]
     },
     "openssh-client-krb5": {
       "origin": "openssh",
       "versions": {
-        "9.7_p1-r3": 1712398755
+        "9.7_p1-r3": 1712398755,
+        "9.7_p1-r4": 1719935566
       },
       "dependencies": [
-        "openssh-keygen=9.7_p1-r3",
-        "openssh-client-common=9.7_p1-r3",
+        "openssh-keygen=9.7_p1-r4",
+        "openssh-client-common=9.7_p1-r4",
         "!openssh-client-default",
         "so:libc.musl-armhf.so.1",
         "so:libcrypto.so.3",
@@ -43731,8 +43735,8 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "openssh-client=9.7_p1-r3",
-        "cmd:ssh=9.7_p1-r3"
+        "openssh-client=9.7_p1-r4",
+        "cmd:ssh=9.7_p1-r4"
       ]
     },
     "openssh-client-yash-completion": {
@@ -43748,7 +43752,8 @@
     "openssh-dbg": {
       "origin": "openssh",
       "versions": {
-        "9.7_p1-r3": 1712398755
+        "9.7_p1-r3": 1712398755,
+        "9.7_p1-r4": 1719935566
       },
       "dependencies": [
         "openssh-client",
@@ -43759,13 +43764,15 @@
     "openssh-doc": {
       "origin": "openssh",
       "versions": {
-        "9.7_p1-r3": 1712398755
+        "9.7_p1-r3": 1712398755,
+        "9.7_p1-r4": 1719935566
       }
     },
     "openssh-keygen": {
       "origin": "openssh",
       "versions": {
-        "9.7_p1-r3": 1712398755
+        "9.7_p1-r3": 1712398755,
+        "9.7_p1-r4": 1719935566
       },
       "dependencies": [
         "libcrypto3>=3.1.0",
@@ -43773,16 +43780,17 @@
         "so:libcrypto.so.3"
       ],
       "provides": [
-        "cmd:ssh-keygen=9.7_p1-r3"
+        "cmd:ssh-keygen=9.7_p1-r4"
       ]
     },
     "openssh-keysign": {
       "origin": "openssh",
       "versions": {
-        "9.7_p1-r3": 1712398755
+        "9.7_p1-r3": 1712398755,
+        "9.7_p1-r4": 1719935566
       },
       "dependencies": [
-        "openssh-client=9.7_p1-r3",
+        "openssh-client=9.7_p1-r4",
         "libcrypto3>=3.1.0",
         "so:libc.musl-armhf.so.1",
         "so:libcrypto.so.3",
@@ -43792,39 +43800,43 @@
     "openssh-server": {
       "origin": "openssh",
       "versions": {
-        "9.7_p1-r3": 1712398755
+        "9.7_p1-r3": 1712398755,
+        "9.7_p1-r4": 1719935566
       },
       "dependencies": [
-        "openssh-keygen=9.7_p1-r3",
-        "openssh-server-common=9.7_p1-r3",
+        "openssh-keygen=9.7_p1-r4",
+        "openssh-server-common=9.7_p1-r4",
         "so:libc.musl-armhf.so.1",
         "so:libcrypto.so.3",
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:sshd=9.7_p1-r3"
+        "cmd:sshd=9.7_p1-r4"
       ]
     },
     "openssh-server-common": {
       "origin": "openssh",
       "versions": {
-        "9.7_p1-r3": 1712398755
+        "9.7_p1-r3": 1712398755,
+        "9.7_p1-r4": 1719935566
       }
     },
     "openssh-server-common-openrc": {
       "origin": "openssh",
       "versions": {
-        "9.7_p1-r3": 1712398755
+        "9.7_p1-r3": 1712398755,
+        "9.7_p1-r4": 1719935566
       }
     },
     "openssh-server-krb5": {
       "origin": "openssh",
       "versions": {
-        "9.7_p1-r3": 1712398755
+        "9.7_p1-r3": 1712398755,
+        "9.7_p1-r4": 1719935566
       },
       "dependencies": [
-        "openssh-keygen=9.7_p1-r3",
-        "openssh-server-common=9.7_p1-r3",
+        "openssh-keygen=9.7_p1-r4",
+        "openssh-server-common=9.7_p1-r4",
         "so:libc.musl-armhf.so.1",
         "so:libcrypto.so.3",
         "so:libgssapi_krb5.so.2",
@@ -43833,30 +43845,32 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:sshd.krb5=9.7_p1-r3"
+        "cmd:sshd.krb5=9.7_p1-r4"
       ]
     },
     "openssh-server-pam": {
       "origin": "openssh",
       "versions": {
-        "9.7_p1-r3": 1712398755
+        "9.7_p1-r3": 1712398755,
+        "9.7_p1-r4": 1719935566
       },
       "dependencies": [
-        "openssh-keygen=9.7_p1-r3",
-        "openssh-server-common=9.7_p1-r3",
+        "openssh-keygen=9.7_p1-r4",
+        "openssh-server-common=9.7_p1-r4",
         "so:libc.musl-armhf.so.1",
         "so:libcrypto.so.3",
         "so:libpam.so.0",
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:sshd.pam=9.7_p1-r3"
+        "cmd:sshd.pam=9.7_p1-r4"
       ]
     },
     "openssh-sftp-server": {
       "origin": "openssh",
       "versions": {
-        "9.7_p1-r3": 1712398755
+        "9.7_p1-r3": 1712398755,
+        "9.7_p1-r4": 1719935566
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1"
@@ -43865,11 +43879,12 @@
     "openssh-sk-helper": {
       "origin": "openssh",
       "versions": {
-        "9.7_p1-r3": 1712398755
+        "9.7_p1-r3": 1712398755,
+        "9.7_p1-r4": 1719935566
       },
       "dependencies": [
-        "openssh-keygen=9.7_p1-r3",
-        "openssh-server-common=9.7_p1-r3",
+        "openssh-keygen=9.7_p1-r4",
+        "openssh-server-common=9.7_p1-r4",
         "so:libc.musl-armhf.so.1",
         "so:libcrypto.so.3",
         "so:libfido2.so.1"
@@ -68882,7 +68897,7 @@
       },
       "openssh-client": {
         "package": "openssh-client-krb5",
-        "version": "9.7_p1-r3"
+        "version": "9.7_p1-r4"
       },
       "openssl3": {
         "package": "openssl",
