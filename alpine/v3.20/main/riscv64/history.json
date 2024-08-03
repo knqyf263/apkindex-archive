@@ -10002,23 +10002,25 @@
       "origin": "curl",
       "versions": {
         "8.7.1-r0": 1711616769,
-        "8.8.0-r0": 1719469475
+        "8.8.0-r0": 1719469475,
+        "8.9.0-r0": 1721844100
       },
       "dependencies": [
-        "libcurl=8.8.0-r0",
+        "libcurl=8.9.0-r0",
         "so:libc.musl-riscv64.so.1",
         "so:libcurl.so.4",
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:curl=8.8.0-r0"
+        "cmd:curl=8.9.0-r0"
       ]
     },
     "curl-dbg": {
       "origin": "curl",
       "versions": {
         "8.7.1-r0": 1711616769,
-        "8.8.0-r0": 1719469475
+        "8.8.0-r0": 1719469475,
+        "8.9.0-r0": 1721844100
       },
       "dependencies": [
         "ca-certificates"
@@ -10028,7 +10030,8 @@
       "origin": "curl",
       "versions": {
         "8.7.1-r0": 1711616769,
-        "8.8.0-r0": 1719469475
+        "8.8.0-r0": 1719469475,
+        "8.9.0-r0": 1721844100
       },
       "dependencies": [
         "brotli-dev",
@@ -10039,40 +10042,52 @@
         "openssl-dev>3",
         "zlib-dev",
         "zstd-dev",
-        "libcurl=8.8.0-r0",
+        "libcurl=8.9.0-r0",
+        "pc:libbrotlidec",
+        "pc:libcares",
+        "pc:libidn2",
+        "pc:libnghttp2",
+        "pc:libpsl",
+        "pc:libzstd",
+        "pc:openssl",
+        "pc:zlib",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libcurl=8.8.0",
-        "cmd:curl-config=8.8.0-r0"
+        "pc:libcurl=8.9.0",
+        "cmd:curl-config=8.9.0-r0"
       ]
     },
     "curl-doc": {
       "origin": "curl",
       "versions": {
         "8.7.1-r0": 1711616769,
-        "8.8.0-r0": 1719469475
+        "8.8.0-r0": 1719469475,
+        "8.9.0-r0": 1721844100
       }
     },
     "curl-fish-completion": {
       "origin": "curl",
       "versions": {
         "8.7.1-r0": 1711616769,
-        "8.8.0-r0": 1719469475
+        "8.8.0-r0": 1719469475,
+        "8.9.0-r0": 1721844100
       }
     },
     "curl-static": {
       "origin": "curl",
       "versions": {
         "8.7.1-r0": 1711616769,
-        "8.8.0-r0": 1719469475
+        "8.8.0-r0": 1719469475,
+        "8.9.0-r0": 1721844100
       }
     },
     "curl-zsh-completion": {
       "origin": "curl",
       "versions": {
         "8.7.1-r0": 1711616769,
-        "8.8.0-r0": 1719469475
+        "8.8.0-r0": 1719469475,
+        "8.9.0-r0": 1721844100
       }
     },
     "cutter": {
@@ -17841,9 +17856,11 @@
     "graphviz": {
       "origin": "graphviz",
       "versions": {
-        "9.0.0-r1": 1712915016
+        "9.0.0-r1": 1712915016,
+        "9.0.0-r2": 1722448976
       },
       "dependencies": [
+        "font-cantarell",
         "/bin/sh",
         "so:libX11.so.6",
         "so:libc.musl-riscv64.so.1",
@@ -17877,49 +17894,50 @@
         "so:libgvplugin_vt.so.6=6.0.0",
         "so:libgvplugin_webp.so.6=6.0.0",
         "so:libgvplugin_xlib.so.6=6.0.0",
-        "cmd:acyclic=9.0.0-r1",
-        "cmd:bcomps=9.0.0-r1",
-        "cmd:ccomps=9.0.0-r1",
-        "cmd:circo=9.0.0-r1",
-        "cmd:cluster=9.0.0-r1",
-        "cmd:diffimg=9.0.0-r1",
-        "cmd:dijkstra=9.0.0-r1",
-        "cmd:dot2gxl=9.0.0-r1",
-        "cmd:dot=9.0.0-r1",
-        "cmd:dot_builtins=9.0.0-r1",
-        "cmd:edgepaint=9.0.0-r1",
-        "cmd:fdp=9.0.0-r1",
-        "cmd:gc=9.0.0-r1",
-        "cmd:gml2gv=9.0.0-r1",
-        "cmd:graphml2gv=9.0.0-r1",
-        "cmd:gv2gml=9.0.0-r1",
-        "cmd:gv2gxl=9.0.0-r1",
-        "cmd:gvcolor=9.0.0-r1",
-        "cmd:gvgen=9.0.0-r1",
-        "cmd:gvmap.sh=9.0.0-r1",
-        "cmd:gvmap=9.0.0-r1",
-        "cmd:gvpack=9.0.0-r1",
-        "cmd:gvpr=9.0.0-r1",
-        "cmd:gxl2dot=9.0.0-r1",
-        "cmd:gxl2gv=9.0.0-r1",
-        "cmd:mm2gv=9.0.0-r1",
-        "cmd:neato=9.0.0-r1",
-        "cmd:nop=9.0.0-r1",
-        "cmd:osage=9.0.0-r1",
-        "cmd:patchwork=9.0.0-r1",
-        "cmd:prune=9.0.0-r1",
-        "cmd:sccmap=9.0.0-r1",
-        "cmd:sfdp=9.0.0-r1",
-        "cmd:tred=9.0.0-r1",
-        "cmd:twopi=9.0.0-r1",
-        "cmd:unflatten=9.0.0-r1",
-        "cmd:vimdot=9.0.0-r1"
+        "cmd:acyclic=9.0.0-r2",
+        "cmd:bcomps=9.0.0-r2",
+        "cmd:ccomps=9.0.0-r2",
+        "cmd:circo=9.0.0-r2",
+        "cmd:cluster=9.0.0-r2",
+        "cmd:diffimg=9.0.0-r2",
+        "cmd:dijkstra=9.0.0-r2",
+        "cmd:dot2gxl=9.0.0-r2",
+        "cmd:dot=9.0.0-r2",
+        "cmd:dot_builtins=9.0.0-r2",
+        "cmd:edgepaint=9.0.0-r2",
+        "cmd:fdp=9.0.0-r2",
+        "cmd:gc=9.0.0-r2",
+        "cmd:gml2gv=9.0.0-r2",
+        "cmd:graphml2gv=9.0.0-r2",
+        "cmd:gv2gml=9.0.0-r2",
+        "cmd:gv2gxl=9.0.0-r2",
+        "cmd:gvcolor=9.0.0-r2",
+        "cmd:gvgen=9.0.0-r2",
+        "cmd:gvmap.sh=9.0.0-r2",
+        "cmd:gvmap=9.0.0-r2",
+        "cmd:gvpack=9.0.0-r2",
+        "cmd:gvpr=9.0.0-r2",
+        "cmd:gxl2dot=9.0.0-r2",
+        "cmd:gxl2gv=9.0.0-r2",
+        "cmd:mm2gv=9.0.0-r2",
+        "cmd:neato=9.0.0-r2",
+        "cmd:nop=9.0.0-r2",
+        "cmd:osage=9.0.0-r2",
+        "cmd:patchwork=9.0.0-r2",
+        "cmd:prune=9.0.0-r2",
+        "cmd:sccmap=9.0.0-r2",
+        "cmd:sfdp=9.0.0-r2",
+        "cmd:tred=9.0.0-r2",
+        "cmd:twopi=9.0.0-r2",
+        "cmd:unflatten=9.0.0-r2",
+        "cmd:vimdot=9.0.0-r2"
       ]
     },
     "graphviz-dev": {
       "origin": "graphviz",
       "versions": {
-        "9.0.0-r1": 1712915016
+        "9.0.0-r1": 1712915016,
+        "9.0.0-r2": 1722448976
       },
       "dependencies": [
         "cairo-dev",
@@ -17935,7 +17953,7 @@
         "pango-dev",
         "python3-dev",
         "zlib-dev",
-        "graphviz-libs=9.0.0-r1",
+        "graphviz-libs=9.0.0-r2",
         "pkgconfig"
       ],
       "provides": [
@@ -17951,19 +17969,25 @@
     "graphviz-doc": {
       "origin": "graphviz",
       "versions": {
-        "9.0.0-r1": 1712915016
+        "9.0.0-r1": 1712915016,
+        "9.0.0-r2": 1722448976
       }
     },
     "graphviz-graphs": {
       "origin": "graphviz",
       "versions": {
-        "9.0.0-r1": 1712915016
-      }
+        "9.0.0-r1": 1712915016,
+        "9.0.0-r2": 1722448976
+      },
+      "dependencies": [
+        "font-cantarell"
+      ]
     },
     "graphviz-libs": {
       "origin": "graphviz",
       "versions": {
-        "9.0.0-r1": 1712915016
+        "9.0.0-r1": 1712915016,
+        "9.0.0-r2": 1722448976
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -18551,7 +18575,8 @@
       "origin": "gtk+3.0",
       "versions": {
         "3.24.41-r0": 1707415362,
-        "3.24.42-r0": 1715925402
+        "3.24.42-r0": 1715925402,
+        "3.24.43-r0": 1722347526
       },
       "dependencies": [
         "shared-mime-info",
@@ -18592,18 +18617,19 @@
       ],
       "provides": [
         "so:libgailutil-3.so.0=0.0.0",
-        "so:libgdk-3.so.0=0.2410.32",
-        "so:libgtk-3.so.0=0.2410.32",
-        "cmd:broadwayd=3.24.42-r0",
-        "cmd:gtk-launch=3.24.42-r0",
-        "cmd:gtk-query-immodules-3.0=3.24.42-r0"
+        "so:libgdk-3.so.0=0.2411.32",
+        "so:libgtk-3.so.0=0.2411.32",
+        "cmd:broadwayd=3.24.43-r0",
+        "cmd:gtk-launch=3.24.43-r0",
+        "cmd:gtk-query-immodules-3.0=3.24.43-r0"
       ]
     },
     "gtk+3.0-dbg": {
       "origin": "gtk+3.0",
       "versions": {
         "3.24.41-r0": 1707415362,
-        "3.24.42-r0": 1715925402
+        "3.24.42-r0": 1715925402,
+        "3.24.43-r0": 1722347526
       },
       "dependencies": [
         "shared-mime-info",
@@ -18614,7 +18640,8 @@
       "origin": "gtk+3.0",
       "versions": {
         "3.24.41-r0": 1707415362,
-        "3.24.42-r0": 1715925402
+        "3.24.42-r0": 1715925402,
+        "3.24.43-r0": 1722347526
       },
       "dependencies": [
         "shared-mime-info",
@@ -18635,17 +18662,18 @@
         "so:libpangocairo-1.0.so.0"
       ],
       "provides": [
-        "cmd:gtk3-demo-application=3.24.42-r0",
-        "cmd:gtk3-demo=3.24.42-r0",
-        "cmd:gtk3-icon-browser=3.24.42-r0",
-        "cmd:gtk3-widget-factory=3.24.42-r0"
+        "cmd:gtk3-demo-application=3.24.43-r0",
+        "cmd:gtk3-demo=3.24.43-r0",
+        "cmd:gtk3-icon-browser=3.24.43-r0",
+        "cmd:gtk3-widget-factory=3.24.43-r0"
       ]
     },
     "gtk+3.0-dev": {
       "origin": "gtk+3.0",
       "versions": {
         "3.24.41-r0": 1707415362,
-        "3.24.42-r0": 1715925402
+        "3.24.42-r0": 1715925402,
+        "3.24.43-r0": 1722347526
       },
       "dependencies": [
         "gdk-pixbuf-dev",
@@ -18658,7 +18686,7 @@
         "wayland-libs-client",
         "wayland-libs-cursor",
         "wayland-protocols",
-        "gtk+3.0=3.24.42-r0",
+        "gtk+3.0=3.24.43-r0",
         "pc:atk",
         "pc:atk-bridge-2.0",
         "pc:atk>=2.35.1",
@@ -18699,33 +18727,35 @@
         "so:libintl.so.8"
       ],
       "provides": [
-        "pc:gail-3.0=3.24.42",
-        "pc:gdk-3.0=3.24.42",
-        "pc:gdk-broadway-3.0=3.24.42",
-        "pc:gdk-wayland-3.0=3.24.42",
-        "pc:gdk-x11-3.0=3.24.42",
-        "pc:gtk+-3.0=3.24.42",
-        "pc:gtk+-broadway-3.0=3.24.42",
-        "pc:gtk+-unix-print-3.0=3.24.42",
-        "pc:gtk+-wayland-3.0=3.24.42",
-        "pc:gtk+-x11-3.0=3.24.42",
-        "cmd:gtk-builder-tool=3.24.42-r0",
-        "cmd:gtk-encode-symbolic-svg=3.24.42-r0",
-        "cmd:gtk-query-settings=3.24.42-r0"
+        "pc:gail-3.0=3.24.43",
+        "pc:gdk-3.0=3.24.43",
+        "pc:gdk-broadway-3.0=3.24.43",
+        "pc:gdk-wayland-3.0=3.24.43",
+        "pc:gdk-x11-3.0=3.24.43",
+        "pc:gtk+-3.0=3.24.43",
+        "pc:gtk+-broadway-3.0=3.24.43",
+        "pc:gtk+-unix-print-3.0=3.24.43",
+        "pc:gtk+-wayland-3.0=3.24.43",
+        "pc:gtk+-x11-3.0=3.24.43",
+        "cmd:gtk-builder-tool=3.24.43-r0",
+        "cmd:gtk-encode-symbolic-svg=3.24.43-r0",
+        "cmd:gtk-query-settings=3.24.43-r0"
       ]
     },
     "gtk+3.0-doc": {
       "origin": "gtk+3.0",
       "versions": {
         "3.24.41-r0": 1707415362,
-        "3.24.42-r0": 1715925402
+        "3.24.42-r0": 1715925402,
+        "3.24.43-r0": 1722347526
       }
     },
     "gtk+3.0-lang": {
       "origin": "gtk+3.0",
       "versions": {
         "3.24.41-r0": 1707415362,
-        "3.24.42-r0": 1715925402
+        "3.24.42-r0": 1715925402,
+        "3.24.43-r0": 1722347526
       }
     },
     "gtk-doc": {
@@ -18761,7 +18791,8 @@
       "origin": "gtk+3.0",
       "versions": {
         "3.24.41-r0": 1707415362,
-        "3.24.42-r0": 1715925402
+        "3.24.42-r0": 1715925402,
+        "3.24.43-r0": 1722347526
       },
       "dependencies": [
         "hicolor-icon-theme",
@@ -18772,8 +18803,8 @@
         "so:libintl.so.8"
       ],
       "provides": [
-        "cmd:gtk-update-icon-cache=3.24.42-r0",
-        "cmd:gtk4-update-icon-cache=3.24.42-r0"
+        "cmd:gtk-update-icon-cache=3.24.43-r0",
+        "cmd:gtk4-update-icon-cache=3.24.43-r0"
       ]
     },
     "guile": {
@@ -24402,7 +24433,8 @@
       "origin": "curl",
       "versions": {
         "8.7.1-r0": 1711616769,
-        "8.8.0-r0": 1719469475
+        "8.8.0-r0": 1719469475,
+        "8.9.0-r0": 1721844100
       },
       "dependencies": [
         "ca-certificates",
@@ -35507,9 +35539,11 @@
     "lua5.4-graphviz": {
       "origin": "graphviz",
       "versions": {
-        "9.0.0-r1": 1712915016
+        "9.0.0-r1": 1712915016,
+        "9.0.0-r2": 1722448976
       },
       "dependencies": [
+        "font-cantarell",
         "so:libc.musl-riscv64.so.1",
         "so:libcgraph.so.6",
         "so:libgcc_s.so.1",
@@ -35518,7 +35552,7 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "lua-graphviz=9.0.0-r1"
+        "lua-graphviz=9.0.0-r2"
       ]
     },
     "lua5.4-hashids": {
@@ -36194,7 +36228,8 @@
         "6.0.0-r1": 1712733668,
         "6.0.0-r2": 1714375918,
         "6.0.0-r3": 1715176839,
-        "6.0.0-r4": 1715621775
+        "6.0.0-r4": 1715621775,
+        "6.0.1-r7": 1721908930
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -36205,33 +36240,33 @@
         "so:libseccomp.so.2"
       ],
       "provides": [
-        "cmd:init.lxc.static=6.0.0-r4",
-        "cmd:init.lxc=6.0.0-r4",
-        "cmd:lxc-attach=6.0.0-r4",
-        "cmd:lxc-autostart=6.0.0-r4",
-        "cmd:lxc-cgroup=6.0.0-r4",
-        "cmd:lxc-checkconfig=6.0.0-r4",
-        "cmd:lxc-checkpoint=6.0.0-r4",
-        "cmd:lxc-config=6.0.0-r4",
-        "cmd:lxc-console=6.0.0-r4",
-        "cmd:lxc-copy=6.0.0-r4",
-        "cmd:lxc-create=6.0.0-r4",
-        "cmd:lxc-destroy=6.0.0-r4",
-        "cmd:lxc-device=6.0.0-r4",
-        "cmd:lxc-execute=6.0.0-r4",
-        "cmd:lxc-freeze=6.0.0-r4",
-        "cmd:lxc-info=6.0.0-r4",
-        "cmd:lxc-ls=6.0.0-r4",
-        "cmd:lxc-monitor=6.0.0-r4",
-        "cmd:lxc-snapshot=6.0.0-r4",
-        "cmd:lxc-start=6.0.0-r4",
-        "cmd:lxc-stop=6.0.0-r4",
-        "cmd:lxc-top=6.0.0-r4",
-        "cmd:lxc-unfreeze=6.0.0-r4",
-        "cmd:lxc-unshare=6.0.0-r4",
-        "cmd:lxc-update-config=6.0.0-r4",
-        "cmd:lxc-usernsexec=6.0.0-r4",
-        "cmd:lxc-wait=6.0.0-r4"
+        "cmd:init.lxc.static=6.0.1-r7",
+        "cmd:init.lxc=6.0.1-r7",
+        "cmd:lxc-attach=6.0.1-r7",
+        "cmd:lxc-autostart=6.0.1-r7",
+        "cmd:lxc-cgroup=6.0.1-r7",
+        "cmd:lxc-checkconfig=6.0.1-r7",
+        "cmd:lxc-checkpoint=6.0.1-r7",
+        "cmd:lxc-config=6.0.1-r7",
+        "cmd:lxc-console=6.0.1-r7",
+        "cmd:lxc-copy=6.0.1-r7",
+        "cmd:lxc-create=6.0.1-r7",
+        "cmd:lxc-destroy=6.0.1-r7",
+        "cmd:lxc-device=6.0.1-r7",
+        "cmd:lxc-execute=6.0.1-r7",
+        "cmd:lxc-freeze=6.0.1-r7",
+        "cmd:lxc-info=6.0.1-r7",
+        "cmd:lxc-ls=6.0.1-r7",
+        "cmd:lxc-monitor=6.0.1-r7",
+        "cmd:lxc-snapshot=6.0.1-r7",
+        "cmd:lxc-start=6.0.1-r7",
+        "cmd:lxc-stop=6.0.1-r7",
+        "cmd:lxc-top=6.0.1-r7",
+        "cmd:lxc-unfreeze=6.0.1-r7",
+        "cmd:lxc-unshare=6.0.1-r7",
+        "cmd:lxc-update-config=6.0.1-r7",
+        "cmd:lxc-usernsexec=6.0.1-r7",
+        "cmd:lxc-wait=6.0.1-r7"
       ]
     },
     "lxc-bash-completion": {
@@ -36240,7 +36275,8 @@
         "6.0.0-r1": 1712733668,
         "6.0.0-r2": 1714375918,
         "6.0.0-r3": 1715176839,
-        "6.0.0-r4": 1715621775
+        "6.0.0-r4": 1715621775,
+        "6.0.1-r7": 1721908930
       }
     },
     "lxc-bridge": {
@@ -36249,7 +36285,8 @@
         "6.0.0-r1": 1712733668,
         "6.0.0-r2": 1714375918,
         "6.0.0-r3": 1715176839,
-        "6.0.0-r4": 1715621775
+        "6.0.0-r4": 1715621775,
+        "6.0.1-r7": 1721908930
       },
       "dependencies": [
         "dnsmasq"
@@ -36261,7 +36298,8 @@
         "6.0.0-r1": 1712733668,
         "6.0.0-r2": 1714375918,
         "6.0.0-r3": 1715176839,
-        "6.0.0-r4": 1715621775
+        "6.0.0-r4": 1715621775,
+        "6.0.1-r7": 1721908930
       }
     },
     "lxc-dev": {
@@ -36270,17 +36308,18 @@
         "6.0.0-r1": 1712733668,
         "6.0.0-r2": 1714375918,
         "6.0.0-r3": 1715176839,
-        "6.0.0-r4": 1715621775
+        "6.0.0-r4": 1715621775,
+        "6.0.1-r7": 1721908930
       },
       "dependencies": [
-        "lxc-libs=6.0.0-r4",
+        "lxc-libs=6.0.1-r7",
         "pc:dbus-1",
         "pc:libcap",
         "pc:libseccomp",
         "pkgconfig"
       ],
       "provides": [
-        "pc:lxc=6.0.0"
+        "pc:lxc=6.0.1"
       ]
     },
     "lxc-doc": {
@@ -36289,7 +36328,8 @@
         "6.0.0-r1": 1712733668,
         "6.0.0-r2": 1714375918,
         "6.0.0-r3": 1715176839,
-        "6.0.0-r4": 1715621775
+        "6.0.0-r4": 1715621775,
+        "6.0.1-r7": 1721908930
       }
     },
     "lxc-download": {
@@ -36298,7 +36338,8 @@
         "6.0.0-r1": 1712733668,
         "6.0.0-r2": 1714375918,
         "6.0.0-r3": 1715176839,
-        "6.0.0-r4": 1715621775
+        "6.0.0-r4": 1715621775,
+        "6.0.1-r7": 1721908930
       },
       "dependencies": [
         "lxc",
@@ -36315,7 +36356,8 @@
         "6.0.0-r1": 1712733668,
         "6.0.0-r2": 1714375918,
         "6.0.0-r3": 1715176839,
-        "6.0.0-r4": 1715621775
+        "6.0.0-r4": 1715621775,
+        "6.0.1-r7": 1721908930
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -36334,10 +36376,11 @@
         "6.0.0-r1": 1712733668,
         "6.0.0-r2": 1714375918,
         "6.0.0-r3": 1715176839,
-        "6.0.0-r4": 1715621775
+        "6.0.0-r4": 1715621775,
+        "6.0.1-r7": 1721908930
       },
       "dependencies": [
-        "lxc=6.0.0-r4",
+        "lxc=6.0.1-r7",
         "lvm2",
         "util-linux"
       ]
@@ -36348,7 +36391,8 @@
         "6.0.0-r1": 1712733668,
         "6.0.0-r2": 1714375918,
         "6.0.0-r3": 1715176839,
-        "6.0.0-r4": 1715621775
+        "6.0.0-r4": 1715621775,
+        "6.0.1-r7": 1721908930
       }
     },
     "lxc-pam": {
@@ -36357,7 +36401,8 @@
         "6.0.0-r1": 1712733668,
         "6.0.0-r2": 1714375918,
         "6.0.0-r3": 1715176839,
-        "6.0.0-r4": 1715621775
+        "6.0.0-r4": 1715621775,
+        "6.0.1-r7": 1721908930
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -36371,7 +36416,8 @@
         "6.0.0-r1": 1712733668,
         "6.0.0-r2": 1714375918,
         "6.0.0-r3": 1715176839,
-        "6.0.0-r4": 1715621775
+        "6.0.0-r4": 1715621775,
+        "6.0.1-r7": 1721908930
       },
       "dependencies": [
         "tar"
@@ -36399,7 +36445,8 @@
         "6.0.0-r1": 1712733668,
         "6.0.0-r2": 1714375918,
         "6.0.0-r3": 1715176839,
-        "6.0.0-r4": 1715621775
+        "6.0.0-r4": 1715621775,
+        "6.0.1-r7": 1721908930
       },
       "dependencies": [
         "bash",
@@ -36412,7 +36459,8 @@
         "6.0.0-r1": 1712733668,
         "6.0.0-r2": 1714375918,
         "6.0.0-r3": 1715176839,
-        "6.0.0-r4": 1715621775
+        "6.0.0-r4": 1715621775,
+        "6.0.1-r7": 1721908930
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -36423,63 +36471,63 @@
         "so:libseccomp.so.2"
       ],
       "provides": [
-        "cmd:lxc-test-api-reboot=6.0.0-r4",
-        "cmd:lxc-test-apparmor-generated=6.0.0-r4",
-        "cmd:lxc-test-apparmor-mount=6.0.0-r4",
-        "cmd:lxc-test-apparmor=6.0.0-r4",
-        "cmd:lxc-test-arch-parse=6.0.0-r4",
-        "cmd:lxc-test-attach=6.0.0-r4",
-        "cmd:lxc-test-automount=6.0.0-r4",
-        "cmd:lxc-test-autostart=6.0.0-r4",
-        "cmd:lxc-test-basic=6.0.0-r4",
-        "cmd:lxc-test-capabilities=6.0.0-r4",
-        "cmd:lxc-test-cgpath=6.0.0-r4",
-        "cmd:lxc-test-checkpoint-restore=6.0.0-r4",
-        "cmd:lxc-test-cloneconfig=6.0.0-r4",
-        "cmd:lxc-test-clonetest=6.0.0-r4",
-        "cmd:lxc-test-concurrent=6.0.0-r4",
-        "cmd:lxc-test-config-jump-table=6.0.0-r4",
-        "cmd:lxc-test-console-log=6.0.0-r4",
-        "cmd:lxc-test-console=6.0.0-r4",
-        "cmd:lxc-test-containertests=6.0.0-r4",
-        "cmd:lxc-test-createconfig=6.0.0-r4",
-        "cmd:lxc-test-createtest=6.0.0-r4",
-        "cmd:lxc-test-criu-check-feature=6.0.0-r4",
-        "cmd:lxc-test-cve-2019-5736=6.0.0-r4",
-        "cmd:lxc-test-destroytest=6.0.0-r4",
-        "cmd:lxc-test-device-add-remove=6.0.0-r4",
-        "cmd:lxc-test-exit-code=6.0.0-r4",
-        "cmd:lxc-test-get_item=6.0.0-r4",
-        "cmd:lxc-test-getkeys=6.0.0-r4",
-        "cmd:lxc-test-list=6.0.0-r4",
-        "cmd:lxc-test-locktests=6.0.0-r4",
-        "cmd:lxc-test-lxc-attach=6.0.0-r4",
-        "cmd:lxc-test-lxcpath=6.0.0-r4",
-        "cmd:lxc-test-may-control=6.0.0-r4",
-        "cmd:lxc-test-mount-injection=6.0.0-r4",
-        "cmd:lxc-test-no-new-privs=6.0.0-r4",
-        "cmd:lxc-test-parse-config-file=6.0.0-r4",
-        "cmd:lxc-test-proc-pid=6.0.0-r4",
-        "cmd:lxc-test-procsys=6.0.0-r4",
-        "cmd:lxc-test-raw-clone=6.0.0-r4",
-        "cmd:lxc-test-reboot=6.0.0-r4",
-        "cmd:lxc-test-rootfs-options=6.0.0-r4",
-        "cmd:lxc-test-rootfs=6.0.0-r4",
-        "cmd:lxc-test-saveconfig=6.0.0-r4",
-        "cmd:lxc-test-share-ns=6.0.0-r4",
-        "cmd:lxc-test-shortlived=6.0.0-r4",
-        "cmd:lxc-test-shutdowntest=6.0.0-r4",
-        "cmd:lxc-test-snapdeps=6.0.0-r4",
-        "cmd:lxc-test-snapshot=6.0.0-r4",
-        "cmd:lxc-test-startone=6.0.0-r4",
-        "cmd:lxc-test-state-server=6.0.0-r4",
-        "cmd:lxc-test-symlink=6.0.0-r4",
-        "cmd:lxc-test-sys-mixed=6.0.0-r4",
-        "cmd:lxc-test-sysctls=6.0.0-r4",
-        "cmd:lxc-test-unpriv=6.0.0-r4",
-        "cmd:lxc-test-usernic=6.0.0-r4",
-        "cmd:lxc-test-usernsexec=6.0.0-r4",
-        "cmd:lxc-test-utils=6.0.0-r4"
+        "cmd:lxc-test-api-reboot=6.0.1-r7",
+        "cmd:lxc-test-apparmor-generated=6.0.1-r7",
+        "cmd:lxc-test-apparmor-mount=6.0.1-r7",
+        "cmd:lxc-test-apparmor=6.0.1-r7",
+        "cmd:lxc-test-arch-parse=6.0.1-r7",
+        "cmd:lxc-test-attach=6.0.1-r7",
+        "cmd:lxc-test-automount=6.0.1-r7",
+        "cmd:lxc-test-autostart=6.0.1-r7",
+        "cmd:lxc-test-basic=6.0.1-r7",
+        "cmd:lxc-test-capabilities=6.0.1-r7",
+        "cmd:lxc-test-cgpath=6.0.1-r7",
+        "cmd:lxc-test-checkpoint-restore=6.0.1-r7",
+        "cmd:lxc-test-cloneconfig=6.0.1-r7",
+        "cmd:lxc-test-clonetest=6.0.1-r7",
+        "cmd:lxc-test-concurrent=6.0.1-r7",
+        "cmd:lxc-test-config-jump-table=6.0.1-r7",
+        "cmd:lxc-test-console-log=6.0.1-r7",
+        "cmd:lxc-test-console=6.0.1-r7",
+        "cmd:lxc-test-containertests=6.0.1-r7",
+        "cmd:lxc-test-createconfig=6.0.1-r7",
+        "cmd:lxc-test-createtest=6.0.1-r7",
+        "cmd:lxc-test-criu-check-feature=6.0.1-r7",
+        "cmd:lxc-test-cve-2019-5736=6.0.1-r7",
+        "cmd:lxc-test-destroytest=6.0.1-r7",
+        "cmd:lxc-test-device-add-remove=6.0.1-r7",
+        "cmd:lxc-test-exit-code=6.0.1-r7",
+        "cmd:lxc-test-get_item=6.0.1-r7",
+        "cmd:lxc-test-getkeys=6.0.1-r7",
+        "cmd:lxc-test-list=6.0.1-r7",
+        "cmd:lxc-test-locktests=6.0.1-r7",
+        "cmd:lxc-test-lxc-attach=6.0.1-r7",
+        "cmd:lxc-test-lxcpath=6.0.1-r7",
+        "cmd:lxc-test-may-control=6.0.1-r7",
+        "cmd:lxc-test-mount-injection=6.0.1-r7",
+        "cmd:lxc-test-no-new-privs=6.0.1-r7",
+        "cmd:lxc-test-parse-config-file=6.0.1-r7",
+        "cmd:lxc-test-proc-pid=6.0.1-r7",
+        "cmd:lxc-test-procsys=6.0.1-r7",
+        "cmd:lxc-test-raw-clone=6.0.1-r7",
+        "cmd:lxc-test-reboot=6.0.1-r7",
+        "cmd:lxc-test-rootfs-options=6.0.1-r7",
+        "cmd:lxc-test-rootfs=6.0.1-r7",
+        "cmd:lxc-test-saveconfig=6.0.1-r7",
+        "cmd:lxc-test-share-ns=6.0.1-r7",
+        "cmd:lxc-test-shortlived=6.0.1-r7",
+        "cmd:lxc-test-shutdowntest=6.0.1-r7",
+        "cmd:lxc-test-snapdeps=6.0.1-r7",
+        "cmd:lxc-test-snapshot=6.0.1-r7",
+        "cmd:lxc-test-startone=6.0.1-r7",
+        "cmd:lxc-test-state-server=6.0.1-r7",
+        "cmd:lxc-test-symlink=6.0.1-r7",
+        "cmd:lxc-test-sys-mixed=6.0.1-r7",
+        "cmd:lxc-test-sysctls=6.0.1-r7",
+        "cmd:lxc-test-unpriv=6.0.1-r7",
+        "cmd:lxc-test-usernic=6.0.1-r7",
+        "cmd:lxc-test-usernsexec=6.0.1-r7",
+        "cmd:lxc-test-utils=6.0.1-r7"
       ]
     },
     "lynx": {
@@ -53081,7 +53129,8 @@
     "py3-gv": {
       "origin": "graphviz",
       "versions": {
-        "9.0.0-r1": 1712915016
+        "9.0.0-r1": 1712915016,
+        "9.0.0-r2": 1722448976
       },
       "dependencies": [
         "python3",
@@ -66755,7 +66804,8 @@
       "versions": {
         "6.0.0-r2": 1714375918,
         "6.0.0-r3": 1715176839,
-        "6.0.0-r4": 1715621775
+        "6.0.0-r4": 1715621775,
+        "6.0.1-r7": 1721908930
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -67910,7 +67960,7 @@
       },
       "lua-graphviz": {
         "package": "lua5.4-graphviz",
-        "version": "9.0.0-r1"
+        "version": "9.0.0-r2"
       },
       "doc-provider": {
         "package": "mandoc",
@@ -70768,11 +70818,11 @@
       },
       "libgdk-3.so.0": {
         "package": "gtk+3.0",
-        "version": "0.2410.32"
+        "version": "0.2411.32"
       },
       "libgtk-3.so.0": {
         "package": "gtk+3.0",
-        "version": "0.2410.32"
+        "version": "0.2411.32"
       },
       "libguile-3.0.so.1": {
         "package": "guile-libs",
