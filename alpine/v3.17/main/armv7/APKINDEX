@@ -1055,21 +1055,6 @@ c:3e16db39083a627392784154ee98222a404ca38d
 D:so:libc.musl-armv7.so.1 so:libdevmapper.so.1.02
 p:so:libdevmapper-event.so.1.02=1.02
 
-C:Q19BvwxM6LLWsa3/U9QyDja2UhceU=
-P:xen-bridge
-V:4.16.6-r0
-A:armv7
-S:1968
-I:28672
-T:Bridge interface for XEN with dhcp
-U:https://www.xenproject.org/
-L:GPL-2.0-only
-o:xen
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1712703299
-c:d002bcb912cdc31679dee4e40e1f3826dc38d5a4
-D:dnsmasq
-
 C:Q1Z8IhafSIOJbZuPOq6FrqpXkfNOk=
 P:freetype-demos
 V:2.12.1-r0
@@ -4444,6 +4429,20 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1667743833
 c:76988828c18a4ab5d9aa4aee13a4fe7501a6efec
 D:so:libc.musl-armv7.so.1 so:liblber.so.2 so:libldap.so.2
+
+C:Q15Oc8kFk39RabXwhEUly+/7CI1ko=
+P:xen-hypervisor
+V:4.16.6-r1
+A:armv7
+S:320960
+I:901120
+T:Xen hypervisor
+U:https://www.xenproject.org/
+L:GPL-2.0-only
+o:xen
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1724236043
+c:1571938ef38b2028ecc68a759b148b80bde625a4
 
 C:Q1hu+zrVqFAsoyfTUjay3akpLwlmM=
 P:font-liberation
@@ -12774,6 +12773,22 @@ k:300
 D:so:libc.musl-armv7.so.1 so:liblinenoise.so.0 so:liblua-5.3.so.0
 p:lua cmd:lua5.3=5.3.6-r4 cmd:luac5.3=5.3.6-r4
 
+C:Q1jOCKjFWs6PtjjyyR/em9md1flj4=
+P:xen-dev
+V:4.16.6-r1
+A:armv7
+S:1026325
+I:3805184
+T:Xen hypervisor (development files)
+U:https://www.xenproject.org/
+L:GPL-2.0-only
+o:xen
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1724236043
+c:1571938ef38b2028ecc68a759b148b80bde625a4
+D:argp-standalone attr-dev bison curl-dev dev86 e2fsprogs-dev flex gnutls-dev libaio-dev libcap-ng-dev libnl3-dev linux-headers lzo-dev ncurses-dev openssl-dev>3 pciutils-dev perl perl-dev python3-dev spice-dev texinfo util-linux-dev xz-dev yajl-dev zlib-dev zstd-dev pkgconfig xen-libs=4.16.6-r1
+p:pc:xencall=1.3 pc:xencontrol=4.16.0 pc:xendevicemodel=1.4 pc:xenevtchn=1.2 pc:xenforeignmemory=1.4 pc:xengnttab=1.2 pc:xenguest=4.16.0 pc:xenhypfs=1.0 pc:xenlight=4.16.0 pc:xenstat=4.16.0 pc:xenstore=4.0 pc:xentoolcore=1.0 pc:xentoollog=1.0 pc:xenvchan=4.16.0 pc:xlutil=4.16.0
+
 C:Q1MdPlEvtrIslVsSwWA8sZo0nvGP0=
 P:perl-type-tiny-doc
 V:2.000001-r1
@@ -14930,21 +14945,6 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:so:libc.musl-armv7.so.1 so:libpcre.so.1
 i:lua5.1 lua-rex-pcre=2.9.1-r1
 
-C:Q1OowojuKsdQIcnOjndkiwVZ+/wIY=
-P:xen-bash-completion
-V:4.16.6-r0
-A:armv7
-S:1892
-I:24576
-T:Bash completions for xen
-U:https://www.xenproject.org/
-L:GPL-2.0-only
-o:xen
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1712703299
-c:d002bcb912cdc31679dee4e40e1f3826dc38d5a4
-i:xen=4.16.6-r0 bash-completion
-
 C:Q1XMB78C3H8H/q+9zYQBIDfsKUuwg=
 P:irqbalance-openrc
 V:1.9.2-r1
@@ -15603,22 +15603,6 @@ t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:lighttpd
 p:cmd:dmvpn-crl-update=1.4.0-r1
-
-C:Q1Aj9FSnpjKU4xK95CYnNzGf+Ifh0=
-P:xen
-V:4.16.6-r0
-A:armv7
-S:988260
-I:5070848
-T:Xen hypervisor
-U:https://www.xenproject.org/
-L:GPL-2.0-only
-o:xen
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1712703299
-c:d002bcb912cdc31679dee4e40e1f3826dc38d5a4
-D:bash iproute2 logrotate so:libc.musl-armv7.so.1 so:libcap-ng.so.0 so:libcurl.so.4 so:libglib-2.0.so.0 so:libncursesw.so.6 so:libxencall.so.1 so:libxenctrl.so.4.16 so:libxenevtchn.so.1 so:libxenforeignmemory.so.1 so:libxenfsimage.so.4.16 so:libxengnttab.so.1 so:libxenguest.so.4.16 so:libxenhypfs.so.1 so:libxenlight.so.4.16 so:libxenstat.so.4.16 so:libxenstore.so.4 so:libxentoollog.so.1 so:libxenvchan.so.4.16 so:libxlutil.so.4.16 so:libyajl.so.2
-p:cmd:flask-get-bool=4.16.6-r0 cmd:flask-getenforce=4.16.6-r0 cmd:flask-label-pci=4.16.6-r0 cmd:flask-loadpolicy=4.16.6-r0 cmd:flask-set-bool=4.16.6-r0 cmd:flask-setenforce=4.16.6-r0 cmd:vchan-socket-proxy=4.16.6-r0 cmd:xen-access=4.16.6-r0 cmd:xen-diag=4.16.6-r0 cmd:xen-livepatch=4.16.6-r0 cmd:xenalyze=4.16.6-r0 cmd:xenbaked=4.16.6-r0 cmd:xencons=4.16.6-r0 cmd:xenconsoled=4.16.6-r0 cmd:xencov=4.16.6-r0 cmd:xencov_split=4.16.6-r0 cmd:xenhypfs=4.16.6-r0 cmd:xenlockprof=4.16.6-r0 cmd:xenmon=4.16.6-r0 cmd:xenperf=4.16.6-r0 cmd:xenpm=4.16.6-r0 cmd:xenpmd=4.16.6-r0 cmd:xenstore-chmod=4.16.6-r0 cmd:xenstore-control=4.16.6-r0 cmd:xenstore-exists=4.16.6-r0 cmd:xenstore-list=4.16.6-r0 cmd:xenstore-ls=4.16.6-r0 cmd:xenstore-read=4.16.6-r0 cmd:xenstore-rm=4.16.6-r0 cmd:xenstore-watch=4.16.6-r0 cmd:xenstore-write=4.16.6-r0 cmd:xenstore=4.16.6-r0 cmd:xenstored=4.16.6-r0 cmd:xentop=4.16.6-r0 cmd:xentrace=4.16.6-r0 cmd:xentrace_format=4.16.6-r0 cmd:xentrace_setmask=4.16.6-r0 cmd:xentrace_setsize=4.16.6-r0 cmd:xenwatchdogd=4.16.6-r0 cmd:xl=4.16.6-r0 py3.10:grub=4.16.6-r0 py3.10:xen=4.16.6-r0
 
 C:Q1krfWGV1PfjQRmjoHMdBJ8dQ3LQU=
 P:putty
@@ -18184,6 +18168,22 @@ t:1668851160
 c:c1d8ecffddcd0bcac384afbe315f4e328c76f467
 D:so:libc.musl-armv7.so.1
 p:so:libell.so.0=0.0.2
+
+C:Q1aPJSf369QWTlEFwloURI/XD7HI8=
+P:xen-libs
+V:4.16.6-r1
+A:armv7
+S:563368
+I:2555904
+T:Libraries for Xen tools
+U:https://www.xenproject.org/
+L:GPL-2.0-only
+o:xen
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1724236043
+c:1571938ef38b2028ecc68a759b148b80bde625a4
+D:so:libc.musl-armv7.so.1 so:libext2fs.so.2 so:libfdt.so.1 so:libnl-3.so.200 so:libnl-route-3.so.200 so:libuuid.so.1 so:libyajl.so.2 so:libz.so.1
+p:so:libxencall.so.1=1.3 so:libxenctrl.so.4.16=4.16.0 so:libxendevicemodel.so.1=1.4 so:libxenevtchn.so.1=1.2 so:libxenforeignmemory.so.1=1.4 so:libxenfsimage.so.4.16=4.16.0 so:libxengnttab.so.1=1.2 so:libxenguest.so.4.16=4.16.0 so:libxenhypfs.so.1=1.0 so:libxenlight.so.4.16=4.16.0 so:libxenstat.so.4.16=4.16.0 so:libxenstore.so.4=4.0 so:libxentoolcore.so.1=1.0 so:libxentoollog.so.1=1.0 so:libxenvchan.so.4.16=4.16.0 so:libxlutil.so.4.16=4.16.0
 
 C:Q17UvNISf+c5oJIClARGxgPVWEfA4=
 P:botan-doc
@@ -21989,22 +21989,6 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1697404404
 c:bfafdea64176fd4c31d402a8a676d3d353396ba7
 D:nginx nginx-mod-devel-kit so:libc.musl-armv7.so.1
-
-C:Q1glyyDT2eXOLTZ1gWMZ7n9czkdp4=
-P:xen-dev
-V:4.16.6-r0
-A:armv7
-S:1026325
-I:3805184
-T:Xen hypervisor (development files)
-U:https://www.xenproject.org/
-L:GPL-2.0-only
-o:xen
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1712703299
-c:d002bcb912cdc31679dee4e40e1f3826dc38d5a4
-D:argp-standalone attr-dev bison curl-dev dev86 e2fsprogs-dev flex gnutls-dev libaio-dev libcap-ng-dev libnl3-dev linux-headers lzo-dev ncurses-dev openssl-dev>3 pciutils-dev perl perl-dev python3-dev spice-dev texinfo util-linux-dev xz-dev yajl-dev zlib-dev zstd-dev pkgconfig xen-libs=4.16.6-r0
-p:pc:xencall=1.3 pc:xencontrol=4.16.0 pc:xendevicemodel=1.4 pc:xenevtchn=1.2 pc:xenforeignmemory=1.4 pc:xengnttab=1.2 pc:xenguest=4.16.0 pc:xenhypfs=1.0 pc:xenlight=4.16.0 pc:xenstat=4.16.0 pc:xenstore=4.0 pc:xentoolcore=1.0 pc:xentoollog=1.0 pc:xenvchan=4.16.0 pc:xlutil=4.16.0
 
 C:Q1ozXOFpfgrlA9puAptA88vUmQgi0=
 P:powertop
@@ -26180,22 +26164,6 @@ t:1668571671
 c:b1203dda3e73f094b62c06efdab856ee24e3fa45
 D:so:libX11.so.6 so:libXrender.so.1 so:libc.musl-armv7.so.1 so:libfontconfig.so.1 so:libfreetype.so.6
 p:so:libXft.so.2=2.3.7
-
-C:Q18zcZ9JViiCOh3n2I4/VqhqSnROg=
-P:xen-libs
-V:4.16.6-r0
-A:armv7
-S:563373
-I:2555904
-T:Libraries for Xen tools
-U:https://www.xenproject.org/
-L:GPL-2.0-only
-o:xen
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1712703299
-c:d002bcb912cdc31679dee4e40e1f3826dc38d5a4
-D:so:libc.musl-armv7.so.1 so:libext2fs.so.2 so:libfdt.so.1 so:libnl-3.so.200 so:libnl-route-3.so.200 so:libuuid.so.1 so:libyajl.so.2 so:libz.so.1
-p:so:libxencall.so.1=1.3 so:libxenctrl.so.4.16=4.16.0 so:libxendevicemodel.so.1=1.4 so:libxenevtchn.so.1=1.2 so:libxenforeignmemory.so.1=1.4 so:libxenfsimage.so.4.16=4.16.0 so:libxengnttab.so.1=1.2 so:libxenguest.so.4.16=4.16.0 so:libxenhypfs.so.1=1.0 so:libxenlight.so.4.16=4.16.0 so:libxenstat.so.4.16=4.16.0 so:libxenstore.so.4=4.0 so:libxentoolcore.so.1=1.0 so:libxentoollog.so.1=1.0 so:libxenvchan.so.4.16=4.16.0 so:libxlutil.so.4.16=4.16.0
 
 C:Q1FpGL+d2m3HXzNe3aV4aasqSBNss=
 P:sntpc
@@ -45806,21 +45774,6 @@ c:fbe2944ce8c10b9aa5dd395591a7961922bc7492
 D:/bin/sh so:libc.musl-armv7.so.1 so:libffi.so.8 so:libintl.so.8 so:libmount.so.1 so:libpcre2-8.so.0 so:libz.so.1
 p:so:libgio-2.0.so.0=0.7400.7 so:libglib-2.0.so.0=0.7400.7 so:libgmodule-2.0.so.0=0.7400.7 so:libgobject-2.0.so.0=0.7400.7 so:libgthread-2.0.so.0=0.7400.7 cmd:gapplication=2.74.7-r0 cmd:gdbus=2.74.7-r0 cmd:gio-querymodules=2.74.7-r0 cmd:gio=2.74.7-r0 cmd:glib-compile-schemas=2.74.7-r0 cmd:gsettings=2.74.7-r0
 
-C:Q1gYu/7Be0NaRq+8WDFn4pLe+6dfM=
-P:xen-qemu
-V:4.16.6-r0
-A:armv7
-S:21399330
-I:246632448
-T:QEMU for XEN
-U:https://www.xenproject.org/
-L:GPL-2.0-only
-o:xen
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1712703299
-c:d002bcb912cdc31679dee4e40e1f3826dc38d5a4
-D:bash iproute2 logrotate so:libaio.so.1 so:libbz2.so.1 so:libc.musl-armv7.so.1 so:libcap-ng.so.0 so:libcurl.so.4 so:libfdt.so.1 so:libgcc_s.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgnutls.so.30 so:libgobject-2.0.so.0 so:libjpeg.so.8 so:liblzo2.so.2 so:libncursesw.so.6 so:libpixman-1.so.0 so:libsasl2.so.3 so:libspice-server.so.1 so:libstdc++.so.6 so:libxenctrl.so.4.16 so:libxendevicemodel.so.1 so:libxenevtchn.so.1 so:libxenforeignmemory.so.1 so:libxengnttab.so.1 so:libxenstore.so.4 so:libxentoolcore.so.1 so:libz.so.1 so:libzstd.so.1
-
 C:Q1E9s/+wGTyfUj93CfrvdlgmuHxlI=
 P:hwdata
 V:0.364-r0
@@ -46591,21 +46544,6 @@ t:1686095257
 c:c56515705c4104cf1745618cc64b41445b278a56
 D:so:libc.musl-armv7.so.1
 p:so:libdbus-1.so.3=3.32.3
-
-C:Q1Gq5iQQrTx43GmdCS0flSkW8gsVg=
-P:xen-doc
-V:4.16.6-r0
-A:armv7
-S:997576
-I:4714496
-T:Xen hypervisor (documentation)
-U:https://www.xenproject.org/
-L:GPL-2.0-only
-o:xen
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1712703299
-c:d002bcb912cdc31679dee4e40e1f3826dc38d5a4
-i:docs xen=4.16.6-r0
 
 C:Q1fcN9OHv++UQRApPfo6VhqCnYHQU=
 P:linux-firmware-mediatek
@@ -47893,6 +47831,21 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1684890769
 c:323b60a66d518c5b7edc5b87aece141cd7353b86
 i:docs grub=2.06-r8
+
+C:Q1ER8eRySryeNz1CvtXPMW3HpAoME=
+P:xen-bridge
+V:4.16.6-r1
+A:armv7
+S:1968
+I:28672
+T:Bridge interface for XEN with dhcp
+U:https://www.xenproject.org/
+L:GPL-2.0-only
+o:xen
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1724236043
+c:1571938ef38b2028ecc68a759b148b80bde625a4
+D:dnsmasq
 
 C:Q14iOwTmndFuos4DcQ+2M8/BoEzWY=
 P:policyd-spf-fs
@@ -62369,6 +62322,21 @@ t:1659792088
 c:0714a84b7f79009ae8b96aef50216ed72f54b885
 D:gengetopt
 
+C:Q10szsHfaRGxlmezeAm4suhtZHYqM=
+P:xen-doc
+V:4.16.6-r1
+A:armv7
+S:997635
+I:4714496
+T:Xen hypervisor (documentation)
+U:https://www.xenproject.org/
+L:GPL-2.0-only
+o:xen
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1724236043
+c:1571938ef38b2028ecc68a759b148b80bde625a4
+i:docs xen=4.16.6-r1
+
 C:Q1c4/a70tMbfAA1fODcvqcH77tP4g=
 P:cairo-dev
 V:1.17.6-r3
@@ -62868,20 +62836,6 @@ t:1664342514
 c:9abb7835877d75624e4f455ff5dc0188958f9f07
 D:so:libblkid.so.1 so:libc.musl-armv7.so.1 so:libcryptsetup.so.12 so:libpopt.so.0 so:libuuid.so.1
 p:cmd:cryptsetup=2.5.0-r2 cmd:integritysetup=2.5.0-r2 cmd:veritysetup=2.5.0-r2
-
-C:Q1hR3ueTOFMtxpnBPSUL+eNj7B670=
-P:xen-hypervisor
-V:4.16.6-r0
-A:armv7
-S:320970
-I:901120
-T:Xen hypervisor
-U:https://www.xenproject.org/
-L:GPL-2.0-only
-o:xen
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1712703299
-c:d002bcb912cdc31679dee4e40e1f3826dc38d5a4
 
 C:Q1dr5fMbEURDX9dlmLwmh2PHZRKkM=
 P:u-boot-raspberrypi
@@ -71673,6 +71627,21 @@ c:66a87717f8a8a51bc9724ab852a243ed885df9dd
 D:so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libglslang.so.11 so:libstdc++.so.6
 p:so:libHLSL.so=0 so:libSPIRV.so=0 so:libSPVRemapper.so=0 so:libglslang-default-resource-limits.so=0 cmd:glslangValidator=11.12.0-r0 cmd:spirv-remap=11.12.0-r0
 
+C:Q1t1Ay3qbJ9MzRkBjaOwZm0ss6VBw=
+P:xen-bash-completion
+V:4.16.6-r1
+A:armv7
+S:1895
+I:24576
+T:Bash completions for xen
+U:https://www.xenproject.org/
+L:GPL-2.0-only
+o:xen
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1724236043
+c:1571938ef38b2028ecc68a759b148b80bde625a4
+i:xen=4.16.6-r1 bash-completion
+
 C:Q1rPTQg+eO+xWHozwmXnCab/PwQ9k=
 P:open-isns
 V:0.102-r0
@@ -71688,6 +71657,22 @@ t:1665481021
 c:da2ea9cb47b5e3e094ff5b11f89346f00b67d25e
 D:so:libc.musl-armv7.so.1 so:libcrypto.so.3 so:libisns.so.0
 p:cmd:isnsadm=0.102-r0 cmd:isnsd=0.102-r0 cmd:isnsdd=0.102-r0
+
+C:Q1bKd2tlBJsGVcgiPezxqtAa9xzuE=
+P:xen
+V:4.16.6-r1
+A:armv7
+S:988268
+I:5070848
+T:Xen hypervisor
+U:https://www.xenproject.org/
+L:GPL-2.0-only
+o:xen
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1724236043
+c:1571938ef38b2028ecc68a759b148b80bde625a4
+D:bash iproute2 logrotate so:libc.musl-armv7.so.1 so:libcap-ng.so.0 so:libcurl.so.4 so:libglib-2.0.so.0 so:libncursesw.so.6 so:libxencall.so.1 so:libxenctrl.so.4.16 so:libxenevtchn.so.1 so:libxenforeignmemory.so.1 so:libxenfsimage.so.4.16 so:libxengnttab.so.1 so:libxenguest.so.4.16 so:libxenhypfs.so.1 so:libxenlight.so.4.16 so:libxenstat.so.4.16 so:libxenstore.so.4 so:libxentoollog.so.1 so:libxenvchan.so.4.16 so:libxlutil.so.4.16 so:libyajl.so.2
+p:cmd:flask-get-bool=4.16.6-r1 cmd:flask-getenforce=4.16.6-r1 cmd:flask-label-pci=4.16.6-r1 cmd:flask-loadpolicy=4.16.6-r1 cmd:flask-set-bool=4.16.6-r1 cmd:flask-setenforce=4.16.6-r1 cmd:vchan-socket-proxy=4.16.6-r1 cmd:xen-access=4.16.6-r1 cmd:xen-diag=4.16.6-r1 cmd:xen-livepatch=4.16.6-r1 cmd:xenalyze=4.16.6-r1 cmd:xenbaked=4.16.6-r1 cmd:xencons=4.16.6-r1 cmd:xenconsoled=4.16.6-r1 cmd:xencov=4.16.6-r1 cmd:xencov_split=4.16.6-r1 cmd:xenhypfs=4.16.6-r1 cmd:xenlockprof=4.16.6-r1 cmd:xenmon=4.16.6-r1 cmd:xenperf=4.16.6-r1 cmd:xenpm=4.16.6-r1 cmd:xenpmd=4.16.6-r1 cmd:xenstore-chmod=4.16.6-r1 cmd:xenstore-control=4.16.6-r1 cmd:xenstore-exists=4.16.6-r1 cmd:xenstore-list=4.16.6-r1 cmd:xenstore-ls=4.16.6-r1 cmd:xenstore-read=4.16.6-r1 cmd:xenstore-rm=4.16.6-r1 cmd:xenstore-watch=4.16.6-r1 cmd:xenstore-write=4.16.6-r1 cmd:xenstore=4.16.6-r1 cmd:xenstored=4.16.6-r1 cmd:xentop=4.16.6-r1 cmd:xentrace=4.16.6-r1 cmd:xentrace_format=4.16.6-r1 cmd:xentrace_setmask=4.16.6-r1 cmd:xentrace_setsize=4.16.6-r1 cmd:xenwatchdogd=4.16.6-r1 cmd:xl=4.16.6-r1 py3.10:grub=4.16.6-r1 py3.10:xen=4.16.6-r1
 
 C:Q1noStuPsi7J9fxUTuLKv+ISCKNyA=
 P:linux-firmware-cadence
@@ -75037,6 +75022,21 @@ t:1661913584
 c:076d1a0e5ae9d95b8a91d347050a500a85a07f0f
 D:so:libc.musl-armv7.so.1 so:libz.so.1
 p:so:libfontenc.so.1=1.0.0
+
+C:Q1Eg4ilHpE9dWLNmm/kQI9tZZqWms=
+P:xen-qemu
+V:4.16.6-r1
+A:armv7
+S:21403357
+I:246632448
+T:QEMU for XEN
+U:https://www.xenproject.org/
+L:GPL-2.0-only
+o:xen
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1724236043
+c:1571938ef38b2028ecc68a759b148b80bde625a4
+D:bash iproute2 logrotate so:libaio.so.1 so:libbz2.so.1 so:libc.musl-armv7.so.1 so:libcap-ng.so.0 so:libcurl.so.4 so:libfdt.so.1 so:libgcc_s.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgnutls.so.30 so:libgobject-2.0.so.0 so:libjpeg.so.8 so:liblzo2.so.2 so:libncursesw.so.6 so:libpixman-1.so.0 so:libsasl2.so.3 so:libspice-server.so.1 so:libstdc++.so.6 so:libxenctrl.so.4.16 so:libxendevicemodel.so.1 so:libxenevtchn.so.1 so:libxenforeignmemory.so.1 so:libxengnttab.so.1 so:libxenstore.so.4 so:libxentoolcore.so.1 so:libz.so.1 so:libzstd.so.1
 
 C:Q1s6/z+CB4h05dZLGzkrr42p73nNg=
 P:squid-doc
