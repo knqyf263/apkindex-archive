@@ -3553,22 +3553,6 @@ t:1665881416
 c:b0fdd13450ba80b4f40ce37bdc2d4fcfdd3d37be
 D:bsd-compat-headers linux-headers dahdi-linux-dev newt-dev dahdi-tools=3.2.0-r0
 
-C:Q1OLOP7J9WR4VQ0iPsTpk7wdJhtLQ=
-P:libcrypto3
-V:3.0.14-r0
-A:ppc64le
-S:1672644
-I:4722688
-T:Crypto library from openssl
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl
-m:Ariadne Conill <ariadne@dereferenced.org>
-t:1719666842
-c:3953f2edd16d88f877bd10a1e6d3e213032a0e1b
-D:so:libc.musl-ppc64le.so.1
-p:so:libcrypto.so.3=3
-
 C:Q1CVbN4S6ECZ5/SZG9UwG/h2eKjjY=
 P:linux-firmware-rtl_nic
 V:20221214-r4
@@ -15262,6 +15246,22 @@ c:39cde24fb54a667a6730bdaec3233184227131f6
 D:lua5.2 so:libc.musl-ppc64le.so.1 so:libcrypto.so.3 so:libssl.so.3
 i:lua5.2 lua-cqueues=20200726-r4
 
+C:Q1muvm/GFSQjEaI3+Be9zX3v+v550=
+P:openssl
+V:3.0.15-r0
+A:ppc64le
+S:334998
+I:1036288
+T:Toolkit for Transport Layer Security (TLS)
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl
+m:Ariadne Conill <ariadne@dereferenced.org>
+t:1725535844
+c:64f4ada85b0b80e97019c0bfcf4367db9c0b0284
+D:libssl3=3.0.15-r0 libcrypto3=3.0.15-r0 so:libc.musl-ppc64le.so.1 so:libcrypto.so.3 so:libssl.so.3
+p:openssl3=3.0.15-r0 cmd:openssl=3.0.15-r0
+
 C:Q1nG3dBwAtg5AbdigtqBFHCgjqkFo=
 P:lua-file-magic
 V:0.2-r3
@@ -20262,6 +20262,20 @@ c:c07e3505fd70f1d5fa7d86f1320d30529cc5faf1
 D:lua5.4
 i:lua-optarg=0.3-r0 lua5.4
 
+C:Q1Bd9PD/J0Qf08nPqA7L4Onavd3ao=
+P:openssl-libs-static
+V:3.0.15-r0
+A:ppc64le
+S:10165839
+I:34074624
+T:Toolkit for Transport Layer Security (TLS) (static library)
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl
+m:Ariadne Conill <ariadne@dereferenced.org>
+t:1725535844
+c:64f4ada85b0b80e97019c0bfcf4367db9c0b0284
+
 C:Q1CAy9BqkgtEYVk2Skv+3aQ8XDi5s=
 P:nghttp2-libs
 V:1.51.0-r2
@@ -23598,20 +23612,6 @@ c:4a7646626b60b24267a4dd509994d1e76dcc04cb
 D:libattr=2.5.1-r2 pkgconfig
 p:pc:libattr=2.5.1
 
-C:Q1+7y/n0T+4/bS4Pm0Vf+apIfk8A4=
-P:openssl-dbg
-V:3.0.14-r0
-A:ppc64le
-S:5559432
-I:13594624
-T:Toolkit for Transport Layer Security (TLS) (debug symbols)
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl
-m:Ariadne Conill <ariadne@dereferenced.org>
-t:1719666842
-c:3953f2edd16d88f877bd10a1e6d3e213032a0e1b
-
 C:Q1zn2qJHNxJqBNuSxgcbcdzAUNc8A=
 P:perl-net-openssh-doc
 V:0.82-r0
@@ -24745,21 +24745,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1667998048
 c:0184fab176769150408a920c29f8dfe4f22bf483
 D:uwsgi so:libc.musl-ppc64le.so.1
-
-C:Q1I8LM1oD4X7UYiUXtO7SC6qlDGLI=
-P:openssl-doc
-V:3.0.14-r0
-A:ppc64le
-S:4783733
-I:12263424
-T:Toolkit for Transport Layer Security (TLS) (documentation)
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl
-m:Ariadne Conill <ariadne@dereferenced.org>
-t:1719666842
-c:3953f2edd16d88f877bd10a1e6d3e213032a0e1b
-i:docs openssl=3.0.14-r0
 
 C:Q1SKjQdwyfI1B+DWrNYtq5Q6cny80=
 P:libmaxminddb-libs
@@ -28893,6 +28878,22 @@ t:1656948063
 c:a513bc1985d993c1fbbd970ff0141df85b1cfc35
 D:py3-pbr python3
 p:py-fixtures=4.0.1-r0 py3.10:fixtures=4.0.1-r0
+
+C:Q1CEjpEFtsrXN1e6NyOe0wXoLHFGo=
+P:libssl3
+V:3.0.15-r0
+A:ppc64le
+S:251413
+I:753664
+T:SSL shared libraries
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl
+m:Ariadne Conill <ariadne@dereferenced.org>
+t:1725535844
+c:64f4ada85b0b80e97019c0bfcf4367db9c0b0284
+D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.3
+p:so:libssl.so.3=3
 
 C:Q1+adlA/zAAGxIoCS95seIpyQqAho=
 P:lighttpd-dbg
@@ -37099,22 +37100,6 @@ t:1690260709
 c:761d6f799529d381175be591dde5430d12e12ef2
 p:linux-firmware-any
 
-C:Q1iKfXUpo7x+UVqy0tzjmEIPJ7A6Q=
-P:openssl
-V:3.0.14-r0
-A:ppc64le
-S:334984
-I:1036288
-T:Toolkit for Transport Layer Security (TLS)
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl
-m:Ariadne Conill <ariadne@dereferenced.org>
-t:1719666842
-c:3953f2edd16d88f877bd10a1e6d3e213032a0e1b
-D:libssl3=3.0.14-r0 libcrypto3=3.0.14-r0 so:libc.musl-ppc64le.so.1 so:libcrypto.so.3 so:libssl.so.3
-p:openssl3=3.0.14-r0 cmd:openssl=3.0.14-r0
-
 C:Q1rG4x5CNVRgm5nswwv9OA49FMloo=
 P:nagios-plugins-breeze
 V:2.4.2-r0
@@ -39888,22 +39873,6 @@ t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:bison flex
 
-C:Q18zCxr314vqFhQwPE0IVtLgcqJ/c=
-P:openssl-dev
-V:3.0.14-r0
-A:ppc64le
-S:350533
-I:2285568
-T:Toolkit for Transport Layer Security (TLS) (development files)
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl
-m:Ariadne Conill <ariadne@dereferenced.org>
-t:1719666842
-c:3953f2edd16d88f877bd10a1e6d3e213032a0e1b
-D:libcrypto3=3.0.14-r0 libssl3=3.0.14-r0 pkgconfig
-p:openssl3-dev=3.0.14-r0 pc:libcrypto=3.0.14 pc:libssl=3.0.14 pc:openssl=3.0.14
-
 C:Q11BBN7xUok/1csKIPEevGQggMnao=
 P:nagios-plugins-http
 V:2.4.2-r0
@@ -40197,6 +40166,22 @@ t:1666606354
 c:df3944b73a2477e60631592c9f56381138bae388
 D:gettext perl perl-pod-parser
 p:cmd:msguntypot=0.68-r2 cmd:po4a-display-man=0.68-r2 cmd:po4a-display-pod=0.68-r2 cmd:po4a-gettextize=0.68-r2 cmd:po4a-normalize=0.68-r2 cmd:po4a-translate=0.68-r2 cmd:po4a-updatepo=0.68-r2 cmd:po4a=0.68-r2
+
+C:Q1zXMWDcqlXuW/nPWpbO2DLGFiJkA=
+P:openssl-dev
+V:3.0.15-r0
+A:ppc64le
+S:350549
+I:2285568
+T:Toolkit for Transport Layer Security (TLS) (development files)
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl
+m:Ariadne Conill <ariadne@dereferenced.org>
+t:1725535844
+c:64f4ada85b0b80e97019c0bfcf4367db9c0b0284
+D:libcrypto3=3.0.15-r0 libssl3=3.0.15-r0 pkgconfig
+p:openssl3-dev=3.0.15-r0 pc:libcrypto=3.0.15 pc:libssl=3.0.15 pc:openssl=3.0.15
 
 C:Q1P69ipt/VCLZrV4gkD7jEM/Utw8c=
 P:tiny-cloud-aws
@@ -43443,6 +43428,20 @@ t:1668607008
 c:3e16db39083a627392784154ee98222a404ca38d
 D:linux-headers device-mapper-event-libs=2.03.17-r1 device-mapper-libs=2.03.17-r1 lvm2-libs=2.03.17-r1 pkgconfig
 p:pc:devmapper-event=1.02.187 pc:devmapper=1.02.187
+
+C:Q12cbIe4OIAxsn//Od83xM1XmDcAs=
+P:openssl-dbg
+V:3.0.15-r0
+A:ppc64le
+S:5560864
+I:13598720
+T:Toolkit for Transport Layer Security (TLS) (debug symbols)
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl
+m:Ariadne Conill <ariadne@dereferenced.org>
+t:1725535844
+c:64f4ada85b0b80e97019c0bfcf4367db9c0b0284
 
 C:Q1rO2DlzT6mKt2B0UGAzkZDETbHmQ=
 P:flite
@@ -48618,22 +48617,6 @@ t:1677189438
 c:3f5d57c514667b9a13948486b60ce1fae29e7c95
 D:kea-hook-lease-cmds so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libkea-asiolink.so.40 so:libkea-cc.so.39 so:libkea-cfgclient.so.36 so:libkea-dhcp++.so.54 so:libkea-dhcpsrv.so.69 so:libkea-exceptions.so.13 so:libkea-hooks.so.57 so:libkea-http.so.42 so:libkea-log.so.35 so:libkea-process.so.40 so:libkea-stats.so.18 so:libkea-util.so.52
 
-C:Q1iJt4upFtdX+M8FOwRbwTXwQ7ZXM=
-P:libssl3
-V:3.0.14-r0
-A:ppc64le
-S:251349
-I:753664
-T:SSL shared libraries
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl
-m:Ariadne Conill <ariadne@dereferenced.org>
-t:1719666842
-c:3953f2edd16d88f877bd10a1e6d3e213032a0e1b
-D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.3
-p:so:libssl.so.3=3
-
 C:Q1ageXm/fXS8upRYCOZ2+eBaEiuCM=
 P:perl-parse-syslog
 V:1.10-r6
@@ -51193,20 +51176,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-io-stringy=2.113-r1
-
-C:Q1du55O7q1LCYgURuRFE0Sq/cGoLQ=
-P:openssl-libs-static
-V:3.0.14-r0
-A:ppc64le
-S:10163554
-I:34062336
-T:Toolkit for Transport Layer Security (TLS) (static library)
-U:https://www.openssl.org/
-L:Apache-2.0
-o:openssl
-m:Ariadne Conill <ariadne@dereferenced.org>
-t:1719666842
-c:3953f2edd16d88f877bd10a1e6d3e213032a0e1b
 
 C:Q1Rxnt0TrOOkpDrk2su+tWPiAbs7o=
 P:acf-quagga
@@ -56493,6 +56462,22 @@ t:1679429578
 c:1c7c4bb4e47ff4c26aec8ff77dc30fe06941c930
 D:lua5.2 so:libc.musl-ppc64le.so.1 so:liblber.so.2 so:libldap.so.2
 i:lua-ldap=1.2.6-r3 lua5.2
+
+C:Q1OpTPpIBl+R6PN9AjiXgBvDs/G1k=
+P:libcrypto3
+V:3.0.15-r0
+A:ppc64le
+S:1672930
+I:4722688
+T:Crypto library from openssl
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl
+m:Ariadne Conill <ariadne@dereferenced.org>
+t:1725535844
+c:64f4ada85b0b80e97019c0bfcf4367db9c0b0284
+D:so:libc.musl-ppc64le.so.1
+p:so:libcrypto.so.3=3
 
 C:Q1W3DVu7sYx79orwf5MKGEOKsgM/0=
 P:openldap-back-ldap
@@ -70610,6 +70595,21 @@ c:2c855343160bebf73432f03df94885f3df62a8fd
 k:100
 D:run-parts so:libc.musl-ppc64le.so.1
 p:ifupdown-any cmd:ifdown=0.8.39-r0 cmd:ifquery=0.8.39-r0 cmd:ifup=0.8.39-r0
+
+C:Q1vjXFy1tEjF06+Tu+8CmkQD6Wp3s=
+P:openssl-doc
+V:3.0.15-r0
+A:ppc64le
+S:4786578
+I:12275712
+T:Toolkit for Transport Layer Security (TLS) (documentation)
+U:https://www.openssl.org/
+L:Apache-2.0
+o:openssl
+m:Ariadne Conill <ariadne@dereferenced.org>
+t:1725535844
+c:64f4ada85b0b80e97019c0bfcf4367db9c0b0284
+i:docs openssl=3.0.15-r0
 
 C:Q1EG9UO718Sm7mV0M04ORXkl/LGWM=
 P:perl-test-number-delta-doc
