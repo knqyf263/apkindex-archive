@@ -62406,7 +62406,8 @@
     "tiny-cloud": {
       "origin": "tiny-cloud",
       "versions": {
-        "3.0.7-r0": 1705607917
+        "3.0.7-r0": 1705607917,
+        "3.0.8-r0": 1730747138
       },
       "dependencies": [
         "e2fsprogs-extra",
@@ -62417,8 +62418,8 @@
         "/bin/sh"
       ],
       "provides": [
-        "cmd:imds=3.0.7-r0",
-        "cmd:tiny-cloud=3.0.7-r0"
+        "cmd:imds=3.0.8-r0",
+        "cmd:tiny-cloud=3.0.8-r0"
       ]
     },
     "tiny-cloud-alpine": {
@@ -62436,13 +62437,15 @@
     "tiny-cloud-aws": {
       "origin": "tiny-cloud",
       "versions": {
-        "3.0.7-r0": 1705607917
+        "3.0.7-r0": 1705607917,
+        "3.0.8-r0": 1730747138
       },
       "dependencies": [
-        "nvme-cli",
-        "ifupdown-ng",
-        "iproute2-minimal",
-        "tiny-cloud=3.0.7-r0",
+        "e2fsprogs-extra",
+        "partx",
+        "sfdisk",
+        "yx",
+        "openssh-server",
         "/bin/sh"
       ],
       "provides": [
@@ -62452,47 +62455,55 @@
     "tiny-cloud-azure": {
       "origin": "tiny-cloud",
       "versions": {
-        "3.0.7-r0": 1705607917
+        "3.0.7-r0": 1705607917,
+        "3.0.8-r0": 1730747138
       },
       "dependencies": [
-        "tiny-cloud=3.0.7-r0",
+        "tiny-cloud=3.0.8-r0",
         "/bin/sh"
       ]
     },
     "tiny-cloud-gcp": {
       "origin": "tiny-cloud",
       "versions": {
-        "3.0.7-r0": 1705607917
+        "3.0.7-r0": 1705607917,
+        "3.0.8-r0": 1730747138
       },
       "dependencies": [
-        "tiny-cloud=3.0.7-r0",
+        "tiny-cloud=3.0.8-r0",
         "/bin/sh"
       ]
     },
     "tiny-cloud-nocloud": {
       "origin": "tiny-cloud",
       "versions": {
-        "3.0.7-r0": 1705607917
+        "3.0.7-r0": 1705607917,
+        "3.0.8-r0": 1730747138
       },
       "dependencies": [
-        "tiny-cloud=3.0.7-r0",
+        "tiny-cloud=3.0.8-r0",
         "/bin/sh"
+      ],
+      "provides": [
+        "tiny-cloud-alpine"
       ]
     },
     "tiny-cloud-oci": {
       "origin": "tiny-cloud",
       "versions": {
-        "3.0.7-r0": 1705607917
+        "3.0.7-r0": 1705607917,
+        "3.0.8-r0": 1730747138
       },
       "dependencies": [
-        "tiny-cloud=3.0.7-r0",
+        "tiny-cloud=3.0.8-r0",
         "/bin/sh"
       ]
     },
     "tiny-cloud-openrc": {
       "origin": "tiny-cloud",
       "versions": {
-        "3.0.7-r0": 1705607917
+        "3.0.7-r0": 1705607917,
+        "3.0.8-r0": 1730747138
       },
       "dependencies": [
         "/bin/sh"
@@ -64617,7 +64628,8 @@
     "vala": {
       "origin": "vala",
       "versions": {
-        "0.56.16-r1": 1722942047
+        "0.56.16-r1": 1722942047,
+        "0.56.17-r0": 1730751811
       },
       "dependencies": [
         "glib-dev",
@@ -64639,26 +64651,27 @@
         "so:libvala-0.56.so.0=0.0.0",
         "so:libvalaccodegen.so=0",
         "so:libvaladoc-0.56.so.0=0.0.0",
-        "pc:libvala-0.56=0.56.16",
-        "pc:valadoc-0.56=0.56.16",
-        "pc:vapigen-0.56=0.56.16",
-        "pc:vapigen=0.56.16",
-        "cmd:vala-0.56=0.56.16-r1",
-        "cmd:vala-gen-introspect-0.56=0.56.16-r1",
-        "cmd:vala-gen-introspect=0.56.16-r1",
-        "cmd:vala=0.56.16-r1",
-        "cmd:valac-0.56=0.56.16-r1",
-        "cmd:valac=0.56.16-r1",
-        "cmd:valadoc-0.56=0.56.16-r1",
-        "cmd:valadoc=0.56.16-r1",
-        "cmd:vapigen-0.56=0.56.16-r1",
-        "cmd:vapigen=0.56.16-r1"
+        "pc:libvala-0.56=0.56.17",
+        "pc:valadoc-0.56=0.56.17",
+        "pc:vapigen-0.56=0.56.17",
+        "pc:vapigen=0.56.17",
+        "cmd:vala-0.56=0.56.17-r0",
+        "cmd:vala-gen-introspect-0.56=0.56.17-r0",
+        "cmd:vala-gen-introspect=0.56.17-r0",
+        "cmd:vala=0.56.17-r0",
+        "cmd:valac-0.56=0.56.17-r0",
+        "cmd:valac=0.56.17-r0",
+        "cmd:valadoc-0.56=0.56.17-r0",
+        "cmd:valadoc=0.56.17-r0",
+        "cmd:vapigen-0.56=0.56.17-r0",
+        "cmd:vapigen=0.56.17-r0"
       ]
     },
     "vala-dbg": {
       "origin": "vala",
       "versions": {
-        "0.56.16-r1": 1722942047
+        "0.56.16-r1": 1722942047,
+        "0.56.17-r0": 1730751811
       },
       "dependencies": [
         "glib-dev"
@@ -64667,13 +64680,15 @@
     "vala-devhelp": {
       "origin": "vala",
       "versions": {
-        "0.56.16-r1": 1722942047
+        "0.56.16-r1": 1722942047,
+        "0.56.17-r0": 1730751811
       }
     },
     "vala-doc": {
       "origin": "vala",
       "versions": {
-        "0.56.16-r1": 1722942047
+        "0.56.16-r1": 1722942047,
+        "0.56.17-r0": 1730751811
       }
     },
     "valgrind-yash-completion": {
@@ -67021,6 +67036,53 @@
       "provides": [
         "postgresql-pltcl"
       ]
+    },
+    "tiny-cloud-allclouds": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "3.0.8-r0": 1730747138
+      },
+      "dependencies": [
+        "tiny-cloud-aws",
+        "tiny-cloud-azure",
+        "tiny-cloud-gcp",
+        "tiny-cloud-hetzner",
+        "tiny-cloud-incus",
+        "tiny-cloud-nocloud",
+        "tiny-cloud-oci",
+        "tiny-cloud-scaleway",
+        "/bin/sh"
+      ]
+    },
+    "tiny-cloud-hetzner": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "3.0.8-r0": 1730747138
+      },
+      "dependencies": [
+        "tiny-cloud=3.0.8-r0",
+        "/bin/sh"
+      ]
+    },
+    "tiny-cloud-incus": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "3.0.8-r0": 1730747138
+      },
+      "dependencies": [
+        "tiny-cloud=3.0.8-r0",
+        "/bin/sh"
+      ]
+    },
+    "tiny-cloud-scaleway": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "3.0.8-r0": 1730747138
+      },
+      "dependencies": [
+        "tiny-cloud=3.0.8-r0",
+        "/bin/sh"
+      ]
     }
   },
   "provide": {
@@ -68360,6 +68422,10 @@
       "spl-vanilla": {
         "package": "zfs-lts",
         "version": "6.6.59-r0"
+      },
+      "tiny-cloud-alpine": {
+        "package": "tiny-cloud-nocloud",
+        "version": 0
       }
     },
     "so": {
