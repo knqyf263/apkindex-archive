@@ -64224,7 +64224,8 @@
     "tiny-cloud": {
       "origin": "tiny-cloud",
       "versions": {
-        "3.0.7-r0": 1705607917
+        "3.0.7-r0": 1705607917,
+        "3.0.8-r1": 1730822491
       },
       "dependencies": [
         "e2fsprogs-extra",
@@ -64235,8 +64236,8 @@
         "/bin/sh"
       ],
       "provides": [
-        "cmd:imds=3.0.7-r0",
-        "cmd:tiny-cloud=3.0.7-r0"
+        "cmd:imds=3.0.8-r1",
+        "cmd:tiny-cloud=3.0.8-r1"
       ]
     },
     "tiny-cloud-alpine": {
@@ -64254,13 +64255,13 @@
     "tiny-cloud-aws": {
       "origin": "tiny-cloud",
       "versions": {
-        "3.0.7-r0": 1705607917
+        "3.0.7-r0": 1705607917,
+        "3.0.8-r1": 1730822491
       },
       "dependencies": [
+        "tiny-cloud=3.0.8-r1",
         "nvme-cli",
         "ifupdown-ng",
-        "iproute2-minimal",
-        "tiny-cloud=3.0.7-r0",
         "/bin/sh"
       ],
       "provides": [
@@ -64270,47 +64271,56 @@
     "tiny-cloud-azure": {
       "origin": "tiny-cloud",
       "versions": {
-        "3.0.7-r0": 1705607917
+        "3.0.7-r0": 1705607917,
+        "3.0.8-r1": 1730822491
       },
       "dependencies": [
-        "tiny-cloud=3.0.7-r0",
+        "tiny-cloud=3.0.8-r1",
         "/bin/sh"
       ]
     },
     "tiny-cloud-gcp": {
       "origin": "tiny-cloud",
       "versions": {
-        "3.0.7-r0": 1705607917
+        "3.0.7-r0": 1705607917,
+        "3.0.8-r1": 1730822491
       },
       "dependencies": [
-        "tiny-cloud=3.0.7-r0",
+        "tiny-cloud=3.0.8-r1",
         "/bin/sh"
       ]
     },
     "tiny-cloud-nocloud": {
       "origin": "tiny-cloud",
       "versions": {
-        "3.0.7-r0": 1705607917
+        "3.0.7-r0": 1705607917,
+        "3.0.8-r1": 1730822491
       },
       "dependencies": [
-        "tiny-cloud=3.0.7-r0",
+        "tiny-cloud=3.0.8-r1",
+        "ifupdown-ng",
         "/bin/sh"
+      ],
+      "provides": [
+        "tiny-cloud-alpine"
       ]
     },
     "tiny-cloud-oci": {
       "origin": "tiny-cloud",
       "versions": {
-        "3.0.7-r0": 1705607917
+        "3.0.7-r0": 1705607917,
+        "3.0.8-r1": 1730822491
       },
       "dependencies": [
-        "tiny-cloud=3.0.7-r0",
+        "tiny-cloud=3.0.8-r1",
         "/bin/sh"
       ]
     },
     "tiny-cloud-openrc": {
       "origin": "tiny-cloud",
       "versions": {
-        "3.0.7-r0": 1705607917
+        "3.0.7-r0": 1705607917,
+        "3.0.8-r1": 1730822491
       },
       "dependencies": [
         "/bin/sh"
@@ -69227,6 +69237,53 @@
       "versions": {
         "3.1.0-r0": 1716234450
       }
+    },
+    "tiny-cloud-allclouds": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "3.0.8-r1": 1730822491
+      },
+      "dependencies": [
+        "tiny-cloud-aws",
+        "tiny-cloud-azure",
+        "tiny-cloud-gcp",
+        "tiny-cloud-hetzner",
+        "tiny-cloud-incus",
+        "tiny-cloud-nocloud",
+        "tiny-cloud-oci",
+        "tiny-cloud-scaleway",
+        "/bin/sh"
+      ]
+    },
+    "tiny-cloud-hetzner": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "3.0.8-r1": 1730822491
+      },
+      "dependencies": [
+        "tiny-cloud=3.0.8-r1",
+        "/bin/sh"
+      ]
+    },
+    "tiny-cloud-incus": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "3.0.8-r1": 1730822491
+      },
+      "dependencies": [
+        "tiny-cloud=3.0.8-r1",
+        "/bin/sh"
+      ]
+    },
+    "tiny-cloud-scaleway": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "3.0.8-r1": 1730822491
+      },
+      "dependencies": [
+        "tiny-cloud=3.0.8-r1",
+        "/bin/sh"
+      ]
     }
   },
   "provide": {
@@ -70570,6 +70627,10 @@
       "spl-vanilla": {
         "package": "zfs-lts",
         "version": "6.6.59-r0"
+      },
+      "tiny-cloud-alpine": {
+        "package": "tiny-cloud-nocloud",
+        "version": 0
       }
     },
     "so": {
