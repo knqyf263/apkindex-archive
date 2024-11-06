@@ -9411,22 +9411,24 @@
     "curl": {
       "origin": "curl",
       "versions": {
-        "8.10.1-r0": 1727723657
+        "8.10.1-r0": 1727723657,
+        "8.11.0-r0": 1730926925
       },
       "dependencies": [
-        "libcurl=8.10.1-r0",
+        "libcurl=8.11.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libcurl.so.4",
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:curl=8.10.1-r0"
+        "cmd:curl=8.11.0-r0"
       ]
     },
     "curl-dbg": {
       "origin": "curl",
       "versions": {
-        "8.10.1-r0": 1727723657
+        "8.10.1-r0": 1727723657,
+        "8.11.0-r0": 1730926925
       },
       "dependencies": [
         "ca-certificates-bundle"
@@ -9435,7 +9437,8 @@
     "curl-dev": {
       "origin": "curl",
       "versions": {
-        "8.10.1-r0": 1727723657
+        "8.10.1-r0": 1727723657,
+        "8.11.0-r0": 1730926925
       },
       "dependencies": [
         "brotli-dev",
@@ -9446,7 +9449,7 @@
         "openssl-dev>3",
         "zlib-dev",
         "zstd-dev",
-        "libcurl=8.10.1-r0",
+        "libcurl=8.11.0-r0",
         "pc:libbrotlidec",
         "pc:libcares",
         "pc:libidn2",
@@ -9458,20 +9461,22 @@
         "pkgconfig"
       ],
       "provides": [
-        "pc:libcurl=8.10.1",
-        "cmd:curl-config=8.10.1-r0"
+        "pc:libcurl=8.11.0",
+        "cmd:curl-config=8.11.0-r0"
       ]
     },
     "curl-doc": {
       "origin": "curl",
       "versions": {
-        "8.10.1-r0": 1727723657
+        "8.10.1-r0": 1727723657,
+        "8.11.0-r0": 1730926925
       }
     },
     "curl-static": {
       "origin": "curl",
       "versions": {
-        "8.10.1-r0": 1727723657
+        "8.10.1-r0": 1727723657,
+        "8.11.0-r0": 1730926925
       }
     },
     "cutter": {
@@ -11619,81 +11624,89 @@
     "dropbear": {
       "origin": "dropbear",
       "versions": {
-        "2024.85-r0": 1715925526
+        "2024.85-r0": 1715925526,
+        "2024.85-r1": 1730927091
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
-        "so:libskarnet.so.2.14",
+        "so:libutmps.so.0.1",
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:dropbear=2024.85-r0",
-        "cmd:dropbearkey=2024.85-r0"
+        "cmd:dropbear=2024.85-r1",
+        "cmd:dropbearkey=2024.85-r1"
       ]
     },
     "dropbear-convert": {
       "origin": "dropbear",
       "versions": {
-        "2024.85-r0": 1715925526
+        "2024.85-r0": 1715925526,
+        "2024.85-r1": 1730927091
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1"
       ],
       "provides": [
-        "cmd:dropbearconvert=2024.85-r0"
+        "cmd:dropbearconvert=2024.85-r1"
       ]
     },
     "dropbear-dbclient": {
       "origin": "dropbear",
       "versions": {
-        "2024.85-r0": 1715925526
+        "2024.85-r0": 1715925526,
+        "2024.85-r1": 1730927091
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
-        "so:libskarnet.so.2.14",
+        "so:libutmps.so.0.1",
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:dbclient=2024.85-r0"
+        "cmd:dbclient=2024.85-r1"
       ]
     },
     "dropbear-doc": {
       "origin": "dropbear",
       "versions": {
-        "2024.85-r0": 1715925526
+        "2024.85-r0": 1715925526,
+        "2024.85-r1": 1730927091
       }
     },
     "dropbear-openrc": {
       "origin": "dropbear",
       "versions": {
-        "2024.85-r0": 1715925526
+        "2024.85-r0": 1715925526,
+        "2024.85-r1": 1730927091
       }
     },
     "dropbear-scp": {
       "origin": "dropbear",
       "versions": {
-        "2024.85-r0": 1715925526
+        "2024.85-r0": 1715925526,
+        "2024.85-r1": 1730927091
       },
       "dependencies": [
+        "dropbear-dbclient",
         "!openssh-client",
         "so:libc.musl-ppc64le.so.1"
       ],
       "provides": [
-        "cmd:scp=2024.85-r0"
+        "cmd:scp=2024.85-r1"
       ]
     },
     "dropbear-ssh": {
       "origin": "dropbear",
       "versions": {
-        "2024.85-r0": 1715925526
+        "2024.85-r0": 1715925526,
+        "2024.85-r1": 1730927091
       },
       "dependencies": [
         "dropbear-dbclient",
         "!openssh-client",
-        "dropbear-dbclient=2024.85-r0"
+        "dropbear-dbclient=2024.85-r1"
       ],
       "provides": [
-        "cmd:ssh=2024.85-r0"
+        "cmd:ssh=2024.85-r1"
       ]
     },
     "dtach": {
@@ -23526,7 +23539,8 @@
     "libcurl": {
       "origin": "curl",
       "versions": {
-        "8.10.1-r0": 1727723657
+        "8.10.1-r0": 1727723657,
+        "8.11.0-r0": 1730926925
       },
       "dependencies": [
         "ca-certificates-bundle",
@@ -66360,6 +66374,18 @@
         "tiny-cloud=3.0.8-r1",
         "/bin/sh"
       ]
+    },
+    "curl-fish-completion": {
+      "origin": "curl",
+      "versions": {
+        "8.11.0-r0": 1730926925
+      }
+    },
+    "curl-zsh-completion": {
+      "origin": "curl",
+      "versions": {
+        "8.11.0-r0": 1730926925
+      }
     }
   },
   "provide": {
