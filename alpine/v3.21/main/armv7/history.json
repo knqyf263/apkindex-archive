@@ -26240,7 +26240,8 @@
     "libnvme": {
       "origin": "libnvme",
       "versions": {
-        "1.10-r1": 1728132068
+        "1.10-r1": 1728132068,
+        "1.11-r0": 1731351401
       },
       "dependencies": [
         "so:libc.musl-armv7.so.1",
@@ -26248,39 +26249,41 @@
         "so:libjson-c.so.5"
       ],
       "provides": [
-        "so:libnvme.so.1=1.10.0"
+        "so:libnvme.so.1=1.11.0"
       ]
     },
     "libnvme-dev": {
       "origin": "libnvme",
       "versions": {
-        "1.10-r1": 1728132068
+        "1.10-r1": 1728132068,
+        "1.11-r0": 1731351401
       },
       "dependencies": [
         "json-c-dev",
         "linux-headers",
         "openssl-dev",
-        "libnvme=1.10-r1",
-        "libnvmemi=1.10-r1",
+        "libnvme=1.11-r0",
+        "libnvmemi=1.11-r0",
         "pc:json-c>=0.13",
         "pc:openssl>=1.1.0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libnvme-mi=1.10",
-        "pc:libnvme=1.10"
+        "pc:libnvme-mi=1.11",
+        "pc:libnvme=1.11"
       ]
     },
     "libnvmemi": {
       "origin": "libnvme",
       "versions": {
-        "1.10-r1": 1728132068
+        "1.10-r1": 1728132068,
+        "1.11-r0": 1731351401
       },
       "dependencies": [
         "so:libc.musl-armv7.so.1"
       ],
       "provides": [
-        "so:libnvme-mi.so.1=1.10.0"
+        "so:libnvme-mi.so.1=1.11.0"
       ]
     },
     "libobjc": {
@@ -53577,7 +53580,8 @@
     "py3-nvme": {
       "origin": "libnvme",
       "versions": {
-        "1.10-r1": 1728132068
+        "1.10-r1": 1728132068,
+        "1.11-r0": 1731351401
       },
       "dependencies": [
         "python3~3.12",
@@ -53585,7 +53589,7 @@
         "so:libnvme.so.1"
       ],
       "provides": [
-        "py3.12:libnvme=1.10-r1"
+        "py3.12:libnvme=1.11-r0"
       ]
     },
     "py3-olefile": {
@@ -67640,6 +67644,15 @@
         "8.11.0-r1": 1730970066,
         "8.11.0-r2": 1731344411
       }
+    },
+    "py3-nvme-pyc": {
+      "origin": "libnvme",
+      "versions": {
+        "1.11-r0": 1731351401
+      },
+      "dependencies": [
+        "python3~3.12"
+      ]
     }
   },
   "provide": {
@@ -72156,11 +72169,11 @@
       },
       "libnvme.so.1": {
         "package": "libnvme",
-        "version": "1.10.0"
+        "version": "1.11.0"
       },
       "libnvme-mi.so.1": {
         "package": "libnvmemi",
-        "version": "1.10.0"
+        "version": "1.11.0"
       },
       "libobjc.so.4": {
         "package": "libobjc",
