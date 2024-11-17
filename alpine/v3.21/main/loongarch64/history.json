@@ -2843,7 +2843,8 @@
       "origin": "ada",
       "versions": {
         "2.7.8-r1": 1726240237,
-        "2.9.2-r0": 1731774594
+        "2.9.2-r0": 1731774594,
+        "2.9.2-r1": 1731803060
       },
       "dependencies": [
         "so:libada.so.2",
@@ -2853,25 +2854,31 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:adaparse=2.9.2-r0"
+        "cmd:adaparse=2.9.2-r1"
       ]
     },
     "ada-dev": {
       "origin": "ada",
       "versions": {
         "2.7.8-r1": 1726240237,
-        "2.9.2-r0": 1731774594
+        "2.9.2-r0": 1731774594,
+        "2.9.2-r1": 1731803060
       },
       "dependencies": [
-        "ada=2.9.2-r0",
-        "ada-libs=2.9.2-r0"
+        "ada=2.9.2-r1",
+        "ada-libs=2.9.2-r1",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:ada=2.9.2"
       ]
     },
     "ada-libs": {
       "origin": "ada",
       "versions": {
         "2.7.8-r1": 1726240237,
-        "2.9.2-r0": 1731774594
+        "2.9.2-r0": 1731774594,
+        "2.9.2-r1": 1731803060
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
@@ -2886,7 +2893,8 @@
       "origin": "ada",
       "versions": {
         "2.7.8-r1": 1726240237,
-        "2.9.2-r0": 1731774594
+        "2.9.2-r0": 1731774594,
+        "2.9.2-r1": 1731803060
       }
     },
     "agetty": {
@@ -41629,13 +41637,13 @@
       "origin": "nodejs",
       "versions": {
         "20.15.1-r0": 1720887738,
-        "20.15.1-r1": 1731791053
+        "20.15.1-r1": 1731791053,
+        "22.11.0-r0": 1731803197
       },
       "dependencies": [
         "ca-certificates",
         "/bin/sh",
         "so:libada.so.2",
-        "so:libbase64.so.0",
         "so:libbrotlidec.so.1",
         "so:libbrotlienc.so.1",
         "so:libc.musl-loongarch64.so.1",
@@ -41645,46 +41653,51 @@
         "so:libicui18n.so.74",
         "so:libicuuc.so.74",
         "so:libnghttp2.so.14",
+        "so:libsimdjson.so.23",
+        "so:libsimdutf.so.11",
+        "so:libsqlite3.so.0",
         "so:libssl.so.3",
         "so:libstdc++.so.6",
         "so:libz.so.1"
       ],
       "provides": [
-        "nodejs-lts=20.15.1-r1",
-        "cmd:node=20.15.1-r1"
+        "nodejs-lts=22.11.0-r0",
+        "cmd:node=22.11.0-r0"
       ]
     },
     "nodejs-dev": {
       "origin": "nodejs",
       "versions": {
         "20.15.1-r0": 1720887738,
-        "20.15.1-r1": 1731791053
+        "20.15.1-r1": 1731791053,
+        "22.11.0-r0": 1731803197
       },
       "dependencies": [
-        "nodejs-libs=20.15.1-r1",
+        "nodejs-libs=22.11.0-r0",
         "pkgconfig"
       ],
       "provides": [
-        "nodejs-lts-dev=20.15.1",
-        "pc:nodejs=20.15.1"
+        "nodejs-lts-dev=22.11.0",
+        "pc:nodejs=22.11.0"
       ]
     },
     "nodejs-doc": {
       "origin": "nodejs",
       "versions": {
         "20.15.1-r0": 1720887738,
-        "20.15.1-r1": 1731791053
+        "20.15.1-r1": 1731791053,
+        "22.11.0-r0": 1731803197
       }
     },
     "nodejs-libs": {
       "origin": "nodejs",
       "versions": {
         "20.15.1-r0": 1720887738,
-        "20.15.1-r1": 1731791053
+        "20.15.1-r1": 1731791053,
+        "22.11.0-r0": 1731803197
       },
       "dependencies": [
         "so:libada.so.2",
-        "so:libbase64.so.0",
         "so:libbrotlidec.so.1",
         "so:libbrotlienc.so.1",
         "so:libc.musl-loongarch64.so.1",
@@ -41694,12 +41707,15 @@
         "so:libicui18n.so.74",
         "so:libicuuc.so.74",
         "so:libnghttp2.so.14",
+        "so:libsimdjson.so.23",
+        "so:libsimdutf.so.11",
+        "so:libsqlite3.so.0",
         "so:libssl.so.3",
         "so:libstdc++.so.6",
         "so:libz.so.1"
       ],
       "provides": [
-        "so:libnode.so.115=115"
+        "so:libnode.so.127=127"
       ]
     },
     "npth": {
@@ -67634,6 +67650,67 @@
       "dependencies": [
         "python3~3.12"
       ]
+    },
+    "fastbase64": {
+      "origin": "simdutf",
+      "versions": {
+        "5.6.1-r0": 1731803197
+      },
+      "dependencies": [
+        "so:libc.musl-loongarch64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libsimdutf.so.11"
+      ],
+      "provides": [
+        "cmd:fastbase64=5.6.1-r0"
+      ]
+    },
+    "simdutf": {
+      "origin": "simdutf",
+      "versions": {
+        "5.6.1-r0": 1731803197
+      },
+      "dependencies": [
+        "so:libc.musl-loongarch64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libsimdutf.so.11=11.0.0"
+      ]
+    },
+    "simdutf-dev": {
+      "origin": "simdutf",
+      "versions": {
+        "5.6.1-r0": 1731803197
+      },
+      "dependencies": [
+        "pkgconfig",
+        "simdutf=5.6.1-r0"
+      ],
+      "provides": [
+        "pc:simdutf=5.6.1"
+      ]
+    },
+    "simdutf-doc": {
+      "origin": "simdutf",
+      "versions": {
+        "5.6.1-r0": 1731803197
+      }
+    },
+    "sutf": {
+      "origin": "simdutf",
+      "versions": {
+        "5.6.1-r0": 1731803197
+      },
+      "dependencies": [
+        "so:libc.musl-loongarch64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libsimdutf.so.11"
+      ],
+      "provides": [
+        "cmd:sutf=5.6.1-r0"
+      ]
     }
   },
   "provide": {
@@ -68384,11 +68461,11 @@
       },
       "nodejs-lts": {
         "package": "nodejs",
-        "version": "20.15.1-r1"
+        "version": "22.11.0-r0"
       },
       "nodejs-lts-dev": {
         "package": "nodejs-dev",
-        "version": "20.15.1"
+        "version": "22.11.0"
       },
       "openldap-back-monitor": {
         "package": "openldap",
@@ -75455,6 +75532,14 @@
       "libgallium-24.2.7.so": {
         "package": "mesa",
         "version": "0"
+      },
+      "libnode.so.127": {
+        "package": "nodejs-libs",
+        "version": "127"
+      },
+      "libsimdutf.so.11": {
+        "package": "simdutf",
+        "version": "11.0.0"
       }
     }
   }
