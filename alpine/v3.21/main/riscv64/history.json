@@ -2842,7 +2842,8 @@
     "ada": {
       "origin": "ada",
       "versions": {
-        "2.7.8-r1": 1726240237
+        "2.7.8-r1": 1726240237,
+        "2.9.2-r1": 1731803060
       },
       "dependencies": [
         "so:libada.so.2",
@@ -2852,23 +2853,29 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:adaparse=2.7.8-r1"
+        "cmd:adaparse=2.9.2-r1"
       ]
     },
     "ada-dev": {
       "origin": "ada",
       "versions": {
-        "2.7.8-r1": 1726240237
+        "2.7.8-r1": 1726240237,
+        "2.9.2-r1": 1731803060
       },
       "dependencies": [
-        "ada=2.7.8-r1",
-        "ada-libs=2.7.8-r1"
+        "ada=2.9.2-r1",
+        "ada-libs=2.9.2-r1",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:ada=2.9.2"
       ]
     },
     "ada-libs": {
       "origin": "ada",
       "versions": {
-        "2.7.8-r1": 1726240237
+        "2.7.8-r1": 1726240237,
+        "2.9.2-r1": 1731803060
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -2876,13 +2883,14 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libada.so.2=2.7.8"
+        "so:libada.so.2=2.9.2"
       ]
     },
     "ada-static": {
       "origin": "ada",
       "versions": {
-        "2.7.8-r1": 1726240237
+        "2.7.8-r1": 1726240237,
+        "2.9.2-r1": 1731803060
       }
     },
     "agetty": {
@@ -3291,7 +3299,8 @@
     "aom": {
       "origin": "aom",
       "versions": {
-        "3.10.0-r0": 1725335966
+        "3.10.0-r0": 1725335966,
+        "3.11.0-r0": 1731878614
       },
       "dependencies": [
         "so:libaom.so.3",
@@ -3300,39 +3309,42 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:aomdec=3.10.0-r0",
-        "cmd:aomenc=3.10.0-r0"
+        "cmd:aomdec=3.11.0-r0",
+        "cmd:aomenc=3.11.0-r0"
       ]
     },
     "aom-dev": {
       "origin": "aom",
       "versions": {
-        "3.10.0-r0": 1725335966
+        "3.10.0-r0": 1725335966,
+        "3.11.0-r0": 1731878614
       },
       "dependencies": [
-        "aom-libs=3.10.0-r0",
+        "aom-libs=3.11.0-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:aom=3.10.0"
+        "pc:aom=3.11.0"
       ]
     },
     "aom-doc": {
       "origin": "aom",
       "versions": {
-        "3.10.0-r0": 1725335966
+        "3.10.0-r0": 1725335966,
+        "3.11.0-r0": 1731878614
       }
     },
     "aom-libs": {
       "origin": "aom",
       "versions": {
-        "3.10.0-r0": 1725335966
+        "3.10.0-r0": 1725335966,
+        "3.11.0-r0": 1731878614
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1"
       ],
       "provides": [
-        "so:libaom.so.3=3.10.0"
+        "so:libaom.so.3=3.11.0"
       ]
     },
     "apache-mod-auth-kerb": {
@@ -8944,7 +8956,8 @@
     "compiler-rt": {
       "origin": "llvm-runtimes",
       "versions": {
-        "19.1.2-r1": 1730286450
+        "19.1.2-r1": 1730286450,
+        "19.1.2-r2": 1731742046
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -23526,7 +23539,8 @@
     "libc++": {
       "origin": "llvm-runtimes",
       "versions": {
-        "19.1.2-r1": 1730286450
+        "19.1.2-r1": 1730286450,
+        "19.1.2-r2": 1731742046
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -23540,16 +23554,18 @@
     "libc++-dev": {
       "origin": "llvm-runtimes",
       "versions": {
-        "19.1.2-r1": 1730286450
+        "19.1.2-r1": 1730286450,
+        "19.1.2-r2": 1731742046
       },
       "dependencies": [
-        "libc++=19.1.2-r1"
+        "libc++=19.1.2-r2"
       ]
     },
     "libc++-static": {
       "origin": "llvm-runtimes",
       "versions": {
-        "19.1.2-r1": 1730286450
+        "19.1.2-r1": 1730286450,
+        "19.1.2-r2": 1731742046
       }
     },
     "libcap": {
@@ -30857,7 +30873,8 @@
     "llvm-libunwind": {
       "origin": "llvm-runtimes",
       "versions": {
-        "19.1.2-r1": 1730286450
+        "19.1.2-r1": 1730286450,
+        "19.1.2-r2": 1731742046
       },
       "dependencies": [
         "!libunwind-dev",
@@ -30870,22 +30887,25 @@
     "llvm-libunwind-dev": {
       "origin": "llvm-runtimes",
       "versions": {
-        "19.1.2-r1": 1730286450
+        "19.1.2-r1": 1730286450,
+        "19.1.2-r2": 1731742046
       },
       "dependencies": [
-        "llvm-libunwind=19.1.2-r1"
+        "llvm-libunwind=19.1.2-r2"
       ]
     },
     "llvm-libunwind-static": {
       "origin": "llvm-runtimes",
       "versions": {
-        "19.1.2-r1": 1730286450
+        "19.1.2-r1": 1730286450,
+        "19.1.2-r2": 1731742046
       }
     },
     "llvm-runtimes": {
       "origin": "llvm-runtimes",
       "versions": {
-        "19.1.2-r1": 1730286450
+        "19.1.2-r1": 1730286450,
+        "19.1.2-r2": 1731742046
       }
     },
     "llvm15": {
@@ -32908,7 +32928,8 @@
     "lua-system": {
       "origin": "lua-system",
       "versions": {
-        "0.2.1-r2": 1697548799
+        "0.2.1-r2": 1697548799,
+        "0.4.4-r2": 1731848533
       }
     },
     "lua-term": {
@@ -33550,7 +33571,8 @@
     "lua5.1-system": {
       "origin": "lua-system",
       "versions": {
-        "0.2.1-r2": 1697548799
+        "0.2.1-r2": 1697548799,
+        "0.4.4-r2": 1731848533
       },
       "dependencies": [
         "lua5.1",
@@ -34230,7 +34252,8 @@
     "lua5.2-system": {
       "origin": "lua-system",
       "versions": {
-        "0.2.1-r2": 1697548799
+        "0.2.1-r2": 1697548799,
+        "0.4.4-r2": 1731848533
       },
       "dependencies": [
         "lua5.2",
@@ -34912,7 +34935,8 @@
     "lua5.3-system": {
       "origin": "lua-system",
       "versions": {
-        "0.2.1-r2": 1697548799
+        "0.2.1-r2": 1697548799,
+        "0.4.4-r2": 1731848533
       },
       "dependencies": [
         "lua5.3",
@@ -35581,7 +35605,8 @@
     "lua5.4-system": {
       "origin": "lua-system",
       "versions": {
-        "0.2.1-r2": 1697548799
+        "0.2.1-r2": 1697548799,
+        "0.4.4-r2": 1731848533
       },
       "dependencies": [
         "lua5.4",
@@ -40340,7 +40365,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "/bin/sh",
@@ -40351,17 +40377,18 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:nginx=1.26.2-r2"
+        "cmd:nginx=1.26.2-r3"
       ]
     },
     "nginx-debug": {
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
-        "nginx=1.26.2-r2",
+        "nginx=1.26.2-r3",
         "so:libc.musl-riscv64.so.1",
         "so:libcrypto.so.3",
         "so:libpcre.so.1",
@@ -40369,21 +40396,23 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:nginx-debug=1.26.2-r2"
+        "cmd:nginx-debug=1.26.2-r3"
       ]
     },
     "nginx-doc": {
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       }
     },
     "nginx-mod-devel-kit": {
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40394,7 +40423,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40408,7 +40438,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40422,7 +40453,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40433,7 +40465,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40445,7 +40478,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40458,7 +40492,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40470,7 +40505,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40481,7 +40517,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40492,7 +40529,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40504,7 +40542,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40515,7 +40554,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40527,7 +40567,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40538,7 +40579,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40550,7 +40592,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40562,7 +40605,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40573,7 +40617,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40585,7 +40630,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40597,7 +40643,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40609,7 +40656,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40620,7 +40668,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40631,7 +40680,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40642,7 +40692,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40654,7 +40705,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40665,7 +40717,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40677,7 +40730,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40688,7 +40742,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40699,7 +40754,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40710,7 +40766,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40721,7 +40778,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40732,7 +40790,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40743,7 +40802,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40754,7 +40814,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40768,7 +40829,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40779,7 +40841,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40793,7 +40856,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40804,7 +40868,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40816,7 +40881,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40827,7 +40893,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40841,7 +40908,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40852,7 +40920,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40864,7 +40933,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40877,7 +40947,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40890,7 +40961,8 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       },
       "dependencies": [
         "nginx",
@@ -40903,14 +40975,16 @@
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       }
     },
     "nginx-vim": {
       "origin": "nginx",
       "versions": {
         "1.26.2-r1": 1730286607,
-        "1.26.2-r2": 1730362211
+        "1.26.2-r2": 1730362211,
+        "1.26.2-r3": 1731879373
       }
     },
     "ngircd": {
@@ -41111,13 +41185,13 @@
     "nodejs": {
       "origin": "nodejs",
       "versions": {
-        "20.15.1-r0": 1720887738
+        "20.15.1-r0": 1720887738,
+        "22.11.0-r0": 1731803197
       },
       "dependencies": [
         "ca-certificates",
         "/bin/sh",
         "so:libada.so.2",
-        "so:libbase64.so.0",
         "so:libbrotlidec.so.1",
         "so:libbrotlienc.so.1",
         "so:libc.musl-riscv64.so.1",
@@ -41127,43 +41201,48 @@
         "so:libicui18n.so.74",
         "so:libicuuc.so.74",
         "so:libnghttp2.so.14",
+        "so:libsimdjson.so.23",
+        "so:libsimdutf.so.11",
+        "so:libsqlite3.so.0",
         "so:libssl.so.3",
         "so:libstdc++.so.6",
         "so:libz.so.1"
       ],
       "provides": [
-        "nodejs-lts=20.15.1-r0",
-        "cmd:node=20.15.1-r0"
+        "nodejs-lts=22.11.0-r0",
+        "cmd:node=22.11.0-r0"
       ]
     },
     "nodejs-dev": {
       "origin": "nodejs",
       "versions": {
-        "20.15.1-r0": 1720887738
+        "20.15.1-r0": 1720887738,
+        "22.11.0-r0": 1731803197
       },
       "dependencies": [
-        "nodejs-libs=20.15.1-r0",
+        "nodejs-libs=22.11.0-r0",
         "pkgconfig"
       ],
       "provides": [
-        "nodejs-lts-dev=20.15.1",
-        "pc:nodejs=20.15.1"
+        "nodejs-lts-dev=22.11.0",
+        "pc:nodejs=22.11.0"
       ]
     },
     "nodejs-doc": {
       "origin": "nodejs",
       "versions": {
-        "20.15.1-r0": 1720887738
+        "20.15.1-r0": 1720887738,
+        "22.11.0-r0": 1731803197
       }
     },
     "nodejs-libs": {
       "origin": "nodejs",
       "versions": {
-        "20.15.1-r0": 1720887738
+        "20.15.1-r0": 1720887738,
+        "22.11.0-r0": 1731803197
       },
       "dependencies": [
         "so:libada.so.2",
-        "so:libbase64.so.0",
         "so:libbrotlidec.so.1",
         "so:libbrotlienc.so.1",
         "so:libc.musl-riscv64.so.1",
@@ -41173,12 +41252,15 @@
         "so:libicui18n.so.74",
         "so:libicuuc.so.74",
         "so:libnghttp2.so.14",
+        "so:libsimdjson.so.23",
+        "so:libsimdutf.so.11",
+        "so:libsqlite3.so.0",
         "so:libssl.so.3",
         "so:libstdc++.so.6",
         "so:libz.so.1"
       ],
       "provides": [
-        "so:libnode.so.115=115"
+        "so:libnode.so.127=127"
       ]
     },
     "npth": {
@@ -52475,7 +52557,8 @@
       "versions": {
         "1.25.0-r0": 1719142546,
         "1.26.0-r0": 1731255833,
-        "1.26.1-r0": 1731306566
+        "1.26.1-r0": 1731306566,
+        "1.26.3-r0": 1731792528
       },
       "dependencies": [
         "python3",
@@ -52487,8 +52570,8 @@
         "python3~3.12"
       ],
       "provides": [
-        "cmd:hatchling=1.26.1-r0",
-        "py3.12:hatchling=1.26.1-r0"
+        "cmd:hatchling=1.26.3-r0",
+        "py3.12:hatchling=1.26.3-r0"
       ]
     },
     "py3-hatchling-pyc": {
@@ -52496,7 +52579,8 @@
       "versions": {
         "1.25.0-r0": 1719142546,
         "1.26.0-r0": 1731255833,
-        "1.26.1-r0": 1731306566
+        "1.26.1-r0": 1731306566,
+        "1.26.3-r0": 1731792528
       },
       "dependencies": [
         "python3",
@@ -66464,6 +66548,67 @@
       "dependencies": [
         "python3~3.12"
       ]
+    },
+    "fastbase64": {
+      "origin": "simdutf",
+      "versions": {
+        "5.6.1-r0": 1731803197
+      },
+      "dependencies": [
+        "so:libc.musl-riscv64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libsimdutf.so.11"
+      ],
+      "provides": [
+        "cmd:fastbase64=5.6.1-r0"
+      ]
+    },
+    "simdutf": {
+      "origin": "simdutf",
+      "versions": {
+        "5.6.1-r0": 1731803197
+      },
+      "dependencies": [
+        "so:libc.musl-riscv64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libsimdutf.so.11=11.0.0"
+      ]
+    },
+    "simdutf-dev": {
+      "origin": "simdutf",
+      "versions": {
+        "5.6.1-r0": 1731803197
+      },
+      "dependencies": [
+        "pkgconfig",
+        "simdutf=5.6.1-r0"
+      ],
+      "provides": [
+        "pc:simdutf=5.6.1"
+      ]
+    },
+    "simdutf-doc": {
+      "origin": "simdutf",
+      "versions": {
+        "5.6.1-r0": 1731803197
+      }
+    },
+    "sutf": {
+      "origin": "simdutf",
+      "versions": {
+        "5.6.1-r0": 1731803197
+      },
+      "dependencies": [
+        "so:libc.musl-riscv64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libsimdutf.so.11"
+      ],
+      "provides": [
+        "cmd:sutf=5.6.1-r0"
+      ]
     }
   },
   "provide": {
@@ -67210,11 +67355,11 @@
       },
       "nodejs-lts": {
         "package": "nodejs",
-        "version": "20.15.1-r0"
+        "version": "22.11.0-r0"
       },
       "nodejs-lts-dev": {
         "package": "nodejs-dev",
-        "version": "20.15.1"
+        "version": "22.11.0"
       },
       "openldap-back-monitor": {
         "package": "openldap",
@@ -68204,7 +68349,7 @@
       },
       "libada.so.2": {
         "package": "ada-libs",
-        "version": "2.7.8"
+        "version": "2.9.2"
       },
       "libasound.so.2": {
         "package": "alsa-lib",
@@ -68216,7 +68361,7 @@
       },
       "libaom.so.3": {
         "package": "aom-libs",
-        "version": "3.10.0"
+        "version": "3.11.0"
       },
       "libapk.so.2.14.0": {
         "package": "apk-tools",
@@ -74161,6 +74306,14 @@
       "libgallium-24.2.7.so": {
         "package": "mesa",
         "version": "0"
+      },
+      "libnode.so.127": {
+        "package": "nodejs-libs",
+        "version": "127"
+      },
+      "libsimdutf.so.11": {
+        "package": "simdutf",
+        "version": "11.0.0"
       }
     }
   }
