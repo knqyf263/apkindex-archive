@@ -68324,6 +68324,72 @@
         "cmd:mysqlaccess=11.4.4-r1",
         "cmd:mysqldumpslow=11.4.4-r1"
       ]
+    },
+    "acf-snort": {
+      "origin": "acf-snort",
+      "versions": {
+        "0.8.1-r0": 1732355762
+      },
+      "dependencies": [
+        "acf-core",
+        "snort"
+      ]
+    },
+    "snort": {
+      "origin": "snort",
+      "versions": {
+        "3.5.2.0-r0": 1732355762
+      },
+      "dependencies": [
+        "bash",
+        "/bin/sh",
+        "so:libc.musl-loongarch64.so.1",
+        "so:libcrypto.so.3",
+        "so:libdaq.so.3",
+        "so:libdnet.so.1",
+        "so:libgcc_s.so.1",
+        "so:libhwloc.so.15",
+        "so:libluajit-5.1.so.2",
+        "so:liblzma.so.5",
+        "so:libmnl.so.0",
+        "so:libpcap.so.1",
+        "so:libpcre.so.1",
+        "so:libstdc++.so.6",
+        "so:libtirpc.so.3",
+        "so:libuuid.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:appid_detector_builder.sh=3.5.2.0-r0",
+        "cmd:snort2lua=3.5.2.0-r0",
+        "cmd:snort=3.5.2.0-r0",
+        "cmd:u2boat=3.5.2.0-r0",
+        "cmd:u2spewfoo=3.5.2.0-r0"
+      ]
+    },
+    "snort-dev": {
+      "origin": "snort",
+      "versions": {
+        "3.5.2.0-r0": 1732355762
+      },
+      "dependencies": [
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:snort=3.5.2.0"
+      ]
+    },
+    "snort-doc": {
+      "origin": "snort",
+      "versions": {
+        "3.5.2.0-r0": 1732355762
+      }
+    },
+    "snort-openrc": {
+      "origin": "snort",
+      "versions": {
+        "3.5.2.0-r0": 1732355762
+      }
     }
   },
   "provide": {
