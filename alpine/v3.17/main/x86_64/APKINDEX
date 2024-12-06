@@ -1804,22 +1804,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1662634859
 c:7f5357f9ffb89dfedb4a0d33d5ee54e8fa93749f
 
-C:Q1YAfisbbwm1ZUcNLfDYIZLu3U7Ng=
-P:postfix-sqlite
-V:3.7.11-r0
-A:x86_64
-S:5810
-I:49152
-T:sqlite map support for postfix
-U:https://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1709710748
-c:5a46a184f93d9cc48f5f97c70efaf6bf7c484a15
-D:so:libc.musl-x86_64.so.1 so:libsqlite3.so.0
-p:so:postfix-sqlite.so=0
-
 C:Q1YF8dgzfFcu7CPCvznCHaBwfrCBU=
 P:musl-nscd-doc
 V:1.1.1-r1
@@ -3028,21 +3012,6 @@ t:1659429320
 c:39cde24fb54a667a6730bdaec3233184227131f6
 D:openssl>3 so:libc.musl-x86_64.so.1
 p:cmd:email=3.1.4-r12
-
-C:Q1LMNOKANZXR+aT/CRgJbY+76+3cU=
-P:postfix-doc
-V:3.7.11-r0
-A:x86_64
-S:765332
-I:2027520
-T:Secure and fast drop-in replacement for Sendmail (MTA) (documentation)
-U:https://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1709710748
-c:5a46a184f93d9cc48f5f97c70efaf6bf7c484a15
-i:docs postfix=3.7.11-r0
 
 C:Q1XDsI0BbUYjYN1R03TghcLOGvO/4=
 P:libksba
@@ -7569,6 +7538,22 @@ t:1690260709
 c:761d6f799529d381175be591dde5430d12e12ef2
 p:linux-firmware-any
 
+C:Q1ZfgOwrJNWfYGSIb/CtnXXxudURg=
+P:postfix-pcre
+V:3.7.12-r0
+A:x86_64
+S:7946
+I:53248
+T:pcre map support for postfix
+U:https://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1733401013
+c:448a9054204346de3d83ffd654719b84d3f4dc22
+D:so:libc.musl-x86_64.so.1 so:libpcre2-8.so.0
+p:so:postfix-pcre.so=0
+
 C:Q1Z9gF9UaNak+dGjwLMop+re/xtpo=
 P:pax-utils
 V:1.3.5-r1
@@ -8505,22 +8490,6 @@ t:1687404275
 c:f65e84d469ff8668c076cd6908ef8ee1b1ef872a
 D:lua5.1 so:libc.musl-x86_64.so.1 so:libmosquitto.so.1
 i:lua-mosquitto=0.4.1-r2 lua5.1
-
-C:Q19ULRhkQFdpZu/hStXJDExyiYKIA=
-P:postfix-stone
-V:3.7.11-r0
-A:x86_64
-S:30900
-I:131072
-T:Postfix simulation and testing tools
-U:https://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1709710748
-c:5a46a184f93d9cc48f5f97c70efaf6bf7c484a15
-D:so:libc.musl-x86_64.so.1 so:libpostfix-global.so so:libpostfix-util.so
-p:cmd:fsstone=3.7.11-r0 cmd:qmqp-sink=3.7.11-r0 cmd:qmqp-source=3.7.11-r0 cmd:smtp-sink=3.7.11-r0 cmd:smtp-source=3.7.11-r0
 
 C:Q1xsSKSVDKiEUfwDUu/MDseeGuRJI=
 P:ruby-power_assert
@@ -19440,22 +19409,6 @@ t:1621087673
 c:ec4e35bcdcf38829d2a36ff4d7cd4351ebb67d1c
 D:acf-core lvm2
 
-C:Q1ydEo7uCSDtB1gD7dVZzxRGV1sx4=
-P:postfix
-V:3.7.11-r0
-A:x86_64
-S:921781
-I:2932736
-T:Secure and fast drop-in replacement for Sendmail (MTA)
-U:https://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1709710748
-c:5a46a184f93d9cc48f5f97c70efaf6bf7c484a15
-D:/bin/sh so:libc.musl-x86_64.so.1 so:libcrypto.so.3 so:libicuuc.so.72 so:liblmdb.so.0 so:libsasl2.so.3 so:libssl.so.3
-p:so:libpostfix-dns.so=0 so:libpostfix-global.so=0 so:libpostfix-master.so=0 so:libpostfix-tls.so=0 so:libpostfix-util.so=0 so:postfix-lmdb.so=0 cmd:mailq=3.7.11-r0 cmd:newaliases=3.7.11-r0 cmd:postalias=3.7.11-r0 cmd:postcat=3.7.11-r0 cmd:postconf=3.7.11-r0 cmd:postdrop=3.7.11-r0 cmd:postfix=3.7.11-r0 cmd:postkick=3.7.11-r0 cmd:postlock=3.7.11-r0 cmd:postlog=3.7.11-r0 cmd:postmap=3.7.11-r0 cmd:postmulti=3.7.11-r0 cmd:postqueue=3.7.11-r0 cmd:postsuper=3.7.11-r0 cmd:qshape.pl=3.7.11-r0 cmd:sendmail=3.7.11-r0
-
 C:Q1WQEwHuAIkAQzj64abJuNR8R4UZc=
 P:perl-html-scrubber-doc
 V:0.19-r1
@@ -23479,6 +23432,22 @@ t:1721512992
 c:7518339802d67875cf6b9c070f9c10007439ed53
 D:so:libapr-1.so.0 so:libaprutil-1.so.0 so:libc.musl-x86_64.so.1 so:libcrypto.so.3 so:libssl.so.3
 p:cmd:ab=2.4.62-r0 cmd:checkgid=2.4.62-r0 cmd:dbmmanage=2.4.62-r0 cmd:htcacheclean=2.4.62-r0 cmd:htdbm=2.4.62-r0 cmd:htdigest=2.4.62-r0 cmd:htpasswd=2.4.62-r0 cmd:httxt2dbm=2.4.62-r0 cmd:logresolve=2.4.62-r0 cmd:rotatelogs=2.4.62-r0
+
+C:Q1L43EQNicVl2dFTRFgcTao0fPQpA=
+P:postfix-mysql
+V:3.7.12-r0
+A:x86_64
+S:8496
+I:57344
+T:mysql map support for postfix
+U:https://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1733401013
+c:448a9054204346de3d83ffd654719b84d3f4dc22
+D:so:libc.musl-x86_64.so.1 so:libmariadb.so.3
+p:so:postfix-mysql.so=0
 
 C:Q1sYpM+WQb3VDUKYgjVhCET5dSBTU=
 P:mosquitto-clients
@@ -27683,6 +27652,22 @@ c:98992beba6ce6044c09d35f09d249e71ce74fd0e
 D:perl so:libX11.so.6 so:libc.musl-x86_64.so.1 so:libpng16.so.16
 p:cmd:gedi=804.036-r2 cmd:ptked=804.036-r2 cmd:ptksh=804.036-r2 cmd:tkjpeg=804.036-r2 cmd:widget=804.036-r2
 
+C:Q1hTEfHek+gCfPBOEIQWJoJLOZfPI=
+P:postfix-redis
+V:3.7.12-r0
+A:x86_64
+S:4530
+I:49152
+T:redis map support for postfix
+U:https://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1733401013
+c:448a9054204346de3d83ffd654719b84d3f4dc22
+D:so:libhiredis.so.1.0.0
+p:so:postfix-redis.so=0
+
 C:Q1hq91IOMjpKnSFK6oShk327D4Ziw=
 P:proxychains-ng
 V:4.16-r0
@@ -28280,6 +28265,22 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1659792088
 c:0714a84b7f79009ae8b96aef50216ed72f54b885
 i:docs sendpage=1.0.3-r6
+
+C:Q1wKYvk39/rydXvGNsiM7TWhOSAdM=
+P:postfix-stone
+V:3.7.12-r0
+A:x86_64
+S:30900
+I:131072
+T:Postfix simulation and testing tools
+U:https://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1733401013
+c:448a9054204346de3d83ffd654719b84d3f4dc22
+D:so:libc.musl-x86_64.so.1 so:libpostfix-global.so so:libpostfix-util.so
+p:cmd:fsstone=3.7.12-r0 cmd:qmqp-sink=3.7.12-r0 cmd:qmqp-source=3.7.12-r0 cmd:smtp-sink=3.7.12-r0 cmd:smtp-source=3.7.12-r0
 
 C:Q1YUe0tFI8sy44BO8LelM/rn2HNd4=
 P:perl-test-needs-doc
@@ -29725,21 +29726,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1627487153
 c:069b3ad3b2f6c88b7b683c4b716d460228110c29
 i:docs perl-test-mocktime=0.17-r2
-
-C:Q19R8zBiUm0VKxS8uZH1zdLW3nSt4=
-P:postfix-openrc
-V:3.7.11-r0
-A:x86_64
-S:2517
-I:16384
-T:Secure and fast drop-in replacement for Sendmail (MTA) (OpenRC init scripts)
-U:https://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1709710748
-c:5a46a184f93d9cc48f5f97c70efaf6bf7c484a15
-i:openrc postfix=3.7.11-r0
 
 C:Q1KeVkxcrxAgV+aTwcDT85GmQpV80=
 P:gobject-introspection
@@ -39547,22 +39533,6 @@ c:45ed19af6ec71cb5bb4ec70fcad64c8858ff0bbf
 D:so:libc.musl-x86_64.so.1 so:liblz4.so.1 so:liblzma.so.5 so:liblzo2.so.2 so:libz.so.1 so:libzstd.so.1
 p:cmd:mksquashfs=4.5.1-r2 cmd:sqfscat=4.5.1-r2 cmd:sqfstar=4.5.1-r2 cmd:unsquashfs=4.5.1-r2
 
-C:Q1v3tQt+gjbejrnCpZs+XsQkIxeT4=
-P:postfix-ldap
-V:3.7.11-r0
-A:x86_64
-S:14055
-I:69632
-T:ldap map support for postfix
-U:https://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1709710748
-c:5a46a184f93d9cc48f5f97c70efaf6bf7c484a15
-D:so:libc.musl-x86_64.so.1 so:liblber.so.2 so:libldap.so.2
-p:so:postfix-ldap.so=0
-
 C:Q1D/ahMioAKLLQ/V/bqRHJ+U5pCPs=
 P:asterisk-pgsql
 V:18.24.3-r0
@@ -41444,22 +41414,6 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1662061567
 c:459ffafae7089a47338de1275f8b03e740b76c24
 D:perl perl-sub-uplevel
-
-C:Q1iNx5QUpRKydlHvVHUwgzryyUG/w=
-P:postfix-mysql
-V:3.7.11-r0
-A:x86_64
-S:8495
-I:57344
-T:mysql map support for postfix
-U:https://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1709710748
-c:5a46a184f93d9cc48f5f97c70efaf6bf7c484a15
-D:so:libc.musl-x86_64.so.1 so:libmariadb.so.3
-p:so:postfix-mysql.so=0
 
 C:Q1awiI20nEC6Y9F6lFWAHKVtqB+RY=
 P:perl-mro-compat-doc
@@ -43913,22 +43867,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-datetime-format-mail=0.403-r2
-
-C:Q1zC6HkSvDFqmI92mwVcSMzxbF7j0=
-P:postfix-pgsql
-V:3.7.11-r0
-A:x86_64
-S:7945
-I:57344
-T:pgsql map support for postfix
-U:https://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1709710748
-c:5a46a184f93d9cc48f5f97c70efaf6bf7c484a15
-D:so:libc.musl-x86_64.so.1 so:libpq.so.5
-p:so:postfix-pgsql.so=0
 
 C:Q17AF8dxI2bEt7h3s0ojGvXU7CAdA=
 P:alsa-lib-dbg
@@ -46593,22 +46531,6 @@ t:1662601429
 c:764fc656210ae24a3e4da099361a993c8caefe2f
 D:so:libc.musl-x86_64.so.1 so:libcrypto.so.3 so:libdbus-1.so.3 so:libnl-3.so.200 so:libnl-genl-3.so.200 so:libpcsclite.so.1 so:libssl.so.3
 p:cmd:eapol_test=2.10-r4 cmd:wpa_cli=2.10-r4 cmd:wpa_passphrase=2.10-r4 cmd:wpa_supplicant=2.10-r4
-
-C:Q1nYtvikYQ/zYO27ooHkHsSqPQmDI=
-P:postfix-redis
-V:3.7.11-r0
-A:x86_64
-S:4524
-I:49152
-T:redis map support for postfix
-U:https://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1709710748
-c:5a46a184f93d9cc48f5f97c70efaf6bf7c484a15
-D:so:libhiredis.so.1.0.0
-p:so:postfix-redis.so=0
 
 C:Q1TVc3fjVLVPkzO5qgNRwiYMyvMA8=
 P:perl-metrics-any
@@ -51941,6 +51863,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1698825234
 c:746e74770ab323ae42ce36afc41c7a368a89b020
 i:docs libx11=1.8.7-r0
+
+C:Q1xuJT3xaL07h6V9iUb+z9JzpCuVo=
+P:postfix-openrc
+V:3.7.12-r0
+A:x86_64
+S:2520
+I:16384
+T:Secure and fast drop-in replacement for Sendmail (MTA) (OpenRC init scripts)
+U:https://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1733401013
+c:448a9054204346de3d83ffd654719b84d3f4dc22
+i:openrc postfix=3.7.12-r0
 
 C:Q1aXWkFmecGoRJU9FIRNWsUyA7Qrc=
 P:acf-freeswitch
@@ -61904,6 +61841,22 @@ t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 i:docs cksfv=1.3.15-r2
 
+C:Q1Tn0pUz6FnTJb0j1cNPs36e+euJs=
+P:postfix
+V:3.7.12-r0
+A:x86_64
+S:921834
+I:2932736
+T:Secure and fast drop-in replacement for Sendmail (MTA)
+U:https://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1733401013
+c:448a9054204346de3d83ffd654719b84d3f4dc22
+D:/bin/sh so:libc.musl-x86_64.so.1 so:libcrypto.so.3 so:libicuuc.so.72 so:liblmdb.so.0 so:libsasl2.so.3 so:libssl.so.3
+p:so:libpostfix-dns.so=0 so:libpostfix-global.so=0 so:libpostfix-master.so=0 so:libpostfix-tls.so=0 so:libpostfix-util.so=0 so:postfix-lmdb.so=0 cmd:mailq=3.7.12-r0 cmd:newaliases=3.7.12-r0 cmd:postalias=3.7.12-r0 cmd:postcat=3.7.12-r0 cmd:postconf=3.7.12-r0 cmd:postdrop=3.7.12-r0 cmd:postfix=3.7.12-r0 cmd:postkick=3.7.12-r0 cmd:postlock=3.7.12-r0 cmd:postlog=3.7.12-r0 cmd:postmap=3.7.12-r0 cmd:postmulti=3.7.12-r0 cmd:postqueue=3.7.12-r0 cmd:postsuper=3.7.12-r0 cmd:qshape.pl=3.7.12-r0 cmd:sendmail=3.7.12-r0
+
 C:Q10Nu42uu8uxaDRmb+GBDIkLKEQBw=
 P:perl-b-cow
 V:0.007-r0
@@ -65566,6 +65519,22 @@ t:1697404404
 c:bfafdea64176fd4c31d402a8a676d3d353396ba7
 D:nginx so:libc.musl-x86_64.so.1 so:libexslt.so.0 so:libxml2.so.2 so:libxslt.so.1
 
+C:Q1IcQiT8MNRGk3fJGNBJpuqfZOOMs=
+P:postfix-sqlite
+V:3.7.12-r0
+A:x86_64
+S:5820
+I:49152
+T:sqlite map support for postfix
+U:https://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1733401013
+c:448a9054204346de3d83ffd654719b84d3f4dc22
+D:so:libc.musl-x86_64.so.1 so:libsqlite3.so.0
+p:so:postfix-sqlite.so=0
+
 C:Q1Qoz6iXJDd8C5i6OrtAdlaLRPegQ=
 P:lua5.4-sql-mysql
 V:2.6.0-r3
@@ -67399,6 +67368,22 @@ c:40030ca7d4e49d417533bb3419dac6f78b54044b
 D:lua5.1 so:libc.musl-x86_64.so.1 so:libpq.so.5
 i:lua-sql-postgres=2.6.0-r3 lua5.1
 
+C:Q1N9Zh55yO0DovLsgO8MrtdmNKqz4=
+P:postfix-ldap
+V:3.7.12-r0
+A:x86_64
+S:14053
+I:69632
+T:ldap map support for postfix
+U:https://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1733401013
+c:448a9054204346de3d83ffd654719b84d3f4dc22
+D:so:libc.musl-x86_64.so.1 so:liblber.so.2 so:libldap.so.2
+p:so:postfix-ldap.so=0
+
 C:Q1+aY8vQUuQlHGxyVX/sTsth3CUnU=
 P:pixman-dev
 V:0.42.2-r0
@@ -68075,22 +68060,6 @@ c:c0ae5547b8088d7b1160aaa2931ac0b508341c37
 D:so:libc.musl-x86_64.so.1 so:libncursesw.so.6
 p:cmd:less=608-r1 cmd:lessecho=608-r1 cmd:lesskey=608-r1
 
-C:Q1STIoUbWWYn/uWJ+CKCPVgm6zIzQ=
-P:postfix-pcre
-V:3.7.11-r0
-A:x86_64
-S:7940
-I:53248
-T:pcre map support for postfix
-U:https://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1709710748
-c:5a46a184f93d9cc48f5f97c70efaf6bf7c484a15
-D:so:libc.musl-x86_64.so.1 so:libpcre2-8.so.0
-p:so:postfix-pcre.so=0
-
 C:Q1gFqEagihSF18AAn2NzAUIoCptKk=
 P:nginx-mod-http-brotli
 V:1.22.1-r1
@@ -68555,6 +68524,22 @@ t:1659793299
 c:cb0ddbaab205ef016bd91d64dc2c2323b16506fc
 D:lua5.2 so:libc.musl-x86_64.so.1 so:libdbus-1.so.3
 i:lua5.2 lua-ldbus=20150430-r3
+
+C:Q1G2/43C7wEDFsT9ySzkf9HAHQDhc=
+P:postfix-pgsql
+V:3.7.12-r0
+A:x86_64
+S:7946
+I:57344
+T:pgsql map support for postfix
+U:https://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1733401013
+c:448a9054204346de3d83ffd654719b84d3f4dc22
+D:so:libc.musl-x86_64.so.1 so:libpq.so.5
+p:so:postfix-pgsql.so=0
 
 C:Q1390EYcjgNDeSYxOBqrdTs0zS0XU=
 P:vulkan-tools
@@ -74174,6 +74159,21 @@ o:e2fsprogs
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1678035869
 c:b8e2be09535658d719873d57f01d9ab8bc30162f
+
+C:Q17ljyYoha4uKDnqvlYLR+U56EmkE=
+P:postfix-doc
+V:3.7.12-r0
+A:x86_64
+S:765359
+I:2027520
+T:Secure and fast drop-in replacement for Sendmail (MTA) (documentation)
+U:https://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1733401013
+c:448a9054204346de3d83ffd654719b84d3f4dc22
+i:docs postfix=3.7.12-r0
 
 C:Q10j6qNVCqDR3jXM82vrDtYlkT1c0=
 P:expat-dev
