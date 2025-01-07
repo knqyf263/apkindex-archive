@@ -7780,16 +7780,17 @@
         "8.5.0-r0": 1701922323,
         "8.9.0-r0": 1721917591,
         "8.9.1-r0": 1725910612,
-        "8.9.1-r1": 1727955597
+        "8.9.1-r1": 1727955597,
+        "8.11.1-r0": 1736232589
       },
       "dependencies": [
-        "libcurl=8.9.1-r1",
+        "libcurl=8.11.1-r0",
         "so:libc.musl-x86_64.so.1",
         "so:libcurl.so.4",
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:curl=8.9.1-r1"
+        "cmd:curl=8.11.1-r0"
       ]
     },
     "curl-dbg": {
@@ -7810,7 +7811,8 @@
         "8.5.0-r0": 1701922323,
         "8.9.0-r0": 1721917591,
         "8.9.1-r0": 1725910612,
-        "8.9.1-r1": 1727955597
+        "8.9.1-r1": 1727955597,
+        "8.11.1-r0": 1736232589
       },
       "dependencies": [
         "ca-certificates"
@@ -7834,25 +7836,28 @@
         "8.5.0-r0": 1701922323,
         "8.9.0-r0": 1721917591,
         "8.9.1-r0": 1725910612,
-        "8.9.1-r1": 1727955597
+        "8.9.1-r1": 1727955597,
+        "8.11.1-r0": 1736232589
       },
       "dependencies": [
         "libidn2-dev",
+        "libpsl-dev",
         "openssl-dev>3",
         "nghttp2-dev",
         "zlib-dev",
         "brotli-dev",
-        "libcurl=8.9.1-r1",
+        "libcurl=8.11.1-r0",
         "pc:libbrotlidec",
         "pc:libidn2",
         "pc:libnghttp2",
+        "pc:libpsl",
         "pc:openssl",
         "pc:zlib",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libcurl=8.9.1",
-        "cmd:curl-config=8.9.1-r1"
+        "pc:libcurl=8.11.1",
+        "cmd:curl-config=8.11.1-r0"
       ]
     },
     "curl-doc": {
@@ -7873,7 +7878,8 @@
         "8.5.0-r0": 1701922323,
         "8.9.0-r0": 1721917591,
         "8.9.1-r0": 1725910612,
-        "8.9.1-r1": 1727955597
+        "8.9.1-r1": 1727955597,
+        "8.11.1-r0": 1736232589
       }
     },
     "curl-fish-completion": {
@@ -7894,7 +7900,8 @@
         "8.5.0-r0": 1701922323,
         "8.9.0-r0": 1721917591,
         "8.9.1-r0": 1725910612,
-        "8.9.1-r1": 1727955597
+        "8.9.1-r1": 1727955597,
+        "8.11.1-r0": 1736232589
       }
     },
     "curl-static": {
@@ -7915,7 +7922,8 @@
         "8.5.0-r0": 1701922323,
         "8.9.0-r0": 1721917591,
         "8.9.1-r0": 1725910612,
-        "8.9.1-r1": 1727955597
+        "8.9.1-r1": 1727955597,
+        "8.11.1-r0": 1736232589
       }
     },
     "curl-zsh-completion": {
@@ -7936,7 +7944,8 @@
         "8.5.0-r0": 1701922323,
         "8.9.0-r0": 1721917591,
         "8.9.1-r0": 1725910612,
-        "8.9.1-r1": 1727955597
+        "8.9.1-r1": 1727955597,
+        "8.11.1-r0": 1736232589
       }
     },
     "cutter": {
@@ -23103,7 +23112,8 @@
         "8.5.0-r0": 1701922323,
         "8.9.0-r0": 1721917591,
         "8.9.1-r0": 1725910612,
-        "8.9.1-r1": 1727955597
+        "8.9.1-r1": 1727955597,
+        "8.11.1-r0": 1736232589
       },
       "dependencies": [
         "ca-certificates",
@@ -23112,6 +23122,7 @@
         "so:libcrypto.so.3",
         "so:libidn2.so.0",
         "so:libnghttp2.so.14",
+        "so:libpsl.so.5",
         "so:libssl.so.3",
         "so:libz.so.1"
       ],
@@ -68626,6 +68637,61 @@
         "rsyslog=8.2306.0-r2",
         "so:libc.musl-x86_64.so.1"
       ]
+    },
+    "libpsl": {
+      "origin": "libpsl",
+      "versions": {
+        "0.21.5-r0": 1736232589
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1",
+        "so:libidn2.so.0",
+        "so:libunistring.so.5"
+      ],
+      "provides": [
+        "so:libpsl.so.5=5.3.5"
+      ]
+    },
+    "libpsl-dev": {
+      "origin": "libpsl",
+      "versions": {
+        "0.21.5-r0": 1736232589
+      },
+      "dependencies": [
+        "libpsl-utils=0.21.5-r0",
+        "libpsl=0.21.5-r0",
+        "pc:libidn2",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libpsl=0.21.5"
+      ]
+    },
+    "libpsl-doc": {
+      "origin": "libpsl",
+      "versions": {
+        "0.21.5-r0": 1736232589
+      }
+    },
+    "libpsl-static": {
+      "origin": "libpsl",
+      "versions": {
+        "0.21.5-r0": 1736232589
+      }
+    },
+    "libpsl-utils": {
+      "origin": "libpsl",
+      "versions": {
+        "0.21.5-r0": 1736232589
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1",
+        "so:libpsl.so.5"
+      ],
+      "provides": [
+        "cmd:psl-make-dafsa=0.21.5-r0",
+        "cmd:psl=0.21.5-r0"
+      ]
     }
   },
   "provide": {
@@ -75743,6 +75809,10 @@
       "libns-9.18.32.so": {
         "package": "bind-libs",
         "version": "0"
+      },
+      "libpsl.so.5": {
+        "package": "libpsl",
+        "version": "5.3.5"
       }
     }
   }
