@@ -23728,7 +23728,8 @@
     "libarchive": {
       "origin": "libarchive",
       "versions": {
-        "3.7.7-r0": 1730173597
+        "3.7.7-r0": 1730173597,
+        "3.7.9-r0": 1744100361
       },
       "dependencies": [
         "so:libacl.so.1",
@@ -23742,39 +23743,43 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "so:libarchive.so.13=13.7.7"
+        "so:libarchive.so.13=13.7.9"
       ]
     },
     "libarchive-dev": {
       "origin": "libarchive",
       "versions": {
-        "3.7.7-r0": 1730173597
+        "3.7.7-r0": 1730173597,
+        "3.7.9-r0": 1744100361
       },
       "dependencies": [
-        "libarchive=3.7.7-r0",
+        "libarchive=3.7.9-r0",
         "pc:libcrypto",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libarchive=3.7.7"
+        "pc:libarchive=3.7.9"
       ]
     },
     "libarchive-doc": {
       "origin": "libarchive",
       "versions": {
-        "3.7.7-r0": 1730173597
+        "3.7.7-r0": 1730173597,
+        "3.7.9-r0": 1744100361
       }
     },
     "libarchive-static": {
       "origin": "libarchive",
       "versions": {
-        "3.7.7-r0": 1730173597
+        "3.7.7-r0": 1730173597,
+        "3.7.9-r0": 1744100361
       }
     },
     "libarchive-tools": {
       "origin": "libarchive",
       "versions": {
-        "3.7.7-r0": 1730173597
+        "3.7.7-r0": 1730173597,
+        "3.7.9-r0": 1744100361
       },
       "dependencies": [
         "so:libacl.so.1",
@@ -23788,10 +23793,10 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:bsdcat=3.7.7-r0",
-        "cmd:bsdcpio=3.7.7-r0",
-        "cmd:bsdtar=3.7.7-r0",
-        "cmd:bsdunzip=3.7.7-r0"
+        "cmd:bsdcat=3.7.9-r0",
+        "cmd:bsdcpio=3.7.9-r0",
+        "cmd:bsdtar=3.7.9-r0",
+        "cmd:bsdunzip=3.7.9-r0"
       ]
     },
     "libart-lgpl": {
@@ -32265,133 +32270,138 @@
     "llvm17": {
       "origin": "llvm17",
       "versions": {
-        "17.0.6-r2": 1718182413
+        "17.0.6-r2": 1718182413,
+        "17.0.6-r3": 1743416336
       },
       "dependencies": [
-        "llvm17-linker-tools=17.0.6-r2",
+        "llvm17-linker-tools=17.0.6-r3",
         "so:libLLVM-17.so",
         "so:libc.musl-riscv64.so.1",
+        "so:libcurl.so.4",
         "so:libgcc_s.so.1",
         "so:libstdc++.so.6",
         "so:libz.so.1",
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:UnicodeNameMappingGenerator17=17.0.6-r2",
-        "cmd:bugpoint17=17.0.6-r2",
-        "cmd:dsymutil17=17.0.6-r2",
-        "cmd:llc17=17.0.6-r2",
-        "cmd:lli-child-target17=17.0.6-r2",
-        "cmd:lli17=17.0.6-r2",
-        "cmd:llvm17-PerfectShuffle=17.0.6-r2",
-        "cmd:llvm17-addr2line=17.0.6-r2",
-        "cmd:llvm17-ar=17.0.6-r2",
-        "cmd:llvm17-as=17.0.6-r2",
-        "cmd:llvm17-bcanalyzer=17.0.6-r2",
-        "cmd:llvm17-bitcode-strip=17.0.6-r2",
-        "cmd:llvm17-c-test=17.0.6-r2",
-        "cmd:llvm17-cat=17.0.6-r2",
-        "cmd:llvm17-cfi-verify=17.0.6-r2",
-        "cmd:llvm17-cov=17.0.6-r2",
-        "cmd:llvm17-cvtres=17.0.6-r2",
-        "cmd:llvm17-cxxdump=17.0.6-r2",
-        "cmd:llvm17-cxxfilt=17.0.6-r2",
-        "cmd:llvm17-cxxmap=17.0.6-r2",
-        "cmd:llvm17-debuginfo-analyzer=17.0.6-r2",
-        "cmd:llvm17-debuginfod-find=17.0.6-r2",
-        "cmd:llvm17-debuginfod=17.0.6-r2",
-        "cmd:llvm17-diff=17.0.6-r2",
-        "cmd:llvm17-dis=17.0.6-r2",
-        "cmd:llvm17-dlltool=17.0.6-r2",
-        "cmd:llvm17-dwarfdump=17.0.6-r2",
-        "cmd:llvm17-dwarfutil=17.0.6-r2",
-        "cmd:llvm17-dwp=17.0.6-r2",
-        "cmd:llvm17-exegesis=17.0.6-r2",
-        "cmd:llvm17-extract=17.0.6-r2",
-        "cmd:llvm17-gsymutil=17.0.6-r2",
-        "cmd:llvm17-ifs=17.0.6-r2",
-        "cmd:llvm17-install-name-tool=17.0.6-r2",
-        "cmd:llvm17-jitlink-executor=17.0.6-r2",
-        "cmd:llvm17-jitlink=17.0.6-r2",
-        "cmd:llvm17-lib=17.0.6-r2",
-        "cmd:llvm17-libtool-darwin=17.0.6-r2",
-        "cmd:llvm17-link=17.0.6-r2",
-        "cmd:llvm17-lipo=17.0.6-r2",
-        "cmd:llvm17-lto2=17.0.6-r2",
-        "cmd:llvm17-lto=17.0.6-r2",
-        "cmd:llvm17-mc=17.0.6-r2",
-        "cmd:llvm17-mca=17.0.6-r2",
-        "cmd:llvm17-ml=17.0.6-r2",
-        "cmd:llvm17-modextract=17.0.6-r2",
-        "cmd:llvm17-mt=17.0.6-r2",
-        "cmd:llvm17-nm=17.0.6-r2",
-        "cmd:llvm17-objcopy=17.0.6-r2",
-        "cmd:llvm17-objdump=17.0.6-r2",
-        "cmd:llvm17-opt-report=17.0.6-r2",
-        "cmd:llvm17-otool=17.0.6-r2",
-        "cmd:llvm17-pdbutil=17.0.6-r2",
-        "cmd:llvm17-profdata=17.0.6-r2",
-        "cmd:llvm17-profgen=17.0.6-r2",
-        "cmd:llvm17-ranlib=17.0.6-r2",
-        "cmd:llvm17-rc=17.0.6-r2",
-        "cmd:llvm17-readelf=17.0.6-r2",
-        "cmd:llvm17-readobj=17.0.6-r2",
-        "cmd:llvm17-reduce=17.0.6-r2",
-        "cmd:llvm17-remark-size-diff=17.0.6-r2",
-        "cmd:llvm17-remarkutil=17.0.6-r2",
-        "cmd:llvm17-rtdyld=17.0.6-r2",
-        "cmd:llvm17-sim=17.0.6-r2",
-        "cmd:llvm17-size=17.0.6-r2",
-        "cmd:llvm17-split=17.0.6-r2",
-        "cmd:llvm17-stress=17.0.6-r2",
-        "cmd:llvm17-strings=17.0.6-r2",
-        "cmd:llvm17-strip=17.0.6-r2",
-        "cmd:llvm17-symbolizer=17.0.6-r2",
-        "cmd:llvm17-tapi-diff=17.0.6-r2",
-        "cmd:llvm17-tblgen=17.0.6-r2",
-        "cmd:llvm17-tli-checker=17.0.6-r2",
-        "cmd:llvm17-undname=17.0.6-r2",
-        "cmd:llvm17-windres=17.0.6-r2",
-        "cmd:llvm17-xray=17.0.6-r2",
-        "cmd:opt17=17.0.6-r2",
-        "cmd:sancov17=17.0.6-r2",
-        "cmd:sanstats17=17.0.6-r2",
-        "cmd:split-file17=17.0.6-r2",
-        "cmd:verify-uselistorder17=17.0.6-r2",
-        "cmd:yaml-bench17=17.0.6-r2"
+        "cmd:UnicodeNameMappingGenerator17=17.0.6-r3",
+        "cmd:bugpoint17=17.0.6-r3",
+        "cmd:dsymutil17=17.0.6-r3",
+        "cmd:llc17=17.0.6-r3",
+        "cmd:lli-child-target17=17.0.6-r3",
+        "cmd:lli17=17.0.6-r3",
+        "cmd:llvm17-PerfectShuffle=17.0.6-r3",
+        "cmd:llvm17-addr2line=17.0.6-r3",
+        "cmd:llvm17-ar=17.0.6-r3",
+        "cmd:llvm17-as=17.0.6-r3",
+        "cmd:llvm17-bcanalyzer=17.0.6-r3",
+        "cmd:llvm17-bitcode-strip=17.0.6-r3",
+        "cmd:llvm17-c-test=17.0.6-r3",
+        "cmd:llvm17-cat=17.0.6-r3",
+        "cmd:llvm17-cfi-verify=17.0.6-r3",
+        "cmd:llvm17-cov=17.0.6-r3",
+        "cmd:llvm17-cvtres=17.0.6-r3",
+        "cmd:llvm17-cxxdump=17.0.6-r3",
+        "cmd:llvm17-cxxfilt=17.0.6-r3",
+        "cmd:llvm17-cxxmap=17.0.6-r3",
+        "cmd:llvm17-debuginfo-analyzer=17.0.6-r3",
+        "cmd:llvm17-debuginfod-find=17.0.6-r3",
+        "cmd:llvm17-debuginfod=17.0.6-r3",
+        "cmd:llvm17-diff=17.0.6-r3",
+        "cmd:llvm17-dis=17.0.6-r3",
+        "cmd:llvm17-dlltool=17.0.6-r3",
+        "cmd:llvm17-dwarfdump=17.0.6-r3",
+        "cmd:llvm17-dwarfutil=17.0.6-r3",
+        "cmd:llvm17-dwp=17.0.6-r3",
+        "cmd:llvm17-exegesis=17.0.6-r3",
+        "cmd:llvm17-extract=17.0.6-r3",
+        "cmd:llvm17-gsymutil=17.0.6-r3",
+        "cmd:llvm17-ifs=17.0.6-r3",
+        "cmd:llvm17-install-name-tool=17.0.6-r3",
+        "cmd:llvm17-jitlink-executor=17.0.6-r3",
+        "cmd:llvm17-jitlink=17.0.6-r3",
+        "cmd:llvm17-lib=17.0.6-r3",
+        "cmd:llvm17-libtool-darwin=17.0.6-r3",
+        "cmd:llvm17-link=17.0.6-r3",
+        "cmd:llvm17-lipo=17.0.6-r3",
+        "cmd:llvm17-lto2=17.0.6-r3",
+        "cmd:llvm17-lto=17.0.6-r3",
+        "cmd:llvm17-mc=17.0.6-r3",
+        "cmd:llvm17-mca=17.0.6-r3",
+        "cmd:llvm17-ml=17.0.6-r3",
+        "cmd:llvm17-modextract=17.0.6-r3",
+        "cmd:llvm17-mt=17.0.6-r3",
+        "cmd:llvm17-nm=17.0.6-r3",
+        "cmd:llvm17-objcopy=17.0.6-r3",
+        "cmd:llvm17-objdump=17.0.6-r3",
+        "cmd:llvm17-opt-report=17.0.6-r3",
+        "cmd:llvm17-otool=17.0.6-r3",
+        "cmd:llvm17-pdbutil=17.0.6-r3",
+        "cmd:llvm17-profdata=17.0.6-r3",
+        "cmd:llvm17-profgen=17.0.6-r3",
+        "cmd:llvm17-ranlib=17.0.6-r3",
+        "cmd:llvm17-rc=17.0.6-r3",
+        "cmd:llvm17-readelf=17.0.6-r3",
+        "cmd:llvm17-readobj=17.0.6-r3",
+        "cmd:llvm17-reduce=17.0.6-r3",
+        "cmd:llvm17-remark-size-diff=17.0.6-r3",
+        "cmd:llvm17-remarkutil=17.0.6-r3",
+        "cmd:llvm17-rtdyld=17.0.6-r3",
+        "cmd:llvm17-sim=17.0.6-r3",
+        "cmd:llvm17-size=17.0.6-r3",
+        "cmd:llvm17-split=17.0.6-r3",
+        "cmd:llvm17-stress=17.0.6-r3",
+        "cmd:llvm17-strings=17.0.6-r3",
+        "cmd:llvm17-strip=17.0.6-r3",
+        "cmd:llvm17-symbolizer=17.0.6-r3",
+        "cmd:llvm17-tapi-diff=17.0.6-r3",
+        "cmd:llvm17-tblgen=17.0.6-r3",
+        "cmd:llvm17-tli-checker=17.0.6-r3",
+        "cmd:llvm17-undname=17.0.6-r3",
+        "cmd:llvm17-windres=17.0.6-r3",
+        "cmd:llvm17-xray=17.0.6-r3",
+        "cmd:opt17=17.0.6-r3",
+        "cmd:sancov17=17.0.6-r3",
+        "cmd:sanstats17=17.0.6-r3",
+        "cmd:split-file17=17.0.6-r3",
+        "cmd:verify-uselistorder17=17.0.6-r3",
+        "cmd:yaml-bench17=17.0.6-r3"
       ]
     },
     "llvm17-dev": {
       "origin": "llvm17",
       "versions": {
-        "17.0.6-r2": 1718182413
+        "17.0.6-r2": 1718182413,
+        "17.0.6-r3": 1743416336
       },
       "dependencies": [
-        "llvm17=17.0.6-r2",
+        "llvm17=17.0.6-r3",
         "libffi-dev",
         "zlib-dev",
         "zstd-dev",
-        "llvm17-test-utils=17.0.6-r2",
-        "llvm17-libs=17.0.6-r2",
+        "llvm17-test-utils=17.0.6-r3",
+        "llvm17-libs=17.0.6-r3",
         "so:libc.musl-riscv64.so.1",
         "so:libgcc_s.so.1",
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:llvm-config-17=17.0.6-r2",
-        "cmd:llvm17-config=17.0.6-r2"
+        "cmd:llvm-config-17=17.0.6-r3",
+        "cmd:llvm17-config=17.0.6-r3"
       ]
     },
     "llvm17-gtest": {
       "origin": "llvm17",
       "versions": {
-        "17.0.6-r2": 1718182413
+        "17.0.6-r2": 1718182413,
+        "17.0.6-r3": 1743416336
       }
     },
     "llvm17-libs": {
       "origin": "llvm17",
       "versions": {
-        "17.0.6-r2": 1718182413
+        "17.0.6-r2": 1718182413,
+        "17.0.6-r3": 1743416336
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -32409,7 +32419,8 @@
     "llvm17-linker-tools": {
       "origin": "llvm17",
       "versions": {
-        "17.0.6-r2": 1718182413
+        "17.0.6-r2": 1718182413,
+        "17.0.6-r3": 1743416336
       },
       "dependencies": [
         "so:libLLVM-17.so",
@@ -32421,13 +32432,15 @@
     "llvm17-static": {
       "origin": "llvm17",
       "versions": {
-        "17.0.6-r2": 1718182413
+        "17.0.6-r2": 1718182413,
+        "17.0.6-r3": 1743416336
       }
     },
     "llvm17-test-utils": {
       "origin": "llvm17",
       "versions": {
-        "17.0.6-r2": 1718182413
+        "17.0.6-r2": 1718182413,
+        "17.0.6-r3": 1743416336
       },
       "dependencies": [
         "python3",
@@ -32437,16 +32450,17 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "lit=17.0.6-r2",
-        "cmd:count17=17.0.6-r2",
-        "cmd:not17=17.0.6-r2",
-        "py3.12:lit=17.0.6-r2"
+        "lit=17.0.6-r3",
+        "cmd:count17=17.0.6-r3",
+        "cmd:not17=17.0.6-r3",
+        "py3.12:lit=17.0.6-r3"
       ]
     },
     "llvm17-test-utils-pyc": {
       "origin": "llvm17",
       "versions": {
-        "17.0.6-r2": 1718182413
+        "17.0.6-r2": 1718182413,
+        "17.0.6-r3": 1743416336
       },
       "dependencies": [
         "python3~3.12"
@@ -37978,42 +37992,46 @@
     "mbedtls": {
       "origin": "mbedtls",
       "versions": {
-        "3.6.2-r0": 1729034077
+        "3.6.2-r0": 1729034077,
+        "3.6.3-r0": 1743724456
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1"
       ],
       "provides": [
-        "so:libmbedcrypto.so.16=3.6.2",
-        "so:libmbedtls.so.21=3.6.2",
-        "so:libmbedx509.so.7=3.6.2"
+        "so:libmbedcrypto.so.16=3.6.3",
+        "so:libmbedtls.so.21=3.6.3",
+        "so:libmbedx509.so.7=3.6.3"
       ]
     },
     "mbedtls-dev": {
       "origin": "mbedtls",
       "versions": {
-        "3.6.2-r0": 1729034077
+        "3.6.2-r0": 1729034077,
+        "3.6.3-r0": 1743724456
       },
       "dependencies": [
-        "mbedtls=3.6.2-r0",
+        "mbedtls=3.6.3-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:mbedcrypto=3.6.2",
-        "pc:mbedtls=3.6.2",
-        "pc:mbedx509=3.6.2"
+        "pc:mbedcrypto=3.6.3",
+        "pc:mbedtls=3.6.3",
+        "pc:mbedx509=3.6.3"
       ]
     },
     "mbedtls-static": {
       "origin": "mbedtls",
       "versions": {
-        "3.6.2-r0": 1729034077
+        "3.6.2-r0": 1729034077,
+        "3.6.3-r0": 1743724456
       }
     },
     "mbedtls-utils": {
       "origin": "mbedtls",
       "versions": {
-        "3.6.2-r0": 1729034077
+        "3.6.2-r0": 1729034077,
+        "3.6.3-r0": 1743724456
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -38022,66 +38040,66 @@
         "so:libmbedx509.so.7"
       ],
       "provides": [
-        "cmd:aead_demo=3.6.2-r0",
-        "cmd:benchmark=3.6.2-r0",
-        "cmd:cert_app=3.6.2-r0",
-        "cmd:cert_req=3.6.2-r0",
-        "cmd:cert_write=3.6.2-r0",
-        "cmd:cipher_aead_demo=3.6.2-r0",
-        "cmd:crl_app=3.6.2-r0",
-        "cmd:crypt_and_hash=3.6.2-r0",
-        "cmd:crypto_examples=3.6.2-r0",
-        "cmd:dh_client=3.6.2-r0",
-        "cmd:dh_genprime=3.6.2-r0",
-        "cmd:dh_server=3.6.2-r0",
-        "cmd:dtls_client=3.6.2-r0",
-        "cmd:dtls_server=3.6.2-r0",
-        "cmd:ecdh_curve25519=3.6.2-r0",
-        "cmd:ecdsa=3.6.2-r0",
-        "cmd:gen_entropy=3.6.2-r0",
-        "cmd:gen_key=3.6.2-r0",
-        "cmd:gen_random_ctr_drbg=3.6.2-r0",
-        "cmd:generic_sum=3.6.2-r0",
-        "cmd:hello=3.6.2-r0",
-        "cmd:hmac_demo=3.6.2-r0",
-        "cmd:key_app=3.6.2-r0",
-        "cmd:key_app_writer=3.6.2-r0",
-        "cmd:key_ladder_demo.sh=3.6.2-r0",
-        "cmd:key_ladder_demo=3.6.2-r0",
-        "cmd:load_roots=3.6.2-r0",
-        "cmd:md_hmac_demo=3.6.2-r0",
-        "cmd:metatest=3.6.2-r0",
-        "cmd:mini_client=3.6.2-r0",
-        "cmd:mpi_demo=3.6.2-r0",
-        "cmd:pem2der=3.6.2-r0",
-        "cmd:pk_decrypt=3.6.2-r0",
-        "cmd:pk_encrypt=3.6.2-r0",
-        "cmd:pk_sign=3.6.2-r0",
-        "cmd:pk_verify=3.6.2-r0",
-        "cmd:psa_constant_names=3.6.2-r0",
-        "cmd:psa_hash=3.6.2-r0",
-        "cmd:query_compile_time_config=3.6.2-r0",
-        "cmd:query_included_headers=3.6.2-r0",
-        "cmd:req_app=3.6.2-r0",
-        "cmd:rsa_decrypt=3.6.2-r0",
-        "cmd:rsa_encrypt=3.6.2-r0",
-        "cmd:rsa_genkey=3.6.2-r0",
-        "cmd:rsa_sign=3.6.2-r0",
-        "cmd:rsa_sign_pss=3.6.2-r0",
-        "cmd:rsa_verify=3.6.2-r0",
-        "cmd:rsa_verify_pss=3.6.2-r0",
-        "cmd:selftest=3.6.2-r0",
-        "cmd:ssl_client1=3.6.2-r0",
-        "cmd:ssl_client2=3.6.2-r0",
-        "cmd:ssl_context_info=3.6.2-r0",
-        "cmd:ssl_fork_server=3.6.2-r0",
-        "cmd:ssl_mail_client=3.6.2-r0",
-        "cmd:ssl_pthread_server=3.6.2-r0",
-        "cmd:ssl_server2=3.6.2-r0",
-        "cmd:ssl_server=3.6.2-r0",
-        "cmd:strerror=3.6.2-r0",
-        "cmd:udp_proxy=3.6.2-r0",
-        "cmd:zeroize=3.6.2-r0"
+        "cmd:aead_demo=3.6.3-r0",
+        "cmd:benchmark=3.6.3-r0",
+        "cmd:cert_app=3.6.3-r0",
+        "cmd:cert_req=3.6.3-r0",
+        "cmd:cert_write=3.6.3-r0",
+        "cmd:cipher_aead_demo=3.6.3-r0",
+        "cmd:crl_app=3.6.3-r0",
+        "cmd:crypt_and_hash=3.6.3-r0",
+        "cmd:crypto_examples=3.6.3-r0",
+        "cmd:dh_client=3.6.3-r0",
+        "cmd:dh_genprime=3.6.3-r0",
+        "cmd:dh_server=3.6.3-r0",
+        "cmd:dtls_client=3.6.3-r0",
+        "cmd:dtls_server=3.6.3-r0",
+        "cmd:ecdh_curve25519=3.6.3-r0",
+        "cmd:ecdsa=3.6.3-r0",
+        "cmd:gen_entropy=3.6.3-r0",
+        "cmd:gen_key=3.6.3-r0",
+        "cmd:gen_random_ctr_drbg=3.6.3-r0",
+        "cmd:generic_sum=3.6.3-r0",
+        "cmd:hello=3.6.3-r0",
+        "cmd:hmac_demo=3.6.3-r0",
+        "cmd:key_app=3.6.3-r0",
+        "cmd:key_app_writer=3.6.3-r0",
+        "cmd:key_ladder_demo.sh=3.6.3-r0",
+        "cmd:key_ladder_demo=3.6.3-r0",
+        "cmd:load_roots=3.6.3-r0",
+        "cmd:md_hmac_demo=3.6.3-r0",
+        "cmd:metatest=3.6.3-r0",
+        "cmd:mini_client=3.6.3-r0",
+        "cmd:mpi_demo=3.6.3-r0",
+        "cmd:pem2der=3.6.3-r0",
+        "cmd:pk_decrypt=3.6.3-r0",
+        "cmd:pk_encrypt=3.6.3-r0",
+        "cmd:pk_sign=3.6.3-r0",
+        "cmd:pk_verify=3.6.3-r0",
+        "cmd:psa_constant_names=3.6.3-r0",
+        "cmd:psa_hash=3.6.3-r0",
+        "cmd:query_compile_time_config=3.6.3-r0",
+        "cmd:query_included_headers=3.6.3-r0",
+        "cmd:req_app=3.6.3-r0",
+        "cmd:rsa_decrypt=3.6.3-r0",
+        "cmd:rsa_encrypt=3.6.3-r0",
+        "cmd:rsa_genkey=3.6.3-r0",
+        "cmd:rsa_sign=3.6.3-r0",
+        "cmd:rsa_sign_pss=3.6.3-r0",
+        "cmd:rsa_verify=3.6.3-r0",
+        "cmd:rsa_verify_pss=3.6.3-r0",
+        "cmd:selftest=3.6.3-r0",
+        "cmd:ssl_client1=3.6.3-r0",
+        "cmd:ssl_client2=3.6.3-r0",
+        "cmd:ssl_context_info=3.6.3-r0",
+        "cmd:ssl_fork_server=3.6.3-r0",
+        "cmd:ssl_mail_client=3.6.3-r0",
+        "cmd:ssl_pthread_server=3.6.3-r0",
+        "cmd:ssl_server2=3.6.3-r0",
+        "cmd:ssl_server=3.6.3-r0",
+        "cmd:strerror=3.6.3-r0",
+        "cmd:udp_proxy=3.6.3-r0",
+        "cmd:zeroize=3.6.3-r0"
       ]
     },
     "mc": {
@@ -67283,47 +67301,49 @@
     "xz": {
       "origin": "xz",
       "versions": {
-        "5.6.3-r0": 1727863341
+        "5.6.3-r0": 1727863341,
+        "5.6.3-r1": 1743803190
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
         "so:liblzma.so.5"
       ],
       "provides": [
-        "cmd:lzcat=5.6.3-r0",
-        "cmd:lzcmp=5.6.3-r0",
-        "cmd:lzdiff=5.6.3-r0",
-        "cmd:lzegrep=5.6.3-r0",
-        "cmd:lzfgrep=5.6.3-r0",
-        "cmd:lzgrep=5.6.3-r0",
-        "cmd:lzless=5.6.3-r0",
-        "cmd:lzma=5.6.3-r0",
-        "cmd:lzmadec=5.6.3-r0",
-        "cmd:lzmainfo=5.6.3-r0",
-        "cmd:lzmore=5.6.3-r0",
-        "cmd:unlzma=5.6.3-r0",
-        "cmd:unxz=5.6.3-r0",
-        "cmd:xz=5.6.3-r0",
-        "cmd:xzcat=5.6.3-r0",
-        "cmd:xzcmp=5.6.3-r0",
-        "cmd:xzdec=5.6.3-r0",
-        "cmd:xzdiff=5.6.3-r0",
-        "cmd:xzegrep=5.6.3-r0",
-        "cmd:xzfgrep=5.6.3-r0",
-        "cmd:xzgrep=5.6.3-r0",
-        "cmd:xzless=5.6.3-r0",
-        "cmd:xzmore=5.6.3-r0"
+        "cmd:lzcat=5.6.3-r1",
+        "cmd:lzcmp=5.6.3-r1",
+        "cmd:lzdiff=5.6.3-r1",
+        "cmd:lzegrep=5.6.3-r1",
+        "cmd:lzfgrep=5.6.3-r1",
+        "cmd:lzgrep=5.6.3-r1",
+        "cmd:lzless=5.6.3-r1",
+        "cmd:lzma=5.6.3-r1",
+        "cmd:lzmadec=5.6.3-r1",
+        "cmd:lzmainfo=5.6.3-r1",
+        "cmd:lzmore=5.6.3-r1",
+        "cmd:unlzma=5.6.3-r1",
+        "cmd:unxz=5.6.3-r1",
+        "cmd:xz=5.6.3-r1",
+        "cmd:xzcat=5.6.3-r1",
+        "cmd:xzcmp=5.6.3-r1",
+        "cmd:xzdec=5.6.3-r1",
+        "cmd:xzdiff=5.6.3-r1",
+        "cmd:xzegrep=5.6.3-r1",
+        "cmd:xzfgrep=5.6.3-r1",
+        "cmd:xzgrep=5.6.3-r1",
+        "cmd:xzless=5.6.3-r1",
+        "cmd:xzmore=5.6.3-r1"
       ]
     },
     "xz-dev": {
       "origin": "xz",
       "versions": {
-        "5.6.3-r0": 1727863341
+        "5.6.3-r0": 1727863341,
+        "5.6.3-r1": 1743803190
       },
       "dependencies": [
-        "xz=5.6.3-r0",
+        "xz=5.6.3-r1",
         "pkgconfig",
-        "xz-libs=5.6.3-r0"
+        "xz-libs=5.6.3-r1"
       ],
       "provides": [
         "pc:liblzma=5.6.3"
@@ -67332,13 +67352,15 @@
     "xz-doc": {
       "origin": "xz",
       "versions": {
-        "5.6.3-r0": 1727863341
+        "5.6.3-r0": 1727863341,
+        "5.6.3-r1": 1743803190
       }
     },
     "xz-libs": {
       "origin": "xz",
       "versions": {
-        "5.6.3-r0": 1727863341
+        "5.6.3-r0": 1727863341,
+        "5.6.3-r1": 1743803190
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1"
@@ -67350,7 +67372,8 @@
     "xz-static": {
       "origin": "xz",
       "versions": {
-        "5.6.3-r0": 1727863341
+        "5.6.3-r0": 1727863341,
+        "5.6.3-r1": 1743803190
       }
     },
     "yajl": {
@@ -68537,7 +68560,8 @@
         "6.12.16-r0": 1740151389,
         "6.12.17-r0": 1740681119,
         "6.12.18-r0": 1741634484,
-        "6.12.20-r0": 1742803751
+        "6.12.20-r0": 1742803751,
+        "6.12.21-r0": 1743505757
       },
       "dependencies": [
         "initramfs-generator",
@@ -68563,7 +68587,8 @@
         "6.12.16-r0": 1740151389,
         "6.12.17-r0": 1740681119,
         "6.12.18-r0": 1741634484,
-        "6.12.20-r0": 1742803751
+        "6.12.20-r0": 1742803751,
+        "6.12.21-r0": 1743505757
       },
       "dependencies": [
         "perl",
@@ -68598,7 +68623,8 @@
         "6.12.16-r0": 1740151389,
         "6.12.17-r0": 1740681119,
         "6.12.18-r0": 1741634484,
-        "6.12.20-r0": 1742803751
+        "6.12.20-r0": 1742803751,
+        "6.12.21-r0": 1743505757
       }
     },
     "linux-firmware-amdnpu": {
@@ -72536,7 +72562,7 @@
       },
       "libarchive.so.13": {
         "package": "libarchive",
-        "version": "13.7.7"
+        "version": "13.7.9"
       },
       "libart_lgpl_2.so.2": {
         "package": "libart-lgpl",
@@ -73856,15 +73882,15 @@
       },
       "libmbedcrypto.so.16": {
         "package": "mbedtls",
-        "version": "3.6.2"
+        "version": "3.6.3"
       },
       "libmbedtls.so.21": {
         "package": "mbedtls",
-        "version": "3.6.2"
+        "version": "3.6.3"
       },
       "libmbedx509.so.7": {
         "package": "mbedtls",
-        "version": "3.6.2"
+        "version": "3.6.3"
       },
       "libgallium-24.2.5.so": {
         "package": "mesa",
