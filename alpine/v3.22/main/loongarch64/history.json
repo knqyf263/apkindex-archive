@@ -2787,7 +2787,8 @@
     "agetty": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
@@ -2795,7 +2796,7 @@
         "so:libutmps.so.0.1"
       ],
       "provides": [
-        "cmd:agetty=2.41-r4"
+        "cmd:agetty=2.41-r5"
       ]
     },
     "agetty-openrc": {
@@ -4244,7 +4245,8 @@
     "asterisk": {
       "origin": "asterisk",
       "versions": {
-        "20.11.1-r4": 1743513441
+        "20.11.1-r4": 1743513441,
+        "20.11.1-r5": 1745399825
       },
       "dependencies": [
         "/bin/sh",
@@ -4257,13 +4259,13 @@
         "so:libgcc_s.so.1",
         "so:libjansson.so.4",
         "so:liblua.so.5",
-        "so:libpj.so.2.14.1",
-        "so:libpjlib-util.so.2.14.1",
-        "so:libpjmedia.so.2.14.1",
-        "so:libpjnath.so.2.14.1",
-        "so:libpjsip-simple.so.2.14.1",
-        "so:libpjsip-ua.so.2.14.1",
-        "so:libpjsip.so.2.14.1",
+        "so:libpj.so.2.15.1",
+        "so:libpjlib-util.so.2.15.1",
+        "so:libpjmedia.so.2.15.1",
+        "so:libpjnath.so.2.15.1",
+        "so:libpjsip-simple.so.2.15.1",
+        "so:libpjsip-ua.so.2.15.1",
+        "so:libpjsip.so.2.15.1",
         "so:libportaudio.so.2",
         "so:libsqlite3.so.0",
         "so:libssl.so.3",
@@ -4274,21 +4276,22 @@
       ],
       "provides": [
         "so:libasteriskssl.so.1=1",
-        "cmd:astcanary=20.11.1-r4",
-        "cmd:astdb2bdb=20.11.1-r4",
-        "cmd:astdb2sqlite3=20.11.1-r4",
-        "cmd:asterisk=20.11.1-r4",
-        "cmd:astgenkey=20.11.1-r4",
-        "cmd:astversion=20.11.1-r4",
-        "cmd:autosupport=20.11.1-r4",
-        "cmd:rasterisk=20.11.1-r4",
-        "cmd:safe_asterisk=20.11.1-r4"
+        "cmd:astcanary=20.11.1-r5",
+        "cmd:astdb2bdb=20.11.1-r5",
+        "cmd:astdb2sqlite3=20.11.1-r5",
+        "cmd:asterisk=20.11.1-r5",
+        "cmd:astgenkey=20.11.1-r5",
+        "cmd:astversion=20.11.1-r5",
+        "cmd:autosupport=20.11.1-r5",
+        "cmd:rasterisk=20.11.1-r5",
+        "cmd:safe_asterisk=20.11.1-r5"
       ]
     },
     "asterisk-alsa": {
       "origin": "asterisk",
       "versions": {
-        "20.11.1-r4": 1743513441
+        "20.11.1-r4": 1743513441,
+        "20.11.1-r5": 1745399825
       },
       "dependencies": [
         "so:libasound.so.2",
@@ -4298,7 +4301,8 @@
     "asterisk-curl": {
       "origin": "asterisk",
       "versions": {
-        "20.11.1-r4": 1743513441
+        "20.11.1-r4": 1743513441,
+        "20.11.1-r5": 1745399825
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
@@ -4308,57 +4312,61 @@
     "asterisk-dbg": {
       "origin": "asterisk",
       "versions": {
-        "20.11.1-r4": 1743513441
+        "20.11.1-r4": 1743513441,
+        "20.11.1-r5": 1745399825
       },
       "dependencies": [
-        "!asterisk-alsa<20.11.1-r4",
-        "!asterisk-alsa>20.11.1-r4",
-        "!asterisk-curl<20.11.1-r4",
-        "!asterisk-curl>20.11.1-r4",
-        "!asterisk-fax<20.11.1-r4",
-        "!asterisk-fax>20.11.1-r4",
-        "!asterisk-ldap<20.11.1-r4",
-        "!asterisk-ldap>20.11.1-r4",
-        "!asterisk-mobile<20.11.1-r4",
-        "!asterisk-mobile>20.11.1-r4",
-        "!asterisk-odbc<20.11.1-r4",
-        "!asterisk-odbc>20.11.1-r4",
-        "!asterisk-opus<20.11.1-r4",
-        "!asterisk-opus>20.11.1-r4",
-        "!asterisk-pgsql<20.11.1-r4",
-        "!asterisk-pgsql>20.11.1-r4",
-        "!asterisk-prometheus<20.11.1-r4",
-        "!asterisk-prometheus>20.11.1-r4",
-        "!asterisk-speex<20.11.1-r4",
-        "!asterisk-speex>20.11.1-r4",
-        "!asterisk-srtp<20.11.1-r4",
-        "!asterisk-srtp>20.11.1-r4",
-        "!asterisk-tds<20.11.1-r4",
-        "!asterisk-tds>20.11.1-r4",
-        "!asterisk<20.11.1-r4",
-        "!asterisk>20.11.1-r4"
+        "!asterisk-alsa<20.11.1-r5",
+        "!asterisk-alsa>20.11.1-r5",
+        "!asterisk-curl<20.11.1-r5",
+        "!asterisk-curl>20.11.1-r5",
+        "!asterisk-fax<20.11.1-r5",
+        "!asterisk-fax>20.11.1-r5",
+        "!asterisk-ldap<20.11.1-r5",
+        "!asterisk-ldap>20.11.1-r5",
+        "!asterisk-mobile<20.11.1-r5",
+        "!asterisk-mobile>20.11.1-r5",
+        "!asterisk-odbc<20.11.1-r5",
+        "!asterisk-odbc>20.11.1-r5",
+        "!asterisk-opus<20.11.1-r5",
+        "!asterisk-opus>20.11.1-r5",
+        "!asterisk-pgsql<20.11.1-r5",
+        "!asterisk-pgsql>20.11.1-r5",
+        "!asterisk-prometheus<20.11.1-r5",
+        "!asterisk-prometheus>20.11.1-r5",
+        "!asterisk-speex<20.11.1-r5",
+        "!asterisk-speex>20.11.1-r5",
+        "!asterisk-srtp<20.11.1-r5",
+        "!asterisk-srtp>20.11.1-r5",
+        "!asterisk-tds<20.11.1-r5",
+        "!asterisk-tds>20.11.1-r5",
+        "!asterisk<20.11.1-r5",
+        "!asterisk>20.11.1-r5"
       ]
     },
     "asterisk-dev": {
       "origin": "asterisk",
       "versions": {
-        "20.11.1-r4": 1743513441
+        "20.11.1-r4": 1743513441,
+        "20.11.1-r5": 1745399825
       },
       "dependencies": [
-        "asterisk=20.11.1-r4",
-        "asterisk=20.11.1-r4"
+        "asterisk=20.11.1-r5",
+        "asterisk=20.11.1-r5"
       ]
     },
     "asterisk-doc": {
       "origin": "asterisk",
       "versions": {
-        "20.11.1-r4": 1743513441
+        "20.11.1-r4": 1743513441,
+        "20.11.1-r5": 1745399825
       }
     },
     "asterisk-fax": {
       "origin": "asterisk",
       "versions": {
-        "20.11.1-r4": 1743513441
+        "20.11.1-r4": 1743513441,
+        "20.11.1-r5": 1745399825
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
@@ -4368,7 +4376,8 @@
     "asterisk-ldap": {
       "origin": "asterisk",
       "versions": {
-        "20.11.1-r4": 1743513441
+        "20.11.1-r4": 1743513441,
+        "20.11.1-r5": 1745399825
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
@@ -4378,7 +4387,8 @@
     "asterisk-mobile": {
       "origin": "asterisk",
       "versions": {
-        "20.11.1-r4": 1743513441
+        "20.11.1-r4": 1743513441,
+        "20.11.1-r5": 1745399825
       },
       "dependencies": [
         "so:libbluetooth.so.3",
@@ -4388,7 +4398,8 @@
     "asterisk-odbc": {
       "origin": "asterisk",
       "versions": {
-        "20.11.1-r4": 1743513441
+        "20.11.1-r4": 1743513441,
+        "20.11.1-r5": 1745399825
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
@@ -4398,13 +4409,15 @@
     "asterisk-openrc": {
       "origin": "asterisk",
       "versions": {
-        "20.11.1-r4": 1743513441
+        "20.11.1-r4": 1743513441,
+        "20.11.1-r5": 1745399825
       }
     },
     "asterisk-opus": {
       "origin": "asterisk",
       "versions": {
-        "20.11.1-r4": 1743513441
+        "20.11.1-r4": 1743513441,
+        "20.11.1-r5": 1745399825
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
@@ -4414,7 +4427,8 @@
     "asterisk-pgsql": {
       "origin": "asterisk",
       "versions": {
-        "20.11.1-r4": 1743513441
+        "20.11.1-r4": 1743513441,
+        "20.11.1-r5": 1745399825
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
@@ -4424,7 +4438,8 @@
     "asterisk-prometheus": {
       "origin": "asterisk",
       "versions": {
-        "20.11.1-r4": 1743513441
+        "20.11.1-r4": 1743513441,
+        "20.11.1-r5": 1745399825
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1"
@@ -4433,25 +4448,29 @@
     "asterisk-sample-config": {
       "origin": "asterisk",
       "versions": {
-        "20.11.1-r4": 1743513441
+        "20.11.1-r4": 1743513441,
+        "20.11.1-r5": 1745399825
       }
     },
     "asterisk-sounds-en": {
       "origin": "asterisk",
       "versions": {
-        "20.11.1-r4": 1743513441
+        "20.11.1-r4": 1743513441,
+        "20.11.1-r5": 1745399825
       }
     },
     "asterisk-sounds-moh": {
       "origin": "asterisk",
       "versions": {
-        "20.11.1-r4": 1743513441
+        "20.11.1-r4": 1743513441,
+        "20.11.1-r5": 1745399825
       }
     },
     "asterisk-speex": {
       "origin": "asterisk",
       "versions": {
-        "20.11.1-r4": 1743513441
+        "20.11.1-r4": 1743513441,
+        "20.11.1-r5": 1745399825
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
@@ -4463,7 +4482,8 @@
     "asterisk-srtp": {
       "origin": "asterisk",
       "versions": {
-        "20.11.1-r4": 1743513441
+        "20.11.1-r4": 1743513441,
+        "20.11.1-r5": 1745399825
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
@@ -4474,7 +4494,8 @@
     "asterisk-tds": {
       "origin": "asterisk",
       "versions": {
-        "20.11.1-r4": 1743513441
+        "20.11.1-r4": 1743513441,
+        "20.11.1-r5": 1745399825
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
@@ -6020,14 +6041,15 @@
     "blkid": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libblkid.so.1",
         "so:libc.musl-loongarch64.so.1"
       ],
       "provides": [
-        "cmd:blkid=2.41-r4"
+        "cmd:blkid=2.41-r5"
       ]
     },
     "bluez": {
@@ -7932,7 +7954,8 @@
     "cfdisk": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
@@ -7942,7 +7965,7 @@
         "so:libsmartcols.so.1"
       ],
       "provides": [
-        "cmd:cfdisk=2.41-r4"
+        "cmd:cfdisk=2.41-r5"
       ]
     },
     "cgdb": {
@@ -10718,14 +10741,15 @@
     "dmesg": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
         "so:libncursesw.so.6"
       ],
       "provides": [
-        "cmd:dmesg=2.41-r4"
+        "cmd:dmesg=2.41-r5"
       ]
     },
     "dmidecode": {
@@ -13059,7 +13083,8 @@
     "findmnt": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libblkid.so.1",
@@ -13068,7 +13093,7 @@
         "so:libsmartcols.so.1"
       ],
       "provides": [
-        "cmd:findmnt=2.41-r4"
+        "cmd:findmnt=2.41-r5"
       ]
     },
     "findutils": {
@@ -13329,13 +13354,14 @@
     "flock": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1"
       ],
       "provides": [
-        "cmd:flock=2.41-r4"
+        "cmd:flock=2.41-r5"
       ]
     },
     "fmt": {
@@ -15168,14 +15194,15 @@
     "fstrim": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
         "so:libmount.so.1"
       ],
       "provides": [
-        "cmd:fstrim=2.41-r4"
+        "cmd:fstrim=2.41-r5"
       ]
     },
     "fstrm": {
@@ -18563,33 +18590,35 @@
     "gzip": {
       "origin": "gzip",
       "versions": {
-        "1.14-r0": 1744299191
+        "1.14-r0": 1744299191,
+        "1.14-r1": 1745399988
       },
       "dependencies": [
         "less",
         "so:libc.musl-loongarch64.so.1"
       ],
       "provides": [
-        "cmd:gunzip=1.14-r0",
-        "cmd:gzexe=1.14-r0",
-        "cmd:gzip=1.14-r0",
-        "cmd:uncompress=1.14-r0",
-        "cmd:zcat=1.14-r0",
-        "cmd:zcmp=1.14-r0",
-        "cmd:zdiff=1.14-r0",
-        "cmd:zegrep=1.14-r0",
-        "cmd:zfgrep=1.14-r0",
-        "cmd:zforce=1.14-r0",
-        "cmd:zgrep=1.14-r0",
-        "cmd:zless=1.14-r0",
-        "cmd:zmore=1.14-r0",
-        "cmd:znew=1.14-r0"
+        "cmd:gunzip=1.14-r1",
+        "cmd:gzexe=1.14-r1",
+        "cmd:gzip=1.14-r1",
+        "cmd:uncompress=1.14-r1",
+        "cmd:zcat=1.14-r1",
+        "cmd:zcmp=1.14-r1",
+        "cmd:zdiff=1.14-r1",
+        "cmd:zegrep=1.14-r1",
+        "cmd:zfgrep=1.14-r1",
+        "cmd:zforce=1.14-r1",
+        "cmd:zgrep=1.14-r1",
+        "cmd:zless=1.14-r1",
+        "cmd:zmore=1.14-r1",
+        "cmd:znew=1.14-r1"
       ]
     },
     "gzip-doc": {
       "origin": "gzip",
       "versions": {
-        "1.14-r0": 1744299191
+        "1.14-r0": 1744299191,
+        "1.14-r1": 1745399988
       }
     },
     "haproxy": {
@@ -19052,14 +19081,15 @@
     "hexdump": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
         "so:libncursesw.so.6"
       ],
       "provides": [
-        "cmd:hexdump=2.41-r4"
+        "cmd:hexdump=2.41-r5"
       ]
     },
     "hicolor-icon-theme": {
@@ -21924,45 +21954,47 @@
     "kbd": {
       "origin": "kbd",
       "versions": {
-        "2.7.1-r0": 1735923921
+        "2.7.1-r0": 1735923921,
+        "2.7.1-r1": 1745399869
       },
       "dependencies": [
         "kbd-misc",
         "so:libc.musl-loongarch64.so.1"
       ],
       "provides": [
-        "cmd:chvt=2.7.1-r0",
-        "cmd:deallocvt=2.7.1-r0",
-        "cmd:dumpkeys=2.7.1-r0",
-        "cmd:fgconsole=2.7.1-r0",
-        "cmd:getkeycodes=2.7.1-r0",
-        "cmd:kbd_mode=2.7.1-r0",
-        "cmd:kbdinfo=2.7.1-r0",
-        "cmd:kbdrate=2.7.1-r0",
-        "cmd:loadkeys=2.7.1-r0",
-        "cmd:loadunimap=2.7.1-r0",
-        "cmd:mapscrn=2.7.1-r0",
-        "cmd:open=2.7.1-r0",
-        "cmd:openvt=2.7.1-r0",
-        "cmd:psfaddtable=2.7.1-r0",
-        "cmd:psfgettable=2.7.1-r0",
-        "cmd:psfstriptable=2.7.1-r0",
-        "cmd:psfxtable=2.7.1-r0",
-        "cmd:setfont=2.7.1-r0",
-        "cmd:setkeycodes=2.7.1-r0",
-        "cmd:setleds=2.7.1-r0",
-        "cmd:setmetamode=2.7.1-r0",
-        "cmd:setvtrgb=2.7.1-r0",
-        "cmd:showconsolefont=2.7.1-r0",
-        "cmd:showkey=2.7.1-r0",
-        "cmd:unicode_start=2.7.1-r0",
-        "cmd:unicode_stop=2.7.1-r0"
+        "cmd:chvt=2.7.1-r1",
+        "cmd:deallocvt=2.7.1-r1",
+        "cmd:dumpkeys=2.7.1-r1",
+        "cmd:fgconsole=2.7.1-r1",
+        "cmd:getkeycodes=2.7.1-r1",
+        "cmd:kbd_mode=2.7.1-r1",
+        "cmd:kbdinfo=2.7.1-r1",
+        "cmd:kbdrate=2.7.1-r1",
+        "cmd:loadkeys=2.7.1-r1",
+        "cmd:loadunimap=2.7.1-r1",
+        "cmd:mapscrn=2.7.1-r1",
+        "cmd:open=2.7.1-r1",
+        "cmd:openvt=2.7.1-r1",
+        "cmd:psfaddtable=2.7.1-r1",
+        "cmd:psfgettable=2.7.1-r1",
+        "cmd:psfstriptable=2.7.1-r1",
+        "cmd:psfxtable=2.7.1-r1",
+        "cmd:setfont=2.7.1-r1",
+        "cmd:setkeycodes=2.7.1-r1",
+        "cmd:setleds=2.7.1-r1",
+        "cmd:setmetamode=2.7.1-r1",
+        "cmd:setvtrgb=2.7.1-r1",
+        "cmd:showconsolefont=2.7.1-r1",
+        "cmd:showkey=2.7.1-r1",
+        "cmd:unicode_start=2.7.1-r1",
+        "cmd:unicode_stop=2.7.1-r1"
       ]
     },
     "kbd-bkeymaps": {
       "origin": "kbd",
       "versions": {
-        "2.7.1-r0": 1735923921
+        "2.7.1-r0": 1735923921,
+        "2.7.1-r1": 1745399869
       },
       "provides": [
         "bkeymaps"
@@ -21971,31 +22003,36 @@
     "kbd-doc": {
       "origin": "kbd",
       "versions": {
-        "2.7.1-r0": 1735923921
+        "2.7.1-r0": 1735923921,
+        "2.7.1-r1": 1745399869
       }
     },
     "kbd-legacy": {
       "origin": "kbd",
       "versions": {
-        "2.7.1-r0": 1735923921
+        "2.7.1-r0": 1735923921,
+        "2.7.1-r1": 1745399869
       }
     },
     "kbd-misc": {
       "origin": "kbd",
       "versions": {
-        "2.7.1-r0": 1735923921
+        "2.7.1-r0": 1735923921,
+        "2.7.1-r1": 1745399869
       }
     },
     "kbd-openrc": {
       "origin": "kbd",
       "versions": {
-        "2.7.1-r0": 1735923921
+        "2.7.1-r0": 1735923921,
+        "2.7.1-r1": 1745399869
       }
     },
     "kbd-vlock": {
       "origin": "kbd",
       "versions": {
-        "2.7.1-r0": 1735923921
+        "2.7.1-r0": 1735923921,
+        "2.7.1-r1": 1745399869
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
@@ -22003,7 +22040,7 @@
         "so:libpam_misc.so.0"
       ],
       "provides": [
-        "cmd:vlock=2.7.1-r0"
+        "cmd:vlock=2.7.1-r1"
       ]
     },
     "kea": {
@@ -23834,7 +23871,8 @@
     "libblkid": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
@@ -24887,7 +24925,8 @@
     "libfdisk": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libblkid.so.1",
@@ -25791,7 +25830,8 @@
     "liblastlog2": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
@@ -26199,7 +26239,8 @@
     "libmount": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libblkid.so.1",
@@ -27660,7 +27701,8 @@
     "libsmartcols": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
@@ -28438,7 +28480,8 @@
     "libuuid": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
@@ -32384,11 +32427,13 @@
     "llvm20": {
       "origin": "llvm20",
       "versions": {
-        "20.1.2-r1": 1744877213
+        "20.1.2-r1": 1744877213,
+        "20.1.2-r2": 1745399727
       },
       "dependencies": [
-        "llvm20-linker-tools=20.1.2-r1",
-        "llvm20-linker-tools=20.1.2-r1",
+        "llvm20-linker-tools=20.1.2-r2",
+        "llvm20-linker-tools=20.1.2-r2",
+        "llvm20-test-utils=20.1.2-r2",
         "so:libLLVM.so.20.1",
         "so:libc.musl-loongarch64.so.1",
         "so:libcurl.so.4",
@@ -32398,128 +32443,218 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "llvm=20.1.2-r1",
-        "cmd:UnicodeNameMappingGenerator=20.1.2-r1",
-        "cmd:bugpoint=20.1.2-r1",
-        "cmd:dsymutil=20.1.2-r1",
-        "cmd:llc=20.1.2-r1",
-        "cmd:lli-child-target=20.1.2-r1",
-        "cmd:lli=20.1.2-r1",
-        "cmd:llvm-PerfectShuffle=20.1.2-r1",
-        "cmd:llvm-addr2line=20.1.2-r1",
-        "cmd:llvm-ar=20.1.2-r1",
-        "cmd:llvm-as=20.1.2-r1",
-        "cmd:llvm-bcanalyzer=20.1.2-r1",
-        "cmd:llvm-bitcode-strip=20.1.2-r1",
-        "cmd:llvm-c-test=20.1.2-r1",
-        "cmd:llvm-cat=20.1.2-r1",
-        "cmd:llvm-cfi-verify=20.1.2-r1",
-        "cmd:llvm-cgdata=20.1.2-r1",
-        "cmd:llvm-cov=20.1.2-r1",
-        "cmd:llvm-ctxprof-util=20.1.2-r1",
-        "cmd:llvm-cvtres=20.1.2-r1",
-        "cmd:llvm-cxxdump=20.1.2-r1",
-        "cmd:llvm-cxxfilt=20.1.2-r1",
-        "cmd:llvm-cxxmap=20.1.2-r1",
-        "cmd:llvm-debuginfo-analyzer=20.1.2-r1",
-        "cmd:llvm-debuginfod-find=20.1.2-r1",
-        "cmd:llvm-debuginfod=20.1.2-r1",
-        "cmd:llvm-diff=20.1.2-r1",
-        "cmd:llvm-dis=20.1.2-r1",
-        "cmd:llvm-dlltool=20.1.2-r1",
-        "cmd:llvm-dwarfdump=20.1.2-r1",
-        "cmd:llvm-dwarfutil=20.1.2-r1",
-        "cmd:llvm-dwp=20.1.2-r1",
-        "cmd:llvm-exegesis=20.1.2-r1",
-        "cmd:llvm-extract=20.1.2-r1",
-        "cmd:llvm-gsymutil=20.1.2-r1",
-        "cmd:llvm-ifs=20.1.2-r1",
-        "cmd:llvm-install-name-tool=20.1.2-r1",
-        "cmd:llvm-jitlink-executor=20.1.2-r1",
-        "cmd:llvm-jitlink=20.1.2-r1",
-        "cmd:llvm-lib=20.1.2-r1",
-        "cmd:llvm-libtool-darwin=20.1.2-r1",
-        "cmd:llvm-link=20.1.2-r1",
-        "cmd:llvm-lipo=20.1.2-r1",
-        "cmd:llvm-lto2=20.1.2-r1",
-        "cmd:llvm-lto=20.1.2-r1",
-        "cmd:llvm-mc=20.1.2-r1",
-        "cmd:llvm-mca=20.1.2-r1",
-        "cmd:llvm-ml=20.1.2-r1",
-        "cmd:llvm-modextract=20.1.2-r1",
-        "cmd:llvm-mt=20.1.2-r1",
-        "cmd:llvm-nm=20.1.2-r1",
-        "cmd:llvm-objcopy=20.1.2-r1",
-        "cmd:llvm-objdump=20.1.2-r1",
-        "cmd:llvm-opt-report=20.1.2-r1",
-        "cmd:llvm-otool=20.1.2-r1",
-        "cmd:llvm-pdbutil=20.1.2-r1",
-        "cmd:llvm-profdata=20.1.2-r1",
-        "cmd:llvm-profgen=20.1.2-r1",
-        "cmd:llvm-ranlib=20.1.2-r1",
-        "cmd:llvm-rc=20.1.2-r1",
-        "cmd:llvm-readelf=20.1.2-r1",
-        "cmd:llvm-readobj=20.1.2-r1",
-        "cmd:llvm-readtapi=20.1.2-r1",
-        "cmd:llvm-reduce=20.1.2-r1",
-        "cmd:llvm-remarkutil=20.1.2-r1",
-        "cmd:llvm-rtdyld=20.1.2-r1",
-        "cmd:llvm-sim=20.1.2-r1",
-        "cmd:llvm-size=20.1.2-r1",
-        "cmd:llvm-split=20.1.2-r1",
-        "cmd:llvm-stress=20.1.2-r1",
-        "cmd:llvm-strings=20.1.2-r1",
-        "cmd:llvm-strip=20.1.2-r1",
-        "cmd:llvm-symbolizer=20.1.2-r1",
-        "cmd:llvm-tblgen=20.1.2-r1",
-        "cmd:llvm-tli-checker=20.1.2-r1",
-        "cmd:llvm-undname=20.1.2-r1",
-        "cmd:llvm-windres=20.1.2-r1",
-        "cmd:llvm-xray=20.1.2-r1",
-        "cmd:opt=20.1.2-r1",
-        "cmd:reduce-chunk-list=20.1.2-r1",
-        "cmd:sancov=20.1.2-r1",
-        "cmd:sanstats=20.1.2-r1",
-        "cmd:split-file=20.1.2-r1",
-        "cmd:verify-uselistorder=20.1.2-r1",
-        "cmd:yaml-bench=20.1.2-r1"
+        "llvm=20.1.2-r2",
+        "cmd:UnicodeNameMappingGenerator20=20.1.2-r2",
+        "cmd:UnicodeNameMappingGenerator=20.1.2-r2",
+        "cmd:bugpoint20=20.1.2-r2",
+        "cmd:bugpoint=20.1.2-r2",
+        "cmd:count20=20.1.2-r2",
+        "cmd:dsymutil20=20.1.2-r2",
+        "cmd:dsymutil=20.1.2-r2",
+        "cmd:llc20=20.1.2-r2",
+        "cmd:llc=20.1.2-r2",
+        "cmd:lli-child-target20=20.1.2-r2",
+        "cmd:lli-child-target=20.1.2-r2",
+        "cmd:lli20=20.1.2-r2",
+        "cmd:lli=20.1.2-r2",
+        "cmd:llvm-PerfectShuffle=20.1.2-r2",
+        "cmd:llvm-addr2line=20.1.2-r2",
+        "cmd:llvm-ar=20.1.2-r2",
+        "cmd:llvm-as=20.1.2-r2",
+        "cmd:llvm-bcanalyzer=20.1.2-r2",
+        "cmd:llvm-bitcode-strip=20.1.2-r2",
+        "cmd:llvm-c-test=20.1.2-r2",
+        "cmd:llvm-cat=20.1.2-r2",
+        "cmd:llvm-cfi-verify=20.1.2-r2",
+        "cmd:llvm-cgdata=20.1.2-r2",
+        "cmd:llvm-cov=20.1.2-r2",
+        "cmd:llvm-ctxprof-util=20.1.2-r2",
+        "cmd:llvm-cvtres=20.1.2-r2",
+        "cmd:llvm-cxxdump=20.1.2-r2",
+        "cmd:llvm-cxxfilt=20.1.2-r2",
+        "cmd:llvm-cxxmap=20.1.2-r2",
+        "cmd:llvm-debuginfo-analyzer=20.1.2-r2",
+        "cmd:llvm-debuginfod-find=20.1.2-r2",
+        "cmd:llvm-debuginfod=20.1.2-r2",
+        "cmd:llvm-diff=20.1.2-r2",
+        "cmd:llvm-dis=20.1.2-r2",
+        "cmd:llvm-dlltool=20.1.2-r2",
+        "cmd:llvm-dwarfdump=20.1.2-r2",
+        "cmd:llvm-dwarfutil=20.1.2-r2",
+        "cmd:llvm-dwp=20.1.2-r2",
+        "cmd:llvm-exegesis=20.1.2-r2",
+        "cmd:llvm-extract=20.1.2-r2",
+        "cmd:llvm-gsymutil=20.1.2-r2",
+        "cmd:llvm-ifs=20.1.2-r2",
+        "cmd:llvm-install-name-tool=20.1.2-r2",
+        "cmd:llvm-jitlink-executor=20.1.2-r2",
+        "cmd:llvm-jitlink=20.1.2-r2",
+        "cmd:llvm-lib=20.1.2-r2",
+        "cmd:llvm-libtool-darwin=20.1.2-r2",
+        "cmd:llvm-link=20.1.2-r2",
+        "cmd:llvm-lipo=20.1.2-r2",
+        "cmd:llvm-lto2=20.1.2-r2",
+        "cmd:llvm-lto=20.1.2-r2",
+        "cmd:llvm-mc=20.1.2-r2",
+        "cmd:llvm-mca=20.1.2-r2",
+        "cmd:llvm-ml=20.1.2-r2",
+        "cmd:llvm-modextract=20.1.2-r2",
+        "cmd:llvm-mt=20.1.2-r2",
+        "cmd:llvm-nm=20.1.2-r2",
+        "cmd:llvm-objcopy=20.1.2-r2",
+        "cmd:llvm-objdump=20.1.2-r2",
+        "cmd:llvm-opt-report=20.1.2-r2",
+        "cmd:llvm-otool=20.1.2-r2",
+        "cmd:llvm-pdbutil=20.1.2-r2",
+        "cmd:llvm-profdata=20.1.2-r2",
+        "cmd:llvm-profgen=20.1.2-r2",
+        "cmd:llvm-ranlib=20.1.2-r2",
+        "cmd:llvm-rc=20.1.2-r2",
+        "cmd:llvm-readelf=20.1.2-r2",
+        "cmd:llvm-readobj=20.1.2-r2",
+        "cmd:llvm-readtapi=20.1.2-r2",
+        "cmd:llvm-reduce=20.1.2-r2",
+        "cmd:llvm-remarkutil=20.1.2-r2",
+        "cmd:llvm-rtdyld=20.1.2-r2",
+        "cmd:llvm-sim=20.1.2-r2",
+        "cmd:llvm-size=20.1.2-r2",
+        "cmd:llvm-split=20.1.2-r2",
+        "cmd:llvm-stress=20.1.2-r2",
+        "cmd:llvm-strings=20.1.2-r2",
+        "cmd:llvm-strip=20.1.2-r2",
+        "cmd:llvm-symbolizer=20.1.2-r2",
+        "cmd:llvm-tblgen=20.1.2-r2",
+        "cmd:llvm-tli-checker=20.1.2-r2",
+        "cmd:llvm-undname=20.1.2-r2",
+        "cmd:llvm-windres=20.1.2-r2",
+        "cmd:llvm-xray=20.1.2-r2",
+        "cmd:llvm20-PerfectShuffle=20.1.2-r2",
+        "cmd:llvm20-addr2line=20.1.2-r2",
+        "cmd:llvm20-ar=20.1.2-r2",
+        "cmd:llvm20-as=20.1.2-r2",
+        "cmd:llvm20-bcanalyzer=20.1.2-r2",
+        "cmd:llvm20-bitcode-strip=20.1.2-r2",
+        "cmd:llvm20-c-test=20.1.2-r2",
+        "cmd:llvm20-cat=20.1.2-r2",
+        "cmd:llvm20-cfi-verify=20.1.2-r2",
+        "cmd:llvm20-cgdata=20.1.2-r2",
+        "cmd:llvm20-cov=20.1.2-r2",
+        "cmd:llvm20-ctxprof-util=20.1.2-r2",
+        "cmd:llvm20-cvtres=20.1.2-r2",
+        "cmd:llvm20-cxxdump=20.1.2-r2",
+        "cmd:llvm20-cxxfilt=20.1.2-r2",
+        "cmd:llvm20-cxxmap=20.1.2-r2",
+        "cmd:llvm20-debuginfo-analyzer=20.1.2-r2",
+        "cmd:llvm20-debuginfod-find=20.1.2-r2",
+        "cmd:llvm20-debuginfod=20.1.2-r2",
+        "cmd:llvm20-diff=20.1.2-r2",
+        "cmd:llvm20-dis=20.1.2-r2",
+        "cmd:llvm20-dlltool=20.1.2-r2",
+        "cmd:llvm20-dwarfdump=20.1.2-r2",
+        "cmd:llvm20-dwarfutil=20.1.2-r2",
+        "cmd:llvm20-dwp=20.1.2-r2",
+        "cmd:llvm20-exegesis=20.1.2-r2",
+        "cmd:llvm20-extract=20.1.2-r2",
+        "cmd:llvm20-gsymutil=20.1.2-r2",
+        "cmd:llvm20-ifs=20.1.2-r2",
+        "cmd:llvm20-install-name-tool=20.1.2-r2",
+        "cmd:llvm20-jitlink-executor=20.1.2-r2",
+        "cmd:llvm20-jitlink=20.1.2-r2",
+        "cmd:llvm20-lib=20.1.2-r2",
+        "cmd:llvm20-libtool-darwin=20.1.2-r2",
+        "cmd:llvm20-link=20.1.2-r2",
+        "cmd:llvm20-lipo=20.1.2-r2",
+        "cmd:llvm20-lto2=20.1.2-r2",
+        "cmd:llvm20-lto=20.1.2-r2",
+        "cmd:llvm20-mc=20.1.2-r2",
+        "cmd:llvm20-mca=20.1.2-r2",
+        "cmd:llvm20-ml=20.1.2-r2",
+        "cmd:llvm20-modextract=20.1.2-r2",
+        "cmd:llvm20-mt=20.1.2-r2",
+        "cmd:llvm20-nm=20.1.2-r2",
+        "cmd:llvm20-objcopy=20.1.2-r2",
+        "cmd:llvm20-objdump=20.1.2-r2",
+        "cmd:llvm20-opt-report=20.1.2-r2",
+        "cmd:llvm20-otool=20.1.2-r2",
+        "cmd:llvm20-pdbutil=20.1.2-r2",
+        "cmd:llvm20-profdata=20.1.2-r2",
+        "cmd:llvm20-profgen=20.1.2-r2",
+        "cmd:llvm20-ranlib=20.1.2-r2",
+        "cmd:llvm20-rc=20.1.2-r2",
+        "cmd:llvm20-readelf=20.1.2-r2",
+        "cmd:llvm20-readobj=20.1.2-r2",
+        "cmd:llvm20-readtapi=20.1.2-r2",
+        "cmd:llvm20-reduce=20.1.2-r2",
+        "cmd:llvm20-remarkutil=20.1.2-r2",
+        "cmd:llvm20-rtdyld=20.1.2-r2",
+        "cmd:llvm20-sim=20.1.2-r2",
+        "cmd:llvm20-size=20.1.2-r2",
+        "cmd:llvm20-split=20.1.2-r2",
+        "cmd:llvm20-stress=20.1.2-r2",
+        "cmd:llvm20-strings=20.1.2-r2",
+        "cmd:llvm20-strip=20.1.2-r2",
+        "cmd:llvm20-symbolizer=20.1.2-r2",
+        "cmd:llvm20-tblgen=20.1.2-r2",
+        "cmd:llvm20-tli-checker=20.1.2-r2",
+        "cmd:llvm20-undname=20.1.2-r2",
+        "cmd:llvm20-windres=20.1.2-r2",
+        "cmd:llvm20-xray=20.1.2-r2",
+        "cmd:not20=20.1.2-r2",
+        "cmd:opt20=20.1.2-r2",
+        "cmd:opt=20.1.2-r2",
+        "cmd:reduce-chunk-list20=20.1.2-r2",
+        "cmd:reduce-chunk-list=20.1.2-r2",
+        "cmd:sancov20=20.1.2-r2",
+        "cmd:sancov=20.1.2-r2",
+        "cmd:sanstats20=20.1.2-r2",
+        "cmd:sanstats=20.1.2-r2",
+        "cmd:split-file20=20.1.2-r2",
+        "cmd:split-file=20.1.2-r2",
+        "cmd:verify-uselistorder20=20.1.2-r2",
+        "cmd:verify-uselistorder=20.1.2-r2",
+        "cmd:yaml-bench20=20.1.2-r2",
+        "cmd:yaml-bench=20.1.2-r2"
       ]
     },
     "llvm20-dev": {
       "origin": "llvm20",
       "versions": {
-        "20.1.2-r1": 1744877213
+        "20.1.2-r1": 1744877213,
+        "20.1.2-r2": 1745399727
       },
       "dependencies": [
-        "llvm20=20.1.2-r1",
+        "llvm20=20.1.2-r2",
         "libffi-dev",
         "zlib-dev",
         "zstd-dev",
-        "llvm20-test-utils=20.1.2-r1",
-        "llvm20-libs=20.1.2-r1",
+        "llvm20-test-utils=20.1.2-r2",
+        "llvm20-libs=20.1.2-r2",
         "so:libc.musl-loongarch64.so.1",
         "so:libgcc_s.so.1",
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "llvm-dev=20.1.2-r1",
-        "cmd:llvm-config-20=20.1.2-r1",
-        "cmd:llvm-config=20.1.2-r1"
+        "llvm-dev=20.1.2-r2",
+        "cmd:llvm-config-20=20.1.2-r2",
+        "cmd:llvm-config=20.1.2-r2",
+        "cmd:llvm20-config=20.1.2-r2"
       ]
     },
     "llvm20-gtest": {
       "origin": "llvm20",
       "versions": {
-        "20.1.2-r1": 1744877213
+        "20.1.2-r1": 1744877213,
+        "20.1.2-r2": 1745399727
       },
       "provides": [
-        "llvm-gtest=20.1.2-r1"
+        "llvm-gtest=20.1.2-r2"
       ]
     },
     "llvm20-libs": {
       "origin": "llvm20",
       "versions": {
-        "20.1.2-r1": 1744877213
+        "20.1.2-r1": 1744877213,
+        "20.1.2-r2": 1745399727
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
@@ -32537,7 +32672,8 @@
     "llvm20-linker-tools": {
       "origin": "llvm20",
       "versions": {
-        "20.1.2-r1": 1744877213
+        "20.1.2-r1": 1744877213,
+        "20.1.2-r2": 1745399727
       },
       "dependencies": [
         "so:libLLVM.so.20.1",
@@ -32546,22 +32682,24 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "llvm-linker-tools=20.1.2-r1"
+        "llvm-linker-tools=20.1.2-r2"
       ]
     },
     "llvm20-static": {
       "origin": "llvm20",
       "versions": {
-        "20.1.2-r1": 1744877213
+        "20.1.2-r1": 1744877213,
+        "20.1.2-r2": 1745399727
       },
       "provides": [
-        "llvm-static=20.1.2-r1"
+        "llvm-static=20.1.2-r2"
       ]
     },
     "llvm20-test-utils": {
       "origin": "llvm20",
       "versions": {
-        "20.1.2-r1": 1744877213
+        "20.1.2-r1": 1744877213,
+        "20.1.2-r2": 1745399727
       },
       "dependencies": [
         "python3",
@@ -32571,18 +32709,19 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "llvm-test-utils=20.1.2-r1",
-        "lit=20.1.0-r1",
-        "cmd:count=20.1.2-r1",
-        "cmd:lit=20.1.2-r1",
-        "cmd:not=20.1.2-r1",
-        "py3.12:lit=20.1.2-r1"
+        "llvm-test-utils=20.1.2-r2",
+        "lit=20.1.0-r2",
+        "cmd:count=20.1.2-r2",
+        "cmd:lit=20.1.2-r2",
+        "cmd:not=20.1.2-r2",
+        "py3.12:lit=20.1.2-r2"
       ]
     },
     "llvm20-test-utils-pyc": {
       "origin": "llvm20",
       "versions": {
-        "20.1.2-r1": 1744877213
+        "20.1.2-r1": 1744877213,
+        "20.1.2-r2": 1745399727
       },
       "dependencies": [
         "python3~3.12"
@@ -32839,13 +32978,14 @@
     "logger": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1"
       ],
       "provides": [
-        "cmd:logger=2.41-r4"
+        "cmd:logger=2.41-r5"
       ]
     },
     "logrotate": {
@@ -32899,20 +33039,22 @@
     "losetup": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
         "so:libsmartcols.so.1"
       ],
       "provides": [
-        "cmd:losetup=2.41-r4"
+        "cmd:losetup=2.41-r5"
       ]
     },
     "lsblk": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libblkid.so.1",
@@ -32922,20 +33064,21 @@
         "so:libsmartcols.so.1"
       ],
       "provides": [
-        "cmd:lsblk=2.41-r4"
+        "cmd:lsblk=2.41-r5"
       ]
     },
     "lscpu": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
         "so:libsmartcols.so.1"
       ],
       "provides": [
-        "cmd:lscpu=2.41-r4"
+        "cmd:lscpu=2.41-r5"
       ]
     },
     "lsof": {
@@ -37880,13 +38023,14 @@
     "mcookie": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1"
       ],
       "provides": [
-        "cmd:mcookie=2.41-r4"
+        "cmd:mcookie=2.41-r5"
       ]
     },
     "mdadm": {
@@ -38897,14 +39041,15 @@
     "mount": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
         "so:libmount.so.1"
       ],
       "provides": [
-        "cmd:mount=2.41-r4"
+        "cmd:mount=2.41-r5"
       ]
     },
     "mpc1": {
@@ -41143,7 +41288,8 @@
     "nftables": {
       "origin": "nftables",
       "versions": {
-        "1.1.2-r0": 1744996558
+        "1.1.2-r0": 1744996558,
+        "1.1.3-r0": 1745389069
       },
       "dependencies": [
         "/bin/sh",
@@ -41156,38 +41302,42 @@
       ],
       "provides": [
         "so:libnftables.so.1=1.1.0",
-        "cmd:nft=1.1.2-r0"
+        "cmd:nft=1.1.3-r0"
       ]
     },
     "nftables-dev": {
       "origin": "nftables",
       "versions": {
-        "1.1.2-r0": 1744996558
+        "1.1.2-r0": 1744996558,
+        "1.1.3-r0": 1745389069
       },
       "dependencies": [
-        "nftables=1.1.2-r0",
+        "nftables=1.1.3-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libnftables=1.1.2"
+        "pc:libnftables=1.1.3"
       ]
     },
     "nftables-doc": {
       "origin": "nftables",
       "versions": {
-        "1.1.2-r0": 1744996558
+        "1.1.2-r0": 1744996558,
+        "1.1.3-r0": 1745389069
       }
     },
     "nftables-openrc": {
       "origin": "nftables",
       "versions": {
-        "1.1.2-r0": 1744996558
+        "1.1.2-r0": 1744996558,
+        "1.1.3-r0": 1745389069
       }
     },
     "nftables-static": {
       "origin": "nftables",
       "versions": {
-        "1.1.2-r0": 1744996558
+        "1.1.2-r0": 1744996558,
+        "1.1.3-r0": 1745389069
       }
     },
     "nghttp2": {
@@ -44811,7 +44961,8 @@
     "partx": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libblkid.so.1",
@@ -44819,7 +44970,7 @@
         "so:libsmartcols.so.1"
       ],
       "provides": [
-        "cmd:partx=2.41-r4"
+        "cmd:partx=2.41-r5"
       ]
     },
     "patch": {
@@ -51433,7 +51584,8 @@
     "pjproject": {
       "origin": "pjproject",
       "versions": {
-        "2.14.1-r4": 1734512615
+        "2.14.1-r4": 1734512615,
+        "2.15.1-r0": 1745399825
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
@@ -51450,38 +51602,40 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libg7221codec.so.2.14.1=2.14.1",
-        "so:libilbccodec.so.2.14.1=2.14.1",
-        "so:libpj.so.2.14.1=2.14.1",
-        "so:libpjlib-util.so.2.14.1=2.14.1",
-        "so:libpjmedia-audiodev.so.2.14.1=2.14.1",
-        "so:libpjmedia-codec.so.2.14.1=2.14.1",
-        "so:libpjmedia-videodev.so.2.14.1=2.14.1",
-        "so:libpjmedia.so.2.14.1=2.14.1",
-        "so:libpjnath.so.2.14.1=2.14.1",
-        "so:libpjsip-simple.so.2.14.1=2.14.1",
-        "so:libpjsip-ua.so.2.14.1=2.14.1",
-        "so:libpjsip.so.2.14.1=2.14.1",
-        "so:libpjsua.so.2.14.1=2.14.1",
-        "so:libpjsua2.so.2.14.1=2.14.1"
+        "so:libg7221codec.so.2.15.1=2.15.1",
+        "so:libilbccodec.so.2.15.1=2.15.1",
+        "so:libpj.so.2.15.1=2.15.1",
+        "so:libpjlib-util.so.2.15.1=2.15.1",
+        "so:libpjmedia-audiodev.so.2.15.1=2.15.1",
+        "so:libpjmedia-codec.so.2.15.1=2.15.1",
+        "so:libpjmedia-videodev.so.2.15.1=2.15.1",
+        "so:libpjmedia.so.2.15.1=2.15.1",
+        "so:libpjnath.so.2.15.1=2.15.1",
+        "so:libpjsip-simple.so.2.15.1=2.15.1",
+        "so:libpjsip-ua.so.2.15.1=2.15.1",
+        "so:libpjsip.so.2.15.1=2.15.1",
+        "so:libpjsua.so.2.15.1=2.15.1",
+        "so:libpjsua2.so.2.15.1=2.15.1"
       ]
     },
     "pjproject-dbg": {
       "origin": "pjproject",
       "versions": {
-        "2.14.1-r4": 1734512615
+        "2.14.1-r4": 1734512615,
+        "2.15.1-r0": 1745399825
       },
       "dependencies": [
-        "!pjproject<2.14.1-r4",
-        "!pjproject>2.14.1-r4",
-        "!py3-pjsua<2.14.1-r4",
-        "!py3-pjsua>2.14.1-r4"
+        "!pjproject<2.15.1-r0",
+        "!pjproject>2.15.1-r0",
+        "!py3-pjsua<2.15.1-r0",
+        "!py3-pjsua>2.15.1-r0"
       ]
     },
     "pjproject-dev": {
       "origin": "pjproject",
       "versions": {
-        "2.14.1-r4": 1734512615
+        "2.14.1-r4": 1734512615,
+        "2.15.1-r0": 1745399825
       },
       "dependencies": [
         "openssl-dev>3",
@@ -51493,29 +51647,30 @@
         "opus-dev",
         "libsrtp-dev",
         "libsamplerate-dev",
-        "pjproject=2.14.1-r4",
+        "pjproject=2.15.1-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libpjproject=2.14.1"
+        "pc:libpjproject=2.15.1"
       ]
     },
     "pjsua": {
       "origin": "pjproject",
       "versions": {
-        "2.14.1-r4": 1734512615
+        "2.14.1-r4": 1734512615,
+        "2.15.1-r0": 1745399825
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
-        "so:libpj.so.2.14.1",
-        "so:libpjlib-util.so.2.14.1",
-        "so:libpjmedia.so.2.14.1",
-        "so:libpjsip-simple.so.2.14.1",
-        "so:libpjsip.so.2.14.1",
-        "so:libpjsua.so.2.14.1"
+        "so:libpj.so.2.15.1",
+        "so:libpjlib-util.so.2.15.1",
+        "so:libpjmedia.so.2.15.1",
+        "so:libpjsip-simple.so.2.15.1",
+        "so:libpjsip.so.2.15.1",
+        "so:libpjsua.so.2.15.1"
       ],
       "provides": [
-        "cmd:pjsua=2.14.1-r4"
+        "cmd:pjsua=2.15.1-r0"
       ]
     },
     "pkgconf": {
@@ -54111,7 +54266,8 @@
     "py3-libmount": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "python3~3.12",
@@ -54123,7 +54279,7 @@
         "so:libutmps.so.0.1"
       ],
       "provides": [
-        "py3.12:libmount=2.41-r4"
+        "py3.12:libmount=2.41-r5"
       ]
     },
     "py3-libseccomp": {
@@ -54406,20 +54562,22 @@
     "py3-nftables": {
       "origin": "nftables",
       "versions": {
-        "1.1.2-r0": 1744996558
+        "1.1.2-r0": 1744996558,
+        "1.1.3-r0": 1745389069
       },
       "dependencies": [
-        "nftables=1.1.2-r0",
+        "nftables=1.1.3-r0",
         "python3~3.12"
       ],
       "provides": [
-        "py3.12:nftables=1.1.2-r0"
+        "py3.12:nftables=1.1.3-r0"
       ]
     },
     "py3-nftables-pyc": {
       "origin": "nftables",
       "versions": {
-        "1.1.2-r0": 1744996558
+        "1.1.2-r0": 1744996558,
+        "1.1.3-r0": 1745389069
       },
       "dependencies": [
         "python3~3.12"
@@ -54619,20 +54777,22 @@
     "py3-pjsua": {
       "origin": "pjproject",
       "versions": {
-        "2.14.1-r4": 1734512615
+        "2.14.1-r4": 1734512615,
+        "2.15.1-r0": 1745399825
       },
       "dependencies": [
         "python3~3.12",
         "so:libc.musl-loongarch64.so.1",
         "so:libgcc_s.so.1",
-        "so:libpjsua2.so.2.14.1",
+        "so:libpjsua2.so.2.15.1",
         "so:libstdc++.so.6"
       ]
     },
     "py3-pjsua-pyc": {
       "origin": "pjproject",
       "versions": {
-        "2.14.1-r4": 1734512615
+        "2.14.1-r4": 1734512615,
+        "2.15.1-r0": 1745399825
       },
       "dependencies": [
         "python3~3.12"
@@ -57976,7 +58136,8 @@
     "runuser": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
@@ -57986,7 +58147,7 @@
         "so:libutmps.so.0.1"
       ],
       "provides": [
-        "cmd:runuser=2.41-r4"
+        "cmd:runuser=2.41-r5"
       ]
     },
     "rust": {
@@ -60302,26 +60463,28 @@
     "setarch": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1"
       ],
       "provides": [
-        "cmd:setarch=2.41-r4"
+        "cmd:setarch=2.41-r5"
       ]
     },
     "setpriv": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
         "so:libcap-ng.so.0"
       ],
       "provides": [
-        "cmd:setpriv=2.41-r4"
+        "cmd:setpriv=2.41-r5"
       ]
     },
     "setup-box": {
@@ -60364,7 +60527,8 @@
     "sfdisk": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
@@ -60373,7 +60537,7 @@
         "so:libsmartcols.so.1"
       ],
       "provides": [
-        "cmd:sfdisk=2.41-r4"
+        "cmd:sfdisk=2.41-r5"
       ]
     },
     "sfic": {
@@ -64438,14 +64602,15 @@
     "umount": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
         "so:libmount.so.1"
       ],
       "provides": [
-        "cmd:umount=2.41-r4"
+        "cmd:umount=2.41-r5"
       ]
     },
     "unbound": {
@@ -64837,27 +65002,30 @@
     "util-linux": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       }
     },
     "util-linux-bash-completion": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       }
     },
     "util-linux-dev": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
-        "libblkid=2.41-r4",
-        "libfdisk=2.41-r4",
-        "liblastlog2=2.41-r4",
-        "libmount=2.41-r4",
-        "libsmartcols=2.41-r4",
-        "libuuid=2.41-r4",
+        "libblkid=2.41-r5",
+        "libfdisk=2.41-r5",
+        "liblastlog2=2.41-r5",
+        "libmount=2.41-r5",
+        "libsmartcols=2.41-r5",
+        "libuuid=2.41-r5",
         "pc:sqlite3",
         "pkgconfig"
       ],
@@ -64873,16 +65041,18 @@
     "util-linux-doc": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       }
     },
     "util-linux-login": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
-        "runuser=2.41-r4",
+        "runuser=2.41-r5",
         "so:libc.musl-loongarch64.so.1",
         "so:libeconf.so.0",
         "so:liblastlog2.so.2",
@@ -64893,21 +65063,22 @@
       ],
       "provides": [
         "login-utils",
-        "cmd:last=2.41-r4",
-        "cmd:lastb=2.41-r4",
-        "cmd:lastlog2=2.41-r4",
-        "cmd:login=2.41-r4",
-        "cmd:lslogins=2.41-r4",
-        "cmd:newgrp=2.41-r4",
-        "cmd:nologin=2.41-r4",
-        "cmd:su=2.41-r4",
-        "cmd:sulogin=2.41-r4"
+        "cmd:last=2.41-r5",
+        "cmd:lastb=2.41-r5",
+        "cmd:lastlog2=2.41-r5",
+        "cmd:login=2.41-r5",
+        "cmd:lslogins=2.41-r5",
+        "cmd:newgrp=2.41-r5",
+        "cmd:nologin=2.41-r5",
+        "cmd:su=2.41-r5",
+        "cmd:sulogin=2.41-r5"
       ]
     },
     "util-linux-login-doc": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "!shadow-login-doc"
@@ -64916,11 +65087,12 @@
     "util-linux-misc": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "/bin/sh",
-        "setarch=2.41-r4",
+        "setarch=2.41-r5",
         "so:libblkid.so.1",
         "so:libc.musl-loongarch64.so.1",
         "so:libfdisk.so.1",
@@ -64932,109 +65104,111 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:addpart=2.41-r4",
-        "cmd:bits=2.41-r4",
-        "cmd:blkdiscard=2.41-r4",
-        "cmd:blkpr=2.41-r4",
-        "cmd:blkzone=2.41-r4",
-        "cmd:blockdev=2.41-r4",
-        "cmd:cal=2.41-r4",
-        "cmd:chcpu=2.41-r4",
-        "cmd:chmem=2.41-r4",
-        "cmd:choom=2.41-r4",
-        "cmd:chrt=2.41-r4",
-        "cmd:colcrt=2.41-r4",
-        "cmd:colrm=2.41-r4",
-        "cmd:column=2.41-r4",
-        "cmd:coresched=2.41-r4",
-        "cmd:ctrlaltdel=2.41-r4",
-        "cmd:delpart=2.41-r4",
-        "cmd:eject=2.41-r4",
-        "cmd:enosys=2.41-r4",
-        "cmd:exch=2.41-r4",
-        "cmd:fadvise=2.41-r4",
-        "cmd:fallocate=2.41-r4",
-        "cmd:fdisk=2.41-r4",
-        "cmd:fincore=2.41-r4",
-        "cmd:findfs=2.41-r4",
-        "cmd:fsck.cramfs=2.41-r4",
-        "cmd:fsck.minix=2.41-r4",
-        "cmd:fsck=2.41-r4",
-        "cmd:fsfreeze=2.41-r4",
-        "cmd:getopt=2.41-r4",
-        "cmd:hardlink=2.41-r4",
-        "cmd:hwclock=2.41-r4",
-        "cmd:ionice=2.41-r4",
-        "cmd:ipcmk=2.41-r4",
-        "cmd:ipcrm=2.41-r4",
-        "cmd:ipcs=2.41-r4",
-        "cmd:irqtop=2.41-r4",
-        "cmd:isosize=2.41-r4",
-        "cmd:ldattach=2.41-r4",
-        "cmd:linux32=2.41-r4",
-        "cmd:linux64=2.41-r4",
-        "cmd:look=2.41-r4",
-        "cmd:lsclocks=2.41-r4",
-        "cmd:lsfd=2.41-r4",
-        "cmd:lsipc=2.41-r4",
-        "cmd:lsirq=2.41-r4",
-        "cmd:lslocks=2.41-r4",
-        "cmd:lsmem=2.41-r4",
-        "cmd:lsns=2.41-r4",
-        "cmd:mesg=2.41-r4",
-        "cmd:mkfs.bfs=2.41-r4",
-        "cmd:mkfs.cramfs=2.41-r4",
-        "cmd:mkfs.minix=2.41-r4",
-        "cmd:mkfs=2.41-r4",
-        "cmd:mkswap=2.41-r4",
-        "cmd:more=2.41-r4",
-        "cmd:mountpoint=2.41-r4",
-        "cmd:namei=2.41-r4",
-        "cmd:nsenter=2.41-r4",
-        "cmd:pipesz=2.41-r4",
-        "cmd:pivot_root=2.41-r4",
-        "cmd:prlimit=2.41-r4",
-        "cmd:readprofile=2.41-r4",
-        "cmd:rename=2.41-r4",
-        "cmd:renice=2.41-r4",
-        "cmd:resizepart=2.41-r4",
-        "cmd:rev=2.41-r4",
-        "cmd:rfkill=2.41-r4",
-        "cmd:rtcwake=2.41-r4",
-        "cmd:script=2.41-r4",
-        "cmd:scriptlive=2.41-r4",
-        "cmd:scriptreplay=2.41-r4",
-        "cmd:setpgid=2.41-r4",
-        "cmd:setsid=2.41-r4",
-        "cmd:setterm=2.41-r4",
-        "cmd:swaplabel=2.41-r4",
-        "cmd:swapoff=2.41-r4",
-        "cmd:swapon=2.41-r4",
-        "cmd:switch_root=2.41-r4",
-        "cmd:taskset=2.41-r4",
-        "cmd:uclampset=2.41-r4",
-        "cmd:ul=2.41-r4",
-        "cmd:uname26=2.41-r4",
-        "cmd:unshare=2.41-r4",
-        "cmd:utmpdump=2.41-r4",
-        "cmd:uuidparse=2.41-r4",
-        "cmd:waitpid=2.41-r4",
-        "cmd:wall=2.41-r4",
-        "cmd:wdctl=2.41-r4",
-        "cmd:whereis=2.41-r4",
-        "cmd:zramctl=2.41-r4"
+        "cmd:addpart=2.41-r5",
+        "cmd:bits=2.41-r5",
+        "cmd:blkdiscard=2.41-r5",
+        "cmd:blkpr=2.41-r5",
+        "cmd:blkzone=2.41-r5",
+        "cmd:blockdev=2.41-r5",
+        "cmd:cal=2.41-r5",
+        "cmd:chcpu=2.41-r5",
+        "cmd:chmem=2.41-r5",
+        "cmd:choom=2.41-r5",
+        "cmd:chrt=2.41-r5",
+        "cmd:colcrt=2.41-r5",
+        "cmd:colrm=2.41-r5",
+        "cmd:column=2.41-r5",
+        "cmd:coresched=2.41-r5",
+        "cmd:ctrlaltdel=2.41-r5",
+        "cmd:delpart=2.41-r5",
+        "cmd:eject=2.41-r5",
+        "cmd:enosys=2.41-r5",
+        "cmd:exch=2.41-r5",
+        "cmd:fadvise=2.41-r5",
+        "cmd:fallocate=2.41-r5",
+        "cmd:fdisk=2.41-r5",
+        "cmd:fincore=2.41-r5",
+        "cmd:findfs=2.41-r5",
+        "cmd:fsck.cramfs=2.41-r5",
+        "cmd:fsck.minix=2.41-r5",
+        "cmd:fsck=2.41-r5",
+        "cmd:fsfreeze=2.41-r5",
+        "cmd:getopt=2.41-r5",
+        "cmd:hardlink=2.41-r5",
+        "cmd:hwclock=2.41-r5",
+        "cmd:ionice=2.41-r5",
+        "cmd:ipcmk=2.41-r5",
+        "cmd:ipcrm=2.41-r5",
+        "cmd:ipcs=2.41-r5",
+        "cmd:irqtop=2.41-r5",
+        "cmd:isosize=2.41-r5",
+        "cmd:ldattach=2.41-r5",
+        "cmd:linux32=2.41-r5",
+        "cmd:linux64=2.41-r5",
+        "cmd:look=2.41-r5",
+        "cmd:lsclocks=2.41-r5",
+        "cmd:lsfd=2.41-r5",
+        "cmd:lsipc=2.41-r5",
+        "cmd:lsirq=2.41-r5",
+        "cmd:lslocks=2.41-r5",
+        "cmd:lsmem=2.41-r5",
+        "cmd:lsns=2.41-r5",
+        "cmd:mesg=2.41-r5",
+        "cmd:mkfs.bfs=2.41-r5",
+        "cmd:mkfs.cramfs=2.41-r5",
+        "cmd:mkfs.minix=2.41-r5",
+        "cmd:mkfs=2.41-r5",
+        "cmd:mkswap=2.41-r5",
+        "cmd:more=2.41-r5",
+        "cmd:mountpoint=2.41-r5",
+        "cmd:namei=2.41-r5",
+        "cmd:nsenter=2.41-r5",
+        "cmd:pipesz=2.41-r5",
+        "cmd:pivot_root=2.41-r5",
+        "cmd:prlimit=2.41-r5",
+        "cmd:readprofile=2.41-r5",
+        "cmd:rename=2.41-r5",
+        "cmd:renice=2.41-r5",
+        "cmd:resizepart=2.41-r5",
+        "cmd:rev=2.41-r5",
+        "cmd:rfkill=2.41-r5",
+        "cmd:rtcwake=2.41-r5",
+        "cmd:script=2.41-r5",
+        "cmd:scriptlive=2.41-r5",
+        "cmd:scriptreplay=2.41-r5",
+        "cmd:setpgid=2.41-r5",
+        "cmd:setsid=2.41-r5",
+        "cmd:setterm=2.41-r5",
+        "cmd:swaplabel=2.41-r5",
+        "cmd:swapoff=2.41-r5",
+        "cmd:swapon=2.41-r5",
+        "cmd:switch_root=2.41-r5",
+        "cmd:taskset=2.41-r5",
+        "cmd:uclampset=2.41-r5",
+        "cmd:ul=2.41-r5",
+        "cmd:uname26=2.41-r5",
+        "cmd:unshare=2.41-r5",
+        "cmd:utmpdump=2.41-r5",
+        "cmd:uuidparse=2.41-r5",
+        "cmd:waitpid=2.41-r5",
+        "cmd:wall=2.41-r5",
+        "cmd:wdctl=2.41-r5",
+        "cmd:whereis=2.41-r5",
+        "cmd:zramctl=2.41-r5"
       ]
     },
     "util-linux-openrc": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       }
     },
     "util-linux-static": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       }
     },
     "util-macros": {
@@ -65118,14 +65292,15 @@
     "uuidgen": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
         "so:libuuid.so.1"
       ],
       "provides": [
-        "cmd:uuidgen=2.41-r4"
+        "cmd:uuidgen=2.41-r5"
       ]
     },
     "uvncrepeater": {
@@ -66584,7 +66759,8 @@
     "wipefs": {
       "origin": "util-linux",
       "versions": {
-        "2.41-r4": 1744968746
+        "2.41-r4": 1744968746,
+        "2.41-r5": 1745400141
       },
       "dependencies": [
         "so:libblkid.so.1",
@@ -66592,7 +66768,7 @@
         "so:libsmartcols.so.1"
       ],
       "provides": [
-        "cmd:wipefs=2.41-r4"
+        "cmd:wipefs=2.41-r5"
       ]
     },
     "wireguard-tools": {
@@ -68746,31 +68922,31 @@
       },
       "lit": {
         "package": "llvm20-test-utils",
-        "version": "20.1.0-r1"
+        "version": "20.1.0-r2"
       },
       "llvm": {
         "package": "llvm20",
-        "version": "20.1.2-r1"
+        "version": "20.1.2-r2"
       },
       "llvm-dev": {
         "package": "llvm20-dev",
-        "version": "20.1.2-r1"
+        "version": "20.1.2-r2"
       },
       "llvm-gtest": {
         "package": "llvm20-gtest",
-        "version": "20.1.2-r1"
+        "version": "20.1.2-r2"
       },
       "llvm-linker-tools": {
         "package": "llvm20-linker-tools",
-        "version": "20.1.2-r1"
+        "version": "20.1.2-r2"
       },
       "llvm-static": {
         "package": "llvm20-static",
-        "version": "20.1.2-r1"
+        "version": "20.1.2-r2"
       },
       "llvm-test-utils": {
         "package": "llvm20-test-utils",
-        "version": "20.1.2-r1"
+        "version": "20.1.2-r2"
       },
       "lm_sensors": {
         "package": "lm-sensors",
@@ -75641,6 +75817,62 @@
       "libruby.so.3.4": {
         "package": "ruby-libs",
         "version": "3.4.3"
+      },
+      "libg7221codec.so.2.15.1": {
+        "package": "pjproject",
+        "version": "2.15.1"
+      },
+      "libilbccodec.so.2.15.1": {
+        "package": "pjproject",
+        "version": "2.15.1"
+      },
+      "libpj.so.2.15.1": {
+        "package": "pjproject",
+        "version": "2.15.1"
+      },
+      "libpjlib-util.so.2.15.1": {
+        "package": "pjproject",
+        "version": "2.15.1"
+      },
+      "libpjmedia-audiodev.so.2.15.1": {
+        "package": "pjproject",
+        "version": "2.15.1"
+      },
+      "libpjmedia-codec.so.2.15.1": {
+        "package": "pjproject",
+        "version": "2.15.1"
+      },
+      "libpjmedia-videodev.so.2.15.1": {
+        "package": "pjproject",
+        "version": "2.15.1"
+      },
+      "libpjmedia.so.2.15.1": {
+        "package": "pjproject",
+        "version": "2.15.1"
+      },
+      "libpjnath.so.2.15.1": {
+        "package": "pjproject",
+        "version": "2.15.1"
+      },
+      "libpjsip-simple.so.2.15.1": {
+        "package": "pjproject",
+        "version": "2.15.1"
+      },
+      "libpjsip-ua.so.2.15.1": {
+        "package": "pjproject",
+        "version": "2.15.1"
+      },
+      "libpjsip.so.2.15.1": {
+        "package": "pjproject",
+        "version": "2.15.1"
+      },
+      "libpjsua.so.2.15.1": {
+        "package": "pjproject",
+        "version": "2.15.1"
+      },
+      "libpjsua2.so.2.15.1": {
+        "package": "pjproject",
+        "version": "2.15.1"
       }
     }
   }
