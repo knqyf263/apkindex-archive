@@ -41414,66 +41414,74 @@
     "nfdump": {
       "origin": "nfdump",
       "versions": {
-        "1.7.4-r0": 1724397688
+        "1.7.4-r0": 1724397688,
+        "1.7.5-r0": 1746438684
       },
       "dependencies": [
         "so:libbz2.so.1",
         "so:libc.musl-x86_64.so.1"
       ],
       "provides": [
-        "so:libnfdump-1.7.4.so=0",
-        "cmd:nfanon=1.7.4-r0",
-        "cmd:nfcapd=1.7.4-r0",
-        "cmd:nfdump=1.7.4-r0",
-        "cmd:nfexpire=1.7.4-r0",
-        "cmd:nfreplay=1.7.4-r0"
+        "so:libnfdump-1.7.5.so=0",
+        "so:libnffile-1.7.5.so=0",
+        "cmd:nfanon=1.7.5-r0",
+        "cmd:nfcapd=1.7.5-r0",
+        "cmd:nfdump=1.7.5-r0",
+        "cmd:nfexpire=1.7.5-r0",
+        "cmd:nfreplay=1.7.5-r0"
       ]
     },
     "nfdump-dbg": {
       "origin": "nfdump",
       "versions": {
-        "1.7.4-r0": 1724397688
+        "1.7.4-r0": 1724397688,
+        "1.7.5-r0": 1746438684
       },
       "dependencies": [
-        "!nfdump<1.7.4-r0",
-        "!nfdump>1.7.4-r0",
-        "!nfprofile<1.7.4-r0",
-        "!nfprofile>1.7.4-r0",
-        "!sfcapd<1.7.4-r0",
-        "!sfcapd>1.7.4-r0"
+        "!nfdump<1.7.5-r0",
+        "!nfdump>1.7.5-r0",
+        "!nfprofile<1.7.5-r0",
+        "!nfprofile>1.7.5-r0",
+        "!sfcapd<1.7.5-r0",
+        "!sfcapd>1.7.5-r0"
       ]
     },
     "nfdump-doc": {
       "origin": "nfdump",
       "versions": {
-        "1.7.4-r0": 1724397688
+        "1.7.4-r0": 1724397688,
+        "1.7.5-r0": 1746438684
       }
     },
     "nfdump-openrc": {
       "origin": "nfdump",
       "versions": {
-        "1.7.4-r0": 1724397688
+        "1.7.4-r0": 1724397688,
+        "1.7.5-r0": 1746438684
       }
     },
     "nfdump-static": {
       "origin": "nfdump",
       "versions": {
-        "1.7.4-r0": 1724397688
+        "1.7.4-r0": 1724397688,
+        "1.7.5-r0": 1746438684
       }
     },
     "nfprofile": {
       "origin": "nfdump",
       "versions": {
-        "1.7.4-r0": 1724397688
+        "1.7.4-r0": 1724397688,
+        "1.7.5-r0": 1746438684
       },
       "dependencies": [
-        "nfdump=1.7.4-r0",
+        "nfdump=1.7.5-r0",
         "so:libc.musl-x86_64.so.1",
-        "so:libnfdump-1.7.4.so",
+        "so:libnfdump-1.7.5.so",
+        "so:libnffile-1.7.5.so",
         "so:librrd.so.8"
       ],
       "provides": [
-        "cmd:nfprofile=1.7.4-r0"
+        "cmd:nfprofile=1.7.5-r0"
       ]
     },
     "nfs-utils": {
@@ -55227,7 +55235,8 @@
     "py3-pyzfs": {
       "origin": "zfs",
       "versions": {
-        "2.3.1-r0": 1745238368
+        "2.3.1-r0": 1745238368,
+        "2.3.2-r0": 1746439948
       },
       "dependencies": [
         "python3",
@@ -55235,13 +55244,14 @@
         "python3~3.12"
       ],
       "provides": [
-        "py3.12:libzfs_core=2.3.1-r0"
+        "py3.12:libzfs_core=2.3.2-r0"
       ]
     },
     "py3-pyzfs-pyc": {
       "origin": "zfs",
       "versions": {
-        "2.3.1-r0": 1745238368
+        "2.3.1-r0": 1745238368,
+        "2.3.2-r0": 1746439948
       },
       "dependencies": [
         "python3~3.12"
@@ -60958,20 +60968,22 @@
     "sfcapd": {
       "origin": "nfdump",
       "versions": {
-        "1.7.4-r0": 1724397688
+        "1.7.4-r0": 1724397688,
+        "1.7.5-r0": 1746438684
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
-        "so:libnfdump-1.7.4.so"
+        "so:libnffile-1.7.5.so"
       ],
       "provides": [
-        "cmd:sfcapd=1.7.4-r0"
+        "cmd:sfcapd=1.7.5-r0"
       ]
     },
     "sfcapd-openrc": {
       "origin": "nfdump",
       "versions": {
-        "1.7.4-r0": 1724397688
+        "1.7.4-r0": 1724397688,
+        "1.7.5-r0": 1746438684
       }
     },
     "sfdisk": {
@@ -68615,7 +68627,8 @@
     "zfs": {
       "origin": "zfs",
       "versions": {
-        "2.3.1-r0": 1745238368
+        "2.3.1-r0": 1745238368,
+        "2.3.2-r0": 1746439948
       },
       "dependencies": [
         "so:libblkid.so.1",
@@ -68630,34 +68643,36 @@
         "so:libzpool.so.6"
       ],
       "provides": [
-        "spl=2.3.1-r0",
-        "cmd:fsck.zfs=2.3.1-r0",
-        "cmd:mount.zfs=2.3.1-r0",
-        "cmd:raidz_test=2.3.1-r0",
-        "cmd:zdb=2.3.1-r0",
-        "cmd:zed=2.3.1-r0",
-        "cmd:zfs=2.3.1-r0",
-        "cmd:zfs_ids_to_path=2.3.1-r0",
-        "cmd:zgenhostid=2.3.1-r0",
-        "cmd:zhack=2.3.1-r0",
-        "cmd:zinject=2.3.1-r0",
-        "cmd:zpool=2.3.1-r0",
-        "cmd:zstream=2.3.1-r0",
-        "cmd:zstreamdump=2.3.1-r0",
-        "cmd:ztest=2.3.1-r0",
-        "cmd:zvol_wait=2.3.1-r0"
+        "spl=2.3.2-r0",
+        "cmd:fsck.zfs=2.3.2-r0",
+        "cmd:mount.zfs=2.3.2-r0",
+        "cmd:raidz_test=2.3.2-r0",
+        "cmd:zdb=2.3.2-r0",
+        "cmd:zed=2.3.2-r0",
+        "cmd:zfs=2.3.2-r0",
+        "cmd:zfs_ids_to_path=2.3.2-r0",
+        "cmd:zgenhostid=2.3.2-r0",
+        "cmd:zhack=2.3.2-r0",
+        "cmd:zinject=2.3.2-r0",
+        "cmd:zpool=2.3.2-r0",
+        "cmd:zstream=2.3.2-r0",
+        "cmd:zstreamdump=2.3.2-r0",
+        "cmd:ztest=2.3.2-r0",
+        "cmd:zvol_wait=2.3.2-r0"
       ]
     },
     "zfs-bash-completion": {
       "origin": "zfs",
       "versions": {
-        "2.3.1-r0": 1745238368
+        "2.3.1-r0": 1745238368,
+        "2.3.2-r0": 1746439948
       }
     },
     "zfs-dev": {
       "origin": "zfs",
       "versions": {
-        "2.3.1-r0": 1745238368
+        "2.3.1-r0": 1745238368,
+        "2.3.2-r0": 1746439948
       },
       "dependencies": [
         "attr-dev",
@@ -68671,30 +68686,33 @@
         "pc:uuid",
         "pc:zlib",
         "pkgconfig",
-        "zfs-libs=2.3.1-r0"
+        "zfs-libs=2.3.2-r0"
       ],
       "provides": [
-        "pc:libzfs=2.3.1",
-        "pc:libzfs_core=2.3.1",
-        "pc:libzfsbootenv=2.3.1"
+        "pc:libzfs=2.3.2",
+        "pc:libzfs_core=2.3.2",
+        "pc:libzfsbootenv=2.3.2"
       ]
     },
     "zfs-doc": {
       "origin": "zfs",
       "versions": {
-        "2.3.1-r0": 1745238368
+        "2.3.1-r0": 1745238368,
+        "2.3.2-r0": 1746439948
       }
     },
     "zfs-dracut": {
       "origin": "zfs",
       "versions": {
-        "2.3.1-r0": 1745238368
+        "2.3.1-r0": 1745238368,
+        "2.3.2-r0": 1746439948
       }
     },
     "zfs-libs": {
       "origin": "zfs",
       "versions": {
-        "2.3.1-r0": 1745238368
+        "2.3.1-r0": 1745238368,
+        "2.3.2-r0": 1746439948
       },
       "dependencies": [
         "so:libblkid.so.1",
@@ -68720,13 +68738,14 @@
         "6.12.24-r1": 1745238368,
         "6.12.25-r0": 1745584160,
         "6.12.26-r0": 1746171347,
-        "6.12.26-r1": 1746186966
+        "6.12.26-r1": 1746186966,
+        "6.12.26-r2": 1746439948
       },
       "dependencies": [
         "linux-lts=6.12.26-r1"
       ],
       "provides": [
-        "spl-vanilla=6.12.26-r1"
+        "spl-vanilla=6.12.26-r2"
       ]
     },
     "zfs-lts-dev": {
@@ -68735,7 +68754,8 @@
         "6.12.24-r1": 1745238368,
         "6.12.25-r0": 1745584160,
         "6.12.26-r0": 1746171347,
-        "6.12.26-r1": 1746186966
+        "6.12.26-r1": 1746186966,
+        "6.12.26-r2": 1746439948
       },
       "dependencies": [
         "glib-dev",
@@ -68748,13 +68768,15 @@
     "zfs-openrc": {
       "origin": "zfs",
       "versions": {
-        "2.3.1-r0": 1745238368
+        "2.3.1-r0": 1745238368,
+        "2.3.2-r0": 1746439948
       }
     },
     "zfs-scripts": {
       "origin": "zfs",
       "versions": {
-        "2.3.1-r0": 1745238368
+        "2.3.1-r0": 1745238368,
+        "2.3.2-r0": 1746439948
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
@@ -68769,7 +68791,8 @@
     "zfs-udev": {
       "origin": "zfs",
       "versions": {
-        "2.3.1-r0": 1745238368
+        "2.3.1-r0": 1745238368,
+        "2.3.2-r0": 1746439948
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1"
@@ -68778,16 +68801,17 @@
     "zfs-utils-py": {
       "origin": "zfs",
       "versions": {
-        "2.3.1-r0": 1745238368
+        "2.3.1-r0": 1745238368,
+        "2.3.2-r0": 1746439948
       },
       "dependencies": [
         "python3"
       ],
       "provides": [
-        "cmd:arc_summary=2.3.1-r0",
-        "cmd:arcstat=2.3.1-r0",
-        "cmd:dbufstat=2.3.1-r0",
-        "cmd:zilstat=2.3.1-r0"
+        "cmd:arc_summary=2.3.2-r0",
+        "cmd:arcstat=2.3.2-r0",
+        "cmd:dbufstat=2.3.2-r0",
+        "cmd:zilstat=2.3.2-r0"
       ]
     },
     "zfs-virt": {
@@ -68796,7 +68820,8 @@
         "6.12.24-r1": 1745238368,
         "6.12.25-r0": 1745584160,
         "6.12.26-r0": 1746171347,
-        "6.12.26-r1": 1746186966
+        "6.12.26-r1": 1746186966,
+        "6.12.26-r2": 1746439948
       },
       "dependencies": [
         "linux-virt=6.12.26-r1"
@@ -70393,11 +70418,11 @@
       },
       "spl": {
         "package": "zfs",
-        "version": "2.3.1-r0"
+        "version": "2.3.2-r0"
       },
       "spl-vanilla": {
         "package": "zfs-lts",
-        "version": "6.12.26-r1"
+        "version": "6.12.26-r2"
       }
     },
     "so": {
@@ -76920,6 +76945,14 @@
       "libsimdutf.so.21": {
         "package": "simdutf",
         "version": "21.0.0"
+      },
+      "libnfdump-1.7.5.so": {
+        "package": "nfdump",
+        "version": "0"
+      },
+      "libnffile-1.7.5.so": {
+        "package": "nfdump",
+        "version": "0"
       }
     }
   }
