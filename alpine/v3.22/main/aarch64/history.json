@@ -67226,7 +67226,8 @@
     "vulkan-tools": {
       "origin": "vulkan-tools",
       "versions": {
-        "1.4.304.1-r1": 1740667007
+        "1.4.304.1-r1": 1740667007,
+        "1.4.304.1-r2": 1746453686
       },
       "dependencies": [
         "so:libX11.so.6",
@@ -67237,9 +67238,9 @@
         "so:libxcb.so.1"
       ],
       "provides": [
-        "cmd:vkcube=1.4.304.1-r1",
-        "cmd:vkcubepp=1.4.304.1-r1",
-        "cmd:vulkaninfo=1.4.304.1-r1"
+        "cmd:vkcube=1.4.304.1-r2",
+        "cmd:vkcubepp=1.4.304.1-r2",
+        "cmd:vulkaninfo=1.4.304.1-r2"
       ]
     },
     "wasi-compiler-rt": {
@@ -69266,6 +69267,16 @@
       "dependencies": [
         "rust=1.86.0-r2",
         "lld"
+      ]
+    },
+    "vulkan-tools-dbg": {
+      "origin": "vulkan-tools",
+      "versions": {
+        "1.4.304.1-r2": 1746453686
+      },
+      "dependencies": [
+        "!vulkan-tools<1.4.304.1-r2",
+        "!vulkan-tools>1.4.304.1-r2"
       ]
     }
   },
