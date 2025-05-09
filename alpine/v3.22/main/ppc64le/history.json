@@ -28368,7 +28368,8 @@
     "libuv": {
       "origin": "libuv",
       "versions": {
-        "1.50.0-r0": 1737742917
+        "1.50.0-r0": 1737742917,
+        "1.51.0-r0": 1746777648
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1"
@@ -28380,30 +28381,33 @@
     "libuv-dbg": {
       "origin": "libuv",
       "versions": {
-        "1.50.0-r0": 1737742917
+        "1.50.0-r0": 1737742917,
+        "1.51.0-r0": 1746777648
       },
       "dependencies": [
-        "!libuv<1.50.0-r0",
-        "!libuv>1.50.0-r0"
+        "!libuv<1.51.0-r0",
+        "!libuv>1.51.0-r0"
       ]
     },
     "libuv-dev": {
       "origin": "libuv",
       "versions": {
-        "1.50.0-r0": 1737742917
+        "1.50.0-r0": 1737742917,
+        "1.51.0-r0": 1746777648
       },
       "dependencies": [
-        "libuv=1.50.0-r0",
+        "libuv=1.51.0-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libuv=1.50.0"
+        "pc:libuv=1.51.0"
       ]
     },
     "libuv-static": {
       "origin": "libuv",
       "versions": {
-        "1.50.0-r0": 1737742917
+        "1.50.0-r0": 1737742917,
+        "1.51.0-r0": 1746777648
       }
     },
     "libva": {
@@ -28716,7 +28720,8 @@
     "libwebsockets": {
       "origin": "libwebsockets",
       "versions": {
-        "4.3.5-r1": 1744209007
+        "4.3.5-r1": 1744209007,
+        "4.3.5-r2": 1746777502
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -28730,10 +28735,15 @@
     "libwebsockets-dev": {
       "origin": "libwebsockets",
       "versions": {
-        "4.3.5-r1": 1744209007
+        "4.3.5-r1": 1744209007,
+        "4.3.5-r2": 1746777502
       },
       "dependencies": [
-        "libwebsockets=4.3.5-r1",
+        "libwebsockets-evlib_ev",
+        "libwebsockets-evlib_event",
+        "libwebsockets-evlib_glib",
+        "libwebsockets-evlib_uv",
+        "libwebsockets=4.3.5-r2",
         "pkgconfig"
       ],
       "provides": [
@@ -28744,13 +28754,15 @@
     "libwebsockets-doc": {
       "origin": "libwebsockets",
       "versions": {
-        "4.3.5-r1": 1744209007
+        "4.3.5-r1": 1744209007,
+        "4.3.5-r2": 1746777502
       }
     },
     "libwebsockets-evlib_ev": {
       "origin": "libwebsockets",
       "versions": {
-        "4.3.5-r1": 1744209007
+        "4.3.5-r1": 1744209007,
+        "4.3.5-r2": 1746777502
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -28764,7 +28776,8 @@
     "libwebsockets-evlib_event": {
       "origin": "libwebsockets",
       "versions": {
-        "4.3.5-r1": 1744209007
+        "4.3.5-r1": 1744209007,
+        "4.3.5-r2": 1746777502
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -28778,7 +28791,8 @@
     "libwebsockets-evlib_glib": {
       "origin": "libwebsockets",
       "versions": {
-        "4.3.5-r1": 1744209007
+        "4.3.5-r1": 1744209007,
+        "4.3.5-r2": 1746777502
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -28792,7 +28806,8 @@
     "libwebsockets-evlib_uv": {
       "origin": "libwebsockets",
       "versions": {
-        "4.3.5-r1": 1744209007
+        "4.3.5-r1": 1744209007,
+        "4.3.5-r2": 1746777502
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -28806,7 +28821,8 @@
     "libwebsockets-test": {
       "origin": "libwebsockets",
       "versions": {
-        "4.3.5-r1": 1744209007
+        "4.3.5-r1": 1744209007,
+        "4.3.5-r2": 1746777502
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -28815,10 +28831,10 @@
         "so:libwebsockets.so.19"
       ],
       "provides": [
-        "cmd:libwebsockets-test-client=4.3.5-r1",
-        "cmd:libwebsockets-test-lejp=4.3.5-r1",
-        "cmd:libwebsockets-test-server-extpoll=4.3.5-r1",
-        "cmd:libwebsockets-test-server=4.3.5-r1"
+        "cmd:libwebsockets-test-client=4.3.5-r2",
+        "cmd:libwebsockets-test-lejp=4.3.5-r2",
+        "cmd:libwebsockets-test-server-extpoll=4.3.5-r2",
+        "cmd:libwebsockets-test-server=4.3.5-r2"
       ]
     },
     "libx11": {
