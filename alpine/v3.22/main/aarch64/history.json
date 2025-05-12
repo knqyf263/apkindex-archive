@@ -61498,25 +61498,32 @@
     "ser2net": {
       "origin": "ser2net",
       "versions": {
-        "3.5.1-r4": 1710257622
+        "3.5.1-r4": 1710257622,
+        "4.6.4-r0": 1747064422
       },
       "dependencies": [
-        "so:libc.musl-aarch64.so.1"
+        "so:libc.musl-aarch64.so.1",
+        "so:libgensio.so.10",
+        "so:libgensiomdns.so.10",
+        "so:libgensioosh.so.10",
+        "so:libyaml-0.so.2"
       ],
       "provides": [
-        "cmd:ser2net=3.5.1-r4"
+        "cmd:ser2net=4.6.4-r0"
       ]
     },
     "ser2net-doc": {
       "origin": "ser2net",
       "versions": {
-        "3.5.1-r4": 1710257622
+        "3.5.1-r4": 1710257622,
+        "4.6.4-r0": 1747064422
       }
     },
     "ser2net-openrc": {
       "origin": "ser2net",
       "versions": {
-        "3.5.1-r4": 1710257622
+        "3.5.1-r4": 1710257622,
+        "4.6.4-r0": 1747064422
       }
     },
     "serf": {
@@ -69926,6 +69933,71 @@
       "versions": {
         "1.4.27-r0": 1747052369
       }
+    },
+    "gensio": {
+      "origin": "gensio",
+      "versions": {
+        "2.8.14-r0": 1747064422
+      },
+      "dependencies": [
+        "so:libc.musl-aarch64.so.1",
+        "so:libcrypto.so.3",
+        "so:libgensio.so.10",
+        "so:libgensiomdns.so.10",
+        "so:libgensioosh.so.10"
+      ],
+      "provides": [
+        "cmd:gagwpe=2.8.14-r0",
+        "cmd:gensiot=2.8.14-r0",
+        "cmd:greflector=2.8.14-r0",
+        "cmd:gsound=2.8.14-r0",
+        "cmd:gtlssh-keygen=2.8.14-r0",
+        "cmd:gtlssh=2.8.14-r0",
+        "cmd:gtlssync=2.8.14-r0"
+      ]
+    },
+    "gensio-dev": {
+      "origin": "gensio",
+      "versions": {
+        "2.8.14-r0": 1747064422
+      },
+      "dependencies": [
+        "gensio-libs=2.8.14-r0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libgensio=2.8.14",
+        "pc:libgensiocpp=2.8.14",
+        "pc:libgensiomdns=2.8.14",
+        "pc:libgensiomdnscpp=2.8.14",
+        "pc:libgensioosh=2.8.14",
+        "pc:libgensiooshcpp=2.8.14"
+      ]
+    },
+    "gensio-doc": {
+      "origin": "gensio",
+      "versions": {
+        "2.8.14-r0": 1747064422
+      }
+    },
+    "gensio-libs": {
+      "origin": "gensio",
+      "versions": {
+        "2.8.14-r0": 1747064422
+      },
+      "dependencies": [
+        "so:libc.musl-aarch64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libgensio.so.10=10.3.2",
+        "so:libgensiocpp.so.10=10.3.2",
+        "so:libgensiomdns.so.10=10.3.2",
+        "so:libgensiomdnscpp.so.10=10.3.2",
+        "so:libgensioosh.so.10=10.3.2",
+        "so:libgensiooshcpp.so.10=10.3.2"
+      ]
     }
   },
   "provide": {
@@ -77631,6 +77703,30 @@
       "libxapian.so.30": {
         "package": "libxapian",
         "version": "30.13.1"
+      },
+      "libgensio.so.10": {
+        "package": "gensio-libs",
+        "version": "10.3.2"
+      },
+      "libgensiocpp.so.10": {
+        "package": "gensio-libs",
+        "version": "10.3.2"
+      },
+      "libgensiomdns.so.10": {
+        "package": "gensio-libs",
+        "version": "10.3.2"
+      },
+      "libgensiomdnscpp.so.10": {
+        "package": "gensio-libs",
+        "version": "10.3.2"
+      },
+      "libgensioosh.so.10": {
+        "package": "gensio-libs",
+        "version": "10.3.2"
+      },
+      "libgensiooshcpp.so.10": {
+        "package": "gensio-libs",
+        "version": "10.3.2"
       }
     }
   }
