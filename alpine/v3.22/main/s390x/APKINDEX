@@ -1710,22 +1710,22 @@ t:1746907339
 c:4ff6e23948aad6fecb472b45281f8dca2415bc90
 i:docs abuild=3.15.0_rc3-r3
 
-C:Q1Xt7jpnNLeSAiOUzE41AHc3WaAwc=
+C:Q1zxeiNBsPgcmerFhVtwTdXvB/QgM=
 P:abuild-meson
-V:1.8.0-r0
+V:1.8.0-r1
 A:s390x
-S:2400
+S:2405
 I:1754
 T:Fast and user friendly build system (abuild wrapper)
 U:https://mesonbuild.com
 L:Apache-2.0
 o:meson
 m:Francesco Colista <fcolista@alpinelinux.org>
-t:1746823881
-c:d85cf5a2f6becfa43d35fdc1fe4caa17689bb880
-D:meson=1.8.0-r0 abuild
-p:cmd:abuild-meson=1.8.0-r0
-i:meson=1.8.0-r0 abuild
+t:1747038541
+c:9874a1e458ddc8a46061ade0883701d388b25f87
+D:meson=1.8.0-r1 abuild
+p:cmd:abuild-meson=1.8.0-r1
+i:meson=1.8.0-r1 abuild
 
 C:Q1e4ukJWpTf7tpsAO1mbZWCwhNlTg=
 P:abuild-rootbld
@@ -14384,6 +14384,69 @@ t:1745276943
 c:257adac644584e7e88e38dabe81e22b67d4c0fcd
 D:binutils
 p:cmd:efi-mkuki=0.1.1-r1
+
+C:Q18Q9RYnIi2zMxA443p44uESWo2sM=
+P:efivar
+V:39-r0
+A:s390x
+S:29093
+I:131920
+T:Tools and library to manipulate EFI variables
+U:https://github.com/rhboot/efivar
+L:LGPL-2.1-only
+o:efivar
+m:Lucas Ramage <ramage.lucas@protonmail.com>
+t:1747037362
+c:8bd8b7aa9c86d928ecd438c74bd56ec6b21a4741
+D:so:libc.musl-s390x.so.1 so:libefisec.so.1 so:libefivar.so.1
+p:cmd:efisecdb=39-r0 cmd:efivar=39-r0
+
+C:Q1UIrE+lfDfL4A/KDRjyT9N+jYaoc=
+P:efivar-dev
+V:39-r0
+A:s390x
+S:17099
+I:67801
+T:Tools and library to manipulate EFI variables (development files)
+U:https://github.com/rhboot/efivar
+L:LGPL-2.1-only
+o:efivar
+m:Lucas Ramage <ramage.lucas@protonmail.com>
+t:1747037362
+c:8bd8b7aa9c86d928ecd438c74bd56ec6b21a4741
+D:efivar-libs=39-r0 pkgconfig
+p:pc:efiboot=39 pc:efisec=39 pc:efivar=39
+
+C:Q1N6it5wSdNcFL9u+38xm4M5m7jCE=
+P:efivar-doc
+V:39-r0
+A:s390x
+S:10662
+I:8644
+T:Tools and library to manipulate EFI variables (documentation)
+U:https://github.com/rhboot/efivar
+L:LGPL-2.1-only
+o:efivar
+m:Lucas Ramage <ramage.lucas@protonmail.com>
+t:1747037362
+c:8bd8b7aa9c86d928ecd438c74bd56ec6b21a4741
+i:docs efivar=39-r0
+
+C:Q1gbrrTAz1z+Y0kwELsd+sJI+sTx8=
+P:efivar-libs
+V:39-r0
+A:s390x
+S:112121
+I:335608
+T:Tools and library to manipulate EFI variables (libraries)
+U:https://github.com/rhboot/efivar
+L:LGPL-2.1-only
+o:efivar
+m:Lucas Ramage <ramage.lucas@protonmail.com>
+t:1747037362
+c:8bd8b7aa9c86d928ecd438c74bd56ec6b21a4741
+D:so:libc.musl-s390x.so.1
+p:so:libefiboot.so.1=1.39 so:libefisec.so.1=1.39 so:libefivar.so.1=1.39
 
 C:Q1+9pkemapT2vsuaYFw8GSRZs61FY=
 P:eggdrop
@@ -46499,303 +46562,303 @@ t:1729529500
 c:23541938bda906afa61b8777e3f565d9b79699dc
 i:openrc memcached=1.6.32-r0
 
-C:Q1WZniAMfYE+oNAmO+pIznZyFfV1A=
+C:Q1KFofN5pBJrspnLK2V8SI4+YCO3w=
 P:mesa
-V:25.0.5-r0
+V:25.1.0-r0
 A:s390x
-S:22436811
-I:85134706
+S:22696038
+I:86758192
 T:Mesa DRI OpenGL library
 U:https://www.mesa3d.org
 L:MIT AND SGI-B-2.0 AND BSL-1.0
 o:mesa
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1746225451
-c:128477440340b3cffcb2b0643732fe4611310dfb
+t:1747038637
+c:92ed35311f2461483dadbc4415f9eb835698bf85
 k:100
 D:so:libLLVM.so.20.1 so:libX11-xcb.so.1 so:libc.musl-s390x.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libwayland-server.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-randr.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1 so:libzstd.so.1
-p:so:libgallium-25.0.5.so=0
+p:so:libgallium-25.1.0.so=0
 
-C:Q1cfWFxYWc6zfyiiA43HogHS9mdkY=
+C:Q1Ou4OT+KPGCINJDUAhqpsUy6nDks=
 P:mesa-dbg
-V:25.0.5-r0
+V:25.1.0-r0
 A:s390x
-S:41741763
-I:121757104
+S:41980331
+I:122536432
 T:Mesa DRI OpenGL library (debug symbols)
 U:https://www.mesa3d.org
 L:MIT AND SGI-B-2.0 AND BSL-1.0
 o:mesa
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1746225451
-c:128477440340b3cffcb2b0643732fe4611310dfb
-D:!mesa-dri-gallium<25.0.5-r0 !mesa-dri-gallium>25.0.5-r0 !mesa-egl<25.0.5-r0 !mesa-egl>25.0.5-r0 !mesa-gbm<25.0.5-r0 !mesa-gbm>25.0.5-r0 !mesa-gl<25.0.5-r0 !mesa-gl>25.0.5-r0 !mesa-gles<25.0.5-r0 !mesa-gles>25.0.5-r0 !mesa-libd3dadapter9<25.0.5-r0 !mesa-libd3dadapter9>25.0.5-r0 !mesa-vulkan-ati<25.0.5-r0 !mesa-vulkan-ati>25.0.5-r0 !mesa-vulkan-layers<25.0.5-r0 !mesa-vulkan-layers>25.0.5-r0 !mesa-vulkan-swrast<25.0.5-r0 !mesa-vulkan-swrast>25.0.5-r0 !mesa-xatracker<25.0.5-r0 !mesa-xatracker>25.0.5-r0 !mesa<25.0.5-r0 !mesa>25.0.5-r0
+t:1747038637
+c:92ed35311f2461483dadbc4415f9eb835698bf85
+D:!mesa-dri-gallium<25.1.0-r0 !mesa-dri-gallium>25.1.0-r0 !mesa-egl<25.1.0-r0 !mesa-egl>25.1.0-r0 !mesa-gbm<25.1.0-r0 !mesa-gbm>25.1.0-r0 !mesa-gl<25.1.0-r0 !mesa-gl>25.1.0-r0 !mesa-gles<25.1.0-r0 !mesa-gles>25.1.0-r0 !mesa-libd3dadapter9<25.1.0-r0 !mesa-libd3dadapter9>25.1.0-r0 !mesa-vulkan-ati<25.1.0-r0 !mesa-vulkan-ati>25.1.0-r0 !mesa-vulkan-layers<25.1.0-r0 !mesa-vulkan-layers>25.1.0-r0 !mesa-vulkan-swrast<25.1.0-r0 !mesa-vulkan-swrast>25.1.0-r0 !mesa-xatracker<25.1.0-r0 !mesa-xatracker>25.1.0-r0 !mesa<25.1.0-r0 !mesa>25.1.0-r0
 
-C:Q1kgQ+gYLwvMx3p3LqhL6uEPeY3Mg=
+C:Q1Sl2Wb3WVCFWbx/TamfEvzuGg11M=
 P:mesa-dev
-V:25.0.5-r0
+V:25.1.0-r0
 A:s390x
-S:347148
-I:2374335
+S:349990
+I:2390733
 T:Mesa DRI OpenGL library (development files)
 U:https://www.mesa3d.org
 L:MIT AND SGI-B-2.0 AND BSL-1.0
 o:mesa
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1746225451
-c:128477440340b3cffcb2b0643732fe4611310dfb
-D:libdrm-dev libxext-dev libxdamage-dev libxcb-dev libxshmfence-dev mesa-egl=25.0.5-r0 mesa-gbm=25.0.5-r0 mesa-gl=25.0.5-r0 mesa-gles=25.0.5-r0 mesa-xatracker=25.0.5-r0 pc:libdrm>=2.4.121 pc:libdrm>=2.4.124 pc:libdrm>=2.4.75 pc:x11 pc:x11-xcb pc:xcb pc:xcb-dri2>=1.8 pc:xcb-glx>=1.8.1 pc:xext pc:xfixes pc:xxf86vm pkgconfig
-p:pc:d3d=1.0.0 pc:dri=25.0.5 pc:egl=25.0.5 pc:gbm=25.0.5 pc:gl=25.0.5 pc:glesv1_cm=25.0.5 pc:glesv2=25.0.5 pc:xatracker=2.5.0
+t:1747038637
+c:92ed35311f2461483dadbc4415f9eb835698bf85
+D:libdrm-dev libxext-dev libxdamage-dev libxcb-dev libxshmfence-dev mesa-egl=25.1.0-r0 mesa-gbm=25.1.0-r0 mesa-gl=25.1.0-r0 mesa-gles=25.1.0-r0 mesa-xatracker=25.1.0-r0 pc:libdrm>=2.4.121 pc:libdrm>=2.4.124 pc:libdrm>=2.4.75 pc:x11 pc:x11-xcb pc:xcb pc:xcb-dri2>=1.8 pc:xcb-glx>=1.8.1 pc:xext pc:xfixes pc:xxf86vm pkgconfig
+p:pc:d3d=1.0.0 pc:dri=25.1.0 pc:egl=25.1.0 pc:gbm=25.1.0 pc:gl=25.1.0 pc:glesv1_cm=25.1.0 pc:glesv2=25.1.0 pc:xatracker=2.5.0
 
-C:Q1yD0Cs9RevcTW1UA58JGk0y8O5rQ=
+C:Q1vTSt6/dhqXqwaBIkk4Yx7Cer8sw=
 P:mesa-dri-gallium
-V:25.0.5-r0
+V:25.1.0-r0
 A:s390x
-S:26897
+S:26903
 I:104176
 T:Mesa gallium DRI drivers
 U:https://www.mesa3d.org
 L:MIT AND SGI-B-2.0 AND BSL-1.0
 o:mesa
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1746225451
-c:128477440340b3cffcb2b0643732fe4611310dfb
+t:1747038637
+c:92ed35311f2461483dadbc4415f9eb835698bf85
 k:100
-D:mesa=25.0.5-r0 so:libc.musl-s390x.so.1 so:libgbm.so.1
+D:mesa=25.1.0-r0 so:libc.musl-s390x.so.1 so:libgbm.so.1
 
-C:Q1YxLTRQgrpn3NSW5wyj5zVcJpmpE=
+C:Q1C1g7KhdgPSXF8ZM9voEHpx7f5aI=
 P:mesa-egl
-V:25.0.5-r0
+V:25.1.0-r0
 A:s390x
-S:141866
-I:375896
+S:142439
+I:375824
 T:Mesa libEGL runtime libraries
 U:https://www.mesa3d.org
 L:MIT AND SGI-B-2.0 AND BSL-1.0
 o:mesa
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1746225451
-c:128477440340b3cffcb2b0643732fe4611310dfb
+t:1747038637
+c:92ed35311f2461483dadbc4415f9eb835698bf85
 k:100
-D:mesa=25.0.5-r0 so:libX11-xcb.so.1 so:libc.musl-s390x.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libgallium-25.0.5.so so:libgbm.so.1 so:libwayland-client.so.0 so:libwayland-server.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-randr.so.0 so:libxcb-shm.so.0 so:libxcb-xfixes.so.0 so:libxcb.so.1
+D:mesa=25.1.0-r0 so:libX11-xcb.so.1 so:libc.musl-s390x.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libgallium-25.1.0.so so:libgbm.so.1 so:libwayland-client.so.0 so:libwayland-server.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-randr.so.0 so:libxcb-shm.so.0 so:libxcb-xfixes.so.0 so:libxcb.so.1
 p:so:libEGL.so.1=1.0.0
 
-C:Q1lF6KhW+ImWtTyNfNZdSwhkyQf54=
+C:Q1XSn20JcMYTHq/kpiCNEppAKHG2Y=
 P:mesa-gbm
-V:25.0.5-r0
+V:25.1.0-r0
 A:s390x
-S:7492
+S:7451
 I:18064
 T:Mesa gbm library
 U:https://www.mesa3d.org
 L:MIT AND SGI-B-2.0 AND BSL-1.0
 o:mesa
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1746225451
-c:128477440340b3cffcb2b0643732fe4611310dfb
+t:1747038637
+c:92ed35311f2461483dadbc4415f9eb835698bf85
 k:100
-D:mesa=25.0.5-r0 so:libc.musl-s390x.so.1 so:libdrm.so.2 so:libexpat.so.1
+D:mesa=25.1.0-r0 so:libc.musl-s390x.so.1 so:libdrm.so.2 so:libexpat.so.1
 p:so:libgbm.so.1=1.0.0
 
-C:Q1yvNbPIR6VQNFNUmhJKCzHNE950Q=
+C:Q1moiWFlbvZdkV9R0giRXToSqrL3E=
 P:mesa-gl
-V:25.0.5-r0
+V:25.1.0-r0
 A:s390x
-S:210013
-I:711152
+S:207684
+I:698848
 T:Mesa libGL runtime libraries
 U:https://www.mesa3d.org
 L:MIT AND SGI-B-2.0 AND BSL-1.0
 o:mesa
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1746225451
-c:128477440340b3cffcb2b0643732fe4611310dfb
+t:1747038637
+c:92ed35311f2461483dadbc4415f9eb835698bf85
 k:100
-D:mesa=25.0.5-r0 so:libX11-xcb.so.1 so:libX11.so.6 so:libXext.so.6 so:libXxf86vm.so.1 so:libc.musl-s390x.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libgallium-25.0.5.so so:libxcb-dri3.so.0 so:libxcb-glx.so.0 so:libxcb-present.so.0 so:libxcb-shm.so.0 so:libxcb-xfixes.so.0 so:libxcb.so.1
+D:mesa=25.1.0-r0 so:libX11-xcb.so.1 so:libX11.so.6 so:libXext.so.6 so:libXxf86vm.so.1 so:libc.musl-s390x.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libgallium-25.1.0.so so:libxcb-dri3.so.0 so:libxcb-glx.so.0 so:libxcb-present.so.0 so:libxcb-shm.so.0 so:libxcb-xfixes.so.0 so:libxcb.so.1
 p:so:libGL.so.1=1.2.0
 
-C:Q1d49CrwkQ0miWkzJ82/F2Jp8sTto=
+C:Q1aohLRpIOnqJ95D22mUQ4lzTCS/4=
 P:mesa-gles
-V:25.0.5-r0
+V:25.1.0-r0
 A:s390x
-S:32362
+S:32336
 I:122384
 T:Mesa libGLESv2 runtime libraries
 U:https://www.mesa3d.org
 L:MIT AND SGI-B-2.0 AND BSL-1.0
 o:mesa
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1746225451
-c:128477440340b3cffcb2b0643732fe4611310dfb
+t:1747038637
+c:92ed35311f2461483dadbc4415f9eb835698bf85
 k:100
-D:mesa=25.0.5-r0 so:libc.musl-s390x.so.1 so:libgallium-25.0.5.so
+D:mesa=25.1.0-r0 so:libc.musl-s390x.so.1 so:libgallium-25.1.0.so
 p:so:libGLESv1_CM.so.1=1.1.0 so:libGLESv2.so.2=2.0.0
 
-C:Q1cvzYEWG6iJrF46h11cgNQ6zEML4=
+C:Q1fPpFK2IMovPms+0e0+/oEv8rBoo=
 P:mesa-libd3dadapter9
-V:25.0.5-r0
+V:25.1.0-r0
 A:s390x
-S:7485496
-I:23872608
+S:7566667
+I:24222008
 T:Mesa directx9 adapter
 U:https://www.mesa3d.org
 L:MIT AND SGI-B-2.0 AND BSL-1.0
 o:mesa
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1746225451
-c:128477440340b3cffcb2b0643732fe4611310dfb
+t:1747038637
+c:92ed35311f2461483dadbc4415f9eb835698bf85
 k:100
-D:mesa=25.0.5-r0 so:libLLVM.so.20.1 so:libc.musl-s390x.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1 so:libzstd.so.1
+D:mesa=25.1.0-r0 so:libLLVM.so.20.1 so:libc.musl-s390x.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1 so:libzstd.so.1
 
-C:Q1Tul2q7hk85X1htBL+SWQyrDqghM=
+C:Q1yjQsTTyB73BOdd4Ax0X/66/E5bA=
 P:mesa-va-gallium
-V:25.0.5-r0
+V:25.1.0-r0
 A:s390x
-S:1747
+S:1756
 I:1
 T:Mesa gallium VAAPI drivers
 U:https://www.mesa3d.org
 L:MIT AND SGI-B-2.0 AND BSL-1.0
 o:mesa
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1746225451
-c:128477440340b3cffcb2b0643732fe4611310dfb
+t:1747038637
+c:92ed35311f2461483dadbc4415f9eb835698bf85
 k:100
-D:mesa=25.0.5-r0 libva mesa=25.0.5-r0
+D:mesa=25.1.0-r0 libva mesa=25.1.0-r0
 
-C:Q1IHA61Ma4Meezp2stuorBnCgIsnQ=
+C:Q1V8fsgOwhG8fJaGi7i7+y7nnHAjw=
 P:mesa-vdpau-gallium
-V:25.0.5-r0
+V:25.1.0-r0
 A:s390x
-S:2208
+S:2207
 I:1
 T:Mesa gallium VDPAU drivers
 U:https://www.mesa3d.org
 L:MIT AND SGI-B-2.0 AND BSL-1.0
 o:mesa
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1746225451
-c:128477440340b3cffcb2b0643732fe4611310dfb
+t:1747038637
+c:92ed35311f2461483dadbc4415f9eb835698bf85
 k:100
-D:mesa=25.0.5-r0 libvdpau mesa=25.0.5-r0
+D:mesa=25.1.0-r0 libvdpau mesa=25.1.0-r0
 
-C:Q1Jp32bvTLpGXRvTfubPkOW/My2rk=
+C:Q1l8uJPsOINo+XaxJl7uPqtqRgW2Q=
 P:mesa-vulkan-ati
-V:25.0.5-r0
+V:25.1.0-r0
 A:s390x
-S:3941839
-I:14210067
+S:4027347
+I:14682075
 T:Mesa Vulkan API driver for ati
 U:https://www.mesa3d.org
 L:MIT AND SGI-B-2.0 AND BSL-1.0
 o:mesa
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1746225451
-c:128477440340b3cffcb2b0643732fe4611310dfb
+t:1747038637
+c:92ed35311f2461483dadbc4415f9eb835698bf85
 k:100
-D:mesa=25.0.5-r0 so:libLLVM.so.20.1 so:libX11-xcb.so.1 so:libc.musl-s390x.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libudev.so.1 so:libwayland-client.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-randr.so.0 so:libxcb-shm.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1 so:libzstd.so.1
+D:mesa=25.1.0-r0 so:libLLVM.so.20.1 so:libX11-xcb.so.1 so:libc.musl-s390x.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libudev.so.1 so:libwayland-client.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-randr.so.0 so:libxcb-shm.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1 so:libzstd.so.1
 p:so:libvulkan_radeon.so=0
 
-C:Q149ZUGXFMo724fORGomOfB1XmrTM=
+C:Q1GDG61dpyrlRaxDPVmegj9reW4rY=
 P:mesa-vulkan-layers
-V:25.0.5-r0
+V:25.1.0-r0
 A:s390x
-S:434402
-I:1030987
+S:439580
+I:1047571
 T:collection of vulkan layers from mesa
 U:https://www.mesa3d.org
 L:MIT AND SGI-B-2.0 AND BSL-1.0
 o:mesa
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1746225451
-c:128477440340b3cffcb2b0643732fe4611310dfb
+t:1747038637
+c:92ed35311f2461483dadbc4415f9eb835698bf85
 k:100
 D:python3 so:libc.musl-s390x.so.1 so:libdrm.so.2 so:libgcc_s.so.1 so:libstdc++.so.6 so:libwayland-client.so.0 so:libxcb-dri3.so.0 so:libxcb.so.1
-p:mesa-vulkan-layer=25.0.5-r0 so:libVkLayer_MESA_device_select.so=0 so:libVkLayer_MESA_overlay.so=0 cmd:mesa-overlay-control.py=25.0.5-r0
+p:mesa-vulkan-layer=25.1.0-r0 so:libVkLayer_MESA_device_select.so=0 so:libVkLayer_MESA_overlay.so=0 cmd:mesa-overlay-control.py=25.1.0-r0
 
-C:Q1SGn84YXWf2cLrVsDC9CuHuOqo3E=
+C:Q1vEfFTwdy9iZlOV4xHHASeURruWA=
 P:mesa-vulkan-swrast
-V:25.0.5-r0
+V:25.1.0-r0
 A:s390x
-S:2517131
-I:10668416
+S:2721372
+I:11480064
 T:Mesa Vulkan API driver for swrast
 U:https://www.mesa3d.org
 L:MIT AND SGI-B-2.0 AND BSL-1.0
 o:mesa
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1746225451
-c:128477440340b3cffcb2b0643732fe4611310dfb
+t:1747038637
+c:92ed35311f2461483dadbc4415f9eb835698bf85
 k:100
-D:mesa=25.0.5-r0 so:libLLVM.so.20.1 so:libX11-xcb.so.1 so:libc.musl-s390x.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libudev.so.1 so:libwayland-client.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-randr.so.0 so:libxcb-shm.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1 so:libzstd.so.1
+D:mesa=25.1.0-r0 so:libLLVM.so.20.1 so:libX11-xcb.so.1 so:libc.musl-s390x.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libudev.so.1 so:libwayland-client.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-randr.so.0 so:libxcb-shm.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1 so:libzstd.so.1
 p:so:libvulkan_lvp.so=0
 
-C:Q1+Rpkno4x16fsKZMJtLG16Cb9Fv4=
+C:Q1JRFAt1x9hvve2dMv95gWuYfdrzs=
 P:mesa-xatracker
-V:25.0.5-r0
+V:25.1.0-r0
 A:s390x
-S:3106811
-I:13503800
+S:3128424
+I:13729088
 T:Mesa XA state tracker for vmware
 U:https://www.mesa3d.org
 L:MIT AND SGI-B-2.0 AND BSL-1.0
 o:mesa
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1746225451
-c:128477440340b3cffcb2b0643732fe4611310dfb
+t:1747038637
+c:92ed35311f2461483dadbc4415f9eb835698bf85
 k:100
-D:mesa=25.0.5-r0 so:libLLVM.so.20.1 so:libc.musl-s390x.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1 so:libzstd.so.1
+D:mesa=25.1.0-r0 so:libLLVM.so.20.1 so:libc.musl-s390x.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1 so:libzstd.so.1
 p:so:libxatracker.so.2=2.5.0
 
-C:Q1iIgrckXYLcjPSRZc88axR7X1WXs=
+C:Q1Loz8LAdFa9HjxHbqxz+Ft1gtoVA=
 P:meson
-V:1.8.0-r0
+V:1.8.0-r1
 A:s390x
-S:884967
-I:3903340
+S:885040
+I:3903804
 T:Fast and user friendly build system
 U:https://mesonbuild.com
 L:Apache-2.0
 o:meson
 m:Francesco Colista <fcolista@alpinelinux.org>
-t:1746823881
-c:d85cf5a2f6becfa43d35fdc1fe4caa17689bb880
+t:1747038541
+c:9874a1e458ddc8a46061ade0883701d388b25f87
 D:samurai python3~3.12
-p:cmd:meson=1.8.0-r0 py3.12:mesonbuild=1.8.0-r0
+p:cmd:meson=1.8.0-r1 py3.12:mesonbuild=1.8.0-r1
 
-C:Q1JTM/wV4BtxnwQXN9CoUy4vM2aF8=
+C:Q1L9dtslS9/GA2rCcqtmYmbBhuCXk=
 P:meson-bash-completion
-V:1.8.0-r0
+V:1.8.0-r1
 A:s390x
-S:5696
+S:5694
 I:27076
 T:Bash completions for meson
 U:https://mesonbuild.com
 L:Apache-2.0
 o:meson
 m:Francesco Colista <fcolista@alpinelinux.org>
-t:1746823881
-c:d85cf5a2f6becfa43d35fdc1fe4caa17689bb880
-i:meson=1.8.0-r0 bash-completion
+t:1747038541
+c:9874a1e458ddc8a46061ade0883701d388b25f87
+i:meson=1.8.0-r1 bash-completion
 
-C:Q1GukocY6pvHvX9aoWO+9A/p/F6hw=
+C:Q1CgZ6trEjpSWUET7DXdxN6L19L9c=
 P:meson-doc
-V:1.8.0-r0
+V:1.8.0-r1
 A:s390x
-S:6264
+S:6262
 I:4483
 T:Fast and user friendly build system (documentation)
 U:https://mesonbuild.com
 L:Apache-2.0
 o:meson
 m:Francesco Colista <fcolista@alpinelinux.org>
-t:1746823881
-c:d85cf5a2f6becfa43d35fdc1fe4caa17689bb880
-i:docs meson=1.8.0-r0
+t:1747038541
+c:9874a1e458ddc8a46061ade0883701d388b25f87
+i:docs meson=1.8.0-r1
 
-C:Q1tupLjxxre3o6XZnGAWFr8RnOyJ0=
+C:Q15dJ2+OpjyiL/qtdGvKQq4q7Lhkk=
 P:meson-polkit
-V:1.8.0-r0
+V:1.8.0-r1
 A:s390x
 S:2082
 I:896
@@ -46804,55 +46867,55 @@ U:https://mesonbuild.com
 L:Apache-2.0
 o:meson
 m:Francesco Colista <fcolista@alpinelinux.org>
-t:1746823881
-c:d85cf5a2f6becfa43d35fdc1fe4caa17689bb880
-i:meson=1.8.0-r0 polkit
+t:1747038541
+c:9874a1e458ddc8a46061ade0883701d388b25f87
+i:meson=1.8.0-r1 polkit
 
-C:Q177qbC+wcrkZMNTW0eGhzs+Pk5uk=
+C:Q1x6QV6V+R31NLuWXpbFDMgr1VOCE=
 P:meson-pyc
-V:1.8.0-r0
+V:1.8.0-r1
 A:s390x
-S:1893229
-I:4742684
+S:1893357
+I:4743507
 T:Precompiled Python bytecode for meson
 U:https://mesonbuild.com
 L:Apache-2.0
 o:meson
 m:Francesco Colista <fcolista@alpinelinux.org>
-t:1746823881
-c:d85cf5a2f6becfa43d35fdc1fe4caa17689bb880
+t:1747038541
+c:9874a1e458ddc8a46061ade0883701d388b25f87
 D:samurai python3~3.12
-i:meson=1.8.0-r0 pyc
+i:meson=1.8.0-r1 pyc
 
-C:Q1+ElO7wKiriSSzjOG9aPjQyHVyAw=
+C:Q10RIiWcFKYi9ba6h3/BNIDPBKd3w=
 P:meson-vim
-V:1.8.0-r0
+V:1.8.0-r1
 A:s390x
-S:5919
+S:5920
 I:10711
 T:Fast and user friendly build system (vim support)
 U:https://mesonbuild.com
 L:Apache-2.0
 o:meson
 m:Francesco Colista <fcolista@alpinelinux.org>
-t:1746823881
-c:d85cf5a2f6becfa43d35fdc1fe4caa17689bb880
-i:vim meson=1.8.0-r0
+t:1747038541
+c:9874a1e458ddc8a46061ade0883701d388b25f87
+i:vim meson=1.8.0-r1
 
-C:Q1/vI3r22VMGbRN0EjmbVLek8Ih0o=
+C:Q1wLPFQg1oTbhuJcd2mINkbQqYoxU=
 P:meson-zsh-completion
-V:1.8.0-r0
+V:1.8.0-r1
 A:s390x
-S:7774
+S:7780
 I:20817
 T:Zsh completions for meson
 U:https://mesonbuild.com
 L:Apache-2.0
 o:meson
 m:Francesco Colista <fcolista@alpinelinux.org>
-t:1746823881
-c:d85cf5a2f6becfa43d35fdc1fe4caa17689bb880
-i:meson=1.8.0-r0 zsh
+t:1747038541
+c:9874a1e458ddc8a46061ade0883701d388b25f87
+i:meson=1.8.0-r1 zsh
 
 C:Q1gC4neWOTl/gXBjUlzr7HQ2JuN10=
 P:mg
