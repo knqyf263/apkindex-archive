@@ -24810,7 +24810,8 @@
     "libecpg": {
       "origin": "postgresql17",
       "versions": {
-        "17.4-r4": 1743513441
+        "17.4-r4": 1743513441,
+        "17.5-r0": 1747092581
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
@@ -24825,19 +24826,20 @@
     "libecpg-dev": {
       "origin": "postgresql17",
       "versions": {
-        "17.4-r4": 1743513441
+        "17.4-r4": 1743513441,
+        "17.5-r0": 1747092581
       },
       "dependencies": [
-        "libpq-dev=17.4-r4",
-        "libecpg=17.4-r4",
+        "libpq-dev=17.5-r0",
+        "libecpg=17.5-r0",
         "pc:libpq",
         "pkgconfig",
         "so:libc.musl-x86.so.1"
       ],
       "provides": [
-        "pc:libecpg=17.4",
-        "pc:libpgtypes=17.4",
-        "cmd:ecpg=17.4-r4"
+        "pc:libecpg=17.5",
+        "pc:libpgtypes=17.5",
+        "cmd:ecpg=17.5-r0"
       ]
     },
     "libedit": {
@@ -27269,7 +27271,8 @@
     "libpq": {
       "origin": "postgresql17",
       "versions": {
-        "17.4-r4": 1743513441
+        "17.4-r4": 1743513441,
+        "17.5-r0": 1747092581
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
@@ -27283,18 +27286,19 @@
     "libpq-dev": {
       "origin": "postgresql17",
       "versions": {
-        "17.4-r4": 1743513441
+        "17.4-r4": 1743513441,
+        "17.5-r0": 1747092581
       },
       "dependencies": [
-        "libpq=17.4-r4",
+        "libpq=17.5-r0",
         "pc:libcrypto",
         "pc:libssl",
         "pkgconfig",
         "so:libc.musl-x86.so.1"
       ],
       "provides": [
-        "pc:libpq=17.4",
-        "cmd:pg_config=17.4-r4"
+        "pc:libpq=17.5",
+        "cmd:pg_config=17.5-r0"
       ]
     },
     "libproc2": {
@@ -52678,7 +52682,8 @@
     "postgresql16": {
       "origin": "postgresql16",
       "versions": {
-        "16.8-r4": 1743513441
+        "16.8-r4": 1743513441,
+        "16.9-r0": 1747092522
       },
       "dependencies": [
         "postgresql16-client",
@@ -52699,25 +52704,26 @@
       ],
       "provides": [
         "postgresql",
-        "cmd:initdb",
-        "cmd:pg_upgrade",
-        "cmd:pg_controldata",
-        "cmd:pg_archivecleanup",
-        "cmd:pg_waldump",
-        "cmd:postgres",
         "cmd:pg_test_fsync",
-        "cmd:pg_checksums",
-        "cmd:pg_test_timing",
+        "cmd:pg_controldata",
+        "cmd:initdb",
         "cmd:pg_ctl",
         "cmd:pg_rewind",
         "cmd:pg_resetwal",
-        "cmd:postgres16=16.8-r4"
+        "cmd:pg_test_timing",
+        "cmd:pg_upgrade",
+        "cmd:postgres",
+        "cmd:pg_checksums",
+        "cmd:pg_waldump",
+        "cmd:pg_archivecleanup",
+        "cmd:postgres16=16.9-r0"
       ]
     },
     "postgresql16-client": {
       "origin": "postgresql16",
       "versions": {
-        "16.8-r4": 1743513441
+        "16.8-r4": 1743513441,
+        "16.9-r0": 1747092522
       },
       "dependencies": [
         "postgresql-common",
@@ -52754,10 +52760,11 @@
     "postgresql16-contrib": {
       "origin": "postgresql16",
       "versions": {
-        "16.8-r4": 1743513441
+        "16.8-r4": 1743513441,
+        "16.9-r0": 1747092522
       },
       "dependencies": [
-        "postgresql16=16.8-r4",
+        "postgresql16=16.9-r0",
         "so:libc.musl-x86.so.1",
         "so:libcrypto.so.3",
         "so:libpq.so.5",
@@ -52774,10 +52781,11 @@
     "postgresql16-contrib-jit": {
       "origin": "postgresql16",
       "versions": {
-        "16.8-r4": 1743513441
+        "16.8-r4": 1743513441,
+        "16.9-r0": 1747092522
       },
       "dependencies": [
-        "postgresql16-contrib=16.8-r4"
+        "postgresql16-contrib=16.9-r0"
       ],
       "provides": [
         "postgresql-contrib-jit"
@@ -52786,7 +52794,8 @@
     "postgresql16-dev": {
       "origin": "postgresql16",
       "versions": {
-        "16.8-r4": 1743513441
+        "16.8-r4": 1743513441,
+        "16.9-r0": 1747092522
       },
       "dependencies": [
         "libpq-dev",
@@ -52807,7 +52816,8 @@
     "postgresql16-doc": {
       "origin": "postgresql16",
       "versions": {
-        "16.8-r4": 1743513441
+        "16.8-r4": 1743513441,
+        "16.9-r0": 1747092522
       },
       "provides": [
         "postgresql-doc"
@@ -52816,10 +52826,11 @@
     "postgresql16-jit": {
       "origin": "postgresql16",
       "versions": {
-        "16.8-r4": 1743513441
+        "16.8-r4": 1743513441,
+        "16.9-r0": 1747092522
       },
       "dependencies": [
-        "postgresql16=16.8-r4",
+        "postgresql16=16.9-r0",
         "so:libLLVM-16.so",
         "so:libc.musl-x86.so.1",
         "so:libgcc_s.so.1",
@@ -52832,7 +52843,8 @@
     "postgresql16-openrc": {
       "origin": "postgresql16",
       "versions": {
-        "16.8-r4": 1743513441
+        "16.8-r4": 1743513441,
+        "16.9-r0": 1747092522
       },
       "dependencies": [
         "postgresql-common-openrc"
@@ -52841,10 +52853,11 @@
     "postgresql16-plperl": {
       "origin": "postgresql16",
       "versions": {
-        "16.8-r4": 1743513441
+        "16.8-r4": 1743513441,
+        "16.9-r0": 1747092522
       },
       "dependencies": [
-        "postgresql16=16.8-r4",
+        "postgresql16=16.9-r0",
         "so:libc.musl-x86.so.1",
         "so:libperl.so"
       ],
@@ -52855,10 +52868,11 @@
     "postgresql16-plperl-contrib": {
       "origin": "postgresql16",
       "versions": {
-        "16.8-r4": 1743513441
+        "16.8-r4": 1743513441,
+        "16.9-r0": 1747092522
       },
       "dependencies": [
-        "postgresql16-plperl=16.8-r4",
+        "postgresql16-plperl=16.9-r0",
         "so:libc.musl-x86.so.1",
         "so:libperl.so"
       ],
@@ -52869,10 +52883,11 @@
     "postgresql16-plpython3": {
       "origin": "postgresql16",
       "versions": {
-        "16.8-r4": 1743513441
+        "16.8-r4": 1743513441,
+        "16.9-r0": 1747092522
       },
       "dependencies": [
-        "postgresql16=16.8-r4",
+        "postgresql16=16.9-r0",
         "python3",
         "so:libc.musl-x86.so.1",
         "so:libpython3.12.so.1.0"
@@ -52884,10 +52899,11 @@
     "postgresql16-plpython3-contrib": {
       "origin": "postgresql16",
       "versions": {
-        "16.8-r4": 1743513441
+        "16.8-r4": 1743513441,
+        "16.9-r0": 1747092522
       },
       "dependencies": [
-        "postgresql16-plpython3=16.8-r4",
+        "postgresql16-plpython3=16.9-r0",
         "so:libc.musl-x86.so.1",
         "so:libpython3.12.so.1.0"
       ],
@@ -52898,10 +52914,11 @@
     "postgresql16-pltcl": {
       "origin": "postgresql16",
       "versions": {
-        "16.8-r4": 1743513441
+        "16.8-r4": 1743513441,
+        "16.9-r0": 1747092522
       },
       "dependencies": [
-        "postgresql16=16.8-r4",
+        "postgresql16=16.9-r0",
         "pgtcl",
         "so:libc.musl-x86.so.1",
         "so:libtcl8.6.so"
@@ -52913,7 +52930,8 @@
     "postgresql17": {
       "origin": "postgresql17",
       "versions": {
-        "17.4-r4": 1743513441
+        "17.4-r4": 1743513441,
+        "17.5-r0": 1747092581
       },
       "dependencies": [
         "postgresql17-client",
@@ -52934,28 +52952,29 @@
       ],
       "provides": [
         "postgresql",
-        "cmd:initdb",
-        "cmd:pg_checksums",
-        "cmd:pg_rewind",
-        "cmd:pg_walsummary",
+        "cmd:postgres",
+        "cmd:pg_controldata",
         "cmd:pg_resetwal",
         "cmd:pg_combinebackup",
-        "cmd:pg_upgrade",
-        "cmd:pg_test_fsync",
-        "cmd:pg_controldata",
-        "cmd:pg_test_timing",
-        "cmd:pg_archivecleanup",
-        "cmd:postgres",
-        "cmd:pg_waldump",
-        "cmd:pg_createsubscriber",
         "cmd:pg_ctl",
-        "cmd:postgres17=17.4-r4"
+        "cmd:pg_test_fsync",
+        "cmd:pg_walsummary",
+        "cmd:pg_checksums",
+        "cmd:pg_test_timing",
+        "cmd:pg_waldump",
+        "cmd:pg_archivecleanup",
+        "cmd:pg_upgrade",
+        "cmd:initdb",
+        "cmd:pg_rewind",
+        "cmd:pg_createsubscriber",
+        "cmd:postgres17=17.5-r0"
       ]
     },
     "postgresql17-client": {
       "origin": "postgresql17",
       "versions": {
-        "17.4-r4": 1743513441
+        "17.4-r4": 1743513441,
+        "17.5-r0": 1747092581
       },
       "dependencies": [
         "postgresql-common",
@@ -52992,10 +53011,11 @@
     "postgresql17-contrib": {
       "origin": "postgresql17",
       "versions": {
-        "17.4-r4": 1743513441
+        "17.4-r4": 1743513441,
+        "17.5-r0": 1747092581
       },
       "dependencies": [
-        "postgresql17=17.4-r4",
+        "postgresql17=17.5-r0",
         "so:libc.musl-x86.so.1",
         "so:libcrypto.so.3",
         "so:libpq.so.5",
@@ -53012,10 +53032,11 @@
     "postgresql17-contrib-jit": {
       "origin": "postgresql17",
       "versions": {
-        "17.4-r4": 1743513441
+        "17.4-r4": 1743513441,
+        "17.5-r0": 1747092581
       },
       "dependencies": [
-        "postgresql17-contrib=17.4-r4"
+        "postgresql17-contrib=17.5-r0"
       ],
       "provides": [
         "postgresql-contrib-jit"
@@ -53024,7 +53045,8 @@
     "postgresql17-dev": {
       "origin": "postgresql17",
       "versions": {
-        "17.4-r4": 1743513441
+        "17.4-r4": 1743513441,
+        "17.5-r0": 1747092581
       },
       "dependencies": [
         "libpq-dev",
@@ -53045,7 +53067,8 @@
     "postgresql17-doc": {
       "origin": "postgresql17",
       "versions": {
-        "17.4-r4": 1743513441
+        "17.4-r4": 1743513441,
+        "17.5-r0": 1747092581
       },
       "provides": [
         "postgresql-doc"
@@ -53054,10 +53077,11 @@
     "postgresql17-jit": {
       "origin": "postgresql17",
       "versions": {
-        "17.4-r4": 1743513441
+        "17.4-r4": 1743513441,
+        "17.5-r0": 1747092581
       },
       "dependencies": [
-        "postgresql17=17.4-r4",
+        "postgresql17=17.5-r0",
         "so:libLLVM.so.18.1",
         "so:libc.musl-x86.so.1",
         "so:libgcc_s.so.1",
@@ -53070,7 +53094,8 @@
     "postgresql17-openrc": {
       "origin": "postgresql17",
       "versions": {
-        "17.4-r4": 1743513441
+        "17.4-r4": 1743513441,
+        "17.5-r0": 1747092581
       },
       "dependencies": [
         "postgresql-common-openrc"
@@ -53079,10 +53104,11 @@
     "postgresql17-plperl": {
       "origin": "postgresql17",
       "versions": {
-        "17.4-r4": 1743513441
+        "17.4-r4": 1743513441,
+        "17.5-r0": 1747092581
       },
       "dependencies": [
-        "postgresql17=17.4-r4",
+        "postgresql17=17.5-r0",
         "so:libc.musl-x86.so.1",
         "so:libperl.so"
       ],
@@ -53093,10 +53119,11 @@
     "postgresql17-plperl-contrib": {
       "origin": "postgresql17",
       "versions": {
-        "17.4-r4": 1743513441
+        "17.4-r4": 1743513441,
+        "17.5-r0": 1747092581
       },
       "dependencies": [
-        "postgresql17-plperl=17.4-r4",
+        "postgresql17-plperl=17.5-r0",
         "so:libc.musl-x86.so.1",
         "so:libperl.so"
       ],
@@ -53107,10 +53134,11 @@
     "postgresql17-plpython3": {
       "origin": "postgresql17",
       "versions": {
-        "17.4-r4": 1743513441
+        "17.4-r4": 1743513441,
+        "17.5-r0": 1747092581
       },
       "dependencies": [
-        "postgresql17=17.4-r4",
+        "postgresql17=17.5-r0",
         "python3",
         "so:libc.musl-x86.so.1",
         "so:libpython3.12.so.1.0"
@@ -53122,10 +53150,11 @@
     "postgresql17-plpython3-contrib": {
       "origin": "postgresql17",
       "versions": {
-        "17.4-r4": 1743513441
+        "17.4-r4": 1743513441,
+        "17.5-r0": 1747092581
       },
       "dependencies": [
-        "postgresql17-plpython3=17.4-r4",
+        "postgresql17-plpython3=17.5-r0",
         "so:libc.musl-x86.so.1",
         "so:libpython3.12.so.1.0"
       ],
@@ -53136,10 +53165,11 @@
     "postgresql17-pltcl": {
       "origin": "postgresql17",
       "versions": {
-        "17.4-r4": 1743513441
+        "17.4-r4": 1743513441,
+        "17.5-r0": 1747092581
       },
       "dependencies": [
-        "postgresql17=17.4-r4",
+        "postgresql17=17.5-r0",
         "pgtcl",
         "so:libc.musl-x86.so.1",
         "so:libtcl8.6.so"
