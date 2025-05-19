@@ -3228,7 +3228,8 @@
     "amd-ucode": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       }
     },
     "android-tools-zsh-completion": {
@@ -17580,76 +17581,83 @@
     "gpsd": {
       "origin": "gpsd",
       "versions": {
-        "3.25-r3": 1744048192
+        "3.25-r3": 1744048192,
+        "3.26.1-r0": 1747663561
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
+        "so:libcap.so.2",
         "so:libgcc_s.so.1",
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libgps.so.30=30.0.0",
-        "so:libgpsdpacket.so.30=30.0.0",
-        "cmd:gpsd=3.25-r3",
-        "cmd:gpsdctl=3.25-r3"
+        "so:libgps.so.31=31.0.0",
+        "so:libgpsdpacket.so.31=31.0.0",
+        "cmd:gpsd=3.26.1-r0",
+        "cmd:gpsdctl=3.26.1-r0"
       ]
     },
     "gpsd-clients": {
       "origin": "gpsd",
       "versions": {
-        "3.25-r3": 1744048192
+        "3.25-r3": 1744048192,
+        "3.26.1-r0": 1747663561
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libncursesw.so.6"
       ],
       "provides": [
-        "cmd:cgps=3.25-r3",
-        "cmd:gegps=3.25-r3",
-        "cmd:gps2udp=3.25-r3",
-        "cmd:gpscsv=3.25-r3",
-        "cmd:gpsctl=3.25-r3",
-        "cmd:gpsdebuginfo=3.25-r3",
-        "cmd:gpsdecode=3.25-r3",
-        "cmd:gpsmon=3.25-r3",
-        "cmd:gpspipe=3.25-r3",
-        "cmd:gpsplot=3.25-r3",
-        "cmd:gpsrinex=3.25-r3",
-        "cmd:gpssnmp=3.25-r3",
-        "cmd:gpssubframe=3.25-r3",
-        "cmd:gpxlogger=3.25-r3",
-        "cmd:lcdgps=3.25-r3",
-        "cmd:ntpshmmon=3.25-r3",
-        "cmd:ppscheck=3.25-r3",
-        "cmd:ubxtool=3.25-r3",
-        "cmd:xgps=3.25-r3",
-        "cmd:xgpsspeed=3.25-r3",
-        "cmd:zerk=3.25-r3"
+        "cmd:cgps=3.26.1-r0",
+        "cmd:gegps=3.26.1-r0",
+        "cmd:gps2udp=3.26.1-r0",
+        "cmd:gpscsv=3.26.1-r0",
+        "cmd:gpsctl=3.26.1-r0",
+        "cmd:gpsdebuginfo=3.26.1-r0",
+        "cmd:gpsdecode=3.26.1-r0",
+        "cmd:gpslogntp=3.26.1-r0",
+        "cmd:gpsmon=3.26.1-r0",
+        "cmd:gpspipe=3.26.1-r0",
+        "cmd:gpsplot=3.26.1-r0",
+        "cmd:gpsrinex=3.26.1-r0",
+        "cmd:gpssnmp=3.26.1-r0",
+        "cmd:gpssubframe=3.26.1-r0",
+        "cmd:gpxlogger=3.26.1-r0",
+        "cmd:lcdgps=3.26.1-r0",
+        "cmd:ntpshmmon=3.26.1-r0",
+        "cmd:ppscheck=3.26.1-r0",
+        "cmd:ubxtool=3.26.1-r0",
+        "cmd:xgps=3.26.1-r0",
+        "cmd:xgpsspeed=3.26.1-r0",
+        "cmd:zerk=3.26.1-r0"
       ]
     },
     "gpsd-dev": {
       "origin": "gpsd",
       "versions": {
-        "3.25-r3": 1744048192
+        "3.25-r3": 1744048192,
+        "3.26.1-r0": 1747663561
       },
       "dependencies": [
-        "gpsd=3.25-r3",
+        "gpsd=3.26.1-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libgps=3.25"
+        "pc:libgps=3.26.1"
       ]
     },
     "gpsd-doc": {
       "origin": "gpsd",
       "versions": {
-        "3.25-r3": 1744048192
+        "3.25-r3": 1744048192,
+        "3.26.1-r0": 1747663561
       }
     },
     "gpsd-openrc": {
       "origin": "gpsd",
       "versions": {
-        "3.25-r3": 1744048192
+        "3.25-r3": 1744048192,
+        "3.26.1-r0": 1747663561
       }
     },
     "gptfdisk": {
@@ -30481,115 +30489,116 @@
     "linux-firmware": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "dependencies": [
-        "linux-firmware-s5p-mfc=20250410-r0",
-        "linux-firmware-yamaha=20250410-r0",
-        "linux-firmware-yam=20250410-r0",
-        "linux-firmware-xe=20250410-r0",
-        "linux-firmware-wfx=20250410-r0",
-        "linux-firmware-vxge=20250410-r0",
-        "linux-firmware-vicam=20250410-r0",
-        "linux-firmware-ueagle-atm=20250410-r0",
-        "linux-firmware-ttusb-budget=20250410-r0",
-        "linux-firmware-tigon=20250410-r0",
-        "linux-firmware-ti-keystone=20250410-r0",
-        "linux-firmware-ti-connectivity=20250410-r0",
-        "linux-firmware-ti=20250410-r0",
-        "linux-firmware-tehuti=20250410-r0",
-        "linux-firmware-synaptics=20250410-r0",
-        "linux-firmware-sxg=20250410-r0",
-        "linux-firmware-sun=20250410-r0",
-        "linux-firmware-slicoss=20250410-r0",
-        "linux-firmware-sb16=20250410-r0",
-        "linux-firmware-rtw89=20250410-r0",
-        "linux-firmware-rtw88=20250410-r0",
-        "linux-firmware-rtlwifi=20250410-r0",
-        "linux-firmware-rtl_nic=20250410-r0",
-        "linux-firmware-rtl_bt=20250410-r0",
-        "linux-firmware-rsi=20250410-r0",
-        "linux-firmware-rockchip=20250410-r0",
-        "linux-firmware-realtek=20250410-r0",
-        "linux-firmware-radeon=20250410-r0",
-        "linux-firmware-r128=20250410-r0",
-        "linux-firmware-qlogic=20250410-r0",
-        "linux-firmware-qed=20250410-r0",
-        "linux-firmware-qcom=20250410-r0",
-        "linux-firmware-qca=20250410-r0",
-        "linux-firmware-powervr=20250410-r0",
-        "linux-firmware-ositech=20250410-r0",
-        "linux-firmware-nxp=20250410-r0",
-        "linux-firmware-nvidia=20250410-r0",
-        "linux-firmware-netronome=20250410-r0",
-        "linux-firmware-myricom=20250410-r0",
-        "linux-firmware-mwlwifi=20250410-r0",
-        "linux-firmware-mwl8k=20250410-r0",
-        "linux-firmware-mrvl=20250410-r0",
-        "linux-firmware-moxa=20250410-r0",
-        "linux-firmware-microchip=20250410-r0",
-        "linux-firmware-meson=20250410-r0",
-        "linux-firmware-mellanox=20250410-r0",
-        "linux-firmware-mediatek=20250410-r0",
-        "linux-firmware-matrox=20250410-r0",
-        "linux-firmware-liquidio=20250410-r0",
-        "linux-firmware-libertas=20250410-r0",
-        "linux-firmware-korg=20250410-r0",
-        "linux-firmware-keyspan_pda=20250410-r0",
-        "linux-firmware-keyspan=20250410-r0",
-        "linux-firmware-kaweth=20250410-r0",
-        "linux-firmware-ixp4xx=20250410-r0",
-        "linux-firmware-isci=20250410-r0",
-        "linux-firmware-intel=20250410-r0",
-        "linux-firmware-inside-secure=20250410-r0",
-        "linux-firmware-imx=20250410-r0",
-        "linux-firmware-i915=20250410-r0",
-        "linux-firmware-go7007=20250410-r0",
-        "linux-firmware-ess=20250410-r0",
-        "linux-firmware-ene-ub6250=20250410-r0",
-        "linux-firmware-emi62=20250410-r0",
-        "linux-firmware-emi26=20250410-r0",
-        "linux-firmware-edgeport=20250410-r0",
-        "linux-firmware-e100=20250410-r0",
-        "linux-firmware-dsp56k=20250410-r0",
-        "linux-firmware-dpaa2=20250410-r0",
-        "linux-firmware-dabusb=20250410-r0",
-        "linux-firmware-cypress=20250410-r0",
-        "linux-firmware-cxgb4=20250410-r0",
-        "linux-firmware-cxgb3=20250410-r0",
-        "linux-firmware-cpia2=20250410-r0",
-        "linux-firmware-cnm=20250410-r0",
-        "linux-firmware-cis=20250410-r0",
-        "linux-firmware-cirrus=20250410-r0",
-        "linux-firmware-cavium=20250410-r0",
-        "linux-firmware-cadence=20250410-r0",
-        "linux-firmware-brcm=20250410-r0",
-        "linux-firmware-bnx2x=20250410-r0",
-        "linux-firmware-bnx2=20250410-r0",
-        "linux-firmware-av7110=20250410-r0",
-        "linux-firmware-atusb=20250410-r0",
-        "linux-firmware-atmel=20250410-r0",
-        "linux-firmware-ath9k_htc=20250410-r0",
-        "linux-firmware-ath6k=20250410-r0",
-        "linux-firmware-ath12k=20250410-r0",
-        "linux-firmware-ath11k=20250410-r0",
-        "linux-firmware-ath10k=20250410-r0",
-        "linux-firmware-arm=20250410-r0",
-        "linux-firmware-ar3k=20250410-r0",
-        "linux-firmware-amphion=20250410-r0",
-        "linux-firmware-amlogic=20250410-r0",
-        "linux-firmware-amdtee=20250410-r0",
-        "linux-firmware-amdnpu=20250410-r0",
-        "linux-firmware-amdgpu=20250410-r0",
-        "linux-firmware-amd-ucode=20250410-r0",
-        "linux-firmware-amd=20250410-r0",
-        "linux-firmware-airoha=20250410-r0",
-        "linux-firmware-aeonsemi=20250410-r0",
-        "linux-firmware-advansys=20250410-r0",
-        "linux-firmware-adaptec=20250410-r0",
-        "linux-firmware-acenic=20250410-r0",
-        "linux-firmware-3com=20250410-r0",
-        "linux-firmware-other=20250410-r0"
+        "linux-firmware-s5p-mfc=20250509-r0",
+        "linux-firmware-yamaha=20250509-r0",
+        "linux-firmware-yam=20250509-r0",
+        "linux-firmware-xe=20250509-r0",
+        "linux-firmware-wfx=20250509-r0",
+        "linux-firmware-vxge=20250509-r0",
+        "linux-firmware-vicam=20250509-r0",
+        "linux-firmware-ueagle-atm=20250509-r0",
+        "linux-firmware-ttusb-budget=20250509-r0",
+        "linux-firmware-tigon=20250509-r0",
+        "linux-firmware-ti-keystone=20250509-r0",
+        "linux-firmware-ti-connectivity=20250509-r0",
+        "linux-firmware-ti=20250509-r0",
+        "linux-firmware-tehuti=20250509-r0",
+        "linux-firmware-synaptics=20250509-r0",
+        "linux-firmware-sxg=20250509-r0",
+        "linux-firmware-sun=20250509-r0",
+        "linux-firmware-slicoss=20250509-r0",
+        "linux-firmware-sb16=20250509-r0",
+        "linux-firmware-rtw89=20250509-r0",
+        "linux-firmware-rtw88=20250509-r0",
+        "linux-firmware-rtlwifi=20250509-r0",
+        "linux-firmware-rtl_nic=20250509-r0",
+        "linux-firmware-rtl_bt=20250509-r0",
+        "linux-firmware-rsi=20250509-r0",
+        "linux-firmware-rockchip=20250509-r0",
+        "linux-firmware-realtek=20250509-r0",
+        "linux-firmware-radeon=20250509-r0",
+        "linux-firmware-r128=20250509-r0",
+        "linux-firmware-qlogic=20250509-r0",
+        "linux-firmware-qed=20250509-r0",
+        "linux-firmware-qcom=20250509-r0",
+        "linux-firmware-qca=20250509-r0",
+        "linux-firmware-powervr=20250509-r0",
+        "linux-firmware-ositech=20250509-r0",
+        "linux-firmware-nxp=20250509-r0",
+        "linux-firmware-nvidia=20250509-r0",
+        "linux-firmware-netronome=20250509-r0",
+        "linux-firmware-myricom=20250509-r0",
+        "linux-firmware-mwlwifi=20250509-r0",
+        "linux-firmware-mwl8k=20250509-r0",
+        "linux-firmware-mrvl=20250509-r0",
+        "linux-firmware-moxa=20250509-r0",
+        "linux-firmware-microchip=20250509-r0",
+        "linux-firmware-meson=20250509-r0",
+        "linux-firmware-mellanox=20250509-r0",
+        "linux-firmware-mediatek=20250509-r0",
+        "linux-firmware-matrox=20250509-r0",
+        "linux-firmware-liquidio=20250509-r0",
+        "linux-firmware-libertas=20250509-r0",
+        "linux-firmware-korg=20250509-r0",
+        "linux-firmware-keyspan_pda=20250509-r0",
+        "linux-firmware-keyspan=20250509-r0",
+        "linux-firmware-kaweth=20250509-r0",
+        "linux-firmware-ixp4xx=20250509-r0",
+        "linux-firmware-isci=20250509-r0",
+        "linux-firmware-intel=20250509-r0",
+        "linux-firmware-inside-secure=20250509-r0",
+        "linux-firmware-imx=20250509-r0",
+        "linux-firmware-i915=20250509-r0",
+        "linux-firmware-go7007=20250509-r0",
+        "linux-firmware-ess=20250509-r0",
+        "linux-firmware-ene-ub6250=20250509-r0",
+        "linux-firmware-emi62=20250509-r0",
+        "linux-firmware-emi26=20250509-r0",
+        "linux-firmware-edgeport=20250509-r0",
+        "linux-firmware-e100=20250509-r0",
+        "linux-firmware-dsp56k=20250509-r0",
+        "linux-firmware-dpaa2=20250509-r0",
+        "linux-firmware-dabusb=20250509-r0",
+        "linux-firmware-cypress=20250509-r0",
+        "linux-firmware-cxgb4=20250509-r0",
+        "linux-firmware-cxgb3=20250509-r0",
+        "linux-firmware-cpia2=20250509-r0",
+        "linux-firmware-cnm=20250509-r0",
+        "linux-firmware-cis=20250509-r0",
+        "linux-firmware-cirrus=20250509-r0",
+        "linux-firmware-cavium=20250509-r0",
+        "linux-firmware-cadence=20250509-r0",
+        "linux-firmware-brcm=20250509-r0",
+        "linux-firmware-bnx2x=20250509-r0",
+        "linux-firmware-bnx2=20250509-r0",
+        "linux-firmware-av7110=20250509-r0",
+        "linux-firmware-atusb=20250509-r0",
+        "linux-firmware-atmel=20250509-r0",
+        "linux-firmware-ath9k_htc=20250509-r0",
+        "linux-firmware-ath6k=20250509-r0",
+        "linux-firmware-ath12k=20250509-r0",
+        "linux-firmware-ath11k=20250509-r0",
+        "linux-firmware-ath10k=20250509-r0",
+        "linux-firmware-arm=20250509-r0",
+        "linux-firmware-ar3k=20250509-r0",
+        "linux-firmware-amphion=20250509-r0",
+        "linux-firmware-amlogic=20250509-r0",
+        "linux-firmware-amdtee=20250509-r0",
+        "linux-firmware-amdnpu=20250509-r0",
+        "linux-firmware-amdgpu=20250509-r0",
+        "linux-firmware-amd-ucode=20250509-r0",
+        "linux-firmware-amd=20250509-r0",
+        "linux-firmware-airoha=20250509-r0",
+        "linux-firmware-aeonsemi=20250509-r0",
+        "linux-firmware-advansys=20250509-r0",
+        "linux-firmware-adaptec=20250509-r0",
+        "linux-firmware-acenic=20250509-r0",
+        "linux-firmware-3com=20250509-r0",
+        "linux-firmware-other=20250509-r0"
       ],
       "provides": [
         "linux-firmware-any"
@@ -30598,7 +30607,8 @@
     "linux-firmware-3com": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30607,7 +30617,8 @@
     "linux-firmware-acenic": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30616,7 +30627,8 @@
     "linux-firmware-adaptec": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30625,7 +30637,8 @@
     "linux-firmware-advansys": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30634,7 +30647,8 @@
     "linux-firmware-aeonsemi": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30643,7 +30657,8 @@
     "linux-firmware-airoha": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30652,7 +30667,8 @@
     "linux-firmware-amd": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30661,7 +30677,8 @@
     "linux-firmware-amd-ucode": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30670,7 +30687,8 @@
     "linux-firmware-amdgpu": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30679,7 +30697,8 @@
     "linux-firmware-amdnpu": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30688,7 +30707,8 @@
     "linux-firmware-amdtee": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30697,7 +30717,8 @@
     "linux-firmware-amlogic": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30706,7 +30727,8 @@
     "linux-firmware-amphion": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30715,7 +30737,8 @@
     "linux-firmware-ar3k": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30724,7 +30747,8 @@
     "linux-firmware-arm": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30733,7 +30757,8 @@
     "linux-firmware-ath10k": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30742,7 +30767,8 @@
     "linux-firmware-ath11k": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30751,10 +30777,11 @@
     "linux-firmware-ath12k": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "dependencies": [
-        "linux-firmware-ath11k=20250410-r0"
+        "linux-firmware-ath11k=20250509-r0"
       ],
       "provides": [
         "linux-firmware-any"
@@ -30763,7 +30790,8 @@
     "linux-firmware-ath6k": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30772,7 +30800,8 @@
     "linux-firmware-ath9k_htc": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30781,7 +30810,8 @@
     "linux-firmware-atmel": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30790,7 +30820,8 @@
     "linux-firmware-atusb": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30799,7 +30830,8 @@
     "linux-firmware-av7110": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30808,7 +30840,8 @@
     "linux-firmware-bnx2": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30817,7 +30850,8 @@
     "linux-firmware-bnx2x": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30826,11 +30860,12 @@
     "linux-firmware-brcm": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "dependencies": [
-        "linux-firmware-cypress=20250410-r0",
-        "linux-firmware-synaptics=20250410-r0"
+        "linux-firmware-cypress=20250509-r0",
+        "linux-firmware-synaptics=20250509-r0"
       ],
       "provides": [
         "linux-firmware-any"
@@ -30839,7 +30874,8 @@
     "linux-firmware-cadence": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30848,7 +30884,8 @@
     "linux-firmware-cavium": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30857,7 +30894,8 @@
     "linux-firmware-cirrus": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30866,7 +30904,8 @@
     "linux-firmware-cis": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30875,7 +30914,8 @@
     "linux-firmware-cnm": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30884,7 +30924,8 @@
     "linux-firmware-cpia2": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30893,7 +30934,8 @@
     "linux-firmware-cxgb3": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30902,7 +30944,8 @@
     "linux-firmware-cxgb4": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30911,7 +30954,8 @@
     "linux-firmware-cypress": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30920,7 +30964,8 @@
     "linux-firmware-dabusb": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30929,7 +30974,8 @@
     "linux-firmware-dpaa2": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30938,7 +30984,8 @@
     "linux-firmware-dsp56k": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30947,7 +30994,8 @@
     "linux-firmware-e100": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30956,7 +31004,8 @@
     "linux-firmware-edgeport": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30965,7 +31014,8 @@
     "linux-firmware-emi26": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30974,7 +31024,8 @@
     "linux-firmware-emi62": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30983,7 +31034,8 @@
     "linux-firmware-ene-ub6250": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -30992,7 +31044,8 @@
     "linux-firmware-ess": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31001,7 +31054,8 @@
     "linux-firmware-go7007": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31010,7 +31064,8 @@
     "linux-firmware-i915": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31019,7 +31074,8 @@
     "linux-firmware-imx": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31028,7 +31084,8 @@
     "linux-firmware-inside-secure": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31037,7 +31094,8 @@
     "linux-firmware-intel": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31046,7 +31104,8 @@
     "linux-firmware-isci": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31055,7 +31114,8 @@
     "linux-firmware-ixp4xx": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31064,7 +31124,8 @@
     "linux-firmware-kaweth": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31073,7 +31134,8 @@
     "linux-firmware-keyspan": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31082,7 +31144,8 @@
     "linux-firmware-keyspan_pda": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31091,7 +31154,8 @@
     "linux-firmware-korg": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31100,7 +31164,8 @@
     "linux-firmware-libertas": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31109,7 +31174,8 @@
     "linux-firmware-liquidio": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31118,7 +31184,8 @@
     "linux-firmware-matrox": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31127,7 +31194,8 @@
     "linux-firmware-mediatek": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31136,7 +31204,8 @@
     "linux-firmware-mellanox": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31145,7 +31214,8 @@
     "linux-firmware-meson": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31154,7 +31224,8 @@
     "linux-firmware-microchip": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31163,7 +31234,8 @@
     "linux-firmware-moxa": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31172,10 +31244,11 @@
     "linux-firmware-mrvl": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "dependencies": [
-        "linux-firmware-libertas=20250410-r0"
+        "linux-firmware-libertas=20250509-r0"
       ],
       "provides": [
         "linux-firmware-any"
@@ -31184,7 +31257,8 @@
     "linux-firmware-mwl8k": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31193,7 +31267,8 @@
     "linux-firmware-mwlwifi": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31202,7 +31277,8 @@
     "linux-firmware-myricom": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31211,7 +31287,8 @@
     "linux-firmware-netronome": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31220,7 +31297,8 @@
     "linux-firmware-none": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31229,7 +31307,8 @@
     "linux-firmware-nvidia": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31238,7 +31317,8 @@
     "linux-firmware-nxp": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31247,7 +31327,8 @@
     "linux-firmware-ositech": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31256,7 +31337,8 @@
     "linux-firmware-other": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31265,7 +31347,8 @@
     "linux-firmware-powervr": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31274,7 +31357,8 @@
     "linux-firmware-qca": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31283,11 +31367,12 @@
     "linux-firmware-qcom": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "dependencies": [
-        "linux-firmware-ath10k=20250410-r0",
-        "linux-firmware-ath11k=20250410-r0"
+        "linux-firmware-ath10k=20250509-r0",
+        "linux-firmware-ath11k=20250509-r0"
       ],
       "provides": [
         "linux-firmware-any"
@@ -31296,7 +31381,8 @@
     "linux-firmware-qed": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31305,7 +31391,8 @@
     "linux-firmware-qlogic": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31314,7 +31401,8 @@
     "linux-firmware-r128": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31323,10 +31411,11 @@
     "linux-firmware-radeon": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "dependencies": [
-        "linux-firmware-amdgpu=20250410-r0"
+        "linux-firmware-amdgpu=20250509-r0"
       ],
       "provides": [
         "linux-firmware-any"
@@ -31335,7 +31424,8 @@
     "linux-firmware-realtek": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31344,7 +31434,8 @@
     "linux-firmware-rockchip": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31353,7 +31444,8 @@
     "linux-firmware-rsi": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31362,7 +31454,8 @@
     "linux-firmware-rtl_bt": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31371,7 +31464,8 @@
     "linux-firmware-rtl_nic": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31380,7 +31474,8 @@
     "linux-firmware-rtlwifi": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31389,7 +31484,8 @@
     "linux-firmware-rtw88": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31398,7 +31494,8 @@
     "linux-firmware-rtw89": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31407,7 +31504,8 @@
     "linux-firmware-s5p-mfc": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31416,7 +31514,8 @@
     "linux-firmware-sb16": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31425,7 +31524,8 @@
     "linux-firmware-slicoss": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31434,7 +31534,8 @@
     "linux-firmware-sun": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31443,7 +31544,8 @@
     "linux-firmware-sxg": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31452,7 +31554,8 @@
     "linux-firmware-synaptics": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31461,7 +31564,8 @@
     "linux-firmware-tehuti": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31470,7 +31574,8 @@
     "linux-firmware-ti": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31479,7 +31584,8 @@
     "linux-firmware-ti-connectivity": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31488,7 +31594,8 @@
     "linux-firmware-ti-keystone": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31497,7 +31604,8 @@
     "linux-firmware-tigon": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31506,7 +31614,8 @@
     "linux-firmware-ttusb-budget": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31515,7 +31624,8 @@
     "linux-firmware-ueagle-atm": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31524,7 +31634,8 @@
     "linux-firmware-vicam": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31533,7 +31644,8 @@
     "linux-firmware-vxge": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31542,7 +31654,8 @@
     "linux-firmware-wfx": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31551,7 +31664,8 @@
     "linux-firmware-xe": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31560,7 +31674,8 @@
     "linux-firmware-yam": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -31569,7 +31684,8 @@
     "linux-firmware-yamaha": {
       "origin": "linux-firmware",
       "versions": {
-        "20250410-r0": 1744790156
+        "20250410-r0": 1744790156,
+        "20250509-r0": 1747661538
       },
       "provides": [
         "linux-firmware-any"
@@ -42747,7 +42863,8 @@
       "origin": "nmap",
       "versions": {
         "7.95-r1": 1724296850,
-        "7.96-r0": 1746606739
+        "7.96-r0": 1746606739,
+        "7.97-r0": 1747663692
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -42761,21 +42878,23 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:nmap=7.96-r0"
+        "cmd:nmap=7.97-r0"
       ]
     },
     "nmap-doc": {
       "origin": "nmap",
       "versions": {
         "7.95-r1": 1724296850,
-        "7.96-r0": 1746606739
+        "7.96-r0": 1746606739,
+        "7.97-r0": 1747663692
       }
     },
     "nmap-ncat": {
       "origin": "nmap",
       "versions": {
         "7.95-r1": 1724296850,
-        "7.96-r0": 1746606739
+        "7.96-r0": 1746606739,
+        "7.97-r0": 1747663692
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -42785,14 +42904,15 @@
         "so:libssl.so.3"
       ],
       "provides": [
-        "cmd:ncat=7.96-r0"
+        "cmd:ncat=7.97-r0"
       ]
     },
     "nmap-nping": {
       "origin": "nmap",
       "versions": {
         "7.95-r1": 1724296850,
-        "7.96-r0": 1746606739
+        "7.96-r0": 1746606739,
+        "7.97-r0": 1747663692
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -42803,21 +42923,23 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:nping=7.96-r0"
+        "cmd:nping=7.97-r0"
       ]
     },
     "nmap-nselibs": {
       "origin": "nmap",
       "versions": {
         "7.95-r1": 1724296850,
-        "7.96-r0": 1746606739
+        "7.96-r0": 1746606739,
+        "7.97-r0": 1747663692
       }
     },
     "nmap-scripts": {
       "origin": "nmap",
       "versions": {
         "7.95-r1": 1724296850,
-        "7.96-r0": 1746606739
+        "7.96-r0": 1746606739,
+        "7.97-r0": 1747663692
       },
       "dependencies": [
         "nmap-nselibs"
@@ -54663,16 +54785,17 @@
     "py3-gpsd": {
       "origin": "gpsd",
       "versions": {
-        "3.25-r3": 1744048192
+        "3.25-r3": 1744048192,
+        "3.26.1-r0": 1747663561
       },
       "dependencies": [
         "python3~3.12"
       ],
       "provides": [
-        "cmd:gpscat=3.25-r3",
-        "cmd:gpsfake=3.25-r3",
-        "cmd:gpsprof=3.25-r3",
-        "py3.12:gps=3.25-r3"
+        "cmd:gpscat=3.26.1-r0",
+        "cmd:gpsfake=3.26.1-r0",
+        "cmd:gpsprof=3.26.1-r0",
+        "py3.12:gps=3.26.1-r0"
       ]
     },
     "py3-gv": {
@@ -77320,6 +77443,14 @@
       "libzerovec_derive-3d5b0cf94dfc22a0.so": {
         "package": "rustc-dev",
         "version": "0"
+      },
+      "libgps.so.31": {
+        "package": "gpsd",
+        "version": "31.0.0"
+      },
+      "libgpsdpacket.so.31": {
+        "package": "gpsd",
+        "version": "31.0.0"
       }
     }
   }
