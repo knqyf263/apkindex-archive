@@ -14430,21 +14430,21 @@ c:21d29cabd99e7ff6534d2e99601cbd77abf30f8a
 D:efitools cmd:openssl cmd:uuidgen
 p:cmd:efi-mkkeys=0.1.0-r0
 
-C:Q1awAQ9yHYCHXTOe0P4DMQba+TczY=
+C:Q1gVAVrNfCgbRa2dYLOYlLdOMisY8=
 P:efi-mkuki
-V:0.1.1-r1
+V:1.0.0-r0
 A:armv7
-S:3196
-I:3721
+S:3971
+I:5283
 T:EFI Unified Kernel Image Maker
 U:https://github.com/jirutka/efi-mkuki
 L:MIT
 o:efi-mkuki
 m:Jakub Jirutka <jakub@jirutka.cz>
-t:1745276943
-c:257adac644584e7e88e38dabe81e22b67d4c0fcd
-D:binutils
-p:cmd:efi-mkuki=0.1.1-r1
+t:1748037891
+c:7e1a28843baca2c3f6866f35ae388cef1d4b7dce
+D:binutils efistub
+p:cmd:efi-mkuki=1.0.0-r0
 
 C:Q1jemMI8+QKbRRIDHPtbePjBEBOWM=
 P:efibootmgr
@@ -76546,20 +76546,20 @@ t:1747478582
 c:1443d3213284f0d5dc25f8172da39384ac902165
 k:100
 
-C:Q1IkT0ajmNXkkayufHsO6/5Ngz9BA=
+C:Q1CYAGW7r6q6n+bHJoKDm83ANgh/E=
 P:secureboot-hook
-V:0.3-r0
+V:1.0-r0
 A:armv7
-S:4333
-I:4922
+S:4695
+I:4965
 T:A kernel hook for generating signed UEFI Unified Kernel Image
 U:https://gitlab.alpinelinux.org/alpine/aports
 L:MIT
 o:secureboot-hook
 m:Jakub Jirutka <jakub@jirutka.cz>
-t:1742150251
-c:3a23f07bba81cf64e63bd6430dcc3daff718947f
-D:efi-mkuki kernel-hooks initramfs-generator sbsigntool /bin/sh
+t:1748037891
+c:6141a78fa9ed3d5d819b579d934bcadcfdae759c
+D:efi-mkuki>=1.0.0 kernel-hooks initramfs-generator sbsigntool /bin/sh
 
 C:Q1ixSxQ+sjdld0LcYYj4l94pwSUgY=
 P:sed
@@ -80486,6 +80486,36 @@ t:1747894670
 c:7094d681a90006e7599ce94b8b2aed5c27b53c1d
 D:so:libc.musl-armv7.so.1 so:libevtlog-4.8.so.0 so:libglib-2.0.so.0 so:libsyslog-ng-4.8.so.0
 
+C:Q1i9JjTF27BpZJYA3Ss3SRXWw2OB0=
+P:systemd-boot
+V:257.5-r1
+A:armv7
+S:48671
+I:83456
+T:systemd's EFI boot manager.
+U:https://systemd.io/
+L:LGPL-2.1-or-later
+o:systemd-boot
+m:Struan Robertson <contact@struanrobertson.co.uk>
+t:1748037891
+c:6e9bb0dcc5644652cb96b2de6ec17a119fdb8deb
+
+C:Q1Pr0qKXNHtaPO7oRzy3My8i/pYBQ=
+P:systemd-efistub
+V:257.5-r1
+A:armv7
+S:82819
+I:156640
+T:systemd's EFI boot stub
+U:https://systemd.io/
+L:LGPL-2.1-or-later
+o:systemd-boot
+m:Struan Robertson <contact@struanrobertson.co.uk>
+t:1748037891
+c:6e9bb0dcc5644652cb96b2de6ec17a119fdb8deb
+k:100
+p:efistub
+
 C:Q13U0NaQqPGgg/R5uUB2v+fhlugBg=
 P:talloc
 V:2.4.2-r1
@@ -81981,6 +82011,37 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1722060768
 c:368eb9df61eaf7a83a6f92ee8fa846557365f34c
 i:docs udns=0.6-r0
+
+C:Q1lDWoP4GbGmzkmFsyQyZUBoGP45M=
+P:ukify
+V:257.5-r1
+A:armv7
+S:21921
+I:75905
+T:Create unified kernel images (UKIs).
+U:https://systemd.io/
+L:LGPL-2.1-or-later
+o:systemd-boot
+m:Struan Robertson <contact@struanrobertson.co.uk>
+t:1748037891
+c:6e9bb0dcc5644652cb96b2de6ec17a119fdb8deb
+D:binutils py3-pefile
+p:cmd:ukify=257.5-r1
+
+C:Q1mdMvEXZuzGMls3MyL2ggPMEPGMw=
+P:ukify-kernel-hook
+V:257.5-r1
+A:armv7
+S:3638
+I:3337
+T:Create unified kernel images (UKIs) (kernel hook).
+U:https://systemd.io/
+L:LGPL-2.1-or-later
+o:systemd-boot
+m:Struan Robertson <contact@struanrobertson.co.uk>
+t:1748037891
+c:6e9bb0dcc5644652cb96b2de6ec17a119fdb8deb
+D:ukify kernel-hooks cmd:sbsign /bin/sh
 
 C:Q13CwpYHqxXSO1BylWVIVA38o2wII=
 P:ulogd

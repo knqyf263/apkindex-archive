@@ -12318,14 +12318,15 @@
     "efi-mkuki": {
       "origin": "efi-mkuki",
       "versions": {
-        "0.1.1-r1": 1745276943
+        "0.1.1-r1": 1745276943,
+        "1.0.0-r0": 1748037891
       },
       "dependencies": [
         "binutils",
         "efistub"
       ],
       "provides": [
-        "cmd:efi-mkuki=0.1.1-r1"
+        "cmd:efi-mkuki=1.0.0-r0"
       ]
     },
     "efibootmgr": {
@@ -62053,10 +62054,11 @@
     "secureboot-hook": {
       "origin": "secureboot-hook",
       "versions": {
-        "0.3-r0": 1742150251
+        "0.3-r0": 1742150251,
+        "1.0-r0": 1748037891
       },
       "dependencies": [
-        "efi-mkuki",
+        "efi-mkuki>=1.0.0",
         "kernel-hooks",
         "initramfs-generator",
         "sbsigntool",
@@ -70726,6 +70728,46 @@
       "versions": {
         "1.4.27-r0": 1747052369
       }
+    },
+    "systemd-boot": {
+      "origin": "systemd-boot",
+      "versions": {
+        "257.5-r1": 1748037891
+      }
+    },
+    "systemd-efistub": {
+      "origin": "systemd-boot",
+      "versions": {
+        "257.5-r1": 1748037891
+      },
+      "provides": [
+        "efistub"
+      ]
+    },
+    "ukify": {
+      "origin": "systemd-boot",
+      "versions": {
+        "257.5-r1": 1748037891
+      },
+      "dependencies": [
+        "binutils",
+        "py3-pefile"
+      ],
+      "provides": [
+        "cmd:ukify=257.5-r1"
+      ]
+    },
+    "ukify-kernel-hook": {
+      "origin": "systemd-boot",
+      "versions": {
+        "257.5-r1": 1748037891
+      },
+      "dependencies": [
+        "ukify",
+        "kernel-hooks",
+        "cmd:sbsign",
+        "/bin/sh"
+      ]
     }
   },
   "provide": {
@@ -71119,7 +71161,7 @@
         "version": "2.4.7-r0"
       },
       "efistub": {
-        "package": "gummiboot-efistub",
+        "package": "systemd-efistub",
         "version": 0
       },
       "vim": {

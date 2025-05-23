@@ -14462,21 +14462,21 @@ c:21d29cabd99e7ff6534d2e99601cbd77abf30f8a
 D:efitools cmd:openssl cmd:uuidgen
 p:cmd:efi-mkkeys=0.1.0-r0
 
-C:Q1t8JY6ORQUxxj3Od+zXUSd5LZY9M=
+C:Q1gVAVrNfCgbRa2dYLOYlLdOMisY8=
 P:efi-mkuki
-V:0.1.1-r1
+V:1.0.0-r0
 A:aarch64
-S:3205
-I:3721
+S:3970
+I:5283
 T:EFI Unified Kernel Image Maker
 U:https://github.com/jirutka/efi-mkuki
 L:MIT
 o:efi-mkuki
 m:Jakub Jirutka <jakub@jirutka.cz>
-t:1745276943
-c:257adac644584e7e88e38dabe81e22b67d4c0fcd
+t:1748037891
+c:7e1a28843baca2c3f6866f35ae388cef1d4b7dce
 D:binutils efistub
-p:cmd:efi-mkuki=0.1.1-r1
+p:cmd:efi-mkuki=1.0.0-r0
 
 C:Q1WiTCcZaV9fU4WMtQiK/kBx9pQMo=
 P:efibootmgr
@@ -21986,53 +21986,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1729101424
 c:4c9b5d366757391fd45276a0903d3c5df7b48c6d
 D:so:libc.musl-aarch64.so.1 so:libguile-3.0.so.1 so:libreadline.so.8 so:libunistring.so.5
-
-C:Q1c1A+A/LB5gbRd7oSqBzwhoskTfY=
-P:gummiboot
-V:48.1-r8
-A:aarch64
-S:43365
-I:220200
-T:Simple EFI Boot Manager
-U:https://cgit.freedesktop.org/gummiboot/
-L:LGPL-2.0-or-later
-o:gummiboot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1715804978
-c:f12529ee6797c26c734f5f5363378033f562ba3d
-D:gummiboot-efistub=48.1-r8 so:libblkid.so.1 so:libc.musl-aarch64.so.1
-p:cmd:gummiboot=48.1-r8
-
-C:Q1a/7Gct9XNHZUF60A+wJcPvvzzPI=
-P:gummiboot-doc
-V:48.1-r8
-A:aarch64
-S:2994
-I:1263
-T:Simple EFI Boot Manager (documentation)
-U:https://cgit.freedesktop.org/gummiboot/
-L:LGPL-2.0-or-later
-o:gummiboot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1715804978
-c:f12529ee6797c26c734f5f5363378033f562ba3d
-i:docs gummiboot=48.1-r8
-
-C:Q1dTalT0aGj9TvoORkc3/ae9YuG6I=
-P:gummiboot-efistub
-V:48.1-r8
-A:aarch64
-S:20247
-I:82928
-T:Linux UEFI stub from the gummiboot project
-U:https://cgit.freedesktop.org/gummiboot/
-L:LGPL-2.0-or-later
-o:gummiboot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1715804978
-c:f12529ee6797c26c734f5f5363378033f562ba3d
-k:100
-p:efistub
 
 C:Q1jn4akX5mTljZYY5KI1FAPa6W/Ok=
 P:gvim
@@ -76907,20 +76860,20 @@ t:1747478582
 c:1443d3213284f0d5dc25f8172da39384ac902165
 k:100
 
-C:Q1IkT0ajmNXkkayufHsO6/5Ngz9BA=
+C:Q1CYAGW7r6q6n+bHJoKDm83ANgh/E=
 P:secureboot-hook
-V:0.3-r0
+V:1.0-r0
 A:aarch64
-S:4334
-I:4922
+S:4695
+I:4965
 T:A kernel hook for generating signed UEFI Unified Kernel Image
 U:https://gitlab.alpinelinux.org/alpine/aports
 L:MIT
 o:secureboot-hook
 m:Jakub Jirutka <jakub@jirutka.cz>
-t:1742150251
-c:3a23f07bba81cf64e63bd6430dcc3daff718947f
-D:efi-mkuki kernel-hooks initramfs-generator sbsigntool /bin/sh
+t:1748037891
+c:6141a78fa9ed3d5d819b579d934bcadcfdae759c
+D:efi-mkuki>=1.0.0 kernel-hooks initramfs-generator sbsigntool /bin/sh
 
 C:Q1ly8/1GpmS7GN88K3kp1YYBm5fUM=
 P:sed
@@ -80878,6 +80831,36 @@ t:1747894670
 c:7094d681a90006e7599ce94b8b2aed5c27b53c1d
 D:so:libc.musl-aarch64.so.1 so:libevtlog-4.8.so.0 so:libglib-2.0.so.0 so:libsyslog-ng-4.8.so.0
 
+C:Q1DOilPm7V+J/sFeqnFhcm0AaOm5I=
+P:systemd-boot
+V:257.5-r1
+A:aarch64
+S:47578
+I:94208
+T:systemd's EFI boot manager.
+U:https://systemd.io/
+L:LGPL-2.1-or-later
+o:systemd-boot
+m:Struan Robertson <contact@struanrobertson.co.uk>
+t:1748037891
+c:6e9bb0dcc5644652cb96b2de6ec17a119fdb8deb
+
+C:Q1xou3ne8SzAc2cNWY8/+EHtHralM=
+P:systemd-efistub
+V:257.5-r1
+A:aarch64
+S:80201
+I:182296
+T:systemd's EFI boot stub
+U:https://systemd.io/
+L:LGPL-2.1-or-later
+o:systemd-boot
+m:Struan Robertson <contact@struanrobertson.co.uk>
+t:1748037891
+c:6e9bb0dcc5644652cb96b2de6ec17a119fdb8deb
+k:100
+p:efistub
+
 C:Q1y3lNVHrR4ndt1ZkZxDLuI/2FD/U=
 P:talloc
 V:2.4.2-r1
@@ -82388,6 +82371,37 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1722060768
 c:368eb9df61eaf7a83a6f92ee8fa846557365f34c
 i:docs udns=0.6-r0
+
+C:Q1lDWoP4GbGmzkmFsyQyZUBoGP45M=
+P:ukify
+V:257.5-r1
+A:aarch64
+S:21921
+I:75905
+T:Create unified kernel images (UKIs).
+U:https://systemd.io/
+L:LGPL-2.1-or-later
+o:systemd-boot
+m:Struan Robertson <contact@struanrobertson.co.uk>
+t:1748037891
+c:6e9bb0dcc5644652cb96b2de6ec17a119fdb8deb
+D:binutils py3-pefile
+p:cmd:ukify=257.5-r1
+
+C:Q1mdMvEXZuzGMls3MyL2ggPMEPGMw=
+P:ukify-kernel-hook
+V:257.5-r1
+A:aarch64
+S:3639
+I:3337
+T:Create unified kernel images (UKIs) (kernel hook).
+U:https://systemd.io/
+L:LGPL-2.1-or-later
+o:systemd-boot
+m:Struan Robertson <contact@struanrobertson.co.uk>
+t:1748037891
+c:6e9bb0dcc5644652cb96b2de6ec17a119fdb8deb
+D:ukify kernel-hooks cmd:sbsign /bin/sh
 
 C:Q1kJlmBfk10FiqleHz6onESmILskY=
 P:ulogd
