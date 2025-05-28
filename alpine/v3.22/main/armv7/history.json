@@ -2919,7 +2919,8 @@
     "alpine-conf": {
       "origin": "alpine-conf",
       "versions": {
-        "3.19.2-r0": 1735740754
+        "3.19.2-r0": 1735740754,
+        "3.20.0_rc1-r0": 1748441588
       },
       "dependencies": [
         "openrc>=0.24.1-r6",
@@ -2927,38 +2928,38 @@
         "so:libc.musl-armv7.so.1"
       ],
       "provides": [
-        "cmd:copy-modloop=3.19.2-r0",
-        "cmd:lbu=3.19.2-r0",
-        "cmd:lbu_commit=3.19.2-r0",
-        "cmd:lbu_exclude=3.19.2-r0",
-        "cmd:lbu_include=3.19.2-r0",
-        "cmd:lbu_status=3.19.2-r0",
-        "cmd:lbu_update=3.19.2-r0",
-        "cmd:setup-acf=3.19.2-r0",
-        "cmd:setup-alpine=3.19.2-r0",
-        "cmd:setup-apkcache=3.19.2-r0",
-        "cmd:setup-apkrepos=3.19.2-r0",
-        "cmd:setup-bootable=3.19.2-r0",
-        "cmd:setup-desktop=3.19.2-r0",
-        "cmd:setup-devd=3.19.2-r0",
-        "cmd:setup-disk=3.19.2-r0",
-        "cmd:setup-dns=3.19.2-r0",
-        "cmd:setup-hostname=3.19.2-r0",
-        "cmd:setup-interfaces=3.19.2-r0",
-        "cmd:setup-keymap=3.19.2-r0",
-        "cmd:setup-lbu=3.19.2-r0",
-        "cmd:setup-mta=3.19.2-r0",
-        "cmd:setup-ntp=3.19.2-r0",
-        "cmd:setup-proxy=3.19.2-r0",
-        "cmd:setup-sshd=3.19.2-r0",
-        "cmd:setup-timezone=3.19.2-r0",
-        "cmd:setup-user=3.19.2-r0",
-        "cmd:setup-wayland-base=3.19.2-r0",
-        "cmd:setup-xen-dom0=3.19.2-r0",
-        "cmd:setup-xorg-base=3.19.2-r0",
-        "cmd:uniso=3.19.2-r0",
-        "cmd:update-conf=3.19.2-r0",
-        "cmd:update-kernel=3.19.2-r0"
+        "cmd:copy-modloop=3.20.0_rc1-r0",
+        "cmd:lbu=3.20.0_rc1-r0",
+        "cmd:lbu_commit=3.20.0_rc1-r0",
+        "cmd:lbu_exclude=3.20.0_rc1-r0",
+        "cmd:lbu_include=3.20.0_rc1-r0",
+        "cmd:lbu_status=3.20.0_rc1-r0",
+        "cmd:lbu_update=3.20.0_rc1-r0",
+        "cmd:setup-acf=3.20.0_rc1-r0",
+        "cmd:setup-alpine=3.20.0_rc1-r0",
+        "cmd:setup-apkcache=3.20.0_rc1-r0",
+        "cmd:setup-apkrepos=3.20.0_rc1-r0",
+        "cmd:setup-bootable=3.20.0_rc1-r0",
+        "cmd:setup-desktop=3.20.0_rc1-r0",
+        "cmd:setup-devd=3.20.0_rc1-r0",
+        "cmd:setup-disk=3.20.0_rc1-r0",
+        "cmd:setup-dns=3.20.0_rc1-r0",
+        "cmd:setup-hostname=3.20.0_rc1-r0",
+        "cmd:setup-interfaces=3.20.0_rc1-r0",
+        "cmd:setup-keymap=3.20.0_rc1-r0",
+        "cmd:setup-lbu=3.20.0_rc1-r0",
+        "cmd:setup-mta=3.20.0_rc1-r0",
+        "cmd:setup-ntp=3.20.0_rc1-r0",
+        "cmd:setup-proxy=3.20.0_rc1-r0",
+        "cmd:setup-sshd=3.20.0_rc1-r0",
+        "cmd:setup-timezone=3.20.0_rc1-r0",
+        "cmd:setup-user=3.20.0_rc1-r0",
+        "cmd:setup-wayland-base=3.20.0_rc1-r0",
+        "cmd:setup-xen-dom0=3.20.0_rc1-r0",
+        "cmd:setup-xorg-base=3.20.0_rc1-r0",
+        "cmd:uniso=3.20.0_rc1-r0",
+        "cmd:update-conf=3.20.0_rc1-r0",
+        "cmd:update-kernel=3.20.0_rc1-r0"
       ]
     },
     "alpine-git-mirror-syncd": {
@@ -9832,39 +9833,42 @@
       "origin": "curl",
       "versions": {
         "8.13.0-r1": 1744805899,
-        "8.14.0-r0": 1748425477
+        "8.14.0-r0": 1748425477,
+        "8.14.0-r1": 1748441453
       },
       "dependencies": [
-        "libcurl=8.14.0-r0",
+        "libcurl=8.14.0-r1",
         "so:libc.musl-armv7.so.1",
         "so:libcurl.so.4",
         "so:libz.so.1"
       ],
       "provides": [
-        "wcurl=8.14.0-r0",
-        "cmd:curl=8.14.0-r0",
-        "cmd:wcurl=8.14.0-r0"
+        "wcurl=8.14.0-r1",
+        "cmd:curl=8.14.0-r1",
+        "cmd:wcurl=8.14.0-r1"
       ]
     },
     "curl-dbg": {
       "origin": "curl",
       "versions": {
         "8.13.0-r1": 1744805899,
-        "8.14.0-r0": 1748425477
+        "8.14.0-r0": 1748425477,
+        "8.14.0-r1": 1748441453
       },
       "dependencies": [
         "ca-certificates-bundle",
-        "!curl<8.14.0-r0",
-        "!curl>8.14.0-r0",
-        "!libcurl<8.14.0-r0",
-        "!libcurl>8.14.0-r0"
+        "!curl<8.14.0-r1",
+        "!curl>8.14.0-r1",
+        "!libcurl<8.14.0-r1",
+        "!libcurl>8.14.0-r1"
       ]
     },
     "curl-dev": {
       "origin": "curl",
       "versions": {
         "8.13.0-r1": 1744805899,
-        "8.14.0-r0": 1748425477
+        "8.14.0-r0": 1748425477,
+        "8.14.0-r1": 1748441453
       },
       "dependencies": [
         "brotli-dev",
@@ -9875,7 +9879,7 @@
         "openssl-dev>3",
         "zlib-dev",
         "zstd-dev",
-        "libcurl=8.14.0-r0",
+        "libcurl=8.14.0-r1",
         "pc:libbrotlicommon",
         "pc:libbrotlidec",
         "pc:libcares",
@@ -9889,36 +9893,40 @@
       ],
       "provides": [
         "pc:libcurl=8.14.0",
-        "cmd:cd2nroff=8.14.0-r0",
-        "cmd:curl-config=8.14.0-r0"
+        "cmd:cd2nroff=8.14.0-r1",
+        "cmd:curl-config=8.14.0-r1"
       ]
     },
     "curl-doc": {
       "origin": "curl",
       "versions": {
         "8.13.0-r1": 1744805899,
-        "8.14.0-r0": 1748425477
+        "8.14.0-r0": 1748425477,
+        "8.14.0-r1": 1748441453
       }
     },
     "curl-fish-completion": {
       "origin": "curl",
       "versions": {
         "8.13.0-r1": 1744805899,
-        "8.14.0-r0": 1748425477
+        "8.14.0-r0": 1748425477,
+        "8.14.0-r1": 1748441453
       }
     },
     "curl-static": {
       "origin": "curl",
       "versions": {
         "8.13.0-r1": 1744805899,
-        "8.14.0-r0": 1748425477
+        "8.14.0-r0": 1748425477,
+        "8.14.0-r1": 1748441453
       }
     },
     "curl-zsh-completion": {
       "origin": "curl",
       "versions": {
         "8.13.0-r1": 1744805899,
-        "8.14.0-r0": 1748425477
+        "8.14.0-r0": 1748425477,
+        "8.14.0-r1": 1748441453
       }
     },
     "cutter": {
@@ -24726,7 +24734,8 @@
       "origin": "curl",
       "versions": {
         "8.13.0-r1": 1744805899,
-        "8.14.0-r0": 1748425477
+        "8.14.0-r0": 1748425477,
+        "8.14.0-r1": 1748441453
       },
       "dependencies": [
         "ca-certificates-bundle",
@@ -39032,7 +39041,8 @@
     "mdev-conf": {
       "origin": "mdev-conf",
       "versions": {
-        "4.7-r0": 1716194185
+        "4.7-r0": 1716194185,
+        "4.8-r0": 1748440367
       }
     },
     "mdevd": {
@@ -39846,7 +39856,8 @@
     "mkinitfs": {
       "origin": "mkinitfs",
       "versions": {
-        "3.11.1-r0": 1733342801
+        "3.11.1-r0": 1733342801,
+        "3.12.0_rc1-r0": 1748440367
       },
       "dependencies": [
         "apk-tools>=2.9.1",
@@ -39862,15 +39873,16 @@
       ],
       "provides": [
         "initramfs-generator",
-        "cmd:bootchartd=3.11.1-r0",
-        "cmd:mkinitfs=3.11.1-r0",
-        "cmd:nlplug-findfs=3.11.1-r0"
+        "cmd:bootchartd=3.12.0_rc1-r0",
+        "cmd:mkinitfs=3.12.0_rc1-r0",
+        "cmd:nlplug-findfs=3.12.0_rc1-r0"
       ]
     },
     "mkinitfs-doc": {
       "origin": "mkinitfs",
       "versions": {
-        "3.11.1-r0": 1733342801
+        "3.11.1-r0": 1733342801,
+        "3.12.0_rc1-r0": 1748440367
       }
     },
     "mksh": {
@@ -45897,7 +45909,8 @@
     "pahole": {
       "origin": "pahole",
       "versions": {
-        "1.28-r0": 1734203235
+        "1.28-r0": 1734203235,
+        "1.30-r0": 1748442866
       },
       "dependencies": [
         "so:libbpf.so.1",
@@ -45911,24 +45924,25 @@
         "so:libdwarves.so.1=1.0.0",
         "so:libdwarves_emit.so.1=1.0.0",
         "so:libdwarves_reorganize.so.1=1.0.0",
-        "cmd:btfdiff=1.28-r0",
-        "cmd:codiff=1.28-r0",
-        "cmd:ctracer=1.28-r0",
-        "cmd:dtagnames=1.28-r0",
-        "cmd:fullcircle=1.28-r0",
-        "cmd:pahole=1.28-r0",
-        "cmd:pdwtags=1.28-r0",
-        "cmd:pfunct=1.28-r0",
-        "cmd:pglobal=1.28-r0",
-        "cmd:prefcnt=1.28-r0",
-        "cmd:scncopy=1.28-r0",
-        "cmd:syscse=1.28-r0"
+        "cmd:btfdiff=1.30-r0",
+        "cmd:codiff=1.30-r0",
+        "cmd:ctracer=1.30-r0",
+        "cmd:dtagnames=1.30-r0",
+        "cmd:fullcircle=1.30-r0",
+        "cmd:pahole=1.30-r0",
+        "cmd:pdwtags=1.30-r0",
+        "cmd:pfunct=1.30-r0",
+        "cmd:pglobal=1.30-r0",
+        "cmd:prefcnt=1.30-r0",
+        "cmd:scncopy=1.30-r0",
+        "cmd:syscse=1.30-r0"
       ]
     },
     "pahole-doc": {
       "origin": "pahole",
       "versions": {
-        "1.28-r0": 1734203235
+        "1.28-r0": 1734203235,
+        "1.30-r0": 1748442866
       }
     },
     "pam-pgsql": {
@@ -52525,7 +52539,8 @@
       "origin": "pgpool",
       "versions": {
         "4.5.5-r0": 1735151209,
-        "4.6.0-r0": 1745791945
+        "4.6.0-r0": 1745791945,
+        "4.6.1-r0": 1748443138
       },
       "dependencies": [
         "/bin/sh",
@@ -52536,59 +52551,63 @@
       ],
       "provides": [
         "so:libpcp.so.2=2.0.0",
-        "cmd:pcp_attach_node=4.6.0-r0",
-        "cmd:pcp_detach_node=4.6.0-r0",
-        "cmd:pcp_health_check_stats=4.6.0-r0",
-        "cmd:pcp_invalidate_query_cache=4.6.0-r0",
-        "cmd:pcp_log_rotate=4.6.0-r0",
-        "cmd:pcp_node_count=4.6.0-r0",
-        "cmd:pcp_node_info=4.6.0-r0",
-        "cmd:pcp_pool_status=4.6.0-r0",
-        "cmd:pcp_proc_count=4.6.0-r0",
-        "cmd:pcp_proc_info=4.6.0-r0",
-        "cmd:pcp_promote_node=4.6.0-r0",
-        "cmd:pcp_recovery_node=4.6.0-r0",
-        "cmd:pcp_reload_config=4.6.0-r0",
-        "cmd:pcp_stop_pgpool=4.6.0-r0",
-        "cmd:pcp_watchdog_info=4.6.0-r0",
-        "cmd:pg_enc=4.6.0-r0",
-        "cmd:pg_md5=4.6.0-r0",
-        "cmd:pgpool=4.6.0-r0",
-        "cmd:pgpool_setup=4.6.0-r0",
-        "cmd:pgproto=4.6.0-r0",
-        "cmd:watchdog_setup=4.6.0-r0",
-        "cmd:wd_cli=4.6.0-r0"
+        "cmd:pcp_attach_node=4.6.1-r0",
+        "cmd:pcp_detach_node=4.6.1-r0",
+        "cmd:pcp_health_check_stats=4.6.1-r0",
+        "cmd:pcp_invalidate_query_cache=4.6.1-r0",
+        "cmd:pcp_log_rotate=4.6.1-r0",
+        "cmd:pcp_node_count=4.6.1-r0",
+        "cmd:pcp_node_info=4.6.1-r0",
+        "cmd:pcp_pool_status=4.6.1-r0",
+        "cmd:pcp_proc_count=4.6.1-r0",
+        "cmd:pcp_proc_info=4.6.1-r0",
+        "cmd:pcp_promote_node=4.6.1-r0",
+        "cmd:pcp_recovery_node=4.6.1-r0",
+        "cmd:pcp_reload_config=4.6.1-r0",
+        "cmd:pcp_stop_pgpool=4.6.1-r0",
+        "cmd:pcp_watchdog_info=4.6.1-r0",
+        "cmd:pg_enc=4.6.1-r0",
+        "cmd:pg_md5=4.6.1-r0",
+        "cmd:pgpool=4.6.1-r0",
+        "cmd:pgpool_setup=4.6.1-r0",
+        "cmd:pgproto=4.6.1-r0",
+        "cmd:watchdog_setup=4.6.1-r0",
+        "cmd:wd_cli=4.6.1-r0"
       ]
     },
     "pgpool-dev": {
       "origin": "pgpool",
       "versions": {
         "4.5.5-r0": 1735151209,
-        "4.6.0-r0": 1745791945
+        "4.6.0-r0": 1745791945,
+        "4.6.1-r0": 1748443138
       },
       "dependencies": [
-        "pgpool=4.6.0-r0"
+        "pgpool=4.6.1-r0"
       ]
     },
     "pgpool-doc": {
       "origin": "pgpool",
       "versions": {
         "4.5.5-r0": 1735151209,
-        "4.6.0-r0": 1745791945
+        "4.6.0-r0": 1745791945,
+        "4.6.1-r0": 1748443138
       }
     },
     "pgpool-openrc": {
       "origin": "pgpool",
       "versions": {
         "4.5.5-r0": 1735151209,
-        "4.6.0-r0": 1745791945
+        "4.6.0-r0": 1745791945,
+        "4.6.1-r0": 1748443138
       }
     },
     "pgpool-static": {
       "origin": "pgpool",
       "versions": {
         "4.5.5-r0": 1735151209,
-        "4.6.0-r0": 1745791945
+        "4.6.0-r0": 1745791945,
+        "4.6.1-r0": 1748443138
       }
     },
     "pgtcl": {
@@ -63222,27 +63241,29 @@
     "softhsm": {
       "origin": "softhsm",
       "versions": {
-        "2.6.1-r5": 1745322100
+        "2.6.1-r5": 1745322100,
+        "2.6.1-r6": 1748439621
       },
       "dependencies": [
         "sqlite",
-        "so:libbotan-2.so.19",
         "so:libc.musl-armv7.so.1",
+        "so:libcrypto.so.3",
         "so:libgcc_s.so.1",
         "so:libsqlite3.so.0",
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:softhsm2-dump-db=2.6.1-r5",
-        "cmd:softhsm2-dump-file=2.6.1-r5",
-        "cmd:softhsm2-keyconv=2.6.1-r5",
-        "cmd:softhsm2-util=2.6.1-r5"
+        "cmd:softhsm2-dump-db=2.6.1-r6",
+        "cmd:softhsm2-dump-file=2.6.1-r6",
+        "cmd:softhsm2-keyconv=2.6.1-r6",
+        "cmd:softhsm2-util=2.6.1-r6"
       ]
     },
     "softhsm-doc": {
       "origin": "softhsm",
       "versions": {
-        "2.6.1-r5": 1745322100
+        "2.6.1-r5": 1745322100,
+        "2.6.1-r6": 1748439621
       }
     },
     "source-highlight": {
@@ -70989,6 +71010,12 @@
         "python3",
         "python3~3.12"
       ]
+    },
+    "softhsm-static": {
+      "origin": "softhsm",
+      "versions": {
+        "2.6.1-r6": 1748439621
+      }
     }
   },
   "provide": {
@@ -72375,7 +72402,7 @@
       },
       "wcurl": {
         "package": "curl",
-        "version": "8.14.0-r0"
+        "version": "8.14.0-r1"
       }
     },
     "so": {
