@@ -8196,19 +8196,21 @@
     "chrpath": {
       "origin": "chrpath",
       "versions": {
-        "0.16-r4": 1681228881
+        "0.16-r4": 1681228881,
+        "0.18-r0": 1748425397
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1"
       ],
       "provides": [
-        "cmd:chrpath=0.16-r4"
+        "cmd:chrpath=0.18-r0"
       ]
     },
     "chrpath-doc": {
       "origin": "chrpath",
       "versions": {
-        "0.16-r4": 1681228881
+        "0.16-r4": 1681228881,
+        "0.18-r0": 1748425397
       }
     },
     "cifs-utils": {
@@ -9842,35 +9844,40 @@
     "curl": {
       "origin": "curl",
       "versions": {
-        "8.13.0-r1": 1744805899
+        "8.13.0-r1": 1744805899,
+        "8.14.0-r0": 1748425477
       },
       "dependencies": [
-        "libcurl=8.13.0-r1",
+        "libcurl=8.14.0-r0",
         "so:libc.musl-armhf.so.1",
         "so:libcurl.so.4",
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:curl=8.13.0-r1"
+        "wcurl=8.14.0-r0",
+        "cmd:curl=8.14.0-r0",
+        "cmd:wcurl=8.14.0-r0"
       ]
     },
     "curl-dbg": {
       "origin": "curl",
       "versions": {
-        "8.13.0-r1": 1744805899
+        "8.13.0-r1": 1744805899,
+        "8.14.0-r0": 1748425477
       },
       "dependencies": [
         "ca-certificates-bundle",
-        "!curl<8.13.0-r1",
-        "!curl>8.13.0-r1",
-        "!libcurl<8.13.0-r1",
-        "!libcurl>8.13.0-r1"
+        "!curl<8.14.0-r0",
+        "!curl>8.14.0-r0",
+        "!libcurl<8.14.0-r0",
+        "!libcurl>8.14.0-r0"
       ]
     },
     "curl-dev": {
       "origin": "curl",
       "versions": {
-        "8.13.0-r1": 1744805899
+        "8.13.0-r1": 1744805899,
+        "8.14.0-r0": 1748425477
       },
       "dependencies": [
         "brotli-dev",
@@ -9881,7 +9888,7 @@
         "openssl-dev>3",
         "zlib-dev",
         "zstd-dev",
-        "libcurl=8.13.0-r1",
+        "libcurl=8.14.0-r0",
         "pc:libbrotlicommon",
         "pc:libbrotlidec",
         "pc:libcares",
@@ -9894,33 +9901,37 @@
         "pkgconfig"
       ],
       "provides": [
-        "pc:libcurl=8.13.0",
-        "cmd:cd2nroff=8.13.0-r1",
-        "cmd:curl-config=8.13.0-r1"
+        "pc:libcurl=8.14.0",
+        "cmd:cd2nroff=8.14.0-r0",
+        "cmd:curl-config=8.14.0-r0"
       ]
     },
     "curl-doc": {
       "origin": "curl",
       "versions": {
-        "8.13.0-r1": 1744805899
+        "8.13.0-r1": 1744805899,
+        "8.14.0-r0": 1748425477
       }
     },
     "curl-fish-completion": {
       "origin": "curl",
       "versions": {
-        "8.13.0-r1": 1744805899
+        "8.13.0-r1": 1744805899,
+        "8.14.0-r0": 1748425477
       }
     },
     "curl-static": {
       "origin": "curl",
       "versions": {
-        "8.13.0-r1": 1744805899
+        "8.13.0-r1": 1744805899,
+        "8.14.0-r0": 1748425477
       }
     },
     "curl-zsh-completion": {
       "origin": "curl",
       "versions": {
-        "8.13.0-r1": 1744805899
+        "8.13.0-r1": 1744805899,
+        "8.14.0-r0": 1748425477
       }
     },
     "cutter": {
@@ -24689,7 +24700,8 @@
     "libcurl": {
       "origin": "curl",
       "versions": {
-        "8.13.0-r1": 1744805899
+        "8.13.0-r1": 1744805899,
+        "8.14.0-r0": 1748425477
       },
       "dependencies": [
         "ca-certificates-bundle",
@@ -71788,6 +71800,10 @@
       "py-pefile": {
         "package": "py3-pefile",
         "version": "2024.8.26-r0"
+      },
+      "wcurl": {
+        "package": "curl",
+        "version": "8.14.0-r0"
       }
     },
     "so": {
