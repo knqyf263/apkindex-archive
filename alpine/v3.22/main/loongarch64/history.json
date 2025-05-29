@@ -3632,10 +3632,12 @@
     "apk-tools": {
       "origin": "apk-tools",
       "versions": {
-        "2.14.9-r1": 1739912754
+        "2.14.9-r1": 1739912754,
+        "2.14.9-r2": 1748520628
       },
       "dependencies": [
         "musl>=1.2.3_git20230424",
+        "libcrypto3>=3.5",
         "ca-certificates-bundle",
         "so:libapk.so.2.14.9",
         "so:libc.musl-loongarch64.so.1",
@@ -3643,32 +3645,35 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:apk=2.14.9-r1"
+        "cmd:apk=2.14.9-r2"
       ]
     },
     "apk-tools-dbg": {
       "origin": "apk-tools",
       "versions": {
-        "2.14.9-r1": 1739912754
+        "2.14.9-r1": 1739912754,
+        "2.14.9-r2": 1748520628
       },
       "dependencies": [
         "musl>=1.2.3_git20230424",
+        "libcrypto3>=3.5",
         "ca-certificates-bundle",
-        "!apk-tools<2.14.9-r1",
-        "!apk-tools>2.14.9-r1",
-        "!libapk2<2.14.9-r1",
-        "!libapk2>2.14.9-r1",
-        "!lua5.3-apk<2.14.9-r1",
-        "!lua5.3-apk>2.14.9-r1"
+        "!apk-tools<2.14.9-r2",
+        "!apk-tools>2.14.9-r2",
+        "!libapk2<2.14.9-r2",
+        "!libapk2>2.14.9-r2",
+        "!lua5.3-apk<2.14.9-r2",
+        "!lua5.3-apk>2.14.9-r2"
       ]
     },
     "apk-tools-dev": {
       "origin": "apk-tools",
       "versions": {
-        "2.14.9-r1": 1739912754
+        "2.14.9-r1": 1739912754,
+        "2.14.9-r2": 1748520628
       },
       "dependencies": [
-        "libapk2=2.14.9-r1",
+        "libapk2=2.14.9-r2",
         "pc:openssl",
         "pc:zlib",
         "pkgconfig"
@@ -3680,22 +3685,25 @@
     "apk-tools-doc": {
       "origin": "apk-tools",
       "versions": {
-        "2.14.9-r1": 1739912754
+        "2.14.9-r1": 1739912754,
+        "2.14.9-r2": 1748520628
       }
     },
     "apk-tools-static": {
       "origin": "apk-tools",
       "versions": {
-        "2.14.9-r1": 1739912754
+        "2.14.9-r1": 1739912754,
+        "2.14.9-r2": 1748520628
       },
       "provides": [
-        "cmd:apk.static=2.14.9-r1"
+        "cmd:apk.static=2.14.9-r2"
       ]
     },
     "apk-tools-zsh-completion": {
       "origin": "apk-tools",
       "versions": {
-        "2.14.9-r1": 1739912754
+        "2.14.9-r1": 1739912754,
+        "2.14.9-r2": 1748520628
       }
     },
     "apkbuild-cpan": {
@@ -24068,10 +24076,12 @@
     "libapk2": {
       "origin": "apk-tools",
       "versions": {
-        "2.14.9-r1": 1739912754
+        "2.14.9-r1": 1739912754,
+        "2.14.9-r2": 1748520628
       },
       "dependencies": [
         "musl>=1.2.3_git20230424",
+        "libcrypto3>=3.5",
         "ca-certificates-bundle",
         "so:libc.musl-loongarch64.so.1",
         "so:libcrypto.so.3",
@@ -36274,10 +36284,12 @@
     "lua5.3-apk": {
       "origin": "apk-tools",
       "versions": {
-        "2.14.9-r1": 1739912754
+        "2.14.9-r1": 1739912754,
+        "2.14.9-r2": 1748520628
       },
       "dependencies": [
         "musl>=1.2.3_git20230424",
+        "libcrypto3>=3.5",
         "ca-certificates-bundle",
         "so:libapk.so.2.14.9",
         "so:libc.musl-loongarch64.so.1"
@@ -39863,7 +39875,8 @@
       "origin": "mkinitfs",
       "versions": {
         "3.11.1-r0": 1733342801,
-        "3.12.0_rc1-r0": 1748440367
+        "3.12.0_rc1-r0": 1748440367,
+        "3.12.0_rc2-r1": 1748520953
       },
       "dependencies": [
         "apk-tools>=2.9.1",
@@ -39879,16 +39892,17 @@
       ],
       "provides": [
         "initramfs-generator",
-        "cmd:bootchartd=3.12.0_rc1-r0",
-        "cmd:mkinitfs=3.12.0_rc1-r0",
-        "cmd:nlplug-findfs=3.12.0_rc1-r0"
+        "cmd:bootchartd=3.12.0_rc2-r1",
+        "cmd:mkinitfs=3.12.0_rc2-r1",
+        "cmd:nlplug-findfs=3.12.0_rc2-r1"
       ]
     },
     "mkinitfs-doc": {
       "origin": "mkinitfs",
       "versions": {
         "3.11.1-r0": 1733342801,
-        "3.12.0_rc1-r0": 1748440367
+        "3.12.0_rc1-r0": 1748440367,
+        "3.12.0_rc2-r1": 1748520953
       }
     },
     "mksh": {
@@ -65982,7 +65996,8 @@
     "tiny-cloud": {
       "origin": "tiny-cloud",
       "versions": {
-        "3.1.1-r0": 1739654100
+        "3.1.1-r0": 1739654100,
+        "3.1.1-r1": 1748523082
       },
       "dependencies": [
         "e2fsprogs-extra",
@@ -65993,18 +66008,19 @@
         "/bin/sh"
       ],
       "provides": [
-        "tiny-cloud-allclouds=3.1.1-r0",
-        "cmd:imds=3.1.1-r0",
-        "cmd:tiny-cloud=3.1.1-r0"
+        "tiny-cloud-allclouds=3.1.1-r1",
+        "cmd:imds=3.1.1-r1",
+        "cmd:tiny-cloud=3.1.1-r1"
       ]
     },
     "tiny-cloud-aws": {
       "origin": "tiny-cloud",
       "versions": {
-        "3.1.1-r0": 1739654100
+        "3.1.1-r0": 1739654100,
+        "3.1.1-r1": 1748523082
       },
       "dependencies": [
-        "tiny-cloud=3.1.1-r0",
+        "tiny-cloud=3.1.1-r1",
         "/bin/sh"
       ],
       "provides": [
@@ -66014,70 +66030,77 @@
     "tiny-cloud-azure": {
       "origin": "tiny-cloud",
       "versions": {
-        "3.1.1-r0": 1739654100
+        "3.1.1-r0": 1739654100,
+        "3.1.1-r1": 1748523082
       },
       "dependencies": [
-        "tiny-cloud=3.1.1-r0",
+        "tiny-cloud=3.1.1-r1",
         "/bin/sh"
       ]
     },
     "tiny-cloud-gcp": {
       "origin": "tiny-cloud",
       "versions": {
-        "3.1.1-r0": 1739654100
+        "3.1.1-r0": 1739654100,
+        "3.1.1-r1": 1748523082
       },
       "dependencies": [
-        "tiny-cloud=3.1.1-r0",
+        "tiny-cloud=3.1.1-r1",
         "/bin/sh"
       ]
     },
     "tiny-cloud-hetzner": {
       "origin": "tiny-cloud",
       "versions": {
-        "3.1.1-r0": 1739654100
+        "3.1.1-r0": 1739654100,
+        "3.1.1-r1": 1748523082
       },
       "dependencies": [
-        "tiny-cloud=3.1.1-r0",
+        "tiny-cloud=3.1.1-r1",
         "/bin/sh"
       ]
     },
     "tiny-cloud-incus": {
       "origin": "tiny-cloud",
       "versions": {
-        "3.1.1-r0": 1739654100
+        "3.1.1-r0": 1739654100,
+        "3.1.1-r1": 1748523082
       },
       "dependencies": [
-        "tiny-cloud=3.1.1-r0",
+        "tiny-cloud=3.1.1-r1",
         "/bin/sh"
       ]
     },
     "tiny-cloud-nocloud": {
       "origin": "tiny-cloud",
       "versions": {
-        "3.1.1-r0": 1739654100
+        "3.1.1-r0": 1739654100,
+        "3.1.1-r1": 1748523082
       },
       "dependencies": [
-        "tiny-cloud=3.1.1-r0",
+        "tiny-cloud=3.1.1-r1",
         "/bin/sh"
       ],
       "provides": [
-        "tiny-cloud-alpine=3.1.1-r0"
+        "tiny-cloud-alpine=3.1.1-r1"
       ]
     },
     "tiny-cloud-oci": {
       "origin": "tiny-cloud",
       "versions": {
-        "3.1.1-r0": 1739654100
+        "3.1.1-r0": 1739654100,
+        "3.1.1-r1": 1748523082
       },
       "dependencies": [
-        "tiny-cloud=3.1.1-r0",
+        "tiny-cloud=3.1.1-r1",
         "/bin/sh"
       ]
     },
     "tiny-cloud-openrc": {
       "origin": "tiny-cloud",
       "versions": {
-        "3.1.1-r0": 1739654100
+        "3.1.1-r0": 1739654100,
+        "3.1.1-r1": 1748523082
       },
       "dependencies": [
         "/bin/sh"
@@ -66086,10 +66109,11 @@
     "tiny-cloud-scaleway": {
       "origin": "tiny-cloud",
       "versions": {
-        "3.1.1-r0": 1739654100
+        "3.1.1-r0": 1739654100,
+        "3.1.1-r1": 1748523082
       },
       "dependencies": [
-        "tiny-cloud=3.1.1-r0",
+        "tiny-cloud=3.1.1-r1",
         "/bin/sh"
       ]
     },
@@ -72161,7 +72185,7 @@
       },
       "tiny-cloud-allclouds": {
         "package": "tiny-cloud",
-        "version": "3.1.1-r0"
+        "version": "3.1.1-r1"
       },
       "tiny-ec2-bootstrap": {
         "package": "tiny-cloud-aws",
@@ -72169,7 +72193,7 @@
       },
       "tiny-cloud-alpine": {
         "package": "tiny-cloud-nocloud",
-        "version": "3.1.1-r0"
+        "version": "3.1.1-r1"
       },
       "uboot-tools": {
         "package": "u-boot-tools",
