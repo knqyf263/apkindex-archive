@@ -1162,6 +1162,22 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.3 so:libc.musl-armhf.so.1 so:libmosquitto.so.1
 i:lua-mosquitto=0.3-r2 lua5.3
 
+C:Q13/JeGqPpsorGWM0HZ3wEYMm5+MA=
+P:fcgiwrap
+V:1.1.0-r6
+A:armhf
+S:7937
+I:40960
+T:Simple server for running CGI applications over FastCGI
+U:https://github.com/gnosek/fcgiwrap
+L:MIT
+o:fcgiwrap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1700096061
+c:7c3663f3f3bd4017982fb8c81903cfa611ccc62c
+D:/bin/sh so:libc.musl-armhf.so.1 so:libfcgi.so.0
+p:cmd:fcgiwrap
+
 C:Q1EO9g3PBRglVlpXe8z7BAlSXeiqQ=
 P:kamailio-sipdump
 V:5.4.5-r1
@@ -1809,22 +1825,6 @@ t:1666364627
 c:5a155593ad3be6baecf057ce96171aaf9aad6248
 D:lua5.4-mosquitto
 i:lua5.4 lua-mqtt-publish=0.4-r0
-
-C:Q1rzg/JT085R5YfZ3o4BEx2KBY6b0=
-P:postgresql-dev
-V:13.11-r0
-A:armhf
-S:2049425
-I:9609216
-T:A sophisticated object-relational DBMS (development files)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1683837866
-c:80fa104498e9fed6be76c383e590c3e600b41b2e
-D:clang icu-dev llvm openssl-dev libpq=13.11-r0 pkgconfig postgresql-libs=13.11-r0 so:libc.musl-armhf.so.1
-p:pc:libecpg=13.11 pc:libecpg_compat=13.11 pc:libpgtypes=13.11 pc:libpq=13.11 cmd:ecpg cmd:pg_config
 
 C:Q1n0NTQ2QlcvH6unyAT5ifQa2aaL4=
 P:ndisc6-dnssort
@@ -2538,21 +2538,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1623269094
 c:bace8c5bc774203145b3377ae5738ac1dc1216fc
 i:docs mosquitto=2.0.11-r0
-
-C:Q1D5M+qUx9wxhkWbdvolaA65RMtzA=
-P:postgresql-pltcl
-V:13.11-r0
-A:armhf
-S:24292
-I:102400
-T:PL/Tcl procedural language for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1683837866
-c:80fa104498e9fed6be76c383e590c3e600b41b2e
-D:pgtcl so:libc.musl-armhf.so.1 so:libtcl8.6.so
 
 C:Q1f8UroWzel6CN2MzY1MuY0BXlPJM=
 P:expect-dev
@@ -6426,6 +6411,21 @@ c:4d91c2c50829684162b2b5036e77aa5a75f74cef
 D:oniguruma=6.9.7.1-r0 pkgconfig
 p:pc:oniguruma=6.9.7 cmd:onig-config
 
+C:Q1RFtDDJZj5Xel74863Kp3nqaNRaI=
+P:fcgiwrap-openrc
+V:1.1.0-r6
+A:armhf
+S:1960
+I:24576
+T:Simple server for running CGI applications over FastCGI (OpenRC init scripts)
+U:https://github.com/gnosek/fcgiwrap
+L:MIT
+o:fcgiwrap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1700096061
+c:7c3663f3f3bd4017982fb8c81903cfa611ccc62c
+i:openrc fcgiwrap=1.1.0-r6
+
 C:Q1p4ekD2zzitB8KSotKDf1wkgk7Fs=
 P:font-bh-ttf
 V:1.0.3-r1
@@ -8289,21 +8289,6 @@ c:5a71d29738ed5bfa62373159060639fb1ae7e63a
 D:perl
 p:perl-test-tester
 
-C:Q1ljGVkktrplyQ/pGwzPnxOl3/nkU=
-P:postgresql-plperl
-V:13.11-r0
-A:armhf
-S:36900
-I:122880
-T:PL/Perl procedural language for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1683837866
-c:80fa104498e9fed6be76c383e590c3e600b41b2e
-D:so:libc.musl-armhf.so.1 so:libperl.so
-
 C:Q19iFoWwepziXlKS89dh2/ROlboKE=
 P:apache2-ldap
 V:2.4.56-r0
@@ -8456,6 +8441,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1586205615
 c:4fa822684f8fdc87264231f2a1f56543dc87b5e4
 i:docs beep=1.4.9-r0
+
+C:Q1rvtvumi3n4nWvX4thUEZo/nzKrw=
+P:postgresql-plperl-contrib
+V:13.12-r0
+A:armhf
+S:15194
+I:86016
+T:PL/Perl extension modules distributed with PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1692024668
+c:697bd60dd7d1c5e3918bc2f3605004059b57c0f8
+D:postgresql-plperl so:libc.musl-armhf.so.1 so:libperl.so
+i:postgresql-plperl=13.12-r0 postgresql-contrib=13.12-r0
 
 C:Q1/5ET6sMuuCYoGS+G3rHTpYKbcJw=
 P:aspell-uk
@@ -8702,21 +8703,6 @@ t:1628618274
 c:3c22b169e9348bd358908a68b6c6be6065513932
 D:/bin/sh so:libc.musl-armhf.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libcurl.so.4 so:libedit.so.0 so:libgcc_s.so.1 so:libjansson.so.4 so:liblua.so.5 so:libpj.so.2 so:libpjlib-util.so.2 so:libpjmedia.so.2 so:libpjnath.so.2 so:libpjsip-simple.so.2 so:libpjsip-ua.so.2 so:libpjsip.so.2 so:libportaudio.so.2 so:libsqlite3.so.0 so:libssl.so.1.1 so:libunbound.so.8 so:libuuid.so.1 so:libxml2.so.2 so:libz.so.1
 p:so:libasteriskssl.so.1=1 cmd:astcanary cmd:astdb2bdb cmd:astdb2sqlite3 cmd:asterisk cmd:astgenkey cmd:astversion cmd:autosupport cmd:rasterisk cmd:safe_asterisk
-
-C:Q1xZgBzriukETHHsz3zCRJrVtNoa0=
-P:fcgiwrap-openrc
-V:1.1.0-r5
-A:armhf
-S:1960
-I:24576
-T:Simple server for running CGI applications over FastCGI (OpenRC init scripts)
-U:https://github.com/gnosek/fcgiwrap
-L:MIT
-o:fcgiwrap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1595008983
-c:e800870d3c3702046633485b4f033fb20c312d6e
-i:openrc fcgiwrap=1.1.0-r5
 
 C:Q1po+X/CgOgWAJQm2rp5SFhX5EHEc=
 P:libcap-ng-doc
@@ -9028,22 +9014,6 @@ t:1612366429
 c:e36769558404111c89e75c161dd52d816218250c
 D:so:libc.musl-armhf.so.1
 p:cmd:rfddump cmd:rfdformat
-
-C:Q1gEejB+lutKJ1PF/+9hMvH4JnrVg=
-P:postgresql-libs
-V:13.11-r0
-A:armhf
-S:87422
-I:200704
-T:A sophisticated object-relational DBMS (libraries)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1683837866
-c:80fa104498e9fed6be76c383e590c3e600b41b2e
-D:so:libc.musl-armhf.so.1 so:libpq.so.5
-p:so:libecpg.so.6=6.13 so:libecpg_compat.so.3=3.13 so:libpgtypes.so.3=3.13
 
 C:Q1+pPr90w5tJ+hMlIAW67FzJBCKco=
 P:perl-cache-cache
@@ -13021,22 +12991,6 @@ o:dejagnu
 t:1559230128
 c:b7dd3d754286b5ce1900ea9d1e29a3d9d8d449d2
 i:docs dejagnu=1.6.2-r0
-
-C:Q1I38wQ85kQKncqnAkFOSAO47DoMM=
-P:fcgiwrap
-V:1.1.0-r5
-A:armhf
-S:7880
-I:40960
-T:Simple server for running CGI applications over FastCGI
-U:https://github.com/gnosek/fcgiwrap
-L:MIT
-o:fcgiwrap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1595008983
-c:e800870d3c3702046633485b4f033fb20c312d6e
-D:/bin/sh so:libc.musl-armhf.so.1 so:libfcgi.so.0
-p:cmd:fcgiwrap
 
 C:Q19JIkG9wO17DwqmIxvZnA7rzP6Jw=
 P:libuv
@@ -19389,6 +19343,22 @@ t:1620908297
 c:0d9c3ba888a9b9dac1591e70b1ac19dab6b19df4
 i:docs brotli=1.0.9-r5
 
+C:Q1e4K1YpXNFnxGNS4Qlz/y/wrCL7w=
+P:postgresql-plpython3-contrib
+V:13.12-r0
+A:armhf
+S:18132
+I:110592
+T:PL/Python 3 extension modules distributed with PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1692024668
+c:697bd60dd7d1c5e3918bc2f3605004059b57c0f8
+D:postgresql-plpython3 so:libc.musl-armhf.so.1 so:libpython3.9.so.1.0
+i:postgresql-plpython3=13.12-r0 postgresql-contrib=13.12-r0
+
 C:Q1nvghQrYw7KKkL0mb1qrgUs3VDZM=
 P:perl-file-temp
 V:0.2311-r0
@@ -21013,6 +20983,22 @@ t:1651167286
 c:f403cfd9f6713293a3776c9b29006579d6d2b9ab
 D:nginx nginx-mod-devel-kit so:libc.musl-armhf.so.1
 
+C:Q1pfE+CEDy1qyRtjO5pdg7vdoIKuc=
+P:sofia-sip
+V:1.13.14-r2
+A:armhf
+S:685514
+I:1585152
+T:RFC3261 compliant SIP User-Agent library
+U:https://github.com/freeswitch/sofia-sip
+L:LGPL-2.1-only
+o:sofia-sip
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1693246449
+c:7553b19fe261d501354988ad8310a3e2c9eb2240
+D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libglib-2.0.so.0 so:libssl.so.1.1 so:libz.so.1
+p:so:libsofia-sip-ua-glib.so.3=3.0.0 so:libsofia-sip-ua.so.0=0.6.0 cmd:addrinfo cmd:localinfo cmd:sip-date cmd:sip-dig cmd:sip-options cmd:stunc
+
 C:Q1xccj9Z/THO4NCvrSBT/aOaKhB8w=
 P:ttf-liberation
 V:2.00.5-r0
@@ -21489,22 +21475,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1600709954
 c:f91d70b75b860eea14d4e3bcbadf90e9ff755cd2
 i:docs perl-class-mix=0.006-r2
-
-C:Q1ip6ExYI408FHzBef+d5xBhSiVZs=
-P:postgresql
-V:13.11-r0
-A:armhf
-S:16070347
-I:32837632
-T:A sophisticated object-relational DBMS
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1683837866
-c:80fa104498e9fed6be76c383e590c3e600b41b2e
-D:postgresql-client tzdata /bin/sh so:libLLVM-11.so so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libicui18n.so.67 so:libicuuc.so.67 so:libldap-2.4.so.2 so:libpq.so.5 so:libssl.so.1.1 so:libstdc++.so.6 so:libxml2.so.2
-p:cmd:initdb cmd:pg_archivecleanup cmd:pg_checksums cmd:pg_controldata cmd:pg_ctl cmd:pg_resetwal cmd:pg_rewind cmd:pg_test_fsync cmd:pg_test_timing cmd:pg_upgrade cmd:pg_verifybackup cmd:pg_waldump cmd:pgbench cmd:postgres cmd:postmaster
 
 C:Q1azGfsFXzT0nZHThNPqb0xdytblg=
 P:rtmpdump-doc
@@ -22333,6 +22303,21 @@ t:1606460778
 c:e02ca267c1b8310726fe6d68ed469485478e882f
 D:so:libc.musl-armhf.so.1 so:libreadline.so.8
 p:cmd:bc cmd:dc
+
+C:Q1V1+0a9EsQSR/3VNPgAJBVB95BK4=
+P:fcgiwrap-doc
+V:1.1.0-r6
+A:armhf
+S:3320
+I:24576
+T:Simple server for running CGI applications over FastCGI (documentation)
+U:https://github.com/gnosek/fcgiwrap
+L:MIT
+o:fcgiwrap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1700096061
+c:7c3663f3f3bd4017982fb8c81903cfa611ccc62c
+i:docs fcgiwrap=1.1.0-r6
 
 C:Q123UbVVqr66XBr07EKHe1Iu3iP3o=
 P:busybox-initscripts
@@ -24773,6 +24758,21 @@ t:1617746107
 c:6044241d6756393d370fa5337762a6ae79ec8f12
 D:so:libLLVM-11.so so:libc.musl-armhf.so.1 so:libclang-cpp.so.11.1 so:libclang.so.11.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libxml2.so.2
 p:cmd:c-index-test cmd:clang cmd:clang++ cmd:clang-11 cmd:clang-cl cmd:clang-cpp
+
+C:Q1Y0sD7jzIYQCpyv7oPbXjWQa47k8=
+P:postgresql-plperl
+V:13.12-r0
+A:armhf
+S:36902
+I:122880
+T:PL/Perl procedural language for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1692024668
+c:697bd60dd7d1c5e3918bc2f3605004059b57c0f8
+D:so:libc.musl-armhf.so.1 so:libperl.so
 
 C:Q1ZWTdh/YQwRThv4xr/5ZDDutt/WM=
 P:libmilter-doc
@@ -27578,22 +27578,6 @@ c:9c4e1aa60c851bb8ede5d304322f99e2603c6105
 D:logrotate
 i:squid=5.0.6-r2 lang-pt
 
-C:Q1r6Xq2fKwHntuyKg1YM97E0cYSmM=
-P:postgresql-client
-V:13.11-r0
-A:armhf
-S:862580
-I:2019328
-T:PostgreSQL client
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1683837866
-c:80fa104498e9fed6be76c383e590c3e600b41b2e
-D:so:libc.musl-armhf.so.1 so:libpq.so.5 so:libreadline.so.8 so:libz.so.1
-p:cmd:clusterdb cmd:createdb cmd:createuser cmd:dropdb cmd:dropuser cmd:pg_basebackup cmd:pg_dump cmd:pg_dumpall cmd:pg_isready cmd:pg_receivewal cmd:pg_recvlogical cmd:pg_restore cmd:psql cmd:reindexdb cmd:vacuumdb
-
 C:Q1ke+DYjMVt1kv5yuzPkM9e6vATnA=
 P:fping
 V:5.0-r0
@@ -28620,6 +28604,21 @@ t:1600709977
 c:bf03aaeca3f580950fdf10e40e5e064009066517
 i:docs perl-test-needs=0.002006-r1
 
+C:Q1epDOf8feSDHq8fD3CtnJl8qK/ik=
+P:postgresql-openrc
+V:13.12-r0
+A:armhf
+S:6162
+I:40960
+T:A sophisticated object-relational DBMS (OpenRC init scripts)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1692024668
+c:697bd60dd7d1c5e3918bc2f3605004059b57c0f8
+i:openrc postgresql=13.12-r0
+
 C:Q1M/qNfh2Tr0CBDNv1pA/dZDcMWmY=
 P:uwsgi-cheaper_backlog2
 V:2.0.19.1-r2
@@ -29045,6 +29044,22 @@ t:1667243010
 c:662168955b4912d8a40a162ded8a001250e95d37
 D:so:libc.musl-armhf.so.1 so:libcli-smb-common-samba4.so so:libdcerpc-samba-samba4.so so:libgse-samba4.so so:liblibcli-lsa3-samba4.so so:liblibsmb-samba4.so so:libmsrpc3-samba4.so so:libndr-standard.so.0 so:libndr.so.1 so:libreplace-samba4.so so:libsamba-credentials.so.1 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-security-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsecrets3-samba4.so so:libsmbconf.so.0 so:libtalloc.so.2 so:libtevent-util.so.0 so:libtevent.so.0 so:libutil-cmdline-samba4.so
 p:so:libsmbclient.so.0=0.7.0
+
+C:Q1AO9pJyFzr21MAOtmi35+lEbCmtg=
+P:sofia-sip-dev
+V:1.13.14-r2
+A:armhf
+S:261963
+I:2506752
+T:RFC3261 compliant SIP User-Agent library (development files)
+U:https://github.com/freeswitch/sofia-sip
+L:LGPL-2.1-only
+o:sofia-sip
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1693246449
+c:7553b19fe261d501354988ad8310a3e2c9eb2240
+D:pc:glib-2.0 pkgconfig sofia-sip=1.13.14-r2
+p:pc:sofia-sip-ua-glib=1.13.14 pc:sofia-sip-ua=1.13.14
 
 C:Q1IuhpGAHhVQCmcflvX49/Fos2rlo=
 P:luajit
@@ -30003,22 +30018,6 @@ c:6044241d6756393d370fa5337762a6ae79ec8f12
 D:clang=11.1.0-r1 perl python3
 p:cmd:scan-build cmd:scan-view
 
-C:Q1rsfZZMzEKMPFrgv6L0o0r+napPc=
-P:libpq
-V:13.11-r0
-A:armhf
-S:123853
-I:282624
-T:PostgreSQL libraries
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1683837866
-c:80fa104498e9fed6be76c383e590c3e600b41b2e
-D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libldap_r-2.4.so.2 so:libssl.so.1.1
-p:so:libpq.so.5=5.13
-
 C:Q1BW6I7F9vBCIR7hDmcd8aclz+I2Q=
 P:lz4
 V:1.9.3-r1
@@ -30867,21 +30866,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1665054037
 c:25f58325e2f7f9e6195e2052de9f494bdffe21a5
 i:openrc strongswan=5.9.1-r3
-
-C:Q1z6K8UieuKnQ3P/cQcdhEA0BuxLg=
-P:postgresql-doc
-V:13.11-r0
-A:armhf
-S:3595181
-I:19197952
-T:A sophisticated object-relational DBMS (documentation)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1683837866
-c:80fa104498e9fed6be76c383e590c3e600b41b2e
-i:docs postgresql=13.11-r0
 
 C:Q1jx+2OkDnMCE8ax4yCaRglHLq+UQ=
 P:perl-www-robotrules-doc
@@ -31894,21 +31878,6 @@ t:1621312247
 c:9c1ed3677b48f9b8001690d4b07c781375dc151c
 i:openrc macifrename=0.1.1-r1
 
-C:Q1fxSHs6O3Pn+c2y8mhGBZ175ZGaU=
-P:postgresql-plpython3
-V:13.11-r0
-A:armhf
-S:44929
-I:143360
-T:PL/Python3 procedural language for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1683837866
-c:80fa104498e9fed6be76c383e590c3e600b41b2e
-D:python3 so:libc.musl-armhf.so.1 so:libpython3.9.so.1.0
-
 C:Q1EO57luiXDwEtFx3oukHBbGip9eA=
 P:perl-b-hooks-endofscope
 V:0.24-r2
@@ -31923,22 +31892,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1610522533
 c:e9c69219db4d2e1dedce017e96bd8ad689536181
 D:perl-sub-exporter-progressive perl-module-runtime perl-module-implementation perl-variable-magic
-
-C:Q1QvGBrdRzPsmdI7tlV+aSuasFfvU=
-P:sofia-sip
-V:1.13.14-r0
-A:armhf
-S:685359
-I:1581056
-T:RFC3261 compliant SIP User-Agent library
-U:https://github.com/freeswitch/sofia-sip
-L:LGPL-2.1-only
-o:sofia-sip
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1678965987
-c:f2a98dfde462b6246b031325a41fed358f79058e
-D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libglib-2.0.so.0 so:libssl.so.1.1 so:libz.so.1
-p:so:libsofia-sip-ua-glib.so.3=3.0.0 so:libsofia-sip-ua.so.0=0.6.0 cmd:addrinfo cmd:localinfo cmd:sip-date cmd:sip-dig cmd:sip-options cmd:stunc
 
 C:Q1ZREroaplEYQlYkLRBE3LVZfKyB0=
 P:libmnl
@@ -35418,6 +35371,22 @@ c:9c4e1aa60c851bb8ede5d304322f99e2603c6105
 D:logrotate
 i:squid=5.0.6-r2 lang-ca
 
+C:Q1W+WZQSq9sP9FD0bD7PPNch+BhM4=
+P:postgresql-contrib
+V:13.12-r0
+A:armhf
+S:2042849
+I:5742592
+T:Extension modules distributed with PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1692024668
+c:697bd60dd7d1c5e3918bc2f3605004059b57c0f8
+D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libpq.so.5 so:libssl.so.1.1 so:libuuid.so.1 so:libxml2.so.2 so:libz.so.1
+p:cmd:oid2name cmd:pg_standby cmd:vacuumlo
+
 C:Q17+p9csMhJXD6tS6eQsHE5GHtilk=
 P:lua5.4-libs
 V:5.4.3-r1
@@ -35649,22 +35618,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1610522533
 c:e9c69219db4d2e1dedce017e96bd8ad689536181
 i:docs perl-b-hooks-endofscope=0.24-r2
-
-C:Q1hX+qvsiimiXYBpLU7LJmsHu/LH4=
-P:sofia-sip-dev
-V:1.13.14-r0
-A:armhf
-S:261961
-I:2506752
-T:RFC3261 compliant SIP User-Agent library (development files)
-U:https://github.com/freeswitch/sofia-sip
-L:LGPL-2.1-only
-o:sofia-sip
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1678965987
-c:f2a98dfde462b6246b031325a41fed358f79058e
-D:pc:glib-2.0 pkgconfig sofia-sip=1.13.14-r0
-p:pc:sofia-sip-ua-glib=1.13.14 pc:sofia-sip-ua=1.13.14
 
 C:Q1lUg4o30NcHwwvLUp7bnshoPDBsE=
 P:tcl-tls
@@ -38466,6 +38419,22 @@ t:1604605419
 c:e3fd3d6441b8e4e18fd93c3a2ca50b7fe992152d
 D:font-sony-misc so:libc.musl-armhf.so.1 so:librrd.so.8
 p:cmd:rrdtool
+
+C:Q1DoYLYUYOhGZpvbXlX5EdfVS7gfQ=
+P:postgresql-client
+V:13.12-r0
+A:armhf
+S:862602
+I:2019328
+T:PostgreSQL client
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1692024668
+c:697bd60dd7d1c5e3918bc2f3605004059b57c0f8
+D:so:libc.musl-armhf.so.1 so:libpq.so.5 so:libreadline.so.8 so:libz.so.1
+p:cmd:clusterdb cmd:createdb cmd:createuser cmd:dropdb cmd:dropuser cmd:pg_basebackup cmd:pg_dump cmd:pg_dumpall cmd:pg_isready cmd:pg_receivewal cmd:pg_recvlogical cmd:pg_restore cmd:psql cmd:reindexdb cmd:vacuumdb
 
 C:Q14edKVIrrkr7YzwdGNkGsiWNHIq8=
 P:iperf3-dev
@@ -41641,21 +41610,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1611952693
 c:2fc773a9b906b8af6d8e89a911cbdb2995e72243
 D:perl perl-sub-quote perl-devel-stacktrace perl-role-tiny perl-mro-compat perl-try-tiny perl-test-fatal perl-eval-closure perl-module-runtime
-
-C:Q159xBfjq6oqgdX4mvPJa+W3Pqb6g=
-P:fcgiwrap-doc
-V:1.1.0-r5
-A:armhf
-S:3276
-I:24576
-T:Simple server for running CGI applications over FastCGI (documentation)
-U:https://github.com/gnosek/fcgiwrap
-L:MIT
-o:fcgiwrap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1595008983
-c:e800870d3c3702046633485b4f033fb20c312d6e
-i:docs fcgiwrap=1.1.0-r5
 
 C:Q1GGazOuY3+3EE5D2rLtmQpcmdVOI=
 P:perl-digest-hmac-doc
@@ -44932,21 +44886,6 @@ t:1609229237
 c:a4d7b071bef9fa4d5dcd8ff0deeba215baf348d8
 D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libogg.so.0 so:libspeex.so.1 so:libssl.so.1.1 so:libtheora.so.0 so:libvorbis.so.0
 p:so:libshout.so.3=3.2.0 cmd:shout
-
-C:Q1DixvK3bQw23fNewIxahLi6OOrF8=
-P:postgresql-openrc
-V:13.11-r0
-A:armhf
-S:6167
-I:40960
-T:A sophisticated object-relational DBMS (OpenRC init scripts)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1683837866
-c:80fa104498e9fed6be76c383e590c3e600b41b2e
-i:openrc postgresql=13.11-r0
 
 C:Q1X686/4b3xAqSONKNxMxt5qt9Huo=
 P:libsodium-dev
@@ -53245,22 +53184,6 @@ t:1610362853
 c:805c0e108100e191682377a60cb250f42b8cced0
 D:aconf
 
-C:Q15SBQeImzUvVdcB6MmuG8+zuZs6w=
-P:postgresql-plperl-contrib
-V:13.11-r0
-A:armhf
-S:15194
-I:86016
-T:PL/Perl extension modules distributed with PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1683837866
-c:80fa104498e9fed6be76c383e590c3e600b41b2e
-D:postgresql-plperl so:libc.musl-armhf.so.1 so:libperl.so
-i:postgresql-plperl=13.11-r0 postgresql-contrib=13.11-r0
-
 C:Q1dWOMqv8MTCTPPFkkYA1eX95q0Vo=
 P:dtc
 V:1.6.1-r0
@@ -58680,6 +58603,22 @@ c:6a5ae2cc7dc31d9dc3c6925a43af425467b07f5e
 D:so:libc.musl-armhf.so.1
 p:so:libsmartcols.so.1=1.1.0
 
+C:Q1A4hmOtXZ7T/TsxiGso2GtjNOf90=
+P:postgresql-dev
+V:13.12-r0
+A:armhf
+S:2050054
+I:9609216
+T:A sophisticated object-relational DBMS (development files)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1692024668
+c:697bd60dd7d1c5e3918bc2f3605004059b57c0f8
+D:clang icu-dev llvm openssl-dev libpq=13.12-r0 pkgconfig postgresql-libs=13.12-r0 so:libc.musl-armhf.so.1
+p:pc:libecpg=13.12 pc:libecpg_compat=13.12 pc:libpgtypes=13.12 pc:libpq=13.12 cmd:ecpg cmd:pg_config
+
 C:Q1KJ3gCEq+Wza7UDQjNWTyzZD3LyM=
 P:ruby-json
 V:2.7.8-r0
@@ -58831,22 +58770,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:encodings font-alias mkfontscale mkfontdir fontconfig
-
-C:Q1/uEX/hdPmjczIrHzdKyzkKtLjgc=
-P:postgresql-plpython3-contrib
-V:13.11-r0
-A:armhf
-S:18136
-I:110592
-T:PL/Python 3 extension modules distributed with PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1683837866
-c:80fa104498e9fed6be76c383e590c3e600b41b2e
-D:postgresql-plpython3 so:libc.musl-armhf.so.1 so:libpython3.9.so.1.0
-i:postgresql-plpython3=13.11-r0 postgresql-contrib=13.11-r0
 
 C:Q1oyi1TVNTjEZ6DvkoAafbSdqqR4g=
 P:flex
@@ -60329,6 +60252,21 @@ t:1607276476
 c:a50a11350e5b0cf9d8ea03c6e3edf7ebedecc0be
 D:perl rsync openssh-client
 p:cmd:rsnapshot cmd:rsnapshot-diff
+
+C:Q1E3vAvRklaBE/TDd27AuX9A2+C/Y=
+P:postgresql-pltcl
+V:13.12-r0
+A:armhf
+S:24287
+I:102400
+T:PL/Tcl procedural language for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1692024668
+c:697bd60dd7d1c5e3918bc2f3605004059b57c0f8
+D:pgtcl so:libc.musl-armhf.so.1 so:libtcl8.6.so
 
 C:Q1JEPA0YO0Ij8iUzYffLdZcLxSdoE=
 P:perl-gd
@@ -66644,6 +66582,22 @@ t:1518805431
 c:8d4313589065fbc86b808ed96434f1c7c5faf8e6
 i:docs libsamplerate=0.1.9-r1
 
+C:Q1WanpKbTJK6UYma/hp/V2Vi5vpXE=
+P:libpq
+V:13.12-r0
+A:armhf
+S:123850
+I:282624
+T:PostgreSQL libraries
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1692024668
+c:697bd60dd7d1c5e3918bc2f3605004059b57c0f8
+D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libldap_r-2.4.so.2 so:libssl.so.1.1
+p:so:libpq.so.5=5.13
+
 C:Q1XMybd8XYl14C/n7F5nxY04PxA9E=
 P:zmap
 V:2.1.1-r6
@@ -67132,6 +67086,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1680288137
 c:f2aff70d207f05af830710767a9f23b8b33402fc
 D:so:libc.musl-armhf.so.1 so:libruby.so.2.7
+
+C:Q1TolegBSCKYH+XHYhwPGUWEKJTcA=
+P:postgresql-libs
+V:13.12-r0
+A:armhf
+S:87419
+I:200704
+T:A sophisticated object-relational DBMS (libraries)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1692024668
+c:697bd60dd7d1c5e3918bc2f3605004059b57c0f8
+D:so:libc.musl-armhf.so.1 so:libpq.so.5
+p:so:libecpg.so.6=6.13 so:libecpg_compat.so.3=3.13 so:libpgtypes.so.3=3.13
 
 C:Q1n88+r648vIXZ9xxhol4qlKL43xg=
 P:fuse3-doc
@@ -68326,6 +68296,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1617646683
 c:084c454e8b909b443ba56e183c6037faebbaa72c
 D:uwsgi so:libc.musl-armhf.so.1 so:libpq.so.5
+
+C:Q1EBDjOtDoTdKHEHmbuk5g7xhOw68=
+P:postgresql-doc
+V:13.12-r0
+A:armhf
+S:3600141
+I:19230720
+T:A sophisticated object-relational DBMS (documentation)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1692024668
+c:697bd60dd7d1c5e3918bc2f3605004059b57c0f8
+i:docs postgresql=13.12-r0
 
 C:Q1YvO7oatWnkCgGj7H9Hf3xNWArNU=
 P:openldap-back-mdb
@@ -70388,6 +70373,22 @@ c:8809f363c3e89d9f7f91ce78139ee06a8a3bb20d
 D:readline-dev openssl-dev zlib-dev libxml2-dev pkgconfig postgresql-bdr-libs=9.4.14_p1-r9 so:libc.musl-armhf.so.1 so:libpq.so.5
 p:postgresql-dev=9.4.14_p1 pc:libecpg=9.4.14 pc:libecpg_compat=9.4.14 pc:libpgtypes=9.4.14 pc:libpq=9.4.14 cmd:ecpg cmd:pg_config
 
+C:Q1ayTDk50kGgH+C/qVOZi/A2hBUUQ=
+P:postgresql
+V:13.12-r0
+A:armhf
+S:16081863
+I:32862208
+T:A sophisticated object-relational DBMS
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1692024668
+c:697bd60dd7d1c5e3918bc2f3605004059b57c0f8
+D:postgresql-client tzdata /bin/sh so:libLLVM-11.so so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libicui18n.so.67 so:libicuuc.so.67 so:libldap-2.4.so.2 so:libpq.so.5 so:libssl.so.1.1 so:libstdc++.so.6 so:libxml2.so.2
+p:cmd:initdb cmd:pg_archivecleanup cmd:pg_checksums cmd:pg_controldata cmd:pg_ctl cmd:pg_resetwal cmd:pg_rewind cmd:pg_test_fsync cmd:pg_test_timing cmd:pg_upgrade cmd:pg_verifybackup cmd:pg_waldump cmd:pgbench cmd:postgres cmd:postmaster
+
 C:Q1TUYZyNQi4lrFqm2DQWrxXNXkdRs=
 P:apk-tools-doc
 V:2.12.7-r0
@@ -71649,22 +71650,6 @@ c:2dd7e3cbec142193aa28fe6ee22037566830b53f
 D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libgmp.so.10 so:libstdc++.so.6
 p:cmd:gvpe cmd:gvpectrl
 
-C:Q1EGGMEvzJWItLObH6pEEZTesuPvI=
-P:postgresql-contrib
-V:13.11-r0
-A:armhf
-S:2042684
-I:5742592
-T:Extension modules distributed with PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1683837866
-c:80fa104498e9fed6be76c383e590c3e600b41b2e
-D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libpq.so.5 so:libssl.so.1.1 so:libuuid.so.1 so:libxml2.so.2 so:libz.so.1
-p:cmd:oid2name cmd:pg_standby cmd:vacuumlo
-
 C:Q10NKInWpsfOasskteWaciNVdKv2g=
 P:dnscache
 V:1.05-r47
@@ -71982,6 +71967,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1628016016
 c:03c6b1b0ec20f417cee0f3c1d56795b27871b1c5
 D:musl>=1.2 so:libapk.so.3.12.0 so:libc.musl-armhf.so.1
+
+C:Q1NYk4jmKvs1DS1Sd53BJjm+rF/fE=
+P:postgresql-plpython3
+V:13.12-r0
+A:armhf
+S:44930
+I:143360
+T:PL/Python3 procedural language for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1692024668
+c:697bd60dd7d1c5e3918bc2f3605004059b57c0f8
+D:python3 so:libc.musl-armhf.so.1 so:libpython3.9.so.1.0
 
 C:Q1t70k3rOusOkAG57qkf4i4eE1CQI=
 P:musl-utils
