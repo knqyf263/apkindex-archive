@@ -25079,7 +25079,8 @@
       "versions": {
         "3.5.0-r0": 1744299523,
         "3.5.1-r0": 1751552488,
-        "3.5.2-r0": 1755607069
+        "3.5.2-r0": 1755607069,
+        "3.5.3-r0": 1758708086
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1"
@@ -28823,10 +28824,11 @@
       "versions": {
         "3.5.0-r0": 1744299523,
         "3.5.1-r0": 1751552488,
-        "3.5.2-r0": 1755607069
+        "3.5.2-r0": 1755607069,
+        "3.5.3-r0": 1758708086
       },
       "dependencies": [
-        "libcrypto3=3.5.2-r0",
+        "libcrypto3=3.5.3-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.3"
       ],
@@ -46016,7 +46018,8 @@
         "10.0_p1-r4": 1745225678,
         "10.0_p1-r5": 1746535469,
         "10.0_p1-r6": 1746593426,
-        "10.0_p1-r7": 1748289885
+        "10.0_p1-r7": 1748289885,
+        "10.0_p1-r8": 1758708086
       },
       "dependencies": [
         "openssh-client",
@@ -46032,7 +46035,8 @@
         "10.0_p1-r4": 1745225678,
         "10.0_p1-r5": 1746535469,
         "10.0_p1-r6": 1746593426,
-        "10.0_p1-r7": 1748289885
+        "10.0_p1-r7": 1748289885,
+        "10.0_p1-r8": 1758708086
       },
       "dependencies": [
         "libcrypto3>=3.1.0",
@@ -46042,14 +46046,14 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:findssl.sh=10.0_p1-r7",
-        "cmd:scp=10.0_p1-r7",
-        "cmd:sftp=10.0_p1-r7",
-        "cmd:ssh-add=10.0_p1-r7",
-        "cmd:ssh-agent=10.0_p1-r7",
-        "cmd:ssh-copy-id=10.0_p1-r7",
-        "cmd:ssh-keyscan=10.0_p1-r7",
-        "cmd:ssh-pkcs11-helper=10.0_p1-r7"
+        "cmd:findssl.sh=10.0_p1-r8",
+        "cmd:scp=10.0_p1-r8",
+        "cmd:sftp=10.0_p1-r8",
+        "cmd:ssh-add=10.0_p1-r8",
+        "cmd:ssh-agent=10.0_p1-r8",
+        "cmd:ssh-copy-id=10.0_p1-r8",
+        "cmd:ssh-keyscan=10.0_p1-r8",
+        "cmd:ssh-pkcs11-helper=10.0_p1-r8"
       ]
     },
     "openssh-client-default": {
@@ -46058,19 +46062,20 @@
         "10.0_p1-r4": 1745225678,
         "10.0_p1-r5": 1746535469,
         "10.0_p1-r6": 1746593426,
-        "10.0_p1-r7": 1748289885
+        "10.0_p1-r7": 1748289885,
+        "10.0_p1-r8": 1758708086
       },
       "dependencies": [
-        "openssh-keygen=10.0_p1-r7",
-        "openssh-client-common=10.0_p1-r7",
+        "openssh-keygen=10.0_p1-r8",
+        "openssh-client-common=10.0_p1-r8",
         "!openssh-client-krb5",
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.3",
         "so:libz.so.1"
       ],
       "provides": [
-        "openssh-client=10.0_p1-r7",
-        "cmd:ssh=10.0_p1-r7"
+        "openssh-client=10.0_p1-r8",
+        "cmd:ssh=10.0_p1-r8"
       ]
     },
     "openssh-client-krb5": {
@@ -46079,11 +46084,12 @@
         "10.0_p1-r4": 1745225678,
         "10.0_p1-r5": 1746535469,
         "10.0_p1-r6": 1746593426,
-        "10.0_p1-r7": 1748289885
+        "10.0_p1-r7": 1748289885,
+        "10.0_p1-r8": 1758708086
       },
       "dependencies": [
-        "openssh-keygen=10.0_p1-r7",
-        "openssh-client-common=10.0_p1-r7",
+        "openssh-keygen=10.0_p1-r8",
+        "openssh-client-common=10.0_p1-r8",
         "!openssh-client-default",
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.3",
@@ -46091,8 +46097,8 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "openssh-client=10.0_p1-r7",
-        "cmd:ssh=10.0_p1-r7"
+        "openssh-client=10.0_p1-r8",
+        "cmd:ssh=10.0_p1-r8"
       ]
     },
     "openssh-client-yash-completion": {
@@ -46110,33 +46116,34 @@
         "10.0_p1-r4": 1745225678,
         "10.0_p1-r5": 1746535469,
         "10.0_p1-r6": 1746593426,
-        "10.0_p1-r7": 1748289885
+        "10.0_p1-r7": 1748289885,
+        "10.0_p1-r8": 1758708086
       },
       "dependencies": [
         "openssh-sftp-server",
         "openssh-server",
-        "!openssh-client-common<10.0_p1-r7",
-        "!openssh-client-common>10.0_p1-r7",
-        "!openssh-client-default<10.0_p1-r7",
-        "!openssh-client-default>10.0_p1-r7",
-        "!openssh-client-krb5<10.0_p1-r7",
-        "!openssh-client-krb5>10.0_p1-r7",
-        "!openssh-keygen<10.0_p1-r7",
-        "!openssh-keygen>10.0_p1-r7",
-        "!openssh-keysign<10.0_p1-r7",
-        "!openssh-keysign>10.0_p1-r7",
-        "!openssh-server-krb5<10.0_p1-r7",
-        "!openssh-server-krb5>10.0_p1-r7",
-        "!openssh-server-pam<10.0_p1-r7",
-        "!openssh-server-pam>10.0_p1-r7",
-        "!openssh-server<10.0_p1-r7",
-        "!openssh-server>10.0_p1-r7",
-        "!openssh-sftp-server<10.0_p1-r7",
-        "!openssh-sftp-server>10.0_p1-r7",
-        "!openssh-sk-helper<10.0_p1-r7",
-        "!openssh-sk-helper>10.0_p1-r7",
-        "!openssh<10.0_p1-r7",
-        "!openssh>10.0_p1-r7"
+        "!openssh-client-common<10.0_p1-r8",
+        "!openssh-client-common>10.0_p1-r8",
+        "!openssh-client-default<10.0_p1-r8",
+        "!openssh-client-default>10.0_p1-r8",
+        "!openssh-client-krb5<10.0_p1-r8",
+        "!openssh-client-krb5>10.0_p1-r8",
+        "!openssh-keygen<10.0_p1-r8",
+        "!openssh-keygen>10.0_p1-r8",
+        "!openssh-keysign<10.0_p1-r8",
+        "!openssh-keysign>10.0_p1-r8",
+        "!openssh-server-krb5<10.0_p1-r8",
+        "!openssh-server-krb5>10.0_p1-r8",
+        "!openssh-server-pam<10.0_p1-r8",
+        "!openssh-server-pam>10.0_p1-r8",
+        "!openssh-server<10.0_p1-r8",
+        "!openssh-server>10.0_p1-r8",
+        "!openssh-sftp-server<10.0_p1-r8",
+        "!openssh-sftp-server>10.0_p1-r8",
+        "!openssh-sk-helper<10.0_p1-r8",
+        "!openssh-sk-helper>10.0_p1-r8",
+        "!openssh<10.0_p1-r8",
+        "!openssh>10.0_p1-r8"
       ]
     },
     "openssh-doc": {
@@ -46145,7 +46152,8 @@
         "10.0_p1-r4": 1745225678,
         "10.0_p1-r5": 1746535469,
         "10.0_p1-r6": 1746593426,
-        "10.0_p1-r7": 1748289885
+        "10.0_p1-r7": 1748289885,
+        "10.0_p1-r8": 1758708086
       }
     },
     "openssh-keygen": {
@@ -46154,7 +46162,8 @@
         "10.0_p1-r4": 1745225678,
         "10.0_p1-r5": 1746535469,
         "10.0_p1-r6": 1746593426,
-        "10.0_p1-r7": 1748289885
+        "10.0_p1-r7": 1748289885,
+        "10.0_p1-r8": 1758708086
       },
       "dependencies": [
         "libcrypto3>=3.1.0",
@@ -46162,7 +46171,7 @@
         "so:libcrypto.so.3"
       ],
       "provides": [
-        "cmd:ssh-keygen=10.0_p1-r7"
+        "cmd:ssh-keygen=10.0_p1-r8"
       ]
     },
     "openssh-keysign": {
@@ -46171,10 +46180,11 @@
         "10.0_p1-r4": 1745225678,
         "10.0_p1-r5": 1746535469,
         "10.0_p1-r6": 1746593426,
-        "10.0_p1-r7": 1748289885
+        "10.0_p1-r7": 1748289885,
+        "10.0_p1-r8": 1758708086
       },
       "dependencies": [
-        "openssh-client=10.0_p1-r7",
+        "openssh-client=10.0_p1-r8",
         "libcrypto3>=3.1.0",
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.3"
@@ -46186,18 +46196,19 @@
         "10.0_p1-r4": 1745225678,
         "10.0_p1-r5": 1746535469,
         "10.0_p1-r6": 1746593426,
-        "10.0_p1-r7": 1748289885
+        "10.0_p1-r7": 1748289885,
+        "10.0_p1-r8": 1758708086
       },
       "dependencies": [
-        "openssh-keygen=10.0_p1-r7",
-        "openssh-server-common=10.0_p1-r7",
+        "openssh-keygen=10.0_p1-r8",
+        "openssh-server-common=10.0_p1-r8",
         "/bin/sh",
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.3",
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:sshd=10.0_p1-r7"
+        "cmd:sshd=10.0_p1-r8"
       ]
     },
     "openssh-server-common": {
@@ -46206,7 +46217,8 @@
         "10.0_p1-r4": 1745225678,
         "10.0_p1-r5": 1746535469,
         "10.0_p1-r6": 1746593426,
-        "10.0_p1-r7": 1748289885
+        "10.0_p1-r7": 1748289885,
+        "10.0_p1-r8": 1758708086
       }
     },
     "openssh-server-common-openrc": {
@@ -46215,7 +46227,8 @@
         "10.0_p1-r4": 1745225678,
         "10.0_p1-r5": 1746535469,
         "10.0_p1-r6": 1746593426,
-        "10.0_p1-r7": 1748289885
+        "10.0_p1-r7": 1748289885,
+        "10.0_p1-r8": 1758708086
       }
     },
     "openssh-server-krb5": {
@@ -46224,11 +46237,12 @@
         "10.0_p1-r4": 1745225678,
         "10.0_p1-r5": 1746535469,
         "10.0_p1-r6": 1746593426,
-        "10.0_p1-r7": 1748289885
+        "10.0_p1-r7": 1748289885,
+        "10.0_p1-r8": 1758708086
       },
       "dependencies": [
-        "openssh-keygen=10.0_p1-r7",
-        "openssh-server-common=10.0_p1-r7",
+        "openssh-keygen=10.0_p1-r8",
+        "openssh-server-common=10.0_p1-r8",
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.3",
         "so:libgssapi_krb5.so.2",
@@ -46237,7 +46251,7 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:sshd.krb5=10.0_p1-r7"
+        "cmd:sshd.krb5=10.0_p1-r8"
       ]
     },
     "openssh-server-pam": {
@@ -46246,18 +46260,19 @@
         "10.0_p1-r4": 1745225678,
         "10.0_p1-r5": 1746535469,
         "10.0_p1-r6": 1746593426,
-        "10.0_p1-r7": 1748289885
+        "10.0_p1-r7": 1748289885,
+        "10.0_p1-r8": 1758708086
       },
       "dependencies": [
-        "openssh-keygen=10.0_p1-r7",
-        "openssh-server-common=10.0_p1-r7",
+        "openssh-keygen=10.0_p1-r8",
+        "openssh-server-common=10.0_p1-r8",
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.3",
         "so:libpam.so.0",
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:sshd.pam=10.0_p1-r7"
+        "cmd:sshd.pam=10.0_p1-r8"
       ]
     },
     "openssh-sftp-server": {
@@ -46266,7 +46281,8 @@
         "10.0_p1-r4": 1745225678,
         "10.0_p1-r5": 1746535469,
         "10.0_p1-r6": 1746593426,
-        "10.0_p1-r7": 1748289885
+        "10.0_p1-r7": 1748289885,
+        "10.0_p1-r8": 1758708086
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1"
@@ -46278,11 +46294,12 @@
         "10.0_p1-r4": 1745225678,
         "10.0_p1-r5": 1746535469,
         "10.0_p1-r6": 1746593426,
-        "10.0_p1-r7": 1748289885
+        "10.0_p1-r7": 1748289885,
+        "10.0_p1-r8": 1758708086
       },
       "dependencies": [
-        "openssh-keygen=10.0_p1-r7",
-        "openssh-server-common=10.0_p1-r7",
+        "openssh-keygen=10.0_p1-r8",
+        "openssh-server-common=10.0_p1-r8",
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.3",
         "so:libfido2.so.1"
@@ -46293,18 +46310,19 @@
       "versions": {
         "3.5.0-r0": 1744299523,
         "3.5.1-r0": 1751552488,
-        "3.5.2-r0": 1755607069
+        "3.5.2-r0": 1755607069,
+        "3.5.3-r0": 1758708086
       },
       "dependencies": [
-        "libssl3=3.5.2-r0",
-        "libcrypto3=3.5.2-r0",
+        "libssl3=3.5.3-r0",
+        "libcrypto3=3.5.3-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.3",
         "so:libssl.so.3"
       ],
       "provides": [
-        "openssl3=3.5.2-r0",
-        "cmd:openssl=3.5.2-r0"
+        "openssl3=3.5.3-r0",
+        "cmd:openssl=3.5.3-r0"
       ]
     },
     "openssl-dbg": {
@@ -46312,15 +46330,16 @@
       "versions": {
         "3.5.0-r0": 1744299523,
         "3.5.1-r0": 1751552488,
-        "3.5.2-r0": 1755607069
+        "3.5.2-r0": 1755607069,
+        "3.5.3-r0": 1758708086
       },
       "dependencies": [
-        "!libcrypto3<3.5.2-r0",
-        "!libcrypto3>3.5.2-r0",
-        "!libssl3<3.5.2-r0",
-        "!libssl3>3.5.2-r0",
-        "!openssl<3.5.2-r0",
-        "!openssl>3.5.2-r0"
+        "!libcrypto3<3.5.3-r0",
+        "!libcrypto3>3.5.3-r0",
+        "!libssl3<3.5.3-r0",
+        "!libssl3>3.5.3-r0",
+        "!openssl<3.5.3-r0",
+        "!openssl>3.5.3-r0"
       ]
     },
     "openssl-dev": {
@@ -46328,18 +46347,19 @@
       "versions": {
         "3.5.0-r0": 1744299523,
         "3.5.1-r0": 1751552488,
-        "3.5.2-r0": 1755607069
+        "3.5.2-r0": 1755607069,
+        "3.5.3-r0": 1758708086
       },
       "dependencies": [
-        "libcrypto3=3.5.2-r0",
-        "libssl3=3.5.2-r0",
+        "libcrypto3=3.5.3-r0",
+        "libssl3=3.5.3-r0",
         "pkgconfig"
       ],
       "provides": [
-        "openssl3-dev=3.5.2-r0",
-        "pc:libcrypto=3.5.2",
-        "pc:libssl=3.5.2",
-        "pc:openssl=3.5.2"
+        "openssl3-dev=3.5.3-r0",
+        "pc:libcrypto=3.5.3",
+        "pc:libssl=3.5.3",
+        "pc:openssl=3.5.3"
       ]
     },
     "openssl-doc": {
@@ -46347,7 +46367,8 @@
       "versions": {
         "3.5.0-r0": 1744299523,
         "3.5.1-r0": 1751552488,
-        "3.5.2-r0": 1755607069
+        "3.5.2-r0": 1755607069,
+        "3.5.3-r0": 1758708086
       }
     },
     "openssl-libs-static": {
@@ -46355,7 +46376,8 @@
       "versions": {
         "3.5.0-r0": 1744299523,
         "3.5.1-r0": 1751552488,
-        "3.5.2-r0": 1755607069
+        "3.5.2-r0": 1755607069,
+        "3.5.3-r0": 1758708086
       }
     },
     "openssl-misc": {
@@ -46363,10 +46385,11 @@
       "versions": {
         "3.5.0-r0": 1744299523,
         "3.5.1-r0": 1751552488,
-        "3.5.2-r0": 1755607069
+        "3.5.2-r0": 1755607069,
+        "3.5.3-r0": 1758708086
       },
       "dependencies": [
-        "openssl=3.5.2-r0",
+        "openssl=3.5.3-r0",
         "perl"
       ]
     },
@@ -72223,15 +72246,15 @@
       },
       "openssh-client": {
         "package": "openssh-client-krb5",
-        "version": "10.0_p1-r7"
+        "version": "10.0_p1-r8"
       },
       "openssl3": {
         "package": "openssl",
-        "version": "3.5.2-r0"
+        "version": "3.5.3-r0"
       },
       "openssl3-dev": {
         "package": "openssl-dev",
-        "version": "3.5.2-r0"
+        "version": "3.5.3-r0"
       },
       "perl-scalar-list-utils": {
         "package": "perl",
