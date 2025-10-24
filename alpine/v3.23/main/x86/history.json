@@ -70270,6 +70270,95 @@
       "provides": [
         "linux-firmware-any"
       ]
+    },
+    "tcl9": {
+      "origin": "tcl9",
+      "versions": {
+        "9.0.2-r0": 1761276209
+      },
+      "dependencies": [
+        "tzdata",
+        "so:libc.musl-x86.so.1",
+        "so:libsqlite3.so.0",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:tclsh9.0=9.0.2-r0",
+        "cmd:tclsh9=9.0.2-r0",
+        "so:libtcl9.0.so=0"
+      ]
+    },
+    "tcl9-dev": {
+      "origin": "tcl9",
+      "versions": {
+        "9.0.2-r0": 1761276209
+      },
+      "dependencies": [
+        "tcl9=9.0.2-r0",
+        "zip",
+        "pc:zlib>=1.2.3",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:tcl=9.0.2"
+      ]
+    },
+    "tcl9-doc": {
+      "origin": "tcl9",
+      "versions": {
+        "9.0.2-r0": 1761276209
+      }
+    },
+    "tk9": {
+      "origin": "tcl9",
+      "versions": {
+        "9.0.2-r0": 1761276209
+      },
+      "dependencies": [
+        "tcl9=9.0.2-r0",
+        "so:libX11.so.6",
+        "so:libXft.so.2",
+        "so:libc.musl-x86.so.1",
+        "so:libfontconfig.so.1",
+        "so:libtcl9.0.so"
+      ],
+      "provides": [
+        "cmd:wish9.0=9.0.2-r0",
+        "cmd:wish9=9.0.2-r0",
+        "so:libtcl9tk9.0.so=0"
+      ]
+    },
+    "tk9-demos": {
+      "origin": "tcl9",
+      "versions": {
+        "9.0.2-r0": 1761276209
+      },
+      "dependencies": [
+        "tk9=9.0.2-r0"
+      ]
+    },
+    "tk9-dev": {
+      "origin": "tcl9",
+      "versions": {
+        "9.0.2-r0": 1761276209
+      },
+      "dependencies": [
+        "fontconfig-dev",
+        "libx11-dev",
+        "libxft-dev",
+        "tk9=9.0.2-r0",
+        "pc:tcl>=8.6",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:tk=9.0.2"
+      ]
+    },
+    "tk9-doc": {
+      "origin": "tcl9",
+      "versions": {
+        "9.0.2-r0": 1761276209
+      }
     }
   },
   "provide": {
@@ -78022,6 +78111,14 @@
       },
       "libns-9.20.15.so": {
         "package": "bind-libs",
+        "version": "0"
+      },
+      "libtcl9.0.so": {
+        "package": "tcl9",
+        "version": "0"
+      },
+      "libtcl9tk9.0.so": {
+        "package": "tk9",
         "version": "0"
       }
     }
