@@ -3455,7 +3455,8 @@
     "amd-ucode": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       }
     },
     "android-tools-zsh-completion": {
@@ -6058,7 +6059,8 @@
     "bind": {
       "origin": "bind",
       "versions": {
-        "9.20.13-r0": 1757595304
+        "9.20.13-r0": 1757595304,
+        "9.20.15-r0": 1761149534
       },
       "dependencies": [
         "dns-root-hints",
@@ -6067,14 +6069,14 @@
         "so:libc.musl-ppc64le.so.1",
         "so:libcap.so.2",
         "so:libcrypto.so.3",
-        "so:libdns-9.20.13.so",
+        "so:libdns-9.20.15.so",
         "so:libfstrm.so.0",
-        "so:libisc-9.20.13.so",
-        "so:libisccc-9.20.13.so",
-        "so:libisccfg-9.20.13.so",
+        "so:libisc-9.20.15.so",
+        "so:libisccc-9.20.15.so",
+        "so:libisccfg-9.20.15.so",
         "so:libjson-c.so.5",
         "so:libnghttp2.so.14",
-        "so:libns-9.20.13.so",
+        "so:libns-9.20.15.so",
         "so:libprotobuf-c.so.1",
         "so:liburcu.so.8",
         "so:libuv.so.1",
@@ -6082,86 +6084,92 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:named-checkconf=9.20.13-r0",
-        "cmd:named=9.20.13-r0",
-        "cmd:rndc=9.20.13-r0"
+        "cmd:named-checkconf=9.20.15-r0",
+        "cmd:named=9.20.15-r0",
+        "cmd:rndc=9.20.15-r0"
       ]
     },
     "bind-dbg": {
       "origin": "bind",
       "versions": {
-        "9.20.13-r0": 1757595304
+        "9.20.13-r0": 1757595304,
+        "9.20.15-r0": 1761149534
       },
       "dependencies": [
-        "!bind-dnssec-tools<9.20.13-r0",
-        "!bind-dnssec-tools>9.20.13-r0",
-        "!bind-libs<9.20.13-r0",
-        "!bind-libs>9.20.13-r0",
-        "!bind-plugins<9.20.13-r0",
-        "!bind-plugins>9.20.13-r0",
-        "!bind-tools<9.20.13-r0",
-        "!bind-tools>9.20.13-r0",
-        "!bind<9.20.13-r0",
-        "!bind>9.20.13-r0"
+        "!bind-dnssec-tools<9.20.15-r0",
+        "!bind-dnssec-tools>9.20.15-r0",
+        "!bind-libs<9.20.15-r0",
+        "!bind-libs>9.20.15-r0",
+        "!bind-plugins<9.20.15-r0",
+        "!bind-plugins>9.20.15-r0",
+        "!bind-tools<9.20.15-r0",
+        "!bind-tools>9.20.15-r0",
+        "!bind<9.20.15-r0",
+        "!bind>9.20.15-r0"
       ]
     },
     "bind-dev": {
       "origin": "bind",
       "versions": {
-        "9.20.13-r0": 1757595304
+        "9.20.13-r0": 1757595304,
+        "9.20.15-r0": 1761149534
       },
       "dependencies": [
         "bind",
         "bind-plugins",
         "bind-tools",
-        "bind-libs=9.20.13-r0"
+        "bind-libs=9.20.15-r0"
       ]
     },
     "bind-dnssec-root": {
       "origin": "bind",
       "versions": {
-        "9.20.13-r0": 1757595304
+        "9.20.13-r0": 1757595304,
+        "9.20.15-r0": 1761149534
       }
     },
     "bind-dnssec-tools": {
       "origin": "bind",
       "versions": {
-        "9.20.13-r0": 1757595304
+        "9.20.13-r0": 1757595304,
+        "9.20.15-r0": 1761149534
       },
       "dependencies": [
         "dns-root-hints",
         "bind-tools",
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.3",
-        "so:libdns-9.20.13.so",
-        "so:libisc-9.20.13.so",
-        "so:libisccfg-9.20.13.so",
+        "so:libdns-9.20.15.so",
+        "so:libisc-9.20.15.so",
+        "so:libisccfg-9.20.15.so",
         "so:liburcu.so.8"
       ],
       "provides": [
-        "cmd:dnssec-cds=9.20.13-r0",
-        "cmd:dnssec-dsfromkey=9.20.13-r0",
-        "cmd:dnssec-importkey=9.20.13-r0",
-        "cmd:dnssec-keyfromlabel=9.20.13-r0",
-        "cmd:dnssec-keygen=9.20.13-r0",
-        "cmd:dnssec-ksr=9.20.13-r0",
-        "cmd:dnssec-revoke=9.20.13-r0",
-        "cmd:dnssec-settime=9.20.13-r0",
-        "cmd:dnssec-signzone=9.20.13-r0",
-        "cmd:dnssec-verify=9.20.13-r0",
-        "cmd:nsec3hash=9.20.13-r0"
+        "cmd:dnssec-cds=9.20.15-r0",
+        "cmd:dnssec-dsfromkey=9.20.15-r0",
+        "cmd:dnssec-importkey=9.20.15-r0",
+        "cmd:dnssec-keyfromlabel=9.20.15-r0",
+        "cmd:dnssec-keygen=9.20.15-r0",
+        "cmd:dnssec-ksr=9.20.15-r0",
+        "cmd:dnssec-revoke=9.20.15-r0",
+        "cmd:dnssec-settime=9.20.15-r0",
+        "cmd:dnssec-signzone=9.20.15-r0",
+        "cmd:dnssec-verify=9.20.15-r0",
+        "cmd:nsec3hash=9.20.15-r0"
       ]
     },
     "bind-doc": {
       "origin": "bind",
       "versions": {
-        "9.20.13-r0": 1757595304
+        "9.20.13-r0": 1757595304,
+        "9.20.15-r0": 1761149534
       }
     },
     "bind-libs": {
       "origin": "bind",
       "versions": {
-        "9.20.13-r0": 1757595304
+        "9.20.13-r0": 1757595304,
+        "9.20.15-r0": 1761149534
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -6181,23 +6189,25 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "so:libdns-9.20.13.so=0",
-        "so:libisc-9.20.13.so=0",
-        "so:libisccc-9.20.13.so=0",
-        "so:libisccfg-9.20.13.so=0",
-        "so:libns-9.20.13.so=0"
+        "so:libdns-9.20.15.so=0",
+        "so:libisc-9.20.15.so=0",
+        "so:libisccc-9.20.15.so=0",
+        "so:libisccfg-9.20.15.so=0",
+        "so:libns-9.20.15.so=0"
       ]
     },
     "bind-openrc": {
       "origin": "bind",
       "versions": {
-        "9.20.13-r0": 1757595304
+        "9.20.13-r0": 1757595304,
+        "9.20.15-r0": 1761149534
       }
     },
     "bind-plugins": {
       "origin": "bind",
       "versions": {
-        "9.20.13-r0": 1757595304
+        "9.20.13-r0": 1757595304,
+        "9.20.15-r0": 1761149534
       },
       "dependencies": [
         "bind",
@@ -6207,33 +6217,34 @@
     "bind-tools": {
       "origin": "bind",
       "versions": {
-        "9.20.13-r0": 1757595304
+        "9.20.13-r0": 1757595304,
+        "9.20.15-r0": 1761149534
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
-        "so:libdns-9.20.13.so",
-        "so:libisc-9.20.13.so",
-        "so:libisccfg-9.20.13.so",
+        "so:libdns-9.20.15.so",
+        "so:libisc-9.20.15.so",
+        "so:libisccfg-9.20.15.so",
         "so:libkrb5.so.3",
-        "so:libns-9.20.13.so",
+        "so:libns-9.20.15.so",
         "so:libprotobuf-c.so.1"
       ],
       "provides": [
-        "cmd:arpaname=9.20.13-r0",
-        "cmd:ddns-confgen=9.20.13-r0",
-        "cmd:delv=9.20.13-r0",
-        "cmd:dig=9.20.13-r0",
-        "cmd:dnstap-read=9.20.13-r0",
-        "cmd:host=9.20.13-r0",
-        "cmd:mdig=9.20.13-r0",
-        "cmd:named-checkzone=9.20.13-r0",
-        "cmd:named-compilezone=9.20.13-r0",
-        "cmd:named-journalprint=9.20.13-r0",
-        "cmd:named-rrchecker=9.20.13-r0",
-        "cmd:nslookup=9.20.13-r0",
-        "cmd:nsupdate=9.20.13-r0",
-        "cmd:rndc-confgen=9.20.13-r0",
-        "cmd:tsig-keygen=9.20.13-r0"
+        "cmd:arpaname=9.20.15-r0",
+        "cmd:ddns-confgen=9.20.15-r0",
+        "cmd:delv=9.20.15-r0",
+        "cmd:dig=9.20.15-r0",
+        "cmd:dnstap-read=9.20.15-r0",
+        "cmd:host=9.20.15-r0",
+        "cmd:mdig=9.20.15-r0",
+        "cmd:named-checkzone=9.20.15-r0",
+        "cmd:named-compilezone=9.20.15-r0",
+        "cmd:named-journalprint=9.20.15-r0",
+        "cmd:named-rrchecker=9.20.15-r0",
+        "cmd:nslookup=9.20.15-r0",
+        "cmd:nsupdate=9.20.15-r0",
+        "cmd:rndc-confgen=9.20.15-r0",
+        "cmd:tsig-keygen=9.20.15-r0"
       ]
     },
     "binutils": {
@@ -8533,13 +8544,14 @@
     "checkbashisms": {
       "origin": "debian-devscripts",
       "versions": {
-        "2.25.19-r0": 1756397954
+        "2.25.19-r0": 1756397954,
+        "2.25.20-r0": 1761203938
       },
       "dependencies": [
         "perl"
       ],
       "provides": [
-        "cmd:checkbashisms=2.25.19-r0"
+        "cmd:checkbashisms=2.25.20-r0"
       ]
     },
     "chrony": {
@@ -8906,17 +8918,18 @@
     "clang21": {
       "origin": "clang21",
       "versions": {
-        "21.1.2-r1": 1759357155
+        "21.1.2-r1": 1759357155,
+        "21.1.2-r2": 1761352217
       },
       "dependencies": [
-        "clang21-headers=21.1.2-r1",
-        "clang21-libs=21.1.2-r1",
+        "clang21-headers=21.1.2-r2",
+        "clang21-libs=21.1.2-r2",
         "fortify-headers>=1.1-r2",
         "gcc",
         "libstdc++-dev",
         "llvm21-linker-tools",
         "musl-dev",
-        "clang21-headers=21.1.2-r1",
+        "clang21-headers=21.1.2-r2",
         "so:libLLVM.so.21.1",
         "so:libc.musl-ppc64le.so.1",
         "so:libclang-cpp.so.21.1",
@@ -8924,92 +8937,99 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "clang=21.1.2-r1",
-        "cmd:clang++-21=21.1.2-r1",
-        "cmd:clang++=21.1.2-r1",
-        "cmd:clang-21=21.1.2-r1",
-        "cmd:clang-cl=21.1.2-r1",
-        "cmd:clang-cpp=21.1.2-r1",
-        "cmd:clang-linker-wrapper=21.1.2-r1",
-        "cmd:clang-offload-packager=21.1.2-r1",
-        "cmd:clang=21.1.2-r1"
+        "clang=21.1.2-r2",
+        "cmd:clang++-21=21.1.2-r2",
+        "cmd:clang++=21.1.2-r2",
+        "cmd:clang-21=21.1.2-r2",
+        "cmd:clang-cl=21.1.2-r2",
+        "cmd:clang-cpp=21.1.2-r2",
+        "cmd:clang-linker-wrapper=21.1.2-r2",
+        "cmd:clang-offload-packager=21.1.2-r2",
+        "cmd:clang=21.1.2-r2"
       ]
     },
     "clang21-analyzer": {
       "origin": "clang21",
       "versions": {
-        "21.1.2-r1": 1759357155
+        "21.1.2-r1": 1759357155,
+        "21.1.2-r2": 1761352217
       },
       "dependencies": [
-        "clang21=21.1.2-r1",
-        "py3-clang21=21.1.2-r1",
+        "clang21=21.1.2-r2",
+        "py3-clang21=21.1.2-r2",
         "perl",
         "python3"
       ],
       "provides": [
-        "clang-analyzer=21.1.2-r1",
-        "cmd:analyze-build=21.1.2-r1",
-        "cmd:intercept-build=21.1.2-r1",
-        "cmd:scan-build-py=21.1.2-r1",
-        "cmd:scan-build=21.1.2-r1",
-        "cmd:scan-view=21.1.2-r1"
+        "clang-analyzer=21.1.2-r2",
+        "cmd:analyze-build=21.1.2-r2",
+        "cmd:intercept-build=21.1.2-r2",
+        "cmd:scan-build-py=21.1.2-r2",
+        "cmd:scan-build=21.1.2-r2",
+        "cmd:scan-view=21.1.2-r2"
       ]
     },
     "clang21-bash-completion": {
       "origin": "clang21",
       "versions": {
-        "21.1.2-r1": 1759357155
+        "21.1.2-r1": 1759357155,
+        "21.1.2-r2": 1761352217
       },
       "provides": [
-        "clang-bash-completion=21.1.2-r1"
+        "clang-bash-completion=21.1.2-r2"
       ]
     },
     "clang21-ccache": {
       "origin": "clang21",
       "versions": {
-        "21.1.2-r1": 1759357155
+        "21.1.2-r1": 1759357155,
+        "21.1.2-r2": 1761352217
       },
       "provides": [
-        "clang-ccache=21.1.2-r1"
+        "clang-ccache=21.1.2-r2"
       ]
     },
     "clang21-dev": {
       "origin": "clang21",
       "versions": {
-        "21.1.2-r1": 1759357155
+        "21.1.2-r1": 1759357155,
+        "21.1.2-r2": 1761352217
       },
       "dependencies": [
-        "clang21=21.1.2-r1",
-        "clang21-extra-tools=21.1.2-r1",
-        "clang21-libclang=21.1.2-r1",
-        "clang21-libs=21.1.2-r1"
+        "clang21=21.1.2-r2",
+        "clang21-extra-tools=21.1.2-r2",
+        "clang21-libclang=21.1.2-r2",
+        "clang21-libs=21.1.2-r2"
       ],
       "provides": [
-        "clang-dev=21.1.2-r1"
+        "clang-dev=21.1.2-r2"
       ]
     },
     "clang21-doc": {
       "origin": "clang21",
       "versions": {
-        "21.1.2-r1": 1759357155
+        "21.1.2-r1": 1759357155,
+        "21.1.2-r2": 1761352217
       }
     },
     "clang21-emacs": {
       "origin": "clang21",
       "versions": {
-        "21.1.2-r1": 1759357155
+        "21.1.2-r1": 1759357155,
+        "21.1.2-r2": 1761352217
       },
       "provides": [
-        "clang-emacs=21.1.2-r1"
+        "clang-emacs=21.1.2-r2"
       ]
     },
     "clang21-extra-tools": {
       "origin": "clang21",
       "versions": {
-        "21.1.2-r1": 1759357155
+        "21.1.2-r1": 1759357155,
+        "21.1.2-r2": 1761352217
       },
       "dependencies": [
-        "clang21=21.1.2-r1",
+        "clang21=21.1.2-r2",
         "so:libLLVM.so.21.1",
         "so:libc.musl-ppc64le.so.1",
         "so:libclang-cpp.so.21.1",
@@ -9019,66 +9039,69 @@
         "so:libxml2.so.2"
       ],
       "provides": [
-        "clang-extra-tools=21.1.2-r1",
-        "cmd:amdgpu-arch=21.1.2-r1",
-        "cmd:c-index-test=21.1.2-r1",
-        "cmd:clang-apply-replacements=21.1.2-r1",
-        "cmd:clang-change-namespace=21.1.2-r1",
-        "cmd:clang-check=21.1.2-r1",
-        "cmd:clang-doc=21.1.2-r1",
-        "cmd:clang-extdef-mapping=21.1.2-r1",
-        "cmd:clang-format=21.1.2-r1",
-        "cmd:clang-include-cleaner=21.1.2-r1",
-        "cmd:clang-include-fixer=21.1.2-r1",
-        "cmd:clang-move=21.1.2-r1",
-        "cmd:clang-offload-bundler=21.1.2-r1",
-        "cmd:clang-query=21.1.2-r1",
-        "cmd:clang-refactor=21.1.2-r1",
-        "cmd:clang-reorder-fields=21.1.2-r1",
-        "cmd:clang-repl=21.1.2-r1",
-        "cmd:clang-scan-deps=21.1.2-r1",
-        "cmd:clang-tidy=21.1.2-r1",
-        "cmd:clangd=21.1.2-r1",
-        "cmd:diagtool=21.1.2-r1",
-        "cmd:find-all-symbols=21.1.2-r1",
-        "cmd:git-clang-format=21.1.2-r1",
-        "cmd:hmaptool=21.1.2-r1",
-        "cmd:modularize=21.1.2-r1",
-        "cmd:nvptx-arch=21.1.2-r1",
-        "cmd:pp-trace=21.1.2-r1",
-        "cmd:run-clang-tidy=21.1.2-r1"
+        "clang-extra-tools=21.1.2-r2",
+        "cmd:amdgpu-arch=21.1.2-r2",
+        "cmd:c-index-test=21.1.2-r2",
+        "cmd:clang-apply-replacements=21.1.2-r2",
+        "cmd:clang-change-namespace=21.1.2-r2",
+        "cmd:clang-check=21.1.2-r2",
+        "cmd:clang-doc=21.1.2-r2",
+        "cmd:clang-extdef-mapping=21.1.2-r2",
+        "cmd:clang-format=21.1.2-r2",
+        "cmd:clang-include-cleaner=21.1.2-r2",
+        "cmd:clang-include-fixer=21.1.2-r2",
+        "cmd:clang-move=21.1.2-r2",
+        "cmd:clang-offload-bundler=21.1.2-r2",
+        "cmd:clang-query=21.1.2-r2",
+        "cmd:clang-refactor=21.1.2-r2",
+        "cmd:clang-reorder-fields=21.1.2-r2",
+        "cmd:clang-repl=21.1.2-r2",
+        "cmd:clang-scan-deps=21.1.2-r2",
+        "cmd:clang-tidy=21.1.2-r2",
+        "cmd:clangd=21.1.2-r2",
+        "cmd:diagtool=21.1.2-r2",
+        "cmd:find-all-symbols=21.1.2-r2",
+        "cmd:git-clang-format=21.1.2-r2",
+        "cmd:hmaptool=21.1.2-r2",
+        "cmd:modularize=21.1.2-r2",
+        "cmd:nvptx-arch=21.1.2-r2",
+        "cmd:pp-trace=21.1.2-r2",
+        "cmd:run-clang-tidy=21.1.2-r2"
       ]
     },
     "clang21-headers": {
       "origin": "clang21",
       "versions": {
-        "21.1.2-r1": 1759357155
+        "21.1.2-r1": 1759357155,
+        "21.1.2-r2": 1761352217
       },
       "provides": [
-        "clang-headers=21.1.2-r1"
+        "clang-headers=21.1.2-r2"
       ]
     },
     "clang21-libclang": {
       "origin": "clang21",
       "versions": {
-        "21.1.2-r1": 1759357155
+        "21.1.2-r1": 1759357155,
+        "21.1.2-r2": 1761352217
       },
       "dependencies": [
-        "clang21-headers=21.1.2-r1",
+        "clang21-headers=21.1.2-r2",
         "so:libLLVM.so.21.1",
         "so:libc.musl-ppc64le.so.1",
         "so:libgcc_s.so.1",
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "clang-libclang=21.1.2-r1",
+        "clang-libclang=21.1.2-r2",
         "so:libclang.so.21.1=21.1.2"
       ]
     },
     "clang21-libs": {
       "origin": "clang21",
       "versions": {
-        "21.1.2-r1": 1759357155
+        "21.1.2-r1": 1759357155,
+        "21.1.2-r2": 1761352217
       },
       "dependencies": [
         "so:libLLVM.so.21.1",
@@ -9087,17 +9110,18 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "clang-libs=21.1.2-r1",
+        "clang-libs=21.1.2-r2",
         "so:libclang-cpp.so.21.1=21.1"
       ]
     },
     "clang21-static": {
       "origin": "clang21",
       "versions": {
-        "21.1.2-r1": 1759357155
+        "21.1.2-r1": 1759357155,
+        "21.1.2-r2": 1761352217
       },
       "provides": [
-        "clang-static=21.1.2-r1"
+        "clang-static=21.1.2-r2"
       ]
     },
     "clucene": {
@@ -10648,35 +10672,39 @@
     "debian-devscripts": {
       "origin": "debian-devscripts",
       "versions": {
-        "2.25.19-r0": 1756397954
+        "2.25.19-r0": 1756397954,
+        "2.25.20-r0": 1761203938
       },
       "dependencies": [
-        "checkbashisms=2.25.19-r0",
-        "debian-devscripts-hardening-check=2.25.19-r0"
+        "checkbashisms=2.25.20-r0",
+        "debian-devscripts-hardening-check=2.25.20-r0"
       ]
     },
     "debian-devscripts-bash-completion": {
       "origin": "debian-devscripts",
       "versions": {
-        "2.25.19-r0": 1756397954
+        "2.25.19-r0": 1756397954,
+        "2.25.20-r0": 1761203938
       }
     },
     "debian-devscripts-doc": {
       "origin": "debian-devscripts",
       "versions": {
-        "2.25.19-r0": 1756397954
+        "2.25.19-r0": 1756397954,
+        "2.25.20-r0": 1761203938
       }
     },
     "debian-devscripts-hardening-check": {
       "origin": "debian-devscripts",
       "versions": {
-        "2.25.19-r0": 1756397954
+        "2.25.19-r0": 1756397954,
+        "2.25.20-r0": 1761203938
       },
       "dependencies": [
         "perl"
       ],
       "provides": [
-        "cmd:hardening-check=2.25.19-r0"
+        "cmd:hardening-check=2.25.20-r0"
       ]
     },
     "debootstrap": {
@@ -18794,11 +18822,12 @@
     "gvim": {
       "origin": "vim",
       "versions": {
-        "9.1.1863-r0": 1760678661
+        "9.1.1863-r0": 1760678661,
+        "9.1.1871-r0": 1761415857
       },
       "dependencies": [
-        "vim-common=9.1.1863-r0",
-        "xxd=9.1.1863-r0",
+        "vim-common=9.1.1871-r0",
+        "xxd=9.1.1871-r0",
         "so:libICE.so.6",
         "so:libSM.so.6",
         "so:libX11.so.6",
@@ -18817,20 +18846,20 @@
         "so:libwayland-client.so.0"
       ],
       "provides": [
-        "vim=9.1.1863-r0",
-        "cmd:eview=9.1.1863-r0",
-        "cmd:evim=9.1.1863-r0",
-        "cmd:ex=9.1.1863-r0",
-        "cmd:gview=9.1.1863-r0",
-        "cmd:gvim=9.1.1863-r0",
-        "cmd:gvimdiff=9.1.1863-r0",
-        "cmd:gvimtutor=9.1.1863-r0",
-        "cmd:rgview=9.1.1863-r0",
-        "cmd:rgvim=9.1.1863-r0",
-        "cmd:rview=9.1.1863-r0",
-        "cmd:rvim=9.1.1863-r0",
-        "cmd:view=9.1.1863-r0",
-        "cmd:vim=9.1.1863-r0"
+        "vim=9.1.1871-r0",
+        "cmd:eview=9.1.1871-r0",
+        "cmd:evim=9.1.1871-r0",
+        "cmd:ex=9.1.1871-r0",
+        "cmd:gview=9.1.1871-r0",
+        "cmd:gvim=9.1.1871-r0",
+        "cmd:gvimdiff=9.1.1871-r0",
+        "cmd:gvimtutor=9.1.1871-r0",
+        "cmd:rgview=9.1.1871-r0",
+        "cmd:rgvim=9.1.1871-r0",
+        "cmd:rview=9.1.1871-r0",
+        "cmd:rvim=9.1.1871-r0",
+        "cmd:view=9.1.1871-r0",
+        "cmd:vim=9.1.1871-r0"
       ]
     },
     "gvpe": {
@@ -18922,7 +18951,8 @@
     "haproxy": {
       "origin": "haproxy",
       "versions": {
-        "3.2.6-r1": 1760291229
+        "3.2.6-r1": 1760291229,
+        "3.2.7-r0": 1761247474
       },
       "dependencies": [
         "/bin/sh",
@@ -18934,19 +18964,21 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:haproxy=3.2.6-r1"
+        "cmd:haproxy=3.2.7-r0"
       ]
     },
     "haproxy-doc": {
       "origin": "haproxy",
       "versions": {
-        "3.2.6-r1": 1760291229
+        "3.2.6-r1": 1760291229,
+        "3.2.7-r0": 1761247474
       }
     },
     "haproxy-openrc": {
       "origin": "haproxy",
       "versions": {
-        "3.2.6-r1": 1760291229
+        "3.2.6-r1": 1760291229,
+        "3.2.7-r0": 1761247474
       }
     },
     "harfbuzz": {
@@ -30428,116 +30460,119 @@
     "linux-firmware": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "dependencies": [
-        "linux-firmware-s5p-mfc=20250917-r1",
-        "linux-firmware-yamaha=20250917-r1",
-        "linux-firmware-yam=20250917-r1",
-        "linux-firmware-xe=20250917-r1",
-        "linux-firmware-wfx=20250917-r1",
-        "linux-firmware-vxge=20250917-r1",
-        "linux-firmware-vicam=20250917-r1",
-        "linux-firmware-ueagle-atm=20250917-r1",
-        "linux-firmware-ttusb-budget=20250917-r1",
-        "linux-firmware-tigon=20250917-r1",
-        "linux-firmware-ti-keystone=20250917-r1",
-        "linux-firmware-ti-connectivity=20250917-r1",
-        "linux-firmware-ti=20250917-r1",
-        "linux-firmware-tehuti=20250917-r1",
-        "linux-firmware-synaptics=20250917-r1",
-        "linux-firmware-sxg=20250917-r1",
-        "linux-firmware-sun=20250917-r1",
-        "linux-firmware-slicoss=20250917-r1",
-        "linux-firmware-sb16=20250917-r1",
-        "linux-firmware-rtw89=20250917-r1",
-        "linux-firmware-rtw88=20250917-r1",
-        "linux-firmware-rtlwifi=20250917-r1",
-        "linux-firmware-rtl_nic=20250917-r1",
-        "linux-firmware-rtl_bt=20250917-r1",
-        "linux-firmware-rsi=20250917-r1",
-        "linux-firmware-rockchip=20250917-r1",
-        "linux-firmware-realtek=20250917-r1",
-        "linux-firmware-radeon=20250917-r1",
-        "linux-firmware-r128=20250917-r1",
-        "linux-firmware-qlogic=20250917-r1",
-        "linux-firmware-qed=20250917-r1",
-        "linux-firmware-qcom=20250917-r1",
-        "linux-firmware-qca=20250917-r1",
-        "linux-firmware-powervr=20250917-r1",
-        "linux-firmware-ositech=20250917-r1",
-        "linux-firmware-nxp=20250917-r1",
-        "linux-firmware-nvidia=20250917-r1",
-        "linux-firmware-netronome=20250917-r1",
-        "linux-firmware-myricom=20250917-r1",
-        "linux-firmware-mwlwifi=20250917-r1",
-        "linux-firmware-mwl8k=20250917-r1",
-        "linux-firmware-mrvl=20250917-r1",
-        "linux-firmware-moxa=20250917-r1",
-        "linux-firmware-microchip=20250917-r1",
-        "linux-firmware-meson=20250917-r1",
-        "linux-firmware-mellanox=20250917-r1",
-        "linux-firmware-mediatek=20250917-r1",
-        "linux-firmware-matrox=20250917-r1",
-        "linux-firmware-liquidio=20250917-r1",
-        "linux-firmware-libertas=20250917-r1",
-        "linux-firmware-lenovo=20250917-r1",
-        "linux-firmware-korg=20250917-r1",
-        "linux-firmware-keyspan_pda=20250917-r1",
-        "linux-firmware-keyspan=20250917-r1",
-        "linux-firmware-kaweth=20250917-r1",
-        "linux-firmware-ixp4xx=20250917-r1",
-        "linux-firmware-isci=20250917-r1",
-        "linux-firmware-intel=20250917-r1",
-        "linux-firmware-inside-secure=20250917-r1",
-        "linux-firmware-imx=20250917-r1",
-        "linux-firmware-i915=20250917-r1",
-        "linux-firmware-go7007=20250917-r1",
-        "linux-firmware-ess=20250917-r1",
-        "linux-firmware-ene-ub6250=20250917-r1",
-        "linux-firmware-emi62=20250917-r1",
-        "linux-firmware-emi26=20250917-r1",
-        "linux-firmware-edgeport=20250917-r1",
-        "linux-firmware-e100=20250917-r1",
-        "linux-firmware-dsp56k=20250917-r1",
-        "linux-firmware-dpaa2=20250917-r1",
-        "linux-firmware-dabusb=20250917-r1",
-        "linux-firmware-cypress=20250917-r1",
-        "linux-firmware-cxgb4=20250917-r1",
-        "linux-firmware-cxgb3=20250917-r1",
-        "linux-firmware-cpia2=20250917-r1",
-        "linux-firmware-cnm=20250917-r1",
-        "linux-firmware-cis=20250917-r1",
-        "linux-firmware-cirrus=20250917-r1",
-        "linux-firmware-cavium=20250917-r1",
-        "linux-firmware-cadence=20250917-r1",
-        "linux-firmware-brcm=20250917-r1",
-        "linux-firmware-bnx2x=20250917-r1",
-        "linux-firmware-bnx2=20250917-r1",
-        "linux-firmware-av7110=20250917-r1",
-        "linux-firmware-atusb=20250917-r1",
-        "linux-firmware-atmel=20250917-r1",
-        "linux-firmware-ath9k_htc=20250917-r1",
-        "linux-firmware-ath6k=20250917-r1",
-        "linux-firmware-ath12k=20250917-r1",
-        "linux-firmware-ath11k=20250917-r1",
-        "linux-firmware-ath10k=20250917-r1",
-        "linux-firmware-arm=20250917-r1",
-        "linux-firmware-ar3k=20250917-r1",
-        "linux-firmware-amphion=20250917-r1",
-        "linux-firmware-amlogic=20250917-r1",
-        "linux-firmware-amdtee=20250917-r1",
-        "linux-firmware-amdnpu=20250917-r1",
-        "linux-firmware-amdgpu=20250917-r1",
-        "linux-firmware-amd-ucode=20250917-r1",
-        "linux-firmware-amd=20250917-r1",
-        "linux-firmware-airoha=20250917-r1",
-        "linux-firmware-aeonsemi=20250917-r1",
-        "linux-firmware-advansys=20250917-r1",
-        "linux-firmware-adaptec=20250917-r1",
-        "linux-firmware-acenic=20250917-r1",
-        "linux-firmware-3com=20250917-r1",
-        "linux-firmware-other=20250917-r1"
+        "linux-firmware-s5p-mfc=20251021-r0",
+        "linux-firmware-yamaha=20251021-r0",
+        "linux-firmware-yam=20251021-r0",
+        "linux-firmware-xe=20251021-r0",
+        "linux-firmware-wfx=20251021-r0",
+        "linux-firmware-vxge=20251021-r0",
+        "linux-firmware-vicam=20251021-r0",
+        "linux-firmware-ueagle-atm=20251021-r0",
+        "linux-firmware-ttusb-budget=20251021-r0",
+        "linux-firmware-tigon=20251021-r0",
+        "linux-firmware-ti-keystone=20251021-r0",
+        "linux-firmware-ti-connectivity=20251021-r0",
+        "linux-firmware-ti=20251021-r0",
+        "linux-firmware-tehuti=20251021-r0",
+        "linux-firmware-synaptics=20251021-r0",
+        "linux-firmware-sxg=20251021-r0",
+        "linux-firmware-sun=20251021-r0",
+        "linux-firmware-slicoss=20251021-r0",
+        "linux-firmware-sb16=20251021-r0",
+        "linux-firmware-rtw89=20251021-r0",
+        "linux-firmware-rtw88=20251021-r0",
+        "linux-firmware-rtlwifi=20251021-r0",
+        "linux-firmware-rtl_nic=20251021-r0",
+        "linux-firmware-rtl_bt=20251021-r0",
+        "linux-firmware-rsi=20251021-r0",
+        "linux-firmware-rockchip=20251021-r0",
+        "linux-firmware-realtek=20251021-r0",
+        "linux-firmware-radeon=20251021-r0",
+        "linux-firmware-r128=20251021-r0",
+        "linux-firmware-qlogic=20251021-r0",
+        "linux-firmware-qed=20251021-r0",
+        "linux-firmware-qcom=20251021-r0",
+        "linux-firmware-qca=20251021-r0",
+        "linux-firmware-powervr=20251021-r0",
+        "linux-firmware-ositech=20251021-r0",
+        "linux-firmware-nxp=20251021-r0",
+        "linux-firmware-nvidia=20251021-r0",
+        "linux-firmware-netronome=20251021-r0",
+        "linux-firmware-myricom=20251021-r0",
+        "linux-firmware-mwlwifi=20251021-r0",
+        "linux-firmware-mwl8k=20251021-r0",
+        "linux-firmware-mrvl=20251021-r0",
+        "linux-firmware-moxa=20251021-r0",
+        "linux-firmware-microchip=20251021-r0",
+        "linux-firmware-meson=20251021-r0",
+        "linux-firmware-mellanox=20251021-r0",
+        "linux-firmware-mediatek=20251021-r0",
+        "linux-firmware-matrox=20251021-r0",
+        "linux-firmware-liquidio=20251021-r0",
+        "linux-firmware-libertas=20251021-r0",
+        "linux-firmware-lenovo=20251021-r0",
+        "linux-firmware-korg=20251021-r0",
+        "linux-firmware-keyspan_pda=20251021-r0",
+        "linux-firmware-keyspan=20251021-r0",
+        "linux-firmware-kaweth=20251021-r0",
+        "linux-firmware-ixp4xx=20251021-r0",
+        "linux-firmware-isci=20251021-r0",
+        "linux-firmware-intel=20251021-r0",
+        "linux-firmware-inside-secure=20251021-r0",
+        "linux-firmware-imx=20251021-r0",
+        "linux-firmware-i915=20251021-r0",
+        "linux-firmware-hp=20251021-r0",
+        "linux-firmware-go7007=20251021-r0",
+        "linux-firmware-ess=20251021-r0",
+        "linux-firmware-ene-ub6250=20251021-r0",
+        "linux-firmware-emi62=20251021-r0",
+        "linux-firmware-emi26=20251021-r0",
+        "linux-firmware-edgeport=20251021-r0",
+        "linux-firmware-e100=20251021-r0",
+        "linux-firmware-dsp56k=20251021-r0",
+        "linux-firmware-dpaa2=20251021-r0",
+        "linux-firmware-dell=20251021-r0",
+        "linux-firmware-dabusb=20251021-r0",
+        "linux-firmware-cypress=20251021-r0",
+        "linux-firmware-cxgb4=20251021-r0",
+        "linux-firmware-cxgb3=20251021-r0",
+        "linux-firmware-cpia2=20251021-r0",
+        "linux-firmware-cnm=20251021-r0",
+        "linux-firmware-cis=20251021-r0",
+        "linux-firmware-cirrus=20251021-r0",
+        "linux-firmware-cavium=20251021-r0",
+        "linux-firmware-cadence=20251021-r0",
+        "linux-firmware-brcm=20251021-r0",
+        "linux-firmware-bnx2x=20251021-r0",
+        "linux-firmware-bnx2=20251021-r0",
+        "linux-firmware-av7110=20251021-r0",
+        "linux-firmware-atusb=20251021-r0",
+        "linux-firmware-atmel=20251021-r0",
+        "linux-firmware-ath9k_htc=20251021-r0",
+        "linux-firmware-ath6k=20251021-r0",
+        "linux-firmware-ath12k=20251021-r0",
+        "linux-firmware-ath11k=20251021-r0",
+        "linux-firmware-ath10k=20251021-r0",
+        "linux-firmware-arm=20251021-r0",
+        "linux-firmware-ar3k=20251021-r0",
+        "linux-firmware-amphion=20251021-r0",
+        "linux-firmware-amlogic=20251021-r0",
+        "linux-firmware-amdtee=20251021-r0",
+        "linux-firmware-amdnpu=20251021-r0",
+        "linux-firmware-amdgpu=20251021-r0",
+        "linux-firmware-amd-ucode=20251021-r0",
+        "linux-firmware-amd=20251021-r0",
+        "linux-firmware-airoha=20251021-r0",
+        "linux-firmware-aeonsemi=20251021-r0",
+        "linux-firmware-advansys=20251021-r0",
+        "linux-firmware-adaptec=20251021-r0",
+        "linux-firmware-acenic=20251021-r0",
+        "linux-firmware-3com=20251021-r0",
+        "linux-firmware-other=20251021-r0"
       ],
       "provides": [
         "linux-firmware-any"
@@ -30546,7 +30581,8 @@
     "linux-firmware-3com": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30555,7 +30591,8 @@
     "linux-firmware-acenic": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30564,7 +30601,8 @@
     "linux-firmware-adaptec": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30573,7 +30611,8 @@
     "linux-firmware-advansys": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30582,7 +30621,8 @@
     "linux-firmware-aeonsemi": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30591,7 +30631,8 @@
     "linux-firmware-airoha": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30600,7 +30641,8 @@
     "linux-firmware-amd": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30609,7 +30651,8 @@
     "linux-firmware-amd-ucode": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30618,7 +30661,8 @@
     "linux-firmware-amdgpu": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30627,7 +30671,8 @@
     "linux-firmware-amdnpu": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30636,7 +30681,8 @@
     "linux-firmware-amdtee": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30645,7 +30691,8 @@
     "linux-firmware-amlogic": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30654,7 +30701,8 @@
     "linux-firmware-amphion": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30663,7 +30711,8 @@
     "linux-firmware-ar3k": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30672,7 +30721,8 @@
     "linux-firmware-arm": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30681,7 +30731,8 @@
     "linux-firmware-ath10k": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30690,7 +30741,8 @@
     "linux-firmware-ath11k": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30699,10 +30751,11 @@
     "linux-firmware-ath12k": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "dependencies": [
-        "linux-firmware-ath11k=20250917-r1"
+        "linux-firmware-ath11k=20251021-r0"
       ],
       "provides": [
         "linux-firmware-any"
@@ -30711,7 +30764,8 @@
     "linux-firmware-ath6k": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30720,7 +30774,8 @@
     "linux-firmware-ath9k_htc": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30729,7 +30784,8 @@
     "linux-firmware-atmel": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30738,7 +30794,8 @@
     "linux-firmware-atusb": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30747,7 +30804,8 @@
     "linux-firmware-av7110": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30756,7 +30814,8 @@
     "linux-firmware-bnx2": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30765,7 +30824,8 @@
     "linux-firmware-bnx2x": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30774,11 +30834,12 @@
     "linux-firmware-brcm": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "dependencies": [
-        "linux-firmware-cypress=20250917-r1",
-        "linux-firmware-synaptics=20250917-r1"
+        "linux-firmware-cypress=20251021-r0",
+        "linux-firmware-synaptics=20251021-r0"
       ],
       "provides": [
         "linux-firmware-any"
@@ -30787,7 +30848,8 @@
     "linux-firmware-cadence": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30796,7 +30858,8 @@
     "linux-firmware-cavium": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30805,7 +30868,8 @@
     "linux-firmware-cirrus": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30814,7 +30878,8 @@
     "linux-firmware-cis": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30823,7 +30888,8 @@
     "linux-firmware-cnm": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30832,7 +30898,8 @@
     "linux-firmware-cpia2": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30841,7 +30908,8 @@
     "linux-firmware-cxgb3": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30850,7 +30918,8 @@
     "linux-firmware-cxgb4": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30859,7 +30928,8 @@
     "linux-firmware-cypress": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30868,7 +30938,8 @@
     "linux-firmware-dabusb": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30877,7 +30948,8 @@
     "linux-firmware-dpaa2": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30886,7 +30958,8 @@
     "linux-firmware-dsp56k": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30895,7 +30968,8 @@
     "linux-firmware-e100": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30904,7 +30978,8 @@
     "linux-firmware-edgeport": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30913,7 +30988,8 @@
     "linux-firmware-emi26": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30922,7 +30998,8 @@
     "linux-firmware-emi62": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30931,7 +31008,8 @@
     "linux-firmware-ene-ub6250": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30940,7 +31018,8 @@
     "linux-firmware-ess": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30949,7 +31028,8 @@
     "linux-firmware-go7007": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30958,7 +31038,8 @@
     "linux-firmware-i915": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30967,7 +31048,8 @@
     "linux-firmware-imx": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30976,7 +31058,8 @@
     "linux-firmware-inside-secure": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -30985,10 +31068,13 @@
     "linux-firmware-intel": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "dependencies": [
-        "linux-firmware-lenovo=20250917-r1"
+        "linux-firmware-dell=20251021-r0",
+        "linux-firmware-hp=20251021-r0",
+        "linux-firmware-lenovo=20251021-r0"
       ],
       "provides": [
         "linux-firmware-any"
@@ -30997,7 +31083,8 @@
     "linux-firmware-isci": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31006,7 +31093,8 @@
     "linux-firmware-ixp4xx": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31015,7 +31103,8 @@
     "linux-firmware-kaweth": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31024,7 +31113,8 @@
     "linux-firmware-keyspan": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31033,7 +31123,8 @@
     "linux-firmware-keyspan_pda": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31042,7 +31133,8 @@
     "linux-firmware-korg": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31051,7 +31143,8 @@
     "linux-firmware-lenovo": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31060,7 +31153,8 @@
     "linux-firmware-libertas": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31069,7 +31163,8 @@
     "linux-firmware-liquidio": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31078,7 +31173,8 @@
     "linux-firmware-matrox": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31087,7 +31183,8 @@
     "linux-firmware-mediatek": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31096,7 +31193,8 @@
     "linux-firmware-mellanox": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31105,7 +31203,8 @@
     "linux-firmware-meson": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31114,7 +31213,8 @@
     "linux-firmware-microchip": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31123,7 +31223,8 @@
     "linux-firmware-moxa": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31132,10 +31233,11 @@
     "linux-firmware-mrvl": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "dependencies": [
-        "linux-firmware-libertas=20250917-r1"
+        "linux-firmware-libertas=20251021-r0"
       ],
       "provides": [
         "linux-firmware-any"
@@ -31144,7 +31246,8 @@
     "linux-firmware-mwl8k": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31153,7 +31256,8 @@
     "linux-firmware-mwlwifi": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31162,7 +31266,8 @@
     "linux-firmware-myricom": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31171,7 +31276,8 @@
     "linux-firmware-netronome": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31180,7 +31286,8 @@
     "linux-firmware-none": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31189,7 +31296,8 @@
     "linux-firmware-nvidia": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31198,7 +31306,8 @@
     "linux-firmware-nxp": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31207,7 +31316,8 @@
     "linux-firmware-ositech": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31216,7 +31326,8 @@
     "linux-firmware-other": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31225,7 +31336,8 @@
     "linux-firmware-powervr": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31234,7 +31346,8 @@
     "linux-firmware-qca": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31243,11 +31356,12 @@
     "linux-firmware-qcom": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "dependencies": [
-        "linux-firmware-ath10k=20250917-r1",
-        "linux-firmware-ath11k=20250917-r1"
+        "linux-firmware-ath10k=20251021-r0",
+        "linux-firmware-ath11k=20251021-r0"
       ],
       "provides": [
         "linux-firmware-any"
@@ -31256,7 +31370,8 @@
     "linux-firmware-qed": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31265,7 +31380,8 @@
     "linux-firmware-qlogic": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31274,7 +31390,8 @@
     "linux-firmware-r128": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31283,10 +31400,11 @@
     "linux-firmware-radeon": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "dependencies": [
-        "linux-firmware-amdgpu=20250917-r1"
+        "linux-firmware-amdgpu=20251021-r0"
       ],
       "provides": [
         "linux-firmware-any"
@@ -31295,7 +31413,8 @@
     "linux-firmware-realtek": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31304,7 +31423,8 @@
     "linux-firmware-rockchip": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31313,7 +31433,8 @@
     "linux-firmware-rsi": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31322,7 +31443,8 @@
     "linux-firmware-rtl_bt": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31331,7 +31453,8 @@
     "linux-firmware-rtl_nic": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31340,7 +31463,8 @@
     "linux-firmware-rtlwifi": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31349,7 +31473,8 @@
     "linux-firmware-rtw88": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31358,7 +31483,8 @@
     "linux-firmware-rtw89": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31367,7 +31493,8 @@
     "linux-firmware-s5p-mfc": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31376,7 +31503,8 @@
     "linux-firmware-sb16": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31385,7 +31513,8 @@
     "linux-firmware-slicoss": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31394,7 +31523,8 @@
     "linux-firmware-sun": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31403,7 +31533,8 @@
     "linux-firmware-sxg": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31412,7 +31543,8 @@
     "linux-firmware-synaptics": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31421,7 +31553,8 @@
     "linux-firmware-tehuti": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31430,7 +31563,8 @@
     "linux-firmware-ti": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31439,7 +31573,8 @@
     "linux-firmware-ti-connectivity": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31448,7 +31583,8 @@
     "linux-firmware-ti-keystone": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31457,7 +31593,8 @@
     "linux-firmware-tigon": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31466,7 +31603,8 @@
     "linux-firmware-ttusb-budget": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31475,7 +31613,8 @@
     "linux-firmware-ueagle-atm": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31484,7 +31623,8 @@
     "linux-firmware-vicam": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31493,7 +31633,8 @@
     "linux-firmware-vxge": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31502,7 +31643,8 @@
     "linux-firmware-wfx": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31511,7 +31653,8 @@
     "linux-firmware-xe": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31520,7 +31663,8 @@
     "linux-firmware-yam": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -31529,7 +31673,8 @@
     "linux-firmware-yamaha": {
       "origin": "linux-firmware",
       "versions": {
-        "20250917-r1": 1759733409
+        "20250917-r1": 1759733409,
+        "20251021-r0": 1761273897
       },
       "provides": [
         "linux-firmware-any"
@@ -38996,7 +39141,8 @@
     "mpg123": {
       "origin": "mpg123",
       "versions": {
-        "1.33.2-r0": 1757227591
+        "1.33.2-r0": 1757227591,
+        "1.33.3-r0": 1761419574
       },
       "dependencies": [
         "so:libasound.so.2",
@@ -39006,37 +39152,40 @@
         "so:libsyn123.so.0"
       ],
       "provides": [
-        "cmd:mpg123-id3dump=1.33.2-r0",
-        "cmd:mpg123-strip=1.33.2-r0",
-        "cmd:mpg123=1.33.2-r0",
-        "cmd:out123=1.33.2-r0"
+        "cmd:mpg123-id3dump=1.33.3-r0",
+        "cmd:mpg123-strip=1.33.3-r0",
+        "cmd:mpg123=1.33.3-r0",
+        "cmd:out123=1.33.3-r0"
       ]
     },
     "mpg123-dev": {
       "origin": "mpg123",
       "versions": {
-        "1.33.2-r0": 1757227591
+        "1.33.2-r0": 1757227591,
+        "1.33.3-r0": 1761419574
       },
       "dependencies": [
-        "mpg123-libs=1.33.2-r0",
+        "mpg123-libs=1.33.3-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libmpg123=1.33.2",
-        "pc:libout123=1.33.2",
-        "pc:libsyn123=1.33.2"
+        "pc:libmpg123=1.33.3",
+        "pc:libout123=1.33.3",
+        "pc:libsyn123=1.33.3"
       ]
     },
     "mpg123-doc": {
       "origin": "mpg123",
       "versions": {
-        "1.33.2-r0": 1757227591
+        "1.33.2-r0": 1757227591,
+        "1.33.3-r0": 1761419574
       }
     },
     "mpg123-libs": {
       "origin": "mpg123",
       "versions": {
-        "1.33.2-r0": 1757227591
+        "1.33.2-r0": 1757227591,
+        "1.33.3-r0": 1761419574
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1"
@@ -40817,20 +40966,22 @@
     "netcat-openbsd": {
       "origin": "netcat-openbsd",
       "versions": {
-        "1.229.1-r0": 1746167632
+        "1.229.1-r0": 1746167632,
+        "1.234.1-r0": 1761316211
       },
       "dependencies": [
         "so:libbsd.so.0",
         "so:libc.musl-ppc64le.so.1"
       ],
       "provides": [
-        "cmd:nc=1.229.1-r0"
+        "cmd:nc=1.234.1-r0"
       ]
     },
     "netcat-openbsd-doc": {
       "origin": "netcat-openbsd",
       "versions": {
-        "1.229.1-r0": 1746167632
+        "1.229.1-r0": 1746167632,
+        "1.234.1-r0": 1761316211
       }
     },
     "netcf": {
@@ -47600,7 +47751,8 @@
     "perl-http-message": {
       "origin": "perl-http-message",
       "versions": {
-        "7.00-r0": 1728360399
+        "7.00-r0": 1728360399,
+        "7.01-r0": 1761419656
       },
       "dependencies": [
         "perl",
@@ -47615,7 +47767,8 @@
     "perl-http-message-doc": {
       "origin": "perl-http-message",
       "versions": {
-        "7.00-r0": 1728360399
+        "7.00-r0": 1728360399,
+        "7.01-r0": 1761419656
       }
     },
     "perl-http-negotiate": {
@@ -53326,21 +53479,23 @@
     "py3-charset-normalizer": {
       "origin": "py3-charset-normalizer",
       "versions": {
-        "3.4.3-r0": 1754845347
+        "3.4.3-r0": 1754845347,
+        "3.4.4-r0": 1761394369
       },
       "dependencies": [
         "python3",
         "python3~3.12"
       ],
       "provides": [
-        "cmd:normalizer=3.4.3-r0",
-        "py3.12:charset_normalizer=3.4.3-r0"
+        "cmd:normalizer=3.4.4-r0",
+        "py3.12:charset_normalizer=3.4.4-r0"
       ]
     },
     "py3-charset-normalizer-pyc": {
       "origin": "py3-charset-normalizer",
       "versions": {
-        "3.4.3-r0": 1754845347
+        "3.4.3-r0": 1754845347,
+        "3.4.4-r0": 1761394369
       },
       "dependencies": [
         "python3~3.12"
@@ -53349,17 +53504,18 @@
     "py3-clang21": {
       "origin": "clang21",
       "versions": {
-        "21.1.2-r1": 1759357155
+        "21.1.2-r1": 1759357155,
+        "21.1.2-r2": 1761352217
       },
       "dependencies": [
-        "clang21-libclang=21.1.2-r1",
+        "clang21-libclang=21.1.2-r2",
         "python3",
         "python3~3.12"
       ],
       "provides": [
-        "py3-clang=21.1.2-r1",
-        "py3.12:clang=21.1.2-r1",
-        "py3.12:libscanbuild=21.1.2-r1"
+        "py3-clang=21.1.2-r2",
+        "py3.12:clang=21.1.2-r2",
+        "py3.12:libscanbuild=21.1.2-r2"
       ]
     },
     "py3-coverage": {
@@ -56528,7 +56684,8 @@
     "py3-unbound": {
       "origin": "unbound",
       "versions": {
-        "1.24.0-r0": 1758319178
+        "1.24.0-r0": 1758319178,
+        "1.24.1-r0": 1761211981
       },
       "dependencies": [
         "python3~3.12",
@@ -56537,8 +56694,8 @@
         "so:libunbound.so.8"
       ],
       "provides": [
-        "py-unbound=1.24.0-r0",
-        "py3.12:unbound=1.24.0-r0"
+        "py-unbound=1.24.1-r0",
+        "py3.12:unbound=1.24.1-r0"
       ]
     },
     "py3-urllib3": {
@@ -63599,31 +63756,34 @@
     "strace": {
       "origin": "strace",
       "versions": {
-        "6.16-r0": 1754466274
+        "6.16-r0": 1754466274,
+        "6.17-r0": 1761423117
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
         "so:libdw.so.1"
       ],
       "provides": [
-        "cmd:strace-log-merge=6.16-r0",
-        "cmd:strace=6.16-r0"
+        "cmd:strace-log-merge=6.17-r0",
+        "cmd:strace=6.17-r0"
       ]
     },
     "strace-dbg": {
       "origin": "strace",
       "versions": {
-        "6.16-r0": 1754466274
+        "6.16-r0": 1754466274,
+        "6.17-r0": 1761423117
       },
       "dependencies": [
-        "!strace<6.16-r0",
-        "!strace>6.16-r0"
+        "!strace<6.17-r0",
+        "!strace>6.17-r0"
       ]
     },
     "strace-doc": {
       "origin": "strace",
       "versions": {
-        "6.16-r0": 1754466274
+        "6.16-r0": 1754466274,
+        "6.17-r0": 1761423117
       }
     },
     "strongswan": {
@@ -65527,7 +65687,8 @@
     "unbound": {
       "origin": "unbound",
       "versions": {
-        "1.24.0-r0": 1758319178
+        "1.24.0-r0": 1758319178,
+        "1.24.1-r0": 1761211981
       },
       "dependencies": [
         "dnssec-root",
@@ -65543,54 +65704,58 @@
         "so:libunbound.so.8"
       ],
       "provides": [
-        "cmd:unbound-anchor=1.24.0-r0",
-        "cmd:unbound-checkconf=1.24.0-r0",
-        "cmd:unbound-control-setup=1.24.0-r0",
-        "cmd:unbound-control=1.24.0-r0",
-        "cmd:unbound-host=1.24.0-r0",
-        "cmd:unbound=1.24.0-r0"
+        "cmd:unbound-anchor=1.24.1-r0",
+        "cmd:unbound-checkconf=1.24.1-r0",
+        "cmd:unbound-control-setup=1.24.1-r0",
+        "cmd:unbound-control=1.24.1-r0",
+        "cmd:unbound-host=1.24.1-r0",
+        "cmd:unbound=1.24.1-r0"
       ]
     },
     "unbound-dbg": {
       "origin": "unbound",
       "versions": {
-        "1.24.0-r0": 1758319178
+        "1.24.0-r0": 1758319178,
+        "1.24.1-r0": 1761211981
       },
       "dependencies": [
-        "!py3-unbound<1.24.0-r0",
-        "!py3-unbound>1.24.0-r0",
-        "!unbound-libs<1.24.0-r0",
-        "!unbound-libs>1.24.0-r0",
-        "!unbound<1.24.0-r0",
-        "!unbound>1.24.0-r0"
+        "!py3-unbound<1.24.1-r0",
+        "!py3-unbound>1.24.1-r0",
+        "!unbound-libs<1.24.1-r0",
+        "!unbound-libs>1.24.1-r0",
+        "!unbound<1.24.1-r0",
+        "!unbound>1.24.1-r0"
       ]
     },
     "unbound-dev": {
       "origin": "unbound",
       "versions": {
-        "1.24.0-r0": 1758319178
+        "1.24.0-r0": 1758319178,
+        "1.24.1-r0": 1761211981
       },
       "dependencies": [
         "expat-dev",
-        "unbound-libs=1.24.0-r0",
+        "unbound-libs=1.24.1-r0",
         "pc:libevent",
         "pc:python3",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libunbound=1.24.0"
+        "pc:libunbound=1.24.1"
       ]
     },
     "unbound-doc": {
       "origin": "unbound",
       "versions": {
-        "1.24.0-r0": 1758319178
+        "1.24.0-r0": 1758319178,
+        "1.24.1-r0": 1761211981
       }
     },
     "unbound-libs": {
       "origin": "unbound",
       "versions": {
-        "1.24.0-r0": 1758319178
+        "1.24.0-r0": 1758319178,
+        "1.24.1-r0": 1761211981
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -65602,13 +65767,14 @@
         "so:libssl.so.3"
       ],
       "provides": [
-        "so:libunbound.so.8=8.1.33"
+        "so:libunbound.so.8=8.1.34"
       ]
     },
     "unbound-migrate": {
       "origin": "unbound",
       "versions": {
-        "1.24.0-r0": 1758319178
+        "1.24.0-r0": 1758319178,
+        "1.24.1-r0": 1761211981
       },
       "dependencies": [
         "/bin/sh",
@@ -65616,13 +65782,14 @@
         "openrc"
       ],
       "provides": [
-        "cmd:migrate-dnscache-to-unbound=1.24.0-r0"
+        "cmd:migrate-dnscache-to-unbound=1.24.1-r0"
       ]
     },
     "unbound-openrc": {
       "origin": "unbound",
       "versions": {
-        "1.24.0-r0": 1758319178
+        "1.24.0-r0": 1758319178,
+        "1.24.1-r0": 1761211981
       }
     },
     "unfs3": {
@@ -65847,7 +66014,8 @@
     "usbutils": {
       "origin": "usbutils",
       "versions": {
-        "018-r0": 1746823694
+        "018-r0": 1746823694,
+        "019-r0": 1761419602
       },
       "dependencies": [
         "hwdata-usb",
@@ -65856,16 +66024,17 @@
         "so:libusb-1.0.so.0"
       ],
       "provides": [
-        "cmd:lsusb.py=018-r0",
-        "cmd:lsusb=018-r0",
-        "cmd:usb-devices=018-r0",
-        "cmd:usbhid-dump=018-r0"
+        "cmd:lsusb.py=019-r0",
+        "cmd:lsusb=019-r0",
+        "cmd:usb-devices=019-r0",
+        "cmd:usbhid-dump=019-r0"
       ]
     },
     "usbutils-doc": {
       "origin": "usbutils",
       "versions": {
-        "018-r0": 1746823694
+        "018-r0": 1746823694,
+        "019-r0": 1761419602
       }
     },
     "userspace-rcu": {
@@ -67379,57 +67548,62 @@
     "vim": {
       "origin": "vim",
       "versions": {
-        "9.1.1863-r0": 1760678661
+        "9.1.1863-r0": 1760678661,
+        "9.1.1871-r0": 1761415857
       },
       "dependencies": [
-        "vim-common=9.1.1863-r0",
-        "xxd=9.1.1863-r0",
+        "vim-common=9.1.1871-r0",
+        "xxd=9.1.1871-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libncursesw.so.6"
       ],
       "provides": [
-        "cmd:ex=9.1.1863-r0",
-        "cmd:rview=9.1.1863-r0",
-        "cmd:rvim=9.1.1863-r0",
-        "cmd:view=9.1.1863-r0",
-        "cmd:vim=9.1.1863-r0"
+        "cmd:ex=9.1.1871-r0",
+        "cmd:rview=9.1.1871-r0",
+        "cmd:rvim=9.1.1871-r0",
+        "cmd:view=9.1.1871-r0",
+        "cmd:vim=9.1.1871-r0"
       ]
     },
     "vim-common": {
       "origin": "vim",
       "versions": {
-        "9.1.1863-r0": 1760678661
+        "9.1.1863-r0": 1760678661,
+        "9.1.1871-r0": 1761415857
       }
     },
     "vim-doc": {
       "origin": "vim",
       "versions": {
-        "9.1.1863-r0": 1760678661
+        "9.1.1863-r0": 1760678661,
+        "9.1.1871-r0": 1761415857
       }
     },
     "vim-tutor": {
       "origin": "vim",
       "versions": {
-        "9.1.1863-r0": 1760678661
+        "9.1.1863-r0": 1760678661,
+        "9.1.1871-r0": 1761415857
       },
       "dependencies": [
-        "vim=9.1.1863-r0"
+        "vim=9.1.1871-r0"
       ],
       "provides": [
-        "cmd:vimtutor=9.1.1863-r0"
+        "cmd:vimtutor=9.1.1871-r0"
       ]
     },
     "vimdiff": {
       "origin": "vim",
       "versions": {
-        "9.1.1863-r0": 1760678661
+        "9.1.1863-r0": 1760678661,
+        "9.1.1871-r0": 1761415857
       },
       "dependencies": [
         "diffutils",
-        "vim=9.1.1863-r0"
+        "vim=9.1.1871-r0"
       ],
       "provides": [
-        "cmd:vimdiff=9.1.1863-r0"
+        "cmd:vimdiff=9.1.1871-r0"
       ]
     },
     "vlan": {
@@ -68625,13 +68799,14 @@
     "xxd": {
       "origin": "vim",
       "versions": {
-        "9.1.1863-r0": 1760678661
+        "9.1.1863-r0": 1760678661,
+        "9.1.1871-r0": 1761415857
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1"
       ],
       "provides": [
-        "cmd:xxd=9.1.1863-r0"
+        "cmd:xxd=9.1.1871-r0"
       ]
     },
     "xxhash": {
@@ -69336,6 +69511,272 @@
       "versions": {
         "1.5.7-r2": 1753704404
       }
+    },
+    "limine": {
+      "origin": "limine",
+      "versions": {
+        "10.1.1-r0": 1761352217
+      },
+      "dependencies": [
+        "limine-tool",
+        "limine-efi-aarch64",
+        "limine-efi-loongarch64",
+        "limine-efi-riscv64",
+        "limine-efi-x86",
+        "limine-efi-x86_64",
+        "limine-efi-cd",
+        "limine-bios",
+        "limine-bios-pxe",
+        "limine-bios-cd"
+      ]
+    },
+    "limine-bios": {
+      "origin": "limine",
+      "versions": {
+        "10.1.1-r0": 1761352217
+      },
+      "provides": [
+        "limine-sys=10.1.1-r0"
+      ]
+    },
+    "limine-bios-cd": {
+      "origin": "limine",
+      "versions": {
+        "10.1.1-r0": 1761352217
+      },
+      "dependencies": [
+        "limine-bios=10.1.1-r0"
+      ]
+    },
+    "limine-bios-pxe": {
+      "origin": "limine",
+      "versions": {
+        "10.1.1-r0": 1761352217
+      },
+      "dependencies": [
+        "limine-bios=10.1.1-r0"
+      ],
+      "provides": [
+        "limine-pxe=10.1.1-r0"
+      ]
+    },
+    "limine-bios-updater": {
+      "origin": "limine",
+      "versions": {
+        "10.1.1-r0": 1761352217
+      },
+      "dependencies": [
+        "limine-tool=10.1.1-r0",
+        "limine-bios=10.1.1-r0",
+        "/bin/sh"
+      ],
+      "provides": [
+        "cmd:limine-bios-updater.sh=10.1.1-r0"
+      ]
+    },
+    "limine-dev": {
+      "origin": "limine",
+      "versions": {
+        "10.1.1-r0": 1761352217
+      }
+    },
+    "limine-doc": {
+      "origin": "limine",
+      "versions": {
+        "10.1.1-r0": 1761352217
+      }
+    },
+    "limine-efi-aarch64": {
+      "origin": "limine",
+      "versions": {
+        "10.1.1-r0": 1761352217
+      },
+      "provides": [
+        "limine-aarch64=10.1.1-r0"
+      ]
+    },
+    "limine-efi-cd": {
+      "origin": "limine",
+      "versions": {
+        "10.1.1-r0": 1761352217
+      }
+    },
+    "limine-efi-loongarch64": {
+      "origin": "limine",
+      "versions": {
+        "10.1.1-r0": 1761352217
+      },
+      "provides": [
+        "limine-loongarch64=10.1.1-r0"
+      ]
+    },
+    "limine-efi-riscv64": {
+      "origin": "limine",
+      "versions": {
+        "10.1.1-r0": 1761352217
+      },
+      "provides": [
+        "limine-riscv64=10.1.1-r0"
+      ]
+    },
+    "limine-efi-updater": {
+      "origin": "limine",
+      "versions": {
+        "10.1.1-r0": 1761352217
+      },
+      "dependencies": [
+        "/bin/sh"
+      ],
+      "provides": [
+        "cmd:limine-efi-updater.sh=10.1.1-r0"
+      ]
+    },
+    "limine-efi-x86": {
+      "origin": "limine",
+      "versions": {
+        "10.1.1-r0": 1761352217
+      },
+      "provides": [
+        "limine-x86=10.1.1-r0"
+      ]
+    },
+    "limine-efi-x86_64": {
+      "origin": "limine",
+      "versions": {
+        "10.1.1-r0": 1761352217
+      },
+      "provides": [
+        "limine-x86_64=10.1.1-r0"
+      ]
+    },
+    "limine-tool": {
+      "origin": "limine",
+      "versions": {
+        "10.1.1-r0": 1761352217
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1"
+      ],
+      "provides": [
+        "cmd:limine=10.1.1-r0"
+      ]
+    },
+    "linux-firmware-dell": {
+      "origin": "linux-firmware",
+      "versions": {
+        "20251021-r0": 1761273897
+      },
+      "provides": [
+        "linux-firmware-any"
+      ]
+    },
+    "linux-firmware-hp": {
+      "origin": "linux-firmware",
+      "versions": {
+        "20251021-r0": 1761273897
+      },
+      "provides": [
+        "linux-firmware-any"
+      ]
+    },
+    "tcl9": {
+      "origin": "tcl9",
+      "versions": {
+        "9.0.2-r0": 1761279844
+      },
+      "dependencies": [
+        "tzdata",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libsqlite3.so.0",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:tclsh9.0=9.0.2-r0",
+        "cmd:tclsh9=9.0.2-r0",
+        "so:libtcl9.0.so=0"
+      ]
+    },
+    "tcl9-dev": {
+      "origin": "tcl9",
+      "versions": {
+        "9.0.2-r0": 1761279844
+      },
+      "dependencies": [
+        "tcl9=9.0.2-r0",
+        "zip",
+        "!tcl-dev",
+        "pc:zlib>=1.2.3",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:tcl=9.0.2"
+      ]
+    },
+    "tcl9-doc": {
+      "origin": "tcl9",
+      "versions": {
+        "9.0.2-r0": 1761279844
+      },
+      "dependencies": [
+        "!tcl-doc"
+      ]
+    },
+    "tk9": {
+      "origin": "tcl9",
+      "versions": {
+        "9.0.2-r0": 1761279844
+      },
+      "dependencies": [
+        "tcl9=9.0.2-r0",
+        "so:libX11.so.6",
+        "so:libXft.so.2",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libfontconfig.so.1",
+        "so:libtcl9.0.so"
+      ],
+      "provides": [
+        "cmd:wish9.0=9.0.2-r0",
+        "cmd:wish9=9.0.2-r0",
+        "so:libtcl9tk9.0.so=0"
+      ]
+    },
+    "tk9-demos": {
+      "origin": "tcl9",
+      "versions": {
+        "9.0.2-r0": 1761279844
+      },
+      "dependencies": [
+        "tk9=9.0.2-r0"
+      ]
+    },
+    "tk9-dev": {
+      "origin": "tcl9",
+      "versions": {
+        "9.0.2-r0": 1761279844
+      },
+      "dependencies": [
+        "tcl9-dev=9.0.2-r0",
+        "fontconfig-dev",
+        "libx11-dev",
+        "libxft-dev",
+        "tk9=9.0.2-r0",
+        "!tk-dev",
+        "pc:tcl>=8.6",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:tk=9.0.2"
+      ]
+    },
+    "tk9-doc": {
+      "origin": "tcl9",
+      "versions": {
+        "9.0.2-r0": 1761279844
+      },
+      "dependencies": [
+        "!tcl-doc",
+        "!tk-doc"
+      ]
     }
   },
   "provide": {
@@ -69530,47 +69971,47 @@
       },
       "clang": {
         "package": "clang21",
-        "version": "21.1.2-r1"
+        "version": "21.1.2-r2"
       },
       "clang-analyzer": {
         "package": "clang21-analyzer",
-        "version": "21.1.2-r1"
+        "version": "21.1.2-r2"
       },
       "clang-bash-completion": {
         "package": "clang21-bash-completion",
-        "version": "21.1.2-r1"
+        "version": "21.1.2-r2"
       },
       "clang-ccache": {
         "package": "clang21-ccache",
-        "version": "21.1.2-r1"
+        "version": "21.1.2-r2"
       },
       "clang-dev": {
         "package": "clang21-dev",
-        "version": "21.1.2-r1"
+        "version": "21.1.2-r2"
       },
       "clang-emacs": {
         "package": "clang21-emacs",
-        "version": "21.1.2-r1"
+        "version": "21.1.2-r2"
       },
       "clang-extra-tools": {
         "package": "clang21-extra-tools",
-        "version": "21.1.2-r1"
+        "version": "21.1.2-r2"
       },
       "clang-headers": {
         "package": "clang21-headers",
-        "version": "21.1.2-r1"
+        "version": "21.1.2-r2"
       },
       "clang-libclang": {
         "package": "clang21-libclang",
-        "version": "21.1.2-r1"
+        "version": "21.1.2-r2"
       },
       "clang-libs": {
         "package": "clang21-libs",
-        "version": "21.1.2-r1"
+        "version": "21.1.2-r2"
       },
       "clang-static": {
         "package": "clang21-static",
-        "version": "21.1.2-r1"
+        "version": "21.1.2-r2"
       },
       "clang21-rtlib": {
         "package": "compiler-rt",
@@ -69734,7 +70175,7 @@
       },
       "vim": {
         "package": "gvim",
-        "version": "9.1.1863-r0"
+        "version": "9.1.1871-r0"
       },
       "harfbuzz-bootstrap-dev": {
         "package": "harfbuzz-dev",
@@ -70246,7 +70687,7 @@
       },
       "py3-clang": {
         "package": "py3-clang21",
-        "version": "21.1.2-r1"
+        "version": "21.1.2-r2"
       },
       "py-coverage": {
         "package": "py3-coverage",
@@ -70462,7 +70903,7 @@
       },
       "py-unbound": {
         "package": "py3-unbound",
-        "version": "1.24.0-r0"
+        "version": "1.24.1-r0"
       },
       "py-urllib3": {
         "package": "py3-urllib3",
@@ -70751,6 +71192,34 @@
       "spl-vanilla": {
         "package": "zfs-lts",
         "version": "6.12.54-r0"
+      },
+      "limine-sys": {
+        "package": "limine-bios",
+        "version": "10.1.1-r0"
+      },
+      "limine-pxe": {
+        "package": "limine-bios-pxe",
+        "version": "10.1.1-r0"
+      },
+      "limine-aarch64": {
+        "package": "limine-efi-aarch64",
+        "version": "10.1.1-r0"
+      },
+      "limine-loongarch64": {
+        "package": "limine-efi-loongarch64",
+        "version": "10.1.1-r0"
+      },
+      "limine-riscv64": {
+        "package": "limine-efi-riscv64",
+        "version": "10.1.1-r0"
+      },
+      "limine-x86": {
+        "package": "limine-efi-x86",
+        "version": "10.1.1-r0"
+      },
+      "limine-x86_64": {
+        "package": "limine-efi-x86_64",
+        "version": "10.1.1-r0"
       }
     },
     "so": {
@@ -76528,7 +76997,7 @@
       },
       "libunbound.so.8": {
         "package": "unbound-libs",
-        "version": "8.1.33"
+        "version": "8.1.34"
       },
       "libodbc.so.2": {
         "package": "unixodbc",
@@ -76769,6 +77238,34 @@
       "libzscanner.so.5": {
         "package": "knot-libs",
         "version": "5.0.0"
+      },
+      "libdns-9.20.15.so": {
+        "package": "bind-libs",
+        "version": "0"
+      },
+      "libisc-9.20.15.so": {
+        "package": "bind-libs",
+        "version": "0"
+      },
+      "libisccc-9.20.15.so": {
+        "package": "bind-libs",
+        "version": "0"
+      },
+      "libisccfg-9.20.15.so": {
+        "package": "bind-libs",
+        "version": "0"
+      },
+      "libns-9.20.15.so": {
+        "package": "bind-libs",
+        "version": "0"
+      },
+      "libtcl9.0.so": {
+        "package": "tcl9",
+        "version": "0"
+      },
+      "libtcl9tk9.0.so": {
+        "package": "tk9",
+        "version": "0"
       }
     }
   }
