@@ -8308,20 +8308,22 @@
     "cargo": {
       "origin": "rust",
       "versions": {
-        "1.90.0-r1": 1759357155
+        "1.90.0-r1": 1759357155,
+        "1.91.0-r0": 1762544799
       },
       "dependencies": [
-        "rust=1.90.0-r1",
+        "rust=1.91.0-r0",
         "so:libc.musl-armhf.so.1",
         "so:libcrypto.so.3",
         "so:libcurl.so.4",
         "so:libgcc_s.so.1",
+        "so:libsqlite3.so.0",
         "so:libssl.so.3",
         "so:libz.so.1"
       ],
       "provides": [
-        "cargo-bootstrap=1.90.0-r1",
-        "cmd:cargo=1.90.0-r1"
+        "cargo-bootstrap=1.91.0-r0",
+        "cmd:cargo=1.91.0-r0"
       ]
     },
     "cargo-auditable": {
@@ -8349,13 +8351,15 @@
     "cargo-bash-completions": {
       "origin": "rust",
       "versions": {
-        "1.90.0-r1": 1759357155
+        "1.90.0-r1": 1759357155,
+        "1.91.0-r0": 1762544799
       }
     },
     "cargo-doc": {
       "origin": "rust",
       "versions": {
-        "1.90.0-r1": 1759357155
+        "1.90.0-r1": 1759357155,
+        "1.91.0-r0": 1762544799
       },
       "dependencies": [
         "gcc",
@@ -8381,7 +8385,8 @@
     "cargo-zsh-completion": {
       "origin": "rust",
       "versions": {
-        "1.90.0-r1": 1759357155
+        "1.90.0-r1": 1759357155,
+        "1.91.0-r0": 1762544799
       }
     },
     "cbindgen": {
@@ -59868,7 +59873,8 @@
     "rust": {
       "origin": "rust",
       "versions": {
-        "1.90.0-r1": 1759357155
+        "1.90.0-r1": 1759357155,
+        "1.91.0-r0": 1762544799
       },
       "dependencies": [
         "gcc",
@@ -59879,11 +59885,11 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "rust-bootstrap=1.90.0-r1",
-        "rust-stdlib=1.90.0-r1",
-        "cmd:rustc=1.90.0-r1",
-        "cmd:rustdoc=1.90.0-r1",
-        "so:librustc_driver-9e7723360a959751.so=0"
+        "rust-bootstrap=1.91.0-r0",
+        "rust-stdlib=1.91.0-r0",
+        "cmd:rustc=1.91.0-r0",
+        "cmd:rustdoc=1.91.0-r0",
+        "so:librustc_driver-57242e111797eea4.so=0"
       ]
     },
     "rust-bindgen": {
@@ -59926,85 +59932,92 @@
     "rust-clippy": {
       "origin": "rust",
       "versions": {
-        "1.90.0-r1": 1759357155
+        "1.90.0-r1": 1759357155,
+        "1.91.0-r0": 1762544799
       },
       "dependencies": [
-        "rust=1.90.0-r1",
+        "cargo=1.91.0-r0",
         "so:libc.musl-armhf.so.1",
         "so:libgcc_s.so.1",
-        "so:librustc_driver-9e7723360a959751.so"
+        "so:librustc_driver-57242e111797eea4.so"
       ],
       "provides": [
-        "cmd:cargo-clippy=1.90.0-r1",
-        "cmd:clippy-driver=1.90.0-r1"
+        "cmd:cargo-clippy=1.91.0-r0",
+        "cmd:clippy-driver=1.91.0-r0"
       ]
     },
     "rust-dbg": {
       "origin": "rust",
       "versions": {
-        "1.90.0-r1": 1759357155
+        "1.90.0-r1": 1759357155,
+        "1.91.0-r0": 1762544799
       },
       "dependencies": [
-        "!cargo<1.90.0-r1",
-        "!cargo>1.90.0-r1",
-        "!rust-clippy<1.90.0-r1",
-        "!rust-clippy>1.90.0-r1",
-        "!rust<1.90.0-r1",
-        "!rust>1.90.0-r1",
-        "!rustfmt<1.90.0-r1",
-        "!rustfmt>1.90.0-r1"
+        "!cargo<1.91.0-r0",
+        "!cargo>1.91.0-r0",
+        "!rust-clippy<1.91.0-r0",
+        "!rust-clippy>1.91.0-r0",
+        "!rust<1.91.0-r0",
+        "!rust>1.91.0-r0",
+        "!rustfmt<1.91.0-r0",
+        "!rustfmt>1.91.0-r0"
       ]
     },
     "rust-doc": {
       "origin": "rust",
       "versions": {
-        "1.90.0-r1": 1759357155
+        "1.90.0-r1": 1759357155,
+        "1.91.0-r0": 1762544799
       }
     },
     "rust-gdb": {
       "origin": "rust",
       "versions": {
-        "1.90.0-r1": 1759357155
+        "1.90.0-r1": 1759357155,
+        "1.91.0-r0": 1762544799
       },
       "dependencies": [
-        "rust=1.90.0-r1",
+        "rust=1.91.0-r0",
         "gdb"
       ],
       "provides": [
-        "cmd:rust-gdb=1.90.0-r1",
-        "cmd:rust-gdbgui=1.90.0-r1"
+        "cmd:rust-gdb=1.91.0-r0",
+        "cmd:rust-gdbgui=1.91.0-r0"
       ]
     },
     "rust-lldb": {
       "origin": "rust",
       "versions": {
-        "1.90.0-r1": 1759357155
+        "1.90.0-r1": 1759357155,
+        "1.91.0-r0": 1762544799
       },
       "dependencies": [
-        "rust=1.90.0-r1",
+        "rust=1.91.0-r0",
         "lldb",
         "py3-lldb"
       ],
       "provides": [
-        "cmd:rust-lldb=1.90.0-r1"
+        "cmd:rust-lldb=1.91.0-r0"
       ]
     },
     "rust-src": {
       "origin": "rust",
       "versions": {
-        "1.90.0-r1": 1759357155
+        "1.90.0-r1": 1759357155,
+        "1.91.0-r0": 1762544799
       },
       "dependencies": [
-        "rust=1.90.0-r1"
+        "rust=1.91.0-r0"
       ]
     },
     "rust-wasm": {
       "origin": "rust",
       "versions": {
-        "1.90.0-r1": 1759357155
+        "1.90.0-r1": 1759357155,
+        "1.91.0-r0": 1762544799
       },
       "dependencies": [
-        "rust=1.90.0-r1",
+        "rust=1.91.0-r0",
         "lld",
         "wasi-libc"
       ]
@@ -60012,50 +60025,53 @@
     "rustc-dev": {
       "origin": "rust",
       "versions": {
-        "1.90.0-r1": 1759357155
+        "1.90.0-r1": 1759357155,
+        "1.91.0-r0": 1762544799
       },
       "dependencies": [
         "gcc",
         "musl-dev",
-        "rust=1.90.0-r1",
+        "rust=1.91.0-r0",
         "so:libc.musl-armhf.so.1",
         "so:libgcc_s.so.1"
       ],
       "provides": [
-        "so:libdarling_macro-6fe504c3f07b6bc9.so=0",
-        "so:libderive_setters-a2a744a57a820a8a.so=0",
-        "so:libderive_where-0d2f4ccd1623137b.so=0",
-        "so:libdisplaydoc-931dcacee4ca4f6a.so=0",
-        "so:libicu_provider_macros-88917a80bacb8419.so=0",
-        "so:libproc_macro_hack-db432f0c181affa1.so=0",
-        "so:librustc_fluent_macro-ec3ecd9c19ebd773.so=0",
-        "so:librustc_index_macros-aabd3453483ad794.so=0",
-        "so:librustc_macros-2f4ad9b7574305d8.so=0",
-        "so:librustc_type_ir_macros-44b119d4017d3adb.so=0",
-        "so:libserde_derive-61b64d3f87c1f38f.so=0",
-        "so:libstd-87d91d9bfb3bffe9.so=0",
-        "so:libthiserror_impl-0aca22613658fc46.so=0",
-        "so:libtracing_attributes-ba089ae243041c29.so=0",
-        "so:libunic_langid_macros_impl-280326a99266d784.so=0",
-        "so:libyoke_derive-c39c58370c66ed8e.so=0",
-        "so:libzerofrom_derive-e646a30423a396d6.so=0",
-        "so:libzerovec_derive-d767d160fb91bb20.so=0"
+        "so:libdarling_macro-a3fe56d4bc1a2013.so=0",
+        "so:libderive_setters-6c3de72e602299ab.so=0",
+        "so:libderive_where-e2db13c037937fe4.so=0",
+        "so:libdisplaydoc-79d05a466f47c6de.so=0",
+        "so:libproc_macro_hack-4741a1c5896f94d8.so=0",
+        "so:libref_cast_impl-3a9eec54a708fcfe.so=0",
+        "so:librustc_fluent_macro-3737fb506cab3a4d.so=0",
+        "so:librustc_index_macros-2644205b47d7db59.so=0",
+        "so:librustc_macros-710272b8ed1c7e15.so=0",
+        "so:librustc_type_ir_macros-443a4dfc41674cf1.so=0",
+        "so:libschemars_derive-216b08ddc8096596.so=0",
+        "so:libserde_derive-711ccbfc8da59a4d.so=0",
+        "so:libstd-5001e9bbd6932383.so=0",
+        "so:libthiserror_impl-92fc8097eb03e680.so=0",
+        "so:libtracing_attributes-519427a1723696b7.so=0",
+        "so:libunic_langid_macros_impl-815656173c695eb2.so=0",
+        "so:libyoke_derive-496d070d09c22610.so=0",
+        "so:libzerofrom_derive-61c87a5bc5893ca9.so=0",
+        "so:libzerovec_derive-42d06bbf903261cc.so=0"
       ]
     },
     "rustfmt": {
       "origin": "rust",
       "versions": {
-        "1.90.0-r1": 1759357155
+        "1.90.0-r1": 1759357155,
+        "1.91.0-r0": 1762544799
       },
       "dependencies": [
-        "cargo=1.90.0-r1",
+        "cargo=1.91.0-r0",
         "so:libc.musl-armhf.so.1",
         "so:libgcc_s.so.1",
-        "so:librustc_driver-9e7723360a959751.so"
+        "so:librustc_driver-57242e111797eea4.so"
       ],
       "provides": [
-        "cmd:cargo-fmt=1.90.0-r1",
-        "cmd:rustfmt=1.90.0-r1"
+        "cmd:cargo-fmt=1.91.0-r0",
+        "cmd:rustfmt=1.91.0-r0"
       ]
     },
     "s390-tools": {
@@ -70541,6 +70557,26 @@
         "so:libmaxminddb.so.0",
         "so:libsyslog-ng-4.10.so.0"
       ]
+    },
+    "rust-clippy-doc": {
+      "origin": "rust",
+      "versions": {
+        "1.91.0-r0": 1762544799
+      },
+      "dependencies": [
+        "gcc",
+        "musl-dev"
+      ]
+    },
+    "rustfmt-doc": {
+      "origin": "rust",
+      "versions": {
+        "1.91.0-r0": 1762544799
+      },
+      "dependencies": [
+        "gcc",
+        "musl-dev"
+      ]
     }
   },
   "provide": {
@@ -70731,7 +70767,7 @@
       },
       "cargo-bootstrap": {
         "package": "cargo",
-        "version": "1.90.0-r1"
+        "version": "1.91.0-r0"
       },
       "clang": {
         "package": "clang21",
@@ -71815,11 +71851,11 @@
       },
       "rust-bootstrap": {
         "package": "rust",
-        "version": "1.90.0-r1"
+        "version": "1.91.0-r0"
       },
       "rust-stdlib": {
         "package": "rust",
-        "version": "1.90.0-r1"
+        "version": "1.91.0-r0"
       },
       "ldb-dev": {
         "package": "samba-dev",
@@ -78134,6 +78170,86 @@
       "libx265.so.215": {
         "package": "x265-libs",
         "version": "215"
+      },
+      "librustc_driver-57242e111797eea4.so": {
+        "package": "rust",
+        "version": "0"
+      },
+      "libdarling_macro-a3fe56d4bc1a2013.so": {
+        "package": "rustc-dev",
+        "version": "0"
+      },
+      "libderive_setters-6c3de72e602299ab.so": {
+        "package": "rustc-dev",
+        "version": "0"
+      },
+      "libderive_where-e2db13c037937fe4.so": {
+        "package": "rustc-dev",
+        "version": "0"
+      },
+      "libdisplaydoc-79d05a466f47c6de.so": {
+        "package": "rustc-dev",
+        "version": "0"
+      },
+      "libproc_macro_hack-4741a1c5896f94d8.so": {
+        "package": "rustc-dev",
+        "version": "0"
+      },
+      "libref_cast_impl-3a9eec54a708fcfe.so": {
+        "package": "rustc-dev",
+        "version": "0"
+      },
+      "librustc_fluent_macro-3737fb506cab3a4d.so": {
+        "package": "rustc-dev",
+        "version": "0"
+      },
+      "librustc_index_macros-2644205b47d7db59.so": {
+        "package": "rustc-dev",
+        "version": "0"
+      },
+      "librustc_macros-710272b8ed1c7e15.so": {
+        "package": "rustc-dev",
+        "version": "0"
+      },
+      "librustc_type_ir_macros-443a4dfc41674cf1.so": {
+        "package": "rustc-dev",
+        "version": "0"
+      },
+      "libschemars_derive-216b08ddc8096596.so": {
+        "package": "rustc-dev",
+        "version": "0"
+      },
+      "libserde_derive-711ccbfc8da59a4d.so": {
+        "package": "rustc-dev",
+        "version": "0"
+      },
+      "libstd-5001e9bbd6932383.so": {
+        "package": "rustc-dev",
+        "version": "0"
+      },
+      "libthiserror_impl-92fc8097eb03e680.so": {
+        "package": "rustc-dev",
+        "version": "0"
+      },
+      "libtracing_attributes-519427a1723696b7.so": {
+        "package": "rustc-dev",
+        "version": "0"
+      },
+      "libunic_langid_macros_impl-815656173c695eb2.so": {
+        "package": "rustc-dev",
+        "version": "0"
+      },
+      "libyoke_derive-496d070d09c22610.so": {
+        "package": "rustc-dev",
+        "version": "0"
+      },
+      "libzerofrom_derive-61c87a5bc5893ca9.so": {
+        "package": "rustc-dev",
+        "version": "0"
+      },
+      "libzerovec_derive-42d06bbf903261cc.so": {
+        "package": "rustc-dev",
+        "version": "0"
       }
     }
   }
