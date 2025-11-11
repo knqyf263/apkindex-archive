@@ -11694,7 +11694,8 @@
     "dovecot": {
       "origin": "dovecot",
       "versions": {
-        "2.4.1-r3": 1756292644
+        "2.4.1-r3": 1756292644,
+        "2.4.2-r0": 1762847679
       },
       "dependencies": [
         "openssl>3",
@@ -11703,8 +11704,10 @@
         "so:libc.musl-armhf.so.1",
         "so:libcap.so.2",
         "so:libcrypto.so.3",
+        "so:libgssapi_krb5.so.2",
         "so:libicui18n.so.76",
         "so:libicuuc.so.76",
+        "so:libkrb5.so.3",
         "so:liblz4.so.1",
         "so:libsodium.so.26",
         "so:libssl.so.3",
@@ -11713,10 +11716,10 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:doveadm=2.4.1-r3",
-        "cmd:doveconf=2.4.1-r3",
-        "cmd:dovecot-sysreport=2.4.1-r3",
-        "cmd:dovecot=2.4.1-r3",
+        "cmd:doveadm=2.4.2-r0",
+        "cmd:doveconf=2.4.2-r0",
+        "cmd:dovecot-sysreport=2.4.2-r0",
+        "cmd:dovecot=2.4.2-r0",
         "so:lib01_acl_plugin.so=0",
         "so:lib02_imap_acl_plugin.so=0",
         "so:lib02_lazy_expunge_plugin.so=0",
@@ -11740,6 +11743,7 @@
         "so:libdcrypt_openssl.so=0",
         "so:libdovecot-compression.so.0=0.0.0",
         "so:libdovecot-dsync.so.0=0.0.0",
+        "so:libdovecot-gssapi.so.0=0.0.0",
         "so:libdovecot-language.so.0=0.0.0",
         "so:libdovecot-lda.so.0=0.0.0",
         "so:libdovecot-login.so.0=0.0.0",
@@ -11754,22 +11758,25 @@
     "dovecot-dev": {
       "origin": "dovecot",
       "versions": {
-        "2.4.1-r3": 1756292644
+        "2.4.1-r3": 1756292644,
+        "2.4.2-r0": 1762847679
       }
     },
     "dovecot-doc": {
       "origin": "dovecot",
       "versions": {
-        "2.4.1-r3": 1756292644
+        "2.4.1-r3": 1756292644,
+        "2.4.2-r0": 1762847679
       }
     },
     "dovecot-fts-flatcurve": {
       "origin": "dovecot",
       "versions": {
-        "2.4.1-r3": 1756292644
+        "2.4.1-r3": 1756292644,
+        "2.4.2-r0": 1762847679
       },
       "dependencies": [
-        "dovecot=2.4.1-r3",
+        "dovecot=2.4.2-r0",
         "so:lib20_fts_plugin.so",
         "so:libc.musl-armhf.so.1",
         "so:libdovecot.so.0",
@@ -11784,10 +11791,11 @@
     "dovecot-fts-solr": {
       "origin": "dovecot",
       "versions": {
-        "2.4.1-r3": 1756292644
+        "2.4.1-r3": 1756292644,
+        "2.4.2-r0": 1762847679
       },
       "dependencies": [
-        "dovecot=2.4.1-r3",
+        "dovecot=2.4.2-r0",
         "so:lib20_fts_plugin.so",
         "so:libc.musl-armhf.so.1",
         "so:libexpat.so.1"
@@ -11799,22 +11807,23 @@
     "dovecot-gssapi": {
       "origin": "dovecot",
       "versions": {
-        "2.4.1-r3": 1756292644
+        "2.4.1-r3": 1756292644,
+        "2.4.2-r0": 1762847679
       },
       "dependencies": [
-        "dovecot=2.4.1-r3",
+        "dovecot=2.4.2-r0",
         "so:libc.musl-armhf.so.1",
-        "so:libgssapi.so.3",
-        "so:libkrb5.so.26"
+        "so:libdovecot-gssapi.so.0"
       ]
     },
     "dovecot-ldap": {
       "origin": "dovecot",
       "versions": {
-        "2.4.1-r3": 1756292644
+        "2.4.1-r3": 1756292644,
+        "2.4.2-r0": 1762847679
       },
       "dependencies": [
-        "dovecot=2.4.1-r3",
+        "dovecot=2.4.2-r0",
         "so:libc.musl-armhf.so.1",
         "so:libdovecot.so.0",
         "so:liblber.so.2",
@@ -11827,10 +11836,11 @@
     "dovecot-lmtpd": {
       "origin": "dovecot",
       "versions": {
-        "2.4.1-r3": 1756292644
+        "2.4.1-r3": 1756292644,
+        "2.4.2-r0": 1762847679
       },
       "dependencies": [
-        "dovecot=2.4.1-r3",
+        "dovecot=2.4.2-r0",
         "so:libc.musl-armhf.so.1",
         "so:libdovecot-lda.so.0",
         "so:libdovecot-storage.so.0",
@@ -11840,10 +11850,11 @@
     "dovecot-lua": {
       "origin": "dovecot",
       "versions": {
-        "2.4.1-r3": 1756292644
+        "2.4.1-r3": 1756292644,
+        "2.4.2-r0": 1762847679
       },
       "dependencies": [
-        "dovecot=2.4.1-r3",
+        "dovecot=2.4.2-r0",
         "so:libc.musl-armhf.so.1",
         "so:libdovecot-storage.so.0",
         "so:libdovecot.so.0",
@@ -11859,10 +11870,11 @@
     "dovecot-mysql": {
       "origin": "dovecot",
       "versions": {
-        "2.4.1-r3": 1756292644
+        "2.4.1-r3": 1756292644,
+        "2.4.2-r0": 1762847679
       },
       "dependencies": [
-        "dovecot-sql=2.4.1-r3",
+        "dovecot-sql=2.4.2-r0",
         "so:libc.musl-armhf.so.1",
         "so:libmariadb.so.3"
       ],
@@ -11873,16 +11885,18 @@
     "dovecot-openrc": {
       "origin": "dovecot",
       "versions": {
-        "2.4.1-r3": 1756292644
+        "2.4.1-r3": 1756292644,
+        "2.4.2-r0": 1762847679
       }
     },
     "dovecot-pgsql": {
       "origin": "dovecot",
       "versions": {
-        "2.4.1-r3": 1756292644
+        "2.4.1-r3": 1756292644,
+        "2.4.2-r0": 1762847679
       },
       "dependencies": [
-        "dovecot-sql=2.4.1-r3",
+        "dovecot-sql=2.4.2-r0",
         "so:libc.musl-armhf.so.1",
         "so:libpq.so.5"
       ],
@@ -11893,10 +11907,11 @@
     "dovecot-pigeonhole-plugin": {
       "origin": "dovecot",
       "versions": {
-        "2.4.1-r3": 1756292644
+        "2.4.1-r3": 1756292644,
+        "2.4.2-r0": 1762847679
       },
       "dependencies": [
-        "dovecot=2.4.1-r3",
+        "dovecot=2.4.2-r0",
         "so:libc.musl-armhf.so.1",
         "so:libdovecot-login.so.0",
         "so:libdovecot-storage.so.0",
@@ -11905,10 +11920,10 @@
         "so:libldap.so.2"
       ],
       "provides": [
-        "cmd:sieve-dump=2.4.1-r3",
-        "cmd:sieve-filter=2.4.1-r3",
-        "cmd:sieve-test=2.4.1-r3",
-        "cmd:sievec=2.4.1-r3",
+        "cmd:sieve-dump=2.4.2-r0",
+        "cmd:sieve-filter=2.4.2-r0",
+        "cmd:sieve-test=2.4.2-r0",
+        "cmd:sievec=2.4.2-r0",
         "so:lib90_sieve_plugin.so=0",
         "so:lib95_imap_filter_sieve_plugin.so=0",
         "so:lib95_imap_sieve_plugin.so=0",
@@ -11919,11 +11934,12 @@
     "dovecot-pigeonhole-plugin-ldap": {
       "origin": "dovecot",
       "versions": {
-        "2.4.1-r3": 1756292644
+        "2.4.1-r3": 1756292644,
+        "2.4.2-r0": 1762847679
       },
       "dependencies": [
-        "dovecot-pigeonhole-plugin=2.4.1-r3",
-        "dovecot-ldap=2.4.1-r3",
+        "dovecot-pigeonhole-plugin=2.4.2-r0",
+        "dovecot-ldap=2.4.2-r0",
         "so:libc.musl-armhf.so.1",
         "so:libdovecot.so.0",
         "so:liblber.so.2",
@@ -11933,10 +11949,11 @@
     "dovecot-pop3d": {
       "origin": "dovecot",
       "versions": {
-        "2.4.1-r3": 1756292644
+        "2.4.1-r3": 1756292644,
+        "2.4.2-r0": 1762847679
       },
       "dependencies": [
-        "dovecot=2.4.1-r3",
+        "dovecot=2.4.2-r0",
         "so:libc.musl-armhf.so.1",
         "so:libdovecot-storage.so.0",
         "so:libdovecot.so.0"
@@ -11945,10 +11962,11 @@
     "dovecot-sql": {
       "origin": "dovecot",
       "versions": {
-        "2.4.1-r3": 1756292644
+        "2.4.1-r3": 1756292644,
+        "2.4.2-r0": 1762847679
       },
       "dependencies": [
-        "dovecot=2.4.1-r3",
+        "dovecot=2.4.2-r0",
         "so:libc.musl-armhf.so.1",
         "so:libdovecot.so.0"
       ],
@@ -11959,10 +11977,11 @@
     "dovecot-sqlite": {
       "origin": "dovecot",
       "versions": {
-        "2.4.1-r3": 1756292644
+        "2.4.1-r3": 1756292644,
+        "2.4.2-r0": 1762847679
       },
       "dependencies": [
-        "dovecot-sql=2.4.1-r3",
+        "dovecot-sql=2.4.2-r0",
         "so:libc.musl-armhf.so.1",
         "so:libsqlite3.so.0"
       ],
@@ -11973,10 +11992,11 @@
     "dovecot-submissiond": {
       "origin": "dovecot",
       "versions": {
-        "2.4.1-r3": 1756292644
+        "2.4.1-r3": 1756292644,
+        "2.4.2-r0": 1762847679
       },
       "dependencies": [
-        "dovecot=2.4.1-r3",
+        "dovecot=2.4.2-r0",
         "so:libc.musl-armhf.so.1",
         "so:libdovecot-storage.so.0",
         "so:libdovecot.so.0"
@@ -63825,7 +63845,8 @@
     "squashfs-tools": {
       "origin": "squashfs-tools",
       "versions": {
-        "4.7.2-r0": 1755573970
+        "4.7.2-r0": 1755573970,
+        "4.7.4-r0": 1762850490
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -63836,16 +63857,17 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:mksquashfs=4.7.2-r0",
-        "cmd:sqfscat=4.7.2-r0",
-        "cmd:sqfstar=4.7.2-r0",
-        "cmd:unsquashfs=4.7.2-r0"
+        "cmd:mksquashfs=4.7.4-r0",
+        "cmd:sqfscat=4.7.4-r0",
+        "cmd:sqfstar=4.7.4-r0",
+        "cmd:unsquashfs=4.7.4-r0"
       ]
     },
     "squashfs-tools-doc": {
       "origin": "squashfs-tools",
       "versions": {
-        "4.7.2-r0": 1755573970
+        "4.7.2-r0": 1755573970,
+        "4.7.4-r0": 1762850490
       }
     },
     "squid": {
@@ -78628,6 +78650,10 @@
       "libzerovec_derive-42d06bbf903261cc.so": {
         "package": "rustc-dev",
         "version": "0"
+      },
+      "libdovecot-gssapi.so.0": {
+        "package": "dovecot",
+        "version": "0.0.0"
       }
     }
   }
