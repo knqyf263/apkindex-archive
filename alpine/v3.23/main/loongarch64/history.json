@@ -70933,6 +70933,82 @@
       "provides": [
         "postgresql-pltcl"
       ]
+    },
+    "edbrowse": {
+      "origin": "edbrowse",
+      "versions": {
+        "3.8.15-r0": 1762922248
+      },
+      "dependencies": [
+        "so:libc.musl-loongarch64.so.1",
+        "so:libcrypto.so.3",
+        "so:libcurl.so.4",
+        "so:libodbc.so.2",
+        "so:libpcre2-8.so.0",
+        "so:libqjs.so.0",
+        "so:libreadline.so.8",
+        "so:libssl.so.3"
+      ],
+      "provides": [
+        "cmd:edbrowse=3.8.15-r0"
+      ]
+    },
+    "edbrowse-doc": {
+      "origin": "edbrowse",
+      "versions": {
+        "3.8.15-r0": 1762922248
+      }
+    },
+    "quickjs-ng": {
+      "origin": "quickjs-ng",
+      "versions": {
+        "0.11.0-r0": 1762925380
+      },
+      "dependencies": [
+        "so:libc.musl-loongarch64.so.1",
+        "so:libqjs.so.0"
+      ],
+      "provides": [
+        "cmd:qjs=0.11.0-r0",
+        "cmd:qjsc=0.11.0-r0"
+      ]
+    },
+    "quickjs-ng-dev": {
+      "origin": "quickjs-ng",
+      "versions": {
+        "0.11.0-r0": 1762925380
+      },
+      "dependencies": [
+        "quickjs-ng-libs=0.11.0-r0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:quickjs-ng=0.10.1"
+      ]
+    },
+    "quickjs-ng-doc": {
+      "origin": "quickjs-ng",
+      "versions": {
+        "0.11.0-r0": 1762925380
+      }
+    },
+    "quickjs-ng-libs": {
+      "origin": "quickjs-ng",
+      "versions": {
+        "0.11.0-r0": 1762925380
+      },
+      "dependencies": [
+        "so:libc.musl-loongarch64.so.1"
+      ],
+      "provides": [
+        "so:libqjs.so.0=0.10.1"
+      ]
+    },
+    "quickjs-ng-libs-static": {
+      "origin": "quickjs-ng",
+      "versions": {
+        "0.11.0-r0": 1762925380
+      }
     }
   },
   "provide": {
@@ -78614,6 +78690,10 @@
       "libzerovec_derive-4af6658575d0ed26.so": {
         "package": "rustc-dev",
         "version": "0"
+      },
+      "libqjs.so.0": {
+        "package": "quickjs-ng-libs",
+        "version": "0.10.1"
       }
     }
   }
