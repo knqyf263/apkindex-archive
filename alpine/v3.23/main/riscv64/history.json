@@ -21813,20 +21813,22 @@
     "kamailio": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "gawk",
         "/bin/sh",
         "so:libc.musl-riscv64.so.1",
         "so:libpcre2-8.so.0",
+        "so:libreadline.so.8",
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:kamailio=6.0.3-r0",
-        "cmd:kamcmd=6.0.3-r0",
-        "cmd:kamctl=6.0.3-r0",
-        "cmd:kamdbctl=6.0.3-r0"
+        "cmd:kamailio=6.0.4-r0",
+        "cmd:kamcmd=6.0.4-r0",
+        "cmd:kamctl=6.0.4-r0",
+        "cmd:kamdbctl=6.0.4-r0"
       ]
     },
     "kamailio-authephemeral": {
@@ -21843,7 +21845,8 @@
     "kamailio-carrierroute": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -21853,7 +21856,8 @@
     "kamailio-cpl": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -21864,7 +21868,8 @@
     "kamailio-db": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -21874,103 +21879,115 @@
     "kamailio-dbg": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
-        "!kamailio-authephemeral<6.0.3-r0",
-        "!kamailio-authephemeral>6.0.3-r0",
-        "!kamailio-carrierroute<6.0.3-r0",
-        "!kamailio-carrierroute>6.0.3-r0",
-        "!kamailio-cpl<6.0.3-r0",
-        "!kamailio-cpl>6.0.3-r0",
-        "!kamailio-db<6.0.3-r0",
-        "!kamailio-db>6.0.3-r0",
-        "!kamailio-dbtext<6.0.3-r0",
-        "!kamailio-dbtext>6.0.3-r0",
-        "!kamailio-debugger<6.0.3-r0",
-        "!kamailio-debugger>6.0.3-r0",
-        "!kamailio-ev<6.0.3-r0",
-        "!kamailio-ev>6.0.3-r0",
-        "!kamailio-extras<6.0.3-r0",
-        "!kamailio-extras>6.0.3-r0",
-        "!kamailio-gcrypt<6.0.3-r0",
-        "!kamailio-gcrypt>6.0.3-r0",
-        "!kamailio-geoip2<6.0.3-r0",
-        "!kamailio-geoip2>6.0.3-r0",
-        "!kamailio-http_async<6.0.3-r0",
-        "!kamailio-http_async>6.0.3-r0",
-        "!kamailio-ims<6.0.3-r0",
-        "!kamailio-ims>6.0.3-r0",
-        "!kamailio-jansson<6.0.3-r0",
-        "!kamailio-jansson>6.0.3-r0",
-        "!kamailio-jsdt<6.0.3-r0",
-        "!kamailio-jsdt>6.0.3-r0",
-        "!kamailio-json<6.0.3-r0",
-        "!kamailio-json>6.0.3-r0",
-        "!kamailio-kazoo<6.0.3-r0",
-        "!kamailio-kazoo>6.0.3-r0",
-        "!kamailio-ldap<6.0.3-r0",
-        "!kamailio-ldap>6.0.3-r0",
-        "!kamailio-lua<6.0.3-r0",
-        "!kamailio-lua>6.0.3-r0",
-        "!kamailio-memcached<6.0.3-r0",
-        "!kamailio-memcached>6.0.3-r0",
-        "!kamailio-mqtt<6.0.3-r0",
-        "!kamailio-mqtt>6.0.3-r0",
-        "!kamailio-mysql<6.0.3-r0",
-        "!kamailio-mysql>6.0.3-r0",
-        "!kamailio-nghttp2<6.0.3-r0",
-        "!kamailio-nghttp2>6.0.3-r0",
-        "!kamailio-outbound<6.0.3-r0",
-        "!kamailio-outbound>6.0.3-r0",
-        "!kamailio-perl<6.0.3-r0",
-        "!kamailio-perl>6.0.3-r0",
-        "!kamailio-postgres<6.0.3-r0",
-        "!kamailio-postgres>6.0.3-r0",
-        "!kamailio-presence<6.0.3-r0",
-        "!kamailio-presence>6.0.3-r0",
-        "!kamailio-python3<6.0.3-r0",
-        "!kamailio-python3>6.0.3-r0",
-        "!kamailio-rabbitmq<6.0.3-r0",
-        "!kamailio-rabbitmq>6.0.3-r0",
-        "!kamailio-radius<6.0.3-r0",
-        "!kamailio-radius>6.0.3-r0",
-        "!kamailio-redis<6.0.3-r0",
-        "!kamailio-redis>6.0.3-r0",
-        "!kamailio-ruby<6.0.3-r0",
-        "!kamailio-ruby>6.0.3-r0",
-        "!kamailio-sctp<6.0.3-r0",
-        "!kamailio-sctp>6.0.3-r0",
-        "!kamailio-sipdump<6.0.3-r0",
-        "!kamailio-sipdump>6.0.3-r0",
-        "!kamailio-snmpstats<6.0.3-r0",
-        "!kamailio-snmpstats>6.0.3-r0",
-        "!kamailio-sqlite<6.0.3-r0",
-        "!kamailio-sqlite>6.0.3-r0",
-        "!kamailio-tls<6.0.3-r0",
-        "!kamailio-tls>6.0.3-r0",
-        "!kamailio-tlsa<6.0.3-r0",
-        "!kamailio-tlsa>6.0.3-r0",
-        "!kamailio-unixodbc<6.0.3-r0",
-        "!kamailio-unixodbc>6.0.3-r0",
-        "!kamailio-utils<6.0.3-r0",
-        "!kamailio-utils>6.0.3-r0",
-        "!kamailio-uuid<6.0.3-r0",
-        "!kamailio-uuid>6.0.3-r0",
-        "!kamailio-websocket<6.0.3-r0",
-        "!kamailio-websocket>6.0.3-r0",
-        "!kamailio-xml<6.0.3-r0",
-        "!kamailio-xml>6.0.3-r0",
-        "!kamailio-xmpp<6.0.3-r0",
-        "!kamailio-xmpp>6.0.3-r0",
-        "!kamailio<6.0.3-r0",
-        "!kamailio>6.0.3-r0"
+        "!authephemeral<6.0.4-r0",
+        "!authephemeral>6.0.4-r0",
+        "!kamailio-carrierroute<6.0.4-r0",
+        "!kamailio-carrierroute>6.0.4-r0",
+        "!kamailio-cpl<6.0.4-r0",
+        "!kamailio-cpl>6.0.4-r0",
+        "!kamailio-db<6.0.4-r0",
+        "!kamailio-db>6.0.4-r0",
+        "!kamailio-dbtext<6.0.4-r0",
+        "!kamailio-dbtext>6.0.4-r0",
+        "!kamailio-debugger<6.0.4-r0",
+        "!kamailio-debugger>6.0.4-r0",
+        "!kamailio-ev<6.0.4-r0",
+        "!kamailio-ev>6.0.4-r0",
+        "!kamailio-extras<6.0.4-r0",
+        "!kamailio-extras>6.0.4-r0",
+        "!kamailio-gcrypt<6.0.4-r0",
+        "!kamailio-gcrypt>6.0.4-r0",
+        "!kamailio-geoip2<6.0.4-r0",
+        "!kamailio-geoip2>6.0.4-r0",
+        "!kamailio-http_async<6.0.4-r0",
+        "!kamailio-http_async>6.0.4-r0",
+        "!kamailio-ims<6.0.4-r0",
+        "!kamailio-ims>6.0.4-r0",
+        "!kamailio-jansson<6.0.4-r0",
+        "!kamailio-jansson>6.0.4-r0",
+        "!kamailio-jsdt<6.0.4-r0",
+        "!kamailio-jsdt>6.0.4-r0",
+        "!kamailio-json<6.0.4-r0",
+        "!kamailio-json>6.0.4-r0",
+        "!kamailio-kazoo<6.0.4-r0",
+        "!kamailio-kazoo>6.0.4-r0",
+        "!kamailio-kemix<6.0.4-r0",
+        "!kamailio-kemix>6.0.4-r0",
+        "!kamailio-ldap<6.0.4-r0",
+        "!kamailio-ldap>6.0.4-r0",
+        "!kamailio-lost<6.0.4-r0",
+        "!kamailio-lost>6.0.4-r0",
+        "!kamailio-lrkproxy<6.0.4-r0",
+        "!kamailio-lrkproxy>6.0.4-r0",
+        "!kamailio-lua<6.0.4-r0",
+        "!kamailio-lua>6.0.4-r0",
+        "!kamailio-memcached<6.0.4-r0",
+        "!kamailio-memcached>6.0.4-r0",
+        "!kamailio-mqtt<6.0.4-r0",
+        "!kamailio-mqtt>6.0.4-r0",
+        "!kamailio-mysql<6.0.4-r0",
+        "!kamailio-mysql>6.0.4-r0",
+        "!kamailio-nghttp2<6.0.4-r0",
+        "!kamailio-nghttp2>6.0.4-r0",
+        "!kamailio-outbound<6.0.4-r0",
+        "!kamailio-outbound>6.0.4-r0",
+        "!kamailio-perl<6.0.4-r0",
+        "!kamailio-perl>6.0.4-r0",
+        "!kamailio-postgres<6.0.4-r0",
+        "!kamailio-postgres>6.0.4-r0",
+        "!kamailio-presence<6.0.4-r0",
+        "!kamailio-presence>6.0.4-r0",
+        "!kamailio-python3<6.0.4-r0",
+        "!kamailio-python3>6.0.4-r0",
+        "!kamailio-rabbitmq<6.0.4-r0",
+        "!kamailio-rabbitmq>6.0.4-r0",
+        "!kamailio-radius<6.0.4-r0",
+        "!kamailio-radius>6.0.4-r0",
+        "!kamailio-redis<6.0.4-r0",
+        "!kamailio-redis>6.0.4-r0",
+        "!kamailio-ruby<6.0.4-r0",
+        "!kamailio-ruby>6.0.4-r0",
+        "!kamailio-sctp<6.0.4-r0",
+        "!kamailio-sctp>6.0.4-r0",
+        "!kamailio-sipdump<6.0.4-r0",
+        "!kamailio-sipdump>6.0.4-r0",
+        "!kamailio-slack<6.0.4-r0",
+        "!kamailio-slack>6.0.4-r0",
+        "!kamailio-snmpstats<6.0.4-r0",
+        "!kamailio-snmpstats>6.0.4-r0",
+        "!kamailio-sqlite<6.0.4-r0",
+        "!kamailio-sqlite>6.0.4-r0",
+        "!kamailio-tls<6.0.4-r0",
+        "!kamailio-tls>6.0.4-r0",
+        "!kamailio-tlsa<6.0.4-r0",
+        "!kamailio-tlsa>6.0.4-r0",
+        "!kamailio-unixodbc<6.0.4-r0",
+        "!kamailio-unixodbc>6.0.4-r0",
+        "!kamailio-utils<6.0.4-r0",
+        "!kamailio-utils>6.0.4-r0",
+        "!kamailio-uuid<6.0.4-r0",
+        "!kamailio-uuid>6.0.4-r0",
+        "!kamailio-websocket<6.0.4-r0",
+        "!kamailio-websocket>6.0.4-r0",
+        "!kamailio-xhttp_prom<6.0.4-r0",
+        "!kamailio-xhttp_prom>6.0.4-r0",
+        "!kamailio-xml<6.0.4-r0",
+        "!kamailio-xml>6.0.4-r0",
+        "!kamailio-xmpp<6.0.4-r0",
+        "!kamailio-xmpp>6.0.4-r0",
+        "!kamailio<6.0.4-r0",
+        "!kamailio>6.0.4-r0"
       ]
     },
     "kamailio-dbtext": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -21981,7 +21998,8 @@
     "kamailio-debugger": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -21991,13 +22009,15 @@
     "kamailio-doc": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       }
     },
     "kamailio-ev": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22008,7 +22028,8 @@
     "kamailio-extras": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22020,7 +22041,8 @@
     "kamailio-gcrypt": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22031,18 +22053,19 @@
     "kamailio-geoip2": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
-        "so:libc.musl-riscv64.so.1",
-        "so:libmaxminddb.so.0"
+        "so:libc.musl-riscv64.so.1"
       ]
     },
     "kamailio-http_async": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22054,7 +22077,8 @@
     "kamailio-ims": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22068,7 +22092,8 @@
     "kamailio-jansson": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22080,7 +22105,8 @@
     "kamailio-jsdt": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22090,24 +22116,24 @@
     "kamailio-json": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
         "so:libc.musl-riscv64.so.1",
-        "so:libevent-2.1.so.7",
         "so:libjson-c.so.5"
       ]
     },
     "kamailio-kazoo": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
         "so:libc.musl-riscv64.so.1",
-        "so:libevent-2.1.so.7",
         "so:libjson-c.so.5",
         "so:librabbitmq.so.4",
         "so:libuuid.so.1"
@@ -22116,18 +22142,21 @@
     "kamailio-ldap": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
         "so:libc.musl-riscv64.so.1",
+        "so:liblber.so.2",
         "so:libldap.so.2"
       ]
     },
     "kamailio-lua": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22138,7 +22167,8 @@
     "kamailio-memcached": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22149,7 +22179,8 @@
     "kamailio-mqtt": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22161,7 +22192,8 @@
     "kamailio-mysql": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22173,11 +22205,13 @@
     "kamailio-nghttp2": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
         "so:libc.musl-riscv64.so.1",
+        "so:libcrypto.so.3",
         "so:libevent-2.1.so.7",
         "so:libevent_openssl-2.1.so.7",
         "so:libnghttp2.so.14",
@@ -22187,13 +22221,15 @@
     "kamailio-openrc": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       }
     },
     "kamailio-outbound": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22204,7 +22240,8 @@
     "kamailio-perl": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22215,7 +22252,8 @@
     "kamailio-postgres": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22227,7 +22265,8 @@
     "kamailio-presence": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22239,7 +22278,8 @@
     "kamailio-python3": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22250,7 +22290,8 @@
     "kamailio-rabbitmq": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22262,7 +22303,8 @@
     "kamailio-radius": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22273,18 +22315,21 @@
     "kamailio-redis": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
         "so:libc.musl-riscv64.so.1",
-        "so:libhiredis.so.1.3.0"
+        "so:libhiredis.so.1.3.0",
+        "so:libhiredis_ssl.so.1.3.0"
       ]
     },
     "kamailio-ruby": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22295,7 +22340,8 @@
     "kamailio-sctp": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22306,7 +22352,8 @@
     "kamailio-sipdump": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22316,19 +22363,20 @@
     "kamailio-snmpstats": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
         "so:libc.musl-riscv64.so.1",
-        "so:libnetsnmp.so.40",
-        "so:libnetsnmpagent.so.40"
+        "so:libnetsnmp.so.40"
       ]
     },
     "kamailio-sqlite": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22340,7 +22388,8 @@
     "kamailio-tls": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22352,17 +22401,21 @@
     "kamailio-tlsa": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
-        "so:libc.musl-riscv64.so.1"
+        "so:libc.musl-riscv64.so.1",
+        "so:libcrypto.so.3",
+        "so:libssl.so.3"
       ]
     },
     "kamailio-unixodbc": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22373,7 +22426,8 @@
     "kamailio-utils": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22385,7 +22439,8 @@
     "kamailio-uuid": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22396,19 +22451,21 @@
     "kamailio-websocket": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
         "so:libc.musl-riscv64.so.1",
         "so:libcrypto.so.3",
-        "so:libunistring.so.5"
+        "so:libwebsockets.so.19"
       ]
     },
     "kamailio-xml": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -22419,7 +22476,8 @@
     "kamailio-xmpp": {
       "origin": "kamailio",
       "versions": {
-        "6.0.3-r0": 1758267735
+        "6.0.3-r0": 1758267735,
+        "6.0.4-r0": 1763054914
       },
       "dependencies": [
         "kamailio",
@@ -71023,6 +71081,67 @@
       "versions": {
         "0.11.0-r0": 1762925380
       }
+    },
+    "authephemeral": {
+      "origin": "kamailio",
+      "versions": {
+        "6.0.4-r0": 1763054914
+      },
+      "dependencies": [
+        "kamailio",
+        "so:libc.musl-riscv64.so.1"
+      ]
+    },
+    "kamailio-kemix": {
+      "origin": "kamailio",
+      "versions": {
+        "6.0.4-r0": 1763054914
+      },
+      "dependencies": [
+        "kamailio",
+        "so:libc.musl-riscv64.so.1"
+      ]
+    },
+    "kamailio-lost": {
+      "origin": "kamailio",
+      "versions": {
+        "6.0.4-r0": 1763054914
+      },
+      "dependencies": [
+        "kamailio",
+        "so:libc.musl-riscv64.so.1",
+        "so:libxml2.so.2"
+      ]
+    },
+    "kamailio-lrkproxy": {
+      "origin": "kamailio",
+      "versions": {
+        "6.0.4-r0": 1763054914
+      },
+      "dependencies": [
+        "kamailio",
+        "so:libc.musl-riscv64.so.1"
+      ]
+    },
+    "kamailio-slack": {
+      "origin": "kamailio",
+      "versions": {
+        "6.0.4-r0": 1763054914
+      },
+      "dependencies": [
+        "kamailio",
+        "so:libc.musl-riscv64.so.1"
+      ]
+    },
+    "kamailio-xhttp_prom": {
+      "origin": "kamailio",
+      "versions": {
+        "6.0.4-r0": 1763054914
+      },
+      "dependencies": [
+        "kamailio",
+        "so:libc.musl-riscv64.so.1"
+      ]
     }
   },
   "provide": {
