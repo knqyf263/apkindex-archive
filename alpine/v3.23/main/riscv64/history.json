@@ -25210,7 +25210,8 @@
       "origin": "postgresql18",
       "versions": {
         "17.6-r0": 1755459818,
-        "18.0-r0": 1762729911
+        "18.0-r0": 1762729911,
+        "18.1-r0": 1763207348
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -25226,20 +25227,21 @@
       "origin": "postgresql18",
       "versions": {
         "17.6-r0": 1755459818,
-        "18.0-r0": 1762729911
+        "18.0-r0": 1762729911,
+        "18.1-r0": 1763207348
       },
       "dependencies": [
-        "libpq-dev=18.0-r0",
-        "libecpg=18.0-r0",
+        "libpq-dev=18.1-r0",
+        "libecpg=18.1-r0",
         "pc:libpgtypes",
         "pc:libpq",
         "pkgconfig",
         "so:libc.musl-riscv64.so.1"
       ],
       "provides": [
-        "cmd:ecpg=18.0-r0",
-        "pc:libecpg=18.0",
-        "pc:libpgtypes=18.0"
+        "cmd:ecpg=18.1-r0",
+        "pc:libecpg=18.1",
+        "pc:libpgtypes=18.1"
       ]
     },
     "libedit": {
@@ -27679,7 +27681,8 @@
       "origin": "postgresql18",
       "versions": {
         "17.6-r0": 1755459818,
-        "18.0-r0": 1762729911
+        "18.0-r0": 1762729911,
+        "18.1-r0": 1763207348
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -27694,18 +27697,19 @@
       "origin": "postgresql18",
       "versions": {
         "17.6-r0": 1755459818,
-        "18.0-r0": 1762729911
+        "18.0-r0": 1762729911,
+        "18.1-r0": 1763207348
       },
       "dependencies": [
-        "libpq=18.0-r0",
+        "libpq=18.1-r0",
         "pc:libcrypto",
         "pc:libssl",
         "pkgconfig",
         "so:libc.musl-riscv64.so.1"
       ],
       "provides": [
-        "cmd:pg_config=18.0-r0",
-        "pc:libpq=18.0"
+        "cmd:pg_config=18.1-r0",
+        "pc:libpq=18.1"
       ]
     },
     "libproc2": {
@@ -70786,7 +70790,8 @@
     "postgresql18": {
       "origin": "postgresql18",
       "versions": {
-        "18.0-r0": 1762729911
+        "18.0-r0": 1762729911,
+        "18.1-r0": 1763207348
       },
       "dependencies": [
         "postgresql18-client",
@@ -70807,28 +70812,29 @@
       ],
       "provides": [
         "postgresql",
-        "cmd:pg_createsubscriber",
+        "cmd:pg_ctl",
         "cmd:pg_rewind",
-        "cmd:pg_waldump",
-        "cmd:postgres",
+        "cmd:initdb",
         "cmd:pg_controldata",
         "cmd:pg_upgrade",
-        "cmd:initdb",
-        "cmd:pg_checksums",
-        "cmd:pg_ctl",
+        "cmd:postgres",
         "cmd:pg_test_fsync",
-        "cmd:pg_walsummary",
-        "cmd:pg_test_timing",
-        "cmd:pg_resetwal",
+        "cmd:pg_waldump",
         "cmd:pg_archivecleanup",
+        "cmd:pg_checksums",
+        "cmd:pg_createsubscriber",
         "cmd:pg_combinebackup",
-        "cmd:postgres18=18.0-r0"
+        "cmd:pg_test_timing",
+        "cmd:pg_walsummary",
+        "cmd:pg_resetwal",
+        "cmd:postgres18=18.1-r0"
       ]
     },
     "postgresql18-client": {
       "origin": "postgresql18",
       "versions": {
-        "18.0-r0": 1762729911
+        "18.0-r0": 1762729911,
+        "18.1-r0": 1763207348
       },
       "dependencies": [
         "postgresql-common",
@@ -70865,10 +70871,11 @@
     "postgresql18-contrib": {
       "origin": "postgresql18",
       "versions": {
-        "18.0-r0": 1762729911
+        "18.0-r0": 1762729911,
+        "18.1-r0": 1763207348
       },
       "dependencies": [
-        "postgresql18=18.0-r0",
+        "postgresql18=18.1-r0",
         "so:libc.musl-riscv64.so.1",
         "so:libcrypto.so.3",
         "so:libpq.so.5",
@@ -70885,10 +70892,11 @@
     "postgresql18-contrib-jit": {
       "origin": "postgresql18",
       "versions": {
-        "18.0-r0": 1762729911
+        "18.0-r0": 1762729911,
+        "18.1-r0": 1763207348
       },
       "dependencies": [
-        "postgresql18-contrib=18.0-r0"
+        "postgresql18-contrib=18.1-r0"
       ],
       "provides": [
         "postgresql-contrib-jit"
@@ -70897,7 +70905,8 @@
     "postgresql18-dev": {
       "origin": "postgresql18",
       "versions": {
-        "18.0-r0": 1762729911
+        "18.0-r0": 1762729911,
+        "18.1-r0": 1763207348
       },
       "dependencies": [
         "libpq-dev",
@@ -70918,7 +70927,8 @@
     "postgresql18-doc": {
       "origin": "postgresql18",
       "versions": {
-        "18.0-r0": 1762729911
+        "18.0-r0": 1762729911,
+        "18.1-r0": 1763207348
       },
       "provides": [
         "postgresql-doc"
@@ -70927,10 +70937,11 @@
     "postgresql18-jit": {
       "origin": "postgresql18",
       "versions": {
-        "18.0-r0": 1762729911
+        "18.0-r0": 1762729911,
+        "18.1-r0": 1763207348
       },
       "dependencies": [
-        "postgresql18=18.0-r0",
+        "postgresql18=18.1-r0",
         "so:libLLVM.so.20.1",
         "so:libc.musl-riscv64.so.1",
         "so:libgcc_s.so.1",
@@ -70943,7 +70954,8 @@
     "postgresql18-openrc": {
       "origin": "postgresql18",
       "versions": {
-        "18.0-r0": 1762729911
+        "18.0-r0": 1762729911,
+        "18.1-r0": 1763207348
       },
       "dependencies": [
         "postgresql-common-openrc"
@@ -70952,10 +70964,11 @@
     "postgresql18-plperl": {
       "origin": "postgresql18",
       "versions": {
-        "18.0-r0": 1762729911
+        "18.0-r0": 1762729911,
+        "18.1-r0": 1763207348
       },
       "dependencies": [
-        "postgresql18=18.0-r0",
+        "postgresql18=18.1-r0",
         "so:libc.musl-riscv64.so.1",
         "so:libperl.so"
       ],
@@ -70966,10 +70979,11 @@
     "postgresql18-plperl-contrib": {
       "origin": "postgresql18",
       "versions": {
-        "18.0-r0": 1762729911
+        "18.0-r0": 1762729911,
+        "18.1-r0": 1763207348
       },
       "dependencies": [
-        "postgresql18-plperl=18.0-r0",
+        "postgresql18-plperl=18.1-r0",
         "so:libc.musl-riscv64.so.1",
         "so:libperl.so"
       ],
@@ -70980,10 +70994,11 @@
     "postgresql18-plpython3": {
       "origin": "postgresql18",
       "versions": {
-        "18.0-r0": 1762729911
+        "18.0-r0": 1762729911,
+        "18.1-r0": 1763207348
       },
       "dependencies": [
-        "postgresql18=18.0-r0",
+        "postgresql18=18.1-r0",
         "python3",
         "so:libc.musl-riscv64.so.1",
         "so:libpython3.12.so.1.0"
@@ -70995,10 +71010,11 @@
     "postgresql18-plpython3-contrib": {
       "origin": "postgresql18",
       "versions": {
-        "18.0-r0": 1762729911
+        "18.0-r0": 1762729911,
+        "18.1-r0": 1763207348
       },
       "dependencies": [
-        "postgresql18-plpython3=18.0-r0",
+        "postgresql18-plpython3=18.1-r0",
         "so:libc.musl-riscv64.so.1",
         "so:libpython3.12.so.1.0"
       ],
@@ -71009,10 +71025,11 @@
     "postgresql18-pltcl": {
       "origin": "postgresql18",
       "versions": {
-        "18.0-r0": 1762729911
+        "18.0-r0": 1762729911,
+        "18.1-r0": 1763207348
       },
       "dependencies": [
-        "postgresql18=18.0-r0",
+        "postgresql18=18.1-r0",
         "pgtcl",
         "so:libc.musl-riscv64.so.1",
         "so:libtcl8.6.so"
