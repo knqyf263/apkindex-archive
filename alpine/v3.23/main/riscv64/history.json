@@ -71209,6 +71209,47 @@
       "versions": {
         "3.0.0_rc8-r1": 1763364811
       }
+    },
+    "systemd-boot": {
+      "origin": "systemd-boot",
+      "versions": {
+        "258.2-r0": 1763371325
+      }
+    },
+    "systemd-efistub": {
+      "origin": "systemd-boot",
+      "versions": {
+        "258.2-r0": 1763371325
+      },
+      "provides": [
+        "efistub"
+      ]
+    },
+    "ukify": {
+      "origin": "systemd-boot",
+      "versions": {
+        "258.2-r0": 1763371325
+      },
+      "dependencies": [
+        "binutils",
+        "py3-pefile"
+      ],
+      "provides": [
+        "cmd:ukify=258.2-r0"
+      ]
+    },
+    "ukify-kernel-hook": {
+      "origin": "systemd-boot",
+      "versions": {
+        "258.2-r0": 1763371325
+      },
+      "dependencies": [
+        "ukify",
+        "kernel-hooks",
+        "cmd:sbsign",
+        "systemd-efistub",
+        "/bin/sh"
+      ]
     }
   },
   "provide": {
@@ -72656,6 +72697,10 @@
       "spl-vanilla": {
         "package": "zfs-lts",
         "version": "6.12.58-r0"
+      },
+      "efistub": {
+        "package": "systemd-efistub",
+        "version": 0
       }
     },
     "so": {
