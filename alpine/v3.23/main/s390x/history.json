@@ -3020,37 +3020,39 @@
     "ada": {
       "origin": "ada",
       "versions": {
-        "2.9.2-r5": 1753045432
+        "2.9.2-r5": 1753045432,
+        "3.3.0-r0": 1763728678
       },
       "dependencies": [
-        "so:libada.so.2",
+        "so:libada.so.3",
         "so:libc.musl-s390x.so.1",
         "so:libfmt.so.11",
-        "so:libgcc_s.so.1",
-        "so:libstdc++.so.6"
+        "so:libgcc_s.so.1"
       ],
       "provides": [
-        "cmd:adaparse=2.9.2-r5"
+        "cmd:adaparse=3.3.0-r0"
       ]
     },
     "ada-dev": {
       "origin": "ada",
       "versions": {
-        "2.9.2-r5": 1753045432
+        "2.9.2-r5": 1753045432,
+        "3.3.0-r0": 1763728678
       },
       "dependencies": [
-        "ada=2.9.2-r5",
-        "ada-libs=2.9.2-r5",
+        "ada=3.3.0-r0",
+        "ada-libs=3.3.0-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:ada=2.9.2"
+        "pc:ada=3.3.0"
       ]
     },
     "ada-libs": {
       "origin": "ada",
       "versions": {
-        "2.9.2-r5": 1753045432
+        "2.9.2-r5": 1753045432,
+        "3.3.0-r0": 1763728678
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1",
@@ -3058,13 +3060,14 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libada.so.2=2.9.2"
+        "so:libada.so.3=3.3.0"
       ]
     },
     "ada-static": {
       "origin": "ada",
       "versions": {
-        "2.9.2-r5": 1753045432
+        "2.9.2-r5": 1753045432,
+        "3.3.0-r0": 1763728678
       }
     },
     "agetty": {
@@ -43024,12 +43027,13 @@
       "versions": {
         "22.19.0-r3": 1758368590,
         "22.19.0-r4": 1761030614,
-        "22.21.0-r0": 1761489363
+        "22.21.0-r0": 1761489363,
+        "24.11.1-r0": 1763728678
       },
       "dependencies": [
         "ca-certificates",
         "/bin/sh",
-        "so:libada.so.2",
+        "so:libada.so.3",
         "so:libbrotlidec.so.1",
         "so:libbrotlienc.so.1",
         "so:libc.musl-s390x.so.1",
@@ -43048,8 +43052,8 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "nodejs-lts=22.21.0-r0",
-        "cmd:node=22.21.0-r0"
+        "nodejs-lts=24.11.1-r0",
+        "cmd:node=24.11.1-r0"
       ]
     },
     "nodejs-dev": {
@@ -43057,15 +43061,16 @@
       "versions": {
         "22.19.0-r3": 1758368590,
         "22.19.0-r4": 1761030614,
-        "22.21.0-r0": 1761489363
+        "22.21.0-r0": 1761489363,
+        "24.11.1-r0": 1763728678
       },
       "dependencies": [
-        "nodejs-libs=22.21.0-r0",
+        "nodejs-libs=24.11.1-r0",
         "pkgconfig"
       ],
       "provides": [
-        "nodejs-lts-dev=22.21.0",
-        "pc:nodejs=22.21.0"
+        "nodejs-lts-dev=24.11.1",
+        "pc:nodejs=24.11.1"
       ]
     },
     "nodejs-doc": {
@@ -43073,7 +43078,8 @@
       "versions": {
         "22.19.0-r3": 1758368590,
         "22.19.0-r4": 1761030614,
-        "22.21.0-r0": 1761489363
+        "22.21.0-r0": 1761489363,
+        "24.11.1-r0": 1763728678
       }
     },
     "nodejs-libs": {
@@ -43081,10 +43087,11 @@
       "versions": {
         "22.19.0-r3": 1758368590,
         "22.19.0-r4": 1761030614,
-        "22.21.0-r0": 1761489363
+        "22.21.0-r0": 1761489363,
+        "24.11.1-r0": 1763728678
       },
       "dependencies": [
-        "so:libada.so.2",
+        "so:libada.so.3",
         "so:libbrotlidec.so.1",
         "so:libbrotlienc.so.1",
         "so:libc.musl-s390x.so.1",
@@ -43103,7 +43110,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "so:libnode.so.127=127"
+        "so:libnode.so.137=137"
       ]
     },
     "npth": {
@@ -72677,11 +72684,11 @@
       },
       "nodejs-lts": {
         "package": "nodejs",
-        "version": "22.21.0-r0"
+        "version": "24.11.1-r0"
       },
       "nodejs-lts-dev": {
         "package": "nodejs-dev",
-        "version": "22.21.0"
+        "version": "24.11.1"
       },
       "ocaml5-dev": {
         "package": "ocaml5-compiler-libs",
@@ -79684,6 +79691,14 @@
       "libndr.so.6": {
         "package": "samba-libs",
         "version": "6.0.0"
+      },
+      "libada.so.3": {
+        "package": "ada-libs",
+        "version": "3.3.0"
+      },
+      "libnode.so.137": {
+        "package": "nodejs-libs",
+        "version": "137"
       }
     }
   }
