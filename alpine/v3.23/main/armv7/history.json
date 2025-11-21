@@ -3042,37 +3042,39 @@
     "ada": {
       "origin": "ada",
       "versions": {
-        "2.9.2-r5": 1753045432
+        "2.9.2-r5": 1753045432,
+        "3.3.0-r0": 1763728678
       },
       "dependencies": [
-        "so:libada.so.2",
+        "so:libada.so.3",
         "so:libc.musl-armv7.so.1",
         "so:libfmt.so.11",
-        "so:libgcc_s.so.1",
-        "so:libstdc++.so.6"
+        "so:libgcc_s.so.1"
       ],
       "provides": [
-        "cmd:adaparse=2.9.2-r5"
+        "cmd:adaparse=3.3.0-r0"
       ]
     },
     "ada-dev": {
       "origin": "ada",
       "versions": {
-        "2.9.2-r5": 1753045432
+        "2.9.2-r5": 1753045432,
+        "3.3.0-r0": 1763728678
       },
       "dependencies": [
-        "ada=2.9.2-r5",
-        "ada-libs=2.9.2-r5",
+        "ada=3.3.0-r0",
+        "ada-libs=3.3.0-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:ada=2.9.2"
+        "pc:ada=3.3.0"
       ]
     },
     "ada-libs": {
       "origin": "ada",
       "versions": {
-        "2.9.2-r5": 1753045432
+        "2.9.2-r5": 1753045432,
+        "3.3.0-r0": 1763728678
       },
       "dependencies": [
         "so:libc.musl-armv7.so.1",
@@ -3080,13 +3082,14 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libada.so.2=2.9.2"
+        "so:libada.so.3=3.3.0"
       ]
     },
     "ada-static": {
       "origin": "ada",
       "versions": {
-        "2.9.2-r5": 1753045432
+        "2.9.2-r5": 1753045432,
+        "3.3.0-r0": 1763728678
       }
     },
     "agetty": {
@@ -6135,7 +6138,8 @@
       "origin": "bind",
       "versions": {
         "9.20.13-r0": 1757595304,
-        "9.20.15-r0": 1761149534
+        "9.20.15-r0": 1761149534,
+        "9.20.16-r0": 1763740476
       },
       "dependencies": [
         "dns-root-hints",
@@ -6144,14 +6148,14 @@
         "so:libc.musl-armv7.so.1",
         "so:libcap.so.2",
         "so:libcrypto.so.3",
-        "so:libdns-9.20.15.so",
+        "so:libdns-9.20.16.so",
         "so:libfstrm.so.0",
-        "so:libisc-9.20.15.so",
-        "so:libisccc-9.20.15.so",
-        "so:libisccfg-9.20.15.so",
+        "so:libisc-9.20.16.so",
+        "so:libisccc-9.20.16.so",
+        "so:libisccfg-9.20.16.so",
         "so:libjson-c.so.5",
         "so:libnghttp2.so.14",
-        "so:libns-9.20.15.so",
+        "so:libns-9.20.16.so",
         "so:libprotobuf-c.so.1",
         "so:liburcu.so.8",
         "so:libuv.so.1",
@@ -6159,92 +6163,98 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:named-checkconf=9.20.15-r0",
-        "cmd:named=9.20.15-r0",
-        "cmd:rndc=9.20.15-r0"
+        "cmd:named-checkconf=9.20.16-r0",
+        "cmd:named=9.20.16-r0",
+        "cmd:rndc=9.20.16-r0"
       ]
     },
     "bind-dbg": {
       "origin": "bind",
       "versions": {
         "9.20.13-r0": 1757595304,
-        "9.20.15-r0": 1761149534
+        "9.20.15-r0": 1761149534,
+        "9.20.16-r0": 1763740476
       },
       "dependencies": [
-        "!bind-dnssec-tools<9.20.15-r0",
-        "!bind-dnssec-tools>9.20.15-r0",
-        "!bind-libs<9.20.15-r0",
-        "!bind-libs>9.20.15-r0",
-        "!bind-plugins<9.20.15-r0",
-        "!bind-plugins>9.20.15-r0",
-        "!bind-tools<9.20.15-r0",
-        "!bind-tools>9.20.15-r0",
-        "!bind<9.20.15-r0",
-        "!bind>9.20.15-r0"
+        "!bind-dnssec-tools<9.20.16-r0",
+        "!bind-dnssec-tools>9.20.16-r0",
+        "!bind-libs<9.20.16-r0",
+        "!bind-libs>9.20.16-r0",
+        "!bind-plugins<9.20.16-r0",
+        "!bind-plugins>9.20.16-r0",
+        "!bind-tools<9.20.16-r0",
+        "!bind-tools>9.20.16-r0",
+        "!bind<9.20.16-r0",
+        "!bind>9.20.16-r0"
       ]
     },
     "bind-dev": {
       "origin": "bind",
       "versions": {
         "9.20.13-r0": 1757595304,
-        "9.20.15-r0": 1761149534
+        "9.20.15-r0": 1761149534,
+        "9.20.16-r0": 1763740476
       },
       "dependencies": [
         "bind",
         "bind-plugins",
         "bind-tools",
-        "bind-libs=9.20.15-r0"
+        "bind-libs=9.20.16-r0"
       ]
     },
     "bind-dnssec-root": {
       "origin": "bind",
       "versions": {
         "9.20.13-r0": 1757595304,
-        "9.20.15-r0": 1761149534
+        "9.20.15-r0": 1761149534,
+        "9.20.16-r0": 1763740476
       }
     },
     "bind-dnssec-tools": {
       "origin": "bind",
       "versions": {
         "9.20.13-r0": 1757595304,
-        "9.20.15-r0": 1761149534
+        "9.20.15-r0": 1761149534,
+        "9.20.16-r0": 1763740476
       },
       "dependencies": [
         "dns-root-hints",
         "bind-tools",
         "so:libc.musl-armv7.so.1",
         "so:libcrypto.so.3",
-        "so:libdns-9.20.15.so",
-        "so:libisc-9.20.15.so",
-        "so:libisccfg-9.20.15.so",
+        "so:libdns-9.20.16.so",
+        "so:libisc-9.20.16.so",
+        "so:libisccfg-9.20.16.so",
         "so:liburcu.so.8"
       ],
       "provides": [
-        "cmd:dnssec-cds=9.20.15-r0",
-        "cmd:dnssec-dsfromkey=9.20.15-r0",
-        "cmd:dnssec-importkey=9.20.15-r0",
-        "cmd:dnssec-keyfromlabel=9.20.15-r0",
-        "cmd:dnssec-keygen=9.20.15-r0",
-        "cmd:dnssec-ksr=9.20.15-r0",
-        "cmd:dnssec-revoke=9.20.15-r0",
-        "cmd:dnssec-settime=9.20.15-r0",
-        "cmd:dnssec-signzone=9.20.15-r0",
-        "cmd:dnssec-verify=9.20.15-r0",
-        "cmd:nsec3hash=9.20.15-r0"
+        "cmd:dnssec-cds=9.20.16-r0",
+        "cmd:dnssec-dsfromkey=9.20.16-r0",
+        "cmd:dnssec-importkey=9.20.16-r0",
+        "cmd:dnssec-keyfromlabel=9.20.16-r0",
+        "cmd:dnssec-keygen=9.20.16-r0",
+        "cmd:dnssec-ksr=9.20.16-r0",
+        "cmd:dnssec-revoke=9.20.16-r0",
+        "cmd:dnssec-settime=9.20.16-r0",
+        "cmd:dnssec-signzone=9.20.16-r0",
+        "cmd:dnssec-verify=9.20.16-r0",
+        "cmd:nsec3hash=9.20.16-r0"
       ]
     },
     "bind-doc": {
       "origin": "bind",
       "versions": {
         "9.20.13-r0": 1757595304,
-        "9.20.15-r0": 1761149534
+        "9.20.15-r0": 1761149534,
+        "9.20.16-r0": 1763740476
       }
     },
     "bind-libs": {
       "origin": "bind",
       "versions": {
         "9.20.13-r0": 1757595304,
-        "9.20.15-r0": 1761149534
+        "9.20.15-r0": 1761149534,
+        "9.20.16-r0": 1763740476
       },
       "dependencies": [
         "so:libc.musl-armv7.so.1",
@@ -6264,25 +6274,27 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "so:libdns-9.20.15.so=0",
-        "so:libisc-9.20.15.so=0",
-        "so:libisccc-9.20.15.so=0",
-        "so:libisccfg-9.20.15.so=0",
-        "so:libns-9.20.15.so=0"
+        "so:libdns-9.20.16.so=0",
+        "so:libisc-9.20.16.so=0",
+        "so:libisccc-9.20.16.so=0",
+        "so:libisccfg-9.20.16.so=0",
+        "so:libns-9.20.16.so=0"
       ]
     },
     "bind-openrc": {
       "origin": "bind",
       "versions": {
         "9.20.13-r0": 1757595304,
-        "9.20.15-r0": 1761149534
+        "9.20.15-r0": 1761149534,
+        "9.20.16-r0": 1763740476
       }
     },
     "bind-plugins": {
       "origin": "bind",
       "versions": {
         "9.20.13-r0": 1757595304,
-        "9.20.15-r0": 1761149534
+        "9.20.15-r0": 1761149534,
+        "9.20.16-r0": 1763740476
       },
       "dependencies": [
         "bind",
@@ -6293,33 +6305,34 @@
       "origin": "bind",
       "versions": {
         "9.20.13-r0": 1757595304,
-        "9.20.15-r0": 1761149534
+        "9.20.15-r0": 1761149534,
+        "9.20.16-r0": 1763740476
       },
       "dependencies": [
         "so:libc.musl-armv7.so.1",
-        "so:libdns-9.20.15.so",
-        "so:libisc-9.20.15.so",
-        "so:libisccfg-9.20.15.so",
+        "so:libdns-9.20.16.so",
+        "so:libisc-9.20.16.so",
+        "so:libisccfg-9.20.16.so",
         "so:libkrb5.so.3",
-        "so:libns-9.20.15.so",
+        "so:libns-9.20.16.so",
         "so:libprotobuf-c.so.1"
       ],
       "provides": [
-        "cmd:arpaname=9.20.15-r0",
-        "cmd:ddns-confgen=9.20.15-r0",
-        "cmd:delv=9.20.15-r0",
-        "cmd:dig=9.20.15-r0",
-        "cmd:dnstap-read=9.20.15-r0",
-        "cmd:host=9.20.15-r0",
-        "cmd:mdig=9.20.15-r0",
-        "cmd:named-checkzone=9.20.15-r0",
-        "cmd:named-compilezone=9.20.15-r0",
-        "cmd:named-journalprint=9.20.15-r0",
-        "cmd:named-rrchecker=9.20.15-r0",
-        "cmd:nslookup=9.20.15-r0",
-        "cmd:nsupdate=9.20.15-r0",
-        "cmd:rndc-confgen=9.20.15-r0",
-        "cmd:tsig-keygen=9.20.15-r0"
+        "cmd:arpaname=9.20.16-r0",
+        "cmd:ddns-confgen=9.20.16-r0",
+        "cmd:delv=9.20.16-r0",
+        "cmd:dig=9.20.16-r0",
+        "cmd:dnstap-read=9.20.16-r0",
+        "cmd:host=9.20.16-r0",
+        "cmd:mdig=9.20.16-r0",
+        "cmd:named-checkzone=9.20.16-r0",
+        "cmd:named-compilezone=9.20.16-r0",
+        "cmd:named-journalprint=9.20.16-r0",
+        "cmd:named-rrchecker=9.20.16-r0",
+        "cmd:nslookup=9.20.16-r0",
+        "cmd:nsupdate=9.20.16-r0",
+        "cmd:rndc-confgen=9.20.16-r0",
+        "cmd:tsig-keygen=9.20.16-r0"
       ]
     },
     "binutils": {
@@ -19378,7 +19391,8 @@
       "versions": {
         "3.2.6-r1": 1760291229,
         "3.2.7-r0": 1761247474,
-        "3.2.8-r0": 1762964970
+        "3.2.8-r0": 1762964970,
+        "3.2.9-r0": 1763729854
       },
       "dependencies": [
         "/bin/sh",
@@ -19390,7 +19404,7 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:haproxy=3.2.8-r0"
+        "cmd:haproxy=3.2.9-r0"
       ]
     },
     "haproxy-doc": {
@@ -19398,7 +19412,8 @@
       "versions": {
         "3.2.6-r1": 1760291229,
         "3.2.7-r0": 1761247474,
-        "3.2.8-r0": 1762964970
+        "3.2.8-r0": 1762964970,
+        "3.2.9-r0": 1763729854
       }
     },
     "haproxy-openrc": {
@@ -19406,7 +19421,8 @@
       "versions": {
         "3.2.6-r1": 1760291229,
         "3.2.7-r0": 1761247474,
-        "3.2.8-r0": 1762964970
+        "3.2.8-r0": 1762964970,
+        "3.2.9-r0": 1763729854
       }
     },
     "harfbuzz": {
@@ -29980,7 +29996,8 @@
     "libxcb": {
       "origin": "libxcb",
       "versions": {
-        "1.17.0-r0": 1733482048
+        "1.17.0-r0": 1733482048,
+        "1.17.0-r1": 1763765650
       },
       "dependencies": [
         "so:libXau.so.6",
@@ -30018,12 +30035,13 @@
     "libxcb-dev": {
       "origin": "libxcb",
       "versions": {
-        "1.17.0-r0": 1733482048
+        "1.17.0-r0": 1733482048,
+        "1.17.0-r1": 1763765650
       },
       "dependencies": [
         "libxau-dev",
         "xcb-proto",
-        "libxcb=1.17.0-r0",
+        "libxcb=1.17.0-r1",
         "pc:xau>=0.99.2",
         "pc:xcb",
         "pc:xcb-dri3",
@@ -30068,13 +30086,15 @@
     "libxcb-doc": {
       "origin": "libxcb",
       "versions": {
-        "1.17.0-r0": 1733482048
+        "1.17.0-r0": 1733482048,
+        "1.17.0-r1": 1763765650
       }
     },
     "libxcb-static": {
       "origin": "libxcb",
       "versions": {
-        "1.17.0-r0": 1733482048
+        "1.17.0-r0": 1733482048,
+        "1.17.0-r1": 1763765650
       }
     },
     "libxcomposite": {
@@ -43203,12 +43223,13 @@
       "versions": {
         "22.19.0-r3": 1758368590,
         "22.19.0-r4": 1761030614,
-        "22.21.0-r0": 1761489363
+        "22.21.0-r0": 1761489363,
+        "24.11.1-r0": 1763728678
       },
       "dependencies": [
         "ca-certificates",
         "/bin/sh",
-        "so:libada.so.2",
+        "so:libada.so.3",
         "so:libbrotlidec.so.1",
         "so:libbrotlienc.so.1",
         "so:libc.musl-armv7.so.1",
@@ -43227,8 +43248,8 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "nodejs-lts=22.21.0-r0",
-        "cmd:node=22.21.0-r0"
+        "nodejs-lts=24.11.1-r0",
+        "cmd:node=24.11.1-r0"
       ]
     },
     "nodejs-dev": {
@@ -43236,15 +43257,16 @@
       "versions": {
         "22.19.0-r3": 1758368590,
         "22.19.0-r4": 1761030614,
-        "22.21.0-r0": 1761489363
+        "22.21.0-r0": 1761489363,
+        "24.11.1-r0": 1763728678
       },
       "dependencies": [
-        "nodejs-libs=22.21.0-r0",
+        "nodejs-libs=24.11.1-r0",
         "pkgconfig"
       ],
       "provides": [
-        "nodejs-lts-dev=22.21.0",
-        "pc:nodejs=22.21.0"
+        "nodejs-lts-dev=24.11.1",
+        "pc:nodejs=24.11.1"
       ]
     },
     "nodejs-doc": {
@@ -43252,7 +43274,8 @@
       "versions": {
         "22.19.0-r3": 1758368590,
         "22.19.0-r4": 1761030614,
-        "22.21.0-r0": 1761489363
+        "22.21.0-r0": 1761489363,
+        "24.11.1-r0": 1763728678
       }
     },
     "nodejs-libs": {
@@ -43260,10 +43283,11 @@
       "versions": {
         "22.19.0-r3": 1758368590,
         "22.19.0-r4": 1761030614,
-        "22.21.0-r0": 1761489363
+        "22.21.0-r0": 1761489363,
+        "24.11.1-r0": 1763728678
       },
       "dependencies": [
-        "so:libada.so.2",
+        "so:libada.so.3",
         "so:libbrotlidec.so.1",
         "so:libbrotlienc.so.1",
         "so:libc.musl-armv7.so.1",
@@ -43282,7 +43306,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "so:libnode.so.127=127"
+        "so:libnode.so.137=137"
       ]
     },
     "npth": {
@@ -67043,10 +67067,11 @@
       "versions": {
         "2025.10-r0": 1759998820,
         "2025.10-r1": 1760995008,
-        "2025.10-r2": 1762564360
+        "2025.10-r2": 1762564360,
+        "2025.10-r3": 1763730120
       },
       "provides": [
-        "cmd:update-u-boot=2025.10-r2"
+        "cmd:update-u-boot=2025.10-r3"
       ]
     },
     "u-boot-all": {
@@ -67054,7 +67079,8 @@
       "versions": {
         "2025.10-r0": 1759998820,
         "2025.10-r1": 1760995008,
-        "2025.10-r2": 1762564360
+        "2025.10-r2": 1762564360,
+        "2025.10-r3": 1763730120
       },
       "dependencies": [
         "u-boot-beagleboard",
@@ -67072,7 +67098,8 @@
       "versions": {
         "2025.10-r0": 1759998820,
         "2025.10-r1": 1760995008,
-        "2025.10-r2": 1762564360
+        "2025.10-r2": 1762564360,
+        "2025.10-r3": 1763730120
       },
       "dependencies": [
         "u-boot"
@@ -67083,7 +67110,8 @@
       "versions": {
         "2025.10-r0": 1759998820,
         "2025.10-r1": 1760995008,
-        "2025.10-r2": 1762564360
+        "2025.10-r2": 1762564360,
+        "2025.10-r3": 1763730120
       },
       "dependencies": [
         "u-boot"
@@ -67094,7 +67122,8 @@
       "versions": {
         "2025.10-r0": 1759998820,
         "2025.10-r1": 1760995008,
-        "2025.10-r2": 1762564360
+        "2025.10-r2": 1762564360,
+        "2025.10-r3": 1763730120
       },
       "dependencies": [
         "u-boot"
@@ -67105,7 +67134,8 @@
       "versions": {
         "2025.10-r0": 1759998820,
         "2025.10-r1": 1760995008,
-        "2025.10-r2": 1762564360
+        "2025.10-r2": 1762564360,
+        "2025.10-r3": 1763730120
       },
       "dependencies": [
         "u-boot"
@@ -67116,7 +67146,8 @@
       "versions": {
         "2025.10-r0": 1759998820,
         "2025.10-r1": 1760995008,
-        "2025.10-r2": 1762564360
+        "2025.10-r2": 1762564360,
+        "2025.10-r3": 1763730120
       },
       "dependencies": [
         "u-boot"
@@ -67127,7 +67158,8 @@
       "versions": {
         "2025.10-r0": 1759998820,
         "2025.10-r1": 1760995008,
-        "2025.10-r2": 1762564360
+        "2025.10-r2": 1762564360,
+        "2025.10-r3": 1763730120
       },
       "dependencies": [
         "u-boot"
@@ -67138,7 +67170,8 @@
       "versions": {
         "2025.10-r0": 1759998820,
         "2025.10-r1": 1760995008,
-        "2025.10-r2": 1762564360
+        "2025.10-r2": 1762564360,
+        "2025.10-r3": 1763730120
       },
       "dependencies": [
         "u-boot"
@@ -67149,7 +67182,8 @@
       "versions": {
         "2025.10-r0": 1759998820,
         "2025.10-r1": 1760995008,
-        "2025.10-r2": 1762564360
+        "2025.10-r2": 1762564360,
+        "2025.10-r3": 1763730120
       },
       "dependencies": [
         "so:libc.musl-armv7.so.1",
@@ -67158,19 +67192,19 @@
       ],
       "provides": [
         "uboot-tools",
-        "cmd:dumpimage=2025.10-r2",
-        "cmd:fit_check_sign=2025.10-r2",
-        "cmd:fit_info=2025.10-r2",
-        "cmd:fw_printenv=2025.10-r2",
-        "cmd:fw_setenv=2025.10-r2",
-        "cmd:gdbcont=2025.10-r2",
-        "cmd:gdbsend=2025.10-r2",
-        "cmd:gen_eth_addr=2025.10-r2",
-        "cmd:img2srec=2025.10-r2",
-        "cmd:mkenvimage=2025.10-r2",
-        "cmd:mkimage=2025.10-r2",
-        "cmd:ncb=2025.10-r2",
-        "cmd:proftool=2025.10-r2"
+        "cmd:dumpimage=2025.10-r3",
+        "cmd:fit_check_sign=2025.10-r3",
+        "cmd:fit_info=2025.10-r3",
+        "cmd:fw_printenv=2025.10-r3",
+        "cmd:fw_setenv=2025.10-r3",
+        "cmd:gdbcont=2025.10-r3",
+        "cmd:gdbsend=2025.10-r3",
+        "cmd:gen_eth_addr=2025.10-r3",
+        "cmd:img2srec=2025.10-r3",
+        "cmd:mkenvimage=2025.10-r3",
+        "cmd:mkimage=2025.10-r3",
+        "cmd:ncb=2025.10-r3",
+        "cmd:proftool=2025.10-r3"
       ]
     },
     "u-boot-wandboard": {
@@ -67178,7 +67212,8 @@
       "versions": {
         "2025.10-r0": 1759998820,
         "2025.10-r1": 1760995008,
-        "2025.10-r2": 1762564360
+        "2025.10-r2": 1762564360,
+        "2025.10-r3": 1763730120
       },
       "dependencies": [
         "u-boot"
@@ -72862,6 +72897,16 @@
       "versions": {
         "1.7.1-r1": 1763508629
       }
+    },
+    "libxcb-dbg": {
+      "origin": "libxcb",
+      "versions": {
+        "1.17.0-r1": 1763765650
+      },
+      "dependencies": [
+        "!libxcb<1.17.0-r1",
+        "!libxcb>1.17.0-r1"
+      ]
     }
   },
   "provide": {
@@ -73624,11 +73669,11 @@
       },
       "nodejs-lts": {
         "package": "nodejs",
-        "version": "22.21.0-r0"
+        "version": "24.11.1-r0"
       },
       "nodejs-lts-dev": {
         "package": "nodejs-dev",
-        "version": "22.21.0"
+        "version": "24.11.1"
       },
       "ocaml5-dev": {
         "package": "ocaml5-compiler-libs",
@@ -80819,6 +80864,34 @@
       "libndr.so.6": {
         "package": "samba-libs",
         "version": "6.0.0"
+      },
+      "libada.so.3": {
+        "package": "ada-libs",
+        "version": "3.3.0"
+      },
+      "libdns-9.20.16.so": {
+        "package": "bind-libs",
+        "version": "0"
+      },
+      "libisc-9.20.16.so": {
+        "package": "bind-libs",
+        "version": "0"
+      },
+      "libisccc-9.20.16.so": {
+        "package": "bind-libs",
+        "version": "0"
+      },
+      "libisccfg-9.20.16.so": {
+        "package": "bind-libs",
+        "version": "0"
+      },
+      "libns-9.20.16.so": {
+        "package": "bind-libs",
+        "version": "0"
+      },
+      "libnode.so.137": {
+        "package": "nodejs-libs",
+        "version": "137"
       }
     }
   }

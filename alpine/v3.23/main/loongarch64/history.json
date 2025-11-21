@@ -29875,7 +29875,8 @@
     "libxcb": {
       "origin": "libxcb",
       "versions": {
-        "1.17.0-r0": 1733482048
+        "1.17.0-r0": 1733482048,
+        "1.17.0-r1": 1763765650
       },
       "dependencies": [
         "so:libXau.so.6",
@@ -29913,12 +29914,13 @@
     "libxcb-dev": {
       "origin": "libxcb",
       "versions": {
-        "1.17.0-r0": 1733482048
+        "1.17.0-r0": 1733482048,
+        "1.17.0-r1": 1763765650
       },
       "dependencies": [
         "libxau-dev",
         "xcb-proto",
-        "libxcb=1.17.0-r0",
+        "libxcb=1.17.0-r1",
         "pc:xau>=0.99.2",
         "pc:xcb",
         "pc:xcb-dri3",
@@ -29963,13 +29965,15 @@
     "libxcb-doc": {
       "origin": "libxcb",
       "versions": {
-        "1.17.0-r0": 1733482048
+        "1.17.0-r0": 1733482048,
+        "1.17.0-r1": 1763765650
       }
     },
     "libxcb-static": {
       "origin": "libxcb",
       "versions": {
-        "1.17.0-r0": 1733482048
+        "1.17.0-r0": 1733482048,
+        "1.17.0-r1": 1763765650
       }
     },
     "libxcomposite": {
@@ -72192,6 +72196,16 @@
       "versions": {
         "1.7.1-r1": 1763508629
       }
+    },
+    "libxcb-dbg": {
+      "origin": "libxcb",
+      "versions": {
+        "1.17.0-r1": 1763765650
+      },
+      "dependencies": [
+        "!libxcb<1.17.0-r1",
+        "!libxcb>1.17.0-r1"
+      ]
     }
   },
   "provide": {
