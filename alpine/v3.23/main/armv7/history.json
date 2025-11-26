@@ -17819,9 +17819,12 @@
     "gnutls": {
       "origin": "gnutls",
       "versions": {
-        "3.8.8-r0": 1747081365
+        "3.8.8-r0": 1747081365,
+        "3.8.11-r0": 1764193319
       },
       "dependencies": [
+        "so:libbrotlidec.so.1",
+        "so:libbrotlienc.so.1",
         "so:libc.musl-armv7.so.1",
         "so:libgmp.so.10",
         "so:libhogweed.so.6",
@@ -17830,16 +17833,18 @@
         "so:libp11-kit.so.0",
         "so:libtasn1.so.6",
         "so:libunistring.so.5",
-        "so:libz.so.1"
+        "so:libz.so.1",
+        "so:libzstd.so.1"
       ],
       "provides": [
-        "so:libgnutls.so.30=30.40.2"
+        "so:libgnutls.so.30=30.41.0"
       ]
     },
     "gnutls-c++": {
       "origin": "gnutls",
       "versions": {
-        "3.8.8-r0": 1747081365
+        "3.8.8-r0": 1747081365,
+        "3.8.11-r0": 1764193319
       },
       "dependencies": [
         "so:libc.musl-armv7.so.1",
@@ -17854,47 +17859,54 @@
     "gnutls-dbg": {
       "origin": "gnutls",
       "versions": {
-        "3.8.8-r0": 1747081365
+        "3.8.8-r0": 1747081365,
+        "3.8.11-r0": 1764193319
       },
       "dependencies": [
-        "!gnutls-c++<3.8.8-r0",
-        "!gnutls-c++>3.8.8-r0",
-        "!gnutls-utils<3.8.8-r0",
-        "!gnutls-utils>3.8.8-r0",
-        "!gnutls<3.8.8-r0",
-        "!gnutls>3.8.8-r0"
+        "!gnutls-c++<3.8.11-r0",
+        "!gnutls-c++>3.8.11-r0",
+        "!gnutls-utils<3.8.11-r0",
+        "!gnutls-utils>3.8.11-r0",
+        "!gnutls<3.8.11-r0",
+        "!gnutls>3.8.11-r0"
       ]
     },
     "gnutls-dev": {
       "origin": "gnutls",
       "versions": {
-        "3.8.8-r0": 1747081365
+        "3.8.8-r0": 1747081365,
+        "3.8.11-r0": 1764193319
       },
       "dependencies": [
-        "gnutls-c++=3.8.8-r0",
-        "gnutls=3.8.8-r0",
+        "gnutls-c++=3.8.11-r0",
+        "gnutls=3.8.11-r0",
         "pc:hogweed",
+        "pc:libbrotlidec",
+        "pc:libbrotlienc",
         "pc:libidn2",
         "pc:libtasn1",
+        "pc:libzstd",
         "pc:nettle",
         "pc:p11-kit-1",
         "pc:zlib",
         "pkgconfig"
       ],
       "provides": [
-        "pc:gnutls=3.8.8"
+        "pc:gnutls=3.8.11"
       ]
     },
     "gnutls-doc": {
       "origin": "gnutls",
       "versions": {
-        "3.8.8-r0": 1747081365
+        "3.8.8-r0": 1747081365,
+        "3.8.11-r0": 1764193319
       }
     },
     "gnutls-utils": {
       "origin": "gnutls",
       "versions": {
-        "3.8.8-r0": 1747081365
+        "3.8.8-r0": 1747081365,
+        "3.8.11-r0": 1764193319
       },
       "dependencies": [
         "so:libc.musl-armv7.so.1",
@@ -17902,13 +17914,13 @@
         "so:libtasn1.so.6"
       ],
       "provides": [
-        "cmd:certtool=3.8.8-r0",
-        "cmd:gnutls-cli-debug=3.8.8-r0",
-        "cmd:gnutls-cli=3.8.8-r0",
-        "cmd:gnutls-serv=3.8.8-r0",
-        "cmd:ocsptool=3.8.8-r0",
-        "cmd:p11tool=3.8.8-r0",
-        "cmd:psktool=3.8.8-r0"
+        "cmd:certtool=3.8.11-r0",
+        "cmd:gnutls-cli-debug=3.8.11-r0",
+        "cmd:gnutls-cli=3.8.11-r0",
+        "cmd:gnutls-serv=3.8.11-r0",
+        "cmd:ocsptool=3.8.11-r0",
+        "cmd:p11tool=3.8.11-r0",
+        "cmd:psktool=3.8.11-r0"
       ]
     },
     "goaccess": {
@@ -43687,7 +43699,8 @@
     "nss": {
       "origin": "nss",
       "versions": {
-        "3.117-r0": 1760478872
+        "3.117-r0": 1760478872,
+        "3.118.1-r0": 1764193630
       },
       "dependencies": [
         "so:libc.musl-armv7.so.1",
@@ -43697,36 +43710,37 @@
         "so:libsqlite3.so.0"
       ],
       "provides": [
-        "so:libfreebl3.so=117",
-        "so:libfreeblpriv3.so=117",
-        "so:libnss3.so=117",
-        "so:libnssckbi-testlib.so=117",
-        "so:libnssckbi.so=117",
-        "so:libnsssysinit.so=117",
-        "so:libnssutil3.so=117",
-        "so:libsmime3.so=117",
-        "so:libsoftokn3.so=117",
-        "so:libssl3.so=117"
+        "so:libfreebl3.so=118",
+        "so:libfreeblpriv3.so=118",
+        "so:libnss3.so=118",
+        "so:libnssckbi-testlib.so=118",
+        "so:libnssckbi.so=118",
+        "so:libnsssysinit.so=118",
+        "so:libnssutil3.so=118",
+        "so:libsmime3.so=118",
+        "so:libsoftokn3.so=118",
+        "so:libssl3.so=118"
       ]
     },
     "nss-dev": {
       "origin": "nss",
       "versions": {
-        "3.117-r0": 1760478872
+        "3.117-r0": 1760478872,
+        "3.118.1-r0": 1764193630
       },
       "dependencies": [
-        "nss=3.117-r0",
+        "nss=3.118.1-r0",
         "nspr-dev",
         "pc:nspr>=4.36.0",
-        "pc:nss-util>=3.117",
+        "pc:nss-util>=3.118.1",
         "pkgconfig"
       ],
       "provides": [
-        "cmd:nss-config=3.117-r0",
-        "pc:mozilla-nss=3.117",
-        "pc:nss-softokn=3.117",
-        "pc:nss-util=3.117",
-        "pc:nss=3.117"
+        "cmd:nss-config=3.118.1-r0",
+        "pc:mozilla-nss=3.118.1",
+        "pc:nss-softokn=3.118.1",
+        "pc:nss-util=3.118.1",
+        "pc:nss=3.118.1"
       ]
     },
     "nss-pam-ldapd": {
@@ -43763,7 +43777,8 @@
     "nss-tools": {
       "origin": "nss",
       "versions": {
-        "3.117-r0": 1760478872
+        "3.117-r0": 1760478872,
+        "3.118.1-r0": 1764193630
       },
       "dependencies": [
         "so:libc.musl-armv7.so.1",
@@ -43777,15 +43792,15 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:certutil=3.117-r0",
-        "cmd:cmsutil=3.117-r0",
-        "cmd:crlutil=3.117-r0",
-        "cmd:modutil=3.117-r0",
-        "cmd:pk12util=3.117-r0",
-        "cmd:shlibsign=3.117-r0",
-        "cmd:signtool=3.117-r0",
-        "cmd:signver=3.117-r0",
-        "cmd:ssltap=3.117-r0"
+        "cmd:certutil=3.118.1-r0",
+        "cmd:cmsutil=3.118.1-r0",
+        "cmd:crlutil=3.118.1-r0",
+        "cmd:modutil=3.118.1-r0",
+        "cmd:pk12util=3.118.1-r0",
+        "cmd:shlibsign=3.118.1-r0",
+        "cmd:signtool=3.118.1-r0",
+        "cmd:signver=3.118.1-r0",
+        "cmd:ssltap=3.118.1-r0"
       ]
     },
     "ntfs-3g": {
@@ -51028,7 +51043,8 @@
     "perl-specio": {
       "origin": "perl-specio",
       "versions": {
-        "0.52-r0": 1755245453
+        "0.52-r0": 1755245453,
+        "0.53-r0": 1764196010
       },
       "dependencies": [
         "perl",
@@ -51047,7 +51063,8 @@
     "perl-specio-doc": {
       "origin": "perl-specio",
       "versions": {
-        "0.52-r0": 1755245453
+        "0.52-r0": 1755245453,
+        "0.53-r0": 1764196010
       }
     },
     "perl-stream-buffered": {
@@ -76615,7 +76632,7 @@
       },
       "libgnutls.so.30": {
         "package": "gnutls",
-        "version": "30.40.2"
+        "version": "30.41.0"
       },
       "libgnutlsxx.so.30": {
         "package": "gnutls-c++",
@@ -78987,43 +79004,43 @@
       },
       "libfreebl3.so": {
         "package": "nss",
-        "version": "117"
+        "version": "118"
       },
       "libfreeblpriv3.so": {
         "package": "nss",
-        "version": "117"
+        "version": "118"
       },
       "libnss3.so": {
         "package": "nss",
-        "version": "117"
+        "version": "118"
       },
       "libnssckbi-testlib.so": {
         "package": "nss",
-        "version": "117"
+        "version": "118"
       },
       "libnssckbi.so": {
         "package": "nss",
-        "version": "117"
+        "version": "118"
       },
       "libnsssysinit.so": {
         "package": "nss",
-        "version": "117"
+        "version": "118"
       },
       "libnssutil3.so": {
         "package": "nss",
-        "version": "117"
+        "version": "118"
       },
       "libsmime3.so": {
         "package": "nss",
-        "version": "117"
+        "version": "118"
       },
       "libsoftokn3.so": {
         "package": "nss",
-        "version": "117"
+        "version": "118"
       },
       "libssl3.so": {
         "package": "nss",
-        "version": "117"
+        "version": "118"
       },
       "libnss_ldap.so.2": {
         "package": "nss-pam-ldapd",
