@@ -58072,7 +58072,8 @@
       "origin": "unbound",
       "versions": {
         "1.24.0-r0": 1758319178,
-        "1.24.1-r0": 1761211981
+        "1.24.1-r0": 1761211981,
+        "1.24.2-r0": 1764183496
       },
       "dependencies": [
         "python3~3.12",
@@ -58081,8 +58082,8 @@
         "so:libunbound.so.8"
       ],
       "provides": [
-        "py-unbound=1.24.1-r0",
-        "py3.12:unbound=1.24.1-r0"
+        "py-unbound=1.24.2-r0",
+        "py3.12:unbound=1.24.2-r0"
       ]
     },
     "py3-urllib3": {
@@ -67687,7 +67688,8 @@
       "origin": "unbound",
       "versions": {
         "1.24.0-r0": 1758319178,
-        "1.24.1-r0": 1761211981
+        "1.24.1-r0": 1761211981,
+        "1.24.2-r0": 1764183496
       },
       "dependencies": [
         "dnssec-root",
@@ -67703,58 +67705,62 @@
         "so:libunbound.so.8"
       ],
       "provides": [
-        "cmd:unbound-anchor=1.24.1-r0",
-        "cmd:unbound-checkconf=1.24.1-r0",
-        "cmd:unbound-control-setup=1.24.1-r0",
-        "cmd:unbound-control=1.24.1-r0",
-        "cmd:unbound-host=1.24.1-r0",
-        "cmd:unbound=1.24.1-r0"
+        "cmd:unbound-anchor=1.24.2-r0",
+        "cmd:unbound-checkconf=1.24.2-r0",
+        "cmd:unbound-control-setup=1.24.2-r0",
+        "cmd:unbound-control=1.24.2-r0",
+        "cmd:unbound-host=1.24.2-r0",
+        "cmd:unbound=1.24.2-r0"
       ]
     },
     "unbound-dbg": {
       "origin": "unbound",
       "versions": {
         "1.24.0-r0": 1758319178,
-        "1.24.1-r0": 1761211981
+        "1.24.1-r0": 1761211981,
+        "1.24.2-r0": 1764183496
       },
       "dependencies": [
-        "!py3-unbound<1.24.1-r0",
-        "!py3-unbound>1.24.1-r0",
-        "!unbound-libs<1.24.1-r0",
-        "!unbound-libs>1.24.1-r0",
-        "!unbound<1.24.1-r0",
-        "!unbound>1.24.1-r0"
+        "!py3-unbound<1.24.2-r0",
+        "!py3-unbound>1.24.2-r0",
+        "!unbound-libs<1.24.2-r0",
+        "!unbound-libs>1.24.2-r0",
+        "!unbound<1.24.2-r0",
+        "!unbound>1.24.2-r0"
       ]
     },
     "unbound-dev": {
       "origin": "unbound",
       "versions": {
         "1.24.0-r0": 1758319178,
-        "1.24.1-r0": 1761211981
+        "1.24.1-r0": 1761211981,
+        "1.24.2-r0": 1764183496
       },
       "dependencies": [
         "expat-dev",
-        "unbound-libs=1.24.1-r0",
+        "unbound-libs=1.24.2-r0",
         "pc:libevent",
         "pc:python3",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libunbound=1.24.1"
+        "pc:libunbound=1.24.2"
       ]
     },
     "unbound-doc": {
       "origin": "unbound",
       "versions": {
         "1.24.0-r0": 1758319178,
-        "1.24.1-r0": 1761211981
+        "1.24.1-r0": 1761211981,
+        "1.24.2-r0": 1764183496
       }
     },
     "unbound-libs": {
       "origin": "unbound",
       "versions": {
         "1.24.0-r0": 1758319178,
-        "1.24.1-r0": 1761211981
+        "1.24.1-r0": 1761211981,
+        "1.24.2-r0": 1764183496
       },
       "dependencies": [
         "so:libc.musl-armv7.so.1",
@@ -67773,7 +67779,8 @@
       "origin": "unbound",
       "versions": {
         "1.24.0-r0": 1758319178,
-        "1.24.1-r0": 1761211981
+        "1.24.1-r0": 1761211981,
+        "1.24.2-r0": 1764183496
       },
       "dependencies": [
         "/bin/sh",
@@ -67781,14 +67788,15 @@
         "openrc"
       ],
       "provides": [
-        "cmd:migrate-dnscache-to-unbound=1.24.1-r0"
+        "cmd:migrate-dnscache-to-unbound=1.24.2-r0"
       ]
     },
     "unbound-openrc": {
       "origin": "unbound",
       "versions": {
         "1.24.0-r0": 1758319178,
-        "1.24.1-r0": 1761211981
+        "1.24.1-r0": 1761211981,
+        "1.24.2-r0": 1764183496
       }
     },
     "unfs3": {
@@ -73234,6 +73242,31 @@
         "so:libc.musl-armv7.so.1",
         "so:libzfs.so.6"
       ]
+    },
+    "zlib-ng": {
+      "origin": "zlib-ng",
+      "versions": {
+        "2.2.5-r0": 1764183335
+      },
+      "dependencies": [
+        "so:libc.musl-armv7.so.1"
+      ],
+      "provides": [
+        "so:libz-ng.so.2=2.2.5"
+      ]
+    },
+    "zlib-ng-dev": {
+      "origin": "zlib-ng",
+      "versions": {
+        "2.2.5-r0": 1764183335
+      },
+      "dependencies": [
+        "zlib-ng=2.2.5-r0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:zlib-ng=2.2.5"
+      ]
     }
   },
   "provide": {
@@ -74372,7 +74405,7 @@
       },
       "py-unbound": {
         "package": "py3-unbound",
-        "version": "1.24.1-r0"
+        "version": "1.24.2-r0"
       },
       "py-urllib3": {
         "package": "py3-urllib3",
@@ -81235,6 +81268,10 @@
       "libproc2.so.1": {
         "package": "libproc2",
         "version": "1.0.0"
+      },
+      "libz-ng.so.2": {
+        "package": "zlib-ng",
+        "version": "2.2.5"
       }
     }
   }
