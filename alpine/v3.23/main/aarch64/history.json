@@ -5974,7 +5974,8 @@
     "bcache-tools": {
       "origin": "bcache-tools",
       "versions": {
-        "1.1-r4": 1727879541
+        "1.1-r4": 1727879541,
+        "1.1-r5": 1764201453
       },
       "dependencies": [
         "so:libblkid.so.1",
@@ -5983,25 +5984,29 @@
         "so:libuuid.so.1"
       ],
       "provides": [
-        "cmd:bcache-super-show=1.1-r4",
-        "cmd:bcache=1.1-r4",
-        "cmd:make-bcache=1.1-r4"
+        "cmd:bcache-super-show=1.1-r5",
+        "cmd:bcache=1.1-r5",
+        "cmd:make-bcache=1.1-r5"
       ]
     },
     "bcache-tools-dbg": {
       "origin": "bcache-tools",
       "versions": {
-        "1.1-r4": 1727879541
+        "1.1-r4": 1727879541,
+        "1.1-r5": 1764201453
       },
       "dependencies": [
-        "!bcache-tools<1.1-r4",
-        "!bcache-tools>1.1-r4"
+        "!bcache-tools-udev<1.1-r5",
+        "!bcache-tools-udev>1.1-r5",
+        "!bcache-tools<1.1-r5",
+        "!bcache-tools>1.1-r5"
       ]
     },
     "bcache-tools-doc": {
       "origin": "bcache-tools",
       "versions": {
-        "1.1-r4": 1727879541
+        "1.1-r4": 1727879541,
+        "1.1-r5": 1764201453
       }
     },
     "bcnm": {
@@ -46813,20 +46818,22 @@
     "pcmciautils": {
       "origin": "pcmciautils",
       "versions": {
-        "018-r5": 1727879541
+        "018-r5": 1727879541,
+        "018-r6": 1764201453
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1"
       ],
       "provides": [
-        "cmd:lspcmcia=018-r5",
-        "cmd:pccardctl=018-r5"
+        "cmd:lspcmcia=018-r6",
+        "cmd:pccardctl=018-r6"
       ]
     },
     "pcmciautils-doc": {
       "origin": "pcmciautils",
       "versions": {
-        "018-r5": 1727879541
+        "018-r5": 1727879541,
+        "018-r6": 1764201453
       }
     },
     "pcre": {
@@ -73709,6 +73716,26 @@
       "versions": {
         "1.7.2-r7": 1764188250
       }
+    },
+    "bcache-tools-udev": {
+      "origin": "bcache-tools",
+      "versions": {
+        "1.1-r5": 1764201453
+      },
+      "dependencies": [
+        "so:libblkid.so.1",
+        "so:libc.musl-aarch64.so.1",
+        "so:libuuid.so.1"
+      ]
+    },
+    "pcmciautils-udev": {
+      "origin": "pcmciautils",
+      "versions": {
+        "018-r6": 1764201453
+      },
+      "dependencies": [
+        "so:libc.musl-aarch64.so.1"
+      ]
     }
   },
   "provide": {
