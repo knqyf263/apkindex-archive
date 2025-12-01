@@ -8414,6 +8414,38 @@ c:11098b7df0e77f82fb87d81efb6227b618467d2e
 D:so:libbz2.so.1 so:libc.musl-loongarch64.so.1 so:libgcc_s.so.1 so:liblzma.so.5 so:libsqlite3.so.0 so:libstdc++.so.6 so:libz.so.1
 p:so:libbotan-3.so.5=5.5.0
 
+C:Q1nSsODW4X03VZ9zOznvtG7sgALeA=
+P:bpftool
+V:6.18.0-r0
+A:loongarch64
+S:319919
+I:723272
+T:Linux kernel bpf manipulation tool
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:perf cpupower linux-tools-gpio linux-tools-iio so:libLLVM.so.21.1 so:libc.musl-loongarch64.so.1 so:libcap.so.2 so:libcrypto.so.3 so:libelf.so.1 so:libz.so.1
+p:cmd:bpftool=6.18.0-r0
+
+C:Q1BhObsXAxRX7NCRbxzAvjLHqncjs=
+P:bpftool-bash-completion
+V:6.18.0-r0
+A:loongarch64
+S:7205
+I:45928
+T:Bash completion for bpftool
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:perf cpupower linux-tools-gpio linux-tools-iio
+i:bpftool=6.18.0-r0 bash-completion
+
 C:Q1KF7AhlIDME/5/0q5ej5qYmfiDm0=
 P:bridge
 V:1.5-r5
@@ -10918,6 +10950,68 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1710257622
 c:fc95c59998285564fbcb0bfb2443898c62e10171
 i:docs cppunit=1.15.1-r4
+
+C:Q1EdUtZOKKZLCt3GviEKNXVSKs9Xw=
+P:cpupower
+V:6.18.0-r0
+A:loongarch64
+S:49412
+I:208399
+T:Linux kernel tool to set CPU power features
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:so:libc.musl-loongarch64.so.1 so:libintl.so.8
+p:cmd:cpufreq-bench=6.18.0-r0 cmd:cpufreq-bench_plot.sh=6.18.0-r0 cmd:cpupower=6.18.0-r0 so:libcpupower.so.1=1.0.1
+
+C:Q1m8xoO5EOSq2zZLO8GyxhLroTJh4=
+P:cpupower-bash-completion
+V:6.18.0-r0
+A:loongarch64
+S:2614
+I:3503
+T:Bash completion for cpupower
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:perf cpupower linux-tools-gpio linux-tools-iio
+i:cpupower=6.18.0-r0 bash-completion
+
+C:Q1HTHrdQWf+59zDwaUtoJXKy0Itsw=
+P:cpupower-openrc
+V:6.18.0-r0
+A:loongarch64
+S:2935
+I:2427
+T:Linux kernel tool to set CPU power features (OpenRC init scripts)
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+i:cpupower=6.18.0-r0 openrc
+
+C:Q1zK9q2RXtJnp/Sa+gr1Y0ka1MNtg=
+P:cpupower-systemd
+V:6.18.0-r0
+A:loongarch64
+S:1938
+I:405
+T:Linux kernel tool to set CPU power features (systemd files)
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+i:cpupower=6.18.0-r0 systemd
 
 C:Q1Sv21tyTyNZfkb/qWukLuqPUa/e8=
 P:cracklib
@@ -34123,6 +34217,53 @@ t:1764219005
 c:af12d1f1c56d2adf1f47130c230a745589c257be
 i:docs libtool=2.5.4-r2
 
+C:Q18ISacvALABuZdTEnhGGLHFNE+VM=
+P:libtraceevent
+V:1.8.6-r1
+A:loongarch64
+S:52319
+I:132928
+T:Linux kernel trace event library
+U:https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git
+L:LGPL-2.1-or-later AND GPL-2.0-or-later
+o:libtraceevent
+m:Achill Gilgenast <achill@achill.org>
+t:1764591679
+c:b11937253cfccdc5f22a9fe67488352392cff2e9
+D:so:libc.musl-loongarch64.so.1
+p:so:libtraceevent.so.1=1.8.6
+
+C:Q1eIKYw0deyyM55SdOGq4E0KDyF0E=
+P:libtraceevent-dev
+V:1.8.6-r1
+A:loongarch64
+S:9464
+I:28877
+T:Linux kernel trace event library (development files)
+U:https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git
+L:LGPL-2.1-or-later AND GPL-2.0-or-later
+o:libtraceevent
+m:Achill Gilgenast <achill@achill.org>
+t:1764591679
+c:b11937253cfccdc5f22a9fe67488352392cff2e9
+D:linux-headers libtraceevent=1.8.6-r1 pkgconfig
+p:pc:libtraceevent=1.8.6
+
+C:Q1cIxLPRDhSrbCOl0qb6OhG+oKmO0=
+P:libtraceevent-plugins
+V:1.8.6-r1
+A:loongarch64
+S:40034
+I:876070
+T:Linux kernel trace event library (plugins)
+U:https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git
+L:LGPL-2.1-or-later AND GPL-2.0-or-later
+o:libtraceevent
+m:Achill Gilgenast <achill@achill.org>
+t:1764591679
+c:b11937253cfccdc5f22a9fe67488352392cff2e9
+D:so:libc.musl-loongarch64.so.1 so:libtraceevent.so.1
+
 C:Q1KUckXcITamwVt2IF6LsVVa4deoQ=
 P:libturbojpeg
 V:3.1.2-r0
@@ -38864,6 +39005,146 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1763508629
 c:c0e539c3350ab50311ddb72b11be65f1b5435998
 i:systemd linux-pam=1.7.1-r1
+
+C:Q1u+SP/x7hOle5fx39pC/B0vbA74Q=
+P:linux-tools
+V:6.18.0-r0
+A:loongarch64
+S:1300
+I:0
+T:Linux kernel tools meta package
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:perf cpupower linux-tools-gpio linux-tools-iio
+
+C:Q1d6TWSI00ZPoDb1HcVWpVDrjfbfE=
+P:linux-tools-dev
+V:6.18.0-r0
+A:loongarch64
+S:50547
+I:224500
+T:Linux kernel tools meta package (development files)
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:pciutils-dev readline-dev gettext-dev cpupower=6.18.0-r0 linux-tools-usbip=6.18.0-r0
+
+C:Q1CE7vZO87MeFz3m5USAcVPxGfL3E=
+P:linux-tools-doc
+V:6.18.0-r0
+A:loongarch64
+S:213685
+I:214487
+T:Linux kernel tools meta package (documentation)
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+i:docs linux-tools=6.18.0-r0
+
+C:Q1/W1fSUtquZ9iLyxNujroYmdL3yw=
+P:linux-tools-gpio
+V:6.18.0-r0
+A:loongarch64
+S:20679
+I:268936
+T:Linux kernel GPIO tools
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:so:libc.musl-loongarch64.so.1
+p:cmd:gpio-event-mon=6.18.0-r0 cmd:gpio-hammer=6.18.0-r0 cmd:gpio-watch=6.18.0-r0 cmd:lsgpio=6.18.0-r0
+
+C:Q14WU6KT9AnV7MQTyXuWhxzorHkCo=
+P:linux-tools-iio
+V:6.18.0-r0
+A:loongarch64
+S:31187
+I:201928
+T:Linux kernel IIO tools
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:so:libc.musl-loongarch64.so.1
+p:cmd:iio_event_monitor=6.18.0-r0 cmd:iio_generic_buffer=6.18.0-r0 cmd:lsiio=6.18.0-r0
+
+C:Q15cY3gjTdmlf606bFDVFZ4OFpw60=
+P:linux-tools-spi
+V:6.18.0-r0
+A:loongarch64
+S:10983
+I:134552
+T:Linux kernel SPI tools
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:so:libc.musl-loongarch64.so.1
+p:cmd:spidev_fdx=6.18.0-r0 cmd:spidev_test=6.18.0-r0
+
+C:Q1dg78pA16n5lWO5gzh06lzpZxXpo=
+P:linux-tools-tmon
+V:6.18.0-r0
+A:loongarch64
+S:18664
+I:67632
+T:Linux kernel thermal monitor tools
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:so:libc.musl-loongarch64.so.1 so:libncursesw.so.6 so:libpanelw.so.6
+p:cmd:tmon=6.18.0-r0
+
+C:Q1TE41K/MXX2k9qVW69xf4RAfyQ2E=
+P:linux-tools-usbip
+V:6.18.0-r0
+A:loongarch64
+S:43184
+I:203340
+T:utilities for USB device sharing over IP network
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:so:libc.musl-loongarch64.so.1 so:libudev.so.1
+p:usbip-utils=6.18.0-r0 cmd:usbip=6.18.0-r0 cmd:usbipd=6.18.0-r0 so:libusbip.so.0=0.0.1
+
+C:Q1dqjuDthZF+5OdT+dh8+ZLeuPzpU=
+P:linux-tools-usbip-openrc
+V:6.18.0-r0
+A:loongarch64
+S:3595
+I:5908
+T:utilities for USB device sharing over IP network (OpenRC init scripts)
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+i:linux-tools-usbip=6.18.0-r0 openrc
 
 C:Q12VhoWEBvvXmYF45Qhi4RFaruIQA=
 P:lksctp-tools
@@ -56506,6 +56787,38 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1710257622
 c:fc95c59998285564fbcb0bfb2443898c62e10171
 i:openrc perdition=2.2-r6
+
+C:Q1LBGXkubCVNbgmyXb+XZYquEBNME=
+P:perf
+V:6.18.0-r0
+A:loongarch64
+S:2031298
+I:5402002
+T:Linux kernel performance auditing tool
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:libtraceevent-plugins so:libLLVM.so.21.1 so:libc.musl-loongarch64.so.1 so:libdw.so.1 so:libelf.so.1 so:liblzma.so.5 so:libnuma.so.1 so:libpython3.12.so.1.0 so:libslang.so.2 so:libstdc++.so.6 so:libtraceevent.so.1 so:libz.so.1 so:libzstd.so.1
+p:cmd:perf=6.18.0-r0 cmd:trace=6.18.0-r0
+
+C:Q1FWMT7QMm3HR2alZE4o1Rc/ip9+g=
+P:perf-bash-completion
+V:6.18.0-r0
+A:loongarch64
+S:4117
+I:7070
+T:Bash completion for perf
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:perf cpupower linux-tools-gpio linux-tools-iio
+i:perf=6.18.0-r0 bash-completion
 
 C:Q1JvFl41KpN0jcreDZa81FlpbpcKg=
 P:perl

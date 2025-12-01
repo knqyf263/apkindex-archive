@@ -8400,6 +8400,38 @@ c:11098b7df0e77f82fb87d81efb6227b618467d2e
 D:so:libbz2.so.1 so:libc.musl-riscv64.so.1 so:libgcc_s.so.1 so:liblzma.so.5 so:libsqlite3.so.0 so:libstdc++.so.6 so:libz.so.1
 p:so:libbotan-3.so.5=5.5.0
 
+C:Q12TGiXc78nG8p02N01qhXV8oQ1zc=
+P:bpftool
+V:6.18.0-r0
+A:riscv64
+S:301252
+I:575856
+T:Linux kernel bpf manipulation tool
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:perf cpupower linux-tools-gpio linux-tools-iio so:libLLVM.so.21.1 so:libc.musl-riscv64.so.1 so:libcap.so.2 so:libcrypto.so.3 so:libelf.so.1 so:libz.so.1
+p:cmd:bpftool=6.18.0-r0
+
+C:Q1BhObsXAxRX7NCRbxzAvjLHqncjs=
+P:bpftool-bash-completion
+V:6.18.0-r0
+A:riscv64
+S:6938
+I:45928
+T:Bash completion for bpftool
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:perf cpupower linux-tools-gpio linux-tools-iio
+i:bpftool=6.18.0-r0 bash-completion
+
 C:Q1KF7AhlIDME/5/0q5ej5qYmfiDm0=
 P:bridge
 V:1.5-r5
@@ -10904,6 +10936,68 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1710257622
 c:fc95c59998285564fbcb0bfb2443898c62e10171
 i:docs cppunit=1.15.1-r4
+
+C:Q1lAfFEMyH/XWhS5O4JBS+RnXj/MY=
+P:cpupower
+V:6.18.0-r0
+A:riscv64
+S:47417
+I:110255
+T:Linux kernel tool to set CPU power features
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:so:libc.musl-riscv64.so.1 so:libintl.so.8
+p:cmd:cpufreq-bench=6.18.0-r0 cmd:cpufreq-bench_plot.sh=6.18.0-r0 cmd:cpupower=6.18.0-r0 so:libcpupower.so.1=1.0.1
+
+C:Q1m8xoO5EOSq2zZLO8GyxhLroTJh4=
+P:cpupower-bash-completion
+V:6.18.0-r0
+A:riscv64
+S:2348
+I:3503
+T:Bash completion for cpupower
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:perf cpupower linux-tools-gpio linux-tools-iio
+i:cpupower=6.18.0-r0 bash-completion
+
+C:Q1HTHrdQWf+59zDwaUtoJXKy0Itsw=
+P:cpupower-openrc
+V:6.18.0-r0
+A:riscv64
+S:2667
+I:2427
+T:Linux kernel tool to set CPU power features (OpenRC init scripts)
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+i:cpupower=6.18.0-r0 openrc
+
+C:Q1zK9q2RXtJnp/Sa+gr1Y0ka1MNtg=
+P:cpupower-systemd
+V:6.18.0-r0
+A:riscv64
+S:1674
+I:405
+T:Linux kernel tool to set CPU power features (systemd files)
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+i:cpupower=6.18.0-r0 systemd
 
 C:Q17msPzVlFVOYYEUNsT6zXdSDbL3I=
 P:cracklib
@@ -34140,6 +34234,53 @@ t:1764219005
 c:af12d1f1c56d2adf1f47130c230a745589c257be
 i:docs libtool=2.5.4-r2
 
+C:Q1do0tXnksShA4JG+VggcwJXL7Svg=
+P:libtraceevent
+V:1.8.6-r1
+A:riscv64
+S:51036
+I:92024
+T:Linux kernel trace event library
+U:https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git
+L:LGPL-2.1-or-later AND GPL-2.0-or-later
+o:libtraceevent
+m:Achill Gilgenast <achill@achill.org>
+t:1764591679
+c:b11937253cfccdc5f22a9fe67488352392cff2e9
+D:so:libc.musl-riscv64.so.1
+p:so:libtraceevent.so.1=1.8.6
+
+C:Q1GnhTzEXT4ilUFcAFXQ/EumzwSF8=
+P:libtraceevent-dev
+V:1.8.6-r1
+A:riscv64
+S:9197
+I:28877
+T:Linux kernel trace event library (development files)
+U:https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git
+L:LGPL-2.1-or-later AND GPL-2.0-or-later
+o:libtraceevent
+m:Achill Gilgenast <achill@achill.org>
+t:1764591679
+c:b11937253cfccdc5f22a9fe67488352392cff2e9
+D:linux-headers libtraceevent=1.8.6-r1 pkgconfig
+p:pc:libtraceevent=1.8.6
+
+C:Q1K+ciOAVBvWe/KRXdIU2k4dGJ63E=
+P:libtraceevent-plugins
+V:1.8.6-r1
+A:riscv64
+S:25737
+I:111558
+T:Linux kernel trace event library (plugins)
+U:https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git
+L:LGPL-2.1-or-later AND GPL-2.0-or-later
+o:libtraceevent
+m:Achill Gilgenast <achill@achill.org>
+t:1764591679
+c:b11937253cfccdc5f22a9fe67488352392cff2e9
+D:so:libc.musl-riscv64.so.1 so:libtraceevent.so.1
+
 C:Q1I8TRdl/28j/Cklhqn+d/kAhlGcY=
 P:libturbojpeg
 V:3.1.2-r0
@@ -38881,6 +39022,146 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1763508629
 c:c0e539c3350ab50311ddb72b11be65f1b5435998
 i:systemd linux-pam=1.7.1-r1
+
+C:Q1bMf1l3p2dd11NDLd8bqGznQQooQ=
+P:linux-tools
+V:6.18.0-r0
+A:riscv64
+S:1033
+I:0
+T:Linux kernel tools meta package
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:perf cpupower linux-tools-gpio linux-tools-iio
+
+C:Q1kLuW9siZHtk7V3rY+99cDIQHdWI=
+P:linux-tools-dev
+V:6.18.0-r0
+A:riscv64
+S:57607
+I:266868
+T:Linux kernel tools meta package (development files)
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:pciutils-dev readline-dev gettext-dev cpupower=6.18.0-r0 linux-tools-usbip=6.18.0-r0
+
+C:Q1CE7vZO87MeFz3m5USAcVPxGfL3E=
+P:linux-tools-doc
+V:6.18.0-r0
+A:riscv64
+S:213419
+I:214487
+T:Linux kernel tools meta package (documentation)
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+i:docs linux-tools=6.18.0-r0
+
+C:Q1ZU5Ld0c8evtKmq24nN6YVbr7bfw=
+P:linux-tools-gpio
+V:6.18.0-r0
+A:riscv64
+S:13237
+I:48160
+T:Linux kernel GPIO tools
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:so:libc.musl-riscv64.so.1
+p:cmd:gpio-event-mon=6.18.0-r0 cmd:gpio-hammer=6.18.0-r0 cmd:gpio-watch=6.18.0-r0 cmd:lsgpio=6.18.0-r0
+
+C:Q1336MeIvlpOdTbJiDzlbBhMRhumQ=
+P:linux-tools-iio
+V:6.18.0-r0
+A:riscv64
+S:21667
+I:62824
+T:Linux kernel IIO tools
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:so:libc.musl-riscv64.so.1
+p:cmd:iio_event_monitor=6.18.0-r0 cmd:iio_generic_buffer=6.18.0-r0 cmd:lsiio=6.18.0-r0
+
+C:Q1EEBGVSQyFY7r2b3iLK/vk8ilvLY=
+P:linux-tools-spi
+V:6.18.0-r0
+A:riscv64
+S:9030
+I:24128
+T:Linux kernel SPI tools
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:so:libc.musl-riscv64.so.1
+p:cmd:spidev_fdx=6.18.0-r0 cmd:spidev_test=6.18.0-r0
+
+C:Q12vcOuK2rk9UZ7RCNZ5W8fSN61n0=
+P:linux-tools-tmon
+V:6.18.0-r0
+A:riscv64
+S:17303
+I:34896
+T:Linux kernel thermal monitor tools
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:so:libc.musl-riscv64.so.1 so:libncursesw.so.6 so:libpanelw.so.6
+p:cmd:tmon=6.18.0-r0
+
+C:Q1fa6rnMaYfEPknyaliSkWiiCNv6c=
+P:linux-tools-usbip
+V:6.18.0-r0
+A:riscv64
+S:43020
+I:101092
+T:utilities for USB device sharing over IP network
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:so:libc.musl-riscv64.so.1 so:libudev.so.1
+p:usbip-utils=6.18.0-r0 cmd:usbip=6.18.0-r0 cmd:usbipd=6.18.0-r0 so:libusbip.so.0=0.0.1
+
+C:Q1dqjuDthZF+5OdT+dh8+ZLeuPzpU=
+P:linux-tools-usbip-openrc
+V:6.18.0-r0
+A:riscv64
+S:3329
+I:5908
+T:utilities for USB device sharing over IP network (OpenRC init scripts)
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+i:linux-tools-usbip=6.18.0-r0 openrc
 
 C:Q1+btFd7MzDUnAZfYB2yYo5wbcks8=
 P:lksctp-tools
@@ -56377,6 +56658,38 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1710257622
 c:fc95c59998285564fbcb0bfb2443898c62e10171
 i:openrc perdition=2.2-r6
+
+C:Q15+Nr+1hb7OWIMLxLJEz2n+BO7Lc=
+P:perf
+V:6.18.0-r0
+A:riscv64
+S:1992468
+I:4718866
+T:Linux kernel performance auditing tool
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:libtraceevent-plugins so:libLLVM.so.21.1 so:libc.musl-riscv64.so.1 so:libdw.so.1 so:libelf.so.1 so:liblzma.so.5 so:libnuma.so.1 so:libpython3.12.so.1.0 so:libslang.so.2 so:libstdc++.so.6 so:libtraceevent.so.1 so:libz.so.1 so:libzstd.so.1
+p:cmd:perf=6.18.0-r0 cmd:trace=6.18.0-r0
+
+C:Q1FWMT7QMm3HR2alZE4o1Rc/ip9+g=
+P:perf-bash-completion
+V:6.18.0-r0
+A:riscv64
+S:3851
+I:7070
+T:Bash completion for perf
+U:https://www.kernel.org/
+L:GPL-2.0-only
+o:linux-tools
+m:Achill Gilgenast <achill@achill.org>
+t:1764591631
+c:c5ad57f9b77cc8c300df3cd57a2edcd2aef88391
+D:perf cpupower linux-tools-gpio linux-tools-iio
+i:perf=6.18.0-r0 bash-completion
 
 C:Q1TwhzTohzIEQVPek9emlr5leAUR8=
 P:perl

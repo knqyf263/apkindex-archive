@@ -72806,6 +72806,261 @@
       "provides": [
         "linux-firmware-any"
       ]
+    },
+    "bpftool": {
+      "origin": "linux-tools",
+      "versions": {
+        "6.18.0-r0": 1764591631
+      },
+      "dependencies": [
+        "perf",
+        "cpupower",
+        "linux-tools-gpio",
+        "linux-tools-iio",
+        "so:libLLVM.so.21.1",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcap.so.2",
+        "so:libcrypto.so.3",
+        "so:libelf.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:bpftool=6.18.0-r0"
+      ]
+    },
+    "bpftool-bash-completion": {
+      "origin": "linux-tools",
+      "versions": {
+        "6.18.0-r0": 1764591631
+      },
+      "dependencies": [
+        "perf",
+        "cpupower",
+        "linux-tools-gpio",
+        "linux-tools-iio"
+      ]
+    },
+    "cpupower": {
+      "origin": "linux-tools",
+      "versions": {
+        "6.18.0-r0": 1764591631
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1",
+        "so:libintl.so.8"
+      ],
+      "provides": [
+        "cmd:cpufreq-bench=6.18.0-r0",
+        "cmd:cpufreq-bench_plot.sh=6.18.0-r0",
+        "cmd:cpupower=6.18.0-r0",
+        "so:libcpupower.so.1=1.0.1"
+      ]
+    },
+    "cpupower-bash-completion": {
+      "origin": "linux-tools",
+      "versions": {
+        "6.18.0-r0": 1764591631
+      },
+      "dependencies": [
+        "perf",
+        "cpupower",
+        "linux-tools-gpio",
+        "linux-tools-iio"
+      ]
+    },
+    "cpupower-openrc": {
+      "origin": "linux-tools",
+      "versions": {
+        "6.18.0-r0": 1764591631
+      }
+    },
+    "cpupower-systemd": {
+      "origin": "linux-tools",
+      "versions": {
+        "6.18.0-r0": 1764591631
+      }
+    },
+    "libtraceevent": {
+      "origin": "libtraceevent",
+      "versions": {
+        "1.8.6-r1": 1764591679
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1"
+      ],
+      "provides": [
+        "so:libtraceevent.so.1=1.8.6"
+      ]
+    },
+    "libtraceevent-dev": {
+      "origin": "libtraceevent",
+      "versions": {
+        "1.8.6-r1": 1764591679
+      },
+      "dependencies": [
+        "linux-headers",
+        "libtraceevent=1.8.6-r1",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libtraceevent=1.8.6"
+      ]
+    },
+    "libtraceevent-plugins": {
+      "origin": "libtraceevent",
+      "versions": {
+        "1.8.6-r1": 1764591679
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1",
+        "so:libtraceevent.so.1"
+      ]
+    },
+    "linux-tools": {
+      "origin": "linux-tools",
+      "versions": {
+        "6.18.0-r0": 1764591631
+      },
+      "dependencies": [
+        "perf",
+        "cpupower",
+        "linux-tools-gpio",
+        "linux-tools-iio"
+      ]
+    },
+    "linux-tools-dev": {
+      "origin": "linux-tools",
+      "versions": {
+        "6.18.0-r0": 1764591631
+      },
+      "dependencies": [
+        "pciutils-dev",
+        "readline-dev",
+        "gettext-dev",
+        "cpupower=6.18.0-r0",
+        "linux-tools-usbip=6.18.0-r0"
+      ]
+    },
+    "linux-tools-doc": {
+      "origin": "linux-tools",
+      "versions": {
+        "6.18.0-r0": 1764591631
+      }
+    },
+    "linux-tools-gpio": {
+      "origin": "linux-tools",
+      "versions": {
+        "6.18.0-r0": 1764591631
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1"
+      ],
+      "provides": [
+        "cmd:gpio-event-mon=6.18.0-r0",
+        "cmd:gpio-hammer=6.18.0-r0",
+        "cmd:gpio-watch=6.18.0-r0",
+        "cmd:lsgpio=6.18.0-r0"
+      ]
+    },
+    "linux-tools-iio": {
+      "origin": "linux-tools",
+      "versions": {
+        "6.18.0-r0": 1764591631
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1"
+      ],
+      "provides": [
+        "cmd:iio_event_monitor=6.18.0-r0",
+        "cmd:iio_generic_buffer=6.18.0-r0",
+        "cmd:lsiio=6.18.0-r0"
+      ]
+    },
+    "linux-tools-spi": {
+      "origin": "linux-tools",
+      "versions": {
+        "6.18.0-r0": 1764591631
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1"
+      ],
+      "provides": [
+        "cmd:spidev_fdx=6.18.0-r0",
+        "cmd:spidev_test=6.18.0-r0"
+      ]
+    },
+    "linux-tools-tmon": {
+      "origin": "linux-tools",
+      "versions": {
+        "6.18.0-r0": 1764591631
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1",
+        "so:libncursesw.so.6",
+        "so:libpanelw.so.6"
+      ],
+      "provides": [
+        "cmd:tmon=6.18.0-r0"
+      ]
+    },
+    "linux-tools-usbip": {
+      "origin": "linux-tools",
+      "versions": {
+        "6.18.0-r0": 1764591631
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1",
+        "so:libudev.so.1"
+      ],
+      "provides": [
+        "usbip-utils=6.18.0-r0",
+        "cmd:usbip=6.18.0-r0",
+        "cmd:usbipd=6.18.0-r0",
+        "so:libusbip.so.0=0.0.1"
+      ]
+    },
+    "linux-tools-usbip-openrc": {
+      "origin": "linux-tools",
+      "versions": {
+        "6.18.0-r0": 1764591631
+      }
+    },
+    "perf": {
+      "origin": "linux-tools",
+      "versions": {
+        "6.18.0-r0": 1764591631
+      },
+      "dependencies": [
+        "libtraceevent-plugins",
+        "so:libLLVM.so.21.1",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libdw.so.1",
+        "so:libelf.so.1",
+        "so:liblzma.so.5",
+        "so:libnuma.so.1",
+        "so:libpython3.12.so.1.0",
+        "so:libslang.so.2",
+        "so:libstdc++.so.6",
+        "so:libtraceevent.so.1",
+        "so:libz.so.1",
+        "so:libzstd.so.1"
+      ],
+      "provides": [
+        "cmd:perf=6.18.0-r0",
+        "cmd:trace=6.18.0-r0"
+      ]
+    },
+    "perf-bash-completion": {
+      "origin": "linux-tools",
+      "versions": {
+        "6.18.0-r0": 1764591631
+      },
+      "dependencies": [
+        "perf",
+        "cpupower",
+        "linux-tools-gpio",
+        "linux-tools-iio"
+      ]
     }
   },
   "provide": {
@@ -74249,6 +74504,10 @@
       "limine-x86_64": {
         "package": "limine-efi-x86_64",
         "version": "10.4.0-r0"
+      },
+      "usbip-utils": {
+        "package": "linux-tools-usbip",
+        "version": "6.18.0-r0"
       }
     },
     "so": {
@@ -80635,6 +80894,18 @@
       "libz-ng.so.2": {
         "package": "zlib-ng",
         "version": "2.3.1"
+      },
+      "libcpupower.so.1": {
+        "package": "cpupower",
+        "version": "1.0.1"
+      },
+      "libtraceevent.so.1": {
+        "package": "libtraceevent",
+        "version": "1.8.6"
+      },
+      "libusbip.so.0": {
+        "package": "linux-tools-usbip",
+        "version": "0.0.1"
       }
     }
   }
