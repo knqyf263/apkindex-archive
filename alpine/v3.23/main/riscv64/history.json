@@ -4633,7 +4633,8 @@
     "asterisk": {
       "origin": "asterisk",
       "versions": {
-        "20.15.2-r0": 1759012896
+        "20.15.2-r0": 1759012896,
+        "20.15.2-r1": 1764624254
       },
       "dependencies": [
         "/bin/sh",
@@ -4646,13 +4647,13 @@
         "so:libgcc_s.so.1",
         "so:libjansson.so.4",
         "so:liblua.so.5",
-        "so:libpj.so.2.15.1",
-        "so:libpjlib-util.so.2.15.1",
-        "so:libpjmedia.so.2.15.1",
-        "so:libpjnath.so.2.15.1",
-        "so:libpjsip-simple.so.2.15.1",
-        "so:libpjsip-ua.so.2.15.1",
-        "so:libpjsip.so.2.15.1",
+        "so:libpj.so.2.16",
+        "so:libpjlib-util.so.2.16",
+        "so:libpjmedia.so.2.16",
+        "so:libpjnath.so.2.16",
+        "so:libpjsip-simple.so.2.16",
+        "so:libpjsip-ua.so.2.16",
+        "so:libpjsip.so.2.16",
         "so:libportaudio.so.2",
         "so:libsqlite3.so.0",
         "so:libssl.so.3",
@@ -4662,22 +4663,23 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:astcanary=20.15.2-r0",
-        "cmd:astdb2bdb=20.15.2-r0",
-        "cmd:astdb2sqlite3=20.15.2-r0",
-        "cmd:asterisk=20.15.2-r0",
-        "cmd:astgenkey=20.15.2-r0",
-        "cmd:astversion=20.15.2-r0",
-        "cmd:autosupport=20.15.2-r0",
-        "cmd:rasterisk=20.15.2-r0",
-        "cmd:safe_asterisk=20.15.2-r0",
+        "cmd:astcanary=20.15.2-r1",
+        "cmd:astdb2bdb=20.15.2-r1",
+        "cmd:astdb2sqlite3=20.15.2-r1",
+        "cmd:asterisk=20.15.2-r1",
+        "cmd:astgenkey=20.15.2-r1",
+        "cmd:astversion=20.15.2-r1",
+        "cmd:autosupport=20.15.2-r1",
+        "cmd:rasterisk=20.15.2-r1",
+        "cmd:safe_asterisk=20.15.2-r1",
         "so:libasteriskssl.so.1=1"
       ]
     },
     "asterisk-alsa": {
       "origin": "asterisk",
       "versions": {
-        "20.15.2-r0": 1759012896
+        "20.15.2-r0": 1759012896,
+        "20.15.2-r1": 1764624254
       },
       "dependencies": [
         "so:libasound.so.2",
@@ -4687,7 +4689,8 @@
     "asterisk-curl": {
       "origin": "asterisk",
       "versions": {
-        "20.15.2-r0": 1759012896
+        "20.15.2-r0": 1759012896,
+        "20.15.2-r1": 1764624254
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -4697,57 +4700,61 @@
     "asterisk-dbg": {
       "origin": "asterisk",
       "versions": {
-        "20.15.2-r0": 1759012896
+        "20.15.2-r0": 1759012896,
+        "20.15.2-r1": 1764624254
       },
       "dependencies": [
-        "!asterisk-alsa<20.15.2-r0",
-        "!asterisk-alsa>20.15.2-r0",
-        "!asterisk-curl<20.15.2-r0",
-        "!asterisk-curl>20.15.2-r0",
-        "!asterisk-fax<20.15.2-r0",
-        "!asterisk-fax>20.15.2-r0",
-        "!asterisk-ldap<20.15.2-r0",
-        "!asterisk-ldap>20.15.2-r0",
-        "!asterisk-mobile<20.15.2-r0",
-        "!asterisk-mobile>20.15.2-r0",
-        "!asterisk-odbc<20.15.2-r0",
-        "!asterisk-odbc>20.15.2-r0",
-        "!asterisk-opus<20.15.2-r0",
-        "!asterisk-opus>20.15.2-r0",
-        "!asterisk-pgsql<20.15.2-r0",
-        "!asterisk-pgsql>20.15.2-r0",
-        "!asterisk-prometheus<20.15.2-r0",
-        "!asterisk-prometheus>20.15.2-r0",
-        "!asterisk-speex<20.15.2-r0",
-        "!asterisk-speex>20.15.2-r0",
-        "!asterisk-srtp<20.15.2-r0",
-        "!asterisk-srtp>20.15.2-r0",
-        "!asterisk-tds<20.15.2-r0",
-        "!asterisk-tds>20.15.2-r0",
-        "!asterisk<20.15.2-r0",
-        "!asterisk>20.15.2-r0"
+        "!asterisk-alsa<20.15.2-r1",
+        "!asterisk-alsa>20.15.2-r1",
+        "!asterisk-curl<20.15.2-r1",
+        "!asterisk-curl>20.15.2-r1",
+        "!asterisk-fax<20.15.2-r1",
+        "!asterisk-fax>20.15.2-r1",
+        "!asterisk-ldap<20.15.2-r1",
+        "!asterisk-ldap>20.15.2-r1",
+        "!asterisk-mobile<20.15.2-r1",
+        "!asterisk-mobile>20.15.2-r1",
+        "!asterisk-odbc<20.15.2-r1",
+        "!asterisk-odbc>20.15.2-r1",
+        "!asterisk-opus<20.15.2-r1",
+        "!asterisk-opus>20.15.2-r1",
+        "!asterisk-pgsql<20.15.2-r1",
+        "!asterisk-pgsql>20.15.2-r1",
+        "!asterisk-prometheus<20.15.2-r1",
+        "!asterisk-prometheus>20.15.2-r1",
+        "!asterisk-speex<20.15.2-r1",
+        "!asterisk-speex>20.15.2-r1",
+        "!asterisk-srtp<20.15.2-r1",
+        "!asterisk-srtp>20.15.2-r1",
+        "!asterisk-tds<20.15.2-r1",
+        "!asterisk-tds>20.15.2-r1",
+        "!asterisk<20.15.2-r1",
+        "!asterisk>20.15.2-r1"
       ]
     },
     "asterisk-dev": {
       "origin": "asterisk",
       "versions": {
-        "20.15.2-r0": 1759012896
+        "20.15.2-r0": 1759012896,
+        "20.15.2-r1": 1764624254
       },
       "dependencies": [
-        "asterisk=20.15.2-r0",
-        "asterisk=20.15.2-r0"
+        "asterisk=20.15.2-r1",
+        "asterisk=20.15.2-r1"
       ]
     },
     "asterisk-doc": {
       "origin": "asterisk",
       "versions": {
-        "20.15.2-r0": 1759012896
+        "20.15.2-r0": 1759012896,
+        "20.15.2-r1": 1764624254
       }
     },
     "asterisk-fax": {
       "origin": "asterisk",
       "versions": {
-        "20.15.2-r0": 1759012896
+        "20.15.2-r0": 1759012896,
+        "20.15.2-r1": 1764624254
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -4757,7 +4764,8 @@
     "asterisk-ldap": {
       "origin": "asterisk",
       "versions": {
-        "20.15.2-r0": 1759012896
+        "20.15.2-r0": 1759012896,
+        "20.15.2-r1": 1764624254
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -4767,7 +4775,8 @@
     "asterisk-mobile": {
       "origin": "asterisk",
       "versions": {
-        "20.15.2-r0": 1759012896
+        "20.15.2-r0": 1759012896,
+        "20.15.2-r1": 1764624254
       },
       "dependencies": [
         "so:libbluetooth.so.3",
@@ -4777,7 +4786,8 @@
     "asterisk-odbc": {
       "origin": "asterisk",
       "versions": {
-        "20.15.2-r0": 1759012896
+        "20.15.2-r0": 1759012896,
+        "20.15.2-r1": 1764624254
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -4787,13 +4797,15 @@
     "asterisk-openrc": {
       "origin": "asterisk",
       "versions": {
-        "20.15.2-r0": 1759012896
+        "20.15.2-r0": 1759012896,
+        "20.15.2-r1": 1764624254
       }
     },
     "asterisk-opus": {
       "origin": "asterisk",
       "versions": {
-        "20.15.2-r0": 1759012896
+        "20.15.2-r0": 1759012896,
+        "20.15.2-r1": 1764624254
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -4803,7 +4815,8 @@
     "asterisk-pgsql": {
       "origin": "asterisk",
       "versions": {
-        "20.15.2-r0": 1759012896
+        "20.15.2-r0": 1759012896,
+        "20.15.2-r1": 1764624254
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -4813,7 +4826,8 @@
     "asterisk-prometheus": {
       "origin": "asterisk",
       "versions": {
-        "20.15.2-r0": 1759012896
+        "20.15.2-r0": 1759012896,
+        "20.15.2-r1": 1764624254
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1"
@@ -4822,25 +4836,29 @@
     "asterisk-sample-config": {
       "origin": "asterisk",
       "versions": {
-        "20.15.2-r0": 1759012896
+        "20.15.2-r0": 1759012896,
+        "20.15.2-r1": 1764624254
       }
     },
     "asterisk-sounds-en": {
       "origin": "asterisk",
       "versions": {
-        "20.15.2-r0": 1759012896
+        "20.15.2-r0": 1759012896,
+        "20.15.2-r1": 1764624254
       }
     },
     "asterisk-sounds-moh": {
       "origin": "asterisk",
       "versions": {
-        "20.15.2-r0": 1759012896
+        "20.15.2-r0": 1759012896,
+        "20.15.2-r1": 1764624254
       }
     },
     "asterisk-speex": {
       "origin": "asterisk",
       "versions": {
-        "20.15.2-r0": 1759012896
+        "20.15.2-r0": 1759012896,
+        "20.15.2-r1": 1764624254
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -4852,7 +4870,8 @@
     "asterisk-srtp": {
       "origin": "asterisk",
       "versions": {
-        "20.15.2-r0": 1759012896
+        "20.15.2-r0": 1759012896,
+        "20.15.2-r1": 1764624254
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -4863,7 +4882,8 @@
     "asterisk-tds": {
       "origin": "asterisk",
       "versions": {
-        "20.15.2-r0": 1759012896
+        "20.15.2-r0": 1759012896,
+        "20.15.2-r1": 1764624254
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -7706,7 +7726,8 @@
     "brotli": {
       "origin": "brotli",
       "versions": {
-        "1.1.0-r2": 1730669024
+        "1.1.0-r2": 1730669024,
+        "1.2.0-r0": 1764636125
       },
       "dependencies": [
         "so:libbrotlidec.so.1",
@@ -7714,50 +7735,54 @@
         "so:libc.musl-riscv64.so.1"
       ],
       "provides": [
-        "cmd:brotli=1.1.0-r2"
+        "cmd:brotli=1.2.0-r0"
       ]
     },
     "brotli-dev": {
       "origin": "brotli",
       "versions": {
-        "1.1.0-r2": 1730669024
+        "1.1.0-r2": 1730669024,
+        "1.2.0-r0": 1764636125
       },
       "dependencies": [
-        "brotli=1.1.0-r2",
-        "brotli-libs=1.1.0-r2",
-        "pc:libbrotlicommon>=1.1.0",
+        "brotli=1.2.0-r0",
+        "brotli-libs=1.2.0-r0",
+        "pc:libbrotlicommon>=1.2.0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libbrotlicommon=1.1.0",
-        "pc:libbrotlidec=1.1.0",
-        "pc:libbrotlienc=1.1.0"
+        "pc:libbrotlicommon=1.2.0",
+        "pc:libbrotlidec=1.2.0",
+        "pc:libbrotlienc=1.2.0"
       ]
     },
     "brotli-doc": {
       "origin": "brotli",
       "versions": {
-        "1.1.0-r2": 1730669024
+        "1.1.0-r2": 1730669024,
+        "1.2.0-r0": 1764636125
       }
     },
     "brotli-libs": {
       "origin": "brotli",
       "versions": {
-        "1.1.0-r2": 1730669024
+        "1.1.0-r2": 1730669024,
+        "1.2.0-r0": 1764636125
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1"
       ],
       "provides": [
-        "so:libbrotlicommon.so.1=1.1.0",
-        "so:libbrotlidec.so.1=1.1.0",
-        "so:libbrotlienc.so.1=1.1.0"
+        "so:libbrotlicommon.so.1=1.2.0",
+        "so:libbrotlidec.so.1=1.2.0",
+        "so:libbrotlienc.so.1=1.2.0"
       ]
     },
     "brotli-static": {
       "origin": "brotli",
       "versions": {
-        "1.1.0-r2": 1730669024
+        "1.1.0-r2": 1730669024,
+        "1.2.0-r0": 1764636125
       }
     },
     "bsd-compat-headers": {
@@ -7770,7 +7795,8 @@
       "origin": "btrfs-progs",
       "versions": {
         "6.17-r0": 1759225689,
-        "6.17-r1": 1764188250
+        "6.17-r1": 1764188250,
+        "6.17.1-r0": 1764647848
       },
       "dependencies": [
         "so:libblkid.so.1",
@@ -7782,46 +7808,50 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:btrfs=6.17-r1",
-        "cmd:btrfsck=6.17-r1",
-        "cmd:fsck.btrfs=6.17-r1",
-        "cmd:mkfs.btrfs=6.17-r1"
+        "cmd:btrfs=6.17.1-r0",
+        "cmd:btrfsck=6.17.1-r0",
+        "cmd:fsck.btrfs=6.17.1-r0",
+        "cmd:mkfs.btrfs=6.17.1-r0"
       ]
     },
     "btrfs-progs-bash-completion": {
       "origin": "btrfs-progs",
       "versions": {
         "6.17-r0": 1759225689,
-        "6.17-r1": 1764188250
+        "6.17-r1": 1764188250,
+        "6.17.1-r0": 1764647848
       }
     },
     "btrfs-progs-dev": {
       "origin": "btrfs-progs",
       "versions": {
         "6.17-r0": 1759225689,
-        "6.17-r1": 1764188250
+        "6.17-r1": 1764188250,
+        "6.17.1-r0": 1764647848
       },
       "dependencies": [
         "linux-headers",
-        "btrfs-progs-libs=6.17-r1",
+        "btrfs-progs-libs=6.17.1-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libbtrfsutil=6.17"
+        "pc:libbtrfsutil=6.17.1"
       ]
     },
     "btrfs-progs-doc": {
       "origin": "btrfs-progs",
       "versions": {
         "6.17-r0": 1759225689,
-        "6.17-r1": 1764188250
+        "6.17-r1": 1764188250,
+        "6.17.1-r0": 1764647848
       }
     },
     "btrfs-progs-extra": {
       "origin": "btrfs-progs",
       "versions": {
         "6.17-r0": 1759225689,
-        "6.17-r1": 1764188250
+        "6.17-r1": 1764188250,
+        "6.17.1-r0": 1764647848
       },
       "dependencies": [
         "btrfs-progs",
@@ -7834,19 +7864,20 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:btrfs-convert=6.17-r1",
-        "cmd:btrfs-find-root=6.17-r1",
-        "cmd:btrfs-image=6.17-r1",
-        "cmd:btrfs-map-logical=6.17-r1",
-        "cmd:btrfs-select-super=6.17-r1",
-        "cmd:btrfstune=6.17-r1"
+        "cmd:btrfs-convert=6.17.1-r0",
+        "cmd:btrfs-find-root=6.17.1-r0",
+        "cmd:btrfs-image=6.17.1-r0",
+        "cmd:btrfs-map-logical=6.17.1-r0",
+        "cmd:btrfs-select-super=6.17.1-r0",
+        "cmd:btrfstune=6.17.1-r0"
       ]
     },
     "btrfs-progs-libs": {
       "origin": "btrfs-progs",
       "versions": {
         "6.17-r0": 1759225689,
-        "6.17-r1": 1764188250
+        "6.17-r1": 1764188250,
+        "6.17.1-r0": 1764647848
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1"
@@ -7860,14 +7891,16 @@
       "origin": "btrfs-progs",
       "versions": {
         "6.17-r0": 1759225689,
-        "6.17-r1": 1764188250
+        "6.17-r1": 1764188250,
+        "6.17.1-r0": 1764647848
       }
     },
     "btrfs-progs-static": {
       "origin": "btrfs-progs",
       "versions": {
         "6.17-r0": 1759225689,
-        "6.17-r1": 1764188250
+        "6.17-r1": 1764188250,
+        "6.17.1-r0": 1764647848
       }
     },
     "bubblewrap": {
@@ -15618,7 +15651,8 @@
         "1.5.6-r0": 1757587790,
         "1.5.7-r0": 1761850787,
         "1.5.8-r0": 1762103467,
-        "1.5.9-r0": 1763656189
+        "1.5.9-r0": 1763656189,
+        "1.5.10-r0": 1764678239
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -15629,15 +15663,15 @@
         "so:libssl.so.3"
       ],
       "provides": [
-        "cmd:bsqldb=1.5.9-r0",
-        "cmd:bsqlodbc=1.5.9-r0",
-        "cmd:datacopy=1.5.9-r0",
-        "cmd:defncopy=1.5.9-r0",
-        "cmd:fisql=1.5.9-r0",
-        "cmd:freebcp=1.5.9-r0",
-        "cmd:osql=1.5.9-r0",
-        "cmd:tdspool=1.5.9-r0",
-        "cmd:tsql=1.5.9-r0",
+        "cmd:bsqldb=1.5.10-r0",
+        "cmd:bsqlodbc=1.5.10-r0",
+        "cmd:datacopy=1.5.10-r0",
+        "cmd:defncopy=1.5.10-r0",
+        "cmd:fisql=1.5.10-r0",
+        "cmd:freebcp=1.5.10-r0",
+        "cmd:osql=1.5.10-r0",
+        "cmd:tdspool=1.5.10-r0",
+        "cmd:tsql=1.5.10-r0",
         "so:libct.so.4=4.0.0",
         "so:libsybdb.so.5=5.1.0",
         "so:libtdsodbc.so=0"
@@ -15649,10 +15683,11 @@
         "1.5.6-r0": 1757587790,
         "1.5.7-r0": 1761850787,
         "1.5.8-r0": 1762103467,
-        "1.5.9-r0": 1763656189
+        "1.5.9-r0": 1763656189,
+        "1.5.10-r0": 1764678239
       },
       "dependencies": [
-        "freetds=1.5.9-r0"
+        "freetds=1.5.10-r0"
       ]
     },
     "freetds-doc": {
@@ -15661,7 +15696,8 @@
         "1.5.6-r0": 1757587790,
         "1.5.7-r0": 1761850787,
         "1.5.8-r0": 1762103467,
-        "1.5.9-r0": 1763656189
+        "1.5.9-r0": 1763656189,
+        "1.5.10-r0": 1764678239
       }
     },
     "freetds-static": {
@@ -15670,7 +15706,8 @@
         "1.5.6-r0": 1757587790,
         "1.5.7-r0": 1761850787,
         "1.5.8-r0": 1762103467,
-        "1.5.9-r0": 1763656189
+        "1.5.9-r0": 1763656189,
+        "1.5.10-r0": 1764678239
       }
     },
     "freetype": {
@@ -18708,7 +18745,8 @@
       "origin": "gst-plugins-base",
       "versions": {
         "1.26.7-r1": 1760856350,
-        "1.26.8-r0": 1763494024
+        "1.26.8-r0": 1763494024,
+        "1.26.9-r0": 1764636528
       },
       "dependencies": [
         "so:libEGL.so.1",
@@ -18752,15 +18790,15 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:gst-device-monitor-1.0=1.26.8-r0",
-        "cmd:gst-discoverer-1.0=1.26.8-r0",
-        "cmd:gst-play-1.0=1.26.8-r0",
+        "cmd:gst-device-monitor-1.0=1.26.9-r0",
+        "cmd:gst-discoverer-1.0=1.26.9-r0",
+        "cmd:gst-play-1.0=1.26.9-r0",
         "so:libgstadder.so=0",
-        "so:libgstallocators-1.0.so.0=0.2608.0",
+        "so:libgstallocators-1.0.so.0=0.2609.0",
         "so:libgstalsa.so=0",
-        "so:libgstapp-1.0.so.0=0.2608.0",
+        "so:libgstapp-1.0.so.0=0.2609.0",
         "so:libgstapp.so=0",
-        "so:libgstaudio-1.0.so.0=0.2608.0",
+        "so:libgstaudio-1.0.so.0=0.2609.0",
         "so:libgstaudioconvert.so=0",
         "so:libgstaudiomixer.so=0",
         "so:libgstaudiorate.so=0",
@@ -18771,28 +18809,28 @@
         "so:libgstcompositor.so=0",
         "so:libgstdsd.so=0",
         "so:libgstencoding.so=0",
-        "so:libgstfft-1.0.so.0=0.2608.0",
+        "so:libgstfft-1.0.so.0=0.2609.0",
         "so:libgstgio.so=0",
-        "so:libgstgl-1.0.so.0=0.2608.0",
+        "so:libgstgl-1.0.so.0=0.2609.0",
         "so:libgstogg.so=0",
         "so:libgstopengl.so=0",
         "so:libgstopus.so=0",
         "so:libgstoverlaycomposition.so=0",
         "so:libgstpango.so=0",
         "so:libgstpbtypes.so=0",
-        "so:libgstpbutils-1.0.so.0=0.2608.0",
+        "so:libgstpbutils-1.0.so.0=0.2609.0",
         "so:libgstplayback.so=0",
         "so:libgstrawparse.so=0",
-        "so:libgstriff-1.0.so.0=0.2608.0",
-        "so:libgstrtp-1.0.so.0=0.2608.0",
-        "so:libgstrtsp-1.0.so.0=0.2608.0",
-        "so:libgstsdp-1.0.so.0=0.2608.0",
+        "so:libgstriff-1.0.so.0=0.2609.0",
+        "so:libgstrtp-1.0.so.0=0.2609.0",
+        "so:libgstrtsp-1.0.so.0=0.2609.0",
+        "so:libgstsdp-1.0.so.0=0.2609.0",
         "so:libgstsubparse.so=0",
-        "so:libgsttag-1.0.so.0=0.2608.0",
+        "so:libgsttag-1.0.so.0=0.2609.0",
         "so:libgsttcp.so=0",
         "so:libgsttheora.so=0",
         "so:libgsttypefindfunctions.so=0",
-        "so:libgstvideo-1.0.so.0=0.2608.0",
+        "so:libgstvideo-1.0.so.0=0.2609.0",
         "so:libgstvideoconvertscale.so=0",
         "so:libgstvideorate.so=0",
         "so:libgstvideotestsrc.so=0",
@@ -18806,22 +18844,24 @@
       "origin": "gst-plugins-base",
       "versions": {
         "1.26.7-r1": 1760856350,
-        "1.26.8-r0": 1763494024
+        "1.26.8-r0": 1763494024,
+        "1.26.9-r0": 1764636528
       },
       "dependencies": [
-        "!gst-plugins-base<1.26.8-r0",
-        "!gst-plugins-base>1.26.8-r0"
+        "!gst-plugins-base<1.26.9-r0",
+        "!gst-plugins-base>1.26.9-r0"
       ]
     },
     "gst-plugins-base-dev": {
       "origin": "gst-plugins-base",
       "versions": {
         "1.26.7-r1": 1760856350,
-        "1.26.8-r0": 1763494024
+        "1.26.8-r0": 1763494024,
+        "1.26.9-r0": 1764636528
       },
       "dependencies": [
         "wayland-dev",
-        "gst-plugins-base=1.26.8-r0",
+        "gst-plugins-base=1.26.9-r0",
         "pc:egl",
         "pc:gio-2.0>=2.64.0",
         "pc:gl",
@@ -18851,44 +18891,47 @@
         "pkgconfig"
       ],
       "provides": [
-        "pc:gstreamer-allocators-1.0=1.26.8",
-        "pc:gstreamer-app-1.0=1.26.8",
-        "pc:gstreamer-audio-1.0=1.26.8",
-        "pc:gstreamer-fft-1.0=1.26.8",
-        "pc:gstreamer-gl-1.0=1.26.8",
-        "pc:gstreamer-gl-egl-1.0=1.26.8",
-        "pc:gstreamer-gl-prototypes-1.0=1.26.8",
-        "pc:gstreamer-gl-wayland-1.0=1.26.8",
-        "pc:gstreamer-gl-x11-1.0=1.26.8",
-        "pc:gstreamer-pbutils-1.0=1.26.8",
-        "pc:gstreamer-plugins-base-1.0=1.26.8",
-        "pc:gstreamer-riff-1.0=1.26.8",
-        "pc:gstreamer-rtp-1.0=1.26.8",
-        "pc:gstreamer-rtsp-1.0=1.26.8",
-        "pc:gstreamer-sdp-1.0=1.26.8",
-        "pc:gstreamer-tag-1.0=1.26.8",
-        "pc:gstreamer-video-1.0=1.26.8"
+        "pc:gstreamer-allocators-1.0=1.26.9",
+        "pc:gstreamer-app-1.0=1.26.9",
+        "pc:gstreamer-audio-1.0=1.26.9",
+        "pc:gstreamer-fft-1.0=1.26.9",
+        "pc:gstreamer-gl-1.0=1.26.9",
+        "pc:gstreamer-gl-egl-1.0=1.26.9",
+        "pc:gstreamer-gl-prototypes-1.0=1.26.9",
+        "pc:gstreamer-gl-wayland-1.0=1.26.9",
+        "pc:gstreamer-gl-x11-1.0=1.26.9",
+        "pc:gstreamer-pbutils-1.0=1.26.9",
+        "pc:gstreamer-plugins-base-1.0=1.26.9",
+        "pc:gstreamer-riff-1.0=1.26.9",
+        "pc:gstreamer-rtp-1.0=1.26.9",
+        "pc:gstreamer-rtsp-1.0=1.26.9",
+        "pc:gstreamer-sdp-1.0=1.26.9",
+        "pc:gstreamer-tag-1.0=1.26.9",
+        "pc:gstreamer-video-1.0=1.26.9"
       ]
     },
     "gst-plugins-base-doc": {
       "origin": "gst-plugins-base",
       "versions": {
         "1.26.7-r1": 1760856350,
-        "1.26.8-r0": 1763494024
+        "1.26.8-r0": 1763494024,
+        "1.26.9-r0": 1764636528
       }
     },
     "gst-plugins-base-lang": {
       "origin": "gst-plugins-base",
       "versions": {
         "1.26.7-r1": 1760856350,
-        "1.26.8-r0": 1763494024
+        "1.26.8-r0": 1763494024,
+        "1.26.9-r0": 1764636528
       }
     },
     "gstreamer": {
       "origin": "gstreamer",
       "versions": {
         "1.26.7-r0": 1760482990,
-        "1.26.8-r0": 1763494024
+        "1.26.8-r0": 1763494024,
+        "1.26.9-r0": 1764636528
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -18899,38 +18942,40 @@
         "so:libintl.so.8"
       ],
       "provides": [
-        "so:libgstbase-1.0.so.0=0.2608.0",
-        "so:libgstcontroller-1.0.so.0=0.2608.0",
-        "so:libgstnet-1.0.so.0=0.2608.0",
-        "so:libgstreamer-1.0.so.0=0.2608.0"
+        "so:libgstbase-1.0.so.0=0.2609.0",
+        "so:libgstcontroller-1.0.so.0=0.2609.0",
+        "so:libgstnet-1.0.so.0=0.2609.0",
+        "so:libgstreamer-1.0.so.0=0.2609.0"
       ]
     },
     "gstreamer-dbg": {
       "origin": "gstreamer",
       "versions": {
         "1.26.7-r0": 1760482990,
-        "1.26.8-r0": 1763494024
+        "1.26.8-r0": 1763494024,
+        "1.26.9-r0": 1764636528
       },
       "dependencies": [
-        "!gstreamer-dev<1.26.8-r0",
-        "!gstreamer-dev>1.26.8-r0",
-        "!gstreamer-ptp-helper<1.26.8-r0",
-        "!gstreamer-ptp-helper>1.26.8-r0",
-        "!gstreamer-tools<1.26.8-r0",
-        "!gstreamer-tools>1.26.8-r0",
-        "!gstreamer<1.26.8-r0",
-        "!gstreamer>1.26.8-r0"
+        "!gstreamer-dev<1.26.9-r0",
+        "!gstreamer-dev>1.26.9-r0",
+        "!gstreamer-ptp-helper<1.26.9-r0",
+        "!gstreamer-ptp-helper>1.26.9-r0",
+        "!gstreamer-tools<1.26.9-r0",
+        "!gstreamer-tools>1.26.9-r0",
+        "!gstreamer<1.26.9-r0",
+        "!gstreamer>1.26.9-r0"
       ]
     },
     "gstreamer-dev": {
       "origin": "gstreamer",
       "versions": {
         "1.26.7-r0": 1760482990,
-        "1.26.8-r0": 1763494024
+        "1.26.8-r0": 1763494024,
+        "1.26.9-r0": 1764636528
       },
       "dependencies": [
         "libxml2-dev",
-        "gstreamer=1.26.8-r0",
+        "gstreamer=1.26.9-r0",
         "pc:gio-2.0",
         "pc:gio-unix-2.0",
         "pc:glib-2.0>=2.64.0",
@@ -18946,34 +18991,37 @@
         "so:libgstreamer-1.0.so.0"
       ],
       "provides": [
-        "cmd:gst-tester-1.0=1.26.8-r0",
-        "pc:gstreamer-1.0=1.26.8",
-        "pc:gstreamer-base-1.0=1.26.8",
-        "pc:gstreamer-check-1.0=1.26.8",
-        "pc:gstreamer-controller-1.0=1.26.8",
-        "pc:gstreamer-net-1.0=1.26.8",
-        "so:libgstcheck-1.0.so.0=0.2608.0"
+        "cmd:gst-tester-1.0=1.26.9-r0",
+        "pc:gstreamer-1.0=1.26.9",
+        "pc:gstreamer-base-1.0=1.26.9",
+        "pc:gstreamer-check-1.0=1.26.9",
+        "pc:gstreamer-controller-1.0=1.26.9",
+        "pc:gstreamer-net-1.0=1.26.9",
+        "so:libgstcheck-1.0.so.0=0.2609.0"
       ]
     },
     "gstreamer-doc": {
       "origin": "gstreamer",
       "versions": {
         "1.26.7-r0": 1760482990,
-        "1.26.8-r0": 1763494024
+        "1.26.8-r0": 1763494024,
+        "1.26.9-r0": 1764636528
       }
     },
     "gstreamer-lang": {
       "origin": "gstreamer",
       "versions": {
         "1.26.7-r0": 1760482990,
-        "1.26.8-r0": 1763494024
+        "1.26.8-r0": 1763494024,
+        "1.26.9-r0": 1764636528
       }
     },
     "gstreamer-ptp-helper": {
       "origin": "gstreamer",
       "versions": {
         "1.26.7-r0": 1760482990,
-        "1.26.8-r0": 1763494024
+        "1.26.8-r0": 1763494024,
+        "1.26.9-r0": 1764636528
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -18985,7 +19033,8 @@
       "origin": "gstreamer",
       "versions": {
         "1.26.7-r0": 1760482990,
-        "1.26.8-r0": 1763494024
+        "1.26.8-r0": 1763494024,
+        "1.26.9-r0": 1764636528
       },
       "dependencies": [
         "pkgconfig",
@@ -18996,10 +19045,10 @@
         "so:libintl.so.8"
       ],
       "provides": [
-        "cmd:gst-inspect-1.0=1.26.8-r0",
-        "cmd:gst-launch-1.0=1.26.8-r0",
-        "cmd:gst-stats-1.0=1.26.8-r0",
-        "cmd:gst-typefind-1.0=1.26.8-r0"
+        "cmd:gst-inspect-1.0=1.26.9-r0",
+        "cmd:gst-launch-1.0=1.26.9-r0",
+        "cmd:gst-stats-1.0=1.26.9-r0",
+        "cmd:gst-typefind-1.0=1.26.9-r0"
       ]
     },
     "gtest": {
@@ -23720,14 +23769,15 @@
       "origin": "multipath-tools",
       "versions": {
         "0.11.1-r2": 1746605713,
-        "0.11.1-r3": 1764188250
+        "0.11.1-r3": 1764188250,
+        "0.13.0-r0": 1764647731
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
         "so:libdevmapper.so.1.02"
       ],
       "provides": [
-        "cmd:kpartx=0.11.1-r3"
+        "cmd:kpartx=0.13.0-r0"
       ]
     },
     "krb5": {
@@ -24404,7 +24454,8 @@
       "origin": "libarchive",
       "versions": {
         "3.8.2-r0": 1760625053,
-        "3.8.3-r0": 1763462817
+        "3.8.3-r0": 1763462817,
+        "3.8.4-r0": 1764637178
       },
       "dependencies": [
         "so:libacl.so.1",
@@ -24418,43 +24469,47 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "so:libarchive.so.13=13.8.3"
+        "so:libarchive.so.13=13.8.4"
       ]
     },
     "libarchive-dev": {
       "origin": "libarchive",
       "versions": {
         "3.8.2-r0": 1760625053,
-        "3.8.3-r0": 1763462817
+        "3.8.3-r0": 1763462817,
+        "3.8.4-r0": 1764637178
       },
       "dependencies": [
-        "libarchive=3.8.3-r0",
+        "libarchive=3.8.4-r0",
         "pc:libcrypto",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libarchive=3.8.3"
+        "pc:libarchive=3.8.4"
       ]
     },
     "libarchive-doc": {
       "origin": "libarchive",
       "versions": {
         "3.8.2-r0": 1760625053,
-        "3.8.3-r0": 1763462817
+        "3.8.3-r0": 1763462817,
+        "3.8.4-r0": 1764637178
       }
     },
     "libarchive-static": {
       "origin": "libarchive",
       "versions": {
         "3.8.2-r0": 1760625053,
-        "3.8.3-r0": 1763462817
+        "3.8.3-r0": 1763462817,
+        "3.8.4-r0": 1764637178
       }
     },
     "libarchive-tools": {
       "origin": "libarchive",
       "versions": {
         "3.8.2-r0": 1760625053,
-        "3.8.3-r0": 1763462817
+        "3.8.3-r0": 1763462817,
+        "3.8.4-r0": 1764637178
       },
       "dependencies": [
         "so:libacl.so.1",
@@ -24468,10 +24523,10 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:bsdcat=3.8.3-r0",
-        "cmd:bsdcpio=3.8.3-r0",
-        "cmd:bsdtar=3.8.3-r0",
-        "cmd:bsdunzip=3.8.3-r0"
+        "cmd:bsdcat=3.8.4-r0",
+        "cmd:bsdcpio=3.8.4-r0",
+        "cmd:bsdtar=3.8.4-r0",
+        "cmd:bsdunzip=3.8.4-r0"
       ]
     },
     "libart-lgpl": {
@@ -33010,7 +33065,8 @@
         "6.12.57-r1": 1762865208,
         "6.12.58-r0": 1763111990,
         "6.12.59-r0": 1764076104,
-        "6.12.59-r1": 1764167499
+        "6.12.59-r1": 1764167499,
+        "6.18.0-r2": 1764675605
       },
       "dependencies": [
         "initramfs-generator",
@@ -33028,7 +33084,8 @@
         "6.12.57-r1": 1762865208,
         "6.12.58-r0": 1763111990,
         "6.12.59-r0": 1764076104,
-        "6.12.59-r1": 1764167499
+        "6.12.59-r1": 1764167499,
+        "6.18.0-r2": 1764675605
       },
       "dependencies": [
         "perl",
@@ -33055,7 +33112,8 @@
         "6.12.57-r1": 1762865208,
         "6.12.58-r0": 1763111990,
         "6.12.59-r0": 1764076104,
-        "6.12.59-r1": 1764167499
+        "6.12.59-r1": 1764167499,
+        "6.18.0-r2": 1764675605
       }
     },
     "linux-pam": {
@@ -40836,7 +40894,8 @@
       "origin": "multipath-tools",
       "versions": {
         "0.11.1-r2": 1746605713,
-        "0.11.1-r3": 1764188250
+        "0.11.1-r3": 1764188250,
+        "0.13.0-r0": 1764647731
       },
       "dependencies": [
         "eudev",
@@ -40851,10 +40910,10 @@
         "so:liburcu.so.8"
       ],
       "provides": [
-        "cmd:mpathpersist=0.11.1-r3",
-        "cmd:multipath=0.11.1-r3",
-        "cmd:multipathc=0.11.1-r3",
-        "cmd:multipathd=0.11.1-r3",
+        "cmd:mpathpersist=0.13.0-r0",
+        "cmd:multipath=0.13.0-r0",
+        "cmd:multipathc=0.13.0-r0",
+        "cmd:multipathd=0.13.0-r0",
         "pc:libdmmp=0.2.0",
         "so:libdmmp.so.0.2.0=0.2.0",
         "so:libmpathcmd.so.0=0",
@@ -40868,14 +40927,16 @@
       "origin": "multipath-tools",
       "versions": {
         "0.11.1-r2": 1746605713,
-        "0.11.1-r3": 1764188250
+        "0.11.1-r3": 1764188250,
+        "0.13.0-r0": 1764647731
       }
     },
     "multipath-tools-openrc": {
       "origin": "multipath-tools",
       "versions": {
         "0.11.1-r2": 1746605713,
-        "0.11.1-r3": 1764188250
+        "0.11.1-r3": 1764188250,
+        "0.13.0-r0": 1764647731
       }
     },
     "muon": {
@@ -42663,7 +42724,8 @@
       "origin": "nftables",
       "versions": {
         "1.1.5-r0": 1756366515,
-        "1.1.5-r1": 1763490187
+        "1.1.5-r1": 1763490187,
+        "1.1.5-r2": 1764678694
       },
       "dependencies": [
         "/bin/sh",
@@ -42675,7 +42737,7 @@
         "so:libreadline.so.8"
       ],
       "provides": [
-        "cmd:nft=1.1.5-r1",
+        "cmd:nft=1.1.5-r2",
         "so:libnftables.so.1=1.1.0"
       ]
     },
@@ -42683,10 +42745,11 @@
       "origin": "nftables",
       "versions": {
         "1.1.5-r0": 1756366515,
-        "1.1.5-r1": 1763490187
+        "1.1.5-r1": 1763490187,
+        "1.1.5-r2": 1764678694
       },
       "dependencies": [
-        "nftables=1.1.5-r1",
+        "nftables=1.1.5-r2",
         "pkgconfig"
       ],
       "provides": [
@@ -42697,28 +42760,32 @@
       "origin": "nftables",
       "versions": {
         "1.1.5-r0": 1756366515,
-        "1.1.5-r1": 1763490187
+        "1.1.5-r1": 1763490187,
+        "1.1.5-r2": 1764678694
       }
     },
     "nftables-openrc": {
       "origin": "nftables",
       "versions": {
         "1.1.5-r0": 1756366515,
-        "1.1.5-r1": 1763490187
+        "1.1.5-r1": 1763490187,
+        "1.1.5-r2": 1764678694
       }
     },
     "nftables-rulesets": {
       "origin": "nftables",
       "versions": {
         "1.1.5-r0": 1756366515,
-        "1.1.5-r1": 1763490187
+        "1.1.5-r1": 1763490187,
+        "1.1.5-r2": 1764678694
       }
     },
     "nftables-static": {
       "origin": "nftables",
       "versions": {
         "1.1.5-r0": 1756366515,
-        "1.1.5-r1": 1763490187
+        "1.1.5-r1": 1763490187,
+        "1.1.5-r2": 1764678694
       }
     },
     "nghttp2": {
@@ -53076,7 +53143,8 @@
     "pjproject": {
       "origin": "pjproject",
       "versions": {
-        "2.15.1-r0": 1745399825
+        "2.15.1-r0": 1745399825,
+        "2.16-r0": 1764624254
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -53093,38 +53161,40 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libg7221codec.so.2.15.1=2.15.1",
-        "so:libilbccodec.so.2.15.1=2.15.1",
-        "so:libpj.so.2.15.1=2.15.1",
-        "so:libpjlib-util.so.2.15.1=2.15.1",
-        "so:libpjmedia-audiodev.so.2.15.1=2.15.1",
-        "so:libpjmedia-codec.so.2.15.1=2.15.1",
-        "so:libpjmedia-videodev.so.2.15.1=2.15.1",
-        "so:libpjmedia.so.2.15.1=2.15.1",
-        "so:libpjnath.so.2.15.1=2.15.1",
-        "so:libpjsip-simple.so.2.15.1=2.15.1",
-        "so:libpjsip-ua.so.2.15.1=2.15.1",
-        "so:libpjsip.so.2.15.1=2.15.1",
-        "so:libpjsua.so.2.15.1=2.15.1",
-        "so:libpjsua2.so.2.15.1=2.15.1"
+        "so:libg7221codec.so.2.16=2.16",
+        "so:libilbccodec.so.2.16=2.16",
+        "so:libpj.so.2.16=2.16",
+        "so:libpjlib-util.so.2.16=2.16",
+        "so:libpjmedia-audiodev.so.2.16=2.16",
+        "so:libpjmedia-codec.so.2.16=2.16",
+        "so:libpjmedia-videodev.so.2.16=2.16",
+        "so:libpjmedia.so.2.16=2.16",
+        "so:libpjnath.so.2.16=2.16",
+        "so:libpjsip-simple.so.2.16=2.16",
+        "so:libpjsip-ua.so.2.16=2.16",
+        "so:libpjsip.so.2.16=2.16",
+        "so:libpjsua.so.2.16=2.16",
+        "so:libpjsua2.so.2.16=2.16"
       ]
     },
     "pjproject-dbg": {
       "origin": "pjproject",
       "versions": {
-        "2.15.1-r0": 1745399825
+        "2.15.1-r0": 1745399825,
+        "2.16-r0": 1764624254
       },
       "dependencies": [
-        "!pjproject<2.15.1-r0",
-        "!pjproject>2.15.1-r0",
-        "!py3-pjsua<2.15.1-r0",
-        "!py3-pjsua>2.15.1-r0"
+        "!pjproject<2.16-r0",
+        "!pjproject>2.16-r0",
+        "!py3-pjsua<2.16-r0",
+        "!py3-pjsua>2.16-r0"
       ]
     },
     "pjproject-dev": {
       "origin": "pjproject",
       "versions": {
-        "2.15.1-r0": 1745399825
+        "2.15.1-r0": 1745399825,
+        "2.16-r0": 1764624254
       },
       "dependencies": [
         "openssl-dev>3",
@@ -53136,29 +53206,30 @@
         "opus-dev",
         "libsrtp-dev",
         "libsamplerate-dev",
-        "pjproject=2.15.1-r0",
+        "pjproject=2.16-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libpjproject=2.15.1"
+        "pc:libpjproject=2.16"
       ]
     },
     "pjsua": {
       "origin": "pjproject",
       "versions": {
-        "2.15.1-r0": 1745399825
+        "2.15.1-r0": 1745399825,
+        "2.16-r0": 1764624254
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
-        "so:libpj.so.2.15.1",
-        "so:libpjlib-util.so.2.15.1",
-        "so:libpjmedia.so.2.15.1",
-        "so:libpjsip-simple.so.2.15.1",
-        "so:libpjsip.so.2.15.1",
-        "so:libpjsua.so.2.15.1"
+        "so:libpj.so.2.16",
+        "so:libpjlib-util.so.2.16",
+        "so:libpjmedia.so.2.16",
+        "so:libpjsip-simple.so.2.16",
+        "so:libpjsip.so.2.16",
+        "so:libpjsua.so.2.16"
       ],
       "provides": [
-        "cmd:pjsua=2.15.1-r0"
+        "cmd:pjsua=2.16-r0"
       ]
     },
     "pkgconf": {
@@ -53285,7 +53356,8 @@
       "origin": "poppler",
       "versions": {
         "25.10.0-r0": 1760811482,
-        "25.11.0-r0": 1763044808
+        "25.11.0-r0": 1763044808,
+        "25.12.0-r0": 1764637875
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -53306,20 +53378,21 @@
       ],
       "provides": [
         "so:libpoppler-cpp.so.2=2.2.0",
-        "so:libpoppler.so.154=154.0.0"
+        "so:libpoppler.so.155=155.0.0"
       ]
     },
     "poppler-dev": {
       "origin": "poppler",
       "versions": {
         "25.10.0-r0": 1760811482,
-        "25.11.0-r0": 1763044808
+        "25.11.0-r0": 1763044808,
+        "25.12.0-r0": 1764637875
       },
       "dependencies": [
         "cairo-dev",
         "glib-dev",
-        "poppler-glib=25.11.0-r0",
-        "poppler=25.11.0-r0",
+        "poppler-glib=25.12.0-r0",
+        "poppler=25.12.0-r0",
         "pc:cairo>=1.16.0",
         "pc:fontconfig>=2.13",
         "pc:freetype2>=2.11",
@@ -53331,29 +53404,31 @@
         "pc:libopenjp2",
         "pc:libpng",
         "pc:libtiff-4>=4.3",
-        "pc:nss>=3.117",
-        "pc:poppler=25.11.0",
+        "pc:nss>=3.118.1",
+        "pc:poppler=25.12.0",
         "pc:zlib",
         "pkgconfig"
       ],
       "provides": [
-        "pc:poppler-cpp=25.11.0",
-        "pc:poppler-glib=25.11.0",
-        "pc:poppler=25.11.0"
+        "pc:poppler-cpp=25.12.0",
+        "pc:poppler-glib=25.12.0",
+        "pc:poppler=25.12.0"
       ]
     },
     "poppler-doc": {
       "origin": "poppler",
       "versions": {
         "25.10.0-r0": 1760811482,
-        "25.11.0-r0": 1763044808
+        "25.11.0-r0": 1763044808,
+        "25.12.0-r0": 1764637875
       }
     },
     "poppler-glib": {
       "origin": "poppler",
       "versions": {
         "25.10.0-r0": 1760811482,
-        "25.11.0-r0": 1763044808
+        "25.11.0-r0": 1763044808,
+        "25.12.0-r0": 1764637875
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -53362,7 +53437,7 @@
         "so:libgio-2.0.so.0",
         "so:libglib-2.0.so.0",
         "so:libgobject-2.0.so.0",
-        "so:libpoppler.so.154",
+        "so:libpoppler.so.155",
         "so:libstdc++.so.6"
       ],
       "provides": [
@@ -53373,7 +53448,8 @@
       "origin": "poppler",
       "versions": {
         "25.10.0-r0": 1760811482,
-        "25.11.0-r0": 1763044808
+        "25.11.0-r0": 1763044808,
+        "25.12.0-r0": 1764637875
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -53382,23 +53458,23 @@
         "so:libgcc_s.so.1",
         "so:libintl.so.8",
         "so:liblcms2.so.2",
-        "so:libpoppler.so.154",
+        "so:libpoppler.so.155",
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:pdfattach=25.11.0-r0",
-        "cmd:pdfdetach=25.11.0-r0",
-        "cmd:pdffonts=25.11.0-r0",
-        "cmd:pdfimages=25.11.0-r0",
-        "cmd:pdfinfo=25.11.0-r0",
-        "cmd:pdfseparate=25.11.0-r0",
-        "cmd:pdfsig=25.11.0-r0",
-        "cmd:pdftocairo=25.11.0-r0",
-        "cmd:pdftohtml=25.11.0-r0",
-        "cmd:pdftoppm=25.11.0-r0",
-        "cmd:pdftops=25.11.0-r0",
-        "cmd:pdftotext=25.11.0-r0",
-        "cmd:pdfunite=25.11.0-r0"
+        "cmd:pdfattach=25.12.0-r0",
+        "cmd:pdfdetach=25.12.0-r0",
+        "cmd:pdffonts=25.12.0-r0",
+        "cmd:pdfimages=25.12.0-r0",
+        "cmd:pdfinfo=25.12.0-r0",
+        "cmd:pdfseparate=25.12.0-r0",
+        "cmd:pdfsig=25.12.0-r0",
+        "cmd:pdftocairo=25.12.0-r0",
+        "cmd:pdftohtml=25.12.0-r0",
+        "cmd:pdftoppm=25.12.0-r0",
+        "cmd:pdftops=25.12.0-r0",
+        "cmd:pdftotext=25.12.0-r0",
+        "cmd:pdfunite=25.12.0-r0"
       ]
     },
     "popt": {
@@ -54916,20 +54992,22 @@
     "py3-brotli": {
       "origin": "brotli",
       "versions": {
-        "1.1.0-r2": 1730669024
+        "1.1.0-r2": 1730669024,
+        "1.2.0-r0": 1764636125
       },
       "dependencies": [
         "python3~3.12",
         "so:libc.musl-riscv64.so.1"
       ],
       "provides": [
-        "py3.12:brotli=1.1.0-r2"
+        "py3.12:brotli=1.2.0-r0"
       ]
     },
     "py3-brotli-pyc": {
       "origin": "brotli",
       "versions": {
-        "1.1.0-r2": 1730669024
+        "1.1.0-r2": 1730669024,
+        "1.2.0-r0": 1764636125
       },
       "dependencies": [
         "python3~3.12"
@@ -54939,7 +55017,8 @@
       "origin": "btrfs-progs",
       "versions": {
         "6.17-r0": 1759225689,
-        "6.17-r1": 1764188250
+        "6.17-r1": 1764188250,
+        "6.17.1-r0": 1764647848
       },
       "dependencies": [
         "python3~3.12",
@@ -54947,7 +55026,7 @@
         "so:libc.musl-riscv64.so.1"
       ],
       "provides": [
-        "py-btrfs-progs=6.17-r1"
+        "py-btrfs-progs=6.17.1-r0"
       ]
     },
     "py3-build": {
@@ -56581,21 +56660,23 @@
       "origin": "nftables",
       "versions": {
         "1.1.5-r0": 1756366515,
-        "1.1.5-r1": 1763490187
+        "1.1.5-r1": 1763490187,
+        "1.1.5-r2": 1764678694
       },
       "dependencies": [
-        "nftables=1.1.5-r1",
+        "nftables=1.1.5-r2",
         "python3~3.12"
       ],
       "provides": [
-        "py3.12:nftables=1.1.5-r1"
+        "py3.12:nftables=1.1.5-r2"
       ]
     },
     "py3-nftables-pyc": {
       "origin": "nftables",
       "versions": {
         "1.1.5-r0": 1756366515,
-        "1.1.5-r1": 1763490187
+        "1.1.5-r1": 1763490187,
+        "1.1.5-r2": 1764678694
       },
       "dependencies": [
         "python3~3.12"
@@ -56863,23 +56944,25 @@
     "py3-pjsua": {
       "origin": "pjproject",
       "versions": {
-        "2.15.1-r0": 1745399825
+        "2.15.1-r0": 1745399825,
+        "2.16-r0": 1764624254
       },
       "dependencies": [
         "python3~3.12",
         "so:libc.musl-riscv64.so.1",
         "so:libgcc_s.so.1",
-        "so:libpjsua2.so.2.15.1",
+        "so:libpjsua2.so.2.16",
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "py3.12:pjsua2=2.15.1-r0"
+        "py3.12:pjsua2=2.16-r0"
       ]
     },
     "py3-pjsua-pyc": {
       "origin": "pjproject",
       "versions": {
-        "2.15.1-r0": 1745399825
+        "2.15.1-r0": 1745399825,
+        "2.16-r0": 1764624254
       },
       "dependencies": [
         "python3~3.12"
@@ -59099,7 +59182,8 @@
     "re2c": {
       "origin": "re2c",
       "versions": {
-        "4.3-r0": 1751299537
+        "4.3-r0": 1751299537,
+        "4.3.1-r0": 1764653748
       },
       "dependencies": [
         "so:libc.musl-riscv64.so.1",
@@ -59107,23 +59191,24 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:re2c=4.3-r0",
-        "cmd:re2d=4.3-r0",
-        "cmd:re2go=4.3-r0",
-        "cmd:re2hs=4.3-r0",
-        "cmd:re2js=4.3-r0",
-        "cmd:re2ocaml=4.3-r0",
-        "cmd:re2py=4.3-r0",
-        "cmd:re2rust=4.3-r0",
-        "cmd:re2swift=4.3-r0",
-        "cmd:re2v=4.3-r0",
-        "cmd:re2zig=4.3-r0"
+        "cmd:re2c=4.3.1-r0",
+        "cmd:re2d=4.3.1-r0",
+        "cmd:re2go=4.3.1-r0",
+        "cmd:re2hs=4.3.1-r0",
+        "cmd:re2js=4.3.1-r0",
+        "cmd:re2ocaml=4.3.1-r0",
+        "cmd:re2py=4.3.1-r0",
+        "cmd:re2rust=4.3.1-r0",
+        "cmd:re2swift=4.3.1-r0",
+        "cmd:re2v=4.3.1-r0",
+        "cmd:re2zig=4.3.1-r0"
       ]
     },
     "re2c-doc": {
       "origin": "re2c",
       "versions": {
-        "4.3-r0": 1751299537
+        "4.3-r0": 1751299537,
+        "4.3.1-r0": 1764653748
       }
     },
     "readline": {
@@ -70950,10 +71035,11 @@
         "6.12.57-r1": 1762867504,
         "6.12.58-r0": 1763111990,
         "6.12.59-r0": 1764076104,
-        "6.12.59-r1": 1764167499
+        "6.12.59-r1": 1764167499,
+        "6.18.0-r2": 1764675605
       },
       "dependencies": [
-        "linux-lts=6.12.59-r1"
+        "linux-lts=6.18.0-r2"
       ]
     },
     "xtrans": {
@@ -71406,13 +71492,14 @@
         "6.12.58-r0": 1763111991,
         "6.12.58-r1": 1763512812,
         "6.12.59-r0": 1764076104,
-        "6.12.59-r1": 1764167499
+        "6.12.59-r1": 1764167499,
+        "6.18.0-r2": 1764675605
       },
       "dependencies": [
-        "linux-lts=6.12.59-r1"
+        "linux-lts=6.18.0-r2"
       ],
       "provides": [
-        "spl-vanilla=6.12.59-r1"
+        "spl-vanilla=6.18.0-r2"
       ]
     },
     "zfs-lts-dev": {
@@ -71427,14 +71514,15 @@
         "6.12.58-r0": 1763111991,
         "6.12.58-r1": 1763512812,
         "6.12.59-r0": 1764076104,
-        "6.12.59-r1": 1764167499
+        "6.12.59-r1": 1764167499,
+        "6.18.0-r2": 1764675605
       },
       "dependencies": [
         "glib-dev",
         "e2fsprogs-dev",
         "util-linux-dev",
         "libtirpc-dev",
-        "linux-lts-dev=6.12.59-r1"
+        "linux-lts-dev=6.18.0-r2"
       ]
     },
     "zfs-openrc": {
@@ -72861,7 +72949,8 @@
     "nftables-systemd": {
       "origin": "nftables",
       "versions": {
-        "1.1.5-r1": 1763490187
+        "1.1.5-r1": 1763490187,
+        "1.1.5-r2": 1764678694
       }
     },
     "linux-pam-systemd": {
@@ -72923,7 +73012,8 @@
     "btrfs-progs-udev": {
       "origin": "btrfs-progs",
       "versions": {
-        "6.17-r1": 1764188250
+        "6.17-r1": 1764188250,
+        "6.17.1-r0": 1764647848
       }
     },
     "fuse3-udev": {
@@ -72941,7 +73031,8 @@
     "multipath-tools-udev": {
       "origin": "multipath-tools",
       "versions": {
-        "0.11.1-r3": 1764188250
+        "0.11.1-r3": 1764188250,
+        "0.13.0-r0": 1764647731
       }
     },
     "nfs-utils-udev": {
@@ -74187,7 +74278,7 @@
       },
       "py-btrfs-progs": {
         "package": "py3-btrfs-progs",
-        "version": "6.17-r1"
+        "version": "6.17.1-r0"
       },
       "py-build": {
         "package": "py3-build",
@@ -74719,7 +74810,7 @@
       },
       "spl-vanilla": {
         "package": "zfs-lts",
-        "version": "6.12.59-r1"
+        "version": "6.18.0-r2"
       },
       "efistub": {
         "package": "systemd-efistub",
@@ -75517,15 +75608,15 @@
       },
       "libbrotlicommon.so.1": {
         "package": "brotli-libs",
-        "version": "1.1.0"
+        "version": "1.2.0"
       },
       "libbrotlidec.so.1": {
         "package": "brotli-libs",
-        "version": "1.1.0"
+        "version": "1.2.0"
       },
       "libbrotlienc.so.1": {
         "package": "brotli-libs",
-        "version": "1.1.0"
+        "version": "1.2.0"
       },
       "libbtrfs.so.0": {
         "package": "btrfs-progs-libs",
@@ -76593,7 +76684,7 @@
       },
       "libgstallocators-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.2608.0"
+        "version": "0.2609.0"
       },
       "libgstalsa.so": {
         "package": "gst-plugins-base",
@@ -76601,7 +76692,7 @@
       },
       "libgstapp-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.2608.0"
+        "version": "0.2609.0"
       },
       "libgstapp.so": {
         "package": "gst-plugins-base",
@@ -76609,7 +76700,7 @@
       },
       "libgstaudio-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.2608.0"
+        "version": "0.2609.0"
       },
       "libgstaudioconvert.so": {
         "package": "gst-plugins-base",
@@ -76653,7 +76744,7 @@
       },
       "libgstfft-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.2608.0"
+        "version": "0.2609.0"
       },
       "libgstgio.so": {
         "package": "gst-plugins-base",
@@ -76661,7 +76752,7 @@
       },
       "libgstgl-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.2608.0"
+        "version": "0.2609.0"
       },
       "libgstogg.so": {
         "package": "gst-plugins-base",
@@ -76689,7 +76780,7 @@
       },
       "libgstpbutils-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.2608.0"
+        "version": "0.2609.0"
       },
       "libgstplayback.so": {
         "package": "gst-plugins-base",
@@ -76701,19 +76792,19 @@
       },
       "libgstriff-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.2608.0"
+        "version": "0.2609.0"
       },
       "libgstrtp-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.2608.0"
+        "version": "0.2609.0"
       },
       "libgstrtsp-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.2608.0"
+        "version": "0.2609.0"
       },
       "libgstsdp-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.2608.0"
+        "version": "0.2609.0"
       },
       "libgstsubparse.so": {
         "package": "gst-plugins-base",
@@ -76721,7 +76812,7 @@
       },
       "libgsttag-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.2608.0"
+        "version": "0.2609.0"
       },
       "libgsttcp.so": {
         "package": "gst-plugins-base",
@@ -76737,7 +76828,7 @@
       },
       "libgstvideo-1.0.so.0": {
         "package": "gst-plugins-base",
-        "version": "0.2608.0"
+        "version": "0.2609.0"
       },
       "libgstvideoconvertscale.so": {
         "package": "gst-plugins-base",
@@ -76769,23 +76860,23 @@
       },
       "libgstbase-1.0.so.0": {
         "package": "gstreamer",
-        "version": "0.2608.0"
+        "version": "0.2609.0"
       },
       "libgstcontroller-1.0.so.0": {
         "package": "gstreamer",
-        "version": "0.2608.0"
+        "version": "0.2609.0"
       },
       "libgstnet-1.0.so.0": {
         "package": "gstreamer",
-        "version": "0.2608.0"
+        "version": "0.2609.0"
       },
       "libgstreamer-1.0.so.0": {
         "package": "gstreamer",
-        "version": "0.2608.0"
+        "version": "0.2609.0"
       },
       "libgstcheck-1.0.so.0": {
         "package": "gstreamer-dev",
-        "version": "0.2608.0"
+        "version": "0.2609.0"
       },
       "libgtest.so.1.17.0": {
         "package": "gtest",
@@ -77269,7 +77360,7 @@
       },
       "libarchive.so.13": {
         "package": "libarchive",
-        "version": "13.8.3"
+        "version": "13.8.4"
       },
       "libart_lgpl_2.so.2": {
         "package": "libart-lgpl",
@@ -81118,6 +81209,66 @@
       "libusbip.so.0": {
         "package": "linux-tools-usbip",
         "version": "0.0.1"
+      },
+      "libg7221codec.so.2.16": {
+        "package": "pjproject",
+        "version": "2.16"
+      },
+      "libilbccodec.so.2.16": {
+        "package": "pjproject",
+        "version": "2.16"
+      },
+      "libpj.so.2.16": {
+        "package": "pjproject",
+        "version": "2.16"
+      },
+      "libpjlib-util.so.2.16": {
+        "package": "pjproject",
+        "version": "2.16"
+      },
+      "libpjmedia-audiodev.so.2.16": {
+        "package": "pjproject",
+        "version": "2.16"
+      },
+      "libpjmedia-codec.so.2.16": {
+        "package": "pjproject",
+        "version": "2.16"
+      },
+      "libpjmedia-videodev.so.2.16": {
+        "package": "pjproject",
+        "version": "2.16"
+      },
+      "libpjmedia.so.2.16": {
+        "package": "pjproject",
+        "version": "2.16"
+      },
+      "libpjnath.so.2.16": {
+        "package": "pjproject",
+        "version": "2.16"
+      },
+      "libpjsip-simple.so.2.16": {
+        "package": "pjproject",
+        "version": "2.16"
+      },
+      "libpjsip-ua.so.2.16": {
+        "package": "pjproject",
+        "version": "2.16"
+      },
+      "libpjsip.so.2.16": {
+        "package": "pjproject",
+        "version": "2.16"
+      },
+      "libpjsua.so.2.16": {
+        "package": "pjproject",
+        "version": "2.16"
+      },
+      "libpjsua2.so.2.16": {
+        "package": "pjproject",
+        "version": "2.16"
+      },
+      "libpoppler.so.155": {
+        "package": "poppler",
+        "version": "155.0.0"
       }
     }
   }
