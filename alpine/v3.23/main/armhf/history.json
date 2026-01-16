@@ -10794,36 +10794,39 @@
       "origin": "dash",
       "versions": {
         "0.5.13-r1": 1759470951,
-        "0.5.13.1-r0": 1765349869
+        "0.5.13.1-r0": 1765349869,
+        "0.5.13.1-r1": 1768584574
       },
       "dependencies": [
         "busybox",
         "so:libc.musl-armhf.so.1"
       ],
       "provides": [
-        "cmd:dash=0.5.13.1-r0"
+        "cmd:dash=0.5.13.1-r1"
       ]
     },
     "dash-binsh": {
       "origin": "dash",
       "versions": {
         "0.5.13-r1": 1759470951,
-        "0.5.13.1-r0": 1765349869
+        "0.5.13.1-r0": 1765349869,
+        "0.5.13.1-r1": 1768584574
       },
       "dependencies": [
         "busybox",
-        "dash=0.5.13.1-r0"
+        "dash=0.5.13.1-r1"
       ],
       "provides": [
         "/bin/sh",
-        "cmd:sh=0.5.13.1-r0"
+        "cmd:sh=0.5.13.1-r1"
       ]
     },
     "dash-doc": {
       "origin": "dash",
       "versions": {
         "0.5.13-r1": 1759470951,
-        "0.5.13.1-r0": 1765349869
+        "0.5.13.1-r0": 1765349869,
+        "0.5.13.1-r1": 1768584574
       }
     },
     "datefudge": {
@@ -74221,6 +74224,16 @@
         "pcre2-dev",
         "perl-dev",
         "zlib-dev"
+      ]
+    },
+    "dash-dbg": {
+      "origin": "dash",
+      "versions": {
+        "0.5.13.1-r1": 1768584574
+      },
+      "dependencies": [
+        "!dash<0.5.13.1-r1",
+        "!dash>0.5.13.1-r1"
       ]
     }
   },
