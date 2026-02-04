@@ -3531,7 +3531,8 @@
     "aom": {
       "origin": "aom",
       "versions": {
-        "3.13.1-r0": 1757496108
+        "3.13.1-r0": 1757496108,
+        "3.13.1-r1": 1770205270
       },
       "dependencies": [
         "so:libaom.so.3",
@@ -3540,17 +3541,19 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:aomdec=3.13.1-r0",
-        "cmd:aomenc=3.13.1-r0"
+        "cmd:aomdec=3.13.1-r1",
+        "cmd:aomenc=3.13.1-r1"
       ]
     },
     "aom-dev": {
       "origin": "aom",
       "versions": {
-        "3.13.1-r0": 1757496108
+        "3.13.1-r0": 1757496108,
+        "3.13.1-r1": 1770205270
       },
       "dependencies": [
-        "aom-libs=3.13.1-r0",
+        "aom=3.13.1-r1",
+        "aom-libs=3.13.1-r1",
         "pkgconfig"
       ],
       "provides": [
@@ -3560,13 +3563,15 @@
     "aom-doc": {
       "origin": "aom",
       "versions": {
-        "3.13.1-r0": 1757496108
+        "3.13.1-r0": 1757496108,
+        "3.13.1-r1": 1770205270
       }
     },
     "aom-libs": {
       "origin": "aom",
       "versions": {
-        "3.13.1-r0": 1757496108
+        "3.13.1-r0": 1757496108,
+        "3.13.1-r1": 1770205270
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1"
@@ -3578,7 +3583,8 @@
     "aom-static": {
       "origin": "aom",
       "versions": {
-        "3.13.1-r0": 1757496108
+        "3.13.1-r0": 1757496108,
+        "3.13.1-r1": 1770205270
       }
     },
     "apache-mod-auth-kerb": {
@@ -72842,7 +72848,8 @@
     "heif-thumbnailer": {
       "origin": "libheif",
       "versions": {
-        "1.20.2-r1": 1761984519
+        "1.20.2-r1": 1761984519,
+        "1.21.2-r0": 1770205270
       },
       "dependencies": [
         "so:libc.musl-loongarch64.so.1",
@@ -72852,13 +72859,14 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:heif-thumbnailer=1.20.2-r1"
+        "cmd:heif-thumbnailer=1.21.2-r0"
       ]
     },
     "libheif": {
       "origin": "libheif",
       "versions": {
-        "1.20.2-r1": 1761984519
+        "1.20.2-r1": 1761984519,
+        "1.21.2-r0": 1770205270
       },
       "dependencies": [
         "so:libaom.so.3",
@@ -72870,18 +72878,19 @@
         "so:libx265.so.215"
       ],
       "provides": [
-        "so:libheif.so.1=1.20.2"
+        "so:libheif.so.1=1.21.2"
       ]
     },
     "libheif-dev": {
       "origin": "libheif",
       "versions": {
-        "1.20.2-r1": 1761984519
+        "1.20.2-r1": 1761984519,
+        "1.21.2-r0": 1770205270
       },
       "dependencies": [
         "libde265-dev",
         "x265-dev",
-        "libheif=1.20.2-r1",
+        "libheif=1.21.2-r0",
         "pc:aom",
         "pc:libde265",
         "pc:libsharpyuv",
@@ -72889,22 +72898,24 @@
         "pkgconfig"
       ],
       "provides": [
-        "pc:libheif=1.20.2"
+        "pc:libheif=1.21.2"
       ]
     },
     "libheif-doc": {
       "origin": "libheif",
       "versions": {
-        "1.20.2-r1": 1761984519
+        "1.20.2-r1": 1761984519,
+        "1.21.2-r0": 1770205270
       }
     },
     "libheif-pixbuf-loader": {
       "origin": "libheif",
       "versions": {
-        "1.20.2-r1": 1761984519
+        "1.20.2-r1": 1761984519,
+        "1.21.2-r0": 1770205270
       },
       "dependencies": [
-        "heif-thumbnailer=1.20.2-r1",
+        "heif-thumbnailer=1.21.2-r0",
         "so:libc.musl-loongarch64.so.1",
         "so:libgdk_pixbuf-2.0.so.0",
         "so:libglib-2.0.so.0",
@@ -72915,10 +72926,11 @@
     "libheif-tools": {
       "origin": "libheif",
       "versions": {
-        "1.20.2-r1": 1761984519
+        "1.20.2-r1": 1761984519,
+        "1.21.2-r0": 1770205270
       },
       "dependencies": [
-        "heif-thumbnailer=1.20.2-r1",
+        "heif-thumbnailer=1.21.2-r0",
         "so:libc.musl-loongarch64.so.1",
         "so:libgcc_s.so.1",
         "so:libheif.so.1",
@@ -72928,10 +72940,10 @@
         "so:libtiff.so.6"
       ],
       "provides": [
-        "cmd:heif-convert=1.20.2-r1",
-        "cmd:heif-dec=1.20.2-r1",
-        "cmd:heif-enc=1.20.2-r1",
-        "cmd:heif-info=1.20.2-r1"
+        "cmd:heif-convert=1.21.2-r0",
+        "cmd:heif-dec=1.21.2-r0",
+        "cmd:heif-enc=1.21.2-r0",
+        "cmd:heif-info=1.21.2-r0"
       ]
     },
     "x265": {
@@ -81858,7 +81870,7 @@
       },
       "libheif.so.1": {
         "package": "libheif",
-        "version": "1.20.2"
+        "version": "1.21.2"
       },
       "libx265.so.215": {
         "package": "x265-libs",
