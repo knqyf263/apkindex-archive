@@ -1778,22 +1778,22 @@ t:1776494518
 c:804389df187d19209730464ff7c0b28dae8a00a5
 i:docs abuild=3.17.0_rc1-r2
 
-C:Q1vHu4aSss9aIBQjKESPQuyUsKxqs=
+C:Q1VCO3qQ7pCiko4TFeF7wZBSOgLJI=
 P:abuild-meson
-V:1.11.0-r0
+V:1.11.1-r0
 A:aarch64
-S:2390
+S:2388
 I:1754
 T:Fast and user friendly build system (abuild wrapper)
 U:https://mesonbuild.com
 L:Apache-2.0
 o:meson
 m:Francesco Colista <fcolista@alpinelinux.org>
-t:1776358057
-c:f9fc679e78c343c54f6259c8cedba5e2b441da2f
-D:meson=1.11.0-r0 abuild
-p:cmd:abuild-meson=1.11.0-r0
-i:meson=1.11.0-r0 abuild
+t:1776864822
+c:cf1b0ed30f6e9324cac7ba2a13f890bf9c78ca3c
+D:meson=1.11.1-r0 abuild
+p:cmd:abuild-meson=1.11.1-r0
+i:meson=1.11.1-r0 abuild
 
 C:Q1yH5DHUyle5RardYwk6d0lM98UTU=
 P:abuild-muon
@@ -12722,84 +12722,145 @@ t:1754340447
 c:e5f37b108ddad98851840f3bc13bdd37fcf191ac
 i:docs dev86=0.16.21-r4
 
-C:Q1auqZEyg0y6eMxlk8eT2pb1XENCU=
+C:Q1wDErl5hliBaZa3uxDFEu30s6QXI=
 P:device-mapper
 V:2.03.35-r0
 A:aarch64
-S:44493
+S:44475
 I:133136
 T:Device mapper userspace library and tools from LVM2
 U:https://sourceware.org/lvm2/
-L:GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-2-Clause
-o:lvm2
+L:GPL-2.0-or-later AND LGPL-2.1-or-later
+o:device-mapper
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1759418673
-c:d42ba006edd6f2179218eda78d7284aba45d9f52
-D:lvm2-libs=2.03.35-r0 so:libc.musl-aarch64.so.1 so:libdevmapper.so.1.02
+t:1776854610
+c:a37dc1996651188d8c6bbe6ad8ea1e7b6953394e
+D:so:libc.musl-aarch64.so.1 so:libdevmapper.so.1.02
 p:cmd:dmsetup=2.03.35-r0 cmd:dmstats=2.03.35-r0
 
-C:Q17HUQKY3h10s9dbH9bQnJdbX3X7k=
+C:Q1c2cKWIsVnwt6KqBSjDYLX1i1D8M=
+P:device-mapper-dev
+V:2.03.35-r0
+A:aarch64
+S:39490
+I:141909
+T:Device mapper userspace library and tools from LVM2 (development files)
+U:https://sourceware.org/lvm2/
+L:GPL-2.0-or-later AND LGPL-2.1-or-later
+o:device-mapper
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1776854610
+c:a37dc1996651188d8c6bbe6ad8ea1e7b6953394e
+D:device-mapper-event-libs=2.03.35-r0 device-mapper-libs=2.03.35-r0 pkgconfig
+p:pc:devmapper-event=1.02.209 pc:devmapper=1.02.209
+
+C:Q1hW86NZ03qHy/oKf183w129wPzGA=
+P:device-mapper-dmeventd
+V:2.03.35-r0
+A:aarch64
+S:19520
+I:67576
+T:Device-mapper event daemon
+U:https://sourceware.org/lvm2/
+L:GPL-2.0-or-later AND LGPL-2.1-or-later
+o:device-mapper
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1776854610
+c:a37dc1996651188d8c6bbe6ad8ea1e7b6953394e
+D:so:libc.musl-aarch64.so.1 so:libdevmapper-event.so.1.02 so:libdevmapper.so.1.02
+p:cmd:dmeventd=2.03.35-r0
+
+C:Q1EIw/qaWF0J9AU1GHVx0/KXvWcUk=
+P:device-mapper-dmeventd-openrc
+V:2.03.35-r0
+A:aarch64
+S:1998
+I:684
+T:Device-mapper event daemon (OpenRC init scripts)
+U:https://sourceware.org/lvm2/
+L:GPL-2.0-or-later AND LGPL-2.1-or-later
+o:device-mapper
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1776854610
+c:a37dc1996651188d8c6bbe6ad8ea1e7b6953394e
+i:device-mapper-dmeventd=2.03.35-r0 openrc
+
+C:Q1qN4YJFDUyRSucbkG2BjKH/kWVkc=
+P:device-mapper-doc
+V:2.03.35-r0
+A:aarch64
+S:25347
+I:23320
+T:Device mapper userspace library and tools from LVM2 (documentation)
+U:https://sourceware.org/lvm2/
+L:GPL-2.0-or-later AND LGPL-2.1-or-later
+o:device-mapper
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1776854610
+c:a37dc1996651188d8c6bbe6ad8ea1e7b6953394e
+i:docs device-mapper=2.03.35-r0
+
+C:Q1NZC1kEzJ0HpfHmf5sOaX2jheeJU=
 P:device-mapper-event-libs
 V:2.03.35-r0
 A:aarch64
-S:11193
+S:11176
 I:67504
 T:Device-mapper event daemon shared library
 U:https://sourceware.org/lvm2/
-L:GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-2-Clause
-o:lvm2
+L:GPL-2.0-or-later AND LGPL-2.1-or-later
+o:device-mapper
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1759418673
-c:d42ba006edd6f2179218eda78d7284aba45d9f52
+t:1776854610
+c:a37dc1996651188d8c6bbe6ad8ea1e7b6953394e
 D:so:libc.musl-aarch64.so.1 so:libdevmapper.so.1.02
 p:so:libdevmapper-event.so.1.02=1.02
 
-C:Q1Y+buBhYJLoQtxYCLNT7dPhBzGvs=
+C:Q1ALXKxqGE+YNGouNvIvLpsxoy1Fw=
 P:device-mapper-libs
 V:2.03.35-r0
 A:aarch64
-S:133601
+S:133587
 I:337992
 T:Device-mapper shared library
 U:https://sourceware.org/lvm2/
-L:GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-2-Clause
-o:lvm2
+L:GPL-2.0-or-later AND LGPL-2.1-or-later
+o:device-mapper
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1759418673
-c:d42ba006edd6f2179218eda78d7284aba45d9f52
+t:1776854610
+c:a37dc1996651188d8c6bbe6ad8ea1e7b6953394e
 D:so:libc.musl-aarch64.so.1
 p:so:libdevmapper.so.1.02=1.02
 
-C:Q1/OL7GCCgS3I/HSFPw8KrtjHApjM=
+C:Q1ppd5Eh9/QOb1ZZn7riuGJ02Wl/8=
 P:device-mapper-static
 V:2.03.35-r0
 A:aarch64
-S:518612
+S:518595
 I:1402698
 T:Device-mapper static libraries and binaries
 U:https://sourceware.org/lvm2/
-L:GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-2-Clause
-o:lvm2
+L:GPL-2.0-or-later AND LGPL-2.1-or-later
+o:device-mapper
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1759418673
-c:d42ba006edd6f2179218eda78d7284aba45d9f52
-D:lvm2-libs=2.03.35-r0
+t:1776854610
+c:a37dc1996651188d8c6bbe6ad8ea1e7b6953394e
 p:device-mapper-event-static=2.03.35-r0 cmd:dmeventd.static=2.03.35-r0 cmd:dmsetup.static=2.03.35-r0 cmd:dmstats.static=2.03.35-r0
 
-C:Q1JQ1j1/95ZuYQRhNLj5dheycmzvU=
+C:Q1o/R04oh+VWL1KZN8tjDjIqOR6+8=
 P:device-mapper-udev
 V:2.03.35-r0
 A:aarch64
-S:7970
-I:17045
+S:5988
+I:11323
 T:Device mapper udev rules
 U:https://sourceware.org/lvm2/
-L:GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-2-Clause
-o:lvm2
+L:GPL-2.0-or-later AND LGPL-2.1-or-later
+o:device-mapper
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1759418673
-c:d42ba006edd6f2179218eda78d7284aba45d9f52
-D:lvm2-libs=2.03.35-r0 /bin/sh
+t:1776854610
+c:a37dc1996651188d8c6bbe6ad8ea1e7b6953394e
+D:/bin/sh
 i:device-mapper=2.03.35-r0 eudev
 
 C:Q1QFfV3N9wwYaoM0c/48f1qY2o8ys=
@@ -47354,179 +47415,146 @@ t:1747753974
 c:78d078e426d8b6518fcedc642fcfcb1b2ae7277b
 i:docs lutok=0.6.1-r0
 
-C:Q1bnKLKuAz7HV4+wHVmuhuOwvKqG0=
+C:Q1GjjZW1WywgvFnqFp7vPmPrueIh0=
 P:lvm2
-V:2.03.35-r0
+V:2.03.35-r1
 A:aarch64
-S:962179
-I:2343635
+S:964646
+I:2349384
 T:Logical Volume Manager 2 utilities
 U:https://sourceware.org/lvm2/
 L:GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-2-Clause
 o:lvm2
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1759418673
-c:d42ba006edd6f2179218eda78d7284aba45d9f52
-D:lvm2-libs=2.03.35-r0 so:libaio.so.1 so:libblkid.so.1 so:libc.musl-aarch64.so.1 so:libdevmapper-event.so.1.02
-p:cmd:lvchange=2.03.35-r0 cmd:lvconvert=2.03.35-r0 cmd:lvcreate=2.03.35-r0 cmd:lvdisplay=2.03.35-r0 cmd:lvextend=2.03.35-r0 cmd:lvm=2.03.35-r0 cmd:lvmconfig=2.03.35-r0 cmd:lvmdevices=2.03.35-r0 cmd:lvmdiskscan=2.03.35-r0 cmd:lvmpersist=2.03.35-r0 cmd:lvmsadc=2.03.35-r0 cmd:lvmsar=2.03.35-r0 cmd:lvreduce=2.03.35-r0 cmd:lvremove=2.03.35-r0 cmd:lvrename=2.03.35-r0 cmd:lvresize=2.03.35-r0 cmd:lvs=2.03.35-r0 cmd:lvscan=2.03.35-r0 cmd:pvchange=2.03.35-r0 cmd:pvck=2.03.35-r0 cmd:pvcreate=2.03.35-r0 cmd:pvdisplay=2.03.35-r0 cmd:pvmove=2.03.35-r0 cmd:pvremove=2.03.35-r0 cmd:pvresize=2.03.35-r0 cmd:pvs=2.03.35-r0 cmd:pvscan=2.03.35-r0 cmd:vgcfgbackup=2.03.35-r0 cmd:vgcfgrestore=2.03.35-r0 cmd:vgchange=2.03.35-r0 cmd:vgck=2.03.35-r0 cmd:vgconvert=2.03.35-r0 cmd:vgcreate=2.03.35-r0 cmd:vgdisplay=2.03.35-r0 cmd:vgexport=2.03.35-r0 cmd:vgextend=2.03.35-r0 cmd:vgimport=2.03.35-r0 cmd:vgimportclone=2.03.35-r0 cmd:vgimportdevices=2.03.35-r0 cmd:vgmerge=2.03.35-r0 cmd:vgmknodes=2.03.35-r0 cmd:vgreduce=2.03.35-r0 cmd:vgremove=2.03.35-r0 cmd:vgrename=2.03.35-r0 cmd:vgs=2.03.35-r0 cmd:vgscan=2.03.35-r0 cmd:vgsplit=2.03.35-r0
+t:1776854610
+c:55ba7423a7fc923fb609c72ba17a871237f66032
+D:lvm2-libs=2.03.35-r1 so:libaio.so.1 so:libblkid.so.1 so:libc.musl-aarch64.so.1 so:libdevmapper-event.so.1.02
+p:cmd:lvchange=2.03.35-r1 cmd:lvconvert=2.03.35-r1 cmd:lvcreate=2.03.35-r1 cmd:lvdisplay=2.03.35-r1 cmd:lvextend=2.03.35-r1 cmd:lvm=2.03.35-r1 cmd:lvmconfig=2.03.35-r1 cmd:lvmdevices=2.03.35-r1 cmd:lvmdiskscan=2.03.35-r1 cmd:lvmpersist=2.03.35-r1 cmd:lvmsadc=2.03.35-r1 cmd:lvmsar=2.03.35-r1 cmd:lvreduce=2.03.35-r1 cmd:lvremove=2.03.35-r1 cmd:lvrename=2.03.35-r1 cmd:lvresize=2.03.35-r1 cmd:lvs=2.03.35-r1 cmd:lvscan=2.03.35-r1 cmd:pvchange=2.03.35-r1 cmd:pvck=2.03.35-r1 cmd:pvcreate=2.03.35-r1 cmd:pvdisplay=2.03.35-r1 cmd:pvmove=2.03.35-r1 cmd:pvremove=2.03.35-r1 cmd:pvresize=2.03.35-r1 cmd:pvs=2.03.35-r1 cmd:pvscan=2.03.35-r1 cmd:vgcfgbackup=2.03.35-r1 cmd:vgcfgrestore=2.03.35-r1 cmd:vgchange=2.03.35-r1 cmd:vgck=2.03.35-r1 cmd:vgconvert=2.03.35-r1 cmd:vgcreate=2.03.35-r1 cmd:vgdisplay=2.03.35-r1 cmd:vgexport=2.03.35-r1 cmd:vgextend=2.03.35-r1 cmd:vgimport=2.03.35-r1 cmd:vgimportclone=2.03.35-r1 cmd:vgimportdevices=2.03.35-r1 cmd:vgmerge=2.03.35-r1 cmd:vgmknodes=2.03.35-r1 cmd:vgreduce=2.03.35-r1 cmd:vgremove=2.03.35-r1 cmd:vgrename=2.03.35-r1 cmd:vgs=2.03.35-r1 cmd:vgscan=2.03.35-r1 cmd:vgsplit=2.03.35-r1
 
-C:Q1GWaaHHfgxNibotqWW58fTUY5Mj8=
+C:Q12WoD6yW/P1E7BdNj/qH6DGTXMZ4=
 P:lvm2-dev
-V:2.03.35-r0
+V:2.03.35-r1
 A:aarch64
-S:41052
-I:144437
+S:3314
+I:2528
 T:Logical Volume Manager 2 utilities (development files)
 U:https://sourceware.org/lvm2/
 L:GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-2-Clause
 o:lvm2
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1759418673
-c:d42ba006edd6f2179218eda78d7284aba45d9f52
-D:linux-headers device-mapper-event-libs=2.03.35-r0 device-mapper-libs=2.03.35-r0 lvm2-libs=2.03.35-r0 pkgconfig
-p:pc:devmapper-event=1.02.209 pc:devmapper=1.02.209
+t:1776854610
+c:55ba7423a7fc923fb609c72ba17a871237f66032
+D:device-mapper-dev~2.03.35 linux-headers lvm2-libs=2.03.35-r1
 
-C:Q1wP3gip6M0Tn07k0YZ/MVYD9krOU=
-P:lvm2-dmeventd
-V:2.03.35-r0
-A:aarch64
-S:19536
-I:67576
-T:Device-mapper event daemon
-U:https://sourceware.org/lvm2/
-L:GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-2-Clause
-o:lvm2
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1759418673
-c:d42ba006edd6f2179218eda78d7284aba45d9f52
-D:lvm2-libs=2.03.35-r0 so:libc.musl-aarch64.so.1 so:libdevmapper-event.so.1.02 so:libdevmapper.so.1.02
-p:cmd:dmeventd=2.03.35-r0
-
-C:Q1B01yrr/vJNWpswdw6ZI4zrJyBUU=
-P:lvm2-dmeventd-openrc
-V:2.03.35-r0
-A:aarch64
-S:2006
-I:684
-T:Device-mapper event daemon (OpenRC init scripts)
-U:https://sourceware.org/lvm2/
-L:GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-2-Clause
-o:lvm2
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1759418673
-c:d42ba006edd6f2179218eda78d7284aba45d9f52
-D:lvm2-libs=2.03.35-r0
-i:lvm2-dmeventd=2.03.35-r0 openrc
-
-C:Q1ZCnzqOw3DRvAbRKrjxsr4diMDX8=
+C:Q16pLK8PIE0dylITTrAudDB85YGqM=
 P:lvm2-doc
-V:2.03.35-r0
+V:2.03.35-r1
 A:aarch64
-S:350091
-I:341600
+S:324833
+I:316711
 T:Logical Volume Manager 2 utilities (documentation)
 U:https://sourceware.org/lvm2/
 L:GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-2-Clause
 o:lvm2
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1759418673
-c:d42ba006edd6f2179218eda78d7284aba45d9f52
-i:docs lvm2=2.03.35-r0
+t:1776854610
+c:55ba7423a7fc923fb609c72ba17a871237f66032
+i:docs lvm2=2.03.35-r1
 
-C:Q1HdmzYZxsJ5YgEdDNbSBnE8hrpEs=
+C:Q1k9FAcwnx6hfwwxSpnZuyJJOT9BQ=
 P:lvm2-extra
-V:2.03.35-r0
+V:2.03.35-r1
 A:aarch64
-S:24621
+S:24616
 I:75107
 T:LVM2 extra utilities
 U:https://sourceware.org/lvm2/
 L:GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-2-Clause
 o:lvm2
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1759418673
-c:d42ba006edd6f2179218eda78d7284aba45d9f52
+t:1776854610
+c:55ba7423a7fc923fb609c72ba17a871237f66032
 D:bash coreutils
-p:cmd:blkdeactivate=2.03.35-r0 cmd:fsadm=2.03.35-r0 cmd:lvm_import_vdo=2.03.35-r0 cmd:lvmdump=2.03.35-r0
+p:cmd:blkdeactivate=2.03.35-r1 cmd:fsadm=2.03.35-r1 cmd:lvm_import_vdo=2.03.35-r1 cmd:lvmdump=2.03.35-r1
 
-C:Q1QJUTsfh0uhFJFU1NhU4IK7zs4Yk=
+C:Q1eknebbMq6TXV5Xwh6/BvtfyOzwA=
 P:lvm2-libs
-V:2.03.35-r0
+V:2.03.35-r1
 A:aarch64
-S:911367
+S:911372
 I:2526840
 T:LVM2 shared libraries
 U:https://sourceware.org/lvm2/
 L:GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-2-Clause
 o:lvm2
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1759418673
-c:d42ba006edd6f2179218eda78d7284aba45d9f52
+t:1776854610
+c:55ba7423a7fc923fb609c72ba17a871237f66032
 D:so:libaio.so.1 so:libblkid.so.1 so:libc.musl-aarch64.so.1 so:libdevmapper-event.so.1.02 so:libdevmapper.so.1.02
 p:so:libdevmapper-event-lvm2.so.2.03=2.03 so:liblvm2cmd.so.2.03=2.03
 
-C:Q1aNuTTqeR4dgdEOr0rlMe9wdAs28=
+C:Q18W8/8Ye9psGIQHbScstBUZiUQFU=
 P:lvm2-lockd
-V:2.03.35-r0
+V:2.03.35-r1
 A:aarch64
-S:236769
+S:236782
 I:686040
 T:LVM2 locking daemon
 U:https://sourceware.org/lvm2/
 L:GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-2-Clause
 o:lvm2
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1759418673
-c:d42ba006edd6f2179218eda78d7284aba45d9f52
+t:1776854610
+c:55ba7423a7fc923fb609c72ba17a871237f66032
 D:sanlock so:libc.musl-aarch64.so.1 so:libsanlock_client.so.1
-p:cmd:lvmlockctl=2.03.35-r0 cmd:lvmlockd=2.03.35-r0 cmd:lvmpolld=2.03.35-r0
+p:cmd:lvmlockctl=2.03.35-r1 cmd:lvmlockd=2.03.35-r1 cmd:lvmpolld=2.03.35-r1
 
-C:Q1GwqGfxvNRcOEJJF+glpbeifqqeM=
+C:Q1ycJypowd3incpavwnE0zGtLyqqA=
 P:lvm2-lockd-openrc
-V:2.03.35-r0
+V:2.03.35-r1
 A:aarch64
-S:1727
+S:1722
 I:196
 T:LVM2 locking daemon (OpenRC init scripts)
 U:https://sourceware.org/lvm2/
 L:GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-2-Clause
 o:lvm2
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1759418673
-c:d42ba006edd6f2179218eda78d7284aba45d9f52
-D:lvm2-libs=2.03.35-r0
-i:lvm2-lockd=2.03.35-r0 openrc
+t:1776854610
+c:55ba7423a7fc923fb609c72ba17a871237f66032
+D:lvm2-libs=2.03.35-r1
+i:lvm2-lockd=2.03.35-r1 openrc
 
-C:Q1bCiBhpHdVKDLOkT5Vr1QqHJiPFk=
+C:Q112Xt1LyENAZkegWH3nO5sGhnJuw=
 P:lvm2-openrc
-V:2.03.35-r0
+V:2.03.35-r1
 A:aarch64
-S:2293
+S:2298
 I:1059
 T:Logical Volume Manager 2 utilities (OpenRC init scripts)
 U:https://sourceware.org/lvm2/
 L:GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-2-Clause
 o:lvm2
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1759418673
-c:d42ba006edd6f2179218eda78d7284aba45d9f52
-i:openrc lvm2=2.03.35-r0
+t:1776854610
+c:55ba7423a7fc923fb609c72ba17a871237f66032
+i:openrc lvm2=2.03.35-r1
 
-C:Q1uZaDucqFHcMKaDcTmVfk6VBpSmw=
+C:Q1mcb0c+1I/LCqpBLif4N03z6rNBk=
 P:lvm2-static
-V:2.03.35-r0
+V:2.03.35-r1
 A:aarch64
-S:2219291
+S:2219295
 I:6673110
 T:Logical Volume Manager 2 utilities static library
 U:https://sourceware.org/lvm2/
 L:GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-2-Clause
 o:lvm2
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1759418673
-c:d42ba006edd6f2179218eda78d7284aba45d9f52
-D:lvm2-libs=2.03.35-r0
-p:cmd:lvm.static=2.03.35-r0
+t:1776854610
+c:55ba7423a7fc923fb609c72ba17a871237f66032
+D:lvm2-libs=2.03.35-r1
+p:cmd:lvm.static=2.03.35-r1
 
 C:Q13Evx8wtrzKaSe4usSXw1uabIAeY=
 P:lxc
@@ -49411,112 +49439,112 @@ c:8f4df269cc044cb6f483a522c476eab53f122935
 D:mesa=26.0.5-r0 so:libX11-xcb.so.1 so:libc.musl-aarch64.so.1 so:libdisplay-info.so.3 so:libdrm.so.2 so:libexpat.so.1 so:libudev.so.1 so:libwayland-client.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-randr.so.0 so:libxcb-shm.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1 so:libzstd.so.1
 p:so:libvulkan_virtio.so=0
 
-C:Q1syvyYMiJnRH32UcVZR7UmgQTQJQ=
+C:Q1DfYrzls+PhYKZw3KWTlf45ydfpg=
 P:meson
-V:1.11.0-r0
+V:1.11.1-r0
 A:aarch64
-S:946469
-I:4173552
+S:946563
+I:4173824
 T:Fast and user friendly build system
 U:https://mesonbuild.com
 L:Apache-2.0
 o:meson
 m:Francesco Colista <fcolista@alpinelinux.org>
-t:1776358057
-c:f9fc679e78c343c54f6259c8cedba5e2b441da2f
+t:1776864822
+c:cf1b0ed30f6e9324cac7ba2a13f890bf9c78ca3c
 D:samurai python3~3.14
-p:cmd:meson=1.11.0-r0 py3.14:mesonbuild=1.11.0-r0
+p:cmd:meson=1.11.1-r0 py3.14:mesonbuild=1.11.1-r0
 
-C:Q1VqnsAuyPv32wKlzovC4qsjRg1Z4=
+C:Q1kArXZiJzqkGGR7j4jdO619L93hs=
 P:meson-bash-completion
-V:1.11.0-r0
+V:1.11.1-r0
 A:aarch64
-S:5691
+S:5693
 I:27216
 T:Bash completions for meson
 U:https://mesonbuild.com
 L:Apache-2.0
 o:meson
 m:Francesco Colista <fcolista@alpinelinux.org>
-t:1776358057
-c:f9fc679e78c343c54f6259c8cedba5e2b441da2f
-i:meson=1.11.0-r0 bash-completion
+t:1776864822
+c:cf1b0ed30f6e9324cac7ba2a13f890bf9c78ca3c
+i:meson=1.11.1-r0 bash-completion
 
-C:Q1b5YOcao1lNvIfdB7f0+HXBGXWqo=
+C:Q19WkIJRF0NqA+qLfuqmTaFMiIZ9I=
 P:meson-doc
-V:1.11.0-r0
+V:1.11.1-r0
 A:aarch64
-S:6268
-I:4498
+S:6265
+I:4499
 T:Fast and user friendly build system (documentation)
 U:https://mesonbuild.com
 L:Apache-2.0
 o:meson
 m:Francesco Colista <fcolista@alpinelinux.org>
-t:1776358057
-c:f9fc679e78c343c54f6259c8cedba5e2b441da2f
-i:docs meson=1.11.0-r0
+t:1776864822
+c:cf1b0ed30f6e9324cac7ba2a13f890bf9c78ca3c
+i:docs meson=1.11.1-r0
 
-C:Q1T6IvjPkc3FuHtE00xh/zBbyalew=
+C:Q1VMd/wNgnXQOlI+nPAkENrMOy2LA=
 P:meson-polkit
-V:1.11.0-r0
+V:1.11.1-r0
 A:aarch64
-S:2066
+S:2067
 I:896
 T:Fast and user friendly build system (polkit config)
 U:https://mesonbuild.com
 L:Apache-2.0
 o:meson
 m:Francesco Colista <fcolista@alpinelinux.org>
-t:1776358057
-c:f9fc679e78c343c54f6259c8cedba5e2b441da2f
-i:meson=1.11.0-r0 polkit
+t:1776864822
+c:cf1b0ed30f6e9324cac7ba2a13f890bf9c78ca3c
+i:meson=1.11.1-r0 polkit
 
-C:Q1+0EiMP4rJkJc2Qf6dKwpXW4apoQ=
+C:Q1G9em/Y2iGQsMBhKEDaif9Gxv0qE=
 P:meson-pyc
-V:1.11.0-r0
+V:1.11.1-r0
 A:aarch64
-S:2262646
-I:6163542
+S:2262904
+I:6164170
 T:Precompiled Python bytecode for meson
 U:https://mesonbuild.com
 L:Apache-2.0
 o:meson
 m:Francesco Colista <fcolista@alpinelinux.org>
-t:1776358057
-c:f9fc679e78c343c54f6259c8cedba5e2b441da2f
+t:1776864822
+c:cf1b0ed30f6e9324cac7ba2a13f890bf9c78ca3c
 D:python3~3.14
-i:meson=1.11.0-r0 pyc
+i:meson=1.11.1-r0 pyc
 
-C:Q1eyTGxGe4wgsv3N/x2wwQ0fvCUHI=
+C:Q1M0glqpaZqMh7re+k+NU45JYdMrM=
 P:meson-vim
-V:1.11.0-r0
+V:1.11.1-r0
 A:aarch64
-S:5894
+S:5891
 I:10685
 T:Fast and user friendly build system (vim support)
 U:https://mesonbuild.com
 L:Apache-2.0
 o:meson
 m:Francesco Colista <fcolista@alpinelinux.org>
-t:1776358057
-c:f9fc679e78c343c54f6259c8cedba5e2b441da2f
-i:vim meson=1.11.0-r0
+t:1776864822
+c:cf1b0ed30f6e9324cac7ba2a13f890bf9c78ca3c
+i:vim meson=1.11.1-r0
 
-C:Q1lVhcCPE6FRuFI5aI7YzW6+aFjOs=
+C:Q1NBIPlVrhCORUVT/14cWG09DQxVU=
 P:meson-zsh-completion
-V:1.11.0-r0
+V:1.11.1-r0
 A:aarch64
-S:7777
+S:7773
 I:20948
 T:Zsh completions for meson
 U:https://mesonbuild.com
 L:Apache-2.0
 o:meson
 m:Francesco Colista <fcolista@alpinelinux.org>
-t:1776358057
-c:f9fc679e78c343c54f6259c8cedba5e2b441da2f
-i:meson=1.11.0-r0 zsh
+t:1776864822
+c:cf1b0ed30f6e9324cac7ba2a13f890bf9c78ca3c
+i:meson=1.11.1-r0 zsh
 
 C:Q1qyCwOFHrOcnhKwWXm7bMCKTxsjU=
 P:mg
@@ -68123,35 +68151,35 @@ t:1751254738
 c:31abe8902b348ae01a63fe06f3dbf32b59c0e0de
 D:perl so:libc.musl-aarch64.so.1
 
-C:Q1DVcoIub2A7vH8OacN5Auh4tiEJY=
+C:Q17ijjQn4QeIg52zeVF1xRiFMU4Qc=
 P:perl-time-parsedate
-V:2015.103-r6
+V:2026.033-r0
 A:aarch64
-S:18087
-I:52591
-T:Parse and format time values
+S:17805
+I:53379
+T:date parsing both relative and absolute
 U:https://metacpan.org/release/Time-ParseDate/
 L:GPL-1.0-or-later OR Artistic-1.0-Perl
 o:perl-time-parsedate
 m:Timothy Legge <timlegge@gmail.com>
-t:1688403118
-c:4ece6fc07c96d6859dde2ecc31b323fb3b355638
+t:1776824531
+c:2d1558a5fd7da1da213281df09667af851ff0864
 D:perl
 
-C:Q1ZE7zRXYm3pG2o/aEWt9DG8NSYY0=
+C:Q12615po/HX78h815u9Q/avSgB4Vc=
 P:perl-time-parsedate-doc
-V:2015.103-r6
+V:2026.033-r0
 A:aarch64
-S:11455
-I:9281
-T:Parse and format time values (documentation)
+S:11685
+I:9516
+T:date parsing both relative and absolute (documentation)
 U:https://metacpan.org/release/Time-ParseDate/
 L:GPL-1.0-or-later OR Artistic-1.0-Perl
 o:perl-time-parsedate
 m:Timothy Legge <timlegge@gmail.com>
-t:1688403118
-c:4ece6fc07c96d6859dde2ecc31b323fb3b355638
-i:docs perl-time-parsedate=2015.103-r6
+t:1776824531
+c:2d1558a5fd7da1da213281df09667af851ff0864
+i:docs perl-time-parsedate=2026.033-r0
 
 C:Q1Ztdj1L35i0nUIeFDSdm872VTQnM=
 P:perl-timedate
@@ -77517,21 +77545,21 @@ c:d74bc107a00dd038122334d9a0c472fe4d9b6603
 D:so:libc.musl-aarch64.so.1 so:libglib-2.0.so.0
 p:cmd:rrdcreate=1.9.0-r6 cmd:rrdinfo=1.9.0-r6 cmd:rrdupdate=1.9.0-r6
 
-C:Q17AL50gBobTyqd38sgdb1uKg06Tk=
+C:Q1KCraQ9qC4dPfZj0PO1Nxz3+hj/U=
 P:rrsync
-V:3.4.1-r1
+V:3.4.1-r2
 A:aarch64
-S:6229
+S:6225
 I:13009
 T:Restricted rsync, restricts rsync to a subdir declared in .ssh/authorized_keys
 U:https://rsync.samba.org/
 L:GPL-3.0-or-later
 o:rsync
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1763623198
-c:a835a19e6b837b328edcbb2faa002e013f1663cb
+t:1776848044
+c:506c953e16497cd49eb7f328118261741b07bb92
 D:rsync python3
-p:cmd:rrsync=3.4.1-r1
+p:cmd:rrsync=3.4.1-r2
 
 C:Q1kYhIhCtdKDRS181ktjnVIV0DOOI=
 P:rsnapshot
@@ -77564,51 +77592,51 @@ t:1752179244
 c:4f457bdd0b11bd1cc37cb3815ec2fb95396d350f
 i:docs rsnapshot=1.5.1-r0
 
-C:Q1QLvZElPvWYDmi4X9zghDTr8pneQ=
+C:Q1zzMyEp4MkE6/ZqG0dYbt2yivAgU=
 P:rsync
-V:3.4.1-r1
+V:3.4.1-r2
 A:aarch64
-S:205569
+S:205579
 I:416544
 T:A file transfer program to keep remote files in sync
 U:https://rsync.samba.org/
 L:GPL-3.0-or-later
 o:rsync
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1763623198
-c:a835a19e6b837b328edcbb2faa002e013f1663cb
+t:1776848044
+c:506c953e16497cd49eb7f328118261741b07bb92
 D:so:libacl.so.1 so:libc.musl-aarch64.so.1 so:liblz4.so.1 so:libpopt.so.0 so:libxxhash.so.0 so:libz.so.1 so:libzstd.so.1
-p:cmd:rsync-ssl=3.4.1-r1 cmd:rsync=3.4.1-r1
+p:cmd:rsync-ssl=3.4.1-r2 cmd:rsync=3.4.1-r2
 
-C:Q1kUukvhyYZeXfBAMhoxlAp65l6XY=
+C:Q1IuMmq/u8T7ItyIbm/QbaUv+ZbTE=
 P:rsync-doc
-V:3.4.1-r1
+V:3.4.1-r2
 A:aarch64
-S:100585
+S:100577
 I:98201
 T:A file transfer program to keep remote files in sync (documentation)
 U:https://rsync.samba.org/
 L:GPL-3.0-or-later
 o:rsync
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1763623198
-c:a835a19e6b837b328edcbb2faa002e013f1663cb
-i:docs rsync=3.4.1-r1
+t:1776848044
+c:506c953e16497cd49eb7f328118261741b07bb92
+i:docs rsync=3.4.1-r2
 
-C:Q1RfkKewMDyhWR97bSBSgQDXzecSA=
+C:Q1SZQGnMeLyoEPQgPofzhgMzaQDqU=
 P:rsync-openrc
-V:3.4.1-r1
+V:3.4.1-r2
 A:aarch64
-S:2014
+S:2017
 I:607
 T:A file transfer program to keep remote files in sync (OpenRC init scripts)
 U:https://rsync.samba.org/
 L:GPL-3.0-or-later
 o:rsync
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1763623198
-c:a835a19e6b837b328edcbb2faa002e013f1663cb
-i:openrc rsync=3.4.1-r1
+t:1776848044
+c:506c953e16497cd49eb7f328118261741b07bb92
+i:openrc rsync=3.4.1-r2
 
 C:Q1xs2XZKgT8vBmodmBwEYIS8k3dl0=
 P:rsync-zsh-completion
@@ -80942,67 +80970,67 @@ c:d7d0e7c6dea902bafc0462da51e5e5a6c0b685d5
 k:10
 i:docs samurai=1.2-r8
 
-C:Q1raz0Z9HbOLbJgYbhCvC+ORxM7Tg=
+C:Q11Gu5STJ6zFi6lZvwl5GxwraFoec=
 P:sanlock
-V:5.1.0-r0
+V:5.1.0-r1
 A:aarch64
-S:242779
+S:242780
 I:730200
 T:lease manager that uses shared storage
 U:https://codeberg.org/sanlock/sanlock
 L:LGPL-2.0-or-later AND GPL-2.0-only AND GPL-2.0-or-later
 o:sanlock
 m:Guy Godfroy <guy.godfroy@gugod.fr>
-t:1776345381
-c:a0bba2c0b2048a20c356fdc190b6669906cb846a
+t:1776854610
+c:1164db90e9e899f2a17a6ab4e41106b2c5ae9183
 D:/bin/sh so:libaio.so.1 so:libblkid.so.1 so:libc.musl-aarch64.so.1 so:libdevmapper.so.1.02 so:libuuid.so.1
-p:cmd:sanlock=5.1.0-r0 cmd:wdmd=5.1.0-r0 so:libsanlock.so.1=1.0 so:libsanlock_client.so.1=1.0 so:libwdmd.so.1=1.0
+p:cmd:sanlock=5.1.0-r1 cmd:wdmd=5.1.0-r1 so:libsanlock.so.1=1.0 so:libsanlock_client.so.1=1.0 so:libwdmd.so.1=1.0
 
-C:Q1dQeFRBAmitGRWoXAgBH0Ors2jI0=
+C:Q1z9lutTk0OmNA7UYKooM2d63rz8c=
 P:sanlock-dev
-V:5.1.0-r0
+V:5.1.0-r1
 A:aarch64
-S:14622
+S:14615
 I:43654
 T:lease manager that uses shared storage (development files)
 U:https://codeberg.org/sanlock/sanlock
 L:LGPL-2.0-or-later AND GPL-2.0-only AND GPL-2.0-or-later
 o:sanlock
 m:Guy Godfroy <guy.godfroy@gugod.fr>
-t:1776345381
-c:a0bba2c0b2048a20c356fdc190b6669906cb846a
-D:sanlock=5.1.0-r0 pkgconfig
+t:1776854610
+c:1164db90e9e899f2a17a6ab4e41106b2c5ae9183
+D:sanlock=5.1.0-r1 pkgconfig
 p:pc:libsanlock=5.1.0 pc:libsanlock_client=5.1.0
 
-C:Q1IGXfUc6K2hoD0ojk8mZMRJd27V0=
+C:Q14RrVgBuOCeVNsy68VX2265GKm/c=
 P:sanlock-doc
-V:5.1.0-r0
+V:5.1.0-r1
 A:aarch64
-S:11942
+S:11936
 I:10086
 T:lease manager that uses shared storage (documentation)
 U:https://codeberg.org/sanlock/sanlock
 L:LGPL-2.0-or-later AND GPL-2.0-only AND GPL-2.0-or-later
 o:sanlock
 m:Guy Godfroy <guy.godfroy@gugod.fr>
-t:1776345381
-c:a0bba2c0b2048a20c356fdc190b6669906cb846a
-i:docs sanlock=5.1.0-r0
+t:1776854610
+c:1164db90e9e899f2a17a6ab4e41106b2c5ae9183
+i:docs sanlock=5.1.0-r1
 
-C:Q1fhJX9aQ7MQEym1L4hKSqySR6Wfw=
+C:Q1FYfTqsw4MbTHbOJPFL2THAGAodU=
 P:sanlock-openrc
-V:5.1.0-r0
+V:5.1.0-r1
 A:aarch64
-S:1997
+S:1993
 I:393
 T:lease manager that uses shared storage (OpenRC init scripts)
 U:https://codeberg.org/sanlock/sanlock
 L:LGPL-2.0-or-later AND GPL-2.0-only AND GPL-2.0-or-later
 o:sanlock
 m:Guy Godfroy <guy.godfroy@gugod.fr>
-t:1776345381
-c:a0bba2c0b2048a20c356fdc190b6669906cb846a
-i:openrc sanlock=5.1.0-r0
+t:1776854610
+c:1164db90e9e899f2a17a6ab4e41106b2c5ae9183
+i:openrc sanlock=5.1.0-r1
 
 C:Q1b8buf9oxD323I9v1BJA+6OB53Hw=
 P:sbsigntool

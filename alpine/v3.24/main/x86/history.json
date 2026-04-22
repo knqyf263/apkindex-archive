@@ -2026,14 +2026,15 @@
     "abuild-meson": {
       "origin": "meson",
       "versions": {
-        "1.11.0-r0": 1776358057
+        "1.11.0-r0": 1776358057,
+        "1.11.1-r0": 1776864822
       },
       "dependencies": [
-        "meson=1.11.0-r0",
+        "meson=1.11.1-r0",
         "abuild"
       ],
       "provides": [
-        "cmd:abuild-meson=1.11.0-r0"
+        "cmd:abuild-meson=1.11.1-r0"
       ]
     },
     "abuild-muon": {
@@ -10839,24 +10840,25 @@
       }
     },
     "device-mapper": {
-      "origin": "lvm2",
+      "origin": "device-mapper",
       "versions": {
-        "2.03.35-r0": 1759418673
+        "2.03.35-r0": 1759418673,
+        "2.03.35-r1": 1776872121
       },
       "dependencies": [
-        "lvm2-libs=2.03.35-r0",
         "so:libc.musl-x86.so.1",
         "so:libdevmapper.so.1.02"
       ],
       "provides": [
-        "cmd:dmsetup=2.03.35-r0",
-        "cmd:dmstats=2.03.35-r0"
+        "cmd:dmsetup=2.03.35-r1",
+        "cmd:dmstats=2.03.35-r1"
       ]
     },
     "device-mapper-event-libs": {
-      "origin": "lvm2",
+      "origin": "device-mapper",
       "versions": {
-        "2.03.35-r0": 1759418673
+        "2.03.35-r0": 1759418673,
+        "2.03.35-r1": 1776872121
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
@@ -10867,9 +10869,10 @@
       ]
     },
     "device-mapper-libs": {
-      "origin": "lvm2",
+      "origin": "device-mapper",
       "versions": {
-        "2.03.35-r0": 1759418673
+        "2.03.35-r0": 1759418673,
+        "2.03.35-r1": 1776872121
       },
       "dependencies": [
         "so:libc.musl-x86.so.1"
@@ -10879,27 +10882,28 @@
       ]
     },
     "device-mapper-static": {
-      "origin": "lvm2",
+      "origin": "device-mapper",
       "versions": {
-        "2.03.35-r0": 1759418673
+        "2.03.35-r0": 1759418673,
+        "2.03.35-r1": 1776872121
       },
       "dependencies": [
         "lvm2-libs=2.03.35-r0"
       ],
       "provides": [
-        "device-mapper-event-static=2.03.35-r0",
-        "cmd:dmeventd.static=2.03.35-r0",
-        "cmd:dmsetup.static=2.03.35-r0",
-        "cmd:dmstats.static=2.03.35-r0"
+        "device-mapper-event-static=2.03.35-r1",
+        "cmd:dmeventd.static=2.03.35-r1",
+        "cmd:dmsetup.static=2.03.35-r1",
+        "cmd:dmstats.static=2.03.35-r1"
       ]
     },
     "device-mapper-udev": {
-      "origin": "lvm2",
+      "origin": "device-mapper",
       "versions": {
-        "2.03.35-r0": 1759418673
+        "2.03.35-r0": 1759418673,
+        "2.03.35-r1": 1776872121
       },
       "dependencies": [
-        "lvm2-libs=2.03.35-r0",
         "/bin/sh"
       ]
     },
@@ -12072,7 +12076,8 @@
     "drbd-utils": {
       "origin": "drbd-utils",
       "versions": {
-        "9.33.0-r0": 1763141485
+        "9.33.0-r0": 1763141485,
+        "9.34.0-r0": 1776872248
       },
       "dependencies": [
         "bash",
@@ -12082,39 +12087,43 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "drbd=9.33.0-r0",
-        "cmd:drbd-events-log-supplier=9.33.0-r0",
-        "cmd:drbdadm=9.33.0-r0",
-        "cmd:drbdmeta=9.33.0-r0",
-        "cmd:drbdmon=9.33.0-r0",
-        "cmd:drbdsetup=9.33.0-r0"
+        "drbd=9.34.0-r0",
+        "cmd:drbd-events-log-supplier=9.34.0-r0",
+        "cmd:drbdadm=9.34.0-r0",
+        "cmd:drbdmeta=9.34.0-r0",
+        "cmd:drbdmon=9.34.0-r0",
+        "cmd:drbdsetup=9.34.0-r0"
       ]
     },
     "drbd-utils-bash-completion": {
       "origin": "drbd-utils",
       "versions": {
-        "9.33.0-r0": 1763141485
+        "9.33.0-r0": 1763141485,
+        "9.34.0-r0": 1776872248
       }
     },
     "drbd-utils-doc": {
       "origin": "drbd-utils",
       "versions": {
-        "9.33.0-r0": 1763141485
+        "9.33.0-r0": 1763141485,
+        "9.34.0-r0": 1776872248
       }
     },
     "drbd-utils-openrc": {
       "origin": "drbd-utils",
       "versions": {
-        "9.33.0-r0": 1763141485
+        "9.33.0-r0": 1763141485,
+        "9.34.0-r0": 1776872248
       }
     },
     "drbd-utils-pacemaker": {
       "origin": "drbd-utils",
       "versions": {
-        "9.33.0-r0": 1763141485
+        "9.33.0-r0": 1763141485,
+        "9.34.0-r0": 1776872248
       },
       "dependencies": [
-        "drbd-utils=9.33.0-r0"
+        "drbd-utils=9.34.0-r0"
       ]
     },
     "drill": {
@@ -38178,76 +38187,76 @@
     "lvm2": {
       "origin": "lvm2",
       "versions": {
-        "2.03.35-r0": 1759418673
+        "2.03.35-r0": 1759418673,
+        "2.03.35-r1": 1776854610
       },
       "dependencies": [
-        "lvm2-libs=2.03.35-r0",
+        "lvm2-libs=2.03.35-r1",
         "so:libaio.so.1",
         "so:libblkid.so.1",
         "so:libc.musl-x86.so.1",
         "so:libdevmapper-event.so.1.02"
       ],
       "provides": [
-        "cmd:lvchange=2.03.35-r0",
-        "cmd:lvconvert=2.03.35-r0",
-        "cmd:lvcreate=2.03.35-r0",
-        "cmd:lvdisplay=2.03.35-r0",
-        "cmd:lvextend=2.03.35-r0",
-        "cmd:lvm=2.03.35-r0",
-        "cmd:lvmconfig=2.03.35-r0",
-        "cmd:lvmdevices=2.03.35-r0",
-        "cmd:lvmdiskscan=2.03.35-r0",
-        "cmd:lvmpersist=2.03.35-r0",
-        "cmd:lvmsadc=2.03.35-r0",
-        "cmd:lvmsar=2.03.35-r0",
-        "cmd:lvreduce=2.03.35-r0",
-        "cmd:lvremove=2.03.35-r0",
-        "cmd:lvrename=2.03.35-r0",
-        "cmd:lvresize=2.03.35-r0",
-        "cmd:lvs=2.03.35-r0",
-        "cmd:lvscan=2.03.35-r0",
-        "cmd:pvchange=2.03.35-r0",
-        "cmd:pvck=2.03.35-r0",
-        "cmd:pvcreate=2.03.35-r0",
-        "cmd:pvdisplay=2.03.35-r0",
-        "cmd:pvmove=2.03.35-r0",
-        "cmd:pvremove=2.03.35-r0",
-        "cmd:pvresize=2.03.35-r0",
-        "cmd:pvs=2.03.35-r0",
-        "cmd:pvscan=2.03.35-r0",
-        "cmd:vgcfgbackup=2.03.35-r0",
-        "cmd:vgcfgrestore=2.03.35-r0",
-        "cmd:vgchange=2.03.35-r0",
-        "cmd:vgck=2.03.35-r0",
-        "cmd:vgconvert=2.03.35-r0",
-        "cmd:vgcreate=2.03.35-r0",
-        "cmd:vgdisplay=2.03.35-r0",
-        "cmd:vgexport=2.03.35-r0",
-        "cmd:vgextend=2.03.35-r0",
-        "cmd:vgimport=2.03.35-r0",
-        "cmd:vgimportclone=2.03.35-r0",
-        "cmd:vgimportdevices=2.03.35-r0",
-        "cmd:vgmerge=2.03.35-r0",
-        "cmd:vgmknodes=2.03.35-r0",
-        "cmd:vgreduce=2.03.35-r0",
-        "cmd:vgremove=2.03.35-r0",
-        "cmd:vgrename=2.03.35-r0",
-        "cmd:vgs=2.03.35-r0",
-        "cmd:vgscan=2.03.35-r0",
-        "cmd:vgsplit=2.03.35-r0"
+        "cmd:lvchange=2.03.35-r1",
+        "cmd:lvconvert=2.03.35-r1",
+        "cmd:lvcreate=2.03.35-r1",
+        "cmd:lvdisplay=2.03.35-r1",
+        "cmd:lvextend=2.03.35-r1",
+        "cmd:lvm=2.03.35-r1",
+        "cmd:lvmconfig=2.03.35-r1",
+        "cmd:lvmdevices=2.03.35-r1",
+        "cmd:lvmdiskscan=2.03.35-r1",
+        "cmd:lvmpersist=2.03.35-r1",
+        "cmd:lvmsadc=2.03.35-r1",
+        "cmd:lvmsar=2.03.35-r1",
+        "cmd:lvreduce=2.03.35-r1",
+        "cmd:lvremove=2.03.35-r1",
+        "cmd:lvrename=2.03.35-r1",
+        "cmd:lvresize=2.03.35-r1",
+        "cmd:lvs=2.03.35-r1",
+        "cmd:lvscan=2.03.35-r1",
+        "cmd:pvchange=2.03.35-r1",
+        "cmd:pvck=2.03.35-r1",
+        "cmd:pvcreate=2.03.35-r1",
+        "cmd:pvdisplay=2.03.35-r1",
+        "cmd:pvmove=2.03.35-r1",
+        "cmd:pvremove=2.03.35-r1",
+        "cmd:pvresize=2.03.35-r1",
+        "cmd:pvs=2.03.35-r1",
+        "cmd:pvscan=2.03.35-r1",
+        "cmd:vgcfgbackup=2.03.35-r1",
+        "cmd:vgcfgrestore=2.03.35-r1",
+        "cmd:vgchange=2.03.35-r1",
+        "cmd:vgck=2.03.35-r1",
+        "cmd:vgconvert=2.03.35-r1",
+        "cmd:vgcreate=2.03.35-r1",
+        "cmd:vgdisplay=2.03.35-r1",
+        "cmd:vgexport=2.03.35-r1",
+        "cmd:vgextend=2.03.35-r1",
+        "cmd:vgimport=2.03.35-r1",
+        "cmd:vgimportclone=2.03.35-r1",
+        "cmd:vgimportdevices=2.03.35-r1",
+        "cmd:vgmerge=2.03.35-r1",
+        "cmd:vgmknodes=2.03.35-r1",
+        "cmd:vgreduce=2.03.35-r1",
+        "cmd:vgremove=2.03.35-r1",
+        "cmd:vgrename=2.03.35-r1",
+        "cmd:vgs=2.03.35-r1",
+        "cmd:vgscan=2.03.35-r1",
+        "cmd:vgsplit=2.03.35-r1"
       ]
     },
     "lvm2-dev": {
       "origin": "lvm2",
       "versions": {
-        "2.03.35-r0": 1759418673
+        "2.03.35-r0": 1759418673,
+        "2.03.35-r1": 1776854610
       },
       "dependencies": [
+        "device-mapper-dev~2.03.35",
         "linux-headers",
-        "device-mapper-event-libs=2.03.35-r0",
-        "device-mapper-libs=2.03.35-r0",
-        "lvm2-libs=2.03.35-r0",
-        "pkgconfig"
+        "lvm2-libs=2.03.35-r1"
       ],
       "provides": [
         "pc:devmapper-event=1.02.209",
@@ -38281,29 +38290,32 @@
     "lvm2-doc": {
       "origin": "lvm2",
       "versions": {
-        "2.03.35-r0": 1759418673
+        "2.03.35-r0": 1759418673,
+        "2.03.35-r1": 1776854610
       }
     },
     "lvm2-extra": {
       "origin": "lvm2",
       "versions": {
-        "2.03.35-r0": 1759418673
+        "2.03.35-r0": 1759418673,
+        "2.03.35-r1": 1776854610
       },
       "dependencies": [
         "bash",
         "coreutils"
       ],
       "provides": [
-        "cmd:blkdeactivate=2.03.35-r0",
-        "cmd:fsadm=2.03.35-r0",
-        "cmd:lvm_import_vdo=2.03.35-r0",
-        "cmd:lvmdump=2.03.35-r0"
+        "cmd:blkdeactivate=2.03.35-r1",
+        "cmd:fsadm=2.03.35-r1",
+        "cmd:lvm_import_vdo=2.03.35-r1",
+        "cmd:lvmdump=2.03.35-r1"
       ]
     },
     "lvm2-libs": {
       "origin": "lvm2",
       "versions": {
-        "2.03.35-r0": 1759418673
+        "2.03.35-r0": 1759418673,
+        "2.03.35-r1": 1776854610
       },
       "dependencies": [
         "so:libaio.so.1",
@@ -38320,7 +38332,8 @@
     "lvm2-lockd": {
       "origin": "lvm2",
       "versions": {
-        "2.03.35-r0": 1759418673
+        "2.03.35-r0": 1759418673,
+        "2.03.35-r1": 1776854610
       },
       "dependencies": [
         "sanlock",
@@ -38328,36 +38341,39 @@
         "so:libsanlock_client.so.1"
       ],
       "provides": [
-        "cmd:lvmlockctl=2.03.35-r0",
-        "cmd:lvmlockd=2.03.35-r0",
-        "cmd:lvmpolld=2.03.35-r0"
+        "cmd:lvmlockctl=2.03.35-r1",
+        "cmd:lvmlockd=2.03.35-r1",
+        "cmd:lvmpolld=2.03.35-r1"
       ]
     },
     "lvm2-lockd-openrc": {
       "origin": "lvm2",
       "versions": {
-        "2.03.35-r0": 1759418673
+        "2.03.35-r0": 1759418673,
+        "2.03.35-r1": 1776854610
       },
       "dependencies": [
-        "lvm2-libs=2.03.35-r0"
+        "lvm2-libs=2.03.35-r1"
       ]
     },
     "lvm2-openrc": {
       "origin": "lvm2",
       "versions": {
-        "2.03.35-r0": 1759418673
+        "2.03.35-r0": 1759418673,
+        "2.03.35-r1": 1776854610
       }
     },
     "lvm2-static": {
       "origin": "lvm2",
       "versions": {
-        "2.03.35-r0": 1759418673
+        "2.03.35-r0": 1759418673,
+        "2.03.35-r1": 1776854610
       },
       "dependencies": [
-        "lvm2-libs=2.03.35-r0"
+        "lvm2-libs=2.03.35-r1"
       ],
       "provides": [
-        "cmd:lvm.static=2.03.35-r0"
+        "cmd:lvm.static=2.03.35-r1"
       ]
     },
     "lxc": {
@@ -40116,39 +40132,44 @@
     "meson": {
       "origin": "meson",
       "versions": {
-        "1.11.0-r0": 1776358057
+        "1.11.0-r0": 1776358057,
+        "1.11.1-r0": 1776864822
       },
       "dependencies": [
         "samurai",
         "python3~3.14"
       ],
       "provides": [
-        "cmd:meson=1.11.0-r0",
-        "py3.14:mesonbuild=1.11.0-r0"
+        "cmd:meson=1.11.1-r0",
+        "py3.14:mesonbuild=1.11.1-r0"
       ]
     },
     "meson-bash-completion": {
       "origin": "meson",
       "versions": {
-        "1.11.0-r0": 1776358057
+        "1.11.0-r0": 1776358057,
+        "1.11.1-r0": 1776864822
       }
     },
     "meson-doc": {
       "origin": "meson",
       "versions": {
-        "1.11.0-r0": 1776358057
+        "1.11.0-r0": 1776358057,
+        "1.11.1-r0": 1776864822
       }
     },
     "meson-polkit": {
       "origin": "meson",
       "versions": {
-        "1.11.0-r0": 1776358057
+        "1.11.0-r0": 1776358057,
+        "1.11.1-r0": 1776864822
       }
     },
     "meson-pyc": {
       "origin": "meson",
       "versions": {
-        "1.11.0-r0": 1776358057
+        "1.11.0-r0": 1776358057,
+        "1.11.1-r0": 1776864822
       },
       "dependencies": [
         "python3~3.14"
@@ -40157,13 +40178,15 @@
     "meson-vim": {
       "origin": "meson",
       "versions": {
-        "1.11.0-r0": 1776358057
+        "1.11.0-r0": 1776358057,
+        "1.11.1-r0": 1776864822
       }
     },
     "meson-zsh-completion": {
       "origin": "meson",
       "versions": {
-        "1.11.0-r0": 1776358057
+        "1.11.0-r0": 1776358057,
+        "1.11.1-r0": 1776864822
       }
     },
     "mg": {
@@ -63423,7 +63446,8 @@
     "sanlock": {
       "origin": "sanlock",
       "versions": {
-        "5.1.0-r0": 1776345381
+        "5.1.0-r0": 1776345381,
+        "5.1.0-r1": 1776854610
       },
       "dependencies": [
         "/bin/sh",
@@ -63434,8 +63458,8 @@
         "so:libuuid.so.1"
       ],
       "provides": [
-        "cmd:sanlock=5.1.0-r0",
-        "cmd:wdmd=5.1.0-r0",
+        "cmd:sanlock=5.1.0-r1",
+        "cmd:wdmd=5.1.0-r1",
         "so:libsanlock.so.1=1.0",
         "so:libsanlock_client.so.1=1.0",
         "so:libwdmd.so.1=1.0"
@@ -63444,10 +63468,11 @@
     "sanlock-dev": {
       "origin": "sanlock",
       "versions": {
-        "5.1.0-r0": 1776345381
+        "5.1.0-r0": 1776345381,
+        "5.1.0-r1": 1776854610
       },
       "dependencies": [
-        "sanlock=5.1.0-r0",
+        "sanlock=5.1.0-r1",
         "pkgconfig"
       ],
       "provides": [
@@ -63458,13 +63483,15 @@
     "sanlock-doc": {
       "origin": "sanlock",
       "versions": {
-        "5.1.0-r0": 1776345381
+        "5.1.0-r0": 1776345381,
+        "5.1.0-r1": 1776854610
       }
     },
     "sanlock-openrc": {
       "origin": "sanlock",
       "versions": {
-        "5.1.0-r0": 1776345381
+        "5.1.0-r0": 1776345381,
+        "5.1.0-r1": 1776854610
       }
     },
     "sbsigntool": {
@@ -71976,6 +72003,47 @@
       "dependencies": [
         "zstd-dev"
       ]
+    },
+    "device-mapper-dev": {
+      "origin": "device-mapper",
+      "versions": {
+        "2.03.35-r1": 1776872121
+      },
+      "dependencies": [
+        "device-mapper-event-libs=2.03.35-r1",
+        "device-mapper-libs=2.03.35-r1",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:devmapper-event=1.02.209",
+        "pc:devmapper=1.02.209"
+      ]
+    },
+    "device-mapper-dmeventd": {
+      "origin": "device-mapper",
+      "versions": {
+        "2.03.35-r1": 1776872121
+      },
+      "dependencies": [
+        "so:libc.musl-x86.so.1",
+        "so:libdevmapper-event.so.1.02",
+        "so:libdevmapper.so.1.02"
+      ],
+      "provides": [
+        "cmd:dmeventd=2.03.35-r1"
+      ]
+    },
+    "device-mapper-dmeventd-openrc": {
+      "origin": "device-mapper",
+      "versions": {
+        "2.03.35-r1": 1776872121
+      }
+    },
+    "device-mapper-doc": {
+      "origin": "device-mapper",
+      "versions": {
+        "2.03.35-r1": 1776872121
+      }
     }
   },
   "provide": {
@@ -72226,7 +72294,7 @@
       },
       "device-mapper-event-static": {
         "package": "device-mapper-static",
-        "version": "2.03.35-r0"
+        "version": "2.03.35-r1"
       },
       "dnsmasq": {
         "package": "dnsmasq-dnssec-nftset",
@@ -72246,7 +72314,7 @@
       },
       "drbd": {
         "package": "drbd-utils",
-        "version": "9.33.0-r0"
+        "version": "9.34.0-r0"
       },
       "libelf-static": {
         "package": "elfutils-dev",
