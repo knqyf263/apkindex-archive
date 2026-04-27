@@ -4514,7 +4514,8 @@
     "asterisk": {
       "origin": "asterisk",
       "versions": {
-        "22.8.2-r0": 1770635367
+        "22.8.2-r0": 1770635367,
+        "22.8.2-r1": 1777277579
       },
       "dependencies": [
         "/bin/sh",
@@ -4527,13 +4528,13 @@
         "so:libgcc_s.so.1",
         "so:libjansson.so.4",
         "so:liblua.so.5",
-        "so:libpj.so.2.16",
-        "so:libpjlib-util.so.2.16",
-        "so:libpjmedia.so.2.16",
-        "so:libpjnath.so.2.16",
-        "so:libpjsip-simple.so.2.16",
-        "so:libpjsip-ua.so.2.16",
-        "so:libpjsip.so.2.16",
+        "so:libpj.so.2",
+        "so:libpjlib-util.so.2",
+        "so:libpjmedia.so.2",
+        "so:libpjnath.so.2",
+        "so:libpjsip-simple.so.2",
+        "so:libpjsip-ua.so.2",
+        "so:libpjsip.so.2",
         "so:libportaudio.so.2",
         "so:libsqlite3.so.0",
         "so:libssl.so.3",
@@ -4543,22 +4544,23 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:astcanary=22.8.2-r0",
-        "cmd:astdb2bdb=22.8.2-r0",
-        "cmd:astdb2sqlite3=22.8.2-r0",
-        "cmd:asterisk=22.8.2-r0",
-        "cmd:astgenkey=22.8.2-r0",
-        "cmd:astversion=22.8.2-r0",
-        "cmd:autosupport=22.8.2-r0",
-        "cmd:rasterisk=22.8.2-r0",
-        "cmd:safe_asterisk=22.8.2-r0",
+        "cmd:astcanary=22.8.2-r1",
+        "cmd:astdb2bdb=22.8.2-r1",
+        "cmd:astdb2sqlite3=22.8.2-r1",
+        "cmd:asterisk=22.8.2-r1",
+        "cmd:astgenkey=22.8.2-r1",
+        "cmd:astversion=22.8.2-r1",
+        "cmd:autosupport=22.8.2-r1",
+        "cmd:rasterisk=22.8.2-r1",
+        "cmd:safe_asterisk=22.8.2-r1",
         "so:libasteriskssl.so.1=1"
       ]
     },
     "asterisk-curl": {
       "origin": "asterisk",
       "versions": {
-        "22.8.2-r0": 1770635367
+        "22.8.2-r0": 1770635367,
+        "22.8.2-r1": 1777277579
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
@@ -4568,55 +4570,59 @@
     "asterisk-dbg": {
       "origin": "asterisk",
       "versions": {
-        "22.8.2-r0": 1770635367
+        "22.8.2-r0": 1770635367,
+        "22.8.2-r1": 1777277579
       },
       "dependencies": [
-        "!asterisk-curl<22.8.2-r0",
-        "!asterisk-curl>22.8.2-r0",
-        "!asterisk-fax<22.8.2-r0",
-        "!asterisk-fax>22.8.2-r0",
-        "!asterisk-ldap<22.8.2-r0",
-        "!asterisk-ldap>22.8.2-r0",
-        "!asterisk-mobile<22.8.2-r0",
-        "!asterisk-mobile>22.8.2-r0",
-        "!asterisk-odbc<22.8.2-r0",
-        "!asterisk-odbc>22.8.2-r0",
-        "!asterisk-opus<22.8.2-r0",
-        "!asterisk-opus>22.8.2-r0",
-        "!asterisk-pgsql<22.8.2-r0",
-        "!asterisk-pgsql>22.8.2-r0",
-        "!asterisk-prometheus<22.8.2-r0",
-        "!asterisk-prometheus>22.8.2-r0",
-        "!asterisk-speex<22.8.2-r0",
-        "!asterisk-speex>22.8.2-r0",
-        "!asterisk-srtp<22.8.2-r0",
-        "!asterisk-srtp>22.8.2-r0",
-        "!asterisk-tds<22.8.2-r0",
-        "!asterisk-tds>22.8.2-r0",
-        "!asterisk<22.8.2-r0",
-        "!asterisk>22.8.2-r0"
+        "!asterisk-curl<22.8.2-r1",
+        "!asterisk-curl>22.8.2-r1",
+        "!asterisk-fax<22.8.2-r1",
+        "!asterisk-fax>22.8.2-r1",
+        "!asterisk-ldap<22.8.2-r1",
+        "!asterisk-ldap>22.8.2-r1",
+        "!asterisk-mobile<22.8.2-r1",
+        "!asterisk-mobile>22.8.2-r1",
+        "!asterisk-odbc<22.8.2-r1",
+        "!asterisk-odbc>22.8.2-r1",
+        "!asterisk-opus<22.8.2-r1",
+        "!asterisk-opus>22.8.2-r1",
+        "!asterisk-pgsql<22.8.2-r1",
+        "!asterisk-pgsql>22.8.2-r1",
+        "!asterisk-prometheus<22.8.2-r1",
+        "!asterisk-prometheus>22.8.2-r1",
+        "!asterisk-speex<22.8.2-r1",
+        "!asterisk-speex>22.8.2-r1",
+        "!asterisk-srtp<22.8.2-r1",
+        "!asterisk-srtp>22.8.2-r1",
+        "!asterisk-tds<22.8.2-r1",
+        "!asterisk-tds>22.8.2-r1",
+        "!asterisk<22.8.2-r1",
+        "!asterisk>22.8.2-r1"
       ]
     },
     "asterisk-dev": {
       "origin": "asterisk",
       "versions": {
-        "22.8.2-r0": 1770635367
+        "22.8.2-r0": 1770635367,
+        "22.8.2-r1": 1777277579
       },
       "dependencies": [
-        "asterisk=22.8.2-r0",
-        "asterisk=22.8.2-r0"
+        "asterisk=22.8.2-r1",
+        "asterisk=22.8.2-r1"
       ]
     },
     "asterisk-doc": {
       "origin": "asterisk",
       "versions": {
-        "22.8.2-r0": 1770635367
+        "22.8.2-r0": 1770635367,
+        "22.8.2-r1": 1777277579
       }
     },
     "asterisk-fax": {
       "origin": "asterisk",
       "versions": {
-        "22.8.2-r0": 1770635367
+        "22.8.2-r0": 1770635367,
+        "22.8.2-r1": 1777277579
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
@@ -4626,7 +4632,8 @@
     "asterisk-ldap": {
       "origin": "asterisk",
       "versions": {
-        "22.8.2-r0": 1770635367
+        "22.8.2-r0": 1770635367,
+        "22.8.2-r1": 1777277579
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
@@ -4636,7 +4643,8 @@
     "asterisk-mobile": {
       "origin": "asterisk",
       "versions": {
-        "22.8.2-r0": 1770635367
+        "22.8.2-r0": 1770635367,
+        "22.8.2-r1": 1777277579
       },
       "dependencies": [
         "so:libbluetooth.so.3",
@@ -4646,7 +4654,8 @@
     "asterisk-odbc": {
       "origin": "asterisk",
       "versions": {
-        "22.8.2-r0": 1770635367
+        "22.8.2-r0": 1770635367,
+        "22.8.2-r1": 1777277579
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
@@ -4656,13 +4665,15 @@
     "asterisk-openrc": {
       "origin": "asterisk",
       "versions": {
-        "22.8.2-r0": 1770635367
+        "22.8.2-r0": 1770635367,
+        "22.8.2-r1": 1777277579
       }
     },
     "asterisk-opus": {
       "origin": "asterisk",
       "versions": {
-        "22.8.2-r0": 1770635367
+        "22.8.2-r0": 1770635367,
+        "22.8.2-r1": 1777277579
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
@@ -4672,7 +4683,8 @@
     "asterisk-pgsql": {
       "origin": "asterisk",
       "versions": {
-        "22.8.2-r0": 1770635367
+        "22.8.2-r0": 1770635367,
+        "22.8.2-r1": 1777277579
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
@@ -4682,7 +4694,8 @@
     "asterisk-prometheus": {
       "origin": "asterisk",
       "versions": {
-        "22.8.2-r0": 1770635367
+        "22.8.2-r0": 1770635367,
+        "22.8.2-r1": 1777277579
       },
       "dependencies": [
         "so:libc.musl-x86.so.1"
@@ -4691,25 +4704,29 @@
     "asterisk-sample-config": {
       "origin": "asterisk",
       "versions": {
-        "22.8.2-r0": 1770635367
+        "22.8.2-r0": 1770635367,
+        "22.8.2-r1": 1777277579
       }
     },
     "asterisk-sounds-en": {
       "origin": "asterisk",
       "versions": {
-        "22.8.2-r0": 1770635367
+        "22.8.2-r0": 1770635367,
+        "22.8.2-r1": 1777277579
       }
     },
     "asterisk-sounds-moh": {
       "origin": "asterisk",
       "versions": {
-        "22.8.2-r0": 1770635367
+        "22.8.2-r0": 1770635367,
+        "22.8.2-r1": 1777277579
       }
     },
     "asterisk-speex": {
       "origin": "asterisk",
       "versions": {
-        "22.8.2-r0": 1770635367
+        "22.8.2-r0": 1770635367,
+        "22.8.2-r1": 1777277579
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
@@ -4721,7 +4738,8 @@
     "asterisk-srtp": {
       "origin": "asterisk",
       "versions": {
-        "22.8.2-r0": 1770635367
+        "22.8.2-r0": 1770635367,
+        "22.8.2-r1": 1777277579
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
@@ -4732,7 +4750,8 @@
     "asterisk-tds": {
       "origin": "asterisk",
       "versions": {
-        "22.8.2-r0": 1770635367
+        "22.8.2-r0": 1770635367,
+        "22.8.2-r1": 1777277579
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
@@ -48042,7 +48061,8 @@
     "perl-cryptx": {
       "origin": "perl-cryptx",
       "versions": {
-        "0.087-r1": 1751254738
+        "0.087-r1": 1751254738,
+        "0.088-r0": 1777276341
       },
       "dependencies": [
         "perl",
@@ -48052,7 +48072,8 @@
     "perl-cryptx-doc": {
       "origin": "perl-cryptx",
       "versions": {
-        "0.087-r1": 1751254738
+        "0.087-r1": 1751254738,
+        "0.088-r0": 1777276341
       }
     },
     "perl-css-minifier-xs": {
@@ -53339,7 +53360,8 @@
     "pjproject": {
       "origin": "pjproject",
       "versions": {
-        "2.16-r1": 1774640352
+        "2.16-r1": 1774640352,
+        "2.17-r0": 1777277579
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
@@ -53356,38 +53378,40 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libg7221codec.so.2.16=2.16",
-        "so:libilbccodec.so.2.16=2.16",
-        "so:libpj.so.2.16=2.16",
-        "so:libpjlib-util.so.2.16=2.16",
-        "so:libpjmedia-audiodev.so.2.16=2.16",
-        "so:libpjmedia-codec.so.2.16=2.16",
-        "so:libpjmedia-videodev.so.2.16=2.16",
-        "so:libpjmedia.so.2.16=2.16",
-        "so:libpjnath.so.2.16=2.16",
-        "so:libpjsip-simple.so.2.16=2.16",
-        "so:libpjsip-ua.so.2.16=2.16",
-        "so:libpjsip.so.2.16=2.16",
-        "so:libpjsua.so.2.16=2.16",
-        "so:libpjsua2.so.2.16=2.16"
+        "so:libg7221codec.so.2=2",
+        "so:libilbccodec.so.2=2",
+        "so:libpj.so.2=2",
+        "so:libpjlib-util.so.2=2",
+        "so:libpjmedia-audiodev.so.2=2",
+        "so:libpjmedia-codec.so.2=2",
+        "so:libpjmedia-videodev.so.2=2",
+        "so:libpjmedia.so.2=2",
+        "so:libpjnath.so.2=2",
+        "so:libpjsip-simple.so.2=2",
+        "so:libpjsip-ua.so.2=2",
+        "so:libpjsip.so.2=2",
+        "so:libpjsua.so.2=2",
+        "so:libpjsua2.so.2=2"
       ]
     },
     "pjproject-dbg": {
       "origin": "pjproject",
       "versions": {
-        "2.16-r1": 1774640352
+        "2.16-r1": 1774640352,
+        "2.17-r0": 1777277579
       },
       "dependencies": [
-        "!pjproject<2.16-r1",
-        "!pjproject>2.16-r1",
-        "!py3-pjsua<2.16-r1",
-        "!py3-pjsua>2.16-r1"
+        "!pjproject<2.17-r0",
+        "!pjproject>2.17-r0",
+        "!py3-pjsua<2.17-r0",
+        "!py3-pjsua>2.17-r0"
       ]
     },
     "pjproject-dev": {
       "origin": "pjproject",
       "versions": {
-        "2.16-r1": 1774640352
+        "2.16-r1": 1774640352,
+        "2.17-r0": 1777277579
       },
       "dependencies": [
         "openssl-dev>3",
@@ -53399,29 +53423,30 @@
         "opus-dev",
         "libsrtp-dev",
         "libsamplerate-dev",
-        "pjproject=2.16-r1",
+        "pjproject=2.17-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libpjproject=2.16"
+        "pc:libpjproject=2.17"
       ]
     },
     "pjsua": {
       "origin": "pjproject",
       "versions": {
-        "2.16-r1": 1774640352
+        "2.16-r1": 1774640352,
+        "2.17-r0": 1777277579
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
-        "so:libpj.so.2.16",
-        "so:libpjlib-util.so.2.16",
-        "so:libpjmedia.so.2.16",
-        "so:libpjsip-simple.so.2.16",
-        "so:libpjsip.so.2.16",
-        "so:libpjsua.so.2.16"
+        "so:libpj.so.2",
+        "so:libpjlib-util.so.2",
+        "so:libpjmedia.so.2",
+        "so:libpjsip-simple.so.2",
+        "so:libpjsip.so.2",
+        "so:libpjsua.so.2"
       ],
       "provides": [
-        "cmd:pjsua=2.16-r1"
+        "cmd:pjsua=2.17-r0"
       ]
     },
     "pkcs11-helper": {
@@ -57121,23 +57146,25 @@
     "py3-pjsua": {
       "origin": "pjproject",
       "versions": {
-        "2.16-r1": 1774640352
+        "2.16-r1": 1774640352,
+        "2.17-r0": 1777277579
       },
       "dependencies": [
         "python3~3.14",
         "so:libc.musl-x86.so.1",
         "so:libgcc_s.so.1",
-        "so:libpjsua2.so.2.16",
+        "so:libpjsua2.so.2",
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "py3.14:pjsua2=2.16-r1"
+        "py3.14:pjsua2=2.17-r0"
       ]
     },
     "py3-pjsua-pyc": {
       "origin": "pjproject",
       "versions": {
-        "2.16-r1": 1774640352
+        "2.16-r1": 1774640352,
+        "2.17-r0": 1777277579
       },
       "dependencies": [
         "python3~3.14"
@@ -80026,6 +80053,62 @@
       "libzstd.so.1": {
         "package": "zstd-libs",
         "version": "1.5.7"
+      },
+      "libg7221codec.so.2": {
+        "package": "pjproject",
+        "version": "2"
+      },
+      "libilbccodec.so.2": {
+        "package": "pjproject",
+        "version": "2"
+      },
+      "libpj.so.2": {
+        "package": "pjproject",
+        "version": "2"
+      },
+      "libpjlib-util.so.2": {
+        "package": "pjproject",
+        "version": "2"
+      },
+      "libpjmedia-audiodev.so.2": {
+        "package": "pjproject",
+        "version": "2"
+      },
+      "libpjmedia-codec.so.2": {
+        "package": "pjproject",
+        "version": "2"
+      },
+      "libpjmedia-videodev.so.2": {
+        "package": "pjproject",
+        "version": "2"
+      },
+      "libpjmedia.so.2": {
+        "package": "pjproject",
+        "version": "2"
+      },
+      "libpjnath.so.2": {
+        "package": "pjproject",
+        "version": "2"
+      },
+      "libpjsip-simple.so.2": {
+        "package": "pjproject",
+        "version": "2"
+      },
+      "libpjsip-ua.so.2": {
+        "package": "pjproject",
+        "version": "2"
+      },
+      "libpjsip.so.2": {
+        "package": "pjproject",
+        "version": "2"
+      },
+      "libpjsua.so.2": {
+        "package": "pjproject",
+        "version": "2"
+      },
+      "libpjsua2.so.2": {
+        "package": "pjproject",
+        "version": "2"
       }
     }
   }
