@@ -13408,15 +13408,16 @@
     "fastbase64": {
       "origin": "simdutf",
       "versions": {
-        "8.2.0-r0": 1774393944
+        "8.2.0-r0": 1774393944,
+        "9.0.0-r0": 1777504033
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
-        "so:libgcc_s.so.1",
-        "so:libsimdutf.so.33"
+        "so:libgcc_s.so.1"
       ],
       "provides": [
-        "cmd:fastbase64=8.2.0-r0"
+        "cmd:fastbase64.coreutils=9.0.0-r0",
+        "cmd:fastbase64=9.0.0-r0"
       ]
     },
     "fcgi": {
@@ -44050,7 +44051,8 @@
     "nodejs": {
       "origin": "nodejs",
       "versions": {
-        "24.14.1-r0": 1774454820
+        "24.14.1-r0": 1774454820,
+        "24.14.1-r1": 1777504033
       },
       "dependencies": [
         "ca-certificates",
@@ -44066,7 +44068,7 @@
         "so:libicuuc.so.78",
         "so:libnghttp2.so.14",
         "so:libsimdjson.so.29",
-        "so:libsimdutf.so.33",
+        "so:libsimdutf.so.34",
         "so:libsqlite3.so.0",
         "so:libssl.so.3",
         "so:libstdc++.so.6",
@@ -44074,17 +44076,18 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "nodejs-lts=24.14.1-r0",
-        "cmd:node=24.14.1-r0"
+        "nodejs-lts=24.14.1-r1",
+        "cmd:node=24.14.1-r1"
       ]
     },
     "nodejs-dev": {
       "origin": "nodejs",
       "versions": {
-        "24.14.1-r0": 1774454820
+        "24.14.1-r0": 1774454820,
+        "24.14.1-r1": 1777504033
       },
       "dependencies": [
-        "nodejs-libs=24.14.1-r0",
+        "nodejs-libs=24.14.1-r1",
         "pkgconfig"
       ],
       "provides": [
@@ -44095,13 +44098,15 @@
     "nodejs-doc": {
       "origin": "nodejs",
       "versions": {
-        "24.14.1-r0": 1774454820
+        "24.14.1-r0": 1774454820,
+        "24.14.1-r1": 1777504033
       }
     },
     "nodejs-libs": {
       "origin": "nodejs",
       "versions": {
-        "24.14.1-r0": 1774454820
+        "24.14.1-r0": 1774454820,
+        "24.14.1-r1": 1777504033
       },
       "dependencies": [
         "so:libada.so.3",
@@ -44115,7 +44120,7 @@
         "so:libicuuc.so.78",
         "so:libnghttp2.so.14",
         "so:libsimdjson.so.29",
-        "so:libsimdutf.so.33",
+        "so:libsimdutf.so.34",
         "so:libsqlite3.so.0",
         "so:libssl.so.3",
         "so:libstdc++.so.6",
@@ -64385,7 +64390,8 @@
     "simdutf": {
       "origin": "simdutf",
       "versions": {
-        "8.2.0-r0": 1774393944
+        "8.2.0-r0": 1774393944,
+        "9.0.0-r0": 1777504033
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
@@ -64393,26 +64399,28 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libsimdutf.so.33=33.0.0"
+        "so:libsimdutf.so.34=34.0.0"
       ]
     },
     "simdutf-dev": {
       "origin": "simdutf",
       "versions": {
-        "8.2.0-r0": 1774393944
+        "8.2.0-r0": 1774393944,
+        "9.0.0-r0": 1777504033
       },
       "dependencies": [
-        "simdutf=8.2.0-r0",
+        "simdutf=9.0.0-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:simdutf=8.2.0"
+        "pc:simdutf=9.0.0"
       ]
     },
     "simdutf-doc": {
       "origin": "simdutf",
       "versions": {
-        "8.2.0-r0": 1774393944
+        "8.2.0-r0": 1774393944,
+        "9.0.0-r0": 1777504033
       }
     },
     "sipcalc": {
@@ -66639,15 +66647,15 @@
     "sutf": {
       "origin": "simdutf",
       "versions": {
-        "8.2.0-r0": 1774393944
+        "8.2.0-r0": 1774393944,
+        "9.0.0-r0": 1777504033
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
-        "so:libgcc_s.so.1",
-        "so:libsimdutf.so.33"
+        "so:libgcc_s.so.1"
       ],
       "provides": [
-        "cmd:sutf=8.2.0-r0"
+        "cmd:sutf=9.0.0-r0"
       ]
     },
     "swig": {
@@ -73485,7 +73493,7 @@
       },
       "nodejs-lts": {
         "package": "nodejs",
-        "version": "24.14.1-r0"
+        "version": "24.14.1-r1"
       },
       "nodejs-lts-dev": {
         "package": "nodejs-dev",
@@ -80664,6 +80672,10 @@
       "libpjsua2.so.2": {
         "package": "pjproject",
         "version": "2"
+      },
+      "libsimdutf.so.34": {
+        "package": "simdutf",
+        "version": "34.0.0"
       }
     }
   }
