@@ -10961,26 +10961,29 @@
     "dhcpcd": {
       "origin": "dhcpcd",
       "versions": {
-        "10.3.0-r0": 1763687343
+        "10.3.0-r0": 1763687343,
+        "10.3.2-r0": 1777708741
       },
       "dependencies": [
         "/bin/sh",
         "so:libc.musl-x86_64.so.1"
       ],
       "provides": [
-        "cmd:dhcpcd=10.3.0-r0"
+        "cmd:dhcpcd=10.3.2-r0"
       ]
     },
     "dhcpcd-doc": {
       "origin": "dhcpcd",
       "versions": {
-        "10.3.0-r0": 1763687343
+        "10.3.0-r0": 1763687343,
+        "10.3.2-r0": 1777708741
       }
     },
     "dhcpcd-openrc": {
       "origin": "dhcpcd",
       "versions": {
-        "10.3.0-r0": 1763687343
+        "10.3.0-r0": 1763687343,
+        "10.3.2-r0": 1777708741
       }
     },
     "dialog": {
@@ -27693,7 +27696,8 @@
     "libpcre2-16": {
       "origin": "pcre2",
       "versions": {
-        "10.47-r0": 1762730811
+        "10.47-r0": 1762730811,
+        "10.47-r1": 1777708640
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1"
@@ -27705,7 +27709,8 @@
     "libpcre2-32": {
       "origin": "pcre2",
       "versions": {
-        "10.47-r0": 1762730811
+        "10.47-r0": 1762730811,
+        "10.47-r1": 1777708640
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1"
@@ -28789,7 +28794,8 @@
     "libtheora": {
       "origin": "libtheora",
       "versions": {
-        "1.2.0-r0": 1760856350
+        "1.2.0-r0": 1760856350,
+        "1.2.0-r1": 1777708640
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
@@ -28804,11 +28810,12 @@
     "libtheora-dev": {
       "origin": "libtheora",
       "versions": {
-        "1.2.0-r0": 1760856350
+        "1.2.0-r0": 1760856350,
+        "1.2.0-r1": 1777708640
       },
       "dependencies": [
         "libogg-dev",
-        "libtheora=1.2.0-r0",
+        "libtheora=1.2.0-r1",
         "pc:ogg>=1.3.4",
         "pkgconfig"
       ],
@@ -28821,13 +28828,15 @@
     "libtheora-doc": {
       "origin": "libtheora",
       "versions": {
-        "1.2.0-r0": 1760856350
+        "1.2.0-r0": 1760856350,
+        "1.2.0-r1": 1777708640
       }
     },
     "libtheora-static": {
       "origin": "libtheora",
       "versions": {
-        "1.2.0-r0": 1760856350
+        "1.2.0-r0": 1760856350,
+        "1.2.0-r1": 1777708640
       }
     },
     "libtiffxx": {
@@ -29878,7 +29887,8 @@
     "libxcb": {
       "origin": "libxcb",
       "versions": {
-        "1.17.0-r1": 1763765650
+        "1.17.0-r1": 1763765650,
+        "1.17.0-r2": 1777708640
       },
       "dependencies": [
         "so:libXau.so.6",
@@ -29916,22 +29926,24 @@
     "libxcb-dbg": {
       "origin": "libxcb",
       "versions": {
-        "1.17.0-r1": 1763765650
+        "1.17.0-r1": 1763765650,
+        "1.17.0-r2": 1777708640
       },
       "dependencies": [
-        "!libxcb<1.17.0-r1",
-        "!libxcb>1.17.0-r1"
+        "!libxcb<1.17.0-r2",
+        "!libxcb>1.17.0-r2"
       ]
     },
     "libxcb-dev": {
       "origin": "libxcb",
       "versions": {
-        "1.17.0-r1": 1763765650
+        "1.17.0-r1": 1763765650,
+        "1.17.0-r2": 1777708640
       },
       "dependencies": [
         "libxau-dev",
         "xcb-proto",
-        "libxcb=1.17.0-r1",
+        "libxcb=1.17.0-r2",
         "pc:xau>=0.99.2",
         "pc:xdmcp",
         "pkgconfig"
@@ -29967,13 +29979,15 @@
     "libxcb-doc": {
       "origin": "libxcb",
       "versions": {
-        "1.17.0-r1": 1763765650
+        "1.17.0-r1": 1763765650,
+        "1.17.0-r2": 1777708640
       }
     },
     "libxcb-static": {
       "origin": "libxcb",
       "versions": {
-        "1.17.0-r1": 1763765650
+        "1.17.0-r1": 1763765650,
+        "1.17.0-r2": 1777708640
       },
       "dependencies": [
         "libxcb-dev"
@@ -41021,7 +41035,8 @@
     "mpg123": {
       "origin": "mpg123",
       "versions": {
-        "1.33.4-r0": 1766411875
+        "1.33.4-r0": 1766411875,
+        "1.33.5-r0": 1777708773
       },
       "dependencies": [
         "so:libasound.so.2",
@@ -41031,37 +41046,40 @@
         "so:libsyn123.so.0"
       ],
       "provides": [
-        "cmd:mpg123-id3dump=1.33.4-r0",
-        "cmd:mpg123-strip=1.33.4-r0",
-        "cmd:mpg123=1.33.4-r0",
-        "cmd:out123=1.33.4-r0"
+        "cmd:mpg123-id3dump=1.33.5-r0",
+        "cmd:mpg123-strip=1.33.5-r0",
+        "cmd:mpg123=1.33.5-r0",
+        "cmd:out123=1.33.5-r0"
       ]
     },
     "mpg123-dev": {
       "origin": "mpg123",
       "versions": {
-        "1.33.4-r0": 1766411875
+        "1.33.4-r0": 1766411875,
+        "1.33.5-r0": 1777708773
       },
       "dependencies": [
-        "mpg123-libs=1.33.4-r0",
+        "mpg123-libs=1.33.5-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libmpg123=1.33.4",
-        "pc:libout123=1.33.4",
-        "pc:libsyn123=1.33.4"
+        "pc:libmpg123=1.33.5",
+        "pc:libout123=1.33.5",
+        "pc:libsyn123=1.33.5"
       ]
     },
     "mpg123-doc": {
       "origin": "mpg123",
       "versions": {
-        "1.33.4-r0": 1766411875
+        "1.33.4-r0": 1766411875,
+        "1.33.5-r0": 1777708773
       }
     },
     "mpg123-libs": {
       "origin": "mpg123",
       "versions": {
-        "1.33.4-r0": 1766411875
+        "1.33.4-r0": 1766411875,
+        "1.33.5-r0": 1777708773
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1"
@@ -47123,7 +47141,8 @@
     "pcre2": {
       "origin": "pcre2",
       "versions": {
-        "10.47-r0": 1762730811
+        "10.47-r0": 1762730811,
+        "10.47-r1": 1777708640
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1"
@@ -47136,18 +47155,19 @@
     "pcre2-dev": {
       "origin": "pcre2",
       "versions": {
-        "10.47-r0": 1762730811
+        "10.47-r0": 1762730811,
+        "10.47-r1": 1777708640
       },
       "dependencies": [
         "libedit-dev",
         "zlib-dev",
-        "libpcre2-16=10.47-r0",
-        "libpcre2-32=10.47-r0",
-        "pcre2=10.47-r0",
+        "libpcre2-16=10.47-r1",
+        "libpcre2-32=10.47-r1",
+        "pcre2=10.47-r1",
         "pkgconfig"
       ],
       "provides": [
-        "cmd:pcre2-config=10.47-r0",
+        "cmd:pcre2-config=10.47-r1",
         "pc:libpcre2-16=10.47",
         "pc:libpcre2-32=10.47",
         "pc:libpcre2-8=10.47",
@@ -47157,13 +47177,15 @@
     "pcre2-doc": {
       "origin": "pcre2",
       "versions": {
-        "10.47-r0": 1762730811
+        "10.47-r0": 1762730811,
+        "10.47-r1": 1777708640
       }
     },
     "pcre2-static": {
       "origin": "pcre2",
       "versions": {
-        "10.47-r0": 1762730811
+        "10.47-r0": 1762730811,
+        "10.47-r1": 1777708640
       },
       "dependencies": [
         "pcre2-dev"
@@ -47172,7 +47194,8 @@
     "pcre2-tools": {
       "origin": "pcre2",
       "versions": {
-        "10.47-r0": 1762730811
+        "10.47-r0": 1762730811,
+        "10.47-r1": 1777708640
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
@@ -47184,8 +47207,8 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:pcre2grep=10.47-r0",
-        "cmd:pcre2test=10.47-r0"
+        "cmd:pcre2grep=10.47-r1",
+        "cmd:pcre2test=10.47-r1"
       ]
     },
     "pcsc-lite": {
@@ -53850,7 +53873,8 @@
     "poppler": {
       "origin": "poppler",
       "versions": {
-        "25.12.0-r0": 1764637875
+        "25.12.0-r0": 1764637875,
+        "25.12.0-r1": 1777708640
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
@@ -53876,13 +53900,14 @@
     "poppler-dev": {
       "origin": "poppler",
       "versions": {
-        "25.12.0-r0": 1764637875
+        "25.12.0-r0": 1764637875,
+        "25.12.0-r1": 1777708640
       },
       "dependencies": [
         "cairo-dev",
         "glib-dev",
-        "poppler-glib=25.12.0-r0",
-        "poppler=25.12.0-r0",
+        "poppler-glib=25.12.0-r1",
+        "poppler=25.12.0-r1",
         "pc:cairo>=1.16.0",
         "pc:fontconfig>=2.13",
         "pc:freetype2>=2.11",
@@ -53894,7 +53919,7 @@
         "pc:libopenjp2",
         "pc:libpng",
         "pc:libtiff-4>=4.7.1",
-        "pc:nss>=3.122.1",
+        "pc:nss>=3.123.1",
         "pc:zlib",
         "pkgconfig"
       ],
@@ -53907,13 +53932,15 @@
     "poppler-doc": {
       "origin": "poppler",
       "versions": {
-        "25.12.0-r0": 1764637875
+        "25.12.0-r0": 1764637875,
+        "25.12.0-r1": 1777708640
       }
     },
     "poppler-glib": {
       "origin": "poppler",
       "versions": {
-        "25.12.0-r0": 1764637875
+        "25.12.0-r0": 1764637875,
+        "25.12.0-r1": 1777708640
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
@@ -53932,7 +53959,8 @@
     "poppler-utils": {
       "origin": "poppler",
       "versions": {
-        "25.12.0-r0": 1764637875
+        "25.12.0-r0": 1764637875,
+        "25.12.0-r1": 1777708640
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
@@ -53944,19 +53972,19 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:pdfattach=25.12.0-r0",
-        "cmd:pdfdetach=25.12.0-r0",
-        "cmd:pdffonts=25.12.0-r0",
-        "cmd:pdfimages=25.12.0-r0",
-        "cmd:pdfinfo=25.12.0-r0",
-        "cmd:pdfseparate=25.12.0-r0",
-        "cmd:pdfsig=25.12.0-r0",
-        "cmd:pdftocairo=25.12.0-r0",
-        "cmd:pdftohtml=25.12.0-r0",
-        "cmd:pdftoppm=25.12.0-r0",
-        "cmd:pdftops=25.12.0-r0",
-        "cmd:pdftotext=25.12.0-r0",
-        "cmd:pdfunite=25.12.0-r0"
+        "cmd:pdfattach=25.12.0-r1",
+        "cmd:pdfdetach=25.12.0-r1",
+        "cmd:pdffonts=25.12.0-r1",
+        "cmd:pdfimages=25.12.0-r1",
+        "cmd:pdfinfo=25.12.0-r1",
+        "cmd:pdfseparate=25.12.0-r1",
+        "cmd:pdfsig=25.12.0-r1",
+        "cmd:pdftocairo=25.12.0-r1",
+        "cmd:pdftohtml=25.12.0-r1",
+        "cmd:pdftoppm=25.12.0-r1",
+        "cmd:pdftops=25.12.0-r1",
+        "cmd:pdftotext=25.12.0-r1",
+        "cmd:pdfunite=25.12.0-r1"
       ]
     },
     "popt": {
