@@ -40520,96 +40520,115 @@
     "mosquitto": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.22-r0": 1752355546
+        "2.0.22-r0": 1752355546,
+        "2.1.2-r0": 1777958034
       },
       "dependencies": [
         "/bin/sh",
         "so:libc.musl-armhf.so.1",
         "so:libcjson.so.1",
         "so:libcrypto.so.3",
+        "so:libedit.so.0",
+        "so:libmicrohttpd.so.12",
         "so:libmosquitto.so.1",
-        "so:libssl.so.3",
-        "so:libwebsockets.so.19"
+        "so:libsqlite3.so.0",
+        "so:libssl.so.3"
       ],
       "provides": [
-        "cmd:mosquitto=2.0.22-r0",
-        "cmd:mosquitto_ctrl=2.0.22-r0",
-        "cmd:mosquitto_passwd=2.0.22-r0",
-        "cmd:mosquitto_rr=2.0.22-r0",
-        "so:mosquitto_dynamic_security.so=0"
+        "cmd:mosquitto=2.1.2-r0",
+        "cmd:mosquitto_ctrl=2.1.2-r0",
+        "cmd:mosquitto_db_dump=2.1.2-r0",
+        "cmd:mosquitto_passwd=2.1.2-r0",
+        "cmd:mosquitto_rr=2.1.2-r0",
+        "cmd:mosquitto_signal=2.1.2-r0",
+        "so:mosquitto_acl_file.so=0",
+        "so:mosquitto_dynamic_security.so=0",
+        "so:mosquitto_password_file.so=0",
+        "so:mosquitto_persist_sqlite.so=0",
+        "so:mosquitto_sparkplug_aware.so=0"
       ]
     },
     "mosquitto-clients": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.22-r0": 1752355546
+        "2.0.22-r0": 1752355546,
+        "2.1.2-r0": 1777958034
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libcjson.so.1",
-        "so:libmosquitto.so.1"
+        "so:libcrypto.so.3",
+        "so:libmosquitto.so.1",
+        "so:libssl.so.3"
       ],
       "provides": [
-        "cmd:mosquitto_pub=2.0.22-r0",
-        "cmd:mosquitto_sub=2.0.22-r0"
+        "cmd:mosquitto_pub=2.1.2-r0",
+        "cmd:mosquitto_sub=2.1.2-r0"
       ]
     },
     "mosquitto-dbg": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.22-r0": 1752355546
+        "2.0.22-r0": 1752355546,
+        "2.1.2-r0": 1777958034
       },
       "dependencies": [
-        "!mosquitto-clients<2.0.22-r0",
-        "!mosquitto-clients>2.0.22-r0",
-        "!mosquitto-libs++<2.0.22-r0",
-        "!mosquitto-libs++>2.0.22-r0",
-        "!mosquitto-libs<2.0.22-r0",
-        "!mosquitto-libs>2.0.22-r0",
-        "!mosquitto<2.0.22-r0",
-        "!mosquitto>2.0.22-r0"
+        "!mosquitto-clients<2.1.2-r0",
+        "!mosquitto-clients>2.1.2-r0",
+        "!mosquitto-libs++<2.1.2-r0",
+        "!mosquitto-libs++>2.1.2-r0",
+        "!mosquitto-libs<2.1.2-r0",
+        "!mosquitto-libs>2.1.2-r0",
+        "!mosquitto<2.1.2-r0",
+        "!mosquitto>2.1.2-r0"
       ]
     },
     "mosquitto-dev": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.22-r0": 1752355546
+        "2.0.22-r0": 1752355546,
+        "2.1.2-r0": 1777958034
       },
       "dependencies": [
-        "mosquitto-libs++=2.0.22-r0",
-        "mosquitto-libs=2.0.22-r0",
+        "mosquitto-libs++=2.1.2-r0",
+        "mosquitto-libs=2.1.2-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libmosquitto=2.0.22",
-        "pc:libmosquittopp=2.0.22"
+        "pc:libmosquitto=2.1.2",
+        "pc:libmosquittopp=2.1.2"
       ]
     },
     "mosquitto-doc": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.22-r0": 1752355546
+        "2.0.22-r0": 1752355546,
+        "2.1.2-r0": 1777958034
       }
     },
     "mosquitto-libs": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.22-r0": 1752355546
+        "2.0.22-r0": 1752355546,
+        "2.1.2-r0": 1777958034
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libcares.so.2",
+        "so:libcjson.so.1",
         "so:libcrypto.so.3",
         "so:libssl.so.3"
       ],
       "provides": [
-        "so:libmosquitto.so.1=1"
+        "so:libmosquitto.so.1=1",
+        "so:libmosquitto_common.so.1=1"
       ]
     },
     "mosquitto-libs++": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.22-r0": 1752355546
+        "2.0.22-r0": 1752355546,
+        "2.1.2-r0": 1777958034
       },
       "dependencies": [
         "so:libgcc_s.so.1",
@@ -40623,7 +40642,8 @@
     "mosquitto-openrc": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.22-r0": 1752355546
+        "2.0.22-r0": 1752355546,
+        "2.1.2-r0": 1777958034
       }
     },
     "mount": {
@@ -79825,6 +79845,26 @@
       "libgallium-26.0.6.so": {
         "package": "mesa",
         "version": "0"
+      },
+      "mosquitto_acl_file.so": {
+        "package": "mosquitto",
+        "version": "0"
+      },
+      "mosquitto_password_file.so": {
+        "package": "mosquitto",
+        "version": "0"
+      },
+      "mosquitto_persist_sqlite.so": {
+        "package": "mosquitto",
+        "version": "0"
+      },
+      "mosquitto_sparkplug_aware.so": {
+        "package": "mosquitto",
+        "version": "0"
+      },
+      "libmosquitto_common.so.1": {
+        "package": "mosquitto-libs",
+        "version": "1"
       }
     }
   }
