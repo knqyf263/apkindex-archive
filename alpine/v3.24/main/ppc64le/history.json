@@ -60091,7 +60091,8 @@
     "rsyslog": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
         "/bin/sh",
@@ -60100,253 +60101,268 @@
         "so:libestr.so.0",
         "so:libfastjson.so.4",
         "so:libuuid.so.1",
+        "so:libyaml-0.so.2",
         "so:libz.so.1"
       ],
       "provides": [
-        "rsyslog-uxsock=8.2512.0-r4",
-        "rsyslog-omuxsock=8.2512.0-r4",
-        "cmd:rsyslogd=8.2512.0-r4"
+        "rsyslog-uxsock=8.2604.0-r0",
+        "rsyslog-omuxsock=8.2604.0-r0",
+        "cmd:rsyslogd=8.2604.0-r0"
       ]
     },
     "rsyslog-cisco": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1"
       ],
       "provides": [
-        "rsyslog-pmcisconames=8.2512.0-r4",
-        "rsyslog-pmciscoios=8.2512.0-r4"
+        "rsyslog-pmcisconames=8.2604.0-r0",
+        "rsyslog-pmciscoios=8.2604.0-r0"
       ]
     },
     "rsyslog-clickhouse": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libcurl.so.4"
       ],
       "provides": [
-        "rsyslog-omclickhouse=8.2512.0-r4"
+        "rsyslog-omclickhouse=8.2604.0-r0"
       ]
     },
     "rsyslog-crypto": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libgcrypt.so.20"
       ],
       "provides": [
-        "rsyslog-lmcry_gcry=8.2512.0-r4",
-        "cmd:rscryutil=8.2512.0-r4"
+        "rsyslog-lmcry_gcry=8.2604.0-r0",
+        "cmd:rscryutil=8.2604.0-r0"
       ]
     },
     "rsyslog-dbg": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "!rsyslog-cisco<8.2512.0-r4",
-        "!rsyslog-cisco>8.2512.0-r4",
-        "!rsyslog-clickhouse<8.2512.0-r4",
-        "!rsyslog-clickhouse>8.2512.0-r4",
-        "!rsyslog-crypto<8.2512.0-r4",
-        "!rsyslog-crypto>8.2512.0-r4",
-        "!rsyslog-dtls<8.2512.0-r4",
-        "!rsyslog-dtls>8.2512.0-r4",
-        "!rsyslog-elasticsearch<8.2512.0-r4",
-        "!rsyslog-elasticsearch>8.2512.0-r4",
-        "!rsyslog-gnutls<8.2512.0-r4",
-        "!rsyslog-gnutls>8.2512.0-r4",
-        "!rsyslog-gssapi<8.2512.0-r4",
-        "!rsyslog-gssapi>8.2512.0-r4",
-        "!rsyslog-hiredis<8.2512.0-r4",
-        "!rsyslog-hiredis>8.2512.0-r4",
-        "!rsyslog-http<8.2512.0-r4",
-        "!rsyslog-http>8.2512.0-r4",
-        "!rsyslog-imdocker<8.2512.0-r4",
-        "!rsyslog-imdocker>8.2512.0-r4",
-        "!rsyslog-impcap<8.2512.0-r4",
-        "!rsyslog-impcap>8.2512.0-r4",
-        "!rsyslog-libdbi<8.2512.0-r4",
-        "!rsyslog-libdbi>8.2512.0-r4",
-        "!rsyslog-mmaitag<8.2512.0-r4",
-        "!rsyslog-mmaitag>8.2512.0-r4",
-        "!rsyslog-mmanon<8.2512.0-r4",
-        "!rsyslog-mmanon>8.2512.0-r4",
-        "!rsyslog-mmaudit<8.2512.0-r4",
-        "!rsyslog-mmaudit>8.2512.0-r4",
-        "!rsyslog-mmcount<8.2512.0-r4",
-        "!rsyslog-mmcount>8.2512.0-r4",
-        "!rsyslog-mmdblookup<8.2512.0-r4",
-        "!rsyslog-mmdblookup>8.2512.0-r4",
-        "!rsyslog-mmfields<8.2512.0-r4",
-        "!rsyslog-mmfields>8.2512.0-r4",
-        "!rsyslog-mmjsonparse<8.2512.0-r4",
-        "!rsyslog-mmjsonparse>8.2512.0-r4",
-        "!rsyslog-mmkubernetes<8.2512.0-r4",
-        "!rsyslog-mmkubernetes>8.2512.0-r4",
-        "!rsyslog-mmnormalize<8.2512.0-r4",
-        "!rsyslog-mmnormalize>8.2512.0-r4",
-        "!rsyslog-mmpstrucdata<8.2512.0-r4",
-        "!rsyslog-mmpstrucdata>8.2512.0-r4",
-        "!rsyslog-mmrm1stspace<8.2512.0-r4",
-        "!rsyslog-mmrm1stspace>8.2512.0-r4",
-        "!rsyslog-mmsequence<8.2512.0-r4",
-        "!rsyslog-mmsequence>8.2512.0-r4",
-        "!rsyslog-mmsnmptrapd<8.2512.0-r4",
-        "!rsyslog-mmsnmptrapd>8.2512.0-r4",
-        "!rsyslog-mmtaghostname<8.2512.0-r4",
-        "!rsyslog-mmtaghostname>8.2512.0-r4",
-        "!rsyslog-mmutf8fix<8.2512.0-r4",
-        "!rsyslog-mmutf8fix>8.2512.0-r4",
-        "!rsyslog-mysql<8.2512.0-r4",
-        "!rsyslog-mysql>8.2512.0-r4",
-        "!rsyslog-openssl<8.2512.0-r4",
-        "!rsyslog-openssl>8.2512.0-r4",
-        "!rsyslog-pgsql<8.2512.0-r4",
-        "!rsyslog-pgsql>8.2512.0-r4",
-        "!rsyslog-pmaixforwardedfrom<8.2512.0-r4",
-        "!rsyslog-pmaixforwardedfrom>8.2512.0-r4",
-        "!rsyslog-pmlastmsg<8.2512.0-r4",
-        "!rsyslog-pmlastmsg>8.2512.0-r4",
-        "!rsyslog-pmnormalize<8.2512.0-r4",
-        "!rsyslog-pmnormalize>8.2512.0-r4",
-        "!rsyslog-pmsnare<8.2512.0-r4",
-        "!rsyslog-pmsnare>8.2512.0-r4",
-        "!rsyslog-prog<8.2512.0-r4",
-        "!rsyslog-prog>8.2512.0-r4",
-        "!rsyslog-rabbitmq<8.2512.0-r4",
-        "!rsyslog-rabbitmq>8.2512.0-r4",
-        "!rsyslog-relp<8.2512.0-r4",
-        "!rsyslog-relp>8.2512.0-r4",
-        "!rsyslog-snmp<8.2512.0-r4",
-        "!rsyslog-snmp>8.2512.0-r4",
-        "!rsyslog-testing<8.2512.0-r4",
-        "!rsyslog-testing>8.2512.0-r4",
-        "!rsyslog-udpspoof<8.2512.0-r4",
-        "!rsyslog-udpspoof>8.2512.0-r4",
-        "!rsyslog-zmq<8.2512.0-r4",
-        "!rsyslog-zmq>8.2512.0-r4",
-        "!rsyslog-zstd<8.2512.0-r4",
-        "!rsyslog-zstd>8.2512.0-r4",
-        "!rsyslog<8.2512.0-r4",
-        "!rsyslog>8.2512.0-r4"
+        "!rsyslog-cisco<8.2604.0-r0",
+        "!rsyslog-cisco>8.2604.0-r0",
+        "!rsyslog-clickhouse<8.2604.0-r0",
+        "!rsyslog-clickhouse>8.2604.0-r0",
+        "!rsyslog-crypto<8.2604.0-r0",
+        "!rsyslog-crypto>8.2604.0-r0",
+        "!rsyslog-dtls<8.2604.0-r0",
+        "!rsyslog-dtls>8.2604.0-r0",
+        "!rsyslog-elasticsearch<8.2604.0-r0",
+        "!rsyslog-elasticsearch>8.2604.0-r0",
+        "!rsyslog-gnutls<8.2604.0-r0",
+        "!rsyslog-gnutls>8.2604.0-r0",
+        "!rsyslog-gssapi<8.2604.0-r0",
+        "!rsyslog-gssapi>8.2604.0-r0",
+        "!rsyslog-hiredis<8.2604.0-r0",
+        "!rsyslog-hiredis>8.2604.0-r0",
+        "!rsyslog-http<8.2604.0-r0",
+        "!rsyslog-http>8.2604.0-r0",
+        "!rsyslog-imdocker<8.2604.0-r0",
+        "!rsyslog-imdocker>8.2604.0-r0",
+        "!rsyslog-impcap<8.2604.0-r0",
+        "!rsyslog-impcap>8.2604.0-r0",
+        "!rsyslog-libdbi<8.2604.0-r0",
+        "!rsyslog-libdbi>8.2604.0-r0",
+        "!rsyslog-mmaitag<8.2604.0-r0",
+        "!rsyslog-mmaitag>8.2604.0-r0",
+        "!rsyslog-mmanon<8.2604.0-r0",
+        "!rsyslog-mmanon>8.2604.0-r0",
+        "!rsyslog-mmaudit<8.2604.0-r0",
+        "!rsyslog-mmaudit>8.2604.0-r0",
+        "!rsyslog-mmcount<8.2604.0-r0",
+        "!rsyslog-mmcount>8.2604.0-r0",
+        "!rsyslog-mmdblookup<8.2604.0-r0",
+        "!rsyslog-mmdblookup>8.2604.0-r0",
+        "!rsyslog-mmfields<8.2604.0-r0",
+        "!rsyslog-mmfields>8.2604.0-r0",
+        "!rsyslog-mmjsonparse<8.2604.0-r0",
+        "!rsyslog-mmjsonparse>8.2604.0-r0",
+        "!rsyslog-mmkubernetes<8.2604.0-r0",
+        "!rsyslog-mmkubernetes>8.2604.0-r0",
+        "!rsyslog-mmnormalize<8.2604.0-r0",
+        "!rsyslog-mmnormalize>8.2604.0-r0",
+        "!rsyslog-mmpstrucdata<8.2604.0-r0",
+        "!rsyslog-mmpstrucdata>8.2604.0-r0",
+        "!rsyslog-mmrm1stspace<8.2604.0-r0",
+        "!rsyslog-mmrm1stspace>8.2604.0-r0",
+        "!rsyslog-mmsequence<8.2604.0-r0",
+        "!rsyslog-mmsequence>8.2604.0-r0",
+        "!rsyslog-mmsnmptrapd<8.2604.0-r0",
+        "!rsyslog-mmsnmptrapd>8.2604.0-r0",
+        "!rsyslog-mmtaghostname<8.2604.0-r0",
+        "!rsyslog-mmtaghostname>8.2604.0-r0",
+        "!rsyslog-mmutf8fix<8.2604.0-r0",
+        "!rsyslog-mmutf8fix>8.2604.0-r0",
+        "!rsyslog-mysql<8.2604.0-r0",
+        "!rsyslog-mysql>8.2604.0-r0",
+        "!rsyslog-omotel<8.2604.0-r0",
+        "!rsyslog-omotel>8.2604.0-r0",
+        "!rsyslog-openssl<8.2604.0-r0",
+        "!rsyslog-openssl>8.2604.0-r0",
+        "!rsyslog-pgsql<8.2604.0-r0",
+        "!rsyslog-pgsql>8.2604.0-r0",
+        "!rsyslog-pmaixforwardedfrom<8.2604.0-r0",
+        "!rsyslog-pmaixforwardedfrom>8.2604.0-r0",
+        "!rsyslog-pmlastmsg<8.2604.0-r0",
+        "!rsyslog-pmlastmsg>8.2604.0-r0",
+        "!rsyslog-pmnormalize<8.2604.0-r0",
+        "!rsyslog-pmnormalize>8.2604.0-r0",
+        "!rsyslog-pmsnare<8.2604.0-r0",
+        "!rsyslog-pmsnare>8.2604.0-r0",
+        "!rsyslog-prog<8.2604.0-r0",
+        "!rsyslog-prog>8.2604.0-r0",
+        "!rsyslog-rabbitmq<8.2604.0-r0",
+        "!rsyslog-rabbitmq>8.2604.0-r0",
+        "!rsyslog-relp<8.2604.0-r0",
+        "!rsyslog-relp>8.2604.0-r0",
+        "!rsyslog-snmp<8.2604.0-r0",
+        "!rsyslog-snmp>8.2604.0-r0",
+        "!rsyslog-testing<8.2604.0-r0",
+        "!rsyslog-testing>8.2604.0-r0",
+        "!rsyslog-udpspoof<8.2604.0-r0",
+        "!rsyslog-udpspoof>8.2604.0-r0",
+        "!rsyslog-zmq<8.2604.0-r0",
+        "!rsyslog-zmq>8.2604.0-r0",
+        "!rsyslog-zstd<8.2604.0-r0",
+        "!rsyslog-zstd>8.2604.0-r0",
+        "!rsyslog<8.2604.0-r0",
+        "!rsyslog>8.2604.0-r0"
       ]
     },
     "rsyslog-doc": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       }
     },
     "rsyslog-dtls": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.3",
         "so:libssl.so.3"
       ],
       "provides": [
-        "rsyslog-imdtls=8.2512.0-r4",
-        "rsyslog-omdtls=8.2512.0-r4"
+        "rsyslog-imdtls=8.2604.0-r0",
+        "rsyslog-omdtls=8.2604.0-r0"
       ]
     },
     "rsyslog-elasticsearch": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libcurl.so.4"
       ],
       "provides": [
-        "rsyslog-omelasticsearch=8.2512.0-r4"
+        "rsyslog-omelasticsearch=8.2604.0-r0"
       ]
     },
     "rsyslog-gnutls": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libgnutls.so.30"
       ],
       "provides": [
-        "rsyslog-lmnsd_gtls=8.2512.0-r4"
+        "rsyslog-lmnsd_gtls=8.2604.0-r0"
       ]
     },
     "rsyslog-gssapi": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libgssapi_krb5.so.2"
       ],
       "provides": [
-        "rsyslog-lmgssutil=8.2512.0-r4",
-        "rsyslog-imgssapi=8.2512.0-r4",
-        "rsyslog-omgssapi=8.2512.0-r4"
+        "rsyslog-lmgssutil=8.2604.0-r0",
+        "rsyslog-imgssapi=8.2604.0-r0",
+        "rsyslog-omgssapi=8.2604.0-r0"
       ]
     },
     "rsyslog-hiredis": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libhiredis.so.1.3.0"
       ],
       "provides": [
-        "rsyslog-omhiredis=8.2512.0-r4"
+        "rsyslog-omhiredis=8.2604.0-r0"
       ]
     },
     "rsyslog-http": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libcurl.so.4"
       ],
       "provides": [
-        "rsyslog-omhttp=8.2512.0-r4",
-        "rsyslog-fmhttp=8.2512.0-r4"
+        "rsyslog-omhttp=8.2604.0-r0",
+        "rsyslog-fmhttp=8.2604.0-r0"
       ]
     },
     "rsyslog-imdocker": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libcurl.so.4"
       ]
@@ -60354,10 +60370,11 @@
     "rsyslog-impcap": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libpcap.so.1"
       ]
@@ -60365,24 +60382,26 @@
     "rsyslog-libdbi": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libdbi.so.1"
       ],
       "provides": [
-        "rsyslog-omlibdbi=8.2512.0-r4"
+        "rsyslog-omlibdbi=8.2604.0-r0"
       ]
     },
     "rsyslog-mmaitag": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libcurl.so.4"
       ]
@@ -60390,40 +60409,44 @@
     "rsyslog-mmanon": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1"
       ]
     },
     "rsyslog-mmaudit": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1"
       ]
     },
     "rsyslog-mmcount": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1"
       ]
     },
     "rsyslog-mmdblookup": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libmaxminddb.so.0"
       ]
@@ -60431,20 +60454,22 @@
     "rsyslog-mmfields": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1"
       ]
     },
     "rsyslog-mmjsonparse": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libfastjson.so.4"
       ]
@@ -60452,10 +60477,11 @@
     "rsyslog-mmkubernetes": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libcurl.so.4",
         "so:libfastjson.so.4",
@@ -60465,10 +60491,11 @@
     "rsyslog-mmnormalize": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:liblognorm.so.5"
       ]
@@ -60476,140 +60503,153 @@
     "rsyslog-mmpstrucdata": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1"
       ]
     },
     "rsyslog-mmrm1stspace": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1"
       ]
     },
     "rsyslog-mmsequence": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1"
       ]
     },
     "rsyslog-mmsnmptrapd": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1"
       ]
     },
     "rsyslog-mmtaghostname": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1"
       ]
     },
     "rsyslog-mmutf8fix": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1"
       ]
     },
     "rsyslog-mysql": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libmariadb.so.3"
       ],
       "provides": [
-        "rsyslog-ommysql=8.2512.0-r4"
+        "rsyslog-ommysql=8.2604.0-r0"
       ]
     },
     "rsyslog-openrc": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       }
     },
     "rsyslog-openssl": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.3",
         "so:libssl.so.3"
       ],
       "provides": [
-        "rsyslog-tls=8.2512.0-r4",
-        "rsyslog-lmnsd_ossl=8.2512.0-r4"
+        "rsyslog-tls=8.2604.0-r0",
+        "rsyslog-lmnsd_ossl=8.2604.0-r0"
       ]
     },
     "rsyslog-pgsql": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libpq.so.5"
       ],
       "provides": [
-        "rsyslog-ompgsql=8.2512.0-r4"
+        "rsyslog-ompgsql=8.2604.0-r0"
       ]
     },
     "rsyslog-pmaixforwardedfrom": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1"
       ]
     },
     "rsyslog-pmlastmsg": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1"
       ]
     },
     "rsyslog-pmnormalize": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libfastjson.so.4",
         "so:liblognorm.so.5"
@@ -60618,124 +60658,133 @@
     "rsyslog-pmsnare": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1"
       ]
     },
     "rsyslog-prog": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1"
       ],
       "provides": [
-        "rsyslog-improg=8.2512.0-r4",
-        "rsyslog-omprog=8.2512.0-r4"
+        "rsyslog-improg=8.2604.0-r0",
+        "rsyslog-omprog=8.2604.0-r0"
       ]
     },
     "rsyslog-rabbitmq": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:librabbitmq.so.4"
       ],
       "provides": [
-        "rsyslog-omrabbitmq=8.2512.0-r4"
+        "rsyslog-omrabbitmq=8.2604.0-r0"
       ]
     },
     "rsyslog-relp": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:librelp.so.0"
       ],
       "provides": [
-        "rsyslog-imrelp=8.2512.0-r4",
-        "rsyslog-omrelp=8.2512.0-r4"
+        "rsyslog-imrelp=8.2604.0-r0",
+        "rsyslog-omrelp=8.2604.0-r0"
       ]
     },
     "rsyslog-snmp": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libnetsnmp.so.45"
       ],
       "provides": [
-        "rsyslog-omsnmp=8.2512.0-r4"
+        "rsyslog-omsnmp=8.2604.0-r0"
       ]
     },
     "rsyslog-testing": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1"
       ],
       "provides": [
-        "rsyslog-omtesting=8.2512.0-r4"
+        "rsyslog-omtesting=8.2604.0-r0"
       ]
     },
     "rsyslog-udpspoof": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libnet.so.9"
       ],
       "provides": [
-        "rsyslog-omudpspoof=8.2512.0-r4"
+        "rsyslog-omudpspoof=8.2604.0-r0"
       ]
     },
     "rsyslog-zmq": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libczmq.so.4"
       ],
       "provides": [
-        "rsyslog-imczmq=8.2512.0-r4",
-        "rsyslog-omczmq=8.2512.0-r4"
+        "rsyslog-imczmq=8.2604.0-r0",
+        "rsyslog-omczmq=8.2604.0-r0"
       ]
     },
     "rsyslog-zstd": {
       "origin": "rsyslog",
       "versions": {
-        "8.2512.0-r4": 1775597515
+        "8.2512.0-r4": 1775597515,
+        "8.2604.0-r0": 1778423362
       },
       "dependencies": [
-        "rsyslog=8.2512.0-r4",
+        "rsyslog=8.2604.0-r0",
         "so:libc.musl-ppc64le.so.1",
         "so:libzstd.so.1"
       ],
       "provides": [
-        "rsyslog-lmzstdw=8.2512.0-r4"
+        "rsyslog-lmzstdw=8.2604.0-r0"
       ]
     },
     "rtapd": {
@@ -72253,6 +72302,20 @@
       "dependencies": [
         "python3~3.14"
       ]
+    },
+    "rsyslog-omotel": {
+      "origin": "rsyslog",
+      "versions": {
+        "8.2604.0-r0": 1778423362
+      },
+      "dependencies": [
+        "rsyslog=8.2604.0-r0",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcurl.so.4",
+        "so:libfastjson.so.4",
+        "so:libprotobuf-c.so.1",
+        "so:libz.so.1"
+      ]
     }
   },
   "provide": {
@@ -73483,131 +73546,131 @@
       },
       "rsyslog-uxsock": {
         "package": "rsyslog",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-omuxsock": {
         "package": "rsyslog",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-pmcisconames": {
         "package": "rsyslog-cisco",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-pmciscoios": {
         "package": "rsyslog-cisco",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-omclickhouse": {
         "package": "rsyslog-clickhouse",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-lmcry_gcry": {
         "package": "rsyslog-crypto",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-imdtls": {
         "package": "rsyslog-dtls",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-omdtls": {
         "package": "rsyslog-dtls",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-omelasticsearch": {
         "package": "rsyslog-elasticsearch",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-lmnsd_gtls": {
         "package": "rsyslog-gnutls",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-lmgssutil": {
         "package": "rsyslog-gssapi",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-imgssapi": {
         "package": "rsyslog-gssapi",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-omgssapi": {
         "package": "rsyslog-gssapi",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-omhiredis": {
         "package": "rsyslog-hiredis",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-omhttp": {
         "package": "rsyslog-http",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-fmhttp": {
         "package": "rsyslog-http",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-omlibdbi": {
         "package": "rsyslog-libdbi",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-ommysql": {
         "package": "rsyslog-mysql",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-tls": {
         "package": "rsyslog-openssl",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-lmnsd_ossl": {
         "package": "rsyslog-openssl",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-ompgsql": {
         "package": "rsyslog-pgsql",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-improg": {
         "package": "rsyslog-prog",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-omprog": {
         "package": "rsyslog-prog",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-omrabbitmq": {
         "package": "rsyslog-rabbitmq",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-imrelp": {
         "package": "rsyslog-relp",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-omrelp": {
         "package": "rsyslog-relp",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-omsnmp": {
         "package": "rsyslog-snmp",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-omtesting": {
         "package": "rsyslog-testing",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-omudpspoof": {
         "package": "rsyslog-udpspoof",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-imczmq": {
         "package": "rsyslog-zmq",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-omczmq": {
         "package": "rsyslog-zmq",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rsyslog-lmzstdw": {
         "package": "rsyslog-zstd",
-        "version": "8.2512.0-r4"
+        "version": "8.2604.0-r0"
       },
       "rust-bootstrap": {
         "package": "rust",
