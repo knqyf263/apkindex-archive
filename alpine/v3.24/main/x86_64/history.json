@@ -26973,32 +26973,35 @@
     "libmd": {
       "origin": "libmd",
       "versions": {
-        "1.1.0-r0": 1686713172
+        "1.1.0-r0": 1686713172,
+        "1.2.0-r0": 1779102466
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1"
       ],
       "provides": [
-        "so:libmd.so.0=0.1.0"
+        "so:libmd.so.0=0.2.0"
       ]
     },
     "libmd-dev": {
       "origin": "libmd",
       "versions": {
-        "1.1.0-r0": 1686713172
+        "1.1.0-r0": 1686713172,
+        "1.2.0-r0": 1779102466
       },
       "dependencies": [
-        "libmd=1.1.0-r0",
+        "libmd=1.2.0-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libmd=1.1.0"
+        "pc:libmd=1.2.0"
       ]
     },
     "libmd-doc": {
       "origin": "libmd",
       "versions": {
-        "1.1.0-r0": 1686713172
+        "1.1.0-r0": 1686713172,
+        "1.2.0-r0": 1779102466
       }
     },
     "libmemcached": {
@@ -41503,30 +41506,33 @@
     "mqtt-exec": {
       "origin": "mqtt-exec",
       "versions": {
-        "0.5-r3": 1749563157
+        "0.5-r3": 1749563157,
+        "0.7-r1": 1779102918
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
         "so:libmosquitto.so.1"
       ],
       "provides": [
-        "cmd:mqtt-exec=0.5-r3"
+        "cmd:mqtt-exec=0.7-r1"
       ]
     },
     "mqtt-exec-dbg": {
       "origin": "mqtt-exec",
       "versions": {
-        "0.5-r3": 1749563157
+        "0.5-r3": 1749563157,
+        "0.7-r1": 1779102918
       },
       "dependencies": [
-        "!mqtt-exec<0.5-r3",
-        "!mqtt-exec>0.5-r3"
+        "!mqtt-exec<0.7-r1",
+        "!mqtt-exec>0.7-r1"
       ]
     },
     "mqtt-exec-openrc": {
       "origin": "mqtt-exec",
       "versions": {
-        "0.5-r3": 1749563157
+        "0.5-r3": 1749563157,
+        "0.7-r1": 1779102918
       }
     },
     "mrtg": {
@@ -73737,6 +73743,56 @@
       "versions": {
         "0.6-r1": 1778753706
       }
+    },
+    "bats": {
+      "origin": "bats",
+      "versions": {
+        "1.13.0-r1": 1779099977
+      },
+      "dependencies": [
+        "bats-core",
+        "bats-support",
+        "bats-assert",
+        "bats-file"
+      ]
+    },
+    "bats-assert": {
+      "origin": "bats-assert",
+      "versions": {
+        "2.2.4-r0": 1779099977
+      },
+      "dependencies": [
+        "bash",
+        "bats-core",
+        "bats-support"
+      ]
+    },
+    "bats-file": {
+      "origin": "bats-file",
+      "versions": {
+        "0.4.0-r0": 1779099977
+      },
+      "dependencies": [
+        "bash",
+        "bats-core",
+        "bats-support"
+      ]
+    },
+    "bats-support": {
+      "origin": "bats-support",
+      "versions": {
+        "0.3.0-r0": 1779099977
+      },
+      "dependencies": [
+        "bash",
+        "bats-core"
+      ]
+    },
+    "mqtt-exec-doc": {
+      "origin": "mqtt-exec",
+      "versions": {
+        "0.7-r1": 1779102918
+      }
     }
   },
   "provide": {
@@ -78317,7 +78373,7 @@
       },
       "libmd.so.0": {
         "package": "libmd",
-        "version": "0.1.0"
+        "version": "0.2.0"
       },
       "libhashkit.so.2": {
         "package": "libmemcached-libs",
