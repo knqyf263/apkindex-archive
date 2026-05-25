@@ -5708,23 +5708,25 @@
     "base64": {
       "origin": "base64",
       "versions": {
-        "0.5.2-r1": 1751636060
+        "0.5.2-r1": 1751636060,
+        "0.5.2-r2": 1779707291
       },
       "dependencies": [
         "so:libbase64.so.0",
         "so:libc.musl-armhf.so.1"
       ],
       "provides": [
-        "cmd:base64=0.5.2-r1"
+        "cmd:base64=0.5.2-r2"
       ]
     },
     "base64-dev": {
       "origin": "base64",
       "versions": {
-        "0.5.2-r1": 1751636060
+        "0.5.2-r1": 1751636060,
+        "0.5.2-r2": 1779707291
       },
       "dependencies": [
-        "libbase64=0.5.2-r1",
+        "libbase64=0.5.2-r2",
         "pkgconfig"
       ],
       "provides": [
@@ -24565,7 +24567,8 @@
     "libbase64": {
       "origin": "base64",
       "versions": {
-        "0.5.2-r1": 1751636060
+        "0.5.2-r1": 1751636060,
+        "0.5.2-r2": 1779707291
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1"
@@ -50515,7 +50518,8 @@
       "origin": "perl-io-tty",
       "versions": {
         "1.27-r0": 1775466457,
-        "1.29-r0": 1777126725
+        "1.29-r0": 1777126725,
+        "1.31-r0": 1779708536
       },
       "dependencies": [
         "perl",
@@ -50526,7 +50530,8 @@
       "origin": "perl-io-tty",
       "versions": {
         "1.27-r0": 1775466457,
-        "1.29-r0": 1777126725
+        "1.29-r0": 1777126725,
+        "1.31-r0": 1779708536
       }
     },
     "perl-ipc-run": {
@@ -57062,15 +57067,17 @@
       "versions": {
         "3.11-r1": 1774640349,
         "3.13-r0": 1777373002,
-        "3.15-r0": 1778770643
+        "3.15-r0": 1778770643,
+        "3.16-r0": 1779708778
       },
       "dependencies": [
         "python3",
         "python3~3.14"
       ],
       "provides": [
-        "py-idna=3.15-r0",
-        "py3.14:idna=3.15-r0"
+        "py-idna=3.16-r0",
+        "cmd:idna=3.16-r0",
+        "py3.14:idna=3.16-r0"
       ]
     },
     "py3-idna-pyc": {
@@ -57078,7 +57085,8 @@
       "versions": {
         "3.11-r1": 1774640349,
         "3.13-r0": 1777373002,
-        "3.15-r0": 1778770643
+        "3.15-r0": 1778770643,
+        "3.16-r0": 1779708778
       },
       "dependencies": [
         "python3~3.14"
@@ -73418,6 +73426,15 @@
       "provides": [
         "linux-firmware-any"
       ]
+    },
+    "base64-static": {
+      "origin": "base64",
+      "versions": {
+        "0.5.2-r2": 1779707291
+      },
+      "dependencies": [
+        "base64-dev"
+      ]
     }
   },
   "provide": {
@@ -74468,7 +74485,7 @@
       },
       "py-idna": {
         "package": "py3-idna",
-        "version": "3.15-r0"
+        "version": "3.16-r0"
       },
       "py-imagesize": {
         "package": "py3-imagesize",
