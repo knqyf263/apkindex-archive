@@ -13890,7 +13890,8 @@
     "fido2": {
       "origin": "libfido2",
       "versions": {
-        "1.16.0-r2": 1759781495
+        "1.16.0-r2": 1759781495,
+        "1.16.0-r3": 1779806399
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
@@ -13900,9 +13901,9 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:fido2-assert=1.16.0-r2",
-        "cmd:fido2-cred=1.16.0-r2",
-        "cmd:fido2-token=1.16.0-r2"
+        "cmd:fido2-assert=1.16.0-r3",
+        "cmd:fido2-cred=1.16.0-r3",
+        "cmd:fido2-token=1.16.0-r3"
       ]
     },
     "file": {
@@ -25901,10 +25902,10 @@
     "libfido2": {
       "origin": "libfido2",
       "versions": {
-        "1.16.0-r2": 1759781495
+        "1.16.0-r2": 1759781495,
+        "1.16.0-r3": 1779806399
       },
       "dependencies": [
-        "/bin/sh",
         "so:libc.musl-x86.so.1",
         "so:libcbor.so.0.13",
         "so:libcrypto.so.3",
@@ -25918,10 +25919,11 @@
     "libfido2-dev": {
       "origin": "libfido2",
       "versions": {
-        "1.16.0-r2": 1759781495
+        "1.16.0-r2": 1759781495,
+        "1.16.0-r3": 1779806399
       },
       "dependencies": [
-        "libfido2=1.16.0-r2",
+        "libfido2=1.16.0-r3",
         "pc:libcrypto",
         "pkgconfig"
       ],
@@ -25932,14 +25934,19 @@
     "libfido2-doc": {
       "origin": "libfido2",
       "versions": {
-        "1.16.0-r2": 1759781495
+        "1.16.0-r2": 1759781495,
+        "1.16.0-r3": 1779806399
       }
     },
     "libfido2-udev": {
       "origin": "libfido2",
       "versions": {
-        "1.16.0-r2": 1759781495
-      }
+        "1.16.0-r2": 1759781495,
+        "1.16.0-r3": 1779806399
+      },
+      "dependencies": [
+        "/bin/sh"
+      ]
     },
     "libflac": {
       "origin": "flac",
