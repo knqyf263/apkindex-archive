@@ -19158,7 +19158,8 @@
         "3.2.16-r0": 1777120080,
         "3.2.17-r0": 1777613757,
         "3.2.18-r0": 1778163859,
-        "3.2.19-r0": 1778775010
+        "3.2.19-r0": 1778775010,
+        "3.4.0-r0": 1780570039
       },
       "dependencies": [
         "/bin/sh",
@@ -19170,7 +19171,9 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:haproxy=3.2.19-r0"
+        "cmd:haproxy-dump-certs=3.4.0-r0",
+        "cmd:haproxy-reload=3.4.0-r0",
+        "cmd:haproxy=3.4.0-r0"
       ]
     },
     "haproxy-doc": {
@@ -19180,7 +19183,8 @@
         "3.2.16-r0": 1777120080,
         "3.2.17-r0": 1777613757,
         "3.2.18-r0": 1778163859,
-        "3.2.19-r0": 1778775010
+        "3.2.19-r0": 1778775010,
+        "3.4.0-r0": 1780570039
       }
     },
     "haproxy-openrc": {
@@ -19190,7 +19194,8 @@
         "3.2.16-r0": 1777120080,
         "3.2.17-r0": 1777613757,
         "3.2.18-r0": 1778163859,
-        "3.2.19-r0": 1778775010
+        "3.2.19-r0": 1778775010,
+        "3.4.0-r0": 1780570039
       }
     },
     "harfbuzz": {
@@ -66871,21 +66876,23 @@
       "origin": "sqlite",
       "versions": {
         "3.53.0-r0": 1775906745,
-        "3.53.1-r0": 1778066965
+        "3.53.1-r0": 1778066965,
+        "3.53.2-r0": 1780573962
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libreadline.so.8"
       ],
       "provides": [
-        "cmd:sqlite3=3.53.1-r0"
+        "cmd:sqlite3=3.53.2-r0"
       ]
     },
     "sqlite-analyzer": {
       "origin": "sqlite-tools",
       "versions": {
         "3.53.0-r0": 1775906745,
-        "3.53.1-r0": 1778066965
+        "3.53.1-r0": 1778066965,
+        "3.53.2-r0": 1780573962
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -66893,49 +66900,53 @@
         "so:libtcl8.6.so"
       ],
       "provides": [
-        "cmd:sqlite3_analyzer=3.53.1-r0"
+        "cmd:sqlite3_analyzer=3.53.2-r0"
       ]
     },
     "sqlite-dev": {
       "origin": "sqlite",
       "versions": {
         "3.53.0-r0": 1775906745,
-        "3.53.1-r0": 1778066965
+        "3.53.1-r0": 1778066965,
+        "3.53.2-r0": 1780573962
       },
       "dependencies": [
-        "sqlite=3.53.1-r0",
-        "sqlite-libs=3.53.1-r0",
+        "sqlite=3.53.2-r0",
+        "sqlite-libs=3.53.2-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:sqlite3=3.53.1"
+        "pc:sqlite3=3.53.2"
       ]
     },
     "sqlite-doc": {
       "origin": "sqlite",
       "versions": {
         "3.53.0-r0": 1775906745,
-        "3.53.1-r0": 1778066965
+        "3.53.1-r0": 1778066965,
+        "3.53.2-r0": 1780573962
       }
     },
     "sqlite-libs": {
       "origin": "sqlite",
       "versions": {
         "3.53.0-r0": 1775906745,
-        "3.53.1-r0": 1778066965
+        "3.53.1-r0": 1778066965,
+        "3.53.2-r0": 1780573962
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1"
       ],
       "provides": [
-        "so:libsqlite3.so.0=3.53.1"
+        "so:libsqlite3.so.0=3.53.2"
       ]
     },
     "sqlite-static": {
       "origin": "sqlite",
       "versions": {
         "3.53.0-r0": 1775906745,
-        "3.53.1-r0": 1778066965
+        "3.53.1-r0": 1778066965,
+        "3.53.2-r0": 1780573962
       },
       "dependencies": [
         "sqlite-dev"
@@ -66945,7 +66956,8 @@
       "origin": "sqlite-tools",
       "versions": {
         "3.53.0-r0": 1775906745,
-        "3.53.1-r0": 1778066965
+        "3.53.1-r0": 1778066965,
+        "3.53.2-r0": 1780573962
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -66956,26 +66968,28 @@
       "origin": "sqlite-tools",
       "versions": {
         "3.53.0-r0": 1775906745,
-        "3.53.1-r0": 1778066965
+        "3.53.1-r0": 1778066965,
+        "3.53.2-r0": 1780573962
       }
     },
     "sqlite-tools": {
       "origin": "sqlite-tools",
       "versions": {
         "3.53.0-r0": 1775906745,
-        "3.53.1-r0": 1778066965
+        "3.53.1-r0": 1778066965,
+        "3.53.2-r0": 1780573962
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libsqlite3.so.0"
       ],
       "provides": [
-        "cmd:showdb=3.53.1-r0",
-        "cmd:showjournal=3.53.1-r0",
-        "cmd:showstat4=3.53.1-r0",
-        "cmd:showwal=3.53.1-r0",
-        "cmd:sqldiff=3.53.1-r0",
-        "cmd:sqlite3_rsync=3.53.1-r0"
+        "cmd:showdb=3.53.2-r0",
+        "cmd:showjournal=3.53.2-r0",
+        "cmd:showstat4=3.53.2-r0",
+        "cmd:showwal=3.53.2-r0",
+        "cmd:sqldiff=3.53.2-r0",
+        "cmd:sqlite3_rsync=3.53.2-r0"
       ]
     },
     "sqsh": {
@@ -80937,7 +80951,7 @@
       },
       "libsqlite3.so.0": {
         "package": "sqlite-libs",
-        "version": "3.53.1"
+        "version": "3.53.2"
       },
       "libcharon.so.0": {
         "package": "strongswan",
