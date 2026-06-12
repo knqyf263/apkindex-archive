@@ -8655,55 +8655,63 @@
       "origin": "chrony",
       "versions": {
         "4.8-r4": 1775551794,
-        "4.8-r5": 1777897605
+        "4.8-r5": 1777897605,
+        "4.8-r6": 1781269852
       },
       "dependencies": [
-        "chrony-common=4.8-r5",
+        "chrony-common=4.8-r6",
         "/bin/sh",
         "so:libc.musl-loongarch64.so.1",
         "so:libcap.so.2",
         "so:libseccomp.so.2"
       ],
       "provides": [
-        "cmd:chronyc=4.8-r5",
-        "cmd:chronyd=4.8-r5"
+        "cmd:chronyc=4.8-r6",
+        "cmd:chronyd=4.8-r6"
       ]
     },
     "chrony-common": {
       "origin": "chrony",
       "versions": {
         "4.8-r4": 1775551794,
-        "4.8-r5": 1777897605
-      }
+        "4.8-r5": 1777897605,
+        "4.8-r6": 1781269852
+      },
+      "dependencies": [
+        "/bin/sh"
+      ]
     },
     "chrony-dbg": {
       "origin": "chrony",
       "versions": {
         "4.8-r4": 1775551794,
-        "4.8-r5": 1777897605
+        "4.8-r5": 1777897605,
+        "4.8-r6": 1781269852
       },
       "dependencies": [
-        "!chrony-nts<4.8-r5",
-        "!chrony-nts>4.8-r5",
-        "!chrony<4.8-r5",
-        "!chrony>4.8-r5"
+        "!chrony-nts<4.8-r6",
+        "!chrony-nts>4.8-r6",
+        "!chrony<4.8-r6",
+        "!chrony>4.8-r6"
       ]
     },
     "chrony-doc": {
       "origin": "chrony",
       "versions": {
         "4.8-r4": 1775551794,
-        "4.8-r5": 1777897605
+        "4.8-r5": 1777897605,
+        "4.8-r6": 1781269852
       }
     },
     "chrony-nts": {
       "origin": "chrony",
       "versions": {
         "4.8-r4": 1775551794,
-        "4.8-r5": 1777897605
+        "4.8-r5": 1777897605,
+        "4.8-r6": 1781269852
       },
       "dependencies": [
-        "chrony-common=4.8-r5",
+        "chrony-common=4.8-r6",
         "so:libc.musl-loongarch64.so.1",
         "so:libcap.so.2",
         "so:libgnutls.so.30",
@@ -8711,16 +8719,17 @@
         "so:libseccomp.so.2"
       ],
       "provides": [
-        "chrony=4.8-r5",
-        "cmd:chronyc=4.8-r5",
-        "cmd:chronyd=4.8-r5"
+        "chrony=4.8-r6",
+        "cmd:chronyc=4.8-r6",
+        "cmd:chronyd=4.8-r6"
       ]
     },
     "chrony-openrc": {
       "origin": "chrony",
       "versions": {
         "4.8-r4": 1775551794,
-        "4.8-r5": 1777897605
+        "4.8-r5": 1777897605,
+        "4.8-r6": 1781269852
       }
     },
     "chrpath": {
@@ -50550,7 +50559,8 @@
     "perl-gd": {
       "origin": "perl-gd",
       "versions": {
-        "2.84-r1": 1771160091
+        "2.84-r1": 1771160091,
+        "2.86-r0": 1781261894
       },
       "dependencies": [
         "perl",
@@ -50558,13 +50568,14 @@
         "so:libgd.so.3"
       ],
       "provides": [
-        "cmd:bdf2gdfont.pl=2.84-r1"
+        "cmd:bdf2gdfont.pl=2.86-r0"
       ]
     },
     "perl-gd-doc": {
       "origin": "perl-gd",
       "versions": {
-        "2.84-r1": 1771160091
+        "2.84-r1": 1771160091,
+        "2.86-r0": 1781261894
       }
     },
     "perl-gdgraph": {
@@ -74344,7 +74355,7 @@
       },
       "chrony": {
         "package": "chrony-nts",
-        "version": "4.8-r5"
+        "version": "4.8-r6"
       },
       "clang": {
         "package": "clang22",
