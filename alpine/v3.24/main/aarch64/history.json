@@ -11190,15 +11190,16 @@
       "versions": {
         "2.03.35-r0": 1776854610,
         "2.03.35-r1": 1776872121,
-        "2.03.35-r2": 1778511617
+        "2.03.35-r2": 1778511617,
+        "2.03.35-r3": 1782990833
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
         "so:libdevmapper.so.1.02"
       ],
       "provides": [
-        "cmd:dmsetup=2.03.35-r2",
-        "cmd:dmstats=2.03.35-r2"
+        "cmd:dmsetup=2.03.35-r3",
+        "cmd:dmstats=2.03.35-r3"
       ]
     },
     "device-mapper-event-libs": {
@@ -11206,7 +11207,8 @@
       "versions": {
         "2.03.35-r0": 1776854610,
         "2.03.35-r1": 1776872121,
-        "2.03.35-r2": 1778511617
+        "2.03.35-r2": 1778511617,
+        "2.03.35-r3": 1782990833
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
@@ -11221,7 +11223,8 @@
       "versions": {
         "2.03.35-r0": 1776854610,
         "2.03.35-r1": 1776872121,
-        "2.03.35-r2": 1778511617
+        "2.03.35-r2": 1778511617,
+        "2.03.35-r3": 1782990833
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1"
@@ -11235,16 +11238,17 @@
       "versions": {
         "2.03.35-r0": 1776854610,
         "2.03.35-r1": 1776872121,
-        "2.03.35-r2": 1778511617
+        "2.03.35-r2": 1778511617,
+        "2.03.35-r3": 1782990833
       },
       "dependencies": [
         "lvm2-libs=2.03.35-r0"
       ],
       "provides": [
-        "device-mapper-event-static=2.03.35-r2",
-        "cmd:dmeventd.static=2.03.35-r2",
-        "cmd:dmsetup.static=2.03.35-r2",
-        "cmd:dmstats.static=2.03.35-r2"
+        "device-mapper-event-static=2.03.35-r3",
+        "cmd:dmeventd.static=2.03.35-r3",
+        "cmd:dmsetup.static=2.03.35-r3",
+        "cmd:dmstats.static=2.03.35-r3"
       ]
     },
     "device-mapper-udev": {
@@ -11252,9 +11256,11 @@
       "versions": {
         "2.03.35-r0": 1776854610,
         "2.03.35-r1": 1776872121,
-        "2.03.35-r2": 1778511617
+        "2.03.35-r2": 1778511617,
+        "2.03.35-r3": 1782990833
       },
       "dependencies": [
+        "device-mapper=2.03.35-r3",
         "/bin/sh"
       ]
     },
@@ -25976,7 +25982,8 @@
     "libevent": {
       "origin": "libevent",
       "versions": {
-        "2.1.12-r9": 1774640350
+        "2.1.12-r9": 1774640350,
+        "2.1.13-r0": 1782990723
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
@@ -25984,36 +25991,38 @@
         "so:libssl.so.3"
       ],
       "provides": [
-        "so:libevent-2.1.so.7=7.0.1",
-        "so:libevent_core-2.1.so.7=7.0.1",
-        "so:libevent_extra-2.1.so.7=7.0.1",
-        "so:libevent_openssl-2.1.so.7=7.0.1",
-        "so:libevent_pthreads-2.1.so.7=7.0.1"
+        "so:libevent-2.1.so.7=7.0.2",
+        "so:libevent_core-2.1.so.7=7.0.2",
+        "so:libevent_extra-2.1.so.7=7.0.2",
+        "so:libevent_openssl-2.1.so.7=7.0.2",
+        "so:libevent_pthreads-2.1.so.7=7.0.2"
       ]
     },
     "libevent-dev": {
       "origin": "libevent",
       "versions": {
-        "2.1.12-r9": 1774640350
+        "2.1.12-r9": 1774640350,
+        "2.1.13-r0": 1782990723
       },
       "dependencies": [
         "python3",
-        "libevent=2.1.12-r9",
+        "libevent=2.1.13-r0",
         "pkgconfig"
       ],
       "provides": [
-        "cmd:event_rpcgen.py=2.1.12-r9",
-        "pc:libevent=2.1.12-r9",
-        "pc:libevent_core=2.1.12-r9",
-        "pc:libevent_extra=2.1.12-r9",
-        "pc:libevent_openssl=2.1.12-r9",
-        "pc:libevent_pthreads=2.1.12-r9"
+        "cmd:event_rpcgen.py=2.1.13-r0",
+        "pc:libevent=2.1.13-r0",
+        "pc:libevent_core=2.1.13-r0",
+        "pc:libevent_extra=2.1.13-r0",
+        "pc:libevent_openssl=2.1.13-r0",
+        "pc:libevent_pthreads=2.1.13-r0"
       ]
     },
     "libevent-static": {
       "origin": "libevent",
       "versions": {
-        "2.1.12-r9": 1774640350
+        "2.1.12-r9": 1774640350,
+        "2.1.13-r0": 1782990723
       }
     },
     "libexpat": {
@@ -75281,11 +75290,12 @@
       "versions": {
         "2.03.35-r0": 1776854610,
         "2.03.35-r1": 1776872121,
-        "2.03.35-r2": 1778511617
+        "2.03.35-r2": 1778511617,
+        "2.03.35-r3": 1782990833
       },
       "dependencies": [
-        "device-mapper-event-libs=2.03.35-r2",
-        "device-mapper-libs=2.03.35-r2",
+        "device-mapper-event-libs=2.03.35-r3",
+        "device-mapper-libs=2.03.35-r3",
         "pkgconfig"
       ],
       "provides": [
@@ -75298,7 +75308,8 @@
       "versions": {
         "2.03.35-r0": 1776854610,
         "2.03.35-r1": 1776872121,
-        "2.03.35-r2": 1778511617
+        "2.03.35-r2": 1778511617,
+        "2.03.35-r3": 1782990833
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
@@ -75306,7 +75317,7 @@
         "so:libdevmapper.so.1.02"
       ],
       "provides": [
-        "cmd:dmeventd=2.03.35-r2"
+        "cmd:dmeventd=2.03.35-r3"
       ]
     },
     "device-mapper-dmeventd-openrc": {
@@ -75314,7 +75325,8 @@
       "versions": {
         "2.03.35-r0": 1776854610,
         "2.03.35-r1": 1776872121,
-        "2.03.35-r2": 1778511617
+        "2.03.35-r2": 1778511617,
+        "2.03.35-r3": 1782990833
       }
     },
     "device-mapper-doc": {
@@ -75322,7 +75334,8 @@
       "versions": {
         "2.03.35-r0": 1776854610,
         "2.03.35-r1": 1776872121,
-        "2.03.35-r2": 1778511617
+        "2.03.35-r2": 1778511617,
+        "2.03.35-r3": 1782990833
       }
     },
     "py3-click": {
@@ -75771,7 +75784,7 @@
       },
       "device-mapper-event-static": {
         "package": "device-mapper-static",
-        "version": "2.03.35-r2"
+        "version": "2.03.35-r3"
       },
       "dnsmasq": {
         "package": "dnsmasq-dnssec-nftset",
@@ -79857,23 +79870,23 @@
       },
       "libevent-2.1.so.7": {
         "package": "libevent",
-        "version": "7.0.1"
+        "version": "7.0.2"
       },
       "libevent_core-2.1.so.7": {
         "package": "libevent",
-        "version": "7.0.1"
+        "version": "7.0.2"
       },
       "libevent_extra-2.1.so.7": {
         "package": "libevent",
-        "version": "7.0.1"
+        "version": "7.0.2"
       },
       "libevent_openssl-2.1.so.7": {
         "package": "libevent",
-        "version": "7.0.1"
+        "version": "7.0.2"
       },
       "libevent_pthreads-2.1.so.7": {
         "package": "libevent",
-        "version": "7.0.1"
+        "version": "7.0.2"
       },
       "libexpat.so.1": {
         "package": "libexpat",
