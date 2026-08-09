@@ -27339,10 +27339,11 @@
         "150.0.7871.114-r0": 1783780378,
         "150.0.7871.124-r0": 1784212769,
         "150.0.7871.128-r0": 1784434200,
-        "150.0.7871.181-r0": 1785389490
+        "150.0.7871.181-r0": 1785389490,
+        "151.0.7922.108-r0": 1786278187
       },
       "dependencies": [
-        "chromium-common=150.0.7871.181-r0",
+        "chromium-common=151.0.7922.108-r0",
         "font-opensans",
         "gtk+3.0",
         "icu-data-full",
@@ -27356,7 +27357,10 @@
         "so:libXdamage.so.1",
         "so:libXext.so.6",
         "so:libXfixes.so.3",
+        "so:libXi.so.6",
         "so:libXrandr.so.2",
+        "so:libXrender.so.1",
+        "so:libXtst.so.6",
         "so:libasound.so.2",
         "so:libatk-1.0.so.0",
         "so:libatk-bridge-2.0.so.0",
@@ -27365,6 +27369,7 @@
         "so:libavformat.so.62",
         "so:libavutil.so.60",
         "so:libbrotlidec.so.1",
+        "so:libbrotlienc.so.1",
         "so:libc.musl-aarch64.so.1",
         "so:libcairo.so.2",
         "so:libcrc32c.so.1",
@@ -27381,9 +27386,11 @@
         "so:libgcc_s.so.1",
         "so:libgio-2.0.so.0",
         "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
         "so:libgobject-2.0.so.0",
         "so:libharfbuzz-subset.so.0",
         "so:libharfbuzz.so.0",
+        "so:libintl.so.8",
         "so:libjpeg.so.8",
         "so:libminizip.so.1",
         "so:libnspr4.so",
@@ -27393,8 +27400,11 @@
         "so:libopus.so.0",
         "so:libpango-1.0.so.0",
         "so:libpipewire-0.3.so.0",
+        "so:libplc4.so",
+        "so:libplds4.so",
         "so:libpulse.so.0",
         "so:libsmime3.so",
+        "so:libstdc++.so.6",
         "so:libudev.so.1",
         "so:libwebp.so.7",
         "so:libwebpdemux.so.2",
@@ -27407,8 +27417,8 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:chromium-browser=150.0.7871.181-r0",
-        "cmd:chromium=150.0.7871.181-r0"
+        "cmd:chromium-browser=151.0.7922.108-r0",
+        "cmd:chromium=151.0.7922.108-r0"
       ]
     },
     "chromium-angle": {
@@ -27423,16 +27433,12 @@
         "150.0.7871.114-r0": 1783780378,
         "150.0.7871.124-r0": 1784212769,
         "150.0.7871.128-r0": 1784434200,
-        "150.0.7871.181-r0": 1785389490
+        "150.0.7871.181-r0": 1785389490,
+        "151.0.7922.108-r0": 1786278187
       },
       "dependencies": [
-        "so:libX11.so.6",
-        "so:libXext.so.6",
         "so:libc.musl-aarch64.so.1",
-        "so:libdrm.so.2",
-        "so:libgcc_s.so.1",
-        "so:libxcb.so.1",
-        "so:libz.so.1"
+        "so:libgcc_s.so.1"
       ]
     },
     "chromium-chromedriver": {
@@ -27447,25 +27453,60 @@
         "150.0.7871.114-r0": 1783780378,
         "150.0.7871.124-r0": 1784212769,
         "150.0.7871.128-r0": 1784434200,
-        "150.0.7871.181-r0": 1785389490
+        "150.0.7871.181-r0": 1785389490,
+        "151.0.7922.108-r0": 1786278187
       },
       "dependencies": [
-        "chromium=150.0.7871.181-r0",
+        "chromium=151.0.7922.108-r0",
+        "so:libFLAC.so.12",
+        "so:libX11.so.6",
+        "so:libXext.so.6",
+        "so:libasound.so.2",
+        "so:libavcodec.so.62",
+        "so:libavformat.so.62",
+        "so:libavutil.so.60",
         "so:libbrotlidec.so.1",
         "so:libc.musl-aarch64.so.1",
+        "so:libcrc32c.so.1",
+        "so:libdav1d.so.7",
+        "so:libdbus-1.so.3",
         "so:libdouble-conversion.so.3",
+        "so:libdrm.so.2",
+        "so:libexpat.so.1",
+        "so:libffi.so.8",
+        "so:libfontconfig.so.1",
+        "so:libfreetype.so.6",
+        "so:libgbm.so.1",
         "so:libgcc_s.so.1",
+        "so:libgio-2.0.so.0",
         "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libharfbuzz-subset.so.0",
+        "so:libharfbuzz.so.0",
+        "so:libintl.so.8",
+        "so:libjpeg.so.8",
         "so:libminizip.so.1",
         "so:libnspr4.so",
         "so:libnss3.so",
         "so:libnssutil3.so",
+        "so:libopenh264.so.8",
+        "so:libopus.so.0",
+        "so:libpipewire-0.3.so.0",
+        "so:libplc4.so",
+        "so:libplds4.so",
+        "so:libpulse.so.0",
+        "so:libsmime3.so",
+        "so:libudev.so.1",
+        "so:libwebp.so.7",
+        "so:libwebpmux.so.3",
         "so:libxcb.so.1",
+        "so:libxkbcommon.so.0",
         "so:libz.so.1",
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:chromedriver=150.0.7871.181-r0"
+        "cmd:chromedriver=151.0.7922.108-r0"
       ]
     },
     "chromium-common": {
@@ -27480,10 +27521,11 @@
         "150.0.7871.114-r0": 1783780378,
         "150.0.7871.124-r0": 1784212769,
         "150.0.7871.128-r0": 1784434200,
-        "150.0.7871.181-r0": 1785389490
+        "150.0.7871.181-r0": 1785389490,
+        "151.0.7922.108-r0": 1786278187
       },
       "dependencies": [
-        "chromium-angle=150.0.7871.181-r0"
+        "chromium-angle=151.0.7922.108-r0"
       ]
     },
     "chromium-dbg": {
@@ -27498,21 +27540,22 @@
         "150.0.7871.114-r0": 1783780378,
         "150.0.7871.124-r0": 1784212769,
         "150.0.7871.128-r0": 1784434200,
-        "150.0.7871.181-r0": 1785389490
+        "150.0.7871.181-r0": 1785389490,
+        "151.0.7922.108-r0": 1786278187
       },
       "dependencies": [
-        "!chromium-angle<150.0.7871.181-r0",
-        "!chromium-angle>150.0.7871.181-r0",
-        "!chromium-chromedriver<150.0.7871.181-r0",
-        "!chromium-chromedriver>150.0.7871.181-r0",
-        "!chromium-headless-shell<150.0.7871.181-r0",
-        "!chromium-headless-shell>150.0.7871.181-r0",
-        "!chromium-qt6<150.0.7871.181-r0",
-        "!chromium-qt6>150.0.7871.181-r0",
-        "!chromium-swiftshader<150.0.7871.181-r0",
-        "!chromium-swiftshader>150.0.7871.181-r0",
-        "!chromium<150.0.7871.181-r0",
-        "!chromium>150.0.7871.181-r0"
+        "!chromium-angle<151.0.7922.108-r0",
+        "!chromium-angle>151.0.7922.108-r0",
+        "!chromium-chromedriver<151.0.7922.108-r0",
+        "!chromium-chromedriver>151.0.7922.108-r0",
+        "!chromium-headless-shell<151.0.7922.108-r0",
+        "!chromium-headless-shell>151.0.7922.108-r0",
+        "!chromium-qt6<151.0.7922.108-r0",
+        "!chromium-qt6>151.0.7922.108-r0",
+        "!chromium-swiftshader<151.0.7922.108-r0",
+        "!chromium-swiftshader>151.0.7922.108-r0",
+        "!chromium<151.0.7922.108-r0",
+        "!chromium>151.0.7922.108-r0"
       ]
     },
     "chromium-doc": {
@@ -27527,7 +27570,8 @@
         "150.0.7871.114-r0": 1783780378,
         "150.0.7871.124-r0": 1784212769,
         "150.0.7871.128-r0": 1784434200,
-        "150.0.7871.181-r0": 1785389490
+        "150.0.7871.181-r0": 1785389490,
+        "151.0.7922.108-r0": 1786278187
       }
     },
     "chromium-headless-shell": {
@@ -27542,10 +27586,11 @@
         "150.0.7871.114-r0": 1783780378,
         "150.0.7871.124-r0": 1784212769,
         "150.0.7871.128-r0": 1784434200,
-        "150.0.7871.181-r0": 1785389490
+        "150.0.7871.181-r0": 1785389490,
+        "151.0.7922.108-r0": 1786278187
       },
       "dependencies": [
-        "chromium-common=150.0.7871.181-r0",
+        "chromium-common=151.0.7922.108-r0",
         "font-opensans",
         "gtk+3.0",
         "icu-data-full",
@@ -27553,16 +27598,20 @@
         "musl>=1.2.3_git20230322-r0",
         "so:libudev.so.1",
         "xdg-utils",
-        "chromium-swiftshader=150.0.7871.181-r0",
+        "chromium-swiftshader=151.0.7922.108-r0",
         "so:libFLAC.so.12",
         "so:libX11.so.6",
         "so:libXcomposite.so.1",
         "so:libXdamage.so.1",
         "so:libXext.so.6",
         "so:libXfixes.so.3",
+        "so:libXi.so.6",
         "so:libXrandr.so.2",
+        "so:libXrender.so.1",
+        "so:libXtst.so.6",
         "so:libasound.so.2",
         "so:libatk-1.0.so.0",
+        "so:libatk-bridge-2.0.so.0",
         "so:libatspi.so.0",
         "so:libavcodec.so.62",
         "so:libavformat.so.62",
@@ -27582,9 +27631,11 @@
         "so:libgcc_s.so.1",
         "so:libgio-2.0.so.0",
         "so:libglib-2.0.so.0",
+        "so:libgmodule-2.0.so.0",
         "so:libgobject-2.0.so.0",
         "so:libharfbuzz-subset.so.0",
         "so:libharfbuzz.so.0",
+        "so:libintl.so.8",
         "so:libjpeg.so.8",
         "so:libminizip.so.1",
         "so:libnspr4.so",
@@ -27593,7 +27644,10 @@
         "so:libopenh264.so.8",
         "so:libopus.so.0",
         "so:libpipewire-0.3.so.0",
+        "so:libplc4.so",
+        "so:libplds4.so",
         "so:libpulse.so.0",
+        "so:libsmime3.so",
         "so:libudev.so.1",
         "so:libwebp.so.7",
         "so:libwebpdemux.so.2",
@@ -27606,7 +27660,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:chromium-headless-shell=150.0.7871.181-r0"
+        "cmd:chromium-headless-shell=151.0.7922.108-r0"
       ]
     },
     "chromium-lang": {
@@ -27621,7 +27675,8 @@
         "150.0.7871.114-r0": 1783780378,
         "150.0.7871.124-r0": 1784212769,
         "150.0.7871.128-r0": 1784434200,
-        "150.0.7871.181-r0": 1785389490
+        "150.0.7871.181-r0": 1785389490,
+        "151.0.7922.108-r0": 1786278187
       }
     },
     "chromium-qt6": {
@@ -27636,10 +27691,11 @@
         "150.0.7871.114-r0": 1783780378,
         "150.0.7871.124-r0": 1784212769,
         "150.0.7871.128-r0": 1784434200,
-        "150.0.7871.181-r0": 1785389490
+        "150.0.7871.181-r0": 1785389490,
+        "151.0.7922.108-r0": 1786278187
       },
       "dependencies": [
-        "chromium-common=150.0.7871.181-r0",
+        "chromium-common=151.0.7922.108-r0",
         "font-opensans",
         "gtk+3.0",
         "icu-data-full",
@@ -27651,6 +27707,7 @@
         "so:libQt6Gui.so.6",
         "so:libQt6Widgets.so.6",
         "so:libc.musl-aarch64.so.1",
+        "so:libgcc_s.so.1",
         "so:libstdc++.so.6"
       ]
     },
@@ -27666,11 +27723,13 @@
         "150.0.7871.114-r0": 1783780378,
         "150.0.7871.124-r0": 1784212769,
         "150.0.7871.128-r0": 1784434200,
-        "150.0.7871.181-r0": 1785389490
+        "150.0.7871.181-r0": 1785389490,
+        "151.0.7922.108-r0": 1786278187
       },
       "dependencies": [
-        "chromium-angle=150.0.7871.181-r0",
+        "chromium-angle=151.0.7922.108-r0",
         "so:libc.musl-aarch64.so.1",
+        "so:libffi.so.8",
         "so:libgcc_s.so.1"
       ]
     },
@@ -216895,14 +216954,15 @@
         "11.4.0-r0": 1780012740,
         "11.5.0-r0": 1780390952,
         "11.5.2-r0": 1780742257,
-        "11.5.3-r0": 1781217224
+        "11.5.3-r0": 1781217224,
+        "11.20.0-r0": 1786301752
       },
       "dependencies": [
         "nodejs"
       ],
       "provides": [
-        "cmd:pnpm=11.5.3-r0",
-        "cmd:pnpx=11.5.3-r0"
+        "cmd:pnpm=11.20.0-r0",
+        "cmd:pnpx=11.20.0-r0"
       ]
     },
     "pnpm-bash-completion": {
@@ -216914,7 +216974,8 @@
         "11.4.0-r0": 1780012740,
         "11.5.0-r0": 1780390952,
         "11.5.2-r0": 1780742257,
-        "11.5.3-r0": 1781217224
+        "11.5.3-r0": 1781217224,
+        "11.20.0-r0": 1786301752
       }
     },
     "pnpm-doc": {
@@ -216926,7 +216987,8 @@
         "11.4.0-r0": 1780012740,
         "11.5.0-r0": 1780390952,
         "11.5.2-r0": 1780742257,
-        "11.5.3-r0": 1781217224
+        "11.5.3-r0": 1781217224,
+        "11.20.0-r0": 1786301752
       }
     },
     "pnpm-fish-completion": {
@@ -216938,7 +217000,8 @@
         "11.4.0-r0": 1780012740,
         "11.5.0-r0": 1780390952,
         "11.5.2-r0": 1780742257,
-        "11.5.3-r0": 1781217224
+        "11.5.3-r0": 1781217224,
+        "11.20.0-r0": 1786301752
       }
     },
     "pnpm-zsh-completion": {
@@ -216950,7 +217013,8 @@
         "11.4.0-r0": 1780012740,
         "11.5.0-r0": 1780390952,
         "11.5.2-r0": 1780742257,
-        "11.5.3-r0": 1781217224
+        "11.5.3-r0": 1781217224,
+        "11.20.0-r0": 1786301752
       }
     },
     "poco": {
