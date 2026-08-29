@@ -289566,7 +289566,8 @@
     "suricata": {
       "origin": "suricata",
       "versions": {
-        "8.0.3-r0": 1769383552
+        "8.0.3-r0": 1769383552,
+        "8.0.6-r0": 1788020424
       },
       "dependencies": [
         "python3",
@@ -289592,22 +289593,24 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:suricata-update=8.0.3-r0",
-        "cmd:suricata=8.0.3-r0",
-        "cmd:suricatactl=8.0.3-r0",
-        "cmd:suricatasc=8.0.3-r0"
+        "cmd:suricata-update=8.0.6-r0",
+        "cmd:suricata=8.0.6-r0",
+        "cmd:suricatactl=8.0.6-r0",
+        "cmd:suricatasc=8.0.6-r0"
       ]
     },
     "suricata-doc": {
       "origin": "suricata",
       "versions": {
-        "8.0.3-r0": 1769383552
+        "8.0.3-r0": 1769383552,
+        "8.0.6-r0": 1788020424
       }
     },
     "suricata-openrc": {
       "origin": "suricata",
       "versions": {
-        "8.0.3-r0": 1769383552
+        "8.0.3-r0": 1769383552,
+        "8.0.6-r0": 1788020424
       }
     },
     "sushi": {
@@ -323893,6 +323896,16 @@
         "php84-common",
         "so:libc.musl-x86_64.so.1",
         "so:liblua.so.5"
+      ]
+    },
+    "suricata-dbg": {
+      "origin": "suricata",
+      "versions": {
+        "8.0.6-r0": 1788020424
+      },
+      "dependencies": [
+        "!suricata<8.0.6-r0",
+        "!suricata>8.0.6-r0"
       ]
     }
   },
