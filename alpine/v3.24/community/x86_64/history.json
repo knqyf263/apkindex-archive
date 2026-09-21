@@ -325439,6 +325439,172 @@
         "!suricata<8.0.7-r0",
         "!suricata>8.0.7-r0"
       ]
+    },
+    "libggml": {
+      "origin": "libggml",
+      "versions": {
+        "0.23.0-r0": 1789991725
+      },
+      "dependencies": [
+        "openblas",
+        "so:libc.musl-x86_64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libgomp.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libggml-base.so.0=0.23.0",
+        "so:libggml-blas.so=0",
+        "so:libggml-rpc.so=0",
+        "so:libggml.so.0=0.23.0"
+      ]
+    },
+    "libggml-cpu": {
+      "origin": "libggml",
+      "versions": {
+        "0.23.0-r0": 1789991725
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libggml-base.so.0",
+        "so:libgomp.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libggml-cpu-alderlake.so=0",
+        "so:libggml-cpu-cannonlake.so=0",
+        "so:libggml-cpu-cascadelake.so=0",
+        "so:libggml-cpu-cooperlake.so=0",
+        "so:libggml-cpu-haswell.so=0",
+        "so:libggml-cpu-icelake.so=0",
+        "so:libggml-cpu-ivybridge.so=0",
+        "so:libggml-cpu-piledriver.so=0",
+        "so:libggml-cpu-sandybridge.so=0",
+        "so:libggml-cpu-sapphirerapids.so=0",
+        "so:libggml-cpu-skylakex.so=0",
+        "so:libggml-cpu-sse42.so=0",
+        "so:libggml-cpu-x64.so=0",
+        "so:libggml-cpu-zen4.so=0"
+      ]
+    },
+    "libggml-dev": {
+      "origin": "libggml",
+      "versions": {
+        "0.23.0-r0": 1789991725
+      },
+      "dependencies": [
+        "libggml=0.23.0-r0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:ggml=0.23.0"
+      ]
+    },
+    "libggml-vulkan": {
+      "origin": "libggml",
+      "versions": {
+        "0.23.0-r0": 1789991725
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libggml-base.so.0",
+        "so:libstdc++.so.6",
+        "so:libvulkan.so.1"
+      ],
+      "provides": [
+        "so:libggml-vulkan.so=0"
+      ]
+    },
+    "whisper-server": {
+      "origin": "whisper.cpp",
+      "versions": {
+        "1.9.3-r0": 1789991725
+      },
+      "dependencies": [
+        "/bin/sh",
+        "so:libavcodec.so.62",
+        "so:libavformat.so.62",
+        "so:libavutil.so.60",
+        "so:libc.musl-x86_64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libggml.so.0",
+        "so:libstdc++.so.6",
+        "so:libswresample.so.6",
+        "so:whisper.cpp:libwhisper.so.1"
+      ],
+      "provides": [
+        "cmd:whisper-server=1.9.3-r0"
+      ]
+    },
+    "whisper-server-openrc": {
+      "origin": "whisper.cpp",
+      "versions": {
+        "1.9.3-r0": 1789991725
+      },
+      "dependencies": [
+        "whisper-server=1.9.3-r0",
+        "openrc"
+      ]
+    },
+    "whisper.cpp": {
+      "origin": "whisper.cpp",
+      "versions": {
+        "1.9.3-r0": 1789991725
+      },
+      "dependencies": [
+        "so:libavcodec.so.62",
+        "so:libavformat.so.62",
+        "so:libavutil.so.60",
+        "so:libc.musl-x86_64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libggml-base.so.0",
+        "so:libggml.so.0",
+        "so:libstdc++.so.6",
+        "so:libswresample.so.6",
+        "so:whisper.cpp:libparakeet.so.1",
+        "so:whisper.cpp:libwhisper.so.1"
+      ],
+      "provides": [
+        "cmd:download-ggml-model=1.9.3-r0",
+        "cmd:parakeet-cli=1.9.3-r0",
+        "cmd:parakeet-quantize=1.9.3-r0",
+        "cmd:whisper-bench=1.9.3-r0",
+        "cmd:whisper-cli=1.9.3-r0",
+        "cmd:whisper-quantize=1.9.3-r0",
+        "cmd:whisper-vad-speech-segments=1.9.3-r0"
+      ]
+    },
+    "whisper.cpp-dev": {
+      "origin": "whisper.cpp",
+      "versions": {
+        "1.9.3-r0": 1789991725
+      },
+      "dependencies": [
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:parakeet=1.9.3",
+        "pc:whisper=1.9.3"
+      ]
+    },
+    "whisper.cpp-libs": {
+      "origin": "whisper.cpp",
+      "versions": {
+        "1.9.3-r0": 1789991725
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libggml-base.so.0",
+        "so:libggml.so.0",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:whisper.cpp:libparakeet.so.1=1.9.3",
+        "so:whisper.cpp:libwhisper.so.1=1.9.3"
+      ]
     }
   },
   "provide": {
@@ -351446,6 +351612,90 @@
       "libkonsoleprivate.so.26.04.2": {
         "package": "konsole",
         "version": "26.04.2"
+      },
+      "libggml-base.so.0": {
+        "package": "libggml",
+        "version": "0.23.0"
+      },
+      "libggml-blas.so": {
+        "package": "libggml",
+        "version": "0"
+      },
+      "libggml-rpc.so": {
+        "package": "libggml",
+        "version": "0"
+      },
+      "libggml.so.0": {
+        "package": "libggml",
+        "version": "0.23.0"
+      },
+      "libggml-cpu-alderlake.so": {
+        "package": "libggml-cpu",
+        "version": "0"
+      },
+      "libggml-cpu-cannonlake.so": {
+        "package": "libggml-cpu",
+        "version": "0"
+      },
+      "libggml-cpu-cascadelake.so": {
+        "package": "libggml-cpu",
+        "version": "0"
+      },
+      "libggml-cpu-cooperlake.so": {
+        "package": "libggml-cpu",
+        "version": "0"
+      },
+      "libggml-cpu-haswell.so": {
+        "package": "libggml-cpu",
+        "version": "0"
+      },
+      "libggml-cpu-icelake.so": {
+        "package": "libggml-cpu",
+        "version": "0"
+      },
+      "libggml-cpu-ivybridge.so": {
+        "package": "libggml-cpu",
+        "version": "0"
+      },
+      "libggml-cpu-piledriver.so": {
+        "package": "libggml-cpu",
+        "version": "0"
+      },
+      "libggml-cpu-sandybridge.so": {
+        "package": "libggml-cpu",
+        "version": "0"
+      },
+      "libggml-cpu-sapphirerapids.so": {
+        "package": "libggml-cpu",
+        "version": "0"
+      },
+      "libggml-cpu-skylakex.so": {
+        "package": "libggml-cpu",
+        "version": "0"
+      },
+      "libggml-cpu-sse42.so": {
+        "package": "libggml-cpu",
+        "version": "0"
+      },
+      "libggml-cpu-x64.so": {
+        "package": "libggml-cpu",
+        "version": "0"
+      },
+      "libggml-cpu-zen4.so": {
+        "package": "libggml-cpu",
+        "version": "0"
+      },
+      "libggml-vulkan.so": {
+        "package": "libggml-vulkan",
+        "version": "0"
+      },
+      "whisper.cpp:libparakeet.so.1": {
+        "package": "whisper.cpp-libs",
+        "version": "1.9.3"
+      },
+      "whisper.cpp:libwhisper.so.1": {
+        "package": "whisper.cpp-libs",
+        "version": "1.9.3"
       }
     },
     "package": {

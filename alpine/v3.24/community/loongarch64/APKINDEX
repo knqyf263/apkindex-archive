@@ -121107,6 +121107,55 @@ c:1e40ebb81e1bd430682f1e567f49def3e88314d0
 D:libgepub=0.7.1-r1 pc:gio-2.0 pc:glib-2.0 pc:gobject-2.0 pc:libarchive pc:libsoup-3.0 pc:libxml-2.0 pc:webkit2gtk-4.1 pkgconfig
 p:pc:libgepub-0.7=0.7.1
 
+C:Q1zIjuc6CG1iei+RLEex/OssQteMQ=
+P:libggml
+V:0.23.0-r0
+A:loongarch64
+S:865874
+I:2108614
+T:Tensor library for machine learning
+U:https://github.com/ggml-org/ggml
+L:MIT
+o:libggml
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:0dc8d7a2effca3ef2761ee65f99e171dbafea717
+D:openblas so:libc.musl-loongarch64.so.1 so:libgcc_s.so.1 so:libgomp.so.1 so:libstdc++.so.6
+p:so:libggml-base.so.0=0.23.0 so:libggml-blas.so=0 so:libggml-cpu.so=0 so:libggml-rpc.so=0 so:libggml.so.0=0.23.0
+
+C:Q1+gNFhfgDqiEFfquhztjkvFn1lm0=
+P:libggml-dev
+V:0.23.0-r0
+A:loongarch64
+S:45008
+I:209257
+T:Tensor library for machine learning (development files)
+U:https://github.com/ggml-org/ggml
+L:MIT
+o:libggml
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:0dc8d7a2effca3ef2761ee65f99e171dbafea717
+D:libggml=0.23.0-r0 pkgconfig
+p:pc:ggml=0.23.0
+
+C:Q1JtPZpgaOY/hcOuB9+ATrWcFiR/k=
+P:libggml-vulkan
+V:0.23.0-r0
+A:loongarch64
+S:16623884
+I:54793288
+T:Tensor library for machine learning
+U:https://github.com/ggml-org/ggml
+L:MIT
+o:libggml
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:0dc8d7a2effca3ef2761ee65f99e171dbafea717
+D:so:libc.musl-loongarch64.so.1 so:libgcc_s.so.1 so:libggml-base.so.0 so:libstdc++.so.6 so:libvulkan.so.1
+p:so:libggml-vulkan.so=0
+i:libggml=0.23.0-r0 vulkan-loader
+
 C:Q1PuzgZ7NyH4QkMdd7U0ipaU/Q/NE=
 P:libgit2
 V:1.9.7-r0
@@ -315282,6 +315331,86 @@ m:Coco Liliace <coco@liliace.dev>
 t:1701345526
 c:e10931aa82806f17fe9078565f85c7fda9dbbde8
 i:docs when=1.1.45-r1
+
+C:Q1HsIFzn3Dq2wPCgbnzl582sAyML4=
+P:whisper-server
+V:1.9.3-r0
+A:loongarch64
+S:559076
+I:1249136
+T:whisper.cpp server
+U:https://github.com/ggerganov/whisper.cpp
+L:MIT
+o:whisper.cpp
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:5a8261ee3f328d2e3c00d6d2bb2ef133aab25a7c
+D:/bin/sh so:libavcodec.so.62 so:libavformat.so.62 so:libavutil.so.60 so:libc.musl-loongarch64.so.1 so:libgcc_s.so.1 so:libggml.so.0 so:libstdc++.so.6 so:libswresample.so.6 so:whisper.cpp:libwhisper.so.1
+p:cmd:whisper-server=1.9.3-r0
+
+C:Q1nLNYRJTa/l7F+GpWlthH27Uw6Eo=
+P:whisper-server-openrc
+V:1.9.3-r0
+A:loongarch64
+S:1981
+I:553
+T:whisper.cpp server (OpenRC init scripts)
+U:https://github.com/ggerganov/whisper.cpp
+L:MIT
+o:whisper.cpp
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:5a8261ee3f328d2e3c00d6d2bb2ef133aab25a7c
+D:whisper-server=1.9.3-r0 openrc
+i:whisper-server=1.9.3-r0 openrc
+
+C:Q12YV3R7+T6zDKT1YFqt8pqixPANY=
+P:whisper.cpp
+V:1.9.3-r0
+A:loongarch64
+S:1217858
+I:2774100
+T:Port of OpenAI's Whisper model in C/C++
+U:https://github.com/ggerganov/whisper.cpp
+L:MIT
+o:whisper.cpp
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:5a8261ee3f328d2e3c00d6d2bb2ef133aab25a7c
+D:so:libavcodec.so.62 so:libavformat.so.62 so:libavutil.so.60 so:libc.musl-loongarch64.so.1 so:libgcc_s.so.1 so:libggml-base.so.0 so:libggml.so.0 so:libstdc++.so.6 so:libswresample.so.6 so:whisper.cpp:libparakeet.so.1 so:whisper.cpp:libwhisper.so.1
+p:cmd:download-ggml-model=1.9.3-r0 cmd:parakeet-cli=1.9.3-r0 cmd:parakeet-quantize=1.9.3-r0 cmd:whisper-bench=1.9.3-r0 cmd:whisper-cli=1.9.3-r0 cmd:whisper-quantize=1.9.3-r0 cmd:whisper-vad-speech-segments=1.9.3-r0
+
+C:Q1/y5Zsw8NyPI5rmBMWFcyFB+2L7s=
+P:whisper.cpp-dev
+V:1.9.3-r0
+A:loongarch64
+S:4218
+I:10301
+T:Port of OpenAI's Whisper model in C/C++ (development files)
+U:https://github.com/ggerganov/whisper.cpp
+L:MIT
+o:whisper.cpp
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:5a8261ee3f328d2e3c00d6d2bb2ef133aab25a7c
+D:pkgconfig
+p:pc:parakeet=1.9.3 pc:whisper=1.9.3
+
+C:Q1oW+RU/XZfP1VLxB4UEOXmtqiTSY=
+P:whisper.cpp-libs
+V:1.9.3-r0
+A:loongarch64
+S:306350
+I:791432
+T:Port of OpenAI's Whisper model in C/C++
+U:https://github.com/ggerganov/whisper.cpp
+L:MIT
+o:whisper.cpp
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:5a8261ee3f328d2e3c00d6d2bb2ef133aab25a7c
+D:so:libc.musl-loongarch64.so.1 so:libgcc_s.so.1 so:libggml-base.so.0 so:libggml.so.0 so:libstdc++.so.6
+p:so:whisper.cpp:libparakeet.so.1=1.9.3 so:whisper.cpp:libwhisper.so.1=1.9.3
 
 C:Q1nH4+hZ+Dch3lV6J98OTeqHtVd6U=
 P:whois

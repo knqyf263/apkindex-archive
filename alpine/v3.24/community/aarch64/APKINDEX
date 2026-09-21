@@ -127586,6 +127586,72 @@ c:1e40ebb81e1bd430682f1e567f49def3e88314d0
 D:libgepub=0.7.1-r1 pc:gio-2.0 pc:glib-2.0 pc:gobject-2.0 pc:libarchive pc:libsoup-3.0 pc:libxml-2.0 pc:webkit2gtk-4.1 pkgconfig
 p:pc:libgepub-0.7=0.7.1
 
+C:Q1Ndj7+ng4pMuFI1VfOHrtwcobhHI=
+P:libggml
+V:0.23.0-r0
+A:aarch64
+S:469205
+I:1189182
+T:Tensor library for machine learning
+U:https://github.com/ggml-org/ggml
+L:MIT
+o:libggml
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:0dc8d7a2effca3ef2761ee65f99e171dbafea717
+D:openblas so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libgomp.so.1 so:libstdc++.so.6
+p:so:libggml-base.so.0=0.23.0 so:libggml-blas.so=0 so:libggml-rpc.so=0 so:libggml.so.0=0.23.0
+
+C:Q1eWMenpAJ4uavt/fnAkNoBoOHaJw=
+P:libggml-cpu
+V:0.23.0-r0
+A:aarch64
+S:2975594
+I:7096856
+T:Tensor library for machine learning
+U:https://github.com/ggml-org/ggml
+L:MIT
+o:libggml
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:0dc8d7a2effca3ef2761ee65f99e171dbafea717
+D:so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libggml-base.so.0 so:libgomp.so.1 so:libstdc++.so.6
+p:so:libggml-cpu-armv8.0_1.so=0 so:libggml-cpu-armv8.2_1.so=0 so:libggml-cpu-armv8.2_2.so=0 so:libggml-cpu-armv8.2_3.so=0 so:libggml-cpu-armv8.6_1.so=0 so:libggml-cpu-armv8.6_2.so=0 so:libggml-cpu-armv9.2_1.so=0 so:libggml-cpu-armv9.2_2.so=0
+i:libggml=0.23.0-r0
+
+C:Q1ZzSQjbGPFFIriFj45BDe3kR4Tkg=
+P:libggml-dev
+V:0.23.0-r0
+A:aarch64
+S:45041
+I:209446
+T:Tensor library for machine learning (development files)
+U:https://github.com/ggml-org/ggml
+L:MIT
+o:libggml
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:0dc8d7a2effca3ef2761ee65f99e171dbafea717
+D:libggml=0.23.0-r0 pkgconfig
+p:pc:ggml=0.23.0
+
+C:Q1GNDdVd/7z8F7zmjOmjLnef+srow=
+P:libggml-vulkan
+V:0.23.0-r0
+A:aarch64
+S:16589026
+I:54269064
+T:Tensor library for machine learning
+U:https://github.com/ggml-org/ggml
+L:MIT
+o:libggml
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:0dc8d7a2effca3ef2761ee65f99e171dbafea717
+D:so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libggml-base.so.0 so:libstdc++.so.6 so:libvulkan.so.1
+p:so:libggml-vulkan.so=0
+i:libggml=0.23.0-r0 vulkan-loader
+
 C:Q1xMaZs+3c2H6tRqZg1i4eLjbVrcs=
 P:libgit2
 V:1.9.7-r0
@@ -333868,6 +333934,86 @@ m:Coco Liliace <coco@liliace.dev>
 t:1701345526
 c:e10931aa82806f17fe9078565f85c7fda9dbbde8
 i:docs when=1.1.45-r1
+
+C:Q11izV1Op3VNL/SEg5j5GPMiep/Zo=
+P:whisper-server
+V:1.9.3-r0
+A:aarch64
+S:529109
+I:1118120
+T:whisper.cpp server
+U:https://github.com/ggerganov/whisper.cpp
+L:MIT
+o:whisper.cpp
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:5a8261ee3f328d2e3c00d6d2bb2ef133aab25a7c
+D:/bin/sh so:libavcodec.so.62 so:libavformat.so.62 so:libavutil.so.60 so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libggml.so.0 so:libstdc++.so.6 so:libswresample.so.6 so:whisper.cpp:libwhisper.so.1
+p:cmd:whisper-server=1.9.3-r0
+
+C:Q18Ig5BdEevFYKWZM0bBXShWe1LL4=
+P:whisper-server-openrc
+V:1.9.3-r0
+A:aarch64
+S:1955
+I:553
+T:whisper.cpp server (OpenRC init scripts)
+U:https://github.com/ggerganov/whisper.cpp
+L:MIT
+o:whisper.cpp
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:5a8261ee3f328d2e3c00d6d2bb2ef133aab25a7c
+D:whisper-server=1.9.3-r0 openrc
+i:whisper-server=1.9.3-r0 openrc
+
+C:Q1dnZysLBxY5yTBH8K1pNYNw6IU48=
+P:whisper.cpp
+V:1.9.3-r0
+A:aarch64
+S:1140086
+I:2577916
+T:Port of OpenAI's Whisper model in C/C++
+U:https://github.com/ggerganov/whisper.cpp
+L:MIT
+o:whisper.cpp
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:5a8261ee3f328d2e3c00d6d2bb2ef133aab25a7c
+D:so:libavcodec.so.62 so:libavformat.so.62 so:libavutil.so.60 so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libggml-base.so.0 so:libggml.so.0 so:libstdc++.so.6 so:libswresample.so.6 so:whisper.cpp:libparakeet.so.1 so:whisper.cpp:libwhisper.so.1
+p:cmd:download-ggml-model=1.9.3-r0 cmd:parakeet-cli=1.9.3-r0 cmd:parakeet-quantize=1.9.3-r0 cmd:whisper-bench=1.9.3-r0 cmd:whisper-cli=1.9.3-r0 cmd:whisper-quantize=1.9.3-r0 cmd:whisper-vad-speech-segments=1.9.3-r0
+
+C:Q1bZXrYxBHlU1GRrLCZP9F5pAWlJ8=
+P:whisper.cpp-dev
+V:1.9.3-r0
+A:aarch64
+S:4191
+I:10301
+T:Port of OpenAI's Whisper model in C/C++ (development files)
+U:https://github.com/ggerganov/whisper.cpp
+L:MIT
+o:whisper.cpp
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:5a8261ee3f328d2e3c00d6d2bb2ef133aab25a7c
+D:pkgconfig
+p:pc:parakeet=1.9.3 pc:whisper=1.9.3
+
+C:Q1L9AZF2NyhXyUYoGfb9SJUb4T2jI=
+P:whisper.cpp-libs
+V:1.9.3-r0
+A:aarch64
+S:292533
+I:726040
+T:Port of OpenAI's Whisper model in C/C++
+U:https://github.com/ggerganov/whisper.cpp
+L:MIT
+o:whisper.cpp
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:5a8261ee3f328d2e3c00d6d2bb2ef133aab25a7c
+D:so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libggml-base.so.0 so:libggml.so.0 so:libstdc++.so.6
+p:so:whisper.cpp:libparakeet.so.1=1.9.3 so:whisper.cpp:libwhisper.so.1=1.9.3
 
 C:Q1z1Uh7uWPydTOgudvQnYqLXcnHOg=
 P:whois

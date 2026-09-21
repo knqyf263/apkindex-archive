@@ -128291,6 +128291,72 @@ c:1e40ebb81e1bd430682f1e567f49def3e88314d0
 D:libgepub=0.7.1-r1 pc:gio-2.0 pc:glib-2.0 pc:gobject-2.0 pc:libarchive pc:libsoup-3.0 pc:libxml-2.0 pc:webkit2gtk-4.1 pkgconfig
 p:pc:libgepub-0.7=0.7.1
 
+C:Q1LmC8N3NRu8Js1vCqQsqqaAnblXI=
+P:libggml
+V:0.23.0-r0
+A:x86_64
+S:486481
+I:1164406
+T:Tensor library for machine learning
+U:https://github.com/ggml-org/ggml
+L:MIT
+o:libggml
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:0dc8d7a2effca3ef2761ee65f99e171dbafea717
+D:openblas so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libgomp.so.1 so:libstdc++.so.6
+p:so:libggml-base.so.0=0.23.0 so:libggml-blas.so=0 so:libggml-rpc.so=0 so:libggml.so.0=0.23.0
+
+C:Q1/BKBik947K8AS+R1jD8L+AASkBo=
+P:libggml-cpu
+V:0.23.0-r0
+A:x86_64
+S:6040347
+I:14561384
+T:Tensor library for machine learning
+U:https://github.com/ggml-org/ggml
+L:MIT
+o:libggml
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:0dc8d7a2effca3ef2761ee65f99e171dbafea717
+D:so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libggml-base.so.0 so:libgomp.so.1 so:libstdc++.so.6
+p:so:libggml-cpu-alderlake.so=0 so:libggml-cpu-cannonlake.so=0 so:libggml-cpu-cascadelake.so=0 so:libggml-cpu-cooperlake.so=0 so:libggml-cpu-haswell.so=0 so:libggml-cpu-icelake.so=0 so:libggml-cpu-ivybridge.so=0 so:libggml-cpu-piledriver.so=0 so:libggml-cpu-sandybridge.so=0 so:libggml-cpu-sapphirerapids.so=0 so:libggml-cpu-skylakex.so=0 so:libggml-cpu-sse42.so=0 so:libggml-cpu-x64.so=0 so:libggml-cpu-zen4.so=0
+i:libggml=0.23.0-r0
+
+C:Q1uOvKV6VP4wnX/VHRcqijRopmuVg=
+P:libggml-dev
+V:0.23.0-r0
+A:x86_64
+S:45098
+I:209505
+T:Tensor library for machine learning (development files)
+U:https://github.com/ggml-org/ggml
+L:MIT
+o:libggml
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:0dc8d7a2effca3ef2761ee65f99e171dbafea717
+D:libggml=0.23.0-r0 pkgconfig
+p:pc:ggml=0.23.0
+
+C:Q1YJca9acDBdU3byrVUYXdDz957Xk=
+P:libggml-vulkan
+V:0.23.0-r0
+A:x86_64
+S:16621280
+I:54613920
+T:Tensor library for machine learning
+U:https://github.com/ggml-org/ggml
+L:MIT
+o:libggml
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:0dc8d7a2effca3ef2761ee65f99e171dbafea717
+D:so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libggml-base.so.0 so:libstdc++.so.6 so:libvulkan.so.1
+p:so:libggml-vulkan.so=0
+i:libggml=0.23.0-r0 vulkan-loader
+
 C:Q1ny5BCE2GwxD9kQ7qvefnrxQ8fq8=
 P:libgit2
 V:1.9.7-r0
@@ -335198,6 +335264,86 @@ m:Coco Liliace <coco@liliace.dev>
 t:1701345526
 c:e10931aa82806f17fe9078565f85c7fda9dbbde8
 i:docs when=1.1.45-r1
+
+C:Q1qPKFqU1l3zWKpL9LeeAv6WIjyg0=
+P:whisper-server
+V:1.9.3-r0
+A:x86_64
+S:514001
+I:1159376
+T:whisper.cpp server
+U:https://github.com/ggerganov/whisper.cpp
+L:MIT
+o:whisper.cpp
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:5a8261ee3f328d2e3c00d6d2bb2ef133aab25a7c
+D:/bin/sh so:libavcodec.so.62 so:libavformat.so.62 so:libavutil.so.60 so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libggml.so.0 so:libstdc++.so.6 so:libswresample.so.6 so:whisper.cpp:libwhisper.so.1
+p:cmd:whisper-server=1.9.3-r0
+
+C:Q1nLNYRJTa/l7F+GpWlthH27Uw6Eo=
+P:whisper-server-openrc
+V:1.9.3-r0
+A:x86_64
+S:1981
+I:553
+T:whisper.cpp server (OpenRC init scripts)
+U:https://github.com/ggerganov/whisper.cpp
+L:MIT
+o:whisper.cpp
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:5a8261ee3f328d2e3c00d6d2bb2ef133aab25a7c
+D:whisper-server=1.9.3-r0 openrc
+i:whisper-server=1.9.3-r0 openrc
+
+C:Q1B3OCVEuJT0UEJVG2rtZdljf1oJg=
+P:whisper.cpp
+V:1.9.3-r0
+A:x86_64
+S:1108166
+I:2468508
+T:Port of OpenAI's Whisper model in C/C++
+U:https://github.com/ggerganov/whisper.cpp
+L:MIT
+o:whisper.cpp
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:5a8261ee3f328d2e3c00d6d2bb2ef133aab25a7c
+D:so:libavcodec.so.62 so:libavformat.so.62 so:libavutil.so.60 so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libggml-base.so.0 so:libggml.so.0 so:libstdc++.so.6 so:libswresample.so.6 so:whisper.cpp:libparakeet.so.1 so:whisper.cpp:libwhisper.so.1
+p:cmd:download-ggml-model=1.9.3-r0 cmd:parakeet-cli=1.9.3-r0 cmd:parakeet-quantize=1.9.3-r0 cmd:whisper-bench=1.9.3-r0 cmd:whisper-cli=1.9.3-r0 cmd:whisper-quantize=1.9.3-r0 cmd:whisper-vad-speech-segments=1.9.3-r0
+
+C:Q1tltJKEXK6Zyk+zV7dov3dDMk/sA=
+P:whisper.cpp-dev
+V:1.9.3-r0
+A:x86_64
+S:4217
+I:10301
+T:Port of OpenAI's Whisper model in C/C++ (development files)
+U:https://github.com/ggerganov/whisper.cpp
+L:MIT
+o:whisper.cpp
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:5a8261ee3f328d2e3c00d6d2bb2ef133aab25a7c
+D:pkgconfig
+p:pc:parakeet=1.9.3 pc:whisper=1.9.3
+
+C:Q144KiVnX8+nP3vPXU94ye+7EWp0s=
+P:whisper.cpp-libs
+V:1.9.3-r0
+A:x86_64
+S:303593
+I:742344
+T:Port of OpenAI's Whisper model in C/C++
+U:https://github.com/ggerganov/whisper.cpp
+L:MIT
+o:whisper.cpp
+m:Hugo Osvaldo Barrera <hugo@whynothugo.nl>
+t:1789991725
+c:5a8261ee3f328d2e3c00d6d2bb2ef133aab25a7c
+D:so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libggml-base.so.0 so:libggml.so.0 so:libstdc++.so.6
+p:so:whisper.cpp:libparakeet.so.1=1.9.3 so:whisper.cpp:libwhisper.so.1=1.9.3
 
 C:Q1NwTkIpptk0I9PJAWCny2EDvP7Ec=
 P:whois
