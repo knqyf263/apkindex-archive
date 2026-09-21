@@ -280376,6 +280376,71 @@
         "!suricata<8.0.7-r0",
         "!suricata>8.0.7-r0"
       ]
+    },
+    "libggml": {
+      "origin": "libggml",
+      "versions": {
+        "0.23.0-r0": 1789991725
+      },
+      "dependencies": [
+        "openblas",
+        "so:libc.musl-riscv64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libgomp.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libggml-base.so.0=0.23.0",
+        "so:libggml-blas.so=0",
+        "so:libggml-rpc.so=0",
+        "so:libggml.so.0=0.23.0"
+      ]
+    },
+    "libggml-cpu": {
+      "origin": "libggml",
+      "versions": {
+        "0.23.0-r0": 1789991725
+      },
+      "dependencies": [
+        "so:libc.musl-riscv64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libggml-base.so.0",
+        "so:libgomp.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libggml-cpu-riscv64_0.so=0",
+        "so:libggml-cpu-riscv64_v.so=0"
+      ]
+    },
+    "libggml-dev": {
+      "origin": "libggml",
+      "versions": {
+        "0.23.0-r0": 1789991725
+      },
+      "dependencies": [
+        "libggml=0.23.0-r0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:ggml=0.23.0"
+      ]
+    },
+    "libggml-vulkan": {
+      "origin": "libggml",
+      "versions": {
+        "0.23.0-r0": 1789991725
+      },
+      "dependencies": [
+        "so:libc.musl-riscv64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libggml-base.so.0",
+        "so:libstdc++.so.6",
+        "so:libvulkan.so.1"
+      ],
+      "provides": [
+        "so:libggml-vulkan.so=0"
+      ]
     }
   },
   "provide": {
@@ -302267,6 +302332,34 @@
       "libkonsoleprivate.so.26.04.2": {
         "package": "konsole",
         "version": "26.04.2"
+      },
+      "libggml-base.so.0": {
+        "package": "libggml",
+        "version": "0.23.0"
+      },
+      "libggml-blas.so": {
+        "package": "libggml",
+        "version": "0"
+      },
+      "libggml-rpc.so": {
+        "package": "libggml",
+        "version": "0"
+      },
+      "libggml.so.0": {
+        "package": "libggml",
+        "version": "0.23.0"
+      },
+      "libggml-cpu-riscv64_0.so": {
+        "package": "libggml-cpu",
+        "version": "0"
+      },
+      "libggml-cpu-riscv64_v.so": {
+        "package": "libggml-cpu",
+        "version": "0"
+      },
+      "libggml-vulkan.so": {
+        "package": "libggml-vulkan",
+        "version": "0"
       }
     },
     "package": {
